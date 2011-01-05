@@ -5,8 +5,500 @@
 <def tag="main-nav">
   <navigation class="main-nav" merge-attrs param="default">
     <nav-item href="#{base_url}/">Home</nav-item>
+    <nav-item with="&EmapStandard"><ht key="emap_standard.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
+    <nav-item with="&Finding"><ht key="finding.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
+    <nav-item with="&Program"><ht key="program.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
   </navigation>
 </def>
+
+
+
+
+<!-- ====== EmapStandard Pages ====== -->
+
+<def tag="index-page" for="EmapStandard">
+  <page merge title="#{ht 'emap_standard.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page emap-standard" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="emap_standard.index.heading">
+            <model-name-human model="&model"/>
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="emap_standard.collection.count" count="&this.size">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="emap_standard.actions.new">New Emap standard</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="EmapStandard">
+  <page merge title="#{ht 'emap_standard.new.title', :default=>[' New Emap standard'] }">
+    <body: class="new-page emap-standard" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="emap_standard.new.heading">
+            New Emap standard
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'emap_standard.actions.create', :default=>['Create Emap standard']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="EmapStandard">
+  <page merge title="#{ht 'emap_standard.show.title', :default=>['Emap standard'] }">
+
+    <body: class="show-page emap-standard" param/>
+
+    <content: param>
+          <header param="content-header">
+            <a:programs param="parent-link">&laquo; <ht key="emap_standard.actions.back_to_parent" parent="Program" name="&this">Back to <name/></ht></a:programs>
+            <h2 param="heading">
+              <ht key="emap_standard.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
+                <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="emap_standard.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
+                Edit Emap standard
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="chapter, area, overview, language, status" param/>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="EmapStandard">
+  <page merge title="#{ht 'emap_standard.edit.title', :default=>['Edit Emap standard'] }">
+
+    <body: class="edit-page emap-standard" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="emap_standard.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
+            Edit Emap standard
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'emap_standard.actions.delete', :default=>['Remove This Emap standard']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== Finding Pages ====== -->
+
+<def tag="index-page" for="Finding">
+  <page merge title="#{ht 'finding.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page finding" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="finding.index.heading">
+            <model-name-human model="&model"/>
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="finding.collection.count" count="&this.size">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="finding.actions.new">New Finding</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="Finding">
+  <page merge title="#{ht 'finding.new.title', :default=>[' New Finding'] }">
+    <body: class="new-page finding" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="finding.new.heading">
+            New Finding
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'finding.actions.create', :default=>['Create Finding']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="Finding">
+  <page merge title="#{ht 'finding.show.title', :default=>['Finding'] }">
+
+    <body: class="show-page finding" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="finding.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
+                <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="decision" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="finding.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
+                Edit Finding
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="rational, observation, recomendations" param/>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="Finding">
+  <page merge title="#{ht 'finding.edit.title', :default=>['Edit Finding'] }">
+
+    <body: class="edit-page finding" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="finding.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
+            Edit Finding
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'finding.actions.delete', :default=>['Remove This Finding']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== Program Pages ====== -->
+
+<def tag="index-page" for="Program">
+  <page merge title="#{ht 'program.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page program" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="program.index.heading">
+            <model-name-human model="&model"/>
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="program.collection.count" count="&this.size">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="program.actions.new">New Program</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="Program">
+  <page merge title="#{ht 'program.new.title', :default=>[' New Program'] }">
+    <body: class="new-page program" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="program.new.heading">
+            New Program
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'program.actions.create', :default=>['Create Program']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="Program">
+  <page merge title="#{ht 'program.show.title', :default=>['Program'] }">
+
+    <body: class="show-page program" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="program.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
+                <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="program.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
+                Edit Program
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <view:description param="description"/>
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="emap_standard.collection.heading" count="&this.emap_standards.count" >
+                  <human-collection-name collection="emap_standards" your/>
+                </ht>
+              </h3>
+
+              <collection:emap_standards param/>
+            </section>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="Program">
+  <page merge title="#{ht 'program.edit.title', :default=>['Edit Program'] }">
+
+    <body: class="edit-page program" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="program.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
+            Edit Program
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'program.actions.delete', :default=>['Remove This Program']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== StdStatus Pages ====== -->
+
+<def tag="index-page" for="StdStatus">
+  <page merge title="#{ht 'std_status.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page std-status" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="std_status.index.heading">
+            <model-name-human model="&model"/>
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="std_status.collection.count" count="&this.size">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="std_status.actions.new">New Std status</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="StdStatus">
+  <page merge title="#{ht 'std_status.new.title', :default=>[' New Std status'] }">
+    <body: class="new-page std-status" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="std_status.new.heading">
+            New Std status
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'std_status.actions.create', :default=>['Create Std status']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="StdStatus">
+  <page merge title="#{ht 'std_status.show.title', :default=>['Std status'] }">
+
+    <body: class="show-page std-status" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="std_status.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
+                <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="std_status.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
+                Edit Std status
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="StdStatus">
+  <page merge title="#{ht 'std_status.edit.title', :default=>['Edit Std status'] }">
+
+    <body: class="edit-page std-status" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="std_status.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
+            Edit Std status
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'std_status.actions.delete', :default=>['Remove This Std status']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
 
 
 
@@ -90,7 +582,7 @@
               </ht>
             </h2>
 
-            <record-flags fields="" param/>
+            <record-flags fields="administrator" param/>
 
             <a action="edit" if="&can_edit?" param="edit-link">
               <ht key="user.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
@@ -100,6 +592,7 @@
           </header>
 
           <section param="content-body">
+            <field-list fields="email_address, state" param/>
           </section>
     </content:>
 

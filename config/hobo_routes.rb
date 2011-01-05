@@ -5,6 +5,48 @@
 Rara::Application.routes.draw do
 
 
+  # Resource routes for controller "std_statuses"
+  get 'std_statuses/new(.:format)', :as => 'new_std_status'
+  get 'std_statuses/:id/edit(.:format)' => 'std_statuses#edit', :as => 'edit_std_status'
+  get 'std_statuses/:id(.:format)' => 'std_statuses#show', :as => 'std_status', :constraints => { :id => %r([^/.?]+) }
+  post 'std_statuses(.:format)' => 'std_statuses#create', :as => 'create_std_status'
+  put 'std_statuses/:id(.:format)' => 'std_statuses#update', :as => 'update_std_status', :constraints => { :id => %r([^/.?]+) }
+  delete 'std_statuses/:id(.:format)' => 'std_statuses#destroy', :as => 'destroy_std_status', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "findings"
+  get 'findings(.:format)' => 'findings#index', :as => 'findings'
+  get 'findings/new(.:format)', :as => 'new_finding'
+  get 'findings/:id/edit(.:format)' => 'findings#edit', :as => 'edit_finding'
+  get 'findings/:id(.:format)' => 'findings#show', :as => 'finding', :constraints => { :id => %r([^/.?]+) }
+  post 'findings(.:format)' => 'findings#create', :as => 'create_finding'
+  put 'findings/:id(.:format)' => 'findings#update', :as => 'update_finding', :constraints => { :id => %r([^/.?]+) }
+  delete 'findings/:id(.:format)' => 'findings#destroy', :as => 'destroy_finding', :constraints => { :id => %r([^/.?]+) }
+
+  # Reorder routes for controller "findings"
+  post 'findings/reorder(.:format)', :as => 'reorder_findings'
+
+
+  # Resource routes for controller "programs"
+  get 'programs(.:format)' => 'programs#index', :as => 'programs'
+  get 'programs/new(.:format)', :as => 'new_program'
+  get 'programs/:id/edit(.:format)' => 'programs#edit', :as => 'edit_program'
+  get 'programs/:id(.:format)' => 'programs#show', :as => 'program', :constraints => { :id => %r([^/.?]+) }
+  post 'programs(.:format)' => 'programs#create', :as => 'create_program'
+  put 'programs/:id(.:format)' => 'programs#update', :as => 'update_program', :constraints => { :id => %r([^/.?]+) }
+  delete 'programs/:id(.:format)' => 'programs#destroy', :as => 'destroy_program', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "emap_standards"
+  get 'emap_standards(.:format)' => 'emap_standards#index', :as => 'emap_standards'
+  get 'emap_standards/new(.:format)', :as => 'new_emap_standard'
+  get 'emap_standards/:id/edit(.:format)' => 'emap_standards#edit', :as => 'edit_emap_standard'
+  get 'emap_standards/:id(.:format)' => 'emap_standards#show', :as => 'emap_standard', :constraints => { :id => %r([^/.?]+) }
+  post 'emap_standards(.:format)' => 'emap_standards#create', :as => 'create_emap_standard'
+  put 'emap_standards/:id(.:format)' => 'emap_standards#update', :as => 'update_emap_standard', :constraints => { :id => %r([^/.?]+) }
+  delete 'emap_standards/:id(.:format)' => 'emap_standards#destroy', :as => 'destroy_emap_standard', :constraints => { :id => %r([^/.?]+) }
+
+
   # Lifecycle routes for controller "users"
   put 'users/:id/accept_invitation(.:format)' => 'users#do_accept_invitation', :as => 'do_user_accept_invitation'
   get 'users/:id/accept_invitation(.:format)' => 'users#accept_invitation', :as => 'user_accept_invitation'

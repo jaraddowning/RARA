@@ -1,9 +1,57 @@
 <!-- AUTOMATICALLY GENERATED FILE - DO NOT EDIT -->
 
+<def tag="form" for="EmapStandard">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="chapter, area, overview, language, findings, programs, status" param/>
+    <div param="actions">
+      <submit label="#{ht 'emap_standard.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Finding">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="rational, observation, recomendations, decision" param/>
+    <div param="actions">
+      <submit label="#{ht 'finding.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Program">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, description, emap_standards" param/>
+    <div param="actions">
+      <submit label="#{ht 'program.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="StdStatus">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name" param/>
+    <div param="actions">
+      <submit label="#{ht 'std_status.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
 <def tag="form" for="User">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="" param/>
+    <field-list fields="name, email_address, administrator, state" param/>
     <div param="actions">
       <submit label="#{ht 'user.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>

@@ -10,7 +10,61 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110105130850) do
+ActiveRecord::Schema.define(:version => 20110105134657) do
+
+  create_table "emap_standards", :force => true do |t|
+    t.string   "chapter"
+    t.string   "area"
+    t.text     "overview"
+    t.text     "language"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "status_id"
+  end
+
+  add_index "emap_standards", ["status_id"], :name => "index_emap_standards_on_status_id"
+
+  create_table "findings", :force => true do |t|
+    t.text     "rational"
+    t.text     "observation"
+    t.text     "recomendations"
+    t.boolean  "decision"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "programs", :force => true do |t|
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "standard_assignments", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "emap_standard_id"
+  end
+
+  add_index "standard_assignments", ["emap_standard_id"], :name => "index_standard_assignments_on_emap_standard_id"
+  add_index "standard_assignments", ["program_id"], :name => "index_standard_assignments_on_program_id"
+
+  create_table "standard_findings", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "finding_id"
+    t.integer  "emap_standard_id"
+  end
+
+  add_index "standard_findings", ["emap_standard_id"], :name => "index_standard_findings_on_emap_standard_id"
+  add_index "standard_findings", ["finding_id"], :name => "index_standard_findings_on_finding_id"
+
+  create_table "std_statuses", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "crypted_password",          :limit => 40
