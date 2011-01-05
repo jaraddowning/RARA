@@ -17,3 +17,68 @@
     </footer:>
   </old-page>
 </extend>
+
+<def tag="show-page" for="Program">
+  <page merge title="#{ht 'program.show.title', :default=>['Program'] }">
+
+    <body: class="show-page program" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="program.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
+                <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="program.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
+                Edit Program
+              </ht>
+            </a>
+            <view:description param="description"/>
+          </header>
+
+          <section param="content-body">
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="emap_standard.collection.heading" count="&this.emap_standards.count" >
+                  <human-collection-name collection="emap_standards" your/>
+                </ht>
+              </h3>
+
+              <collection:emap_standards param/>
+            </section>
+          </section>
+
+          <section param="content-body">
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="medical_standard.collection.heading" count="&this.medical_standards.count" >
+                  <human-collection-name collection="medical_standards" your/>
+                </ht>
+              </h3>
+
+              <collection:medical_standards param/>
+            </section>
+          </section>
+
+          <section param="content-body">
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="military_standard.collection.heading" count="&this.military_standards.count" >
+                  <human-collection-name collection="military_standards" your/>
+                </ht>
+              </h3>
+
+              <collection:military_standards param/>
+            </section>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+

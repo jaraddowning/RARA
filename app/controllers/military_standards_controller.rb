@@ -1,4 +1,4 @@
-class FindingsController < ApplicationController
+class MilitaryStandardsController < ApplicationController
 
   hobo_model_controller
 

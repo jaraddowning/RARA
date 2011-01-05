@@ -8,6 +8,8 @@ class StandardAssignment < ActiveRecord::Base
 
   belongs_to :program
   belongs_to :emap_standard
+  belongs_to :medical_standard
+  belongs_to :military_standard
 
   # --- Permissions --- #
 

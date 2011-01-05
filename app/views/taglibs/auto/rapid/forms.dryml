@@ -15,9 +15,33 @@
 <def tag="form" for="Finding">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="rational, observation, recomendations, decision" param/>
+    <field-list fields="rational, observation, recomendations, decision, status" param/>
     <div param="actions">
       <submit label="#{ht 'finding.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="MedicalStandard">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="category, item, remarks, findings, programs, status" param/>
+    <div param="actions">
+      <submit label="#{ht 'medical_standard.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="MilitaryStandard">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="category, item, remarks, findings, programs, status" param/>
+    <div param="actions">
+      <submit label="#{ht 'military_standard.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>
   </form>
 </def>
@@ -27,7 +51,7 @@
 <def tag="form" for="Program">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="name, description, emap_standards" param/>
+    <field-list fields="name, description, emap_standards, medical_standards, military_standards" param/>
     <div param="actions">
       <submit label="#{ht 'program.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>

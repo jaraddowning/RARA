@@ -5,8 +5,6 @@
 <def tag="main-nav">
   <navigation class="main-nav" merge-attrs param="default">
     <nav-item href="#{base_url}/">Home</nav-item>
-    <nav-item with="&EmapStandard"><ht key="emap_standard.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
-    <nav-item with="&Finding"><ht key="finding.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
     <nav-item with="&Program"><ht key="program.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
   </navigation>
 </def>
@@ -83,7 +81,6 @@
 
     <content: param>
           <header param="content-header">
-            <a:programs param="parent-link">&laquo; <ht key="emap_standard.actions.back_to_parent" parent="Program" name="&this">Back to <name/></ht></a:programs>
             <h2 param="heading">
               <ht key="emap_standard.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
                 <name/>
@@ -101,6 +98,15 @@
 
           <section param="content-body">
             <field-list fields="chapter, area, overview, language, status" param/>
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="finding.collection.heading" count="&this.findings.count" >
+                  <human-collection-name collection="findings" your/>
+                </ht>
+              </h3>
+
+              <collection:findings param/>
+            </section>
           </section>
     </content:>
 
@@ -204,6 +210,7 @@
 
     <content: param>
           <header param="content-header">
+            <a:medical_standards param="parent-link">&laquo; <ht key="finding.actions.back_to_parent" parent="Medical standard" name="&this">Back to <name/></ht></a:medical_standards>
             <h2 param="heading">
               <ht key="finding.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
                 <name/>
@@ -220,7 +227,7 @@
           </header>
 
           <section param="content-body">
-            <field-list fields="rational, observation, recomendations" param/>
+            <field-list fields="rational, observation, recomendations, status" param/>
           </section>
     </content:>
 
@@ -241,6 +248,264 @@
           </ht>
         </h2>
         <delete-button label="#{ht 'finding.actions.delete', :default=>['Remove This Finding']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== MedicalStandard Pages ====== -->
+
+<def tag="index-page" for="MedicalStandard">
+  <page merge title="#{ht 'medical_standard.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page medical-standard" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="medical_standard.index.heading">
+            <model-name-human model="&model"/>
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="medical_standard.collection.count" count="&this.size">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="medical_standard.actions.new">New Medical standard</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="MedicalStandard">
+  <page merge title="#{ht 'medical_standard.new.title', :default=>[' New Medical standard'] }">
+    <body: class="new-page medical-standard" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="medical_standard.new.heading">
+            New Medical standard
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'medical_standard.actions.create', :default=>['Create Medical standard']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="MedicalStandard">
+  <page merge title="#{ht 'medical_standard.show.title', :default=>['Medical standard'] }">
+
+    <body: class="show-page medical-standard" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="medical_standard.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
+                <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="medical_standard.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
+                Edit Medical standard
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="category, item, remarks, status" param/>
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="finding.collection.heading" count="&this.findings.count" >
+                  <human-collection-name collection="findings" your/>
+                </ht>
+              </h3>
+
+              <collection:findings param/>
+            </section>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="MedicalStandard">
+  <page merge title="#{ht 'medical_standard.edit.title', :default=>['Edit Medical standard'] }">
+
+    <body: class="edit-page medical-standard" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="medical_standard.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
+            Edit Medical standard
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'medical_standard.actions.delete', :default=>['Remove This Medical standard']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== MilitaryStandard Pages ====== -->
+
+<def tag="index-page" for="MilitaryStandard">
+  <page merge title="#{ht 'military_standard.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page military-standard" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="military_standard.index.heading">
+            <model-name-human model="&model"/>
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="military_standard.collection.count" count="&this.size">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="military_standard.actions.new">New Military standard</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="MilitaryStandard">
+  <page merge title="#{ht 'military_standard.new.title', :default=>[' New Military standard'] }">
+    <body: class="new-page military-standard" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="military_standard.new.heading">
+            New Military standard
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'military_standard.actions.create', :default=>['Create Military standard']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="MilitaryStandard">
+  <page merge title="#{ht 'military_standard.show.title', :default=>['Military standard'] }">
+
+    <body: class="show-page military-standard" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="military_standard.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
+                <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="military_standard.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
+                Edit Military standard
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="category, item, remarks, status" param/>
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="finding.collection.heading" count="&this.findings.count" >
+                  <human-collection-name collection="findings" your/>
+                </ht>
+              </h3>
+
+              <collection:findings param/>
+            </section>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="MilitaryStandard">
+  <page merge title="#{ht 'military_standard.edit.title', :default=>['Edit Military standard'] }">
+
+    <body: class="edit-page military-standard" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="military_standard.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
+            Edit Military standard
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'military_standard.actions.delete', :default=>['Remove This Military standard']}" param/>
       </section>
 
       <section param="content-body">
@@ -341,15 +606,6 @@
 
           <section param="content-body">
             <view:description param="description"/>
-            <section param="collection-section">
-              <h3 param="collection-heading">
-                <ht key="emap_standard.collection.heading" count="&this.emap_standards.count" >
-                  <human-collection-name collection="emap_standards" your/>
-                </ht>
-              </h3>
-
-              <collection:emap_standards param/>
-            </section>
           </section>
     </content:>
 

@@ -1,4 +1,4 @@
-class FindingsController < ApplicationController
+class MedicalStandardsController < ApplicationController
 
   hobo_model_controller
 

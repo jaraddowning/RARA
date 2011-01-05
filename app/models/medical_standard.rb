@@ -1,12 +1,13 @@
-class EmapStandard < ActiveRecord::Base
+class MedicalStandard < ActiveRecord::Base
 
   hobo_model # Don't put anything above this
 
   fields do
-    chapter  :string
-    area     :string
-    overview :markdown
-    language :markdown
+    cat_id      :string
+    item_id     :string
+    category    :string
+    item        :markdown
+    remarks     :markdown
     timestamps
   end
 

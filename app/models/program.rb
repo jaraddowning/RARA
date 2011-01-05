@@ -4,14 +4,18 @@ class Program < ActiveRecord::Base
 
   fields do
     name        :string
-    description :text
+    description :markdown
     timestamps
   end
 
   has_many :standard_assignments, :dependent => :destroy
   has_many :emap_standards, :through => :standard_assignments, :accessible => true
+  has_many :medical_standards, :through => :standard_assignments, :accessible => true
+  has_many :military_standards, :through => :standard_assignments, :accessible => true
 
-  children :emap_standards
+  #children :emap_standards
+  #children :medical_standards
+  #children :military_standards
 
   # --- Permissions --- #
 

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110105134657) do
+ActiveRecord::Schema.define(:version => 20110105190314) do
 
   create_table "emap_standards", :force => true do |t|
     t.string   "chapter"
@@ -31,7 +31,36 @@ ActiveRecord::Schema.define(:version => 20110105134657) do
     t.boolean  "decision"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "status_id"
   end
+
+  add_index "findings", ["status_id"], :name => "index_findings_on_status_id"
+
+  create_table "medical_standards", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "status_id"
+    t.string   "cat_id"
+    t.string   "item_id"
+    t.string   "category"
+    t.text     "item"
+    t.text     "remarks"
+  end
+
+  add_index "medical_standards", ["status_id"], :name => "index_medical_standards_on_status_id"
+
+  create_table "military_standards", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "status_id"
+    t.string   "cat_id"
+    t.string   "item_id"
+    t.string   "category"
+    t.text     "item"
+    t.text     "remarks"
+  end
+
+  add_index "military_standards", ["status_id"], :name => "index_military_standards_on_status_id"
 
   create_table "programs", :force => true do |t|
     t.string   "name"
@@ -45,9 +74,13 @@ ActiveRecord::Schema.define(:version => 20110105134657) do
     t.datetime "updated_at"
     t.integer  "program_id"
     t.integer  "emap_standard_id"
+    t.integer  "medical_standard_id"
+    t.integer  "military_standard_id"
   end
 
   add_index "standard_assignments", ["emap_standard_id"], :name => "index_standard_assignments_on_emap_standard_id"
+  add_index "standard_assignments", ["medical_standard_id"], :name => "index_standard_assignments_on_medical_standard_id"
+  add_index "standard_assignments", ["military_standard_id"], :name => "index_standard_assignments_on_military_standard_id"
   add_index "standard_assignments", ["program_id"], :name => "index_standard_assignments_on_program_id"
 
   create_table "standard_findings", :force => true do |t|
@@ -55,10 +88,14 @@ ActiveRecord::Schema.define(:version => 20110105134657) do
     t.datetime "updated_at"
     t.integer  "finding_id"
     t.integer  "emap_standard_id"
+    t.integer  "medical_standard_id"
+    t.integer  "military_standard_id"
   end
 
   add_index "standard_findings", ["emap_standard_id"], :name => "index_standard_findings_on_emap_standard_id"
   add_index "standard_findings", ["finding_id"], :name => "index_standard_findings_on_finding_id"
+  add_index "standard_findings", ["medical_standard_id"], :name => "index_standard_findings_on_medical_standard_id"
+  add_index "standard_findings", ["military_standard_id"], :name => "index_standard_findings_on_military_standard_id"
 
   create_table "std_statuses", :force => true do |t|
     t.string   "name"

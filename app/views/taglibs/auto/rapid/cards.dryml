@@ -5,6 +5,11 @@
     <header: param>
       <h4 param="heading"><a><name/></a></h4>
     </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
   </card>
 </def>
 
@@ -16,16 +21,37 @@
   </card>
 </def>
 
+<def tag="card" for="MedicalStandard">
+  <card class="medical-standard" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
+  </card>
+</def>
+
+<def tag="card" for="MilitaryStandard">
+  <card class="military-standard" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
+  </card>
+</def>
+
 <def tag="card" for="Program">
   <card class="program" param="default" merge>
     <header: param>
       <h4 param="heading"><a><name/></a></h4>
     </header:>
-    <body: param>
-      <ht key="emap_standard.collection.count" count="&this.emap_standards.size">
-         <count:emap_standards param/>
-      </ht>
-    </body:>
   </card>
 </def>
 
