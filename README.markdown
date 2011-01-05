@@ -1,4 +1,3 @@
-<!--Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.-->
 RARA - Remote African Reporting Application
 
 This application is a stand alone reporting tool for the review of African Nation's ability to respond to emergency situations. The source code is open but the data will always remain secure and the property of the respective nation and EMAP. Please do not contact EMAP or the developer to aquire any information about the response abilities of any Nation, State, Jurisdiction, Tribe, Federal Agency or any other location's emergency management capabilities.
