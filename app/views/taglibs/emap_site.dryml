@@ -1,0 +1,28 @@
+<!-- Tag definitions for the emap subsite -->
+
+<include src="rapid" plugin="hobo"/>
+
+<include src="taglibs/auto/emap/rapid/cards"/>
+<include src="taglibs/auto/emap/rapid/pages"/>
+<include src="taglibs/auto/emap/rapid/forms"/>
+
+<set-theme name="clean"/>
+
+
+
+<extend tag="page">
+  <old-page merge>
+    <append-stylesheets:>
+      <stylesheet name="emap"/>
+    </append-stylesheets:>
+    <footer:>
+      <a href="#{base_url}/"><t key="hobo.subsite.back_link">View Site</t></a>
+    </footer:>
+  </old-page>
+</extend>
+
+<extend tag="card" for="User">
+  <old-card merge>
+    <append-header:><%= h this.state.titleize %></append-header:>
+  </old-card>
+</extend>
