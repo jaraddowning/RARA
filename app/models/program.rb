@@ -13,10 +13,6 @@ class Program < ActiveRecord::Base
   has_many :medical_standards, :through => :standard_assignments, :accessible => true
   has_many :military_standards, :through => :standard_assignments, :accessible => true
 
-  #children :emap_standards
-  #children :medical_standards
-  #children :military_standards
-
   # --- Permissions --- #
 
   def create_permitted?

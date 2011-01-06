@@ -11,9 +11,11 @@
 <extend tag="page">
   <old-page merge>
     <footer:>
-      
+      <a href="http://emaponline.org"><img src="/images/emap_logo.jpg"/></a>
+      <a href="http://cdham.org/"><img src="/images/danland_logo.png"/></a>
+      <a href="http://www.africom.mil/"><img src="/images/africom_crest.png"/></a>
       <a href="&emap_users_url" if="&current_user.administrator?">
-        <t key="hobo.admin.subsite_name">Emap</t>
+        <t key="hobo.admin.subsite_name">Emap Admin</t>
       </a>
     </footer:>
   </old-page>
@@ -88,6 +90,11 @@
               </h3>
 
               <collection:emap_standards param/>
+                <!--<collection: replace>
+                  <div>
+                    <table-plus:emap_standards fields="this"/>
+                  </div>
+                </collection:>-->
             </section>
           </section>
 
@@ -117,17 +124,4 @@
     </content:>
 
   </page>
-</def>
-
-<def tag="card" for="EmapStandard">
-  <card class="emap-standard" param="default" merge>
-    <header: param>
-      <h4 param="heading"><a><name/></a></h4>
-    </header:>
-    <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
-    </body:>
-  </card>
 </def>
