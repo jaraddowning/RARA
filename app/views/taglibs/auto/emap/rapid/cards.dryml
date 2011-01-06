@@ -2,6 +2,9 @@
 
 <def tag="card" for="EmapStandard">
   <card class="emap-standard" param="default" merge>
+    <header: param>
+      <h4 param="heading"><name/></h4>
+    </header:>
     <body: param>
       <ht key="finding.collection.count" count="&this.findings.size">
          <count:findings param/>
@@ -20,6 +23,9 @@
 
 <def tag="card" for="MedicalStandard">
   <card class="medical-standard" param="default" merge>
+    <header: param>
+      <h4 param="heading"><name/></h4>
+    </header:>
     <body: param>
       <ht key="finding.collection.count" count="&this.findings.size">
          <count:findings param/>
@@ -30,6 +36,9 @@
 
 <def tag="card" for="MilitaryStandard">
   <card class="military-standard" param="default" merge>
+    <header: param>
+      <h4 param="heading"><name/></h4>
+    </header:>
     <body: param>
       <ht key="finding.collection.count" count="&this.findings.size">
          <count:findings param/>

@@ -3,9 +3,9 @@ class EmapStandard < ActiveRecord::Base
   hobo_model # Don't put anything above this
 
   fields do
-    chapter  :string
+    standard :string
+    chapter  :string, :name => true
     area     :string
-    overview :markdown
     language :markdown
     timestamps
   end

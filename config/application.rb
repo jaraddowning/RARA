@@ -41,5 +41,9 @@ module Rara
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+    
+    # Configure system-wide application name
+    config.hobo.app_name = "R.A.R.A."
+
   end
 end

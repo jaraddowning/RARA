@@ -6,9 +6,9 @@
     <header class="content-header">
       <h1>Welcome to <app-name/></h1>
       <section class="welcome-message">
-        <h3>Congratulations! Your Hobo Rails App is up and running</h3>
+        <h3>This is the test site for the Remote Affrican Reporting Application</h3>
         <ul>
-          <li>To customise this page: edit app/views/front/index.dryml</li>
+          <li>This application is still in development phase. Please be patient while the development continues</li>
         </ul>
 
         <% if User.count == 0 -%>
@@ -24,6 +24,7 @@
     </header>
 
     <section class="content-body">
+      
     </section>
   </content:>
 

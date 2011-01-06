@@ -97,7 +97,7 @@
           </header>
 
           <section param="content-body">
-            <field-list fields="chapter, area, overview, language, status" param/>
+            <field-list fields="standard, area, language, status" param/>
             <section param="collection-section">
               <h3 param="collection-heading">
                 <ht key="finding.collection.heading" count="&this.findings.count" >

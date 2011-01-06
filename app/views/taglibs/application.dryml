@@ -11,12 +11,50 @@
 <extend tag="page">
   <old-page merge>
     <footer:>
+      
       <a href="&emap_users_url" if="&current_user.administrator?">
         <t key="hobo.admin.subsite_name">Emap</t>
       </a>
     </footer:>
   </old-page>
 </extend>
+
+<def tag="index-page" for="Program">
+  <page merge title="#{ht 'program.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page program" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          Nations
+          <!--<ht key="program.index.heading">
+            <model-name-human model="&model"/>
+          </ht>-->
+        </h2>
+
+        <p param="count" if>
+          <ht key="program.collection.count" count="&this.size">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="program.actions.new">New Program</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
 
 <def tag="show-page" for="Program">
   <page merge title="#{ht 'program.show.title', :default=>['Program'] }">
@@ -81,4 +119,15 @@
   </page>
 </def>
 
-
+<def tag="card" for="EmapStandard">
+  <card class="emap-standard" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
+  </card>
+</def>

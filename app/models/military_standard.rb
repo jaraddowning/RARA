@@ -4,7 +4,7 @@ class MilitaryStandard < ActiveRecord::Base
 
   fields do
     cat_id      :string
-    item_id     :string
+    item_id     :string, :name => true
     category    :string
     item        :markdown
     remarks     :markdown

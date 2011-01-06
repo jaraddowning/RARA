@@ -5,15 +5,6 @@
 Rara::Application.routes.draw do
 
 
-  # Resource routes for controller "std_statuses"
-  get 'std_statuses/new(.:format)', :as => 'new_std_status'
-  get 'std_statuses/:id/edit(.:format)' => 'std_statuses#edit', :as => 'edit_std_status'
-  get 'std_statuses/:id(.:format)' => 'std_statuses#show', :as => 'std_status', :constraints => { :id => %r([^/.?]+) }
-  post 'std_statuses(.:format)' => 'std_statuses#create', :as => 'create_std_status'
-  put 'std_statuses/:id(.:format)' => 'std_statuses#update', :as => 'update_std_status', :constraints => { :id => %r([^/.?]+) }
-  delete 'std_statuses/:id(.:format)' => 'std_statuses#destroy', :as => 'destroy_std_status', :constraints => { :id => %r([^/.?]+) }
-
-
   # Resource routes for controller "findings"
   get 'findings/new(.:format)', :as => 'new_finding'
   get 'findings/:id/edit(.:format)' => 'findings#edit', :as => 'edit_finding'
@@ -45,15 +36,6 @@ Rara::Application.routes.draw do
   delete 'emap_standards/:id(.:format)' => 'emap_standards#destroy', :as => 'destroy_emap_standard', :constraints => { :id => %r([^/.?]+) }
 
 
-  # Resource routes for controller "medical_standards"
-  get 'medical_standards/new(.:format)', :as => 'new_medical_standard'
-  get 'medical_standards/:id/edit(.:format)' => 'medical_standards#edit', :as => 'edit_medical_standard'
-  get 'medical_standards/:id(.:format)' => 'medical_standards#show', :as => 'medical_standard', :constraints => { :id => %r([^/.?]+) }
-  post 'medical_standards(.:format)' => 'medical_standards#create', :as => 'create_medical_standard'
-  put 'medical_standards/:id(.:format)' => 'medical_standards#update', :as => 'update_medical_standard', :constraints => { :id => %r([^/.?]+) }
-  delete 'medical_standards/:id(.:format)' => 'medical_standards#destroy', :as => 'destroy_medical_standard', :constraints => { :id => %r([^/.?]+) }
-
-
   # Resource routes for controller "military_standards"
   get 'military_standards/new(.:format)', :as => 'new_military_standard'
   get 'military_standards/:id/edit(.:format)' => 'military_standards#edit', :as => 'edit_military_standard'
@@ -83,6 +65,24 @@ Rara::Application.routes.draw do
   match 'login(.:format)' => 'users#login', :as => 'user_login'
   get 'logout(.:format)' => 'users#logout', :as => 'user_logout'
   match 'forgot_password(.:format)' => 'users#forgot_password', :as => 'user_forgot_password'
+
+
+  # Resource routes for controller "medical_standards"
+  get 'medical_standards/new(.:format)', :as => 'new_medical_standard'
+  get 'medical_standards/:id/edit(.:format)' => 'medical_standards#edit', :as => 'edit_medical_standard'
+  get 'medical_standards/:id(.:format)' => 'medical_standards#show', :as => 'medical_standard', :constraints => { :id => %r([^/.?]+) }
+  post 'medical_standards(.:format)' => 'medical_standards#create', :as => 'create_medical_standard'
+  put 'medical_standards/:id(.:format)' => 'medical_standards#update', :as => 'update_medical_standard', :constraints => { :id => %r([^/.?]+) }
+  delete 'medical_standards/:id(.:format)' => 'medical_standards#destroy', :as => 'destroy_medical_standard', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "std_statuses"
+  get 'std_statuses/new(.:format)', :as => 'new_std_status'
+  get 'std_statuses/:id/edit(.:format)' => 'std_statuses#edit', :as => 'edit_std_status'
+  get 'std_statuses/:id(.:format)' => 'std_statuses#show', :as => 'std_status', :constraints => { :id => %r([^/.?]+) }
+  post 'std_statuses(.:format)' => 'std_statuses#create', :as => 'create_std_status'
+  put 'std_statuses/:id(.:format)' => 'std_statuses#update', :as => 'update_std_status', :constraints => { :id => %r([^/.?]+) }
+  delete 'std_statuses/:id(.:format)' => 'std_statuses#destroy', :as => 'destroy_std_status', :constraints => { :id => %r([^/.?]+) }
 
   namespace :emap do
 

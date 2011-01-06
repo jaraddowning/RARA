@@ -10,16 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110105190314) do
+ActiveRecord::Schema.define(:version => 20110106040213) do
 
   create_table "emap_standards", :force => true do |t|
     t.string   "chapter"
     t.string   "area"
-    t.text     "overview"
     t.text     "language"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "status_id"
+    t.string   "standard"
   end
 
   add_index "emap_standards", ["status_id"], :name => "index_emap_standards_on_status_id"

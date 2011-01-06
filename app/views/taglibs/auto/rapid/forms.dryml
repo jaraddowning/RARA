@@ -3,7 +3,7 @@
 <def tag="form" for="EmapStandard">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="chapter, area, overview, language, findings, programs, status" param/>
+    <field-list fields="standard, chapter, area, language, findings, programs, status" param/>
     <div param="actions">
       <submit label="#{ht 'emap_standard.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>
