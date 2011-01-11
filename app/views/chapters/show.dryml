@@ -1,0 +1,8 @@
+<show-page>
+  <collection: replace>
+    <table-plus:areas fields="this, status">
+      <empty-message:>This Chapter has no criterion</empty-message:>
+    </table-plus>
+  </collection:>
+</show-page>
+

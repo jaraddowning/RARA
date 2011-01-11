@@ -10,7 +10,7 @@
         <ul>
           <li>This application is still in development phase.</li>
           <li>Please be patient while the development continues...</li>
-          <li>Expected delivery date is Friday 1/8/2011</li>
+          <li>Expected delivery date is Friday 1/14/2011</li>
         </ul>
 
         <% if User.count == 0 -%>

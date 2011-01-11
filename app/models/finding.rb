@@ -13,7 +13,7 @@ class Finding < ActiveRecord::Base
   belongs_to :area
   #has_many :standards, :through => :area
 
-  acts_as_list :scope => :area
+  #acts_as_list :scope => :area
 
   # --- Permissions --- #
 

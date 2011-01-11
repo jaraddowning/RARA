@@ -1,0 +1,7 @@
+<show-page>
+  <collection: replace>
+    <table-plus:findings fields="this, decision">
+      <empty-message:>No findings have been entered yet.</empty-message:>
+    </table-plus>
+  </collection:>
+</show-page>

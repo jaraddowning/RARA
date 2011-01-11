@@ -1,0 +1,7 @@
+<show-page>
+  <collection: replace>
+    <table-plus:chapters fields="number, this, areas.count">
+      <empty-message:>This Chapter has no sub-chapters</empty-message:>
+    </table-plus>
+  </collection:>
+</show-page>

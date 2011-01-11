@@ -6,7 +6,6 @@ Rara::Application.routes.draw do
 
 
   # Resource routes for controller "standards"
-  get 'standards(.:format)' => 'standards#index', :as => 'standards'
   get 'standards/new(.:format)', :as => 'new_standard'
   get 'standards/:id/edit(.:format)' => 'standards#edit', :as => 'edit_standard'
   get 'standards/:id(.:format)' => 'standards#show', :as => 'standard', :constraints => { :id => %r([^/.?]+) }
@@ -26,8 +25,8 @@ Rara::Application.routes.draw do
   put 'findings/:id(.:format)' => 'findings#update', :as => 'update_finding', :constraints => { :id => %r([^/.?]+) }
   delete 'findings/:id(.:format)' => 'findings#destroy', :as => 'destroy_finding', :constraints => { :id => %r([^/.?]+) }
 
-  # Reorder routes for controller "findings"
-  post 'findings/reorder(.:format)', :as => 'reorder_findings'
+  # Owner routes for controller "findings"
+  post 'areas/:area_id/findings(.:format)' => 'findings#create_for_area', :as => 'create_finding_for_area'
 
 
   # Resource routes for controller "programs"
@@ -72,7 +71,6 @@ Rara::Application.routes.draw do
 
 
   # Resource routes for controller "areas"
-  get 'areas(.:format)' => 'areas#index', :as => 'areas'
   get 'areas/new(.:format)', :as => 'new_area'
   get 'areas/:id/edit(.:format)' => 'areas#edit', :as => 'edit_area'
   get 'areas/:id(.:format)' => 'areas#show', :as => 'area', :constraints => { :id => %r([^/.?]+) }

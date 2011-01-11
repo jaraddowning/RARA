@@ -22,3 +22,29 @@ en:
 #    attribute_help:
 #      user:
 #        email_address: We will never share your address with third parties
+
+en:
+  activerecord:
+    models:
+      standard:
+        one: Review Criterion
+        other: Review Criteria
+      program:
+        one: Nation
+        other: Nations
+    attributes:
+      standard: 
+        name: Review Criteria
+      chapter:
+        number: Chapter
+        chapter: Title
+      finding:
+        recomendations: Recommendations
+    attribute_help:
+      standard:
+        name: Enter the basis of the criteria
+      finding:
+        rational: Enter the information that led to your decision, citing documentation.
+        observation: Enter any other information or details obtained via interviews and/or observations.
+        recomendations: Enter any recommendations  for the improvement of this area.
+        decision: Does the Nation satisfy the intent of the area? (check for yes)
