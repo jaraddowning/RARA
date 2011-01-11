@@ -1,15 +1,22 @@
-class StandardAssignment < ActiveRecord::Base
+class Standard < ActiveRecord::Base
 
   hobo_model # Don't put anything above this
 
   fields do
+    name :string
     timestamps
   end
 
-  belongs_to :program
-  belongs_to :standard
+  has_many :chapters, :dependent => :destroy
+  has_many :areas, :through => :chapters
 
+  has_many :standard_assignments, :dependent => :destroy
+  has_many :programs, :through => :standard_assignments
 
+  acts_as_list :scope => :program
+
+  children :chapters
+  
   # --- Permissions --- #
 
   def create_permitted?

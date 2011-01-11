@@ -9,9 +9,9 @@ class Program < ActiveRecord::Base
   end
 
   has_many :standard_assignments, :dependent => :destroy
-  has_many :emap_standards, :through => :standard_assignments, :accessible => true
-  has_many :medical_standards, :through => :standard_assignments, :accessible => true
-  has_many :military_standards, :through => :standard_assignments, :accessible => true
+  has_many :standards, :through => :standard_assignments, :accessible => true
+  
+  children :standards
 
   # --- Permissions --- #
 

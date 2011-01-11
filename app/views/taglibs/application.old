@@ -1,0 +1,128 @@
+<!-- Global taglib - these tags are shared across all subsites -->
+
+<include src="rapid" plugin="hobo"/>
+
+<include src="taglibs/auto/rapid/cards"/>
+<include src="taglibs/auto/rapid/pages"/>
+<include src="taglibs/auto/rapid/forms"/>
+
+<set-theme name="clean"/>
+
+<extend tag="page">
+  <old-page merge>
+    <footer:>
+      <a href="http://emaponline.org"><img src="/images/emap_logo.jpg"/></a>
+      <a href="http://cdham.org/"><img src="/images/danland_logo.png"/></a>
+      <a href="http://www.africom.mil/"><img src="/images/africom_crest.png"/></a>
+      <a href="&emap_users_url" if="&current_user.administrator?">
+        <t key="hobo.admin.subsite_name">Emap Admin</t>
+      </a>
+    </footer:>
+  </old-page>
+</extend>
+
+<!--
+<def tag="index-page" for="Program">
+  <page merge title="#{ht 'program.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page program" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          Nations
+          <!--<ht key="program.index.heading">
+            <model-name-human model="&model"/>
+          </ht>--><!--
+        </h2>
+
+        <p param="count" if>
+          <ht key="program.collection.count" count="&this.size">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="program.actions.new">New Program</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+<def tag="show-page" for="Program">
+  <page merge title="#{ht 'program.show.title', :default=>['Program'] }">
+
+    <body: class="show-page program" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="program.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
+                <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="program.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
+                Edit Program
+              </ht>
+            </a>
+            <view:description param="description"/>
+          </header>
+
+          <section param="content-body">
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="emap_standard.collection.heading" count="&this.emap_standards.count" >
+                  <human-collection-name collection="emap_standards" your/>
+                </ht>
+              </h3>
+
+              <collection:emap_standards param/>
+                <!--<collection: replace>
+                  <div>
+                    <table-plus:emap_standards fields="this"/>
+                  </div>
+                </collection:>--><!--
+            </section>
+          </section>
+
+          <section param="content-body">
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="medical_standard.collection.heading" count="&this.medical_standards.count" >
+                  <human-collection-name collection="medical_standards" your/>
+                </ht>
+              </h3>
+
+              <collection:medical_standards param/>
+            </section>
+          </section>
+
+          <section param="content-body">
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="military_standard.collection.heading" count="&this.military_standards.count" >
+                  <human-collection-name collection="military_standards" your/>
+                </ht>
+              </h3>
+
+              <collection:military_standards param/>
+            </section>
+          </section>
+    </content:>
+
+  </page>
+</def>-->

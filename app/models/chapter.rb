@@ -1,14 +1,21 @@
-class StandardAssignment < ActiveRecord::Base
+class Chapter < ActiveRecord::Base
 
   hobo_model # Don't put anything above this
 
   fields do
+    name     :markdown
+    number   :string
+    overview :markdown
     timestamps
   end
 
-  belongs_to :program
   belongs_to :standard
+  has_many :areas, :dependent => :destroy
+  #has_many :findings, :through => :areas, :accessible => true
 
+  #acts_as_list :scope => :standard
+
+  children :areas
 
   # --- Permissions --- #
 

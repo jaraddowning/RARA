@@ -10,16 +10,10 @@ class Finding < ActiveRecord::Base
     timestamps
   end
 
-  belongs_to :status, :class_name => "StdStatus"
+  belongs_to :area
+  #has_many :standards, :through => :area
 
-  has_many :standard_findings, :dependent => :destroy
-  has_many :emap_standards, :through => :standard_findings
-  has_many :medical_standards, :through => :standard_findings
-  has_many :military_standards, :through => :standard_findings
-
-  acts_as_list :scope => :emap_standard
-  acts_as_list :scope => :medical_standard
-  acts_as_list :scope => :military_standard
+  acts_as_list :scope => :area
 
   # --- Permissions --- #
 

@@ -1,13 +1,26 @@
 <!-- AUTOMATICALLY GENERATED FILE - DO NOT EDIT -->
 
-<def tag="card" for="EmapStandard">
-  <card class="emap-standard" param="default" merge>
+<def tag="card" for="Area">
+  <card class="area" param="default" merge>
     <header: param>
       <h4 param="heading"><name/></h4>
     </header:>
     <body: param>
       <ht key="finding.collection.count" count="&this.findings.size">
          <count:findings param/>
+      </ht>
+    </body:>
+  </card>
+</def>
+
+<def tag="card" for="Chapter">
+  <card class="chapter" param="default" merge>
+    <header: param>
+      <h4 param="heading"><name/></h4>
+    </header:>
+    <body: param>
+      <ht key="area.collection.count" count="&this.areas.size">
+         <count:areas param/>
       </ht>
     </body:>
   </card>
@@ -21,32 +34,6 @@
   </card>
 </def>
 
-<def tag="card" for="MedicalStandard">
-  <card class="medical-standard" param="default" merge>
-    <header: param>
-      <h4 param="heading"><name/></h4>
-    </header:>
-    <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
-    </body:>
-  </card>
-</def>
-
-<def tag="card" for="MilitaryStandard">
-  <card class="military-standard" param="default" merge>
-    <header: param>
-      <h4 param="heading"><name/></h4>
-    </header:>
-    <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
-    </body:>
-  </card>
-</def>
-
 <def tag="card" for="Program">
   <card class="program" param="default" merge>
     <header: param>
@@ -54,20 +41,28 @@
     </header:>
     <body: param>
       <view:description param="description"/>
+      <ht key="standard.collection.count" count="&this.standards.size">
+         <count:standards param/>
+      </ht>
+    </body:>
+  </card>
+</def>
+
+<def tag="card" for="Standard">
+  <card class="standard" param="default" merge>
+    <header: param>
+      <h4 param="heading"><name/></h4>
+    </header:>
+    <body: param>
+      <ht key="chapter.collection.count" count="&this.chapters.size">
+         <count:chapters param/>
+      </ht>
     </body:>
   </card>
 </def>
 
 <def tag="card" for="StandardAssignment">
   <card class="standard-assignment" param="default" merge>
-    <header: param>
-      <h4 param="heading"><name/></h4>
-    </header:>
-  </card>
-</def>
-
-<def tag="card" for="StandardFinding">
-  <card class="standard-finding" param="default" merge>
     <header: param>
       <h4 param="heading"><name/></h4>
     </header:>
