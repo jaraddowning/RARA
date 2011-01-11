@@ -13,7 +13,7 @@ class Standard < ActiveRecord::Base
   has_many :standard_assignments, :dependent => :destroy
   has_many :programs, :through => :standard_assignments
 
-  acts_as_list :scope => :program
+  #acts_as_list :scope => :program
 
   children :chapters
   

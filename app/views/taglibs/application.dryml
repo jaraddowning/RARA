@@ -5,6 +5,7 @@
 <include src="taglibs/auto/rapid/cards"/>
 <include src="taglibs/auto/rapid/pages"/>
 <include src="taglibs/auto/rapid/forms"/>
+<include src="paperclip" plugin="paperclip_with_hobo"/>
 
 <set-theme name="clean"/>
 
@@ -20,7 +21,6 @@
     </footer:>
   </old-page>
 </extend>
-
 
 <def tag="index-page" for="Program">
   <page merge title="#{ht 'program.index.title', :default=>[model.model_name.human(:count=>100)] }">
@@ -58,3 +58,9 @@
     </content:>
   </page>
 </def>
+
+<extend tag="form" for="Upload">
+  <old-form merge multipart>
+    <field-list: fields="proof"/>
+  </old-form>
+</extend>

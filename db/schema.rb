@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110111163434) do
+ActiveRecord::Schema.define(:version => 20110111203431) do
 
   create_table "areas", :force => true do |t|
     t.text     "standard"
@@ -85,6 +85,18 @@ ActiveRecord::Schema.define(:version => 20110111163434) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "uploads", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "proof_file_name"
+    t.string   "proof_content_type"
+    t.integer  "proof_file_size"
+    t.datetime "proof_updated_at"
+    t.integer  "area_id"
+  end
+
+  add_index "uploads", ["area_id"], :name => "index_uploads_on_area_id"
 
   create_table "users", :force => true do |t|
     t.string   "crypted_password",          :limit => 40

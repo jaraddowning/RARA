@@ -13,11 +13,12 @@ class Area < ActiveRecord::Base
 
   has_many :findings, :dependent => :destroy, :accessible => true
 
-  #has_many :uploads, :accessible => true, :dependent => :destroy
+  #has_many :area_uploads, :dependent => :destroy
+  has_many :uploads, :dependent => :destroy, :accessible => true
 
   acts_as_list :scope => :chapter
 
-  children :findings#, :uploads
+  children :findings, :uploads
 
   # --- Permissions --- #
 

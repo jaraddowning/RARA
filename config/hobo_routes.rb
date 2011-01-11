@@ -56,9 +56,6 @@ Rara::Application.routes.draw do
   put 'standards/:id(.:format)' => 'standards#update', :as => 'update_standard', :constraints => { :id => %r([^/.?]+) }
   delete 'standards/:id(.:format)' => 'standards#destroy', :as => 'destroy_standard', :constraints => { :id => %r([^/.?]+) }
 
-  # Reorder routes for controller "standards"
-  post 'standards/reorder(.:format)', :as => 'reorder_standards'
-
 
   # Resource routes for controller "chapters"
   get 'chapters/new(.:format)', :as => 'new_chapter'
@@ -67,6 +64,19 @@ Rara::Application.routes.draw do
   post 'chapters(.:format)' => 'chapters#create', :as => 'create_chapter'
   put 'chapters/:id(.:format)' => 'chapters#update', :as => 'update_chapter', :constraints => { :id => %r([^/.?]+) }
   delete 'chapters/:id(.:format)' => 'chapters#destroy', :as => 'destroy_chapter', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "uploads"
+  get 'uploads/new(.:format)', :as => 'new_upload'
+  get 'uploads/:id/edit(.:format)' => 'uploads#edit', :as => 'edit_upload'
+  get 'uploads/:id(.:format)' => 'uploads#show', :as => 'upload', :constraints => { :id => %r([^/.?]+) }
+  post 'uploads(.:format)' => 'uploads#create', :as => 'create_upload'
+  put 'uploads/:id(.:format)' => 'uploads#update', :as => 'update_upload', :constraints => { :id => %r([^/.?]+) }
+  delete 'uploads/:id(.:format)' => 'uploads#destroy', :as => 'destroy_upload', :constraints => { :id => %r([^/.?]+) }
+
+  # Owner routes for controller "uploads"
+  get 'areas/:area_id/uploads/new(.:format)' => 'uploads#new_for_area', :as => 'new_upload_for_area'
+  post 'areas/:area_id/uploads(.:format)' => 'uploads#create_for_area', :as => 'create_upload_for_area'
 
 
   # Lifecycle routes for controller "users"
