@@ -7,9 +7,7 @@ class StandardFinding < ActiveRecord::Base
   end
 
   belongs_to :finding
-  belongs_to :emap_standard
-  belongs_to :medical_standard
-  belongs_to :military_standard
+  belongs_to :standard
 
   # --- Permissions --- #
 

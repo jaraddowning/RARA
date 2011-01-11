@@ -60,24 +60,6 @@ Rara::Application.routes.draw do
   post 'standards/reorder(.:format)', :as => 'reorder_standards'
 
 
-  # Resource routes for controller "emap_standards"
-  get 'emap_standards/new(.:format)', :as => 'new_emap_standard'
-  get 'emap_standards/:id/edit(.:format)' => 'emap_standards#edit', :as => 'edit_emap_standard'
-  get 'emap_standards/:id(.:format)' => 'emap_standards#show', :as => 'emap_standard', :constraints => { :id => %r([^/.?]+) }
-  post 'emap_standards(.:format)' => 'emap_standards#create', :as => 'create_emap_standard'
-  put 'emap_standards/:id(.:format)' => 'emap_standards#update', :as => 'update_emap_standard', :constraints => { :id => %r([^/.?]+) }
-  delete 'emap_standards/:id(.:format)' => 'emap_standards#destroy', :as => 'destroy_emap_standard', :constraints => { :id => %r([^/.?]+) }
-
-
-  # Resource routes for controller "medical_standards"
-  get 'medical_standards/new(.:format)', :as => 'new_medical_standard'
-  get 'medical_standards/:id/edit(.:format)' => 'medical_standards#edit', :as => 'edit_medical_standard'
-  get 'medical_standards/:id(.:format)' => 'medical_standards#show', :as => 'medical_standard', :constraints => { :id => %r([^/.?]+) }
-  post 'medical_standards(.:format)' => 'medical_standards#create', :as => 'create_medical_standard'
-  put 'medical_standards/:id(.:format)' => 'medical_standards#update', :as => 'update_medical_standard', :constraints => { :id => %r([^/.?]+) }
-  delete 'medical_standards/:id(.:format)' => 'medical_standards#destroy', :as => 'destroy_medical_standard', :constraints => { :id => %r([^/.?]+) }
-
-
   # Resource routes for controller "chapters"
   get 'chapters/new(.:format)', :as => 'new_chapter'
   get 'chapters/:id/edit(.:format)' => 'chapters#edit', :as => 'edit_chapter'
@@ -85,15 +67,6 @@ Rara::Application.routes.draw do
   post 'chapters(.:format)' => 'chapters#create', :as => 'create_chapter'
   put 'chapters/:id(.:format)' => 'chapters#update', :as => 'update_chapter', :constraints => { :id => %r([^/.?]+) }
   delete 'chapters/:id(.:format)' => 'chapters#destroy', :as => 'destroy_chapter', :constraints => { :id => %r([^/.?]+) }
-
-
-  # Resource routes for controller "military_standards"
-  get 'military_standards/new(.:format)', :as => 'new_military_standard'
-  get 'military_standards/:id/edit(.:format)' => 'military_standards#edit', :as => 'edit_military_standard'
-  get 'military_standards/:id(.:format)' => 'military_standards#show', :as => 'military_standard', :constraints => { :id => %r([^/.?]+) }
-  post 'military_standards(.:format)' => 'military_standards#create', :as => 'create_military_standard'
-  put 'military_standards/:id(.:format)' => 'military_standards#update', :as => 'update_military_standard', :constraints => { :id => %r([^/.?]+) }
-  delete 'military_standards/:id(.:format)' => 'military_standards#destroy', :as => 'destroy_military_standard', :constraints => { :id => %r([^/.?]+) }
 
 
   # Lifecycle routes for controller "users"

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110111010959) do
+ActiveRecord::Schema.define(:version => 20110111163434) do
 
   create_table "areas", :force => true do |t|
     t.text     "standard"
@@ -63,6 +63,16 @@ ActiveRecord::Schema.define(:version => 20110111010959) do
 
   add_index "standard_assignments", ["program_id"], :name => "index_standard_assignments_on_program_id"
   add_index "standard_assignments", ["standard_id"], :name => "index_standard_assignments_on_standard_id"
+
+  create_table "standard_findings", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "finding_id"
+    t.integer  "standard_id"
+  end
+
+  add_index "standard_findings", ["finding_id"], :name => "index_standard_findings_on_finding_id"
+  add_index "standard_findings", ["standard_id"], :name => "index_standard_findings_on_standard_id"
 
   create_table "standards", :force => true do |t|
     t.string   "name"
