@@ -3,7 +3,7 @@
 <def tag="form" for="Area">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="standard, language, chapter, findings, status" param/>
+    <field-list fields="chapter, findings, status" param/>
     <div param="actions">
       <submit label="#{ht 'area.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>
@@ -15,9 +15,21 @@
 <def tag="form" for="Chapter">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="name, number, overview, standard" param/>
+    <field-list fields="standard" param/>
     <div param="actions">
       <submit label="#{ht 'chapter.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="EmapStandard">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="chapter, area, language, findings, programs, status" param/>
+    <div param="actions">
+      <submit label="#{ht 'emap_standard.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>
   </form>
 </def>
@@ -30,6 +42,30 @@
     <field-list fields="rational, observation, recomendations, decision, area" param/>
     <div param="actions">
       <submit label="#{ht 'finding.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="MedicalStandard">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="category, item, remarks, findings, programs, status" param/>
+    <div param="actions">
+      <submit label="#{ht 'medical_standard.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="MilitaryStandard">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="category, item, remarks, findings, programs, status" param/>
+    <div param="actions">
+      <submit label="#{ht 'military_standard.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>
   </form>
 </def>
@@ -51,7 +87,7 @@
 <def tag="form" for="Standard">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="name" param/>
+    <field-list fields="" param/>
     <div param="actions">
       <submit label="#{ht 'standard.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>

@@ -26,11 +26,50 @@
   </card>
 </def>
 
+<def tag="card" for="EmapStandard">
+  <card class="emap-standard" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
+  </card>
+</def>
+
 <def tag="card" for="Finding">
   <card class="finding" param="default" merge>
     <header: param>
       <h4 param="heading"><a><name/></a></h4>
     </header:>
+  </card>
+</def>
+
+<def tag="card" for="MedicalStandard">
+  <card class="medical-standard" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
+  </card>
+</def>
+
+<def tag="card" for="MilitaryStandard">
+  <card class="military-standard" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
   </card>
 </def>
 
@@ -62,6 +101,14 @@
 
 <def tag="card" for="StandardAssignment">
   <card class="standard-assignment" param="default" merge>
+    <header: param>
+      <h4 param="heading"><name/></h4>
+    </header:>
+  </card>
+</def>
+
+<def tag="card" for="StandardFinding">
+  <card class="standard-finding" param="default" merge>
     <header: param>
       <h4 param="heading"><name/></h4>
     </header:>
