@@ -7,7 +7,7 @@ class Finding < ActiveRecord::Base
     observation    :markdown
     recomendations :markdown
     decision       :boolean
-    reviewer       :text
+    #reviewer       :text, :name => true, :default => :your
     timestamps
   end
 
