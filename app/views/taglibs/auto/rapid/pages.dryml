@@ -126,14 +126,9 @@
         </section>
 
         <aside param>
-          <section param="uploads-collection-section">
-            <h3 param="uploads-collection-heading">
-              <ht key="upload.collection.heading" count="&this.uploads.count" >
-                <human-collection-name collection="uploads" your/>
-              </ht>
-            </h3>
-            <collection:uploads  param="uploads-collection"/>
-          </section>
+         <collection-preview:uploads.recent param="uploads-preview">
+           <heading-content:><human-collection-name with="&this.origin" collection="uploads" your/></heading-content:>
+         </collection-preview:uploads.recent>
         </aside>
       </section-group>
     </content:>
@@ -916,6 +911,49 @@
   </page>
 </def>
 
+<def tag="index-for-area-page" polymorphic/>
+<def tag="index-for-area-page" for="Upload">
+  <page merge title="#{ht 'upload.index_for_owner.title', :count=>100, :default=>['Uploads for']} #{name :with => @area, :no_wrapper => true}">
+    <body: class="index-for-owner-page area upload" param/>
+    <content: param>
+      <header param="content-header">
+        <div param="back-to">
+          <t key="hobo.actions.back">Back to</t> <a with="&@area"/>
+        </div>
+        <h2 param="heading" if="&@owner">
+          <ht key="upload.index_for_owner.heading" count="&@area.uploads.count">
+            <human-collection-name with="&@area" collection="uploads" your/>
+          </ht>
+        </h2>
+
+        <h3 param="subheading">
+          <ht key="upload.index_for_owner.subheading">
+            For:
+          </ht>
+          <a with="&@area"/>
+        </h3>
+        <p param="count" if>
+          <ht key="upload.collection.count" count="&this.size">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="upload.actions.new" >New Upload</ht>
+        </a>
+
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+      </section>
+    </content:>
+  </page>
+</def>
 
 
 <def tag="new-for-area-page" polymorphic/>

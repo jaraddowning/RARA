@@ -7,22 +7,25 @@ class Finding < ActiveRecord::Base
     observation    :markdown
     recomendations :markdown
     decision       :boolean
+    reviewer       :text
     timestamps
   end
 
   belongs_to :area
-  #has_many :standards, :through => :area
-
-  #acts_as_list :scope => :area
+  #has_many :children, :through => :areas
+  
+  #children :uploads
 
   # --- Permissions --- #
 
   def create_permitted?
-    acting_user.administrator?
+    #acting_user.administrator?
+    true
   end
 
   def update_permitted?
-    acting_user.administrator?
+    #acting_user.administrator?
+    true
   end
 
   def destroy_permitted?

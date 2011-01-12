@@ -77,6 +77,7 @@ Rara::Application.routes.draw do
   # Owner routes for controller "uploads"
   get 'areas/:area_id/uploads/new(.:format)' => 'uploads#new_for_area', :as => 'new_upload_for_area'
   post 'areas/:area_id/uploads(.:format)' => 'uploads#create_for_area', :as => 'create_upload_for_area'
+  get 'areas/:area_id/uploads(.:format)' => 'uploads#index_for_area', :as => 'uploads_for_area'
 
 
   # Lifecycle routes for controller "users"

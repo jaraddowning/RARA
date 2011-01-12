@@ -12,8 +12,6 @@ class Area < ActiveRecord::Base
   belongs_to :status, :class_name => "StdStatus"
 
   has_many :findings, :dependent => :destroy, :accessible => true
-
-  #has_many :area_uploads, :dependent => :destroy
   has_many :uploads, :dependent => :destroy, :accessible => true
 
   acts_as_list :scope => :chapter

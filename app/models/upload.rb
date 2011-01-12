@@ -9,8 +9,6 @@ class Upload < ActiveRecord::Base
   has_attached_file :proof
   
   belongs_to :area
-  #has_many :area_uploads, :dependent => :destroy
-  #has_many :areas, :through => :area_uploads
 
   # --- Permissions --- #
 
