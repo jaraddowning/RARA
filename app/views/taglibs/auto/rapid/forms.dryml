@@ -51,7 +51,7 @@
 <def tag="form" for="Standard">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="name" param/>
+    <field-list fields="name, program" param/>
     <div param="actions">
       <submit label="#{ht 'standard.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>

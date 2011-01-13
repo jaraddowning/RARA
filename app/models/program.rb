@@ -8,8 +8,7 @@ class Program < ActiveRecord::Base
     timestamps
   end
 
-  has_many :standard_assignments, :dependent => :destroy
-  has_many :standards, :through => :standard_assignments, :accessible => true
+  has_many :standards, :dependent => :destroy, :accessible => true
   
   children :standards
 

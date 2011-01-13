@@ -7,11 +7,10 @@ class Standard < ActiveRecord::Base
     timestamps
   end
 
+  belongs_to :program
+
   has_many :chapters, :dependent => :destroy
   has_many :areas, :through => :chapters
-
-  has_many :standard_assignments, :dependent => :destroy
-  has_many :programs, :through => :standard_assignments
 
   #acts_as_list :scope => :program
 

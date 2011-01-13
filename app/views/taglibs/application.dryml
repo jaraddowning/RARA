@@ -18,6 +18,12 @@
       <a href="&emap_users_url" if="&current_user.administrator?">
         <t key="hobo.admin.subsite_name">Emap Admin</t>
       </a>
+      <div>
+        <a href="privacy.html">Privacy and Security</a>
+      </div>
+      <div>
+        Copyright &#64; 2011 - EMAP  |
+      </div>
     </footer:>
   </old-page>
 </extend>

@@ -616,7 +616,7 @@
 
     <content: param>
           <header param="content-header">
-            <a:programs param="parent-link">&laquo; <ht key="standard.actions.back_to_parent" parent="Nation" name="&this">Back to <name/></ht></a:programs>
+            <a:program param="parent-link">&laquo; <ht key="standard.actions.back_to_parent" parent="Nation" name="&this">Back to <name/></ht></a:program>
             <h2 param="heading">
               <ht key="standard.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
                 <name/>

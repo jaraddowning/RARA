@@ -7,12 +7,11 @@ class Finding < ActiveRecord::Base
     observation    :markdown
     recomendations :markdown
     decision       :boolean
-    #reviewer       :text, :name => true, :default => :your
+    reviewer       :text, :name => true#, :default => :your
     timestamps
   end
 
   belongs_to :area
-  #has_many :children, :through => :areas
   
   #children :uploads
 
