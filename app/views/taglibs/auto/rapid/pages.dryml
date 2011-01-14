@@ -126,9 +126,14 @@
         </section>
 
         <aside param>
-         <collection-preview:uploads.recent param="uploads-preview">
-           <heading-content:><human-collection-name with="&this.origin" collection="uploads" your/></heading-content:>
-         </collection-preview:uploads.recent>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
         </aside>
       </section-group>
     </content:>
@@ -818,7 +823,7 @@
 
       <section param="content-body">
         <a action="new" to="&model" param="new-link">
-          <ht key="upload.actions.new">New Upload</ht>
+          <ht key="upload.actions.new">New Proof Document</ht>
         </a>
 
         <page-nav param="top-page-nav"/>
@@ -835,21 +840,21 @@
 
 
 <def tag="new-page" for="Upload">
-  <page merge title="#{ht 'upload.new.title', :default=>[' New Upload'] }">
+  <page merge title="#{ht 'upload.new.title', :default=>[' New Proof Document'] }">
     <body: class="new-page upload" param/>
 
     <content: param>
       <section param="content-header">
         <h2 param="heading">
           <ht key="upload.new.heading">
-            New Upload
+            New Proof Document
           </ht>
         </h2>
       </section>
 
       <section param="content-body">
         <form param>
-          <submit: label="#{ht 'upload.actions.create', :default=>['Create Upload']}"/>
+          <submit: label="#{ht 'upload.actions.create', :default=>['Create Proof Document']}"/>
         </form>
       </section>
     </content:>
@@ -858,7 +863,7 @@
 
 
 <def tag="show-page" for="Upload">
-  <page merge title="#{ht 'upload.show.title', :default=>['Upload'] }">
+  <page merge title="#{ht 'upload.show.title', :default=>['Proof Document'] }">
 
     <body: class="show-page upload" param/>
 
@@ -874,7 +879,7 @@
 
             <a action="edit" if="&can_edit?" param="edit-link">
               <ht key="upload.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
-                Edit Upload
+                Edit Proof Document
               </ht>
             </a>
           </header>
@@ -889,7 +894,7 @@
 
 
 <def tag="edit-page" for="Upload">
-  <page merge title="#{ht 'upload.edit.title', :default=>['Edit Upload'] }">
+  <page merge title="#{ht 'upload.edit.title', :default=>['Edit Proof Document'] }">
 
     <body: class="edit-page upload" param/>
 
@@ -897,10 +902,10 @@
       <section param="content-header">
         <h2 param="heading">
           <ht key="upload.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
-            Edit Upload
+            Edit Proof Document
           </ht>
         </h2>
-        <delete-button label="#{ht 'upload.actions.delete', :default=>['Remove This Upload']}" param/>
+        <delete-button label="#{ht 'upload.actions.delete', :default=>['Remove This Proof Document']}" param/>
       </section>
 
       <section param="content-body">
@@ -911,80 +916,8 @@
   </page>
 </def>
 
-<def tag="index-for-area-page" polymorphic/>
-<def tag="index-for-area-page" for="Upload">
-  <page merge title="#{ht 'upload.index_for_owner.title', :count=>100, :default=>['Uploads for']} #{name :with => @area, :no_wrapper => true}">
-    <body: class="index-for-owner-page area upload" param/>
-    <content: param>
-      <header param="content-header">
-        <div param="back-to">
-          <t key="hobo.actions.back">Back to</t> <a with="&@area"/>
-        </div>
-        <h2 param="heading" if="&@owner">
-          <ht key="upload.index_for_owner.heading" count="&@area.uploads.count">
-            <human-collection-name with="&@area" collection="uploads" your/>
-          </ht>
-        </h2>
-
-        <h3 param="subheading">
-          <ht key="upload.index_for_owner.subheading">
-            For:
-          </ht>
-          <a with="&@area"/>
-        </h3>
-        <p param="count" if>
-          <ht key="upload.collection.count" count="&this.size">
-            <count summary/>
-          </ht>
-        </p>
-      </header>
-
-      <section param="content-body">
-        <a action="new" to="&model" param="new-link">
-          <ht key="upload.actions.new" >New Upload</ht>
-        </a>
 
 
-        <page-nav param="top-page-nav"/>
-
-        <collection param/>
-
-        <page-nav param="bottom-page-nav"/>
-      </section>
-    </content:>
-  </page>
-</def>
-
-
-<def tag="new-for-area-page" polymorphic/>
-<def tag="new-for-area-page" for="Upload">
-  <page merge title="#{ht 'upload.new_for_owner.title', :default=>['New Upload for']} #{name :with => @area}">
-    <body: class="new-for-owner-page  upload" param/>
-
-    <content: param>
-      <header param="content-header">
-        <h2 param="heading">
-          <ht key="upload.new_for_owner.heading">
-            New Upload
-          </ht>
-        </h2>
-        <h3 param="subheading">
-          <ht key="upload.new_for_owner.subheading">
-            For:
-          </ht>
-          <a with="&@area"/>
-        </h3>
-      </header>
-
-      <section param="content-body">
-        <form owner="area" method="post" param>
-          <field-list: skip="area"/>
-          <submit: label="#{ht 'upload.actions.create', :default=>['Create Upload']}"/>
-        </form>
-      </section>
-    </content:>
-  </page>
-</def>
 
 
 

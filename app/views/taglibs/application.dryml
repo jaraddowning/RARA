@@ -65,8 +65,108 @@
   </page>
 </def>
 
-<extend tag="form" for="Upload">
-  <old-form merge multipart>
-    <field-list: fields="proof"/>
-  </old-form>
+<def tag="show-page" for="Area">
+  <page merge title="#{ht 'area.show.title', :default=>['Area'] }">
+
+    <body: class="show-page area" param/>
+
+    <content: param>
+      <section-group>
+        <section param="main-content">
+          <header param="content-header">
+            <a:chapter param="parent-link">&laquo; <ht key="area.actions.back_to_parent" parent="Chapter" name="&this">Back to <name/></ht></a:chapter>
+            <h2 param="heading">
+              <ht key="area.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
+                <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="area.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
+                Edit Area
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="language, status" param/>
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="finding.collection.heading" count="&this.findings.count" >
+                  <human-collection-name collection="findings" your/>
+                </ht>
+              </h3>
+
+              <collection:findings param/>
+
+              <section param="add-to-collection" if="&can_create?(@area.findings)">
+                <h3 param="add-form-heading">
+                  <ht key="finding.collection.add_form_heading" count="1">
+                    Add a Finding
+                  </ht>
+                </h3>
+                <form with="&@finding || new_for_current_user(@area.findings)" owner="area" without-cancel param>
+                  <field-list: skip="area"/>
+                  <submit: label="#{ht 'finding.actions.add', :default=>['Add'] }"/>
+                </form>
+              </section>
+            </section>
+          </section>
+        </section>
+
+        <aside param>
+          
+          <section param="collection-aside-section">
+              <h2 param="collection-aside-heading">
+                <ht key="upload.collection.heading" count="&this.uploads.count" >
+                  <human-collection-name collection="uploads" your/>
+                </ht>
+              </h2>
+            <collection-preview:uploads.recent param="uploads-preview">
+            <div>
+              <section param="add-to-collection-preview" if="&can_create?(@area.uploads)">
+                <h3 param="add-form-heading">
+                  <ht key="upload.collection.add_form_heading" count="1">
+                    Add a Proof Document
+                  </ht>
+                </h3>
+                <form with="&@upload || new_for_current_user(@area.uploads)" owner="area" without-cancel param>
+                  <field-list: skip="area"/>
+                  <submit: label="#{ht 'upload.actions.add', :default=>['Add'] }"/>
+                </form>
+              </section>
+            </div>
+           </collection-preview:uploads.recent>
+          </section>
+        </aside>
+      </section-group>
+    </content:>
+
+  </page>
+</def>
+
+<extend tag="form" for="Upload"> 
+  <old-form enctype="multipart/form-data" merge> 
+    <field-list: fields="title, proof" /> 
+  </old-form> 
+</extend> 
+<extend tag="card" for="Upload"> 
+  <card> 
+    <h5><a /></h5> 
+    <p> 
+      <a><img src="#{this.proof.url :thumbnail}" /></a>
+      <view:name /> 
+    </p>
+    <p>
+      <a href="#{this.proof.url(:original, false)}">Download File</a>
+    </p>
+    <p> 
+      Uploaded:<br /> 
+      <view:created_at format="%B %d, %Y" /> by <you:user />. 
+    </p> 
+    <delete-button class="actions" /> 
+  </card> 
 </extend>
+

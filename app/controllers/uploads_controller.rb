@@ -3,6 +3,7 @@ class UploadsController < ApplicationController
   hobo_model_controller
 
   auto_actions :all, :except => :index
-  auto_actions_for :area, [:new, :index]
+  #auto_actions_for :area, [:new, :create, :index]
+  auto_actions_for :area, :create
 
 end

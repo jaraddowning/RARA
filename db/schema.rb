@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110111203431) do
+ActiveRecord::Schema.define(:version => 20110114144046) do
 
   create_table "areas", :force => true do |t|
     t.text     "standard"
@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(:version => 20110111203431) do
     t.text     "observation"
     t.text     "recomendations"
     t.boolean  "decision"
+    t.string   "reviewer"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "area_id"
@@ -53,16 +54,6 @@ ActiveRecord::Schema.define(:version => 20110111203431) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "standard_assignments", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "program_id"
-    t.integer  "standard_id"
-  end
-
-  add_index "standard_assignments", ["program_id"], :name => "index_standard_assignments_on_program_id"
-  add_index "standard_assignments", ["standard_id"], :name => "index_standard_assignments_on_standard_id"
 
   create_table "standard_findings", :force => true do |t|
     t.datetime "created_at"
@@ -78,7 +69,10 @@ ActiveRecord::Schema.define(:version => 20110111203431) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "program_id"
   end
+
+  add_index "standards", ["program_id"], :name => "index_standards_on_program_id"
 
   create_table "std_statuses", :force => true do |t|
     t.string   "name"
@@ -94,6 +88,7 @@ ActiveRecord::Schema.define(:version => 20110111203431) do
     t.integer  "proof_file_size"
     t.datetime "proof_updated_at"
     t.integer  "area_id"
+    t.string   "title"
   end
 
   add_index "uploads", ["area_id"], :name => "index_uploads_on_area_id"

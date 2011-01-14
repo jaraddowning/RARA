@@ -32,6 +32,9 @@ en:
       program:
         one: Nation
         other: Nations
+      upload:
+        one: Proof Document
+        other: Proof Documents
     attributes:
       standard: 
         name: Review Criteria

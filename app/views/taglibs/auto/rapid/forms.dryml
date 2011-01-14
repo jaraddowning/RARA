@@ -27,7 +27,7 @@
 <def tag="form" for="Finding">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="rational, observation, recomendations, decision, area" param/>
+    <field-list fields="rational, observation, recomendations, decision, reviewer, area" param/>
     <div param="actions">
       <submit label="#{ht 'finding.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>
@@ -75,7 +75,7 @@
 <def tag="form" for="Upload">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="proof_file_name, proof_content_type, proof_file_size, proof_updated_at, area" param/>
+    <field-list fields="title, proof_file_name, proof_content_type, proof_file_size, proof_updated_at, area" param/>
     <div param="actions">
       <submit label="#{ht 'upload.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>

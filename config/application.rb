@@ -43,7 +43,7 @@ module Rara
     config.filter_parameters += [:password]
     
     # Configure system-wide application name
-    config.hobo.app_name = "R.A.R.A."
+    config.hobo.app_name = "The Remote African Review Application - R.A.R.A."
 
   end
 end
