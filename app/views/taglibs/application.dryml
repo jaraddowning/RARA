@@ -11,6 +11,16 @@
 
 <extend tag="page">
   <old-page merge>
+    <after-scripts:>
+      <javascript name="ckeditor/ckeditor"/>
+      <javascript name="load_ckeditor"/>
+    </after-scripts:>
+  </old-page>
+</extend>
+
+
+<extend tag="page">
+  <old-page merge>
     <footer:>
       <a href="http://emaponline.org"><img src="/images/emap_logo.jpg"/></a>
       <a href="http://cdham.org/"><img src="/images/danland_logo.png"/></a>
@@ -124,6 +134,7 @@
                   <human-collection-name collection="uploads" your/>
                 </ht>
               </h2>
+
             <collection-preview:uploads.recent param="uploads-preview">
             <div>
               <section param="add-to-collection-preview" if="&can_create?(@area.uploads)">

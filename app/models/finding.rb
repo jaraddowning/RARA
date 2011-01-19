@@ -3,9 +3,9 @@ class Finding < ActiveRecord::Base
   hobo_model # Don't put anything above this
 
   fields do
-    rational       :markdown
-    observation    :markdown
-    recomendations :markdown
+    rational       :html
+    observation    :html
+    recomendations :html
     decision       :boolean
     reviewer       :string, :name => true
     timestamps
