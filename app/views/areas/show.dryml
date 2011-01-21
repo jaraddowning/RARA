@@ -1,7 +1,7 @@
 <show-page>
   <field-list: tag="editor"/>
   <collection: replace>
-    <table-plus:findings fields="reviewer, decision">
+    <table-plus:findings fields="this, decision">
       <empty-message:>No findings have been entered yet.</empty-message:>
     </table-plus>
   </collection:>
