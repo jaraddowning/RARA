@@ -19,7 +19,7 @@ en:
       back_link: "Back"
       edit_link: "Edit %{model}"
       new_link: "New %{model}"
-      add_form_heading: "Add %{model}"
+      add_form_heading: "Save %{model}"
 
     edit:
       title: "Edit %{model}"
@@ -85,7 +85,7 @@ en:
       create: "Create %{model}"
       previous: "Previous"
       next: "Next"
-      add: "Add"
+      add: "Save"
       show_all: "Show all %{model}..."
       delete: "Delete %{model}"
       save: "Save %{model}"

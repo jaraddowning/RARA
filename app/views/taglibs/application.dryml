@@ -18,6 +18,10 @@
   </old-page>
 </extend>
 
+<extend tag="page">
+  <old-page merge without-live-search>
+  </old-page>
+</extend>
 
 <extend tag="page">
   <old-page merge>
