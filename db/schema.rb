@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110114144046) do
+ActiveRecord::Schema.define(:version => 20110126040714) do
 
   create_table "areas", :force => true do |t|
     t.text     "standard"
@@ -40,10 +40,10 @@ ActiveRecord::Schema.define(:version => 20110114144046) do
     t.text     "observation"
     t.text     "recomendations"
     t.boolean  "decision"
-    t.string   "reviewer"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "area_id"
+    t.string   "reviewer"
   end
 
   add_index "findings", ["area_id"], :name => "index_findings_on_area_id"

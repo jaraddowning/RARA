@@ -147,18 +147,25 @@
                     Add a Proof Document
                   </ht>
                 </h3>
-                <form with="&@upload || new_for_current_user(@area.uploads)" owner="area" without-cancel param>
+                <form with="&@upload || new_for_current_user(@area.uploads)" owner="area" without-cancel  reset-form refocus-form reload-page param>
                   <field-list: skip="area"/>
                   <submit: label="#{ht 'upload.actions.add', :default=>['Add'] }"/>
                 </form>
               </section>
             </div>
            </collection-preview:uploads.recent>
+           <div>
+             Please upload documents using the "Add Proof Documents" form and be sure to
+             give the upload a title. You may need to reload the page to view the new upload.
+           </div>
+           <div>
+             <collection-preview:uploads.recent param="uploads-preview"/>
+           </div>
           </section>
         </aside>
       </section-group>
     </content:>
-
+    
   </page>
 </def>
 
@@ -170,16 +177,16 @@
 <extend tag="card" for="Upload"> 
   <card> 
     <h5><a /></h5> 
-    <p> 
+    <p><!-- 
       <a><img src="#{this.proof.url :thumbnail}" /></a>
-      <view:name /> 
+      <view:name />--> 
     </p>
     <p>
       <a href="#{this.proof.url(:original, false)}">Download File</a>
     </p>
-    <p> 
+    <p><!-- 
       Uploaded:<br /> 
-      <view:created_at format="%B %d, %Y" /> by <you:user />. 
+      <view:created_at format="%B %d, %Y" /> by <you:user />. -->
     </p> 
     <delete-button class="actions" /> 
   </card> 
