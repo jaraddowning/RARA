@@ -9,7 +9,7 @@ class Area < ActiveRecord::Base
   end
 
   belongs_to :chapter
-  belongs_to :status, :class_name => "StdStatus"
+  #belongs_to :status, :class_name => "StdStatus"
 
   has_many :findings, :dependent => :destroy, :accessible => true
   has_many :uploads, :dependent => :destroy, :accessible => true

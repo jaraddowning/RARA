@@ -5,6 +5,6 @@ class FindingsController < ApplicationController
   auto_actions :all, :except => :index
   
   # An in-place editor within the Area show-page
-  auto_actions_for :area, :create
+  auto_actions_for :area, [:new, :create]
 
 end

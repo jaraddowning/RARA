@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.3'
+gem 'rails', '3.0.4'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -29,7 +29,9 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # group :development, :test do
 #   gem 'webrat'
 # end
-gem "hobo", ">= 1.3.0.pre25"
+gem "hobo", ">= 1.3.0.pre26"
 gem "acts_as_list"
 gem "paperclip"
 gem "bluecloth"
+gem "ruport"
+gem "acts_as_reportable"

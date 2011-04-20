@@ -31,6 +31,9 @@
     <header: param>
       <h4 param="heading"><name/></h4>
     </header:>
+    <body: param>
+      <a:previewer param="creator-link"/>
+    </body:>
   </card>
 </def>
 

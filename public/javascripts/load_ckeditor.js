@@ -14,20 +14,18 @@ makeEditor : function(elm) {
       HoboCKEditor.newEditor(elm);
     }
   },
-standardToolbarConfig: [ ['DocProps','-','Preview','-'],
-                    ['Cut','Copy','Paste','PasteText','PasteWord','-','Print','SpellCheck'],
-                    ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
-                    [],
-                    '/',
-                    ['Bold','Italic','Underline','StrikeThrough'],
-                    ['OrderedList','UnorderedList','-','Outdent','Indent','Blockquote'],
-                    ['JustifyLeft','JustifyCenter','JustifyRight','JustifyFull'],
-                    ['Link','Unlink'],
-                    ['Image','Rule','SpecialChar','PageBreak'],
-                    '/',
-                    ['Style','FontFormat','FontName','FontSize'],
-                    ['TextColor','BGColor'],
-                    ['FitWindow','ShowBlocks','-'] ]
+standardToolbarConfig: [ ['Save','Preview','-'],
+                        ['Cut','Copy','Paste','PasteText','PasteFromWord','-','Print', '-', 'SpellChecker', 'Scayt'],
+                        ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
+                        ['ImageButton','HorizontalRule','SpecialChar'],
+                        '/',
+                        ['Bold','Italic','Underline','Strike','-','Subscript','Superscript'],
+                        ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote','CreateDiv'],
+                        ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+                        ['BidiLtr', 'BidiRtl'],
+                        '/',
+                        ['Styles','Format','Font','FontSize'],
+                        ['TextColor','Maximize']]
   }
 
 Hobo.makeHtmlEditor = HoboCKEditor.makeEditor

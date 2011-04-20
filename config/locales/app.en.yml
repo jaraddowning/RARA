@@ -26,15 +26,18 @@ en:
 en:
   activerecord:
     models:
+      finding:
+        one: Finding
+        other: Finding
+      program:
+        one: Review
+        other: Review
       standard:
         one: Review Criterion
         other: Review Criteria
-      program:
-        one: Nation
-        other: Nations
       upload:
         one: Proof Document
-        other: Proof Documents
+        other: Proof Document
     attributes:
       standard: 
         name: Review Criteria
@@ -43,6 +46,11 @@ en:
         chapter: Title
       finding:
         recomendations: Recommendations
+        concur: Second Read Agrees
+        sec_obs: Second Read Finding
+        previewer: Primary Reviewer
+        sreviewer: Secondary Reviewer
+        lifecycle_state: Read Completed
     attribute_help:
       standard:
         name: Enter the basis of the criteria
@@ -51,4 +59,7 @@ en:
         observation: Enter any other information or details obtained via interviews and/or observations.
         recomendations: Enter any recommendations  for the improvement of this area.
         decision: Does the Nation satisfy the intent of the area? (check for yes)
-        reviewer: Please enter your name here.
+        previewer: Please select your name from the list.
+        sreviewer: Please select your name from the list.
+        concur: Do you agree with the primary reviewer? (check for yes)
+        sec_obs: Any further observations or findings you may wish to add.

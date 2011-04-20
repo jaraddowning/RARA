@@ -3,7 +3,7 @@
 <def tag="form" for="Area">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="standard, language, chapter, findings, status, uploads" param/>
+    <field-list fields="standard, language, chapter, findings, uploads" param/>
     <div param="actions">
       <submit label="#{ht 'area.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>
@@ -27,14 +27,46 @@
 <def tag="form" for="Finding">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="rational, observation, recomendations, decision, reviewer, area" param/>
+    <field-list fields="pfinding, rational, observation, recomendations, decision, concur, sec_obs, mark_complete, lifecycle_state, area, previewer, sreviewer" param/>
     <div param="actions">
       <submit label="#{ht 'finding.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>
   </form>
 </def>
 
+<def tag="primary-read-form" polymorphic/>
+<def tag="primary-read-form" for="Finding">
+  <form lifecycle="primary_read" merge param="default">
+    <error-messages param/>
+    <field-list fields="rational, observation, recomendations, decision" param/>
+    <div param="actions">
+      <submit label="#{ht 'finding.actions.primary_read', :default=>['Primary Read']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
 
+<def tag="second-read-form" polymorphic/>
+<def tag="second-read-form" for="Finding">
+  <form lifecycle="second_read" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="concur, sec_obs, sreviewer" param/>
+    <div param="actions">
+      <submit label="#{ht 'finding.actions.second_read', :default=>['Second Read']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+<def tag="completion-form" polymorphic/>
+<def tag="completion-form" for="Finding">
+  <form lifecycle="completion" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="mark_complete" param/>
+    <div param="actions">
+      <submit label="#{ht 'finding.actions.completion', :default=>['Completion']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
 
 <def tag="form" for="Program">
   <form merge param="default">

@@ -10,21 +10,11 @@
 <set-theme name="clean"/>
 
 <extend tag="page">
-  <old-page merge>
+  <old-page merge without-live-search>
     <after-scripts:>
       <javascript name="ckeditor/ckeditor"/>
       <javascript name="load_ckeditor"/>
     </after-scripts:>
-  </old-page>
-</extend>
-
-<extend tag="page">
-  <old-page merge without-live-search>
-  </old-page>
-</extend>
-
-<extend tag="page">
-  <old-page merge>
     <footer:>
       <a href="http://emaponline.org"><img src="/images/emap_logo.jpg"/></a>
       <a href="http://cdham.org/"><img src="/images/danland_logo.png"/></a>
@@ -33,7 +23,7 @@
         <t key="hobo.admin.subsite_name">Emap Admin</t>
       </a>
       <div>
-        <a href="privacy.html">Privacy and Security</a>
+        <a href="/emap/privacy.html">Privacy and Security</a>
       </div>
       <div>
         Copyright &#64; 2011 - EMAP  |
@@ -41,6 +31,7 @@
     </footer:>
   </old-page>
 </extend>
+
 
 <def tag="index-page" for="Program">
   <page merge title="#{ht 'program.index.title', :default=>[model.model_name.human(:count=>100)] }">
@@ -54,12 +45,6 @@
             <model-name-human model="&model"/>
           </ht>-->
         </h2>
-
-        <p param="count" if>
-          <ht key="program.collection.count" count="&this.size">
-            <count summary/>
-          </ht>
-        </p>
       </header>
 
       <section param="content-body">
@@ -79,6 +64,77 @@
   </page>
 </def>
 
+<def tag="form" for="Finding">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="rational, observation, recomendations, decision, previewer" param/>
+    <div param="actions">
+      <submit label="#{ht 'finding.actions.save', :default=>['Submit']}" param/>
+    </div>
+    <after-submit go-back />
+  </form>
+</def>
+
+<def tag="second-read-form" polymorphic/>
+<def tag="second-read-form" for="Finding">
+  <form lifecycle="second_read" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="concur, sec_obs, sreviewer" param/>
+    <div param="actions">
+      <submit label="#{ht 'finding.actions.second_read', :default=>['Save Second Read']}" param/>
+    </div>
+  </form>
+
+</def>
+<def tag="completion-form" polymorphic/>
+<def tag="completion-form" for="Finding">
+  <form lifecycle="completion" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="mark_complete" param/>
+    <div param="actions">
+      <submit label="#{ht 'finding.actions.completion', :default=>['Complete Area Review']}" param/>
+    </div>
+  </form>
+</def>
+
+<!--<extend tag="form" for="Upload"> 
+  <old-form enctype="multipart/form-data" merge> 
+    <field-list: fields="title, proof" />
+  </old-form>
+</extend>-->
+
+<def tag="form" for="Upload">
+  <form enctype="multipart/form-data" merge>
+    <error-messages param/>
+    <after-submit uri="#{url_for(this_parent)}" />
+    <field-list fields="title, proof" />
+    <div param="actions">
+      <submit label="#{ht 'upload.actions.save', :default=>['Save']}" />
+    </div>
+  </form>
+</def>
+
+<extend tag="card" for="Upload"> 
+  <card> 
+    <br /><h5><name /></h5> 
+    <!--<p>
+      <a><img src="#{this.proof.url :thumbnail}" /></a>
+      <view:name />
+    </p>-->
+    <p>
+      <a href="#{this.proof.url(:original, false)}" target="_blank">Download File</a>
+    </p>
+    <!--<p>
+      Uploaded:<br /> 
+      <view:created_at format="%B %d, %Y" />
+    </p>--> 
+    <delete-button class="actions" /> 
+  </card> 
+</extend>
+
+
 <def tag="show-page" for="Area">
   <page merge title="#{ht 'area.show.title', :default=>['Area'] }">
 
@@ -97,15 +153,10 @@
 
             <record-flags fields="" param/>
 
-            <a action="edit" if="&can_edit?" param="edit-link">
-              <ht key="area.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
-                Edit Area
-              </ht>
-            </a>
           </header>
 
           <section param="content-body">
-            <field-list fields="language, status" param/>
+            <field-list fields="language" param/>
             <section param="collection-section">
               <h3 param="collection-heading">
                 <ht key="finding.collection.heading" count="&this.findings.count" >
@@ -115,80 +166,115 @@
 
               <collection:findings param/>
 
-              <section param="add-to-collection" if="&can_create?(@area.findings)">
-                <h3 param="add-form-heading">
-                  <ht key="finding.collection.add_form_heading" count="1">
-                    Add a Finding
-                  </ht>
-                </h3>
-                <form with="&@finding || new_for_current_user(@area.findings)" owner="area" without-cancel param>
-                  <field-list: skip="area"/>
-                  <submit: label="#{ht 'finding.actions.add', :default=>['Add'] }"/>
-                </form>
-              </section>
+              <a:findings action="new" if="&can_create?(@area.findings)" param="new-link">
+                <ht key="finding.actions.new" count="1">
+                  Create Finding
+                </ht>
+              </a:findings>
+              <h4>Please create one finding only.</h4>
             </section>
           </section>
         </section>
 
         <aside param>
-          
-          <section param="collection-aside-section">
-              <h2 param="collection-aside-heading">
-                <ht key="upload.collection.heading" count="&this.uploads.count" >
-                  <human-collection-name collection="uploads" your/>
-                </ht>
-              </h2>
-
-            <collection-preview:uploads.recent param="uploads-preview">
-            <div>
-              <section param="add-to-collection-preview" if="&can_create?(@area.uploads)">
-                <h3 param="add-form-heading">
-                  <ht key="upload.collection.add_form_heading" count="1">
-                    Add a Proof Document
-                  </ht>
-                </h3>
-                <form with="&@upload || new_for_current_user(@area.uploads)" owner="area" without-cancel  reset-form refocus-form reload-page param>
-                  <field-list: skip="area"/>
-                  <submit: label="#{ht 'upload.actions.add', :default=>['Add'] }"/>
-                </form>
-              </section>
-            </div>
-           </collection-preview:uploads.recent>
-           <div>
-             Please upload documents using the "Add Proof Documents" form and be sure to
-             give the upload a title. You may need to reload the page to view the new upload.
-           </div>
-           <div>
-             <collection-preview:uploads.recent param="uploads-preview"/>
-           </div>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <a:uploads action="new" if="&can_create?(@area.uploads)" param="new-link">
+              <ht key="upload.actions.new" count="1"></ht>
+            </a:uploads>
+            <collection:uploads  param="uploads-collection"/>
           </section>
         </aside>
       </section-group>
     </content:>
-    
+
   </page>
 </def>
 
-<extend tag="form" for="Upload"> 
-  <old-form enctype="multipart/form-data" merge> 
-    <field-list: fields="title, proof" /> 
-  </old-form> 
-</extend> 
-<extend tag="card" for="Upload"> 
-  <card> 
-    <h5><a /></h5> 
-    <p><!-- 
-      <a><img src="#{this.proof.url :thumbnail}" /></a>
-      <view:name />--> 
-    </p>
-    <p>
-      <a href="#{this.proof.url(:original, false)}">Download File</a>
-    </p>
-    <p><!-- 
-      Uploaded:<br /> 
-      <view:created_at format="%B %d, %Y" /> by <you:user />. -->
-    </p> 
-    <delete-button class="actions" /> 
-  </card> 
-</extend>
 
+<def tag="show-page" for="Finding">
+  <page merge title="#{ht 'finding.show.title', :default=>['Finding'] }">
+
+    <body: class="show-page finding" param/>
+
+    <content: param>
+          <header param="content-header">
+            <a:area param="parent-link">&laquo; <ht key="finding.actions.back_to_parent" parent="Area" name="&this">Back to <name/></ht></a:area>
+            <h2 param="heading">
+              <ht key="finding.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
+                <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="decision, concur, mark_complete" param/>
+
+            <a:previewer param="creator-link"/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="finding.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
+                Edit Finding
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="rational, observation, recomendations, decision, sec_obs" param/>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="second-read-page" polymorphic/>
+<def tag="second-read-page" for="Finding">
+  <page title="#{ht 'finding.second_read.title', :default=>['Second Read for']} #{name :with => @area}">
+
+    <body: class="lifecycle-transition-page second-read-page" param/>
+    <content: param>
+          <header param="content-header">
+            <a:area param="parent-link">&laquo; <ht key="finding.actions.back_to_parent" parent="Area" name="&this">Back to <name/></ht></a:area>
+            <h2 param="heading">
+              <ht key="finding.second_read.heading" name="&this.respond_to?(:name) ? this.name : ''">
+                Primary Finding
+              </ht>
+            </h2>
+
+          </header>
+
+          <section param="content-body">
+            <field-list fields="decision, rational, observation, recomendations, previewer" param/><br /><hr /><br />
+            <h2>Second Read</h2><br />
+            <second-read-form param="form"/>
+          </section>
+    </content:>
+  </page>
+</def>
+
+<def tag="completion-page" polymorphic/>
+<def tag="completion-page" for="Finding">
+  <page title="#{ht 'finding.completion.title', :default=>['Completion']}" merge>
+
+    <body: class="lifecycle-transition-page completion-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <a:area param="parent-link">&laquo; <ht key="finding.actions.back_to_parent" parent="Area" name="&this">Back to <name/></ht></a:area>
+        <h2 param="heading">
+          <ht key="finding.completion.heading">
+            Completion
+          </ht>
+        </h2>
+      </header>
+
+      <section param="content-body">
+        <completion-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>

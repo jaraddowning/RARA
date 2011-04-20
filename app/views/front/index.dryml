@@ -6,9 +6,15 @@
     <header class="content-header">
       <h1>Welcome to <app-name/></h1>
       <section class="welcome-message">
-        <h3>This is the test site for the Remote African Review Application</h3>
+        <h3>Ghana Review - Remote African Review Application</h3><br />
         <ul>
-          <li>This application is still in development phase.</li>
+          <h2>Country Information</h2>
+          <li>Be sure to visit the offical website for the government of Ghana - http://www.ghana.gov.gh</li>
+          <li><a href="ghana/countrytemplate_gh.html" target="_blank">CIA World Fact Book on Ghana.</a> (accessible without internet)</li><br /><hr /><br />
+          <h2>Application Information</h2>
+          <li><a href="/emap/raraguide.pdf" target="_blank">Download the User's Guide here.</a></li>
+          <li>This application is still primarily in development phase.</li>
+          <li>Please note any features requests or bugs so improvements can be made.</li>
           <li>Please be patient while the development continues...</li>
           <li>Please submit any bug reports or modification requests to Jarad Downing at <a href="mailto:jdowning@csg.org">jdowning@csg.org</a></li>
         </ul>

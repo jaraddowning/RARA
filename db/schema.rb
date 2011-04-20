@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110126040714) do
+ActiveRecord::Schema.define(:version => 20110419162150) do
 
   create_table "areas", :force => true do |t|
     t.text     "standard"
@@ -18,11 +18,9 @@ ActiveRecord::Schema.define(:version => 20110126040714) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "chapter_id"
-    t.integer  "status_id"
   end
 
   add_index "areas", ["chapter_id"], :name => "index_areas_on_chapter_id"
-  add_index "areas", ["status_id"], :name => "index_areas_on_status_id"
 
   create_table "chapters", :force => true do |t|
     t.text     "name"
@@ -43,10 +41,20 @@ ActiveRecord::Schema.define(:version => 20110126040714) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "area_id"
-    t.string   "reviewer"
+    t.string   "pfinding",        :default => "Finding"
+    t.boolean  "concur"
+    t.text     "sec_obs"
+    t.integer  "previewer_id"
+    t.integer  "sreviewer_id"
+    t.datetime "key_timestamp"
+    t.string   "lifecycle_state", :default => "primary"
+    t.boolean  "mark_complete"
   end
 
   add_index "findings", ["area_id"], :name => "index_findings_on_area_id"
+  add_index "findings", ["lifecycle_state"], :name => "index_findings_on_lifecycle_state"
+  add_index "findings", ["previewer_id"], :name => "index_findings_on_previewer_id"
+  add_index "findings", ["sreviewer_id"], :name => "index_findings_on_sreviewer_id"
 
   create_table "programs", :force => true do |t|
     t.string   "name"
@@ -81,6 +89,7 @@ ActiveRecord::Schema.define(:version => 20110126040714) do
   end
 
   create_table "uploads", :force => true do |t|
+    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "proof_file_name"
@@ -88,7 +97,6 @@ ActiveRecord::Schema.define(:version => 20110126040714) do
     t.integer  "proof_file_size"
     t.datetime "proof_updated_at"
     t.integer  "area_id"
-    t.string   "title"
   end
 
   add_index "uploads", ["area_id"], :name => "index_uploads_on_area_id"

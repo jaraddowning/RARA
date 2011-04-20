@@ -1,11 +1,6 @@
 <show-page>
   <collection: replace>
-    <table-plus:areas fields="this, language, status">
-      <prepend-header:>
-        <div class="filter">
-          Display by status: <filter-menu param-name="status" options="&StdStatus.all"/>
-        </div>
-      </prepend-header:>
+    <table-plus:areas fields="this, language">
       <empty-message:>No Chapters match your criteria</empty-message:>
     </table-plus>
   </collection:>

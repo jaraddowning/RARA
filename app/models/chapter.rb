@@ -11,9 +11,6 @@ class Chapter < ActiveRecord::Base
 
   belongs_to :standard
   has_many :areas, :dependent => :destroy
-  #has_many :findings, :through => :areas, :accessible => true
-
-  #acts_as_list :scope => :standard
 
   children :areas
 

@@ -3,17 +3,48 @@ class Finding < ActiveRecord::Base
   hobo_model # Don't put anything above this
 
   fields do
+    pfinding       :string, :default => "Finding", :name => true
     rational       :html
     observation    :html
     recomendations :html
     decision       :boolean
-    reviewer       :string, :name => true
+    concur         :boolean
+    sec_obs        :html
+    mark_complete  :boolean
+    #reviewer      :string, :name => true
     timestamps
   end
 
   belongs_to :area
-  
-  #children :uploads
+
+  belongs_to :previewer, :class_name => "User", :creator => true
+  belongs_to :sreviewer, :class_name => "User"
+
+  lifecycle :state_field => :lifecycle_state do
+
+    state :primary, :default => true
+    state :secondary
+    state :complete
+
+    create :primary_read, 
+           :params => [ :rational, :observation, :recomendations, :decision ],
+           :available_to => "User",
+           :user_becomes => :all do
+    end
+
+    transition :second_read,
+               {:primary => :secondary},
+               :params => [ :concur, :sec_obs, :sreviewer ],
+               :available_to => :all do
+    end
+
+    transition :completion,
+               {:secondary => :complete},
+               :params => [ :mark_complete ],
+               :available_to => :all do
+    end
+  end
+
 
   # --- Permissions --- #
 
