@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110615031522) do
+ActiveRecord::Schema.define(:version => 20110615123611) do
 
   create_table "areas", :force => true do |t|
     t.text     "standard"
@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(:version => 20110615031522) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "area_id"
-    t.string   "pfinding",        :default => "Finding"
+    t.string   "pfinding",        :default => "Primary Finding"
     t.boolean  "concur"
     t.text     "sec_obs"
     t.integer  "previewer_id"

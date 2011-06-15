@@ -83,6 +83,7 @@
       <section-group>
         <section param="main-content">
           <header param="content-header">
+            <a:chapter param="parent-link">&laquo; <ht key="area.actions.back_to_parent" parent="Chapter" name="&this">Back to <name/></ht></a:chapter>
             <h2 param="heading">
               <ht key="area.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
                 <name/>
@@ -99,7 +100,7 @@
           </header>
 
           <section param="content-body">
-            <field-list fields="language, position, chapter" param/>
+            <field-list fields="language, position" param/>
             <section param="collection-section">
               <h3 param="collection-heading">
                 <ht key="finding.collection.heading" count="&this.findings.count" >
@@ -231,6 +232,7 @@
 
     <content: param>
           <header param="content-header">
+            <a:standard param="parent-link">&laquo; <ht key="chapter.actions.back_to_parent" parent="Review Criterion" name="&this">Back to <name/></ht></a:standard>
             <h2 param="heading">
               <ht key="chapter.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
                 <name/>
@@ -247,7 +249,7 @@
           </header>
 
           <section param="content-body">
-            <field-list fields="name, overview, standard" param/>
+            <field-list fields="name, overview" param/>
             <section param="collection-section">
               <h3 param="collection-heading">
                 <ht key="area.collection.heading" count="&this.areas.count" >
