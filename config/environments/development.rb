@@ -35,8 +35,8 @@ Rara::Application.configure do
 
   ActionMailer::Base.perform_deliveries = true
   ActionMailer::Base.raise_delivery_errors = true
-  ActionMailer::Base.default_charset = "utf-8"
-  ActionMailer::Base.default_content_type = "text/html"
+  ActionMailer::Base.default :charset => "utf-8"
+  ActionMailer::Base.default :content_type => "text/html"
 
 end
 
