@@ -4,7 +4,7 @@ class Chapter < ActiveRecord::Base
 
   fields do
     name     :markdown
-    number   :string
+    number   :string, :name => true
     overview :markdown
     timestamps
   end

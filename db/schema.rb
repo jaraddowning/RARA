@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110419162150) do
+ActiveRecord::Schema.define(:version => 20110615031522) do
 
   create_table "areas", :force => true do |t|
     t.text     "standard"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(:version => 20110419162150) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "chapter_id"
+    t.integer  "position"
   end
 
   add_index "areas", ["chapter_id"], :name => "index_areas_on_chapter_id"

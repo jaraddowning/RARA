@@ -3,7 +3,7 @@ class Finding < ActiveRecord::Base
   hobo_model # Don't put anything above this
 
   fields do
-    pfinding       :string, :default => "Finding", :name => true
+    pfinding       :string, :default => "Primary Finding", :name => true
     rational       :html
     observation    :html
     recomendations :html

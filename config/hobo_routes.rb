@@ -5,16 +5,22 @@
 Rara::Application.routes.draw do
 
 
-  # Resource routes for controller "areas"
-  get 'areas/new(.:format)', :as => 'new_area'
-  get 'areas/:id/edit(.:format)' => 'areas#edit', :as => 'edit_area'
-  get 'areas/:id(.:format)' => 'areas#show', :as => 'area', :constraints => { :id => %r([^/.?]+) }
-  post 'areas(.:format)' => 'areas#create', :as => 'create_area'
-  put 'areas/:id(.:format)' => 'areas#update', :as => 'update_area', :constraints => { :id => %r([^/.?]+) }
-  delete 'areas/:id(.:format)' => 'areas#destroy', :as => 'destroy_area', :constraints => { :id => %r([^/.?]+) }
+  # Resource routes for controller "standards"
+  get 'standards/new(.:format)', :as => 'new_standard'
+  get 'standards/:id/edit(.:format)' => 'standards#edit', :as => 'edit_standard'
+  get 'standards/:id(.:format)' => 'standards#show', :as => 'standard', :constraints => { :id => %r([^/.?]+) }
+  post 'standards(.:format)' => 'standards#create', :as => 'create_standard'
+  put 'standards/:id(.:format)' => 'standards#update', :as => 'update_standard', :constraints => { :id => %r([^/.?]+) }
+  delete 'standards/:id(.:format)' => 'standards#destroy', :as => 'destroy_standard', :constraints => { :id => %r([^/.?]+) }
 
-  # Reorder routes for controller "areas"
-  post 'areas/reorder(.:format)', :as => 'reorder_areas'
+
+  # Resource routes for controller "std_statuses"
+  get 'std_statuses/new(.:format)', :as => 'new_std_status'
+  get 'std_statuses/:id/edit(.:format)' => 'std_statuses#edit', :as => 'edit_std_status'
+  get 'std_statuses/:id(.:format)' => 'std_statuses#show', :as => 'std_status', :constraints => { :id => %r([^/.?]+) }
+  post 'std_statuses(.:format)' => 'std_statuses#create', :as => 'create_std_status'
+  put 'std_statuses/:id(.:format)' => 'std_statuses#update', :as => 'update_std_status', :constraints => { :id => %r([^/.?]+) }
+  delete 'std_statuses/:id(.:format)' => 'std_statuses#destroy', :as => 'destroy_std_status', :constraints => { :id => %r([^/.?]+) }
 
 
   # Lifecycle routes for controller "findings"
@@ -60,34 +66,6 @@ Rara::Application.routes.draw do
   match 'forgot_password(.:format)' => 'users#forgot_password', :as => 'user_forgot_password'
 
 
-  # Resource routes for controller "programs"
-  get 'programs(.:format)' => 'programs#index', :as => 'programs'
-  get 'programs/new(.:format)', :as => 'new_program'
-  get 'programs/:id/edit(.:format)' => 'programs#edit', :as => 'edit_program'
-  get 'programs/:id(.:format)' => 'programs#show', :as => 'program', :constraints => { :id => %r([^/.?]+) }
-  post 'programs(.:format)' => 'programs#create', :as => 'create_program'
-  put 'programs/:id(.:format)' => 'programs#update', :as => 'update_program', :constraints => { :id => %r([^/.?]+) }
-  delete 'programs/:id(.:format)' => 'programs#destroy', :as => 'destroy_program', :constraints => { :id => %r([^/.?]+) }
-
-
-  # Resource routes for controller "standards"
-  get 'standards/new(.:format)', :as => 'new_standard'
-  get 'standards/:id/edit(.:format)' => 'standards#edit', :as => 'edit_standard'
-  get 'standards/:id(.:format)' => 'standards#show', :as => 'standard', :constraints => { :id => %r([^/.?]+) }
-  post 'standards(.:format)' => 'standards#create', :as => 'create_standard'
-  put 'standards/:id(.:format)' => 'standards#update', :as => 'update_standard', :constraints => { :id => %r([^/.?]+) }
-  delete 'standards/:id(.:format)' => 'standards#destroy', :as => 'destroy_standard', :constraints => { :id => %r([^/.?]+) }
-
-
-  # Resource routes for controller "std_statuses"
-  get 'std_statuses/new(.:format)', :as => 'new_std_status'
-  get 'std_statuses/:id/edit(.:format)' => 'std_statuses#edit', :as => 'edit_std_status'
-  get 'std_statuses/:id(.:format)' => 'std_statuses#show', :as => 'std_status', :constraints => { :id => %r([^/.?]+) }
-  post 'std_statuses(.:format)' => 'std_statuses#create', :as => 'create_std_status'
-  put 'std_statuses/:id(.:format)' => 'std_statuses#update', :as => 'update_std_status', :constraints => { :id => %r([^/.?]+) }
-  delete 'std_statuses/:id(.:format)' => 'std_statuses#destroy', :as => 'destroy_std_status', :constraints => { :id => %r([^/.?]+) }
-
-
   # Resource routes for controller "uploads"
   get 'uploads/new(.:format)', :as => 'new_upload'
   get 'uploads/:id/edit(.:format)' => 'uploads#edit', :as => 'edit_upload'
@@ -99,6 +77,28 @@ Rara::Application.routes.draw do
   # Owner routes for controller "uploads"
   get 'areas/:area_id/uploads/new(.:format)' => 'uploads#new_for_area', :as => 'new_upload_for_area'
   post 'areas/:area_id/uploads(.:format)' => 'uploads#create_for_area', :as => 'create_upload_for_area'
+
+
+  # Resource routes for controller "programs"
+  get 'programs(.:format)' => 'programs#index', :as => 'programs'
+  get 'programs/new(.:format)', :as => 'new_program'
+  get 'programs/:id/edit(.:format)' => 'programs#edit', :as => 'edit_program'
+  get 'programs/:id(.:format)' => 'programs#show', :as => 'program', :constraints => { :id => %r([^/.?]+) }
+  post 'programs(.:format)' => 'programs#create', :as => 'create_program'
+  put 'programs/:id(.:format)' => 'programs#update', :as => 'update_program', :constraints => { :id => %r([^/.?]+) }
+  delete 'programs/:id(.:format)' => 'programs#destroy', :as => 'destroy_program', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "areas"
+  get 'areas/new(.:format)', :as => 'new_area'
+  get 'areas/:id/edit(.:format)' => 'areas#edit', :as => 'edit_area'
+  get 'areas/:id(.:format)' => 'areas#show', :as => 'area', :constraints => { :id => %r([^/.?]+) }
+  post 'areas(.:format)' => 'areas#create', :as => 'create_area'
+  put 'areas/:id(.:format)' => 'areas#update', :as => 'update_area', :constraints => { :id => %r([^/.?]+) }
+  delete 'areas/:id(.:format)' => 'areas#destroy', :as => 'destroy_area', :constraints => { :id => %r([^/.?]+) }
+
+  # Reorder routes for controller "areas"
+  post 'areas/reorder(.:format)', :as => 'reorder_areas'
 
 
   # Resource routes for controller "chapters"

@@ -27,7 +27,7 @@
         </h2>
 
         <p param="count" if>
-          <ht key="area.collection.count" count="&this.size">
+          <ht key="area.collection.count" count="&collection_count">
             <count summary/>
           </ht>
         </p>
@@ -83,7 +83,6 @@
       <section-group>
         <section param="main-content">
           <header param="content-header">
-            <a:chapter param="parent-link">&laquo; <ht key="area.actions.back_to_parent" parent="Chapter" name="&this">Back to <name/></ht></a:chapter>
             <h2 param="heading">
               <ht key="area.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
                 <name/>
@@ -100,7 +99,7 @@
           </header>
 
           <section param="content-body">
-            <field-list fields="language" param/>
+            <field-list fields="language, position, chapter" param/>
             <section param="collection-section">
               <h3 param="collection-heading">
                 <ht key="finding.collection.heading" count="&this.findings.count" >
@@ -178,7 +177,7 @@
         </h2>
 
         <p param="count" if>
-          <ht key="chapter.collection.count" count="&this.size">
+          <ht key="chapter.collection.count" count="&collection_count">
             <count summary/>
           </ht>
         </p>
@@ -232,7 +231,6 @@
 
     <content: param>
           <header param="content-header">
-            <a:standard param="parent-link">&laquo; <ht key="chapter.actions.back_to_parent" parent="Standard" name="&this">Back to <name/></ht></a:standard>
             <h2 param="heading">
               <ht key="chapter.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
                 <name/>
@@ -249,7 +247,7 @@
           </header>
 
           <section param="content-body">
-            <field-list fields="number, overview" param/>
+            <field-list fields="name, overview, standard" param/>
             <section param="collection-section">
               <h3 param="collection-heading">
                 <ht key="area.collection.heading" count="&this.areas.count" >
@@ -308,7 +306,7 @@
         </h2>
 
         <p param="count" if>
-          <ht key="finding.collection.count" count="&this.size">
+          <ht key="finding.collection.count" count="&collection_count">
             <count summary/>
           </ht>
         </p>
@@ -532,7 +530,7 @@
         </h2>
 
         <p param="count" if>
-          <ht key="program.collection.count" count="&this.size">
+          <ht key="program.collection.count" count="&collection_count">
             <count summary/>
           </ht>
         </p>
@@ -540,7 +538,7 @@
 
       <section param="content-body">
         <a action="new" to="&model" param="new-link">
-          <ht key="program.actions.new">New Program</ht>
+          <ht key="program.actions.new">New Review</ht>
         </a>
 
         <page-nav param="top-page-nav"/>
@@ -557,21 +555,21 @@
 
 
 <def tag="new-page" for="Program">
-  <page merge title="#{ht 'program.new.title', :default=>[' New Program'] }">
+  <page merge title="#{ht 'program.new.title', :default=>[' New Review'] }">
     <body: class="new-page program" param/>
 
     <content: param>
       <section param="content-header">
         <h2 param="heading">
           <ht key="program.new.heading">
-            New Program
+            New Review
           </ht>
         </h2>
       </section>
 
       <section param="content-body">
         <form param>
-          <submit: label="#{ht 'program.actions.create', :default=>['Create Program']}"/>
+          <submit: label="#{ht 'program.actions.create', :default=>['Create Review']}"/>
         </form>
       </section>
     </content:>
@@ -580,7 +578,7 @@
 
 
 <def tag="show-page" for="Program">
-  <page merge title="#{ht 'program.show.title', :default=>['Program'] }">
+  <page merge title="#{ht 'program.show.title', :default=>['Review'] }">
 
     <body: class="show-page program" param/>
 
@@ -596,7 +594,7 @@
 
             <a action="edit" if="&can_edit?" param="edit-link">
               <ht key="program.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
-                Edit Program
+                Edit Review
               </ht>
             </a>
           </header>
@@ -620,7 +618,7 @@
 
 
 <def tag="edit-page" for="Program">
-  <page merge title="#{ht 'program.edit.title', :default=>['Edit Program'] }">
+  <page merge title="#{ht 'program.edit.title', :default=>['Edit Review'] }">
 
     <body: class="edit-page program" param/>
 
@@ -628,10 +626,10 @@
       <section param="content-header">
         <h2 param="heading">
           <ht key="program.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
-            Edit Program
+            Edit Review
           </ht>
         </h2>
-        <delete-button label="#{ht 'program.actions.delete', :default=>['Remove This Program']}" param/>
+        <delete-button label="#{ht 'program.actions.delete', :default=>['Remove This Review']}" param/>
       </section>
 
       <section param="content-body">
@@ -661,7 +659,7 @@
         </h2>
 
         <p param="count" if>
-          <ht key="standard.collection.count" count="&this.size">
+          <ht key="standard.collection.count" count="&collection_count">
             <count summary/>
           </ht>
         </p>
@@ -669,7 +667,7 @@
 
       <section param="content-body">
         <a action="new" to="&model" param="new-link">
-          <ht key="standard.actions.new">New Standard</ht>
+          <ht key="standard.actions.new">New Review Criterion</ht>
         </a>
 
         <page-nav param="top-page-nav"/>
@@ -686,21 +684,21 @@
 
 
 <def tag="new-page" for="Standard">
-  <page merge title="#{ht 'standard.new.title', :default=>[' New Standard'] }">
+  <page merge title="#{ht 'standard.new.title', :default=>[' New Review Criterion'] }">
     <body: class="new-page standard" param/>
 
     <content: param>
       <section param="content-header">
         <h2 param="heading">
           <ht key="standard.new.heading">
-            New Standard
+            New Review Criterion
           </ht>
         </h2>
       </section>
 
       <section param="content-body">
         <form param>
-          <submit: label="#{ht 'standard.actions.create', :default=>['Create Standard']}"/>
+          <submit: label="#{ht 'standard.actions.create', :default=>['Create Review Criterion']}"/>
         </form>
       </section>
     </content:>
@@ -709,13 +707,13 @@
 
 
 <def tag="show-page" for="Standard">
-  <page merge title="#{ht 'standard.show.title', :default=>['Standard'] }">
+  <page merge title="#{ht 'standard.show.title', :default=>['Review Criterion'] }">
 
     <body: class="show-page standard" param/>
 
     <content: param>
           <header param="content-header">
-            <a:program param="parent-link">&laquo; <ht key="standard.actions.back_to_parent" parent="Program" name="&this">Back to <name/></ht></a:program>
+            <a:program param="parent-link">&laquo; <ht key="standard.actions.back_to_parent" parent="Review" name="&this">Back to <name/></ht></a:program>
             <h2 param="heading">
               <ht key="standard.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
                 <name/>
@@ -726,7 +724,7 @@
 
             <a action="edit" if="&can_edit?" param="edit-link">
               <ht key="standard.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
-                Edit Standard
+                Edit Review Criterion
               </ht>
             </a>
           </header>
@@ -749,7 +747,7 @@
 
 
 <def tag="edit-page" for="Standard">
-  <page merge title="#{ht 'standard.edit.title', :default=>['Edit Standard'] }">
+  <page merge title="#{ht 'standard.edit.title', :default=>['Edit Review Criterion'] }">
 
     <body: class="edit-page standard" param/>
 
@@ -757,10 +755,10 @@
       <section param="content-header">
         <h2 param="heading">
           <ht key="standard.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
-            Edit Standard
+            Edit Review Criterion
           </ht>
         </h2>
-        <delete-button label="#{ht 'standard.actions.delete', :default=>['Remove This Standard']}" param/>
+        <delete-button label="#{ht 'standard.actions.delete', :default=>['Remove This Review Criterion']}" param/>
       </section>
 
       <section param="content-body">
@@ -790,7 +788,7 @@
         </h2>
 
         <p param="count" if>
-          <ht key="std_status.collection.count" count="&this.size">
+          <ht key="std_status.collection.count" count="&collection_count">
             <count summary/>
           </ht>
         </p>
@@ -909,7 +907,7 @@
         </h2>
 
         <p param="count" if>
-          <ht key="upload.collection.count" count="&this.size">
+          <ht key="upload.collection.count" count="&collection_count">
             <count summary/>
           </ht>
         </p>
@@ -917,7 +915,7 @@
 
       <section param="content-body">
         <a action="new" to="&model" param="new-link">
-          <ht key="upload.actions.new">New Upload</ht>
+          <ht key="upload.actions.new">New Proof Document</ht>
         </a>
 
         <page-nav param="top-page-nav"/>
@@ -934,21 +932,21 @@
 
 
 <def tag="new-page" for="Upload">
-  <page merge title="#{ht 'upload.new.title', :default=>[' New Upload'] }">
+  <page merge title="#{ht 'upload.new.title', :default=>[' New Proof Document'] }">
     <body: class="new-page upload" param/>
 
     <content: param>
       <section param="content-header">
         <h2 param="heading">
           <ht key="upload.new.heading">
-            New Upload
+            New Proof Document
           </ht>
         </h2>
       </section>
 
       <section param="content-body">
         <form param>
-          <submit: label="#{ht 'upload.actions.create', :default=>['Create Upload']}"/>
+          <submit: label="#{ht 'upload.actions.create', :default=>['Create Proof Document']}"/>
         </form>
       </section>
     </content:>
@@ -957,7 +955,7 @@
 
 
 <def tag="show-page" for="Upload">
-  <page merge title="#{ht 'upload.show.title', :default=>['Upload'] }">
+  <page merge title="#{ht 'upload.show.title', :default=>['Proof Document'] }">
 
     <body: class="show-page upload" param/>
 
@@ -973,7 +971,7 @@
 
             <a action="edit" if="&can_edit?" param="edit-link">
               <ht key="upload.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
-                Edit Upload
+                Edit Proof Document
               </ht>
             </a>
           </header>
@@ -988,7 +986,7 @@
 
 
 <def tag="edit-page" for="Upload">
-  <page merge title="#{ht 'upload.edit.title', :default=>['Edit Upload'] }">
+  <page merge title="#{ht 'upload.edit.title', :default=>['Edit Proof Document'] }">
 
     <body: class="edit-page upload" param/>
 
@@ -996,10 +994,10 @@
       <section param="content-header">
         <h2 param="heading">
           <ht key="upload.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
-            Edit Upload
+            Edit Proof Document
           </ht>
         </h2>
-        <delete-button label="#{ht 'upload.actions.delete', :default=>['Remove This Upload']}" param/>
+        <delete-button label="#{ht 'upload.actions.delete', :default=>['Remove This Proof Document']}" param/>
       </section>
 
       <section param="content-body">
@@ -1014,7 +1012,7 @@
 
 <def tag="new-for-area-page" polymorphic/>
 <def tag="new-for-area-page" for="Upload">
-  <page merge title="#{ht 'upload.new_for_owner.title', :default=>['New Upload for']} #{name :with => @area}">
+  <page merge title="#{ht 'upload.new_for_owner.title', :default=>['New Proof Document for']} #{name :with => @area}">
     <body: class="new-for-owner-page  upload" param/>
 
     <content: param>
@@ -1035,7 +1033,7 @@
       <section param="content-body">
         <form owner="area" method="post" param>
           <field-list: skip="area"/>
-          <submit: label="#{ht 'upload.actions.create', :default=>['Create Upload']}"/>
+          <submit: label="#{ht 'upload.actions.create', :default=>['Create Proof Document']}"/>
         </form>
       </section>
     </content:>
@@ -1061,7 +1059,7 @@
         </h2>
 
         <p param="count" if>
-          <ht key="user.collection.count" count="&this.size">
+          <ht key="user.collection.count" count="&collection_count">
             <count summary/>
           </ht>
         </p>
