@@ -5,16 +5,19 @@
 <include src="taglibs/auto/rapid/cards"/>
 <include src="taglibs/auto/rapid/pages"/>
 <include src="taglibs/auto/rapid/forms"/>
+<include gem="hobo-jquery" />
 <include src="paperclip" plugin="paperclip_with_hobo"/>
 
 <set-theme name="clean"/>
 
 <extend tag="page">
   <old-page merge without-live-search>
-    <after-scripts:>
+    <custom-scripts:>
+      <hjq-assets/>
+      <javascript name="jquery.form.js"/>
       <javascript name="ckeditor/ckeditor"/>
       <javascript name="load_ckeditor"/>
-    </after-scripts:>
+    </custom-scripts:>
     <footer:>
       <a href="http://emaponline.org"><img src="/images/emap_logo.jpg"/></a>
       <a href="http://cdham.org/"><img src="/images/danland_logo.png"/></a>
@@ -53,8 +56,8 @@
         </a>
 
         <page-nav param="top-page-nav"/>
-
-        <collection param/>
+        
+        <collection />
 
         <page-nav param="bottom-page-nav"/>
 
@@ -85,8 +88,8 @@
       <submit label="#{ht 'finding.actions.second_read', :default=>['Save Second Read']}" param/>
     </div>
   </form>
-
 </def>
+
 <def tag="completion-form" polymorphic/>
 <def tag="completion-form" for="Finding">
   <form lifecycle="completion" merge param="default">
@@ -135,65 +138,6 @@
 </extend>
 
 
-<def tag="show-page" for="Area">
-  <page merge title="#{ht 'area.show.title', :default=>['Area'] }">
-
-    <body: class="show-page area" param/>
-
-    <content: param>
-      <section-group>
-        <section param="main-content">
-          <header param="content-header">
-            <a:chapter param="parent-link">&laquo; <ht key="area.actions.back_to_parent" parent="Chapter" name="&this">Back to <name/></ht></a:chapter>
-            <h2 param="heading">
-              <ht key="area.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
-                <name/>
-              </ht>
-            </h2>
-
-            <record-flags fields="" param/>
-
-          </header>
-
-          <section param="content-body">
-            <field-list fields="language" param/>
-            <section param="collection-section">
-              <h3 param="collection-heading">
-                <ht key="finding.collection.heading" count="&this.findings.count" >
-                  <human-collection-name collection="findings" your/>
-                </ht>
-              </h3>
-
-              <collection:findings param/>
-
-              <a:findings action="new" if="&can_create?(@area.findings)" param="new-link">
-                <ht key="finding.actions.new" count="1">
-                  Create Finding
-                </ht>
-              </a:findings>
-              <h4>Please create one finding only.</h4>
-            </section>
-          </section>
-        </section>
-
-        <aside param>
-          <section param="uploads-collection-section">
-            <h3 param="uploads-collection-heading">
-              <ht key="upload.collection.heading" count="&this.uploads.count" >
-                <human-collection-name collection="uploads" your/>
-              </ht>
-            </h3>
-            <a:uploads action="new" if="&can_create?(@area.uploads)" param="new-link">
-              <ht key="upload.actions.new" count="1"></ht>
-            </a:uploads>
-            <collection:uploads  param="uploads-collection"/>
-          </section>
-        </aside>
-      </section-group>
-    </content:>
-
-  </page>
-</def>
 
 
 <def tag="show-page" for="Finding">

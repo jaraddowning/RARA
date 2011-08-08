@@ -15,7 +15,7 @@ class Finding < ActiveRecord::Base
     timestamps
   end
 
-  belongs_to :area
+  belongs_to :program
 
   belongs_to :previewer, :class_name => "User", :creator => true
   belongs_to :sreviewer, :class_name => "User"

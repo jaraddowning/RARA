@@ -109,12 +109,6 @@
               </h3>
 
               <collection:findings param/>
-
-              <a:findings action="new" if="&can_create?(@area.findings)" param="new-link">
-                <ht key="finding.actions.new" count="1">
-                  New Finding
-                </ht>
-              </a:findings>
             </section>
           </section>
         </section>
@@ -232,7 +226,7 @@
 
     <content: param>
           <header param="content-header">
-            <a:standard param="parent-link">&laquo; <ht key="chapter.actions.back_to_parent" parent="Review Criterion" name="&this">Back to <name/></ht></a:standard>
+            <a:standard param="parent-link">&laquo; <ht key="chapter.actions.back_to_parent" parent="Standard" name="&this">Back to <name/></ht></a:standard>
             <h2 param="heading">
               <ht key="chapter.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
                 <name/>
@@ -362,7 +356,6 @@
 
     <content: param>
           <header param="content-header">
-            <a:area param="parent-link">&laquo; <ht key="finding.actions.back_to_parent" parent="Area" name="&this">Back to <name/></ht></a:area>
             <h2 param="heading">
               <ht key="finding.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
                 <name/>
@@ -381,7 +374,7 @@
           </header>
 
           <section param="content-body">
-            <field-list fields="rational, observation, recomendations, sec_obs, lifecycle_state, sreviewer" param/>
+            <field-list fields="rational, observation, recomendations, sec_obs, lifecycle_state, program, sreviewer" param/>
           </section>
     </content:>
 
@@ -414,9 +407,9 @@
 
 
 
-<def tag="new-for-area-page" polymorphic/>
-<def tag="new-for-area-page" for="Finding">
-  <page merge title="#{ht 'finding.new_for_owner.title', :default=>['New Finding for']} #{name :with => @area}">
+<def tag="new-for-program-page" polymorphic/>
+<def tag="new-for-program-page" for="Finding">
+  <page merge title="#{ht 'finding.new_for_owner.title', :default=>['New Finding for']} #{name :with => @program}">
     <body: class="new-for-owner-page  finding" param/>
 
     <content: param>
@@ -430,13 +423,13 @@
           <ht key="finding.new_for_owner.subheading">
             For:
           </ht>
-          <a with="&@area"/>
+          <a with="&@program"/>
         </h3>
       </header>
 
       <section param="content-body">
-        <form owner="area" method="post" param>
-          <field-list: skip="area"/>
+        <form owner="program" method="post" param>
+          <field-list: skip="program"/>
           <submit: label="#{ht 'finding.actions.create', :default=>['Create Finding']}"/>
         </form>
       </section>
@@ -540,7 +533,7 @@
 
       <section param="content-body">
         <a action="new" to="&model" param="new-link">
-          <ht key="program.actions.new">New Review</ht>
+          <ht key="program.actions.new">New Program</ht>
         </a>
 
         <page-nav param="top-page-nav"/>
@@ -557,21 +550,21 @@
 
 
 <def tag="new-page" for="Program">
-  <page merge title="#{ht 'program.new.title', :default=>[' New Review'] }">
+  <page merge title="#{ht 'program.new.title', :default=>[' New Program'] }">
     <body: class="new-page program" param/>
 
     <content: param>
       <section param="content-header">
         <h2 param="heading">
           <ht key="program.new.heading">
-            New Review
+            New Program
           </ht>
         </h2>
       </section>
 
       <section param="content-body">
         <form param>
-          <submit: label="#{ht 'program.actions.create', :default=>['Create Review']}"/>
+          <submit: label="#{ht 'program.actions.create', :default=>['Create Program']}"/>
         </form>
       </section>
     </content:>
@@ -580,7 +573,7 @@
 
 
 <def tag="show-page" for="Program">
-  <page merge title="#{ht 'program.show.title', :default=>['Review'] }">
+  <page merge title="#{ht 'program.show.title', :default=>['Program'] }">
 
     <body: class="show-page program" param/>
 
@@ -596,22 +589,13 @@
 
             <a action="edit" if="&can_edit?" param="edit-link">
               <ht key="program.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
-                Edit Review
+                Edit Program
               </ht>
             </a>
           </header>
 
           <section param="content-body">
             <view:description param="description"/>
-            <section param="collection-section">
-              <h3 param="collection-heading">
-                <ht key="standard.collection.heading" count="&this.standards.count" >
-                  <human-collection-name collection="standards" your/>
-                </ht>
-              </h3>
-
-              <collection:standards param/>
-            </section>
           </section>
     </content:>
 
@@ -620,7 +604,7 @@
 
 
 <def tag="edit-page" for="Program">
-  <page merge title="#{ht 'program.edit.title', :default=>['Edit Review'] }">
+  <page merge title="#{ht 'program.edit.title', :default=>['Edit Program'] }">
 
     <body: class="edit-page program" param/>
 
@@ -628,10 +612,10 @@
       <section param="content-header">
         <h2 param="heading">
           <ht key="program.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
-            Edit Review
+            Edit Program
           </ht>
         </h2>
-        <delete-button label="#{ht 'program.actions.delete', :default=>['Remove This Review']}" param/>
+        <delete-button label="#{ht 'program.actions.delete', :default=>['Remove This Program']}" param/>
       </section>
 
       <section param="content-body">
@@ -669,7 +653,7 @@
 
       <section param="content-body">
         <a action="new" to="&model" param="new-link">
-          <ht key="standard.actions.new">New Review Criterion</ht>
+          <ht key="standard.actions.new">New Standard</ht>
         </a>
 
         <page-nav param="top-page-nav"/>
@@ -686,21 +670,21 @@
 
 
 <def tag="new-page" for="Standard">
-  <page merge title="#{ht 'standard.new.title', :default=>[' New Review Criterion'] }">
+  <page merge title="#{ht 'standard.new.title', :default=>[' New Standard'] }">
     <body: class="new-page standard" param/>
 
     <content: param>
       <section param="content-header">
         <h2 param="heading">
           <ht key="standard.new.heading">
-            New Review Criterion
+            New Standard
           </ht>
         </h2>
       </section>
 
       <section param="content-body">
         <form param>
-          <submit: label="#{ht 'standard.actions.create', :default=>['Create Review Criterion']}"/>
+          <submit: label="#{ht 'standard.actions.create', :default=>['Create Standard']}"/>
         </form>
       </section>
     </content:>
@@ -709,13 +693,12 @@
 
 
 <def tag="show-page" for="Standard">
-  <page merge title="#{ht 'standard.show.title', :default=>['Review Criterion'] }">
+  <page merge title="#{ht 'standard.show.title', :default=>['Standard'] }">
 
     <body: class="show-page standard" param/>
 
     <content: param>
           <header param="content-header">
-            <a:program param="parent-link">&laquo; <ht key="standard.actions.back_to_parent" parent="Review" name="&this">Back to <name/></ht></a:program>
             <h2 param="heading">
               <ht key="standard.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
                 <name/>
@@ -726,12 +709,13 @@
 
             <a action="edit" if="&can_edit?" param="edit-link">
               <ht key="standard.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
-                Edit Review Criterion
+                Edit Standard
               </ht>
             </a>
           </header>
 
           <section param="content-body">
+            <field-list fields="program" param/>
             <section param="collection-section">
               <h3 param="collection-heading">
                 <ht key="chapter.collection.heading" count="&this.chapters.count" >
@@ -749,7 +733,7 @@
 
 
 <def tag="edit-page" for="Standard">
-  <page merge title="#{ht 'standard.edit.title', :default=>['Edit Review Criterion'] }">
+  <page merge title="#{ht 'standard.edit.title', :default=>['Edit Standard'] }">
 
     <body: class="edit-page standard" param/>
 
@@ -757,10 +741,10 @@
       <section param="content-header">
         <h2 param="heading">
           <ht key="standard.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
-            Edit Review Criterion
+            Edit Standard
           </ht>
         </h2>
-        <delete-button label="#{ht 'standard.actions.delete', :default=>['Remove This Review Criterion']}" param/>
+        <delete-button label="#{ht 'standard.actions.delete', :default=>['Remove This Standard']}" param/>
       </section>
 
       <section param="content-body">
@@ -917,7 +901,7 @@
 
       <section param="content-body">
         <a action="new" to="&model" param="new-link">
-          <ht key="upload.actions.new">New Proof Document</ht>
+          <ht key="upload.actions.new">New Upload</ht>
         </a>
 
         <page-nav param="top-page-nav"/>
@@ -934,21 +918,21 @@
 
 
 <def tag="new-page" for="Upload">
-  <page merge title="#{ht 'upload.new.title', :default=>[' New Proof Document'] }">
+  <page merge title="#{ht 'upload.new.title', :default=>[' New Upload'] }">
     <body: class="new-page upload" param/>
 
     <content: param>
       <section param="content-header">
         <h2 param="heading">
           <ht key="upload.new.heading">
-            New Proof Document
+            New Upload
           </ht>
         </h2>
       </section>
 
       <section param="content-body">
         <form param>
-          <submit: label="#{ht 'upload.actions.create', :default=>['Create Proof Document']}"/>
+          <submit: label="#{ht 'upload.actions.create', :default=>['Create Upload']}"/>
         </form>
       </section>
     </content:>
@@ -957,7 +941,7 @@
 
 
 <def tag="show-page" for="Upload">
-  <page merge title="#{ht 'upload.show.title', :default=>['Proof Document'] }">
+  <page merge title="#{ht 'upload.show.title', :default=>['Upload'] }">
 
     <body: class="show-page upload" param/>
 
@@ -973,7 +957,7 @@
 
             <a action="edit" if="&can_edit?" param="edit-link">
               <ht key="upload.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
-                Edit Proof Document
+                Edit Upload
               </ht>
             </a>
           </header>
@@ -988,7 +972,7 @@
 
 
 <def tag="edit-page" for="Upload">
-  <page merge title="#{ht 'upload.edit.title', :default=>['Edit Proof Document'] }">
+  <page merge title="#{ht 'upload.edit.title', :default=>['Edit Upload'] }">
 
     <body: class="edit-page upload" param/>
 
@@ -996,10 +980,10 @@
       <section param="content-header">
         <h2 param="heading">
           <ht key="upload.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
-            Edit Proof Document
+            Edit Upload
           </ht>
         </h2>
-        <delete-button label="#{ht 'upload.actions.delete', :default=>['Remove This Proof Document']}" param/>
+        <delete-button label="#{ht 'upload.actions.delete', :default=>['Remove This Upload']}" param/>
       </section>
 
       <section param="content-body">
@@ -1014,7 +998,7 @@
 
 <def tag="new-for-area-page" polymorphic/>
 <def tag="new-for-area-page" for="Upload">
-  <page merge title="#{ht 'upload.new_for_owner.title', :default=>['New Proof Document for']} #{name :with => @area}">
+  <page merge title="#{ht 'upload.new_for_owner.title', :default=>['New Upload for']} #{name :with => @area}">
     <body: class="new-for-owner-page  upload" param/>
 
     <content: param>
@@ -1035,7 +1019,7 @@
       <section param="content-body">
         <form owner="area" method="post" param>
           <field-list: skip="area"/>
-          <submit: label="#{ht 'upload.actions.create', :default=>['Create Proof Document']}"/>
+          <submit: label="#{ht 'upload.actions.create', :default=>['Create Upload']}"/>
         </form>
       </section>
     </content:>

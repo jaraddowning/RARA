@@ -8,9 +8,7 @@ class Program < ActiveRecord::Base
     timestamps
   end
 
-  has_many :standards, :dependent => :destroy, :accessible => true
-  
-  children :standards
+  has_many :findings, :dependent => :destroy, :accessible => true
 
   # --- Permissions --- #
 

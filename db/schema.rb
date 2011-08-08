@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110615123611) do
+ActiveRecord::Schema.define(:version => 20110808202714) do
 
   create_table "areas", :force => true do |t|
     t.text     "standard"
@@ -50,11 +50,12 @@ ActiveRecord::Schema.define(:version => 20110615123611) do
     t.datetime "key_timestamp"
     t.string   "lifecycle_state", :default => "primary"
     t.boolean  "mark_complete"
+    t.integer  "program_id"
   end
 
-  add_index "findings", ["area_id"], :name => "index_findings_on_area_id"
   add_index "findings", ["lifecycle_state"], :name => "index_findings_on_lifecycle_state"
   add_index "findings", ["previewer_id"], :name => "index_findings_on_previewer_id"
+  add_index "findings", ["program_id"], :name => "index_findings_on_program_id"
   add_index "findings", ["sreviewer_id"], :name => "index_findings_on_sreviewer_id"
 
   create_table "programs", :force => true do |t|

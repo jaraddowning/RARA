@@ -34,8 +34,8 @@ Rara::Application.routes.draw do
   delete 'findings/:id(.:format)' => 'findings#destroy', :as => 'destroy_finding', :constraints => { :id => %r([^/.?]+) }
 
   # Owner routes for controller "findings"
-  get 'areas/:area_id/findings/new(.:format)' => 'findings#new_for_area', :as => 'new_finding_for_area'
-  post 'areas/:area_id/findings(.:format)' => 'findings#create_for_area', :as => 'create_finding_for_area'
+  get 'programs/:program_id/findings/new(.:format)' => 'findings#new_for_program', :as => 'new_finding_for_program'
+  post 'programs/:program_id/findings(.:format)' => 'findings#create_for_program', :as => 'create_finding_for_program'
 
 
   # Lifecycle routes for controller "users"

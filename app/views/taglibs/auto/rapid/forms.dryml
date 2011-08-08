@@ -27,7 +27,7 @@
 <def tag="form" for="Finding">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="pfinding, rational, observation, recomendations, decision, concur, sec_obs, mark_complete, lifecycle_state, area, previewer, sreviewer" param/>
+    <field-list fields="pfinding, rational, observation, recomendations, decision, concur, sec_obs, mark_complete, lifecycle_state, previewer, program, sreviewer" param/>
     <div param="actions">
       <submit label="#{ht 'finding.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>
@@ -71,7 +71,7 @@
 <def tag="form" for="Program">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="name, description, standards" param/>
+    <field-list fields="name, description, findings" param/>
     <div param="actions">
       <submit label="#{ht 'program.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>

@@ -44,9 +44,6 @@
     </header:>
     <body: param>
       <view:description param="description"/>
-      <ht key="standard.collection.count" count="&this.standards.size">
-         <count:standards param/>
-      </ht>
     </body:>
   </card>
 </def>
