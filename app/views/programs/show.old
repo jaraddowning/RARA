@@ -1,0 +1,359 @@
+<show-page>
+  <collection: >
+
+    <!-- EMAP Section -->
+
+    <div class="msg_list">
+    <p class="msg_head"><i>Emergency Management Standard</i> by EMAP</p>
+      <div class="msg_body">
+        <p class="msg_head">Chapter 3 - Emergency Management Program</p>
+          <div class="msg_body">
+            <p class="msg_head">Standard 3.1 Program Administration, Plans and Evaluation</p>
+              <div class="msg_body">
+                <div><a>Standard 3.1.1<name/></a></div><hr />
+                <div><a>Standard 3.1.2<name/></a></div>
+              </div>
+            <p class="msg_head">Standard 3.2 Program Coordination</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 3.2.1</a></div><hr />
+                <div><a href="#">Standard 3.2.2</a></div>
+              </div>
+            <p class="msg_head">Standard 3.3 Advisory Committee</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 3.3.1</a></div><hr />
+                <div><a href="#">Standard 3.3.2</a></div>
+              </div>
+          </div>
+        <p class="msg_head">Chapter 4 - Emergency Management Program Elements</p>
+          <div class="msg_body">
+            <p class="msg_head">Standard 4.1 Administration and Finance</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 4.1.1</a></div><hr />
+                <div><a href="#">Standard 4.1.2</a></div>
+              </div>
+            <p class="msg_head">Standard 4.2 Laws and Authorities</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 4.2.1</a></div><hr />
+                <div><a href="#">Standard 4.2.2</a></div>
+              </div>
+            <p class="msg_head">Standard 4.3 Hazard Identification, Risk Assessment and Consequence Analysis</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 4.3.1</a></div><hr />
+                <div><a href="#">Standard 4.3.2</a></div>
+              </div>
+            <p class="msg_head">Standard 4.4 Hazard Mitigation</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 4.4.1</a></div><hr />
+                <div><a href="#">Standard 4.4.2</a></div><hr />
+                <div><a href="#">Standard 4.4.3</a></div><hr />
+                <div><a href="#">Standard 4.4.4</a></div><hr />
+                <div><a href="#">Standard 4.4.5</a></div>
+              </div>
+            <p class="msg_head">Standard 4.5 Prevention</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 4.5.1</a></div><hr />
+                <div><a href="#">Standard 4.5.2</a></div><hr />
+                <div><a href="#">Standard 4.5.3</a></div>
+              </div>
+            <p class="msg_head">Standard 4.6 Operational Planning</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 4.6.1</a></div>
+                <p class="msg_head">Standard 4.6.2</p>
+                  <div class="msg_body">
+                    <div><a href="#">Standard 4.6.2(1)</a></div><hr />
+                    <div><a href="#">Standard 4.6.2(2)</a></div><hr />
+                    <div><a href="#">Standard 4.6.2(3)</a></div><hr />
+                    <div><a href="#">Standard 4.6.2(4)</a></div><hr />
+                    <div><a href="#">Standard 4.6.2(5)</a></div><hr />
+                    <div><a href="#">Standard 4.6.2(6)</a></div><hr />
+                    <div><a href="#">Standard 4.6.2(7)</a></div>
+                  </div>
+                <p class="msg_head">Standard 4.6.3</p>
+                  <div class="msg_body">
+                    <div><a href="#">Standard 4.6.3(1)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(2)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(3)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(4)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(5)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(6)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(7)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(8)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(9)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(10)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(11)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(12)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(13)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(14)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(15)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(16)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(17)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(18)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(19)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(20)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(21)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(22)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(23)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(24)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(25)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(26)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(27)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(28)</a></div><hr />
+                    <div><a href="#">Standard 4.6.3(29)</a></div>
+                  </div>
+                  <div><a href="#">Standard 4.6.4</a></div><hr />
+                  <div><a href="#">Standard 4.6.5</a></div><hr />
+                  <div><a href="#">Standard 4.6.6</a></div>
+              </div>
+            <p class="msg_head">Standard 4.7 Incident Management</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 4.7.1</a></div><hr />
+                <div><a href="#">Standard 4.7.2</a></div><hr />
+                <div><a href="#">Standard 4.7.3</a></div><hr />
+                <div><a href="#">Standard 4.7.4</a></div><hr />
+                <div><a href="#">Standard 4.7.5</a></div>
+              </div>
+            <p class="msg_head">Standard 4.8 Resource Management and Logistics</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 4.8.1</a></div><hr />
+                <div><a href="#">Standard 4.8.2</a></div><hr />
+                <div><a href="#">Standard 4.8.3</a></div>
+                <p class="msg_head">Standard 4.8.4</p>
+                  <div class="msg_body">
+                    <div><a href="#">Standard 4.8.4(1)</a></div><hr />
+                    <div><a href="#">Standard 4.8.4(2)</a></div><hr />
+                    <div><a href="#">Standard 4.8.4(3)</a></div>
+                  </div>
+                <div><a href="#">Standard 4.8.5</a></div><hr />
+                <div><a href="#">Standard 4.8.6</a></div>
+              </div>
+            <p class="msg_head">Standard 4.9 Mutual Aid</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 4.9.1</a></div><hr />
+                <div><a href="#">Standard 4.9.2</a></div>
+              </div>
+            <p class="msg_head">Standard 4.10 Communications and Warning</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 4.10.1</a></div><hr />
+                <div><a href="#">Standard 4.10.2</a></div><hr />
+                <div><a href="#">Standard 4.10.3</a></div><hr />
+                <div><a href="#">Standard 4.10.4</a></div><hr />
+                <div><a href="#">Standard 4.10.5</a></div><hr />
+                <div><a href="#">Standard 4.10.6</a></div><hr />
+                <div><a href="#">Standard 4.10.7</a></div>
+              </div>
+            <p class="msg_head">Standard 4.11 Operations and Procedures</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 4.11.1</a></div><hr />
+                <div><a href="#">Standard 4.11.2</a></div><hr />
+                <div><a href="#">Standard 4.11.3</a></div><hr />
+                <div><a href="#">Standard 4.11.4</a></div>
+              </div>
+            <p class="msg_head">Standard 4.12 Facilities</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 4.12.1</a></div><hr />
+                <div><a href="#">Standard 4.12.2</a></div>
+              </div>
+            <p class="msg_head">Standard 4.13 Training</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 4.13.1</a></div><hr />
+                <div><a href="#">Standard 4.13.2</a></div><hr />
+                <div><a href="#">Standard 4.13.3</a></div><hr />
+                <div><a href="#">Standard 4.13.4</a></div>
+              </div>
+            <p class="msg_head">Standard 4.14 Exercises, Evaluations and Corrective Actions</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 4.14.1</a></div><hr />
+                <div><a href="#">Standard 4.14.2</a></div><hr />
+                <div><a href="#">Standard 4.14.3</a></div>
+              </div>
+            <p class="msg_head">Standard 4.15 Crisis Communications, Public Education and Information</p>
+              <div class="msg_body">
+                <div><a href="#">Standard 4.15.1</a></div>
+                  <p class="msg_head">Standard 4.15.2</p>
+                  <div class="msg_body">
+                    <div><a href="#">Standard 4.15.2(1)</a></div><hr />
+                    <div><a href="#">Standard 4.15.2(2)</a></div><hr />
+                    <div><a href="#">Standard 4.15.2(3)</a></div><hr />
+                    <div><a href="#">Standard 4.15.2(4)</a></div><hr />
+                    <div><a href="#">Standard 4.15.2(5)</a></div>
+                  </div>
+                <div><a href="#">Standard 4.15.3</a></div><hr />
+                <div><a href="#">Standard 4.15.4</a></div><hr />
+                <div><a href="#">Standard 4.15.5</a></div>
+              </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- USAFRICOM Section -->
+    <div class="msg_list">
+    <p class="msg_head">Military Review by U.S.AFRICOM</p>
+      <div class="msg_body">
+        <p class="msg_head">Area 1 - STRUCTURE</p>
+          <div class="msg_body">
+             <div><a href="#">1. Do interoperability procedures and systems exist to facilitate disaster response by the various military components, both between the components and with appropriate civilian agencies?</a></div><hr />
+             <div><a href="#">2. Are the roles and responsibilities of military forces clearly identified and codified?</a></div><hr />
+             <div><a href="#">3. Is command and control of military forces during disaster response operations clearly established, codified in appropriate planning documents and understood by appropriate military and civilian authorities?</a></div><hr />
+             <div><a href="#">4. General information on base location. Is there one central location or multiple bases around the country, etc.?</a></div><hr />
+             <div><a href="#">5. Does the military have forces specifically identified for disaster response? If so what is the force structure and what are the activation procedures?</a></div>
+          </div>
+        <p class="msg_head">Area 2 - LEGAL AUTHORITIES</p>
+          <div class="msg_body">
+             <div><a href="#">1. What national legislative authority provides for military assistance to civil authorities during domestic incidents?</a></div><hr />
+             <div><a href="#">2. Do state or local laws reflect or incorporate the national legislation regarding military assistance to civil authorities?</a></div><hr />
+             <div><a href="#">3. Have the military components formally identified support to civil authorities as a mission</a></div><hr />
+             <div><a href="#">4. Have the military components identified specific disaster threats and incorporated them into appropriate mission documents?</a></div><hr />
+             <div><a href="#">5. Have the military components adequately incorporated assistance to civil authorities in appropriate component regulations, including requirements, policies, procedures, and systems?</a></div>
+          </div>
+        <p class="msg_head">Area 3 - PLANNING</p>
+          <div class="msg_body">
+             <div><a href="#">1. Do civil response plans incorporate the use of military forces, including identification of roles and responsibilities, command and control, communications and other appropriate requirements?</a></div><hr />
+             <div><a href="#">2. Is disaster response planning conducted at all appropriate military units levels (BN, BDE, DIV, CORPS etc)?</a></div><hr />
+             <div><a href="#">3. Does the military have established standards for disaster response planning?</a></div><hr />
+             <div><a href="#">4. Are military disaster response plans appropriately integrated with civil authority plans?</a></div><hr />
+             <div><a href="#">5. Are plans specific in identification and assignment of roles and responsibilities for performance of essential military civil support functions?</a></div><hr />
+             <div><a href="#">6. Do disaster response plans establish a priority of effort/priority of support?</a></div><hr />
+             <div><a href="#">7. Do military components have continuity of operations plans to mitigate disaster impacts on military capabilities?</a></div><hr />
+             <div><a href="#">8. Have essential or emergency functions been identified in the plan?</a></div><hr />
+             <div><a href="#">9. What is the mandatory plan review period?</a></div><hr />
+             <div><a href="#">10. Does a joint planning process exist?</a></div><hr />
+             <div><a href="#">11. Are component plans shared with sister components?</a></div><hr />
+             <div><a href="#">12. Are appropriate plans shared with civil authorities?</a></div>
+          </div>
+        <p class="msg_head">Area 4 - LOGISTICS</p>
+          <div class="msg_body">
+             <div><a href="#">1. What types of equipment are available to provide support to civil authorities?</a></div><hr />
+             <div><a href="#">2. If military components have units specifically allocated to disaster response, do these units have sufficient equipment to perform their assigned roles and responsibilities.</a></div><hr />
+             <div><a href="#">3. Is there a formal periodic equipment inspection program in place?</a></div><hr />
+             <div><a href="#">4. Do units have capabilities to procure supplies and services as required to support disaster response operations?</a></div><hr />
+             <div><a href="#">5. How are civil support functions funded?</a></div><hr />
+             <div><a href="#">6. Is the military reimbursed for providing support to civilian authorities?</a></div><hr />
+             <div><a href="#">7. Can the military replenish supplies and/or repair equipment used in support of civil authorities?</a></div><hr />
+             <div><a href="#">8. Is there a formal process in place to outsource or contract for equipment repair?</a></div><hr />
+             <div><a href="#">9. Do military components have the capability to move at least 50% of their personnel and resources with organic assets to support civil authorities?</a></div><hr />
+             <div><a href="#">10. What are the normal modes of transportation utilized to move military units during disaster response operations (road, rail, air, etc.)?</a></div><hr />
+             <div><a href="#">11. Are transportation routes sufficient to provide military support to civil authorities throughout the entire country?</a></div><hr />
+             <div><a href="#">12. Is there a single national military coordination center?</a></div><hr />
+             <div><a href="#">13. Are there established alternate locations to conduct centralized command and control?</a></div><hr />
+             <div><a href="#">14. Does the military have organic assets for housing personnel assigned in support of civil authorities?</a></div><hr />
+             <div><a href="#">15. Are sufficient maintenance and storage facilities available for equipment and supplies?</a></div><hr />
+             <div><a href="#">16. Does the military have adequate facilities nationwide to support military disaster response operations?</a></div>
+          </div>
+        <p class="msg_head">Area 5 - COMMUNICATION</p>
+          <div class="msg_body">
+             <div><a href="#">1. Is there a single joint system in place to relay information/orders from national leaders to tactical units for all military service components supporting civil authorities?</a></div><hr />
+             <div><a href="#">2. Does the system have redundant capacity?</a></div><hr />
+             <div><a href="#">3. Is required infrastructure available to support the communication system (electricity, phone lines, internet, etc?)</a></div><hr />
+             <div><a href="#">4. Do all military components operate with common/compatible hardware/software?</a></div><hr />
+             <div><a href="#">5. Are component information technology systems interoperable/compatible with civil authority systems?</a></div><hr />
+             <div><a href="#">6. Is there a written procedure for activation of emergency communications/information systems?</a></div><hr />
+             <div><a href="#">7. Do adequate systems exist for lower level units to forward critical information to higher headquarters?</a></div><hr />
+             <div><a href="#">8. Has a formal, periodic testing program for the system(s) been established?</a></div><hr />
+             <div><a href="#">9. Integration (between components, to civilian authorities, to general public)</a></div><hr />
+             <div><a href="#">10. Does the system allow for sharing of information with civil authorities or the media?</a></div><hr />
+             <div><a href="#">11. Are procedures for passing information between military components, civil authorities and the general public practiced on a regular basis?</a></div><hr />
+             <div><a href="#">12. Are procedures in place for establishing military liaison(s) to civil authority operations centers?</a></div><hr />
+             <div><a href="#">13. Are procedures in place for integrating civil liaisons into military operations centers?</a></div>
+          </div>
+        <p class="msg_head">Area 6 - PERSONNEL</p>
+          <div class="msg_body">
+             <div><a href="#">1. How many active duty personnel are available to support civil authorities?</a></div><hr />
+             <div><a href="#">2. Is there a reserve component available to support civil authorities? How are they activated? Do they require active duty support, or are they capable of independent operations?</a></div>
+          </div>
+        <p class="msg_head">Area 7 - TRAINING/EXERCISES</p>
+          <div class="msg_body">
+             <div><a href="#">1. Has support to civil authorities been integrated into established training for officers, NCOs and enlisted personnel?</a></div><hr />
+             <div><a href="#">2. Do military components conduct integrated training with civilian response organizations?</a></div><hr />
+             <div><a href="#">3. Is training documented?</a></div><hr />
+             <div><a href="#">4. Is humanitarian assistance specific training conducted?</a></div><hr />
+             <div><a href="#">5. What skill specific branches have been established within each military component?</a></div><hr />
+             <div><a href="#">6. Can military personnel obtain certification in military support to civil authorities and if so, how is this certification obtained?</a></div><hr />
+             <div><a href="#">7. Exercises, Types/Levels (combined/joint/civ-mil at PLT/BTRY/BN/BDE or higher)</a></div><hr />
+             <div><a href="#">8. Has a formal requirement been established to conduct periodic unit level training related to support of civil authorities?</a></div><hr />
+             <div><a href="#">9. What types of civil support exercises are regularly conducted? (I.e. Command Post, table top, functional, full scale)</a></div><hr />
+             <div><a href="#">10. Is there a formal program for conducting disaster response exercises with civil authorities?</a></div><hr />
+             <div><a href="#">11. Is there a formal program for review and evaluation of unit level civil support exercises and training programs?</a></div><hr />
+             <div><a href="#">12. Are civil support training and exercise programs based on a threat analysis?</a></div>
+          </div>
+      </div>
+    </div>
+
+    <!-- CDHAM Section -->
+
+    <div class="msg_list">
+    <p class="msg_head">Medical Review by CDHAM</p>
+      <div class="msg_body">
+        <p class="msg_head">Area 1 - Legal Authority</p>
+          <div class="msg_body">
+             <div><a href="#">1. Does the country have adequate legal authority to mobilize and deploy medical resources in response to disaster situations?</a></div><hr />
+             <div><a href="#">2. Is legal authority sufficient to address requirements unique to national disaster medical response. Includes provider credentialing, standards of care, patient privacy, etc.</a></div>
+          </div>
+        <p class="msg_head">Area 2 - Planning</p>
+          <div class="msg_body">
+             <div><a href="#">1. Does the country have national emergency/disaster plans that adequately address disaster medical policies, procedures and systems?</a></div><hr />
+             <div><a href="#">2. Do provinces, districts and/or local governments have emergency/disaster plans that adequately address disaster medical policies, procedures and systems?</a></div><hr />
+             <div><a href="#">3. Do major medical facilities have disaster medical plans that adequately address policies, procedures and systems for delivery of disaster medical care?</a></div><hr />
+             <div><a href="#">4. Do government ministries, agencies and/or offices affiliated with disaster medical care have continuity of government (COG) plans? Includes Ministry of Health, Ministry of Defense, etc</a></div><hr />
+             <div><a href="#">5. Do major private sector medical facilities have adequate business continuity plans (BCP)?</a></div><hr />
+             <div><a href="#">6. Are COG and BCP well understood by managers and prepared for implementation?</a></div><hr />
+             <div><a href="#">7. Has the government adequately coordinated support requirements with international and local non-government organizations (NGO)? Ensure that government plans do not anticipate support from NGOs that they are incapable of delivering. All support should be coordinated to ensure NGOs are fully aware of anticipated requirements.</a></div><hr />
+             <div><a href="#">8. Does a structure for discussion and management of governmental and private sector plans exist? May be private associations, a government task force, country-level committees, etc.</a></div>
+          </div>
+        <p class="msg_head">Area 3 - Human Resources</p>
+          <div class="msg_body">
+             <div><a href="#">1. Does the country have a plan to address shortfall of medical personnel during disaster response? May include increased use of retired staff, part-time staff, military medical staff, etc.</a></div><hr />
+             <div><a href="#">2. Does the country have a medical reserve structure to maintain contact with medical staff willing to commit to service during disaster response?</a></div><hr />
+             <div><a href="#">3. Does the country have policies to address provider credentialing during disaster response? May include credentialing of retired providers, foreign providers, etc.</a></div>
+          </div>
+        <p class="msg_head">Area 4 - Patient Care and Administration</p>
+          <div class="msg_body">
+             <div><a href="#">1. Do national, district, province and/or local government plans require medical facilities to have ?surge? plans/capabilities for implementation during disaster response?</a></div><hr />
+             <div><a href="#">2. Do medical facilities have adequate surge plans to address disaster medical response requirements? May include discharge of non-emergency patients, cancellation of non-essential surgeries, expansion of bed space, etc.</a></div><hr />
+             <div><a href="#">3. Do plans exist to establish and resource Alternative Medical Treatment Sites (AMTS) to supplement existing medical infrastructure during disaster response?</a></div><hr />
+             <div><a href="#">4. Are systems in place to enable patient monitoring and tracking during disaster response and are these systems adequately addressed in existing plans. Should be addressed in medical facility response plans and to a lesser extent in emergency management plans at all government levels.</a></div><hr />
+             <div><a href="#">5. Does a system exist for maintenance of patient treatment records and archiving of these records during post-disaster recovery operations?</a></div>
+          </div>
+        <p class="msg_head">Area 5 - Logistics and Facilities</p>
+          <div class="msg_body">
+             <div><a href="#">1. Do adequate facilities exist to provide disaster medical care in all areas of the country? Identify areas of the country where medical facilities are insufficient or non-existent.</a></div><hr />
+             <div><a href="#">2. Are AMTS facilities identified and adequately resourced where medical facilities are insufficient or non-existent to handle disaster related care?</a></div><hr />
+             <div><a href="#">3. Do adequate pharmaceutical and non-pharmaceutical medical stockpiles exist for use in disaster response operations? Ensure stockpiles are actually on-hand and not just a requirements document.</a></div><hr />
+             <div><a href="#">4. If pharmaceutical and non-pharmaceutical medical stockpiles exist, are policies and procedures for their use well-defined and understood by key stakeholders?</a></div><hr />
+             <div><a href="#">5. Does a system exist to identify private sector medical resources for potential use in disaster response operations? May include civilian pharmacies, private clinics, drug manufacturers, etc.</a></div><hr />
+             <div><a href="#">6. Do policies and procedures exist to access private sector medical resources during disaster response operations? May include legal authorities, reimbursement protocols, etc.</a></div>
+          </div>
+        <p class="msg_head">Area 6 - Transportation</p>
+          <div class="msg_body">
+             <div><a href="#">1. Do existing plans adequately address medical transportation requirements during disaster response operations? Plans should address broad requirements and establish roles and responsibilities for provision of needed transportation resources.</a></div><hr />
+             <div><a href="#">2. Are sufficient resources identified and available to facilitate patient transportation during response to a major disaster and are policies and procedures for their use well defined. Has analysis been completed to identify requirements and have policies and procedures been institutionalized in appropriate implementing plans.</a></div>
+          </div>
+        <p class="msg_head">Area 7 - Communications</p>
+          <div class="msg_body">
+             <div><a href="#">1. Do medical facilities and/or organizations possess adequate communications systems to maintain awareness of the disaster situation and to execute appropriate coordination of medical response? Includes linkage of national, provincial, district and/or local response agencies with the public, private and military medical systems to facilitate transport and care of patients.</a></div>
+          </div>
+        <p class="msg_head">Area 8 - Security</p>
+          <div class="msg_body">
+             <div><a href="#">1. Do existing emergency management plans adequately address security requirements necessary to facilitate effective disaster medical operations? May include security of medical facilities, medical supplies and stockpiles, etc.</a></div>
+          </div>
+        <p class="msg_head">Area 9 - Civil-Military Cooperation</p>
+          <div class="msg_body">
+             <div><a href="#">1. Is the military medical system commonly utilized to supplement the civilian medical sector in providing medical care for the general public?</a></div><hr />
+             <div><a href="#">2. What is the established role of the military medical system during disaster response operations? Should be taken from planning documents, although may occasionally not be institutionalized in writing.</a></div><hr />
+             <div><a href="#">3. Given the defined role of the military medical system in disaster response operations, do existing plans adequately address this role and facilitate its accomplishment? Government and military emergency management plans should address any role and establish adequate policies and procedures to facilitate its accomplishment.</a></div><hr />
+             <div><a href="#">4. Do plans call for reassignment of military medical resources to address shortfalls in civilian healthcare facilities? If so, are policies and procedures in place to facilitate this role? Refers to the assignment of individual personnel or items of equipment to supplement existing civilian facilities/organizations - not the deployment of organic military units.</a></div>
+          </div>
+        <p class="msg_head">Area 10 - Mutual Aid</p>
+          <div class="msg_body">
+             <div><a href="#">1. Do mutual aid agreements address medical requirements? If so, are policies and procedures in place to support provision of medical support by mutual aid countries during disaster response operations? Includes requirements for credentialing, customs and immigration, identification of work locations, life support (housing, feeding), etc.</a></div><hr />
+             <div><a href="#">2. Do mutual aid agreements address medical support from foreign militaries? If so, are policies and procedures in place to support provision of medical support by foreign militaries during disaster response operations? Includes requirements for credentialing, customs and immigration, identification of work locations, wear of uniforms, carrying of weapons, life support (housing, feeding), etc.</a></div>
+          </div>
+        <p class="msg_head">Area 11 - Training and Exercises</p>
+          <div class="msg_body">
+             <div><a href="#">1. Do appropriate training programs exist to address disaster medical training for providers and other medical staff?</a></div><hr />
+             <div><a href="#">2. Do appropriate exercise programs exist to assess disaster medical readiness at the national, provincial, district and/or local levels?</a></div>
+          </div>
+      </div>
+    </div><br /><br /><br />
+
+  </collection:>
+</show-page>

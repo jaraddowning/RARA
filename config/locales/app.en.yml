@@ -28,7 +28,7 @@ en:
     models:
       finding:
         one: Finding
-        other: Finding
+        other: Findings
       program:
         one: Review
         other: Review

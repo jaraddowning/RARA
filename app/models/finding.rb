@@ -3,7 +3,7 @@ class Finding < ActiveRecord::Base
   hobo_model # Don't put anything above this
 
   fields do
-    pfinding       :string, :default => "Primary Finding", :name => true
+    name           :string, :name => true
     rational       :html
     observation    :html
     recomendations :html
@@ -11,11 +11,19 @@ class Finding < ActiveRecord::Base
     concur         :boolean
     sec_obs        :html
     mark_complete  :boolean
-    #reviewer      :string, :name => true
     timestamps
   end
 
-  belongs_to :program
+  belongs_to :estd311
+  belongs_to :estd312
+  belongs_to :estd321
+  belongs_to :estd322
+  belongs_to :estd331
+  belongs_to :estd332
+  belongs_to :estd411
+  belongs_to :estd412
+  belongs_to :estd421
+  belongs_to :estd422
 
   belongs_to :previewer, :class_name => "User", :creator => true
   belongs_to :sreviewer, :class_name => "User"
@@ -44,7 +52,6 @@ class Finding < ActiveRecord::Base
                :available_to => :all do
     end
   end
-
 
   # --- Permissions --- #
 

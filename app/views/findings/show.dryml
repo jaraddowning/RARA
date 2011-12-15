@@ -1,0 +1,5 @@
+<show-page>
+  <content-body:>
+    <field-list fields="rational, observation, recomendations, lifecycle_state, sreviewer, sec_obs" />
+  </content-body:>
+</show-page>

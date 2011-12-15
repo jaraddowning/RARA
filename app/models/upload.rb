@@ -8,8 +8,7 @@ class Upload < ActiveRecord::Base
   end
 
   has_attached_file :proof
-  
-  belongs_to :area
+
 
   # --- Permissions --- #
 

@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.7'
+gem 'rails', '3.0.10'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -30,7 +30,8 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 #   gem 'webrat'
 # end
 gem "hobo-jquery", :git => "git://github.com/bryanlarsen/hobo-jquery.git", :branch => "rails3"
-gem "hobo", :git => "git://github.com/tablatom/hobo.git", :branch => "rails3"
+gem "hobo"
 gem "acts_as_list"
 gem "paperclip"
 gem "bluecloth"
+gem "nested_has_many_through"

@@ -4,6 +4,6 @@ class UploadsController < ApplicationController
 
   auto_actions :all, :except => :index
 
-  auto_actions_for :area, [:new, :create]
+  #auto_actions_for :finding, [:new, :create]
 
 end

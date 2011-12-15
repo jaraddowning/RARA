@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails RARA: development" product="" version="" jdbc-version="" driver-version="" uuid="0c2a56a4-2037-4f31-a9f0-7986f65db23e">
+    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+    <jdbc-url>jdbc:sqlite:/home/jarad/rails_apps/RARA/db/development.sqlite3</jdbc-url>
+    <libraries>
+      <library>
+        <url>jar://$USER_HOME$/.RubyMine32/config/jdbc-drivers/sqlitejdbc-v056.jar!/</url>
+      </library>
+    </libraries>
+  </data-source>
+</component>

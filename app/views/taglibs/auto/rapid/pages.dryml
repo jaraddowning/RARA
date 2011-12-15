@@ -75,55 +75,30 @@
 
 
 <def tag="show-page" for="Area">
-  <page merge title="#{ht 'area.show.title', :default=>['Area'] }">
+  <page merge title="#{ht 'area.show.title', :default=>['Area'], :name => name(:no_wrapper => true) }">
 
     <body: class="show-page area" param/>
 
     <content: param>
-      <section-group>
-        <section param="main-content">
           <header param="content-header">
-            <a:chapter param="parent-link">&laquo; <ht key="area.actions.back_to_parent" parent="Chapter" name="&this">Back to <name/></ht></a:chapter>
             <h2 param="heading">
-              <ht key="area.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
-                <name/>
+              <ht key="area.show.heading" name="#{name(:no_wrapper => true)}">
+                Area <name/>
               </ht>
             </h2>
 
             <record-flags fields="" param/>
 
             <a action="edit" if="&can_edit?" param="edit-link">
-              <ht key="area.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
+              <ht key="area.actions.edit" name="#{name(:no_wrapper => true)}">
                 Edit Area
               </ht>
             </a>
           </header>
 
           <section param="content-body">
-            <field-list fields="language, position" param/>
-            <section param="collection-section">
-              <h3 param="collection-heading">
-                <ht key="finding.collection.heading" count="&this.findings.count" >
-                  <human-collection-name collection="findings" your/>
-                </ht>
-              </h3>
-
-              <collection:findings param/>
-            </section>
+            <field-list fields="organization, chapter, num, subnum, standard, language" param/>
           </section>
-        </section>
-
-        <aside param>
-          <section param="uploads-collection-section">
-            <h3 param="uploads-collection-heading">
-              <ht key="upload.collection.heading" count="&this.uploads.count" >
-                <human-collection-name collection="uploads" your/>
-              </ht>
-            </h3>
-            <collection:uploads  param="uploads-collection"/>
-          </section>
-        </aside>
-      </section-group>
     </content:>
 
   </page>
@@ -131,14 +106,14 @@
 
 
 <def tag="edit-page" for="Area">
-  <page merge title="#{ht 'area.edit.title', :default=>['Edit Area'] }">
+  <page merge title="#{ht 'area.edit.title', :default=>['Edit Area'], :name => name(:no_wrapper => true) }">
 
     <body: class="edit-page area" param/>
 
     <content:>
       <section param="content-header">
         <h2 param="heading">
-          <ht key="area.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
+          <ht key="area.edit.heading" name="#{name(:no_wrapper => true)}">
             Edit Area
           </ht>
         </h2>
@@ -157,22 +132,22 @@
 
 
 
-<!-- ====== Chapter Pages ====== -->
+<!-- ====== Estd311 Pages ====== -->
 
-<def tag="index-page" for="Chapter">
-  <page merge title="#{ht 'chapter.index.title', :default=>[model.model_name.human(:count=>100)] }">
-    <body: class="index-page chapter" param/>
+<def tag="index-page" for="Estd311">
+  <page merge title="#{ht 'estd311.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page estd311" param/>
 
     <content: param>
       <header param="content-header">
         <h2 param="heading">
-          <ht key="chapter.index.heading">
+          <ht key="estd311.index.heading">
             <model-name-human model="&model"/>
           </ht>
         </h2>
 
         <p param="count" if>
-          <ht key="chapter.collection.count" count="&collection_count">
+          <ht key="estd311.collection.count" count="&collection_count">
             <count summary/>
           </ht>
         </p>
@@ -180,7 +155,7 @@
 
       <section param="content-body">
         <a action="new" to="&model" param="new-link">
-          <ht key="chapter.actions.new">New Chapter</ht>
+          <ht key="estd311.actions.new">New Estd311</ht>
         </a>
 
         <page-nav param="top-page-nav"/>
@@ -196,22 +171,22 @@
 </def>
 
 
-<def tag="new-page" for="Chapter">
-  <page merge title="#{ht 'chapter.new.title', :default=>[' New Chapter'] }">
-    <body: class="new-page chapter" param/>
+<def tag="new-page" for="Estd311">
+  <page merge title="#{ht 'estd311.new.title', :default=>[' New Estd311'] }">
+    <body: class="new-page estd311" param/>
 
     <content: param>
       <section param="content-header">
         <h2 param="heading">
-          <ht key="chapter.new.heading">
-            New Chapter
+          <ht key="estd311.new.heading">
+            New Estd311
           </ht>
         </h2>
       </section>
 
       <section param="content-body">
         <form param>
-          <submit: label="#{ht 'chapter.actions.create', :default=>['Create Chapter']}"/>
+          <submit: label="#{ht 'estd311.actions.create', :default=>['Create Estd311']}"/>
         </form>
       </section>
     </content:>
@@ -219,39 +194,50 @@
 </def>
 
 
-<def tag="show-page" for="Chapter">
-  <page merge title="#{ht 'chapter.show.title', :default=>['Chapter'] }">
+<def tag="show-page" for="Estd311">
+  <page merge title="#{ht 'estd311.show.title', :default=>['Estd311'], :name => name(:no_wrapper => true) }">
 
-    <body: class="show-page chapter" param/>
+    <body: class="show-page estd311" param/>
 
     <content: param>
           <header param="content-header">
-            <a:standard param="parent-link">&laquo; <ht key="chapter.actions.back_to_parent" parent="Standard" name="&this">Back to <name/></ht></a:standard>
             <h2 param="heading">
-              <ht key="chapter.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
-                <name/>
+              <ht key="estd311.show.heading" name="#{name(:no_wrapper => true)}">
+                Estd311 <name/>
               </ht>
             </h2>
 
             <record-flags fields="" param/>
 
             <a action="edit" if="&can_edit?" param="edit-link">
-              <ht key="chapter.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
-                Edit Chapter
+              <ht key="estd311.actions.edit" name="#{name(:no_wrapper => true)}">
+                Edit Estd311
               </ht>
             </a>
           </header>
 
           <section param="content-body">
-            <field-list fields="name, overview" param/>
+            <field-list fields="area, program" param/>
             <section param="collection-section">
               <h3 param="collection-heading">
-                <ht key="area.collection.heading" count="&this.areas.count" >
-                  <human-collection-name collection="areas" your/>
+                <ht key="finding.collection.heading" count="&this.findings.count" >
+                  <human-collection-name collection="findings" your/>
                 </ht>
               </h3>
 
-              <collection:areas param/>
+              <collection:findings param/>
+
+              <section param="add-to-collection" if="&can_create?(@estd311.findings)">
+                <h3 param="add-form-heading">
+                  <ht key="finding.collection.add_form_heading" count="1">
+                    Add a Finding
+                  </ht>
+                </h3>
+                <form with="&@finding || new_for_current_user(@estd311.findings)" owner="estd311" without-cancel param>
+                  <field-list: skip="estd311"/>
+                  <submit: label="#{ht 'finding.actions.add', :default=>['Add'] }"/>
+                </form>
+              </section>
             </section>
           </section>
     </content:>
@@ -260,19 +246,1288 @@
 </def>
 
 
-<def tag="edit-page" for="Chapter">
-  <page merge title="#{ht 'chapter.edit.title', :default=>['Edit Chapter'] }">
+<def tag="edit-page" for="Estd311">
+  <page merge title="#{ht 'estd311.edit.title', :default=>['Edit Estd311'], :name => name(:no_wrapper => true) }">
 
-    <body: class="edit-page chapter" param/>
+    <body: class="edit-page estd311" param/>
 
     <content:>
       <section param="content-header">
         <h2 param="heading">
-          <ht key="chapter.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
-            Edit Chapter
+          <ht key="estd311.edit.heading" name="#{name(:no_wrapper => true)}">
+            Edit Estd311
           </ht>
         </h2>
-        <delete-button label="#{ht 'chapter.actions.delete', :default=>['Remove This Chapter']}" param/>
+        <delete-button label="#{ht 'estd311.actions.delete', :default=>['Remove This Estd311']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== Estd312 Pages ====== -->
+
+<def tag="index-page" for="Estd312">
+  <page merge title="#{ht 'estd312.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page estd312" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="estd312.index.heading">
+            <model-name-human model="&model"/>
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="estd312.collection.count" count="&collection_count">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="estd312.actions.new">New Estd312</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="Estd312">
+  <page merge title="#{ht 'estd312.new.title', :default=>[' New Estd312'] }">
+    <body: class="new-page estd312" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd312.new.heading">
+            New Estd312
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'estd312.actions.create', :default=>['Create Estd312']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="Estd312">
+  <page merge title="#{ht 'estd312.show.title', :default=>['Estd312'], :name => name(:no_wrapper => true) }">
+
+    <body: class="show-page estd312" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="estd312.show.heading" name="#{name(:no_wrapper => true)}">
+                Estd312 <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="estd312.actions.edit" name="#{name(:no_wrapper => true)}">
+                Edit Estd312
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="area, program" param/>
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="finding.collection.heading" count="&this.findings.count" >
+                  <human-collection-name collection="findings" your/>
+                </ht>
+              </h3>
+
+              <collection:findings param/>
+
+              <section param="add-to-collection" if="&can_create?(@estd312.findings)">
+                <h3 param="add-form-heading">
+                  <ht key="finding.collection.add_form_heading" count="1">
+                    Add a Finding
+                  </ht>
+                </h3>
+                <form with="&@finding || new_for_current_user(@estd312.findings)" owner="estd312" without-cancel param>
+                  <field-list: skip="estd312"/>
+                  <submit: label="#{ht 'finding.actions.add', :default=>['Add'] }"/>
+                </form>
+              </section>
+            </section>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="Estd312">
+  <page merge title="#{ht 'estd312.edit.title', :default=>['Edit Estd312'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page estd312" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd312.edit.heading" name="#{name(:no_wrapper => true)}">
+            Edit Estd312
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'estd312.actions.delete', :default=>['Remove This Estd312']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== Estd321 Pages ====== -->
+
+<def tag="index-page" for="Estd321">
+  <page merge title="#{ht 'estd321.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page estd321" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="estd321.index.heading">
+            <model-name-human model="&model"/>
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="estd321.collection.count" count="&collection_count">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="estd321.actions.new">New Estd321</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="Estd321">
+  <page merge title="#{ht 'estd321.new.title', :default=>[' New Estd321'] }">
+    <body: class="new-page estd321" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd321.new.heading">
+            New Estd321
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'estd321.actions.create', :default=>['Create Estd321']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="Estd321">
+  <page merge title="#{ht 'estd321.show.title', :default=>['Estd321'], :name => name(:no_wrapper => true) }">
+
+    <body: class="show-page estd321" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="estd321.show.heading" name="#{name(:no_wrapper => true)}">
+                Estd321 <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="estd321.actions.edit" name="#{name(:no_wrapper => true)}">
+                Edit Estd321
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="area, program" param/>
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="finding.collection.heading" count="&this.findings.count" >
+                  <human-collection-name collection="findings" your/>
+                </ht>
+              </h3>
+
+              <collection:findings param/>
+
+              <section param="add-to-collection" if="&can_create?(@estd321.findings)">
+                <h3 param="add-form-heading">
+                  <ht key="finding.collection.add_form_heading" count="1">
+                    Add a Finding
+                  </ht>
+                </h3>
+                <form with="&@finding || new_for_current_user(@estd321.findings)" owner="estd321" without-cancel param>
+                  <field-list: skip="estd321"/>
+                  <submit: label="#{ht 'finding.actions.add', :default=>['Add'] }"/>
+                </form>
+              </section>
+            </section>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="Estd321">
+  <page merge title="#{ht 'estd321.edit.title', :default=>['Edit Estd321'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page estd321" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd321.edit.heading" name="#{name(:no_wrapper => true)}">
+            Edit Estd321
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'estd321.actions.delete', :default=>['Remove This Estd321']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== Estd322 Pages ====== -->
+
+<def tag="index-page" for="Estd322">
+  <page merge title="#{ht 'estd322.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page estd322" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="estd322.index.heading">
+            <model-name-human model="&model"/>
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="estd322.collection.count" count="&collection_count">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="estd322.actions.new">New Estd322</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="Estd322">
+  <page merge title="#{ht 'estd322.new.title', :default=>[' New Estd322'] }">
+    <body: class="new-page estd322" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd322.new.heading">
+            New Estd322
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'estd322.actions.create', :default=>['Create Estd322']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="Estd322">
+  <page merge title="#{ht 'estd322.show.title', :default=>['Estd322'], :name => name(:no_wrapper => true) }">
+
+    <body: class="show-page estd322" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="estd322.show.heading" name="#{name(:no_wrapper => true)}">
+                Estd322 <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="estd322.actions.edit" name="#{name(:no_wrapper => true)}">
+                Edit Estd322
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="area, program" param/>
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="finding.collection.heading" count="&this.findings.count" >
+                  <human-collection-name collection="findings" your/>
+                </ht>
+              </h3>
+
+              <collection:findings param/>
+
+              <section param="add-to-collection" if="&can_create?(@estd322.findings)">
+                <h3 param="add-form-heading">
+                  <ht key="finding.collection.add_form_heading" count="1">
+                    Add a Finding
+                  </ht>
+                </h3>
+                <form with="&@finding || new_for_current_user(@estd322.findings)" owner="estd322" without-cancel param>
+                  <field-list: skip="estd322"/>
+                  <submit: label="#{ht 'finding.actions.add', :default=>['Add'] }"/>
+                </form>
+              </section>
+            </section>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="Estd322">
+  <page merge title="#{ht 'estd322.edit.title', :default=>['Edit Estd322'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page estd322" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd322.edit.heading" name="#{name(:no_wrapper => true)}">
+            Edit Estd322
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'estd322.actions.delete', :default=>['Remove This Estd322']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== Estd331 Pages ====== -->
+
+<def tag="index-page" for="Estd331">
+  <page merge title="#{ht 'estd331.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page estd331" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="estd331.index.heading">
+            <model-name-human model="&model"/>
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="estd331.collection.count" count="&collection_count">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="estd331.actions.new">New Estd331</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="Estd331">
+  <page merge title="#{ht 'estd331.new.title', :default=>[' New Estd331'] }">
+    <body: class="new-page estd331" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd331.new.heading">
+            New Estd331
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'estd331.actions.create', :default=>['Create Estd331']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="Estd331">
+  <page merge title="#{ht 'estd331.show.title', :default=>['Estd331'], :name => name(:no_wrapper => true) }">
+
+    <body: class="show-page estd331" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="estd331.show.heading" name="#{name(:no_wrapper => true)}">
+                Estd331 <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="estd331.actions.edit" name="#{name(:no_wrapper => true)}">
+                Edit Estd331
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="area, program" param/>
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="finding.collection.heading" count="&this.findings.count" >
+                  <human-collection-name collection="findings" your/>
+                </ht>
+              </h3>
+
+              <collection:findings param/>
+
+              <section param="add-to-collection" if="&can_create?(@estd331.findings)">
+                <h3 param="add-form-heading">
+                  <ht key="finding.collection.add_form_heading" count="1">
+                    Add a Finding
+                  </ht>
+                </h3>
+                <form with="&@finding || new_for_current_user(@estd331.findings)" owner="estd331" without-cancel param>
+                  <field-list: skip="estd331"/>
+                  <submit: label="#{ht 'finding.actions.add', :default=>['Add'] }"/>
+                </form>
+              </section>
+            </section>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="Estd331">
+  <page merge title="#{ht 'estd331.edit.title', :default=>['Edit Estd331'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page estd331" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd331.edit.heading" name="#{name(:no_wrapper => true)}">
+            Edit Estd331
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'estd331.actions.delete', :default=>['Remove This Estd331']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== Estd332 Pages ====== -->
+
+<def tag="index-page" for="Estd332">
+  <page merge title="#{ht 'estd332.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page estd332" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="estd332.index.heading">
+            <model-name-human model="&model"/>
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="estd332.collection.count" count="&collection_count">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="estd332.actions.new">New Estd332</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="Estd332">
+  <page merge title="#{ht 'estd332.new.title', :default=>[' New Estd332'] }">
+    <body: class="new-page estd332" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd332.new.heading">
+            New Estd332
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'estd332.actions.create', :default=>['Create Estd332']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="Estd332">
+  <page merge title="#{ht 'estd332.show.title', :default=>['Estd332'], :name => name(:no_wrapper => true) }">
+
+    <body: class="show-page estd332" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="estd332.show.heading" name="#{name(:no_wrapper => true)}">
+                Estd332 <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="estd332.actions.edit" name="#{name(:no_wrapper => true)}">
+                Edit Estd332
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="area, program" param/>
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="finding.collection.heading" count="&this.findings.count" >
+                  <human-collection-name collection="findings" your/>
+                </ht>
+              </h3>
+
+              <collection:findings param/>
+
+              <section param="add-to-collection" if="&can_create?(@estd332.findings)">
+                <h3 param="add-form-heading">
+                  <ht key="finding.collection.add_form_heading" count="1">
+                    Add a Finding
+                  </ht>
+                </h3>
+                <form with="&@finding || new_for_current_user(@estd332.findings)" owner="estd332" without-cancel param>
+                  <field-list: skip="estd332"/>
+                  <submit: label="#{ht 'finding.actions.add', :default=>['Add'] }"/>
+                </form>
+              </section>
+            </section>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="Estd332">
+  <page merge title="#{ht 'estd332.edit.title', :default=>['Edit Estd332'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page estd332" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd332.edit.heading" name="#{name(:no_wrapper => true)}">
+            Edit Estd332
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'estd332.actions.delete', :default=>['Remove This Estd332']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== Estd411 Pages ====== -->
+
+<def tag="index-page" for="Estd411">
+  <page merge title="#{ht 'estd411.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page estd411" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="estd411.index.heading">
+            <model-name-human model="&model"/>
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="estd411.collection.count" count="&collection_count">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="estd411.actions.new">New Estd411</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="Estd411">
+  <page merge title="#{ht 'estd411.new.title', :default=>[' New Estd411'] }">
+    <body: class="new-page estd411" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd411.new.heading">
+            New Estd411
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'estd411.actions.create', :default=>['Create Estd411']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="Estd411">
+  <page merge title="#{ht 'estd411.show.title', :default=>['Estd411'], :name => name(:no_wrapper => true) }">
+
+    <body: class="show-page estd411" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="estd411.show.heading" name="#{name(:no_wrapper => true)}">
+                Estd411 <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="estd411.actions.edit" name="#{name(:no_wrapper => true)}">
+                Edit Estd411
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="area, program" param/>
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="finding.collection.heading" count="&this.findings.count" >
+                  <human-collection-name collection="findings" your/>
+                </ht>
+              </h3>
+
+              <collection:findings param/>
+
+              <section param="add-to-collection" if="&can_create?(@estd411.findings)">
+                <h3 param="add-form-heading">
+                  <ht key="finding.collection.add_form_heading" count="1">
+                    Add a Finding
+                  </ht>
+                </h3>
+                <form with="&@finding || new_for_current_user(@estd411.findings)" owner="estd411" without-cancel param>
+                  <field-list: skip="estd411"/>
+                  <submit: label="#{ht 'finding.actions.add', :default=>['Add'] }"/>
+                </form>
+              </section>
+            </section>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="Estd411">
+  <page merge title="#{ht 'estd411.edit.title', :default=>['Edit Estd411'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page estd411" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd411.edit.heading" name="#{name(:no_wrapper => true)}">
+            Edit Estd411
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'estd411.actions.delete', :default=>['Remove This Estd411']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== Estd412 Pages ====== -->
+
+<def tag="index-page" for="Estd412">
+  <page merge title="#{ht 'estd412.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page estd412" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="estd412.index.heading">
+            <model-name-human model="&model"/>
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="estd412.collection.count" count="&collection_count">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="estd412.actions.new">New Estd412</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="Estd412">
+  <page merge title="#{ht 'estd412.new.title', :default=>[' New Estd412'] }">
+    <body: class="new-page estd412" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd412.new.heading">
+            New Estd412
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'estd412.actions.create', :default=>['Create Estd412']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="Estd412">
+  <page merge title="#{ht 'estd412.show.title', :default=>['Estd412'], :name => name(:no_wrapper => true) }">
+
+    <body: class="show-page estd412" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="estd412.show.heading" name="#{name(:no_wrapper => true)}">
+                Estd412 <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="estd412.actions.edit" name="#{name(:no_wrapper => true)}">
+                Edit Estd412
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="area, program" param/>
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="finding.collection.heading" count="&this.findings.count" >
+                  <human-collection-name collection="findings" your/>
+                </ht>
+              </h3>
+
+              <collection:findings param/>
+
+              <section param="add-to-collection" if="&can_create?(@estd412.findings)">
+                <h3 param="add-form-heading">
+                  <ht key="finding.collection.add_form_heading" count="1">
+                    Add a Finding
+                  </ht>
+                </h3>
+                <form with="&@finding || new_for_current_user(@estd412.findings)" owner="estd412" without-cancel param>
+                  <field-list: skip="estd412"/>
+                  <submit: label="#{ht 'finding.actions.add', :default=>['Add'] }"/>
+                </form>
+              </section>
+            </section>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="Estd412">
+  <page merge title="#{ht 'estd412.edit.title', :default=>['Edit Estd412'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page estd412" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd412.edit.heading" name="#{name(:no_wrapper => true)}">
+            Edit Estd412
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'estd412.actions.delete', :default=>['Remove This Estd412']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== Estd421 Pages ====== -->
+
+<def tag="index-page" for="Estd421">
+  <page merge title="#{ht 'estd421.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page estd421" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="estd421.index.heading">
+            <model-name-human model="&model"/>
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="estd421.collection.count" count="&collection_count">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="estd421.actions.new">New Estd421</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="Estd421">
+  <page merge title="#{ht 'estd421.new.title', :default=>[' New Estd421'] }">
+    <body: class="new-page estd421" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd421.new.heading">
+            New Estd421
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'estd421.actions.create', :default=>['Create Estd421']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="Estd421">
+  <page merge title="#{ht 'estd421.show.title', :default=>['Estd421'], :name => name(:no_wrapper => true) }">
+
+    <body: class="show-page estd421" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="estd421.show.heading" name="#{name(:no_wrapper => true)}">
+                Estd421 <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="estd421.actions.edit" name="#{name(:no_wrapper => true)}">
+                Edit Estd421
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="area, program" param/>
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="finding.collection.heading" count="&this.findings.count" >
+                  <human-collection-name collection="findings" your/>
+                </ht>
+              </h3>
+
+              <collection:findings param/>
+
+              <section param="add-to-collection" if="&can_create?(@estd421.findings)">
+                <h3 param="add-form-heading">
+                  <ht key="finding.collection.add_form_heading" count="1">
+                    Add a Finding
+                  </ht>
+                </h3>
+                <form with="&@finding || new_for_current_user(@estd421.findings)" owner="estd421" without-cancel param>
+                  <field-list: skip="estd421"/>
+                  <submit: label="#{ht 'finding.actions.add', :default=>['Add'] }"/>
+                </form>
+              </section>
+            </section>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="Estd421">
+  <page merge title="#{ht 'estd421.edit.title', :default=>['Edit Estd421'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page estd421" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd421.edit.heading" name="#{name(:no_wrapper => true)}">
+            Edit Estd421
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'estd421.actions.delete', :default=>['Remove This Estd421']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+
+
+
+
+<!-- ====== Estd422 Pages ====== -->
+
+<def tag="index-page" for="Estd422">
+  <page merge title="#{ht 'estd422.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page estd422" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="estd422.index.heading">
+            <model-name-human model="&model"/>
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="estd422.collection.count" count="&collection_count">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="estd422.actions.new">New Estd422</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="Estd422">
+  <page merge title="#{ht 'estd422.new.title', :default=>[' New Estd422'] }">
+    <body: class="new-page estd422" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd422.new.heading">
+            New Estd422
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'estd422.actions.create', :default=>['Create Estd422']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="Estd422">
+  <page merge title="#{ht 'estd422.show.title', :default=>['Estd422'], :name => name(:no_wrapper => true) }">
+
+    <body: class="show-page estd422" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="estd422.show.heading" name="#{name(:no_wrapper => true)}">
+                Estd422 <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="estd422.actions.edit" name="#{name(:no_wrapper => true)}">
+                Edit Estd422
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="area, program" param/>
+            <section param="collection-section">
+              <h3 param="collection-heading">
+                <ht key="finding.collection.heading" count="&this.findings.count" >
+                  <human-collection-name collection="findings" your/>
+                </ht>
+              </h3>
+
+              <collection:findings param/>
+
+              <section param="add-to-collection" if="&can_create?(@estd422.findings)">
+                <h3 param="add-form-heading">
+                  <ht key="finding.collection.add_form_heading" count="1">
+                    Add a Finding
+                  </ht>
+                </h3>
+                <form with="&@finding || new_for_current_user(@estd422.findings)" owner="estd422" without-cancel param>
+                  <field-list: skip="estd422"/>
+                  <submit: label="#{ht 'finding.actions.add', :default=>['Add'] }"/>
+                </form>
+              </section>
+            </section>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="Estd422">
+  <page merge title="#{ht 'estd422.edit.title', :default=>['Edit Estd422'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page estd422" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="estd422.edit.heading" name="#{name(:no_wrapper => true)}">
+            Edit Estd422
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'estd422.actions.delete', :default=>['Remove This Estd422']}" param/>
       </section>
 
       <section param="content-body">
@@ -350,15 +1605,16 @@
 
 
 <def tag="show-page" for="Finding">
-  <page merge title="#{ht 'finding.show.title', :default=>['Finding'] }">
+  <page merge title="#{ht 'finding.show.title', :default=>['Finding'], :name => name(:no_wrapper => true) }">
 
     <body: class="show-page finding" param/>
 
     <content: param>
           <header param="content-header">
+            <a:estd311 param="parent-link">&laquo; <ht key="finding.actions.back_to_parent" parent="Estd311" name="&this">Back to <name/></ht></a:estd311>
             <h2 param="heading">
-              <ht key="finding.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
-                <name/>
+              <ht key="finding.show.heading" name="#{name(:no_wrapper => true)}">
+                Finding <name/>
               </ht>
             </h2>
 
@@ -367,14 +1623,14 @@
             <a:previewer param="creator-link"/>
 
             <a action="edit" if="&can_edit?" param="edit-link">
-              <ht key="finding.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
+              <ht key="finding.actions.edit" name="#{name(:no_wrapper => true)}">
                 Edit Finding
               </ht>
             </a>
           </header>
 
           <section param="content-body">
-            <field-list fields="rational, observation, recomendations, sec_obs, lifecycle_state, program, sreviewer" param/>
+            <field-list fields="rational, observation, recomendations, sec_obs, lifecycle_state, estd312, estd321, estd322, estd331, estd332, estd411, estd412, estd421, estd422, sreviewer" param/>
           </section>
     </content:>
 
@@ -383,14 +1639,14 @@
 
 
 <def tag="edit-page" for="Finding">
-  <page merge title="#{ht 'finding.edit.title', :default=>['Edit Finding'] }">
+  <page merge title="#{ht 'finding.edit.title', :default=>['Edit Finding'], :name => name(:no_wrapper => true) }">
 
     <body: class="edit-page finding" param/>
 
     <content:>
       <section param="content-header">
         <h2 param="heading">
-          <ht key="finding.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
+          <ht key="finding.edit.heading" name="#{name(:no_wrapper => true)}">
             Edit Finding
           </ht>
         </h2>
@@ -407,35 +1663,33 @@
 
 
 
-<def tag="new-for-program-page" polymorphic/>
-<def tag="new-for-program-page" for="Finding">
-  <page merge title="#{ht 'finding.new_for_owner.title', :default=>['New Finding for']} #{name :with => @program}">
-    <body: class="new-for-owner-page  finding" param/>
 
-    <content: param>
-      <header param="content-header">
-        <h2 param="heading">
-          <ht key="finding.new_for_owner.heading">
-            New Finding
-          </ht>
-        </h2>
-        <h3 param="subheading">
-          <ht key="finding.new_for_owner.subheading">
-            For:
-          </ht>
-          <a with="&@program"/>
-        </h3>
-      </header>
 
-      <section param="content-body">
-        <form owner="program" method="post" param>
-          <field-list: skip="program"/>
-          <submit: label="#{ht 'finding.actions.create', :default=>['Create Finding']}"/>
-        </form>
-      </section>
-    </content:>
-  </page>
-</def>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 <def tag="primary-read-page" polymorphic/>
@@ -533,7 +1787,7 @@
 
       <section param="content-body">
         <a action="new" to="&model" param="new-link">
-          <ht key="program.actions.new">New Program</ht>
+          <ht key="program.actions.new">New Review</ht>
         </a>
 
         <page-nav param="top-page-nav"/>
@@ -550,21 +1804,21 @@
 
 
 <def tag="new-page" for="Program">
-  <page merge title="#{ht 'program.new.title', :default=>[' New Program'] }">
+  <page merge title="#{ht 'program.new.title', :default=>[' New Review'] }">
     <body: class="new-page program" param/>
 
     <content: param>
       <section param="content-header">
         <h2 param="heading">
           <ht key="program.new.heading">
-            New Program
+            New Review
           </ht>
         </h2>
       </section>
 
       <section param="content-body">
         <form param>
-          <submit: label="#{ht 'program.actions.create', :default=>['Create Program']}"/>
+          <submit: label="#{ht 'program.actions.create', :default=>['Create Review']}"/>
         </form>
       </section>
     </content:>
@@ -573,29 +1827,29 @@
 
 
 <def tag="show-page" for="Program">
-  <page merge title="#{ht 'program.show.title', :default=>['Program'] }">
+  <page merge title="#{ht 'program.show.title', :default=>['Review'], :name => name(:no_wrapper => true) }">
 
     <body: class="show-page program" param/>
 
     <content: param>
           <header param="content-header">
             <h2 param="heading">
-              <ht key="program.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
-                <name/>
+              <ht key="program.show.heading" name="#{name(:no_wrapper => true)}">
+                Review <name/>
               </ht>
             </h2>
 
             <record-flags fields="" param/>
 
             <a action="edit" if="&can_edit?" param="edit-link">
-              <ht key="program.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
-                Edit Program
+              <ht key="program.actions.edit" name="#{name(:no_wrapper => true)}">
+                Edit Review
               </ht>
             </a>
           </header>
 
           <section param="content-body">
-            <view:description param="description"/>
+            <view:description param="description" />
           </section>
     </content:>
 
@@ -604,147 +1858,18 @@
 
 
 <def tag="edit-page" for="Program">
-  <page merge title="#{ht 'program.edit.title', :default=>['Edit Program'] }">
+  <page merge title="#{ht 'program.edit.title', :default=>['Edit Review'], :name => name(:no_wrapper => true) }">
 
     <body: class="edit-page program" param/>
 
     <content:>
       <section param="content-header">
         <h2 param="heading">
-          <ht key="program.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
-            Edit Program
+          <ht key="program.edit.heading" name="#{name(:no_wrapper => true)}">
+            Edit Review
           </ht>
         </h2>
-        <delete-button label="#{ht 'program.actions.delete', :default=>['Remove This Program']}" param/>
-      </section>
-
-      <section param="content-body">
-        <form param/>
-      </section>
-    </content:>
-
-  </page>
-</def>
-
-
-
-
-
-<!-- ====== Standard Pages ====== -->
-
-<def tag="index-page" for="Standard">
-  <page merge title="#{ht 'standard.index.title', :default=>[model.model_name.human(:count=>100)] }">
-    <body: class="index-page standard" param/>
-
-    <content: param>
-      <header param="content-header">
-        <h2 param="heading">
-          <ht key="standard.index.heading">
-            <model-name-human model="&model"/>
-          </ht>
-        </h2>
-
-        <p param="count" if>
-          <ht key="standard.collection.count" count="&collection_count">
-            <count summary/>
-          </ht>
-        </p>
-      </header>
-
-      <section param="content-body">
-        <a action="new" to="&model" param="new-link">
-          <ht key="standard.actions.new">New Standard</ht>
-        </a>
-
-        <page-nav param="top-page-nav"/>
-
-        <collection param/>
-
-        <page-nav param="bottom-page-nav"/>
-
-
-      </section>
-    </content:>
-  </page>
-</def>
-
-
-<def tag="new-page" for="Standard">
-  <page merge title="#{ht 'standard.new.title', :default=>[' New Standard'] }">
-    <body: class="new-page standard" param/>
-
-    <content: param>
-      <section param="content-header">
-        <h2 param="heading">
-          <ht key="standard.new.heading">
-            New Standard
-          </ht>
-        </h2>
-      </section>
-
-      <section param="content-body">
-        <form param>
-          <submit: label="#{ht 'standard.actions.create', :default=>['Create Standard']}"/>
-        </form>
-      </section>
-    </content:>
-  </page>
-</def>
-
-
-<def tag="show-page" for="Standard">
-  <page merge title="#{ht 'standard.show.title', :default=>['Standard'] }">
-
-    <body: class="show-page standard" param/>
-
-    <content: param>
-          <header param="content-header">
-            <h2 param="heading">
-              <ht key="standard.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
-                <name/>
-              </ht>
-            </h2>
-
-            <record-flags fields="" param/>
-
-            <a action="edit" if="&can_edit?" param="edit-link">
-              <ht key="standard.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
-                Edit Standard
-              </ht>
-            </a>
-          </header>
-
-          <section param="content-body">
-            <field-list fields="program" param/>
-            <section param="collection-section">
-              <h3 param="collection-heading">
-                <ht key="chapter.collection.heading" count="&this.chapters.count" >
-                  <human-collection-name collection="chapters" your/>
-                </ht>
-              </h3>
-
-              <collection:chapters param/>
-            </section>
-          </section>
-    </content:>
-
-  </page>
-</def>
-
-
-<def tag="edit-page" for="Standard">
-  <page merge title="#{ht 'standard.edit.title', :default=>['Edit Standard'] }">
-
-    <body: class="edit-page standard" param/>
-
-    <content:>
-      <section param="content-header">
-        <h2 param="heading">
-          <ht key="standard.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
-            Edit Standard
-          </ht>
-        </h2>
-        <delete-button label="#{ht 'standard.actions.delete', :default=>['Remove This Standard']}" param/>
+        <delete-button label="#{ht 'program.actions.delete', :default=>['Remove This Review']}" param/>
       </section>
 
       <section param="content-body">
@@ -822,22 +1947,22 @@
 
 
 <def tag="show-page" for="StdStatus">
-  <page merge title="#{ht 'std_status.show.title', :default=>['Std status'] }">
+  <page merge title="#{ht 'std_status.show.title', :default=>['Std status'], :name => name(:no_wrapper => true) }">
 
     <body: class="show-page std-status" param/>
 
     <content: param>
           <header param="content-header">
             <h2 param="heading">
-              <ht key="std_status.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
-                <name/>
+              <ht key="std_status.show.heading" name="#{name(:no_wrapper => true)}">
+                Std status <name/>
               </ht>
             </h2>
 
             <record-flags fields="" param/>
 
             <a action="edit" if="&can_edit?" param="edit-link">
-              <ht key="std_status.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
+              <ht key="std_status.actions.edit" name="#{name(:no_wrapper => true)}">
                 Edit Std status
               </ht>
             </a>
@@ -852,14 +1977,14 @@
 
 
 <def tag="edit-page" for="StdStatus">
-  <page merge title="#{ht 'std_status.edit.title', :default=>['Edit Std status'] }">
+  <page merge title="#{ht 'std_status.edit.title', :default=>['Edit Std status'], :name => name(:no_wrapper => true) }">
 
     <body: class="edit-page std-status" param/>
 
     <content:>
       <section param="content-header">
         <h2 param="heading">
-          <ht key="std_status.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
+          <ht key="std_status.edit.heading" name="#{name(:no_wrapper => true)}">
             Edit Std status
           </ht>
         </h2>
@@ -901,7 +2026,7 @@
 
       <section param="content-body">
         <a action="new" to="&model" param="new-link">
-          <ht key="upload.actions.new">New Upload</ht>
+          <ht key="upload.actions.new">New Proof Document</ht>
         </a>
 
         <page-nav param="top-page-nav"/>
@@ -918,21 +2043,21 @@
 
 
 <def tag="new-page" for="Upload">
-  <page merge title="#{ht 'upload.new.title', :default=>[' New Upload'] }">
+  <page merge title="#{ht 'upload.new.title', :default=>[' New Proof Document'] }">
     <body: class="new-page upload" param/>
 
     <content: param>
       <section param="content-header">
         <h2 param="heading">
           <ht key="upload.new.heading">
-            New Upload
+            New Proof Document
           </ht>
         </h2>
       </section>
 
       <section param="content-body">
         <form param>
-          <submit: label="#{ht 'upload.actions.create', :default=>['Create Upload']}"/>
+          <submit: label="#{ht 'upload.actions.create', :default=>['Create Proof Document']}"/>
         </form>
       </section>
     </content:>
@@ -941,29 +2066,29 @@
 
 
 <def tag="show-page" for="Upload">
-  <page merge title="#{ht 'upload.show.title', :default=>['Upload'] }">
+  <page merge title="#{ht 'upload.show.title', :default=>['Proof Document'], :name => name(:no_wrapper => true) }">
 
     <body: class="show-page upload" param/>
 
     <content: param>
           <header param="content-header">
             <h2 param="heading">
-              <ht key="upload.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
-                <name/>
+              <ht key="upload.show.heading" name="#{name(:no_wrapper => true)}">
+                Proof Document <name/>
               </ht>
             </h2>
 
             <record-flags fields="" param/>
 
             <a action="edit" if="&can_edit?" param="edit-link">
-              <ht key="upload.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
-                Edit Upload
+              <ht key="upload.actions.edit" name="#{name(:no_wrapper => true)}">
+                Edit Proof Document
               </ht>
             </a>
           </header>
 
           <section param="content-body">
-            <field-list fields="proof_file_name, proof_content_type, proof_file_size, proof_updated_at, area" param/>
+            <field-list fields="proof_file_name, proof_content_type, proof_file_size, proof_updated_at" param/>
           </section>
     </content:>
 
@@ -972,18 +2097,18 @@
 
 
 <def tag="edit-page" for="Upload">
-  <page merge title="#{ht 'upload.edit.title', :default=>['Edit Upload'] }">
+  <page merge title="#{ht 'upload.edit.title', :default=>['Edit Proof Document'], :name => name(:no_wrapper => true) }">
 
     <body: class="edit-page upload" param/>
 
     <content:>
       <section param="content-header">
         <h2 param="heading">
-          <ht key="upload.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
-            Edit Upload
+          <ht key="upload.edit.heading" name="#{name(:no_wrapper => true)}">
+            Edit Proof Document
           </ht>
         </h2>
-        <delete-button label="#{ht 'upload.actions.delete', :default=>['Remove This Upload']}" param/>
+        <delete-button label="#{ht 'upload.actions.delete', :default=>['Remove This Proof Document']}" param/>
       </section>
 
       <section param="content-body">
@@ -991,38 +2116,6 @@
       </section>
     </content:>
 
-  </page>
-</def>
-
-
-
-<def tag="new-for-area-page" polymorphic/>
-<def tag="new-for-area-page" for="Upload">
-  <page merge title="#{ht 'upload.new_for_owner.title', :default=>['New Upload for']} #{name :with => @area}">
-    <body: class="new-for-owner-page  upload" param/>
-
-    <content: param>
-      <header param="content-header">
-        <h2 param="heading">
-          <ht key="upload.new_for_owner.heading">
-            New Upload
-          </ht>
-        </h2>
-        <h3 param="subheading">
-          <ht key="upload.new_for_owner.subheading">
-            For:
-          </ht>
-          <a with="&@area"/>
-        </h3>
-      </header>
-
-      <section param="content-body">
-        <form owner="area" method="post" param>
-          <field-list: skip="area"/>
-          <submit: label="#{ht 'upload.actions.create', :default=>['Create Upload']}"/>
-        </form>
-      </section>
-    </content:>
   </page>
 </def>
 
@@ -1097,22 +2190,22 @@
 
 
 <def tag="show-page" for="User">
-  <page merge title="#{ht 'user.show.title', :default=>['User'] }">
+  <page merge title="#{ht 'user.show.title', :default=>['User'], :name => name(:no_wrapper => true) }">
 
     <body: class="show-page user" param/>
 
     <content: param>
           <header param="content-header">
             <h2 param="heading">
-              <ht key="user.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
-                <name/>
+              <ht key="user.show.heading" name="#{name(:no_wrapper => true)}">
+                User <name/>
               </ht>
             </h2>
 
             <record-flags fields="administrator" param/>
 
             <a action="edit" if="&can_edit?" param="edit-link">
-              <ht key="user.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
+              <ht key="user.actions.edit" name="#{name(:no_wrapper => true)}">
                 Edit User
               </ht>
             </a>
@@ -1128,14 +2221,14 @@
 
 
 <def tag="edit-page" for="User">
-  <page merge title="#{ht 'user.edit.title', :default=>['Edit User'] }">
+  <page merge title="#{ht 'user.edit.title', :default=>['Edit User'], :name => name(:no_wrapper => true) }">
 
     <body: class="edit-page user" param/>
 
     <content:>
       <section param="content-header">
         <h2 param="heading">
-          <ht key="user.edit.heading" name="&this.respond_to?(:name) ? this.name : ''">
+          <ht key="user.edit.heading" name="#{name(:no_wrapper => true)}">
             Edit User
           </ht>
         </h2>

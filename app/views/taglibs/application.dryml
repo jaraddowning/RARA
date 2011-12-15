@@ -29,11 +29,23 @@
         <a href="/emap/privacy.html">Privacy and Security</a>
       </div>
       <div>
-        Copyright &#64; 2011 - EMAP  |
+        Copyright &#64; 2012 - EMAP  |
       </div>
     </footer:>
   </old-page>
 </extend>
+
+<def tag="card" for="Program">
+  <card class="program" param="default" merge>
+    <header param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header>
+    <body param>
+
+    </body>
+    <delete-button class="actions" />
+  </card>
+</def>
 
 
 <def tag="index-page" for="Program">
@@ -67,16 +79,18 @@
   </page>
 </def>
 
-<def tag="form" for="Finding">
+<!--<def tag="form" for="Finding">
   <form merge param="default">
     <error-messages param/>
+    <a:program param="parent-link">&laquo; <ht key="finding.actions.back_to_parent" parent="Program" name="&this">Back to <name/></ht></a:program><br /><br />
     <field-list fields="rational, observation, recomendations, decision, previewer" param/>
     <div param="actions">
       <submit label="#{ht 'finding.actions.save', :default=>['Submit']}" param/>
     </div>
-    <after-submit go-back />
+    <a:program param="parent-link">&laquo; <ht key="finding.actions.back_to_parent" parent="Program" name="&this">Back to <name/></ht></a:program>
+    <after-submit stay-here/>
   </form>
-</def>
+</def>-->
 
 <def tag="second-read-form" polymorphic/>
 <def tag="second-read-form" for="Finding">
@@ -88,6 +102,31 @@
       <submit label="#{ht 'finding.actions.second_read', :default=>['Save Second Read']}" param/>
     </div>
   </form>
+</def>
+
+<def tag="second-read-page" polymorphic/>
+<def tag="second-read-page" for="Finding">
+  <page title="#{ht 'finding.second_read.title', :default=>['Second Read for']} #{name :with => @area}">
+
+    <body: class="lifecycle-transition-page second-read-page" param/>
+    <content: param>
+          <header param="content-header">
+            <a:area param="parent-link">&laquo; <ht key="finding.actions.back_to_parent" parent="Area" name="&this">Back to <name/></ht></a:area>
+            <h2 param="heading">
+              <ht key="finding.second_read.heading" name="&this.respond_to?(:name) ? this.name : ''">
+                Primary Finding
+              </ht>
+            </h2>
+
+          </header>
+
+          <section param="content-body">
+            <field-list fields="decision, rational, observation, recomendations, previewer" param/><br /><hr /><br />
+            <h2>Second Read</h2><br />
+            <second-read-form param="form"/>
+          </section>
+    </content:>
+  </page>
 </def>
 
 <def tag="completion-form" polymorphic/>
@@ -102,11 +141,29 @@
   </form>
 </def>
 
-<!--<extend tag="form" for="Upload"> 
-  <old-form enctype="multipart/form-data" merge> 
-    <field-list: fields="title, proof" />
-  </old-form>
-</extend>-->
+<def tag="completion-page" polymorphic/>
+<def tag="completion-page" for="Finding">
+  <page title="#{ht 'finding.completion.title', :default=>['Completion']}" merge>
+
+    <body: class="lifecycle-transition-page completion-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <a:area param="parent-link">&laquo; <ht key="finding.actions.back_to_parent" parent="Area" name="&this">Back to <name/></ht></a:area>
+        <h2 param="heading">
+          <ht key="finding.completion.heading">
+            Completion
+          </ht>
+        </h2>
+      </header>
+
+      <section param="content-body">
+        <completion-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
 
 <def tag="form" for="Upload">
   <form enctype="multipart/form-data" merge>
@@ -136,89 +193,3 @@
     <delete-button class="actions" /> 
   </card> 
 </extend>
-
-
-
-
-<def tag="show-page" for="Finding">
-  <page merge title="#{ht 'finding.show.title', :default=>['Finding'] }">
-
-    <body: class="show-page finding" param/>
-
-    <content: param>
-          <header param="content-header">
-            <a:area param="parent-link">&laquo; <ht key="finding.actions.back_to_parent" parent="Area" name="&this">Back to <name/></ht></a:area>
-            <h2 param="heading">
-              <ht key="finding.show.heading" name="&this.respond_to?(:name) ? this.name : ''">
-                <name/>
-              </ht>
-            </h2>
-
-            <record-flags fields="decision, concur, mark_complete" param/>
-
-            <a:previewer param="creator-link"/>
-
-            <a action="edit" if="&can_edit?" param="edit-link">
-              <ht key="finding.actions.edit" name="&this.respond_to?(:name) ? this.name : ''">
-                Edit Finding
-              </ht>
-            </a>
-          </header>
-
-          <section param="content-body">
-            <field-list fields="rational, observation, recomendations, decision, sec_obs" param/>
-          </section>
-    </content:>
-
-  </page>
-</def>
-
-
-<def tag="second-read-page" polymorphic/>
-<def tag="second-read-page" for="Finding">
-  <page title="#{ht 'finding.second_read.title', :default=>['Second Read for']} #{name :with => @area}">
-
-    <body: class="lifecycle-transition-page second-read-page" param/>
-    <content: param>
-          <header param="content-header">
-            <a:area param="parent-link">&laquo; <ht key="finding.actions.back_to_parent" parent="Area" name="&this">Back to <name/></ht></a:area>
-            <h2 param="heading">
-              <ht key="finding.second_read.heading" name="&this.respond_to?(:name) ? this.name : ''">
-                Primary Finding
-              </ht>
-            </h2>
-
-          </header>
-
-          <section param="content-body">
-            <field-list fields="decision, rational, observation, recomendations, previewer" param/><br /><hr /><br />
-            <h2>Second Read</h2><br />
-            <second-read-form param="form"/>
-          </section>
-    </content:>
-  </page>
-</def>
-
-<def tag="completion-page" polymorphic/>
-<def tag="completion-page" for="Finding">
-  <page title="#{ht 'finding.completion.title', :default=>['Completion']}" merge>
-
-    <body: class="lifecycle-transition-page completion-page" param/>
-
-    <content:>
-      <header param="content-header">
-        <a:area param="parent-link">&laquo; <ht key="finding.actions.back_to_parent" parent="Area" name="&this">Back to <name/></ht></a:area>
-        <h2 param="heading">
-          <ht key="finding.completion.heading">
-            Completion
-          </ht>
-        </h2>
-      </header>
-
-      <section param="content-body">
-        <completion-form param="form"/>
-      </section>
-    </content:>
-
-  </page>
-</def>

@@ -5,6 +5,15 @@
 Rara::Application.routes.draw do
 
 
+  # Resource routes for controller "estd332s"
+  get 'estd332s/new(.:format)', :as => 'new_estd332'
+  get 'estd332s/:id/edit(.:format)' => 'estd332s#edit', :as => 'edit_estd332'
+  get 'estd332s/:id(.:format)' => 'estd332s#show', :as => 'estd332', :constraints => { :id => %r([^/.?]+) }
+  post 'estd332s(.:format)' => 'estd332s#create', :as => 'create_estd332'
+  put 'estd332s/:id(.:format)' => 'estd332s#update', :as => 'update_estd332', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd332s/:id(.:format)' => 'estd332s#destroy', :as => 'destroy_estd332', :constraints => { :id => %r([^/.?]+) }
+
+
   # Resource routes for controller "areas"
   get 'areas/new(.:format)', :as => 'new_area'
   get 'areas/:id/edit(.:format)' => 'areas#edit', :as => 'edit_area'
@@ -12,9 +21,6 @@ Rara::Application.routes.draw do
   post 'areas(.:format)' => 'areas#create', :as => 'create_area'
   put 'areas/:id(.:format)' => 'areas#update', :as => 'update_area', :constraints => { :id => %r([^/.?]+) }
   delete 'areas/:id(.:format)' => 'areas#destroy', :as => 'destroy_area', :constraints => { :id => %r([^/.?]+) }
-
-  # Reorder routes for controller "areas"
-  post 'areas/reorder(.:format)', :as => 'reorder_areas'
 
 
   # Lifecycle routes for controller "findings"
@@ -34,8 +40,34 @@ Rara::Application.routes.draw do
   delete 'findings/:id(.:format)' => 'findings#destroy', :as => 'destroy_finding', :constraints => { :id => %r([^/.?]+) }
 
   # Owner routes for controller "findings"
-  get 'programs/:program_id/findings/new(.:format)' => 'findings#new_for_program', :as => 'new_finding_for_program'
-  post 'programs/:program_id/findings(.:format)' => 'findings#create_for_program', :as => 'create_finding_for_program'
+  post 'estd311s/:estd311_id/findings(.:format)' => 'findings#create_for_estd311', :as => 'create_finding_for_estd311'
+  post 'estd312s/:estd312_id/findings(.:format)' => 'findings#create_for_estd312', :as => 'create_finding_for_estd312'
+  post 'estd321s/:estd321_id/findings(.:format)' => 'findings#create_for_estd321', :as => 'create_finding_for_estd321'
+  post 'estd322s/:estd322_id/findings(.:format)' => 'findings#create_for_estd322', :as => 'create_finding_for_estd322'
+  post 'estd331s/:estd331_id/findings(.:format)' => 'findings#create_for_estd331', :as => 'create_finding_for_estd331'
+  post 'estd332s/:estd332_id/findings(.:format)' => 'findings#create_for_estd332', :as => 'create_finding_for_estd332'
+  post 'estd411s/:estd411_id/findings(.:format)' => 'findings#create_for_estd411', :as => 'create_finding_for_estd411'
+  post 'estd412s/:estd412_id/findings(.:format)' => 'findings#create_for_estd412', :as => 'create_finding_for_estd412'
+  post 'estd421s/:estd421_id/findings(.:format)' => 'findings#create_for_estd421', :as => 'create_finding_for_estd421'
+  post 'estd422s/:estd422_id/findings(.:format)' => 'findings#create_for_estd422', :as => 'create_finding_for_estd422'
+
+
+  # Resource routes for controller "estd322s"
+  get 'estd322s/new(.:format)', :as => 'new_estd322'
+  get 'estd322s/:id/edit(.:format)' => 'estd322s#edit', :as => 'edit_estd322'
+  get 'estd322s/:id(.:format)' => 'estd322s#show', :as => 'estd322', :constraints => { :id => %r([^/.?]+) }
+  post 'estd322s(.:format)' => 'estd322s#create', :as => 'create_estd322'
+  put 'estd322s/:id(.:format)' => 'estd322s#update', :as => 'update_estd322', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd322s/:id(.:format)' => 'estd322s#destroy', :as => 'destroy_estd322', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd321s"
+  get 'estd321s/new(.:format)', :as => 'new_estd321'
+  get 'estd321s/:id/edit(.:format)' => 'estd321s#edit', :as => 'edit_estd321'
+  get 'estd321s/:id(.:format)' => 'estd321s#show', :as => 'estd321', :constraints => { :id => %r([^/.?]+) }
+  post 'estd321s(.:format)' => 'estd321s#create', :as => 'create_estd321'
+  put 'estd321s/:id(.:format)' => 'estd321s#update', :as => 'update_estd321', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd321s/:id(.:format)' => 'estd321s#destroy', :as => 'destroy_estd321', :constraints => { :id => %r([^/.?]+) }
 
 
   # Lifecycle routes for controller "users"
@@ -70,13 +102,13 @@ Rara::Application.routes.draw do
   delete 'programs/:id(.:format)' => 'programs#destroy', :as => 'destroy_program', :constraints => { :id => %r([^/.?]+) }
 
 
-  # Resource routes for controller "standards"
-  get 'standards/new(.:format)', :as => 'new_standard'
-  get 'standards/:id/edit(.:format)' => 'standards#edit', :as => 'edit_standard'
-  get 'standards/:id(.:format)' => 'standards#show', :as => 'standard', :constraints => { :id => %r([^/.?]+) }
-  post 'standards(.:format)' => 'standards#create', :as => 'create_standard'
-  put 'standards/:id(.:format)' => 'standards#update', :as => 'update_standard', :constraints => { :id => %r([^/.?]+) }
-  delete 'standards/:id(.:format)' => 'standards#destroy', :as => 'destroy_standard', :constraints => { :id => %r([^/.?]+) }
+  # Resource routes for controller "estd411s"
+  get 'estd411s/new(.:format)', :as => 'new_estd411'
+  get 'estd411s/:id/edit(.:format)' => 'estd411s#edit', :as => 'edit_estd411'
+  get 'estd411s/:id(.:format)' => 'estd411s#show', :as => 'estd411', :constraints => { :id => %r([^/.?]+) }
+  post 'estd411s(.:format)' => 'estd411s#create', :as => 'create_estd411'
+  put 'estd411s/:id(.:format)' => 'estd411s#update', :as => 'update_estd411', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd411s/:id(.:format)' => 'estd411s#destroy', :as => 'destroy_estd411', :constraints => { :id => %r([^/.?]+) }
 
 
   # Resource routes for controller "std_statuses"
@@ -88,6 +120,33 @@ Rara::Application.routes.draw do
   delete 'std_statuses/:id(.:format)' => 'std_statuses#destroy', :as => 'destroy_std_status', :constraints => { :id => %r([^/.?]+) }
 
 
+  # Resource routes for controller "estd412s"
+  get 'estd412s/new(.:format)', :as => 'new_estd412'
+  get 'estd412s/:id/edit(.:format)' => 'estd412s#edit', :as => 'edit_estd412'
+  get 'estd412s/:id(.:format)' => 'estd412s#show', :as => 'estd412', :constraints => { :id => %r([^/.?]+) }
+  post 'estd412s(.:format)' => 'estd412s#create', :as => 'create_estd412'
+  put 'estd412s/:id(.:format)' => 'estd412s#update', :as => 'update_estd412', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd412s/:id(.:format)' => 'estd412s#destroy', :as => 'destroy_estd412', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd311s"
+  get 'estd311s/new(.:format)', :as => 'new_estd311'
+  get 'estd311s/:id/edit(.:format)' => 'estd311s#edit', :as => 'edit_estd311'
+  get 'estd311s/:id(.:format)' => 'estd311s#show', :as => 'estd311', :constraints => { :id => %r([^/.?]+) }
+  post 'estd311s(.:format)' => 'estd311s#create', :as => 'create_estd311'
+  put 'estd311s/:id(.:format)' => 'estd311s#update', :as => 'update_estd311', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd311s/:id(.:format)' => 'estd311s#destroy', :as => 'destroy_estd311', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd312s"
+  get 'estd312s/new(.:format)', :as => 'new_estd312'
+  get 'estd312s/:id/edit(.:format)' => 'estd312s#edit', :as => 'edit_estd312'
+  get 'estd312s/:id(.:format)' => 'estd312s#show', :as => 'estd312', :constraints => { :id => %r([^/.?]+) }
+  post 'estd312s(.:format)' => 'estd312s#create', :as => 'create_estd312'
+  put 'estd312s/:id(.:format)' => 'estd312s#update', :as => 'update_estd312', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd312s/:id(.:format)' => 'estd312s#destroy', :as => 'destroy_estd312', :constraints => { :id => %r([^/.?]+) }
+
+
   # Resource routes for controller "uploads"
   get 'uploads/new(.:format)', :as => 'new_upload'
   get 'uploads/:id/edit(.:format)' => 'uploads#edit', :as => 'edit_upload'
@@ -96,18 +155,32 @@ Rara::Application.routes.draw do
   put 'uploads/:id(.:format)' => 'uploads#update', :as => 'update_upload', :constraints => { :id => %r([^/.?]+) }
   delete 'uploads/:id(.:format)' => 'uploads#destroy', :as => 'destroy_upload', :constraints => { :id => %r([^/.?]+) }
 
-  # Owner routes for controller "uploads"
-  get 'areas/:area_id/uploads/new(.:format)' => 'uploads#new_for_area', :as => 'new_upload_for_area'
-  post 'areas/:area_id/uploads(.:format)' => 'uploads#create_for_area', :as => 'create_upload_for_area'
+
+  # Resource routes for controller "estd331s"
+  get 'estd331s/new(.:format)', :as => 'new_estd331'
+  get 'estd331s/:id/edit(.:format)' => 'estd331s#edit', :as => 'edit_estd331'
+  get 'estd331s/:id(.:format)' => 'estd331s#show', :as => 'estd331', :constraints => { :id => %r([^/.?]+) }
+  post 'estd331s(.:format)' => 'estd331s#create', :as => 'create_estd331'
+  put 'estd331s/:id(.:format)' => 'estd331s#update', :as => 'update_estd331', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd331s/:id(.:format)' => 'estd331s#destroy', :as => 'destroy_estd331', :constraints => { :id => %r([^/.?]+) }
 
 
-  # Resource routes for controller "chapters"
-  get 'chapters/new(.:format)', :as => 'new_chapter'
-  get 'chapters/:id/edit(.:format)' => 'chapters#edit', :as => 'edit_chapter'
-  get 'chapters/:id(.:format)' => 'chapters#show', :as => 'chapter', :constraints => { :id => %r([^/.?]+) }
-  post 'chapters(.:format)' => 'chapters#create', :as => 'create_chapter'
-  put 'chapters/:id(.:format)' => 'chapters#update', :as => 'update_chapter', :constraints => { :id => %r([^/.?]+) }
-  delete 'chapters/:id(.:format)' => 'chapters#destroy', :as => 'destroy_chapter', :constraints => { :id => %r([^/.?]+) }
+  # Resource routes for controller "estd421s"
+  get 'estd421s/new(.:format)', :as => 'new_estd421'
+  get 'estd421s/:id/edit(.:format)' => 'estd421s#edit', :as => 'edit_estd421'
+  get 'estd421s/:id(.:format)' => 'estd421s#show', :as => 'estd421', :constraints => { :id => %r([^/.?]+) }
+  post 'estd421s(.:format)' => 'estd421s#create', :as => 'create_estd421'
+  put 'estd421s/:id(.:format)' => 'estd421s#update', :as => 'update_estd421', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd421s/:id(.:format)' => 'estd421s#destroy', :as => 'destroy_estd421', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd422s"
+  get 'estd422s/new(.:format)', :as => 'new_estd422'
+  get 'estd422s/:id/edit(.:format)' => 'estd422s#edit', :as => 'edit_estd422'
+  get 'estd422s/:id(.:format)' => 'estd422s#show', :as => 'estd422', :constraints => { :id => %r([^/.?]+) }
+  post 'estd422s(.:format)' => 'estd422s#create', :as => 'create_estd422'
+  put 'estd422s/:id(.:format)' => 'estd422s#update', :as => 'update_estd422', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd422s/:id(.:format)' => 'estd422s#destroy', :as => 'destroy_estd422', :constraints => { :id => %r([^/.?]+) }
 
   namespace :emap do
 
