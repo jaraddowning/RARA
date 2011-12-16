@@ -12,7 +12,7 @@ jQuery(document).ready(function(){
 jQuery(document).ready(function()
 {
   //hide the all of the element with class msg_body
-  //jQuery(".msg_body").hide();
+  jQuery(".msg_body").hide();
   jQuery(".msg_sub_body").hide();
   //toggle the componenet with class msg_body
   jQuery(".msg_head").click(function()

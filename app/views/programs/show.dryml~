@@ -6,7 +6,7 @@
     <p class="msg_head"><i>Emergency Management Standard</i> by EMAP</p>
       <div class="msg_body">
         <p class="msg_head" id="sub-menu">Chapter 3 - Emergency Management Program</p>
-          <div class="msg_sub_body">
+          <div class="msg_body">
             <p class="msg_head">Standard 3.1 Program Administration, Plans and Evaluation</p>
               <div class="msg_sub_body" href="#1" name="1">
                 <collection:estd311s />
@@ -24,7 +24,7 @@
               </div>
           </div>
         <p class="msg_head" id="sub-menu">Chapter 4 - Emergency Management Program Elements</p>
-          <div class="msg_sub_body">
+          <div class="msg_body">
             <p class="msg_head">Standard 4.1 Administration and Finance</p>
               <div class="msg_sub_body">
                 <collection:estd411s />

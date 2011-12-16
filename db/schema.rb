@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111216012125) do
+ActiveRecord::Schema.define(:version => 20111216022516) do
 
   create_table "areas", :force => true do |t|
     t.string   "standard"
@@ -157,6 +157,7 @@ ActiveRecord::Schema.define(:version => 20111216012125) do
     t.integer  "sreviewer_id"
     t.string   "lifecycle_state", :default => "primary"
     t.datetime "key_timestamp"
+    t.integer  "program_id"
   end
 
   add_index "findings", ["estd311_id"], :name => "index_findings_on_estd311_id"
@@ -171,6 +172,7 @@ ActiveRecord::Schema.define(:version => 20111216012125) do
   add_index "findings", ["estd422_id"], :name => "index_findings_on_estd422_id"
   add_index "findings", ["lifecycle_state"], :name => "index_findings_on_lifecycle_state"
   add_index "findings", ["previewer_id"], :name => "index_findings_on_previewer_id"
+  add_index "findings", ["program_id"], :name => "index_findings_on_program_id"
   add_index "findings", ["sreviewer_id"], :name => "index_findings_on_sreviewer_id"
 
   create_table "programs", :force => true do |t|

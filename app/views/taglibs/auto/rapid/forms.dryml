@@ -135,7 +135,7 @@
 <def tag="form" for="Finding">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="name, rational, observation, recomendations, decision, concur, sec_obs, mark_complete, lifecycle_state, estd311, estd312, estd321, estd322, estd331, estd332, estd411, estd412, estd421, estd422, previewer, sreviewer" param/>
+    <field-list fields="name, rational, observation, recomendations, decision, concur, sec_obs, mark_complete, lifecycle_state, estd311, estd312, estd321, estd322, estd331, estd332, estd411, estd412, estd421, estd422, previewer, program, sreviewer" param/>
     <div param="actions">
       <submit label="#{ht 'finding.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>

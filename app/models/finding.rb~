@@ -14,7 +14,6 @@ class Finding < ActiveRecord::Base
     timestamps
   end
 
-  belongs_to :program
   belongs_to :estd311
   belongs_to :estd312
   belongs_to :estd321

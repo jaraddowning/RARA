@@ -8,7 +8,7 @@ class Program < ActiveRecord::Base
     timestamps
   end
 
-  has_many :findings
+  has_many :findings, :through => :estd311s
   has_many :estd311s, :dependent => :destroy
   has_many :estd312s, :dependent => :destroy
   has_many :estd321s, :dependent => :destroy

@@ -194,6 +194,14 @@
   </card> 
 </extend>
 
+<def tag="card" for="Area">
+  <card class="area" merge>
+    <header>
+      <h4><a><view:standard /></a></h4><view:name/>
+    </header>
+  </card>
+</def>
+
 <!--   This sucks   -->
 
 <extend tag="show-page" for="Estd311">
