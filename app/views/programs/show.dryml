@@ -3,10 +3,12 @@
     <h2>Findings</h2>
     
     <div class="msg_list" >
+
     <p class="msg_head"><i>Emergency Management Standard</i> by EMAP</p>
       <div class="msg_body">
+
         <p class="msg_head" id="sub-menu">Chapter 3 - Emergency Management Program</p>
-          <div class="msg_sub_body">
+          <div class="msg_body">
             <p class="msg_head">Standard 3.1 Program Administration, Plans and Evaluation</p>
               <div class="msg_sub_body" href="#1" name="1">
                 <collection:estd311s />
@@ -23,8 +25,9 @@
                 <collection:estd332s />
               </div>
           </div>
+
         <p class="msg_head" id="sub-menu">Chapter 4 - Emergency Management Program Elements</p>
-          <div class="msg_sub_body">
+          <div class="msg_body">
             <p class="msg_head">Standard 4.1 Administration and Finance</p>
               <div class="msg_sub_body">
                 <collection:estd411s />
@@ -36,12 +39,12 @@
                 <collection:estd422s />
               </div>
             <p class="msg_head">Standard 4.3 Hazard Identification, Risk Assessment and Consequence Analysis</p>
-              <div class="msg_body">
+              <div class="msg_sub_body">
                 <collection:estd431s />
                 <collection:estd432s />
               </div>
             <p class="msg_head">Standard 4.4 Hazard Mitigation</p>
-              <!--<div class="msg_body">
+              <div class="msg_sub_body">
                 <collection:estd441s />
                 <collection:estd442s />
                 <collection:estd443s />
@@ -49,16 +52,17 @@
                 <collection:estd445s />
               </div>
             <p class="msg_head">Standard 4.5 Prevention</p>
-              <div class="msg_body">
+              <div class="msg_sub_body">
                 <collection:estd451s />
                 <collection:estd452s />
                 <collection:estd453s />
               </div>
             <p class="msg_head">Standard 4.6 Operational Planning</p>
-              <div class="msg_body">
+              <!--<div class="msg_sub_body">
                 <collection:estd461s />
+
                 <p class="msg_head">Standard 4.6.2</p>
-                  <div class="msg_body">
+                  <div class="msg_sub_body">
                     <collection:estd4621s />
                     <collection:estd4622s />
                     <collection:estd4623s />
@@ -68,7 +72,7 @@
                     <collection:estd4627s />
                   </div>
                 <p class="msg_head">Standard 4.6.3</p>
-                  <div class="msg_body">
+                  <div class="msg_sub_body">
                     <collection:estd4631s />
                     <collection:estd4632s />
                     <collection:estd4633s />
@@ -99,12 +103,13 @@
                     <collection:estd46328s />
                     <collection:estd46329s />
                   </div>
+
                   <collection:estd464s />
                   <collection:estd465s />
                   <collection:estd466s />
               </div>
             <p class="msg_head">Standard 4.7 Incident Management</p>
-              <div class="msg_body">
+              <div class="msg_sub_body">
                 <collection:estd471s />
                 <collection:estd472s />
                 <collection:estd473s />
@@ -112,12 +117,12 @@
                 <collection:estd475s />
               </div>
             <p class="msg_head">Standard 4.8 Resource Management and Logistics</p>
-              <div class="msg_body">
+              <div class="msg_sub_body">
                 <collection:estd481s />
                 <collection:estd482s />
                 <collection:estd483s />
                 <p class="msg_head">Standard 4.8.4</p>
-                  <div class="msg_body">
+                  <div class="msg_sub_body">
                     <collection:estd4841s />
                     <collection:estd4842s />
                     <collection:estd4843s />>
@@ -126,12 +131,12 @@
                 <collection:estd486s />
               </div>
             <p class="msg_head">Standard 4.9 Mutual Aid</p>
-              <div class="msg_body">
+              <div class="msg_sub_body">
                 <collection:estd491s />
                 <collection:estd492s />
               </div>
             <p class="msg_head">Standard 4.10 Communications and Warning</p>
-              <div class="msg_body">
+              <div class="msg_sub_body">
                 <collection:estd4101s />
                 <collection:estd4102s />
                 <collection:estd4103s />
@@ -141,35 +146,35 @@
                 <collection:estd4107s />
               </div>
             <p class="msg_head">Standard 4.11 Operations and Procedures</p>
-              <div class="msg_body">
+              <div class="msg_sub_body">
                 <collection:estd4111s />
                 <collection:estd4112s />
                 <collection:estd4113s />
                 <collection:estd4114s />
               </div>
             <p class="msg_head">Standard 4.12 Facilities</p>
-              <div class="msg_body">
+              <div class="msg_sub_body">
                 <collection:estd4121s />
                 <collection:estd4122s />
               </div>
             <p class="msg_head">Standard 4.13 Training</p>
-              <div class="msg_body">
+              <div class="msg_sub_body">
                 <collection:estd4131s />
                 <collection:estd4132s />
                 <collection:estd4133s />
                 <collection:estd4134s />
               </div>
             <p class="msg_head">Standard 4.14 Exercises, Evaluations and Corrective Actions</p>
-              <div class="msg_body">
+              <div class="msg_sub_body">
                 <collection:estd4141s />
                 <collection:estd4142s />
                 <collection:estd4143s />
               </div>
             <p class="msg_head">Standard 4.15 Crisis Communications, Public Education and Information</p>
-              <div class="msg_body">
+              <div class="msg_sub_body">
                 <div><a href="#">Standard 4.15.1</a></div>
                   <collection:estd4151s />
-                  <div class="msg_body">
+                  <div class="msg_sub_body">
                     <collection:estd41521s />
                     <collection:estd41522s />
                     <collection:estd41523s />
@@ -179,12 +184,12 @@
                 <collection:estd4153s />
                 <collection:estd4154s />
                 <collection:estd4155s />
-              </div>
+              </div>-->
           </div>
       </div>
     </div>
 
-  USAFRICOM Section
+<!--  USAFRICOM Section
 
     <div class="msg_list">
     <p class="msg_head">Military Review by U.S.AFRICOM</p>
@@ -354,9 +359,6 @@ CDHAM Section
           </div>
       </div>
     </div><br /><br /><br />-->
-          </div>
-      </div>
-      
-    </div>
+
   </content-body:>
 </show-page>

@@ -132,10 +132,130 @@
 
 
 
+<def tag="form" for="Estd431">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, area, program" param/>
+    <div param="actions">
+      <submit label="#{ht 'estd431.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Estd432">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, area, program" param/>
+    <div param="actions">
+      <submit label="#{ht 'estd432.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Estd441">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, area, program" param/>
+    <div param="actions">
+      <submit label="#{ht 'estd441.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Estd442">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, area, program" param/>
+    <div param="actions">
+      <submit label="#{ht 'estd442.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Estd443">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, area, program" param/>
+    <div param="actions">
+      <submit label="#{ht 'estd443.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Estd444">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, area, program" param/>
+    <div param="actions">
+      <submit label="#{ht 'estd444.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Estd445">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, area, program" param/>
+    <div param="actions">
+      <submit label="#{ht 'estd445.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Estd451">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, area, program" param/>
+    <div param="actions">
+      <submit label="#{ht 'estd451.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Estd452">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, area, program" param/>
+    <div param="actions">
+      <submit label="#{ht 'estd452.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
+<def tag="form" for="Estd453">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, area, program" param/>
+    <div param="actions">
+      <submit label="#{ht 'estd453.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
+
+
 <def tag="form" for="Finding">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="name, rational, observation, recomendations, decision, concur, sec_obs, mark_complete, lifecycle_state, estd311, estd312, estd321, estd322, estd331, estd332, estd411, estd412, estd421, estd422, previewer, program, sreviewer" param/>
+    <field-list fields="name, rational, observation, recomendations, decision, concur, sec_obs, mark_complete, lifecycle_state, estd311, estd312, estd321, estd322, estd331, estd332, estd411, estd412, estd421, estd422, estd431, estd432, estd441, estd442, estd443, estd444, estd445, estd451, estd452, estd453, previewer, program, sreviewer" param/>
     <div param="actions">
       <submit label="#{ht 'finding.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>

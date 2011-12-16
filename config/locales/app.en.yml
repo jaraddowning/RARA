@@ -26,6 +26,66 @@ en:
 en:
   activerecord:
     models:
+      estd311:
+        one: EMAP 3.1.1
+        other: EMAP 3.1.1
+      estd312:
+        one: EMAP 3.1.2
+        other: EMAP 3.1.2
+      estd321:
+        one: EMAP 3.2.1
+        other: EMAP 3.2.1
+      estd322:
+        one: EMAP 3.2.2
+        other: EMAP 3.2.2
+      estd331:
+        one: EMAP 3.3.1
+        other: EMAP 3.3.1
+      estd331:
+        one: EMAP 3.3.2
+        other: EMAP 3.3.2
+      estd411:
+        one: EMAP 4.1.1
+        other: EMAP 4.1.1
+      estd412:
+        one: EMAP 4.1.2
+        other: EMAP 4.1.2
+      estd421:
+        one: EMAP 4.2.1
+        other: EMAP 4.2.1
+      estd422:
+        one: EMAP 4.2.2
+        other: EMAP 4.2.2
+      estd431:
+        one: EMAP 4.3.1
+        other: EMAP 4.3.1
+      estd432:
+        one: EMAP 4.3.2
+        other: EMAP 4.3.2
+      estd441:
+        one: EMAP 4.4.1
+        other: EMAP 4.4.1
+      estd442:
+        one: EMAP 4.4.2
+        other: EMAP 4.4.2
+      estd443:
+        one: EMAP 4.4.3
+        other: EMAP 4.4.3
+      estd444:
+        one: EMAP 4.4.4
+        other: EMAP 4.4.4
+      estd445:
+        one: EMAP 4.4.5
+        other: EMAP 4.4.5
+      estd451:
+        one: EMAP 4.5.1
+        other: EMAP 4.5.1
+      estd452:
+        one: EMAP 4.5.2
+        other: EMAP 4.5.2
+      estd453:
+        one: EMAP 4.5.3
+        other: EMAP 4.5.3
       finding:
         one: Finding
         other: Findings

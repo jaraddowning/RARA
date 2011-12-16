@@ -21,6 +21,14 @@ class Program < ActiveRecord::Base
   has_many :estd422s, :dependent => :destroy
   has_many :estd431s, :dependent => :destroy
   has_many :estd432s, :dependent => :destroy
+  has_many :estd441s, :dependent => :destroy
+  has_many :estd442s, :dependent => :destroy
+  has_many :estd443s, :dependent => :destroy
+  has_many :estd444s, :dependent => :destroy
+  has_many :estd445s, :dependent => :destroy
+  has_many :estd451s, :dependent => :destroy
+  has_many :estd452s, :dependent => :destroy
+  has_many :estd453s, :dependent => :destroy
 
   after_create :populate
 
@@ -37,6 +45,14 @@ class Program < ActiveRecord::Base
     Estd422.create(:name => "4.2.2", :program_id => id, :area_id => 10)
     Estd431.create(:name => "4.3.1", :program_id => id, :area_id => 11)
     Estd432.create(:name => "4.3.2", :program_id => id, :area_id => 12)
+    Estd441.create(:name => "4.4.1", :program_id => id, :area_id => 13)
+    Estd442.create(:name => "4.4.2", :program_id => id, :area_id => 14)
+    Estd443.create(:name => "4.4.3", :program_id => id, :area_id => 15)
+    Estd444.create(:name => "4.4.4", :program_id => id, :area_id => 16)
+    Estd445.create(:name => "4.4.5", :program_id => id, :area_id => 17)
+    Estd451.create(:name => "4.5.1", :program_id => id, :area_id => 18)
+    Estd452.create(:name => "4.5.2", :program_id => id, :area_id => 19)
+    Estd453.create(:name => "4.5.3", :program_id => id, :area_id => 20)
   end
 
 

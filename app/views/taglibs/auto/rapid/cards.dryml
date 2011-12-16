@@ -141,8 +141,130 @@
 <def tag="card" for="Estd431">
   <card class="estd431" param="default" merge>
     <header: param>
-      <h4 param="heading"><name/></h4>
+      <h4 param="heading"><a><name/></a></h4>
     </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
+  </card>
+</def>
+
+<def tag="card" for="Estd432">
+  <card class="estd432" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
+  </card>
+</def>
+
+<def tag="card" for="Estd441">
+  <card class="estd441" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
+  </card>
+</def>
+
+<def tag="card" for="Estd442">
+  <card class="estd442" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
+  </card>
+</def>
+
+<def tag="card" for="Estd443">
+  <card class="estd443" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
+  </card>
+</def>
+
+<def tag="card" for="Estd444">
+  <card class="estd444" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
+  </card>
+</def>
+
+<def tag="card" for="Estd445">
+  <card class="estd445" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
+  </card>
+</def>
+
+<def tag="card" for="Estd451">
+  <card class="estd451" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
+  </card>
+</def>
+
+<def tag="card" for="Estd452">
+  <card class="estd452" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
+  </card>
+</def>
+
+<def tag="card" for="Estd453">
+  <card class="estd453" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <ht key="finding.collection.count" count="&this.findings.size">
+         <count:findings param/>
+      </ht>
+    </body:>
   </card>
 </def>
 
