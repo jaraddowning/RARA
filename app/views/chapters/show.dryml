@@ -1,8 +1,0 @@
-<show-page>
-  <collection: replace>
-    <table-plus:areas fields="this, language">
-      <empty-message:>No Chapters match your criteria</empty-message:>
-    </table-plus>
-  </collection:>
-</show-page>
-
