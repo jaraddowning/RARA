@@ -4,12 +4,9 @@ class Area < ActiveRecord::Base
 
   fields do
     name          :string, :name => true
-    organization  :string
-    chapter       :string
-    num           :string
-    subnum        :string
-    standard      :text
-    language      :markdown
+    standard      :string
+    language      :html
+    overview      :html
     timestamps
   end
 

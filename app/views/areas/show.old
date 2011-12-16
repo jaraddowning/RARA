@@ -1,0 +1,11 @@
+<show-page>
+  <!--<collection: replace>
+    <table-plus:findings fields="decision, concur">
+      <empty-message:>No findings have been entered yet.</empty-message:>
+      <controls:>
+        <a action="edit">Edit Finding</a>
+        <transition-buttons/>
+      </controls:>
+    </table-plus>
+  </collection:>-->
+</show-page>

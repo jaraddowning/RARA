@@ -1,9 +1,13 @@
-class StdStatus < ActiveRecord::Base
+class Area < ActiveRecord::Base
 
   hobo_model # Don't put anything above this
 
   fields do
-    name :string
+    name          :string, :name => true
+    organization  :string
+    chapter       :string
+    standard      :text
+    language      :text
     timestamps
   end
 

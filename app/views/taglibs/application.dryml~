@@ -196,63 +196,18 @@
 
 <!--   This sucks   -->
 
-<extend tag="show-page" for="Estd311">
-  <old-show-page merge>
-    <field-list: fields="program, area, area.overview, area.language" />
-  </old-show-page>
-</extend>
-
-<extend tag="show-page" for="Estd312">
-  <old-show-page merge>
-    <field-list: fields="program, area, area.overview, area.language" />
-  </old-show-page>
-</extend>
-
-<extend tag="show-page" for="Estd321">
-  <old-show-page merge>
-    <field-list: fields="program, area, area.overview, area.language" />
-  </old-show-page>
-</extend>
-
-<extend tag="show-page" for="Estd322">
-  <old-show-page merge>
-    <field-list: fields="program, area, area.overview, area.language" />
-  </old-show-page>
-</extend>
-
-<extend tag="show-page" for="Estd331">
-  <old-show-page merge>
-    <field-list: fields="program, area, area.overview, area.language" />
-  </old-show-page>
-</extend>
-
-<extend tag="show-page" for="Estd321">
-  <old-show-page merge>
-    <field-list: fields="program, area, area.overview, area.language" />
-  </old-show-page>
-</extend>
-
 <extend tag="show-page" for="Estd411">
   <old-show-page merge>
     <field-list: fields="program, area, area.overview, area.language" />
   </old-show-page>
 </extend>
 
-<extend tag="show-page" for="Estd412">
-  <old-show-page merge>
-    <field-list: fields="program, area, area.overview, area.language" />
-  </old-show-page>
-</extend>
 
-<extend tag="show-page" for="Estd421">
-  <old-show-page merge>
-    <field-list: fields="program, area, area.overview, area.language" />
-  </old-show-page>
-</extend>
 
-<extend tag="show-page" for="Estd422">
-  <old-show-page merge>
-    <field-list: fields="program, area, area.overview, area.language" />
-  </old-show-page>
-</extend>
+
+
+
+
+
+
 

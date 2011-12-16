@@ -1,4 +1,4 @@
-class StdStatusesController < ApplicationController
+class AreasController < ApplicationController
 
   hobo_model_controller
 

@@ -8,14 +8,6 @@
   </card>
 </def>
 
-<def tag="card" for="AreaUpload">
-  <card class="area-upload" param="default" merge>
-    <header: param>
-      <h4 param="heading"><name/></h4>
-    </header:>
-  </card>
-</def>
-
 <def tag="card" for="Estd311">
   <card class="estd311" param="default" merge>
     <header: param>
@@ -159,14 +151,6 @@
 
 <def tag="card" for="Program">
   <card class="program" param="default" merge>
-    <header: param>
-      <h4 param="heading"><a><name/></a></h4>
-    </header:>
-  </card>
-</def>
-
-<def tag="card" for="StdStatus">
-  <card class="std-status" param="default" merge>
     <header: param>
       <h4 param="heading"><a><name/></a></h4>
     </header:>

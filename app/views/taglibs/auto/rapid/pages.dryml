@@ -5,6 +5,7 @@
 <def tag="main-nav">
   <navigation class="main-nav" merge-attrs param="default">
     <nav-item href="#{base_url}/">Home</nav-item>
+    <nav-item with="&Area"><ht key="area.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
     <nav-item with="&Program"><ht key="program.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
   </navigation>
 </def>
@@ -97,7 +98,7 @@
           </header>
 
           <section param="content-body">
-            <field-list fields="organization, chapter, num, subnum, standard, language" param/>
+            <field-list fields="standard, language, overview" param/>
           </section>
     </content:>
 
@@ -1870,125 +1871,6 @@
           </ht>
         </h2>
         <delete-button label="#{ht 'program.actions.delete', :default=>['Remove This Review']}" param/>
-      </section>
-
-      <section param="content-body">
-        <form param/>
-      </section>
-    </content:>
-
-  </page>
-</def>
-
-
-
-
-
-<!-- ====== StdStatus Pages ====== -->
-
-<def tag="index-page" for="StdStatus">
-  <page merge title="#{ht 'std_status.index.title', :default=>[model.model_name.human(:count=>100)] }">
-    <body: class="index-page std-status" param/>
-
-    <content: param>
-      <header param="content-header">
-        <h2 param="heading">
-          <ht key="std_status.index.heading">
-            <model-name-human model="&model"/>
-          </ht>
-        </h2>
-
-        <p param="count" if>
-          <ht key="std_status.collection.count" count="&collection_count">
-            <count summary/>
-          </ht>
-        </p>
-      </header>
-
-      <section param="content-body">
-        <a action="new" to="&model" param="new-link">
-          <ht key="std_status.actions.new">New Std status</ht>
-        </a>
-
-        <page-nav param="top-page-nav"/>
-
-        <collection param/>
-
-        <page-nav param="bottom-page-nav"/>
-
-
-      </section>
-    </content:>
-  </page>
-</def>
-
-
-<def tag="new-page" for="StdStatus">
-  <page merge title="#{ht 'std_status.new.title', :default=>[' New Std status'] }">
-    <body: class="new-page std-status" param/>
-
-    <content: param>
-      <section param="content-header">
-        <h2 param="heading">
-          <ht key="std_status.new.heading">
-            New Std status
-          </ht>
-        </h2>
-      </section>
-
-      <section param="content-body">
-        <form param>
-          <submit: label="#{ht 'std_status.actions.create', :default=>['Create Std status']}"/>
-        </form>
-      </section>
-    </content:>
-  </page>
-</def>
-
-
-<def tag="show-page" for="StdStatus">
-  <page merge title="#{ht 'std_status.show.title', :default=>['Std status'], :name => name(:no_wrapper => true) }">
-
-    <body: class="show-page std-status" param/>
-
-    <content: param>
-          <header param="content-header">
-            <h2 param="heading">
-              <ht key="std_status.show.heading" name="#{name(:no_wrapper => true)}">
-                Std status <name/>
-              </ht>
-            </h2>
-
-            <record-flags fields="" param/>
-
-            <a action="edit" if="&can_edit?" param="edit-link">
-              <ht key="std_status.actions.edit" name="#{name(:no_wrapper => true)}">
-                Edit Std status
-              </ht>
-            </a>
-          </header>
-
-          <section param="content-body">
-          </section>
-    </content:>
-
-  </page>
-</def>
-
-
-<def tag="edit-page" for="StdStatus">
-  <page merge title="#{ht 'std_status.edit.title', :default=>['Edit Std status'], :name => name(:no_wrapper => true) }">
-
-    <body: class="edit-page std-status" param/>
-
-    <content:>
-      <section param="content-header">
-        <h2 param="heading">
-          <ht key="std_status.edit.heading" name="#{name(:no_wrapper => true)}">
-            Edit Std status
-          </ht>
-        </h2>
-        <delete-button label="#{ht 'std_status.actions.delete', :default=>['Remove This Std status']}" param/>
       </section>
 
       <section param="content-body">

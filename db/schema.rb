@@ -11,28 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111215212311) do
-
-  create_table "area_uploads", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "area_id"
-    t.integer  "upload_id"
-  end
-
-  add_index "area_uploads", ["area_id"], :name => "index_area_uploads_on_area_id"
-  add_index "area_uploads", ["upload_id"], :name => "index_area_uploads_on_upload_id"
+ActiveRecord::Schema.define(:version => 20111216012125) do
 
   create_table "areas", :force => true do |t|
-    t.text     "standard"
+    t.string   "standard"
     t.text     "language"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
-    t.string   "organization"
-    t.string   "chapter"
-    t.string   "num"
-    t.string   "subnum"
+    t.text     "overview"
   end
 
   create_table "estd311s", :force => true do |t|
@@ -155,10 +142,6 @@ ActiveRecord::Schema.define(:version => 20111215212311) do
     t.string   "name"
     t.boolean  "concur"
     t.text     "sec_obs"
-    t.integer  "previewer_id"
-    t.integer  "sreviewer_id"
-    t.datetime "key_timestamp"
-    t.string   "lifecycle_state", :default => "primary"
     t.boolean  "mark_complete"
     t.integer  "estd311_id"
     t.integer  "estd312_id"
@@ -170,6 +153,10 @@ ActiveRecord::Schema.define(:version => 20111215212311) do
     t.integer  "estd412_id"
     t.integer  "estd421_id"
     t.integer  "estd422_id"
+    t.integer  "previewer_id"
+    t.integer  "sreviewer_id"
+    t.string   "lifecycle_state", :default => "primary"
+    t.datetime "key_timestamp"
   end
 
   add_index "findings", ["estd311_id"], :name => "index_findings_on_estd311_id"
@@ -193,20 +180,14 @@ ActiveRecord::Schema.define(:version => 20111215212311) do
     t.datetime "updated_at"
   end
 
-  create_table "std_statuses", :force => true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "uploads", :force => true do |t|
-    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "proof_file_name"
     t.string   "proof_content_type"
     t.integer  "proof_file_size"
     t.datetime "proof_updated_at"
+    t.string   "title"
   end
 
   create_table "users", :force => true do |t|

@@ -3,7 +3,7 @@
 <def tag="form" for="Area">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="name, organization, chapter, num, subnum, standard, language" param/>
+    <field-list fields="name, standard, language, overview" param/>
     <div param="actions">
       <submit label="#{ht 'area.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>
@@ -182,18 +182,6 @@
     <field-list fields="name, description" param/>
     <div param="actions">
       <submit label="#{ht 'program.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
-    </div>
-  </form>
-</def>
-
-
-
-<def tag="form" for="StdStatus">
-  <form merge param="default">
-    <error-messages param/>
-    <field-list fields="name" param/>
-    <div param="actions">
-      <submit label="#{ht 'std_status.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>
   </form>
 </def>
