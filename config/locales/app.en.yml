@@ -245,6 +245,45 @@ en:
       estd486:
         one: EMAP 4.8.6
         other: EMAP 4.8.6
+      estd491:
+        one: EMAP 4.9.1
+        other: EMAP 4.9.1
+      estd492:
+        one: EMAP 4.9.2
+        other: EMAP 4.9.2
+      estd4101:
+        one: EMAP 4.10.1
+        other: EMAP 4.10.1
+      estd4102:
+        one: EMAP 4.10.2
+        other: EMAP 4.10.2
+      estd4103:
+        one: EMAP 4.10.3
+        other: EMAP 4.10.3
+      estd4104:
+        one: EMAP 4.10.4
+        other: EMAP 4.10.4
+      estd4105:
+        one: EMAP 4.10.5
+        other: EMAP 4.10.5
+      estd4106:
+        one: EMAP 4.10.6
+        other: EMAP 4.10.6
+      estd4107:
+        one: EMAP 4.10.7
+        other: EMAP 4.10.7
+      estd4111:
+        one: EMAP 4.11.1
+        other: EMAP 4.11.1
+      estd4112:
+        one: EMAP 4.11.2
+        other: EMAP 4.11.2
+      estd4113:
+        one: EMAP 4.11.3
+        other: EMAP 4.11.3
+      estd4114:
+        one: EMAP 4.11.4
+        other: EMAP 4.11.4
       finding:
         one: Finding
         other: Findings

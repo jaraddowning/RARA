@@ -88,6 +88,19 @@ class Finding < ActiveRecord::Base
   belongs_to :estd4843
   belongs_to :estd485
   belongs_to :estd486
+  belongs_to :estd491
+  belongs_to :estd492
+  belongs_to :estd4101
+  belongs_to :estd4102
+  belongs_to :estd4103
+  belongs_to :estd4104
+  belongs_to :estd4105
+  belongs_to :estd4106
+  belongs_to :estd4107
+  belongs_to :estd4111
+  belongs_to :estd4112
+  belongs_to :estd4113
+  belongs_to :estd4114
 
   belongs_to :previewer, :class_name => "User", :creator => true
   belongs_to :sreviewer, :class_name => "User"

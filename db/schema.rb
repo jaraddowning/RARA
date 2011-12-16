@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111216155313) do
+ActiveRecord::Schema.define(:version => 20111216163458) do
 
   create_table "areas", :force => true do |t|
     t.string   "standard"
@@ -87,6 +87,127 @@ ActiveRecord::Schema.define(:version => 20111216155313) do
 
   add_index "estd332s", ["area_id"], :name => "index_estd332s_on_area_id"
   add_index "estd332s", ["program_id"], :name => "index_estd332s_on_program_id"
+
+  create_table "estd4101s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "estd4101s", ["area_id"], :name => "index_estd4101s_on_area_id"
+  add_index "estd4101s", ["program_id"], :name => "index_estd4101s_on_program_id"
+
+  create_table "estd4102s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "estd4102s", ["area_id"], :name => "index_estd4102s_on_area_id"
+  add_index "estd4102s", ["program_id"], :name => "index_estd4102s_on_program_id"
+
+  create_table "estd4103s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "estd4103s", ["area_id"], :name => "index_estd4103s_on_area_id"
+  add_index "estd4103s", ["program_id"], :name => "index_estd4103s_on_program_id"
+
+  create_table "estd4104s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "estd4104s", ["area_id"], :name => "index_estd4104s_on_area_id"
+  add_index "estd4104s", ["program_id"], :name => "index_estd4104s_on_program_id"
+
+  create_table "estd4105s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "estd4105s", ["area_id"], :name => "index_estd4105s_on_area_id"
+  add_index "estd4105s", ["program_id"], :name => "index_estd4105s_on_program_id"
+
+  create_table "estd4106s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "estd4106s", ["area_id"], :name => "index_estd4106s_on_area_id"
+  add_index "estd4106s", ["program_id"], :name => "index_estd4106s_on_program_id"
+
+  create_table "estd4107s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "estd4107s", ["area_id"], :name => "index_estd4107s_on_area_id"
+  add_index "estd4107s", ["program_id"], :name => "index_estd4107s_on_program_id"
+
+  create_table "estd4111s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "estd4111s", ["area_id"], :name => "index_estd4111s_on_area_id"
+  add_index "estd4111s", ["program_id"], :name => "index_estd4111s_on_program_id"
+
+  create_table "estd4112s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "estd4112s", ["area_id"], :name => "index_estd4112s_on_area_id"
+  add_index "estd4112s", ["program_id"], :name => "index_estd4112s_on_program_id"
+
+  create_table "estd4113s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "estd4113s", ["area_id"], :name => "index_estd4113s_on_area_id"
+  add_index "estd4113s", ["program_id"], :name => "index_estd4113s_on_program_id"
+
+  create_table "estd4114s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "estd4114s", ["area_id"], :name => "index_estd4114s_on_area_id"
+  add_index "estd4114s", ["program_id"], :name => "index_estd4114s_on_program_id"
 
   create_table "estd411s", :force => true do |t|
     t.string   "name"
@@ -825,6 +946,28 @@ ActiveRecord::Schema.define(:version => 20111216155313) do
   add_index "estd486s", ["area_id"], :name => "index_estd486s_on_area_id"
   add_index "estd486s", ["program_id"], :name => "index_estd486s_on_program_id"
 
+  create_table "estd491s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "estd491s", ["area_id"], :name => "index_estd491s_on_area_id"
+  add_index "estd491s", ["program_id"], :name => "index_estd491s_on_program_id"
+
+  create_table "estd492s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "estd492s", ["area_id"], :name => "index_estd492s_on_area_id"
+  add_index "estd492s", ["program_id"], :name => "index_estd492s_on_program_id"
+
   create_table "findings", :force => true do |t|
     t.text     "rational"
     t.text     "observation"
@@ -914,6 +1057,19 @@ ActiveRecord::Schema.define(:version => 20111216155313) do
     t.integer  "estd4843_id"
     t.integer  "estd485_id"
     t.integer  "estd486_id"
+    t.integer  "estd491_id"
+    t.integer  "estd492_id"
+    t.integer  "estd4101_id"
+    t.integer  "estd4102_id"
+    t.integer  "estd4103_id"
+    t.integer  "estd4104_id"
+    t.integer  "estd4105_id"
+    t.integer  "estd4106_id"
+    t.integer  "estd4107_id"
+    t.integer  "estd4111_id"
+    t.integer  "estd4112_id"
+    t.integer  "estd4113_id"
+    t.integer  "estd4114_id"
   end
 
   add_index "findings", ["estd311_id"], :name => "index_findings_on_estd311_id"
@@ -922,6 +1078,17 @@ ActiveRecord::Schema.define(:version => 20111216155313) do
   add_index "findings", ["estd322_id"], :name => "index_findings_on_estd322_id"
   add_index "findings", ["estd331_id"], :name => "index_findings_on_estd331_id"
   add_index "findings", ["estd332_id"], :name => "index_findings_on_estd332_id"
+  add_index "findings", ["estd4101_id"], :name => "index_findings_on_estd4101_id"
+  add_index "findings", ["estd4102_id"], :name => "index_findings_on_estd4102_id"
+  add_index "findings", ["estd4103_id"], :name => "index_findings_on_estd4103_id"
+  add_index "findings", ["estd4104_id"], :name => "index_findings_on_estd4104_id"
+  add_index "findings", ["estd4105_id"], :name => "index_findings_on_estd4105_id"
+  add_index "findings", ["estd4106_id"], :name => "index_findings_on_estd4106_id"
+  add_index "findings", ["estd4107_id"], :name => "index_findings_on_estd4107_id"
+  add_index "findings", ["estd4111_id"], :name => "index_findings_on_estd4111_id"
+  add_index "findings", ["estd4112_id"], :name => "index_findings_on_estd4112_id"
+  add_index "findings", ["estd4113_id"], :name => "index_findings_on_estd4113_id"
+  add_index "findings", ["estd4114_id"], :name => "index_findings_on_estd4114_id"
   add_index "findings", ["estd411_id"], :name => "index_findings_on_estd411_id"
   add_index "findings", ["estd412_id"], :name => "index_findings_on_estd412_id"
   add_index "findings", ["estd421_id"], :name => "index_findings_on_estd421_id"
@@ -989,6 +1156,8 @@ ActiveRecord::Schema.define(:version => 20111216155313) do
   add_index "findings", ["estd4843_id"], :name => "index_findings_on_estd4843_id"
   add_index "findings", ["estd485_id"], :name => "index_findings_on_estd485_id"
   add_index "findings", ["estd486_id"], :name => "index_findings_on_estd486_id"
+  add_index "findings", ["estd491_id"], :name => "index_findings_on_estd491_id"
+  add_index "findings", ["estd492_id"], :name => "index_findings_on_estd492_id"
   add_index "findings", ["lifecycle_state"], :name => "index_findings_on_lifecycle_state"
   add_index "findings", ["previewer_id"], :name => "index_findings_on_previewer_id"
   add_index "findings", ["program_id"], :name => "index_findings_on_program_id"

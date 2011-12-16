@@ -77,5 +77,18 @@ class FindingsController < ApplicationController
   auto_actions_for :estd4843, :create
   auto_actions_for :estd485, :create
   auto_actions_for :estd486, :create
+  auto_actions_for :estd491, :create
+  auto_actions_for :estd492, :create
+  auto_actions_for :estd4101, :create
+  auto_actions_for :estd4102, :create
+  auto_actions_for :estd4103, :create
+  auto_actions_for :estd4104, :create
+  auto_actions_for :estd4105, :create
+  auto_actions_for :estd4106, :create
+  auto_actions_for :estd4107, :create
+  auto_actions_for :estd4111, :create
+  auto_actions_for :estd4112, :create
+  auto_actions_for :estd4113, :create
+  auto_actions_for :estd4114, :create
 
 end

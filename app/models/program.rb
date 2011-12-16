@@ -83,6 +83,19 @@ class Program < ActiveRecord::Base
   has_many :estd4843s, :dependent => :destroy
   has_many :estd485s, :dependent => :destroy
   has_many :estd486s, :dependent => :destroy
+  has_many :estd491s, :dependent => :destroy
+  has_many :estd492s, :dependent => :destroy
+  has_many :estd4101s, :dependent => :destroy
+  has_many :estd4102s, :dependent => :destroy
+  has_many :estd4103s, :dependent => :destroy
+  has_many :estd4104s, :dependent => :destroy
+  has_many :estd4105s, :dependent => :destroy
+  has_many :estd4106s, :dependent => :destroy
+  has_many :estd4107s, :dependent => :destroy
+  has_many :estd4111s, :dependent => :destroy
+  has_many :estd4112s, :dependent => :destroy
+  has_many :estd4113s, :dependent => :destroy
+  has_many :estd4114s, :dependent => :destroy
 
   after_create :populate
 
@@ -160,6 +173,19 @@ class Program < ActiveRecord::Base
     Estd4843.create(:name => "4.8.4(3)", :program_id => id, :area_id => 71)
     Estd485.create(:name => "4.8.5", :program_id => id, :area_id => 72)
     Estd486.create(:name => "4.8.6", :program_id => id, :area_id => 73)
+    Estd491.create(:name => "4.9.1", :program_id => id, :area_id => 74)
+    Estd492.create(:name => "4.9.2", :program_id => id, :area_id => 75)
+    Estd4101.create(:name => "4.10.1", :program_id => id, :area_id => 76)
+    Estd4102.create(:name => "4.10.2", :program_id => id, :area_id => 77)
+    Estd4103.create(:name => "4.10.3", :program_id => id, :area_id => 78)
+    Estd4104.create(:name => "4.10.4", :program_id => id, :area_id => 79)
+    Estd4105.create(:name => "4.10.5", :program_id => id, :area_id => 80)
+    Estd4106.create(:name => "4.10.6", :program_id => id, :area_id => 81)
+    Estd4107.create(:name => "4.10.7", :program_id => id, :area_id => 82)
+    Estd4111.create(:name => "4.11.1", :program_id => id, :area_id => 83)
+    Estd4112.create(:name => "4.11.2", :program_id => id, :area_id => 84)
+    Estd4113.create(:name => "4.11.3", :program_id => id, :area_id => 85)
+    Estd4114.create(:name => "4.11.4", :program_id => id, :area_id => 86)
   end
 
 
