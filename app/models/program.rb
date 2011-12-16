@@ -19,6 +19,8 @@ class Program < ActiveRecord::Base
   has_many :estd412s, :dependent => :destroy
   has_many :estd421s, :dependent => :destroy
   has_many :estd422s, :dependent => :destroy
+  has_many :estd431s, :dependent => :destroy
+  has_many :estd432s, :dependent => :destroy
 
   after_create :populate
 
@@ -31,8 +33,10 @@ class Program < ActiveRecord::Base
     Estd332.create(:name => "3.3.2", :program_id => id, :area_id => 6)
     Estd411.create(:name => "4.1.1", :program_id => id, :area_id => 7)
     Estd412.create(:name => "4.1.2", :program_id => id, :area_id => 8)
-    Estd421.create(:name => "4.1.1", :program_id => id, :area_id => 7)
-    Estd422.create(:name => "4.1.2", :program_id => id, :area_id => 8)
+    Estd421.create(:name => "4.2.1", :program_id => id, :area_id => 9)
+    Estd422.create(:name => "4.2.2", :program_id => id, :area_id => 10)
+    Estd431.create(:name => "4.3.1", :program_id => id, :area_id => 11)
+    Estd432.create(:name => "4.3.2", :program_id => id, :area_id => 12)
   end
 
 

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111216022516) do
+ActiveRecord::Schema.define(:version => 20111216130139) do
 
   create_table "areas", :force => true do |t|
     t.string   "standard"
@@ -142,6 +142,10 @@ ActiveRecord::Schema.define(:version => 20111216022516) do
     t.string   "name"
     t.boolean  "concur"
     t.text     "sec_obs"
+    t.integer  "previewer_id"
+    t.integer  "sreviewer_id"
+    t.datetime "key_timestamp"
+    t.string   "lifecycle_state", :default => "primary"
     t.boolean  "mark_complete"
     t.integer  "estd311_id"
     t.integer  "estd312_id"
@@ -153,10 +157,6 @@ ActiveRecord::Schema.define(:version => 20111216022516) do
     t.integer  "estd412_id"
     t.integer  "estd421_id"
     t.integer  "estd422_id"
-    t.integer  "previewer_id"
-    t.integer  "sreviewer_id"
-    t.string   "lifecycle_state", :default => "primary"
-    t.datetime "key_timestamp"
     t.integer  "program_id"
   end
 
@@ -183,13 +183,13 @@ ActiveRecord::Schema.define(:version => 20111216022516) do
   end
 
   create_table "uploads", :force => true do |t|
+    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "proof_file_name"
     t.string   "proof_content_type"
     t.integer  "proof_file_size"
     t.datetime "proof_updated_at"
-    t.string   "title"
   end
 
   create_table "users", :force => true do |t|

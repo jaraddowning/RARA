@@ -25,6 +25,8 @@ class Finding < ActiveRecord::Base
   belongs_to :estd412
   belongs_to :estd421
   belongs_to :estd422
+  belongs_to :estd431
+  belongs_to :estd432
 
   belongs_to :previewer, :class_name => "User", :creator => true
   belongs_to :sreviewer, :class_name => "User"

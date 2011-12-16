@@ -138,6 +138,14 @@
   </card>
 </def>
 
+<def tag="card" for="Estd431">
+  <card class="estd431" param="default" merge>
+    <header: param>
+      <h4 param="heading"><name/></h4>
+    </header:>
+  </card>
+</def>
+
 <def tag="card" for="Finding">
   <card class="finding" param="default" merge>
     <header: param>

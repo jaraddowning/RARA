@@ -1,15 +1,17 @@
-class Area < ActiveRecord::Base
+class Estd432 < ActiveRecord::Base
 
   hobo_model # Don't put anything above this
 
   fields do
-    name          :string, :name => true
-    organization  :string
-    chapter       :string
-    standard      :text
-    language      :text
+    name :string
     timestamps
   end
+
+  belongs_to :program
+  belongs_to :area
+  has_many :findings, :dependent => :destroy
+
+  children :findings
 
   # --- Permissions --- #
 

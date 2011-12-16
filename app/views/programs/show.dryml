@@ -35,13 +35,13 @@
                 <collection:estd421s />
                 <collection:estd422s />
               </div>
-            <!--<p class="msg_head">Standard 4.3 Hazard Identification, Risk Assessment and Consequence Analysis</p>
+            <p class="msg_head">Standard 4.3 Hazard Identification, Risk Assessment and Consequence Analysis</p>
               <div class="msg_body">
                 <collection:estd431s />
                 <collection:estd432s />
               </div>
             <p class="msg_head">Standard 4.4 Hazard Mitigation</p>
-              <div class="msg_body">
+              <!--<div class="msg_body">
                 <collection:estd441s />
                 <collection:estd442s />
                 <collection:estd443s />
@@ -184,7 +184,7 @@
       </div>
     </div>
 
-USAFRICOM Section
+  USAFRICOM Section
 
     <div class="msg_list">
     <p class="msg_head">Military Review by U.S.AFRICOM</p>
