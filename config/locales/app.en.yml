@@ -41,7 +41,7 @@ en:
       estd331:
         one: EMAP 3.3.1
         other: EMAP 3.3.1
-      estd331:
+      estd332:
         one: EMAP 3.3.2
         other: EMAP 3.3.2
       estd411:
@@ -86,6 +86,165 @@ en:
       estd453:
         one: EMAP 4.5.3
         other: EMAP 4.5.3
+      estd461:
+        one: EMAP 4.6.1
+        other: EMAP 4.6.1
+      estd4621:
+        one: EMAP 4.6.2(1)
+        other: EMAP 4.6.2(1)
+      estd4622:
+        one: EMAP 4.6.2(2)
+        other: EMAP 4.6.2(2)
+      estd4623:
+        one: EMAP 4.6.2(3)
+        other: EMAP 4.6.2(3)
+      estd4624:
+        one: EMAP 4.6.2(4)
+        other: EMAP 4.6.2(4)
+      estd4625:
+        one: EMAP 4.6.2(5)
+        other: EMAP 4.6.2(5)
+      estd4626:
+        one: EMAP 4.6.2(6)
+        other: EMAP 4.6.2(6)
+      estd4627:
+        one: EMAP 4.6.2(7)
+        other: EMAP 4.6.2(7)
+      estd4631:
+        one: EMAP 4.6.3(1)
+        other: EMAP 4.6.3(1)
+      estd4632:
+        one: EMAP 4.6.3(2)
+        other: EMAP 4.6.3(2)
+      estd4633:
+        one: EMAP 4.6.3(3)
+        other: EMAP 4.6.3(3)
+      estd4634:
+        one: EMAP 4.6.3(4)
+        other: EMAP 4.6.3(4)
+      estd4635:
+        one: EMAP 4.6.3(5)
+        other: EMAP 4.6.3(5)
+      estd4636:
+        one: EMAP 4.6.3(6)
+        other: EMAP 4.6.3(6)
+      estd4637:
+        one: EMAP 4.6.3(7)
+        other: EMAP 4.6.3(7)
+      estd4638:
+        one: EMAP 4.6.3(8)
+        other: EMAP 4.6.3(8)
+      estd4639:
+        one: EMAP 4.6.3(9)
+        other: EMAP 4.6.3(9)
+      estd46310:
+        one: EMAP 4.6.3(10)
+        other: EMAP 4.6.3(10)
+      estd46311:
+        one: EMAP 4.6.3(11)
+        other: EMAP 4.6.3(11)
+      estd46312:
+        one: EMAP 4.6.3(12)
+        other: EMAP 4.6.3(12)
+      estd46313:
+        one: EMAP 4.6.3(13)
+        other: EMAP 4.6.3(13)
+      estd46314:
+        one: EMAP 4.6.3(14)
+        other: EMAP 4.6.3(14)
+      estd46315:
+        one: EMAP 4.6.3(15)
+        other: EMAP 4.6.3(15)
+      estd46316:
+        one: EMAP 4.6.3(16)
+        other: EMAP 4.6.3(16)
+      estd46317:
+        one: EMAP 4.6.3(17)
+        other: EMAP 4.6.3(17)
+      estd46318:
+        one: EMAP 4.6.3(18)
+        other: EMAP 4.6.3(18)
+      estd46319:
+        one: EMAP 4.6.3(19)
+        other: EMAP 4.6.3(19)
+      estd46320:
+        one: EMAP 4.6.3(20)
+        other: EMAP 4.6.3(20)
+      estd46321:
+        one: EMAP 4.6.3(21)
+        other: EMAP 4.6.3(21)
+      estd46322:
+        one: EMAP 4.6.3(22)
+        other: EMAP 4.6.3(22)
+      estd46323:
+        one: EMAP 4.6.3(23)
+        other: EMAP 4.6.3(23)
+      estd46324:
+        one: EMAP 4.6.3(24)
+        other: EMAP 4.6.3(24)
+      estd46325:
+        one: EMAP 4.6.3(25)
+        other: EMAP 4.6.3(25)
+      estd46326:
+        one: EMAP 4.6.3(26)
+        other: EMAP 4.6.3(26)
+      estd46327:
+        one: EMAP 4.6.3(27)
+        other: EMAP 4.6.3(27)
+      estd46328:
+        one: EMAP 4.6.3(28)
+        other: EMAP 4.6.3(28)
+      estd46329:
+        one: EMAP 4.6.3(29)
+        other: EMAP 4.6.3(29)
+      estd464:
+        one: EMAP 4.6.4
+        other: EMAP 4.6.4
+      estd465:
+        one: EMAP 4.6.5
+        other: EMAP 4.6.5
+      estd466:
+        one: EMAP 4.6.6
+        other: EMAP 4.6.6
+      estd471:
+        one: EMAP 4.7.1
+        other: EMAP 4.7.1
+      estd472:
+        one: EMAP 4.7.2
+        other: EMAP 4.7.2
+      estd473:
+        one: EMAP 4.7.3
+        other: EMAP 4.7.3
+      estd474:
+        one: EMAP 4.7.4
+        other: EMAP 4.7.4
+      estd475:
+        one: EMAP 4.7.5
+        other: EMAP 4.7.5
+      estd481:
+        one: EMAP 4.8.1
+        other: EMAP 4.8.1
+      estd482:
+        one: EMAP 4.8.2
+        other: EMAP 4.8.2
+      estd483:
+        one: EMAP 4.8.3
+        other: EMAP 4.8.3
+      estd4841:
+        one: EMAP 4.8.4(1)
+        other: EMAP 4.8.4(1)
+      estd4842:
+        one: EMAP 4.8.4(2)
+        other: EMAP 4.8.4(2)
+      estd4843:
+        one: EMAP 4.8.4(3)
+        other: EMAP 4.8.4(3)
+      estd485:
+        one: EMAP 4.8.5
+        other: EMAP 4.8.5
+      estd486:
+        one: EMAP 4.8.6
+        other: EMAP 4.8.6
       finding:
         one: Finding
         other: Findings

@@ -35,6 +35,59 @@ class Finding < ActiveRecord::Base
   belongs_to :estd451
   belongs_to :estd452
   belongs_to :estd453
+  belongs_to :estd461
+  belongs_to :estd4621
+  belongs_to :estd4622
+  belongs_to :estd4623
+  belongs_to :estd4624
+  belongs_to :estd4625
+  belongs_to :estd4626
+  belongs_to :estd4627
+  belongs_to :estd4631
+  belongs_to :estd4632
+  belongs_to :estd4633
+  belongs_to :estd4634
+  belongs_to :estd4635
+  belongs_to :estd4636
+  belongs_to :estd4637
+  belongs_to :estd4638
+  belongs_to :estd4639
+  belongs_to :estd46310
+  belongs_to :estd46311
+  belongs_to :estd46312
+  belongs_to :estd46313
+  belongs_to :estd46314
+  belongs_to :estd46315
+  belongs_to :estd46316
+  belongs_to :estd46317
+  belongs_to :estd46318
+  belongs_to :estd46319
+  belongs_to :estd46320
+  belongs_to :estd46321
+  belongs_to :estd46322
+  belongs_to :estd46323
+  belongs_to :estd46324
+  belongs_to :estd46325
+  belongs_to :estd46326
+  belongs_to :estd46327
+  belongs_to :estd46328
+  belongs_to :estd46329
+  belongs_to :estd464
+  belongs_to :estd465
+  belongs_to :estd466
+  belongs_to :estd471
+  belongs_to :estd472
+  belongs_to :estd473
+  belongs_to :estd474
+  belongs_to :estd475
+  belongs_to :estd481
+  belongs_to :estd482
+  belongs_to :estd483
+  belongs_to :estd4841
+  belongs_to :estd4842
+  belongs_to :estd4843
+  belongs_to :estd485
+  belongs_to :estd486
 
   belongs_to :previewer, :class_name => "User", :creator => true
   belongs_to :sreviewer, :class_name => "User"

@@ -58,7 +58,7 @@
                 <collection:estd453s />
               </div>
             <p class="msg_head">Standard 4.6 Operational Planning</p>
-              <!--<div class="msg_sub_body">
+              <div class="msg_sub_body">
                 <collection:estd461s />
 
                 <p class="msg_head">Standard 4.6.2</p>
@@ -122,16 +122,16 @@
                 <collection:estd482s />
                 <collection:estd483s />
                 <p class="msg_head">Standard 4.8.4</p>
-                  <div class="msg_sub_body">
+                  <div class="msg_sub_body">Peak-a-boo!
                     <collection:estd4841s />
                     <collection:estd4842s />
-                    <collection:estd4843s />>
+                    <collection:estd4843s /><br />
                   </div>
                 <collection:estd485s />
                 <collection:estd486s />
               </div>
             <p class="msg_head">Standard 4.9 Mutual Aid</p>
-              <div class="msg_sub_body">
+              <!--<div class="msg_sub_body">
                 <collection:estd491s />
                 <collection:estd492s />
               </div>
