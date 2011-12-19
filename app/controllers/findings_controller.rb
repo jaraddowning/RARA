@@ -90,5 +90,23 @@ class FindingsController < ApplicationController
   auto_actions_for :estd4112, :create
   auto_actions_for :estd4113, :create
   auto_actions_for :estd4114, :create
+  auto_actions_for :estd4121, :create
+  auto_actions_for :estd4122, :create
+  auto_actions_for :estd4131, :create
+  auto_actions_for :estd4132, :create
+  auto_actions_for :estd4133, :create
+  auto_actions_for :estd4134, :create
+  auto_actions_for :estd4141, :create
+  auto_actions_for :estd4142, :create
+  auto_actions_for :estd4143, :create
+  auto_actions_for :estd4151, :create
+  auto_actions_for :estd41521, :create
+  auto_actions_for :estd41522, :create
+  auto_actions_for :estd41523, :create
+  auto_actions_for :estd41524, :create
+  auto_actions_for :estd41525, :create
+  auto_actions_for :estd4153, :create
+  auto_actions_for :estd4154, :create
+  auto_actions_for :estd4155, :create
 
 end

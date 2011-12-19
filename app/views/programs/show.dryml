@@ -153,7 +153,7 @@
                 <collection:estd4114s />
               </div>
             <p class="msg_head">Standard 4.12 Facilities</p>
-              <!--<div class="msg_sub_body">
+              <div class="msg_sub_body">
                 <collection:estd4121s />
                 <collection:estd4122s />
               </div>
@@ -172,24 +172,24 @@
               </div>
             <p class="msg_head">Standard 4.15 Crisis Communications, Public Education and Information</p>
               <div class="msg_sub_body">
-                <div><a href="#">Standard 4.15.1</a></div>
                   <collection:estd4151s />
-                  <div class="msg_sub_body">
-                    <collection:estd41521s />
-                    <collection:estd41522s />
-                    <collection:estd41523s />
-                    <collection:estd41524s />
-                    <collection:estd41525s />
-                  </div>
+                  <p class="msg_head">Standard 4.15.2</p>
+                    <div class="msg_sub_body">
+                      <collection:estd41521s />
+                      <collection:estd41522s />
+                      <collection:estd41523s />
+                      <collection:estd41524s />
+                      <collection:estd41525s />
+                    </div>
                 <collection:estd4153s />
                 <collection:estd4154s />
                 <collection:estd4155s />
-              </div>-->
+              </div>
           </div>
       </div>
     </div>
 
-<!--  USAFRICOM Section
+<!--  USAFRICOM Section  -->
 
     <div class="msg_list">
     <p class="msg_head">Military Review by U.S.AFRICOM</p>
@@ -283,7 +283,7 @@
       </div>
     </div>
 
-CDHAM Section
+<!--  CDHAM Section  -->
 
     <div class="msg_list">
     <p class="msg_head">Medical Review by CDHAM</p>
@@ -358,7 +358,7 @@ CDHAM Section
              <div><a href="#">2. Do appropriate exercise programs exist to assess disaster medical readiness at the national, provincial, district and/or local levels?</a></div>
           </div>
       </div>
-    </div><br /><br /><br />-->
+    </div><br /><br /><br />
 
   </content-body:>
 </show-page>

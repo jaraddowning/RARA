@@ -101,6 +101,24 @@ class Finding < ActiveRecord::Base
   belongs_to :estd4112
   belongs_to :estd4113
   belongs_to :estd4114
+  belongs_to :estd4121
+  belongs_to :estd4122
+  belongs_to :estd4131
+  belongs_to :estd4132
+  belongs_to :estd4133
+  belongs_to :estd4134
+  belongs_to :estd4141
+  belongs_to :estd4142
+  belongs_to :estd4143
+  belongs_to :estd4151
+  belongs_to :estd41521
+  belongs_to :estd41522
+  belongs_to :estd41523
+  belongs_to :estd41524
+  belongs_to :estd41525
+  belongs_to :estd4153
+  belongs_to :estd4154
+  belongs_to :estd4155
 
   belongs_to :previewer, :class_name => "User", :creator => true
   belongs_to :sreviewer, :class_name => "User"

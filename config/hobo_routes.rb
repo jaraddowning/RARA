@@ -172,6 +172,24 @@ Rara::Application.routes.draw do
   post 'estd4112s/:estd4112_id/findings(.:format)' => 'findings#create_for_estd4112', :as => 'create_finding_for_estd4112'
   post 'estd4113s/:estd4113_id/findings(.:format)' => 'findings#create_for_estd4113', :as => 'create_finding_for_estd4113'
   post 'estd4114s/:estd4114_id/findings(.:format)' => 'findings#create_for_estd4114', :as => 'create_finding_for_estd4114'
+  post 'estd4121s/:estd4121_id/findings(.:format)' => 'findings#create_for_estd4121', :as => 'create_finding_for_estd4121'
+  post 'estd4122s/:estd4122_id/findings(.:format)' => 'findings#create_for_estd4122', :as => 'create_finding_for_estd4122'
+  post 'estd4131s/:estd4131_id/findings(.:format)' => 'findings#create_for_estd4131', :as => 'create_finding_for_estd4131'
+  post 'estd4132s/:estd4132_id/findings(.:format)' => 'findings#create_for_estd4132', :as => 'create_finding_for_estd4132'
+  post 'estd4133s/:estd4133_id/findings(.:format)' => 'findings#create_for_estd4133', :as => 'create_finding_for_estd4133'
+  post 'estd4134s/:estd4134_id/findings(.:format)' => 'findings#create_for_estd4134', :as => 'create_finding_for_estd4134'
+  post 'estd4141s/:estd4141_id/findings(.:format)' => 'findings#create_for_estd4141', :as => 'create_finding_for_estd4141'
+  post 'estd4142s/:estd4142_id/findings(.:format)' => 'findings#create_for_estd4142', :as => 'create_finding_for_estd4142'
+  post 'estd4143s/:estd4143_id/findings(.:format)' => 'findings#create_for_estd4143', :as => 'create_finding_for_estd4143'
+  post 'estd4151s/:estd4151_id/findings(.:format)' => 'findings#create_for_estd4151', :as => 'create_finding_for_estd4151'
+  post 'estd41521s/:estd41521_id/findings(.:format)' => 'findings#create_for_estd41521', :as => 'create_finding_for_estd41521'
+  post 'estd41522s/:estd41522_id/findings(.:format)' => 'findings#create_for_estd41522', :as => 'create_finding_for_estd41522'
+  post 'estd41523s/:estd41523_id/findings(.:format)' => 'findings#create_for_estd41523', :as => 'create_finding_for_estd41523'
+  post 'estd41524s/:estd41524_id/findings(.:format)' => 'findings#create_for_estd41524', :as => 'create_finding_for_estd41524'
+  post 'estd41525s/:estd41525_id/findings(.:format)' => 'findings#create_for_estd41525', :as => 'create_finding_for_estd41525'
+  post 'estd4153s/:estd4153_id/findings(.:format)' => 'findings#create_for_estd4153', :as => 'create_finding_for_estd4153'
+  post 'estd4154s/:estd4154_id/findings(.:format)' => 'findings#create_for_estd4154', :as => 'create_finding_for_estd4154'
+  post 'estd4155s/:estd4155_id/findings(.:format)' => 'findings#create_for_estd4155', :as => 'create_finding_for_estd4155'
 
 
   # Resource routes for controller "estd452s"
@@ -933,6 +951,168 @@ Rara::Application.routes.draw do
   post 'estd471s(.:format)' => 'estd471s#create', :as => 'create_estd471'
   put 'estd471s/:id(.:format)' => 'estd471s#update', :as => 'update_estd471', :constraints => { :id => %r([^/.?]+) }
   delete 'estd471s/:id(.:format)' => 'estd471s#destroy', :as => 'destroy_estd471', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd4121s"
+  get 'estd4121s/new(.:format)', :as => 'new_estd4121'
+  get 'estd4121s/:id/edit(.:format)' => 'estd4121s#edit', :as => 'edit_estd4121'
+  get 'estd4121s/:id(.:format)' => 'estd4121s#show', :as => 'estd4121', :constraints => { :id => %r([^/.?]+) }
+  post 'estd4121s(.:format)' => 'estd4121s#create', :as => 'create_estd4121'
+  put 'estd4121s/:id(.:format)' => 'estd4121s#update', :as => 'update_estd4121', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd4121s/:id(.:format)' => 'estd4121s#destroy', :as => 'destroy_estd4121', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd4122s"
+  get 'estd4122s/new(.:format)', :as => 'new_estd4122'
+  get 'estd4122s/:id/edit(.:format)' => 'estd4122s#edit', :as => 'edit_estd4122'
+  get 'estd4122s/:id(.:format)' => 'estd4122s#show', :as => 'estd4122', :constraints => { :id => %r([^/.?]+) }
+  post 'estd4122s(.:format)' => 'estd4122s#create', :as => 'create_estd4122'
+  put 'estd4122s/:id(.:format)' => 'estd4122s#update', :as => 'update_estd4122', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd4122s/:id(.:format)' => 'estd4122s#destroy', :as => 'destroy_estd4122', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd4133s"
+  get 'estd4133s/new(.:format)', :as => 'new_estd4133'
+  get 'estd4133s/:id/edit(.:format)' => 'estd4133s#edit', :as => 'edit_estd4133'
+  get 'estd4133s/:id(.:format)' => 'estd4133s#show', :as => 'estd4133', :constraints => { :id => %r([^/.?]+) }
+  post 'estd4133s(.:format)' => 'estd4133s#create', :as => 'create_estd4133'
+  put 'estd4133s/:id(.:format)' => 'estd4133s#update', :as => 'update_estd4133', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd4133s/:id(.:format)' => 'estd4133s#destroy', :as => 'destroy_estd4133', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd4132s"
+  get 'estd4132s/new(.:format)', :as => 'new_estd4132'
+  get 'estd4132s/:id/edit(.:format)' => 'estd4132s#edit', :as => 'edit_estd4132'
+  get 'estd4132s/:id(.:format)' => 'estd4132s#show', :as => 'estd4132', :constraints => { :id => %r([^/.?]+) }
+  post 'estd4132s(.:format)' => 'estd4132s#create', :as => 'create_estd4132'
+  put 'estd4132s/:id(.:format)' => 'estd4132s#update', :as => 'update_estd4132', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd4132s/:id(.:format)' => 'estd4132s#destroy', :as => 'destroy_estd4132', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd4134s"
+  get 'estd4134s/new(.:format)', :as => 'new_estd4134'
+  get 'estd4134s/:id/edit(.:format)' => 'estd4134s#edit', :as => 'edit_estd4134'
+  get 'estd4134s/:id(.:format)' => 'estd4134s#show', :as => 'estd4134', :constraints => { :id => %r([^/.?]+) }
+  post 'estd4134s(.:format)' => 'estd4134s#create', :as => 'create_estd4134'
+  put 'estd4134s/:id(.:format)' => 'estd4134s#update', :as => 'update_estd4134', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd4134s/:id(.:format)' => 'estd4134s#destroy', :as => 'destroy_estd4134', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd4131s"
+  get 'estd4131s/new(.:format)', :as => 'new_estd4131'
+  get 'estd4131s/:id/edit(.:format)' => 'estd4131s#edit', :as => 'edit_estd4131'
+  get 'estd4131s/:id(.:format)' => 'estd4131s#show', :as => 'estd4131', :constraints => { :id => %r([^/.?]+) }
+  post 'estd4131s(.:format)' => 'estd4131s#create', :as => 'create_estd4131'
+  put 'estd4131s/:id(.:format)' => 'estd4131s#update', :as => 'update_estd4131', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd4131s/:id(.:format)' => 'estd4131s#destroy', :as => 'destroy_estd4131', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd4155s"
+  get 'estd4155s/new(.:format)', :as => 'new_estd4155'
+  get 'estd4155s/:id/edit(.:format)' => 'estd4155s#edit', :as => 'edit_estd4155'
+  get 'estd4155s/:id(.:format)' => 'estd4155s#show', :as => 'estd4155', :constraints => { :id => %r([^/.?]+) }
+  post 'estd4155s(.:format)' => 'estd4155s#create', :as => 'create_estd4155'
+  put 'estd4155s/:id(.:format)' => 'estd4155s#update', :as => 'update_estd4155', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd4155s/:id(.:format)' => 'estd4155s#destroy', :as => 'destroy_estd4155', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd4141s"
+  get 'estd4141s/new(.:format)', :as => 'new_estd4141'
+  get 'estd4141s/:id/edit(.:format)' => 'estd4141s#edit', :as => 'edit_estd4141'
+  get 'estd4141s/:id(.:format)' => 'estd4141s#show', :as => 'estd4141', :constraints => { :id => %r([^/.?]+) }
+  post 'estd4141s(.:format)' => 'estd4141s#create', :as => 'create_estd4141'
+  put 'estd4141s/:id(.:format)' => 'estd4141s#update', :as => 'update_estd4141', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd4141s/:id(.:format)' => 'estd4141s#destroy', :as => 'destroy_estd4141', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd4154s"
+  get 'estd4154s/new(.:format)', :as => 'new_estd4154'
+  get 'estd4154s/:id/edit(.:format)' => 'estd4154s#edit', :as => 'edit_estd4154'
+  get 'estd4154s/:id(.:format)' => 'estd4154s#show', :as => 'estd4154', :constraints => { :id => %r([^/.?]+) }
+  post 'estd4154s(.:format)' => 'estd4154s#create', :as => 'create_estd4154'
+  put 'estd4154s/:id(.:format)' => 'estd4154s#update', :as => 'update_estd4154', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd4154s/:id(.:format)' => 'estd4154s#destroy', :as => 'destroy_estd4154', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd41524s"
+  get 'estd41524s/new(.:format)', :as => 'new_estd41524'
+  get 'estd41524s/:id/edit(.:format)' => 'estd41524s#edit', :as => 'edit_estd41524'
+  get 'estd41524s/:id(.:format)' => 'estd41524s#show', :as => 'estd41524', :constraints => { :id => %r([^/.?]+) }
+  post 'estd41524s(.:format)' => 'estd41524s#create', :as => 'create_estd41524'
+  put 'estd41524s/:id(.:format)' => 'estd41524s#update', :as => 'update_estd41524', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd41524s/:id(.:format)' => 'estd41524s#destroy', :as => 'destroy_estd41524', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd41525s"
+  get 'estd41525s/new(.:format)', :as => 'new_estd41525'
+  get 'estd41525s/:id/edit(.:format)' => 'estd41525s#edit', :as => 'edit_estd41525'
+  get 'estd41525s/:id(.:format)' => 'estd41525s#show', :as => 'estd41525', :constraints => { :id => %r([^/.?]+) }
+  post 'estd41525s(.:format)' => 'estd41525s#create', :as => 'create_estd41525'
+  put 'estd41525s/:id(.:format)' => 'estd41525s#update', :as => 'update_estd41525', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd41525s/:id(.:format)' => 'estd41525s#destroy', :as => 'destroy_estd41525', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd41523s"
+  get 'estd41523s/new(.:format)', :as => 'new_estd41523'
+  get 'estd41523s/:id/edit(.:format)' => 'estd41523s#edit', :as => 'edit_estd41523'
+  get 'estd41523s/:id(.:format)' => 'estd41523s#show', :as => 'estd41523', :constraints => { :id => %r([^/.?]+) }
+  post 'estd41523s(.:format)' => 'estd41523s#create', :as => 'create_estd41523'
+  put 'estd41523s/:id(.:format)' => 'estd41523s#update', :as => 'update_estd41523', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd41523s/:id(.:format)' => 'estd41523s#destroy', :as => 'destroy_estd41523', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd4151s"
+  get 'estd4151s/new(.:format)', :as => 'new_estd4151'
+  get 'estd4151s/:id/edit(.:format)' => 'estd4151s#edit', :as => 'edit_estd4151'
+  get 'estd4151s/:id(.:format)' => 'estd4151s#show', :as => 'estd4151', :constraints => { :id => %r([^/.?]+) }
+  post 'estd4151s(.:format)' => 'estd4151s#create', :as => 'create_estd4151'
+  put 'estd4151s/:id(.:format)' => 'estd4151s#update', :as => 'update_estd4151', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd4151s/:id(.:format)' => 'estd4151s#destroy', :as => 'destroy_estd4151', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd4153s"
+  get 'estd4153s/new(.:format)', :as => 'new_estd4153'
+  get 'estd4153s/:id/edit(.:format)' => 'estd4153s#edit', :as => 'edit_estd4153'
+  get 'estd4153s/:id(.:format)' => 'estd4153s#show', :as => 'estd4153', :constraints => { :id => %r([^/.?]+) }
+  post 'estd4153s(.:format)' => 'estd4153s#create', :as => 'create_estd4153'
+  put 'estd4153s/:id(.:format)' => 'estd4153s#update', :as => 'update_estd4153', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd4153s/:id(.:format)' => 'estd4153s#destroy', :as => 'destroy_estd4153', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd41522s"
+  get 'estd41522s/new(.:format)', :as => 'new_estd41522'
+  get 'estd41522s/:id/edit(.:format)' => 'estd41522s#edit', :as => 'edit_estd41522'
+  get 'estd41522s/:id(.:format)' => 'estd41522s#show', :as => 'estd41522', :constraints => { :id => %r([^/.?]+) }
+  post 'estd41522s(.:format)' => 'estd41522s#create', :as => 'create_estd41522'
+  put 'estd41522s/:id(.:format)' => 'estd41522s#update', :as => 'update_estd41522', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd41522s/:id(.:format)' => 'estd41522s#destroy', :as => 'destroy_estd41522', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd41521s"
+  get 'estd41521s/new(.:format)', :as => 'new_estd41521'
+  get 'estd41521s/:id/edit(.:format)' => 'estd41521s#edit', :as => 'edit_estd41521'
+  get 'estd41521s/:id(.:format)' => 'estd41521s#show', :as => 'estd41521', :constraints => { :id => %r([^/.?]+) }
+  post 'estd41521s(.:format)' => 'estd41521s#create', :as => 'create_estd41521'
+  put 'estd41521s/:id(.:format)' => 'estd41521s#update', :as => 'update_estd41521', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd41521s/:id(.:format)' => 'estd41521s#destroy', :as => 'destroy_estd41521', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd4143s"
+  get 'estd4143s/new(.:format)', :as => 'new_estd4143'
+  get 'estd4143s/:id/edit(.:format)' => 'estd4143s#edit', :as => 'edit_estd4143'
+  get 'estd4143s/:id(.:format)' => 'estd4143s#show', :as => 'estd4143', :constraints => { :id => %r([^/.?]+) }
+  post 'estd4143s(.:format)' => 'estd4143s#create', :as => 'create_estd4143'
+  put 'estd4143s/:id(.:format)' => 'estd4143s#update', :as => 'update_estd4143', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd4143s/:id(.:format)' => 'estd4143s#destroy', :as => 'destroy_estd4143', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "estd4142s"
+  get 'estd4142s/new(.:format)', :as => 'new_estd4142'
+  get 'estd4142s/:id/edit(.:format)' => 'estd4142s#edit', :as => 'edit_estd4142'
+  get 'estd4142s/:id(.:format)' => 'estd4142s#show', :as => 'estd4142', :constraints => { :id => %r([^/.?]+) }
+  post 'estd4142s(.:format)' => 'estd4142s#create', :as => 'create_estd4142'
+  put 'estd4142s/:id(.:format)' => 'estd4142s#update', :as => 'update_estd4142', :constraints => { :id => %r([^/.?]+) }
+  delete 'estd4142s/:id(.:format)' => 'estd4142s#destroy', :as => 'destroy_estd4142', :constraints => { :id => %r([^/.?]+) }
 
   namespace :emap do
 

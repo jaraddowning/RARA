@@ -96,6 +96,24 @@ class Program < ActiveRecord::Base
   has_many :estd4112s, :dependent => :destroy
   has_many :estd4113s, :dependent => :destroy
   has_many :estd4114s, :dependent => :destroy
+  has_many :estd4121s, :dependent => :destroy
+  has_many :estd4122s, :dependent => :destroy
+  has_many :estd4131s, :dependent => :destroy
+  has_many :estd4132s, :dependent => :destroy
+  has_many :estd4133s, :dependent => :destroy
+  has_many :estd4134s, :dependent => :destroy
+  has_many :estd4141s, :dependent => :destroy
+  has_many :estd4142s, :dependent => :destroy
+  has_many :estd4143s, :dependent => :destroy
+  has_many :estd4151s, :dependent => :destroy
+  has_many :estd41521s, :dependent => :destroy
+  has_many :estd41522s, :dependent => :destroy
+  has_many :estd41523s, :dependent => :destroy
+  has_many :estd41524s, :dependent => :destroy
+  has_many :estd41525s, :dependent => :destroy
+  has_many :estd4153s, :dependent => :destroy
+  has_many :estd4154s, :dependent => :destroy
+  has_many :estd4155s, :dependent => :destroy
 
   after_create :populate
 
@@ -186,6 +204,24 @@ class Program < ActiveRecord::Base
     Estd4112.create(:name => "4.11.2", :program_id => id, :area_id => 84)
     Estd4113.create(:name => "4.11.3", :program_id => id, :area_id => 85)
     Estd4114.create(:name => "4.11.4", :program_id => id, :area_id => 86)
+    Estd4121.create(:name => "4.12.1", :program_id => id, :area_id => 87)
+    Estd4122.create(:name => "4.12.2", :program_id => id, :area_id => 88)
+    Estd4131.create(:name => "4.13.1", :program_id => id, :area_id => 89)
+    Estd4132.create(:name => "4.13.2", :program_id => id, :area_id => 90)
+    Estd4133.create(:name => "4.13.3", :program_id => id, :area_id => 91)
+    Estd4134.create(:name => "4.13.4", :program_id => id, :area_id => 92)
+    Estd4141.create(:name => "4.14.1", :program_id => id, :area_id => 93)
+    Estd4142.create(:name => "4.14.2", :program_id => id, :area_id => 94)
+    Estd4143.create(:name => "4.14.3", :program_id => id, :area_id => 95)
+    Estd4151.create(:name => "4.15.1", :program_id => id, :area_id => 96)
+    Estd41521.create(:name => "4.15.2(1)", :program_id => id, :area_id => 97)
+    Estd41522.create(:name => "4.15.2(2)", :program_id => id, :area_id => 98)
+    Estd41523.create(:name => "4.15.2(3)", :program_id => id, :area_id => 99)
+    Estd41524.create(:name => "4.15.2(4)", :program_id => id, :area_id => 100)
+    Estd41525.create(:name => "4.15.2(5)", :program_id => id, :area_id => 101)
+    Estd4153.create(:name => "4.15.3", :program_id => id, :area_id => 102)
+    Estd4154.create(:name => "4.15.4", :program_id => id, :area_id => 103)
+    Estd4155.create(:name => "4.15.5", :program_id => id, :area_id => 104)
   end
 
 
