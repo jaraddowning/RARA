@@ -29,7 +29,7 @@
         <a href="/emap/privacy.html">Privacy and Security</a>
       </div>
       <div>
-        Copyright &#64; 2012 - EMAP  |
+        Copyright &#64; 2012 - EMAP  
       </div>
     </footer:>
   </old-page>
@@ -88,6 +88,17 @@
       <submit label="#{ht 'finding.actions.save', :default=>['Submit']}" param/>
     </div>
     <a:program param="parent-link">&laquo; <ht key="finding.actions.back_to_parent" parent="Program" name="&this">Back to <name/></ht></a:program>
+    <after-submit stay-here/>
+  </form>
+</def>-->
+
+<!--<def tag="form" for="Finding">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="rational, observation, recomendations, decision, concur, sec_obs, mark_complete, lifecycle_state, previewer, sreviewer" param/>
+    <div param="actions">
+      <submit label="#{ht 'finding.actions.save', :default=>['Submit']}" param/>
+    </div>
     <after-submit stay-here/>
   </form>
 </def>-->
@@ -259,6 +270,66 @@
 </extend>
 
 <extend tag="show-page" for="Estd422">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.overview, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Estd431">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.overview, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Estd432">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.overview, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Estd441">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.overview, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Estd442">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.overview, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Estd443">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.overview, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Estd444">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.overview, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Estd445">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.overview, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Estd451">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.overview, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Estd452">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.overview, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Estd453">
   <old-show-page merge>
     <field-list: fields="program, area, area.overview, area.language" />
   </old-show-page>

@@ -201,6 +201,8 @@
     <body: class="show-page estd311" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd311.show.heading" name="#{name(:no_wrapper => true)}">
@@ -228,19 +230,26 @@
 
               <collection:findings param/>
 
-              <section param="add-to-collection" if="&can_create?(@estd311.findings)">
-                <h3 param="add-form-heading">
-                  <ht key="finding.collection.add_form_heading" count="1">
-                    Add a Finding
-                  </ht>
-                </h3>
-                <form with="&@finding || new_for_current_user(@estd311.findings)" owner="estd311" without-cancel param>
-                  <field-list: skip="estd311"/>
-                  <submit: label="#{ht 'finding.actions.add', :default=>['Add'] }"/>
-                </form>
-              </section>
+              <a:findings action="new" if="&can_create?(@estd311.findings)" param="new-link">
+                <ht key="finding.actions.new" count="1">
+                  New Finding
+                </ht>
+              </a:findings>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -342,6 +351,8 @@
     <body: class="show-page estd312" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd312.show.heading" name="#{name(:no_wrapper => true)}">
@@ -382,6 +393,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -483,6 +507,8 @@
     <body: class="show-page estd321" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd321.show.heading" name="#{name(:no_wrapper => true)}">
@@ -523,6 +549,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -624,6 +663,8 @@
     <body: class="show-page estd322" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd322.show.heading" name="#{name(:no_wrapper => true)}">
@@ -664,6 +705,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -765,6 +819,8 @@
     <body: class="show-page estd331" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd331.show.heading" name="#{name(:no_wrapper => true)}">
@@ -805,6 +861,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -906,6 +975,8 @@
     <body: class="show-page estd332" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd332.show.heading" name="#{name(:no_wrapper => true)}">
@@ -946,6 +1017,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -1047,6 +1131,8 @@
     <body: class="show-page estd4101" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4101.show.heading" name="#{name(:no_wrapper => true)}">
@@ -1087,6 +1173,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -1188,6 +1287,8 @@
     <body: class="show-page estd4102" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4102.show.heading" name="#{name(:no_wrapper => true)}">
@@ -1228,6 +1329,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -1329,6 +1443,8 @@
     <body: class="show-page estd4103" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4103.show.heading" name="#{name(:no_wrapper => true)}">
@@ -1369,6 +1485,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -1470,6 +1599,8 @@
     <body: class="show-page estd4104" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4104.show.heading" name="#{name(:no_wrapper => true)}">
@@ -1510,6 +1641,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -1611,6 +1755,8 @@
     <body: class="show-page estd4105" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4105.show.heading" name="#{name(:no_wrapper => true)}">
@@ -1651,6 +1797,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -1752,6 +1911,8 @@
     <body: class="show-page estd4106" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4106.show.heading" name="#{name(:no_wrapper => true)}">
@@ -1792,6 +1953,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -1893,6 +2067,8 @@
     <body: class="show-page estd4107" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4107.show.heading" name="#{name(:no_wrapper => true)}">
@@ -1933,6 +2109,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -2034,6 +2223,8 @@
     <body: class="show-page estd4111" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4111.show.heading" name="#{name(:no_wrapper => true)}">
@@ -2074,6 +2265,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -2175,6 +2379,8 @@
     <body: class="show-page estd4112" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4112.show.heading" name="#{name(:no_wrapper => true)}">
@@ -2215,6 +2421,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -2316,6 +2535,8 @@
     <body: class="show-page estd4113" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4113.show.heading" name="#{name(:no_wrapper => true)}">
@@ -2356,6 +2577,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -2457,6 +2691,8 @@
     <body: class="show-page estd4114" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4114.show.heading" name="#{name(:no_wrapper => true)}">
@@ -2497,6 +2733,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -2598,6 +2847,8 @@
     <body: class="show-page estd411" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd411.show.heading" name="#{name(:no_wrapper => true)}">
@@ -2638,6 +2889,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -2739,6 +3003,8 @@
     <body: class="show-page estd4121" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4121.show.heading" name="#{name(:no_wrapper => true)}">
@@ -2779,6 +3045,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -2880,6 +3159,8 @@
     <body: class="show-page estd4122" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4122.show.heading" name="#{name(:no_wrapper => true)}">
@@ -2920,6 +3201,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -3021,6 +3315,8 @@
     <body: class="show-page estd412" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd412.show.heading" name="#{name(:no_wrapper => true)}">
@@ -3061,6 +3357,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -3162,6 +3471,8 @@
     <body: class="show-page estd4131" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4131.show.heading" name="#{name(:no_wrapper => true)}">
@@ -3202,6 +3513,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -3303,6 +3627,8 @@
     <body: class="show-page estd4132" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4132.show.heading" name="#{name(:no_wrapper => true)}">
@@ -3343,6 +3669,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -3444,6 +3783,8 @@
     <body: class="show-page estd4133" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4133.show.heading" name="#{name(:no_wrapper => true)}">
@@ -3484,6 +3825,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -3585,6 +3939,8 @@
     <body: class="show-page estd4134" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4134.show.heading" name="#{name(:no_wrapper => true)}">
@@ -3625,6 +3981,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -3726,6 +4095,8 @@
     <body: class="show-page estd4141" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4141.show.heading" name="#{name(:no_wrapper => true)}">
@@ -3766,6 +4137,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -3867,6 +4251,8 @@
     <body: class="show-page estd4142" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4142.show.heading" name="#{name(:no_wrapper => true)}">
@@ -3907,6 +4293,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -4008,6 +4407,8 @@
     <body: class="show-page estd4143" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4143.show.heading" name="#{name(:no_wrapper => true)}">
@@ -4048,6 +4449,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -4149,6 +4563,8 @@
     <body: class="show-page estd4151" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4151.show.heading" name="#{name(:no_wrapper => true)}">
@@ -4189,6 +4605,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -4290,6 +4719,8 @@
     <body: class="show-page estd41521" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd41521.show.heading" name="#{name(:no_wrapper => true)}">
@@ -4330,6 +4761,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -4431,6 +4875,8 @@
     <body: class="show-page estd41522" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd41522.show.heading" name="#{name(:no_wrapper => true)}">
@@ -4471,6 +4917,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -4572,6 +5031,8 @@
     <body: class="show-page estd41523" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd41523.show.heading" name="#{name(:no_wrapper => true)}">
@@ -4612,6 +5073,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -4713,6 +5187,8 @@
     <body: class="show-page estd41524" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd41524.show.heading" name="#{name(:no_wrapper => true)}">
@@ -4753,6 +5229,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -4854,6 +5343,8 @@
     <body: class="show-page estd41525" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd41525.show.heading" name="#{name(:no_wrapper => true)}">
@@ -4894,6 +5385,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -4995,6 +5499,8 @@
     <body: class="show-page estd4153" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4153.show.heading" name="#{name(:no_wrapper => true)}">
@@ -5035,6 +5541,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -5136,6 +5655,8 @@
     <body: class="show-page estd4154" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4154.show.heading" name="#{name(:no_wrapper => true)}">
@@ -5176,6 +5697,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -5277,6 +5811,8 @@
     <body: class="show-page estd4155" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4155.show.heading" name="#{name(:no_wrapper => true)}">
@@ -5317,6 +5853,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -5418,6 +5967,8 @@
     <body: class="show-page estd421" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd421.show.heading" name="#{name(:no_wrapper => true)}">
@@ -5458,6 +6009,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -5559,6 +6123,8 @@
     <body: class="show-page estd422" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd422.show.heading" name="#{name(:no_wrapper => true)}">
@@ -5599,6 +6165,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -5700,6 +6279,8 @@
     <body: class="show-page estd431" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd431.show.heading" name="#{name(:no_wrapper => true)}">
@@ -5740,6 +6321,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -5841,6 +6435,8 @@
     <body: class="show-page estd432" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd432.show.heading" name="#{name(:no_wrapper => true)}">
@@ -5881,6 +6477,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -5982,6 +6591,8 @@
     <body: class="show-page estd441" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd441.show.heading" name="#{name(:no_wrapper => true)}">
@@ -6022,6 +6633,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -6123,6 +6747,8 @@
     <body: class="show-page estd442" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd442.show.heading" name="#{name(:no_wrapper => true)}">
@@ -6163,6 +6789,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -6264,6 +6903,8 @@
     <body: class="show-page estd443" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd443.show.heading" name="#{name(:no_wrapper => true)}">
@@ -6304,6 +6945,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -6405,6 +7059,8 @@
     <body: class="show-page estd444" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd444.show.heading" name="#{name(:no_wrapper => true)}">
@@ -6445,6 +7101,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -6546,6 +7215,8 @@
     <body: class="show-page estd445" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd445.show.heading" name="#{name(:no_wrapper => true)}">
@@ -6586,6 +7257,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -6687,6 +7371,8 @@
     <body: class="show-page estd451" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd451.show.heading" name="#{name(:no_wrapper => true)}">
@@ -6727,6 +7413,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -6828,6 +7527,8 @@
     <body: class="show-page estd452" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd452.show.heading" name="#{name(:no_wrapper => true)}">
@@ -6868,6 +7569,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -6969,6 +7683,8 @@
     <body: class="show-page estd453" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd453.show.heading" name="#{name(:no_wrapper => true)}">
@@ -7009,6 +7725,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -7110,6 +7839,8 @@
     <body: class="show-page estd461" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd461.show.heading" name="#{name(:no_wrapper => true)}">
@@ -7150,6 +7881,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -7251,6 +7995,8 @@
     <body: class="show-page estd4621" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4621.show.heading" name="#{name(:no_wrapper => true)}">
@@ -7291,6 +8037,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -7392,6 +8151,8 @@
     <body: class="show-page estd4622" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4622.show.heading" name="#{name(:no_wrapper => true)}">
@@ -7432,6 +8193,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -7533,6 +8307,8 @@
     <body: class="show-page estd4623" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4623.show.heading" name="#{name(:no_wrapper => true)}">
@@ -7573,6 +8349,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -7674,6 +8463,8 @@
     <body: class="show-page estd4624" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4624.show.heading" name="#{name(:no_wrapper => true)}">
@@ -7714,6 +8505,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -7815,6 +8619,8 @@
     <body: class="show-page estd4625" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4625.show.heading" name="#{name(:no_wrapper => true)}">
@@ -7855,6 +8661,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -7956,6 +8775,8 @@
     <body: class="show-page estd4626" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4626.show.heading" name="#{name(:no_wrapper => true)}">
@@ -7996,6 +8817,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -8097,6 +8931,8 @@
     <body: class="show-page estd4627" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4627.show.heading" name="#{name(:no_wrapper => true)}">
@@ -8137,6 +8973,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -8238,6 +9087,8 @@
     <body: class="show-page estd46310" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46310.show.heading" name="#{name(:no_wrapper => true)}">
@@ -8278,6 +9129,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -8379,6 +9243,8 @@
     <body: class="show-page estd46311" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46311.show.heading" name="#{name(:no_wrapper => true)}">
@@ -8419,6 +9285,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -8520,6 +9399,8 @@
     <body: class="show-page estd46312" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46312.show.heading" name="#{name(:no_wrapper => true)}">
@@ -8560,6 +9441,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -8661,6 +9555,8 @@
     <body: class="show-page estd46313" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46313.show.heading" name="#{name(:no_wrapper => true)}">
@@ -8701,6 +9597,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -8802,6 +9711,8 @@
     <body: class="show-page estd46314" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46314.show.heading" name="#{name(:no_wrapper => true)}">
@@ -8842,6 +9753,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -8943,6 +9867,8 @@
     <body: class="show-page estd46315" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46315.show.heading" name="#{name(:no_wrapper => true)}">
@@ -8983,6 +9909,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -9084,6 +10023,8 @@
     <body: class="show-page estd46316" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46316.show.heading" name="#{name(:no_wrapper => true)}">
@@ -9124,6 +10065,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -9225,6 +10179,8 @@
     <body: class="show-page estd46317" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46317.show.heading" name="#{name(:no_wrapper => true)}">
@@ -9265,6 +10221,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -9366,6 +10335,8 @@
     <body: class="show-page estd46318" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46318.show.heading" name="#{name(:no_wrapper => true)}">
@@ -9406,6 +10377,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -9507,6 +10491,8 @@
     <body: class="show-page estd46319" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46319.show.heading" name="#{name(:no_wrapper => true)}">
@@ -9547,6 +10533,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -9648,6 +10647,8 @@
     <body: class="show-page estd4631" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4631.show.heading" name="#{name(:no_wrapper => true)}">
@@ -9688,6 +10689,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -9789,6 +10803,8 @@
     <body: class="show-page estd46320" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46320.show.heading" name="#{name(:no_wrapper => true)}">
@@ -9829,6 +10845,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -9930,6 +10959,8 @@
     <body: class="show-page estd46321" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46321.show.heading" name="#{name(:no_wrapper => true)}">
@@ -9970,6 +11001,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -10071,6 +11115,8 @@
     <body: class="show-page estd46322" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46322.show.heading" name="#{name(:no_wrapper => true)}">
@@ -10111,6 +11157,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -10212,6 +11271,8 @@
     <body: class="show-page estd46323" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46323.show.heading" name="#{name(:no_wrapper => true)}">
@@ -10252,6 +11313,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -10353,6 +11427,8 @@
     <body: class="show-page estd46324" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46324.show.heading" name="#{name(:no_wrapper => true)}">
@@ -10393,6 +11469,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -10494,6 +11583,8 @@
     <body: class="show-page estd46325" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46325.show.heading" name="#{name(:no_wrapper => true)}">
@@ -10534,6 +11625,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -10635,6 +11739,8 @@
     <body: class="show-page estd46326" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46326.show.heading" name="#{name(:no_wrapper => true)}">
@@ -10675,6 +11781,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -10776,6 +11895,8 @@
     <body: class="show-page estd46327" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46327.show.heading" name="#{name(:no_wrapper => true)}">
@@ -10816,6 +11937,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -10917,6 +12051,8 @@
     <body: class="show-page estd46328" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46328.show.heading" name="#{name(:no_wrapper => true)}">
@@ -10957,6 +12093,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -11058,6 +12207,8 @@
     <body: class="show-page estd46329" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd46329.show.heading" name="#{name(:no_wrapper => true)}">
@@ -11098,6 +12249,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -11199,6 +12363,8 @@
     <body: class="show-page estd4632" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4632.show.heading" name="#{name(:no_wrapper => true)}">
@@ -11239,6 +12405,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -11340,6 +12519,8 @@
     <body: class="show-page estd4633" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4633.show.heading" name="#{name(:no_wrapper => true)}">
@@ -11380,6 +12561,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -11481,6 +12675,8 @@
     <body: class="show-page estd4634" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4634.show.heading" name="#{name(:no_wrapper => true)}">
@@ -11521,6 +12717,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -11622,6 +12831,8 @@
     <body: class="show-page estd4635" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4635.show.heading" name="#{name(:no_wrapper => true)}">
@@ -11662,6 +12873,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -11763,6 +12987,8 @@
     <body: class="show-page estd4636" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4636.show.heading" name="#{name(:no_wrapper => true)}">
@@ -11803,6 +13029,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -11904,6 +13143,8 @@
     <body: class="show-page estd4637" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4637.show.heading" name="#{name(:no_wrapper => true)}">
@@ -11944,6 +13185,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -12045,6 +13299,8 @@
     <body: class="show-page estd4638" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4638.show.heading" name="#{name(:no_wrapper => true)}">
@@ -12085,6 +13341,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -12186,6 +13455,8 @@
     <body: class="show-page estd4639" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4639.show.heading" name="#{name(:no_wrapper => true)}">
@@ -12226,6 +13497,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -12327,6 +13611,8 @@
     <body: class="show-page estd464" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd464.show.heading" name="#{name(:no_wrapper => true)}">
@@ -12367,6 +13653,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -12468,6 +13767,8 @@
     <body: class="show-page estd465" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd465.show.heading" name="#{name(:no_wrapper => true)}">
@@ -12508,6 +13809,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -12609,6 +13923,8 @@
     <body: class="show-page estd466" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd466.show.heading" name="#{name(:no_wrapper => true)}">
@@ -12649,6 +13965,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -12750,6 +14079,8 @@
     <body: class="show-page estd471" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd471.show.heading" name="#{name(:no_wrapper => true)}">
@@ -12790,6 +14121,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -12891,6 +14235,8 @@
     <body: class="show-page estd472" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd472.show.heading" name="#{name(:no_wrapper => true)}">
@@ -12931,6 +14277,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -13032,6 +14391,8 @@
     <body: class="show-page estd473" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd473.show.heading" name="#{name(:no_wrapper => true)}">
@@ -13072,6 +14433,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -13173,6 +14547,8 @@
     <body: class="show-page estd474" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd474.show.heading" name="#{name(:no_wrapper => true)}">
@@ -13213,6 +14589,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -13314,6 +14703,8 @@
     <body: class="show-page estd475" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd475.show.heading" name="#{name(:no_wrapper => true)}">
@@ -13354,6 +14745,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -13455,6 +14859,8 @@
     <body: class="show-page estd481" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd481.show.heading" name="#{name(:no_wrapper => true)}">
@@ -13495,6 +14901,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -13596,6 +15015,8 @@
     <body: class="show-page estd482" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd482.show.heading" name="#{name(:no_wrapper => true)}">
@@ -13636,6 +15057,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -13737,6 +15171,8 @@
     <body: class="show-page estd483" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd483.show.heading" name="#{name(:no_wrapper => true)}">
@@ -13777,6 +15213,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -13878,6 +15327,8 @@
     <body: class="show-page estd4841" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4841.show.heading" name="#{name(:no_wrapper => true)}">
@@ -13918,6 +15369,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -14019,6 +15483,8 @@
     <body: class="show-page estd4842" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4842.show.heading" name="#{name(:no_wrapper => true)}">
@@ -14059,6 +15525,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -14160,6 +15639,8 @@
     <body: class="show-page estd4843" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd4843.show.heading" name="#{name(:no_wrapper => true)}">
@@ -14200,6 +15681,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -14301,6 +15795,8 @@
     <body: class="show-page estd485" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd485.show.heading" name="#{name(:no_wrapper => true)}">
@@ -14341,6 +15837,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -14442,6 +15951,8 @@
     <body: class="show-page estd486" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd486.show.heading" name="#{name(:no_wrapper => true)}">
@@ -14482,6 +15993,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -14583,6 +16107,8 @@
     <body: class="show-page estd491" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd491.show.heading" name="#{name(:no_wrapper => true)}">
@@ -14623,6 +16149,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -14724,6 +16263,8 @@
     <body: class="show-page estd492" param/>
 
     <content: param>
+      <section-group>
+        <section param="main-content">
           <header param="content-header">
             <h2 param="heading">
               <ht key="estd492.show.heading" name="#{name(:no_wrapper => true)}">
@@ -14764,6 +16305,19 @@
               </section>
             </section>
           </section>
+        </section>
+
+        <aside param>
+          <section param="uploads-collection-section">
+            <h3 param="uploads-collection-heading">
+              <ht key="upload.collection.heading" count="&this.uploads.count" >
+                <human-collection-name collection="uploads" your/>
+              </ht>
+            </h3>
+            <collection:uploads  param="uploads-collection"/>
+          </section>
+        </aside>
+      </section-group>
     </content:>
 
   </page>
@@ -14918,6 +16472,35 @@
 
 
 
+<def tag="new-for-estd311-page" polymorphic/>
+<def tag="new-for-estd311-page" for="Finding">
+  <page merge title="#{ht 'finding.new_for_owner.title', :default=>['New Finding for']} #{name :with => @estd311}">
+    <body: class="new-for-owner-page  finding" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="finding.new_for_owner.heading">
+            New Finding
+          </ht>
+        </h2>
+        <h3 param="subheading">
+          <ht key="finding.new_for_owner.subheading">
+            For:
+          </ht>
+          <a with="&@estd311"/>
+        </h3>
+      </header>
+
+      <section param="content-body">
+        <form owner="estd311" method="post" param>
+          <field-list: skip="estd311"/>
+          <submit: label="#{ht 'finding.actions.create', :default=>['Create Finding']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
 
 
 
@@ -15506,7 +17089,7 @@
           </header>
 
           <section param="content-body">
-            <field-list fields="proof_file_name, proof_content_type, proof_file_size, proof_updated_at" param/>
+            <field-list fields="proof_file_name, proof_content_type, proof_file_size, proof_updated_at, estd311, estd312, estd321, estd322, estd331, estd332, estd4101, estd4102, estd4103, estd4104, estd4105, estd4106, estd4107, estd411, estd4111, estd4112, estd4113, estd4114, estd412, estd4121, estd4122, estd4131, estd4132, estd4133, estd4134, estd4141, estd4142, estd4143, estd4151, estd41521, estd41522, estd41523, estd41524, estd41525, estd4153, estd4154, estd4155, estd421, estd422, estd431, estd432, estd441, estd442, estd443, estd444, estd445, estd451, estd452, estd453, estd461, estd4621, estd4622, estd4623, estd4624, estd4625, estd4626, estd4627, estd4631, estd46310, estd46311, estd46312, estd46313, estd46314, estd46315, estd46316, estd46317, estd46318, estd46319, estd4632, estd46320, estd46321, estd46322, estd46323, estd46324, estd46325, estd46326, estd46327, estd46328, estd46329, estd4633, estd4634, estd4635, estd4636, estd4637, estd4638, estd4639, estd464, estd465, estd466, estd471, estd472, estd473, estd474, estd475, estd481, estd482, estd483, estd4841, estd4842, estd4843, estd485, estd486, estd491, estd492" param/>
           </section>
     </content:>
 
@@ -15536,6 +17119,315 @@
 
   </page>
 </def>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

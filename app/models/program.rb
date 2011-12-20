@@ -8,7 +8,6 @@ class Program < ActiveRecord::Base
     timestamps
   end
 
-  has_many :findings
   has_many :estd311s, :dependent => :destroy
   has_many :estd312s, :dependent => :destroy
   has_many :estd321s, :dependent => :destroy
@@ -114,6 +113,9 @@ class Program < ActiveRecord::Base
   has_many :estd4153s, :dependent => :destroy
   has_many :estd4154s, :dependent => :destroy
   has_many :estd4155s, :dependent => :destroy
+
+  has_many :findings
+
 
   after_create :populate
 

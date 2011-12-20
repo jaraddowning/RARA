@@ -10,8 +10,9 @@ class Estd475 < ActiveRecord::Base
   belongs_to :program
   belongs_to :area
   has_many :findings, :dependent => :destroy
+  has_many :uploads, :dependent => :destroy
 
-  children :findings
+  children :findings, :uploads
 
   # --- Permissions --- #
 
