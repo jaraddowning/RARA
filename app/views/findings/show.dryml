@@ -1,5 +1,5 @@
 <show-page>
-  <content-body:>
+  <!--<content-body:>
     <field-list fields="rational, observation, recomendations, lifecycle_state, sreviewer, sec_obs" />
-  </content-body:>
+  </content-body:>-->
 </show-page>

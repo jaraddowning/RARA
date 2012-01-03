@@ -19,9 +19,12 @@ jQuery(document).ready(function()
   {
     jQuery(this).next(".msg_body").slideToggle(600);
     jQuery(this).next(".msg_sub_body").slideToggle(600);
-    //jQuery(".msg_body").click(function(event){
-    //  window.location.hash=this.hash;
-    //});
+    jQuery(".msg_sub_body").click(function(event){
+      window.location.hash=this.hash;
+    });
+    jQuery(".msg_body").click(function(event){
+      window.location.hash=this.hash;
+    });
   });
 });
 
