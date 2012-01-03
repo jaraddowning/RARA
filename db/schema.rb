@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111220204436) do
+ActiveRecord::Schema.define(:version => 20120103161104) do
 
   create_table "areas", :force => true do |t|
     t.string   "standard"
@@ -1176,11 +1176,8 @@ ActiveRecord::Schema.define(:version => 20111220204436) do
     t.string   "name"
     t.boolean  "concur"
     t.text     "sec_obs"
-    t.integer  "previewer_id"
-    t.integer  "sreviewer_id"
-    t.datetime "key_timestamp"
-    t.string   "lifecycle_state", :default => "primary"
     t.boolean  "mark_complete"
+    t.integer  "program_id"
     t.integer  "estd311_id"
     t.integer  "estd312_id"
     t.integer  "estd321_id"
@@ -1280,12 +1277,15 @@ ActiveRecord::Schema.define(:version => 20111220204436) do
     t.integer  "estd41521_id"
     t.integer  "estd41522_id"
     t.integer  "estd41523_id"
+    t.integer  "estd41524_id"
+    t.integer  "estd41525_id"
     t.integer  "estd4153_id"
     t.integer  "estd4154_id"
     t.integer  "estd4155_id"
-    t.integer  "estd41524_id"
-    t.integer  "estd41525_id"
-    t.integer  "program_id"
+    t.integer  "previewer_id"
+    t.integer  "sreviewer_id"
+    t.string   "lifecycle_state", :default => "primary"
+    t.datetime "key_timestamp"
   end
 
   add_index "findings", ["estd311_id"], :name => "index_findings_on_estd311_id"
@@ -1405,13 +1405,13 @@ ActiveRecord::Schema.define(:version => 20111220204436) do
   end
 
   create_table "uploads", :force => true do |t|
-    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "proof_file_name"
     t.string   "proof_content_type"
     t.integer  "proof_file_size"
     t.datetime "proof_updated_at"
+    t.string   "title"
     t.integer  "estd311_id"
     t.integer  "estd312_id"
     t.integer  "estd321_id"
