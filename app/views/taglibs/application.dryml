@@ -82,18 +82,15 @@
   </page>
 </def>
 
-<!--<def tag="form" for="Finding">
+<def tag="form" for="Finding">
   <form merge param="default">
     <error-messages param/>
-    <a:program param="parent-link">&laquo; <ht key="finding.actions.back_to_parent" parent="Program" name="&this">Back to <name/></ht></a:program><br /><br />
     <field-list fields="rational, observation, recomendations, decision, previewer" param/>
     <div param="actions">
       <submit label="#{ht 'finding.actions.save', :default=>['Submit']}" param/>
     </div>
-    <a:program param="parent-link">&laquo; <ht key="finding.actions.back_to_parent" parent="Program" name="&this">Back to <name/></ht></a:program>
-    <after-submit stay-here/>
   </form>
-</def>-->
+</def>
 
 <!--<def tag="form" for="Finding">
   <form merge param="default">
@@ -215,6 +212,14 @@
     </header>
   </card>
 </def>
+
+<extend tag="card" for="Estd311">
+  <old-card merge>
+    <body:>
+      Finding:<view:finding.decision />&nbsp;&nbsp;Second Read:<view:finding.concur />&nbsp;&nbsp;Completed:<view:finding.mark_complete />
+    </body:>
+  </old-card>
+</extend>
 
 <!--   This sucks   -->
 

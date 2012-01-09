@@ -23,20 +23,21 @@ Rara::Application.configure do
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
 
-  ActionMailer::Base.delivery_method = :smtp
-  ActionMailer::Base.smtp_settings = {
-    :address => 'mail.csg.org',
-    :port => 25,
-    :domain => 'csg.org',
-    :authentication => :login,
-    :user_name => 'emap@csg.org',
-    :password => 'Emap8222'
+  # Email configuration for CSG Exchange Servers (requires ruby-ntlm gem)
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default :charset => "utf-8"
+  config.action_mailer.default :content_type => "text/html"
+  config.action_mailer.smtp_settings = {
+    :address              => "mail.csg.org",
+    :port                 => 25,
+    :domain               => "csg.org",
+    :authentication       => :ntlm,
+    :user_name            => 'emap@csg.org',
+    :password             => 'Emap8222',
+    :enable_starttls_auto => false
   }
-
-  ActionMailer::Base.perform_deliveries = true
-  ActionMailer::Base.raise_delivery_errors = true
-  ActionMailer::Base.default :charset => "utf-8"
-  ActionMailer::Base.default :content_type => "text/html"
 
 end
 

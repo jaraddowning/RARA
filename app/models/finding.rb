@@ -132,20 +132,17 @@ class Finding < ActiveRecord::Base
     create :primary_read, 
            :params => [ :rational, :observation, :recomendations, :decision ],
            :available_to => "User",
-           :user_becomes => :all do
-    end
+           :user_becomes => :all
 
     transition :second_read,
                {:primary => :secondary},
                :params => [ :concur, :sec_obs, :sreviewer ],
-               :available_to => :all do
-    end
+               :available_to => :all
 
     transition :completion,
                {:secondary => :complete},
                :params => [ :mark_complete ],
-               :available_to => :all do
-    end
+               :available_to => :all
   end
 
   # --- Permissions --- #

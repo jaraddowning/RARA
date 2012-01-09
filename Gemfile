@@ -35,3 +35,4 @@ gem "acts_as_list"
 gem "paperclip"
 gem "bluecloth"
 gem "nested_has_many_through"
+gem 'ruby-ntlm'

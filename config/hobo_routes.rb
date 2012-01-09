@@ -95,6 +95,7 @@ Rara::Application.routes.draw do
 
   # Owner routes for controller "findings"
   get 'estd311s/:estd311_id/findings/new(.:format)' => 'findings#new_for_estd311', :as => 'new_finding_for_estd311'
+  post 'estd311s/:estd311_id/findings(.:format)' => 'findings#create_for_estd311', :as => 'create_finding_for_estd311'
   post 'estd312s/:estd312_id/findings(.:format)' => 'findings#create_for_estd312', :as => 'create_finding_for_estd312'
   post 'estd321s/:estd321_id/findings(.:format)' => 'findings#create_for_estd321', :as => 'create_finding_for_estd321'
   post 'estd322s/:estd322_id/findings(.:format)' => 'findings#create_for_estd322', :as => 'create_finding_for_estd322'

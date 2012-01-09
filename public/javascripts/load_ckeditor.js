@@ -15,17 +15,14 @@ makeEditor : function(elm) {
     }
   },
 standardToolbarConfig: [ ['Save','Preview','-'],
-                        ['Cut','Copy','Paste','PasteText','PasteFromWord','-','Print', '-', 'SpellChecker', 'Scayt'],
+                        ['Cut','Copy','Paste','PasteText','PasteFromWord','-','SpellChecker', 'Scayt'],
                         ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
-                        ['ImageButton','HorizontalRule','SpecialChar'],
+                        ['HorizontalRule','SpecialChar'],
                         '/',
                         ['Bold','Italic','Underline','Strike','-','Subscript','Superscript'],
                         ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote','CreateDiv'],
                         ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
-                        ['BidiLtr', 'BidiRtl'],
-                        '/',
-                        ['Styles','Format','Font','FontSize'],
-                        ['TextColor','Maximize']]
+                        ['BidiLtr', 'BidiRtl']]
   }
 
 Hobo.makeHtmlEditor = HoboCKEditor.makeEditor

@@ -4,7 +4,7 @@ class FindingsController < ApplicationController
 
   auto_actions :all, :except => :index
 
-  auto_actions_for :estd311, :new
+  auto_actions_for :estd311, [:new, :create]
 
   auto_actions_for :estd312, :create
   auto_actions_for :estd321, :create
