@@ -343,3 +343,220 @@
   </old-show-page>
 </extend>
 
+<!-- Medical Review BS -->
+<extend tag="show-page" for="Med11">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med12">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med21">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med22">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med23">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med24">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med25">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med26">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med27">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med28">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med31">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med32">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med33">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med41">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med42">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med43">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med44">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med45">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med51">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med52">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med53">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med54">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med55">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med56">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med61">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med62">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med71">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med81">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med91">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med92">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med93">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med94">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med101">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med102">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med111">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Med112">
+  <old-show-page merge>
+    <field-list: fields="program, area, area.language" />
+  </old-show-page>
+</extend>
+

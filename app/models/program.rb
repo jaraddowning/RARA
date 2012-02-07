@@ -113,6 +113,42 @@ class Program < ActiveRecord::Base
   has_many :estd4153s, :dependent => :destroy
   has_many :estd4154s, :dependent => :destroy
   has_many :estd4155s, :dependent => :destroy
+  has_many :med11s, :dependent => :destroy
+  has_many :med12s, :dependent => :destroy
+  has_many :med21s, :dependent => :destroy
+  has_many :med22s, :dependent => :destroy
+  has_many :med23s, :dependent => :destroy
+  has_many :med24s, :dependent => :destroy
+  has_many :med25s, :dependent => :destroy
+  has_many :med26s, :dependent => :destroy
+  has_many :med27s, :dependent => :destroy
+  has_many :med28s, :dependent => :destroy
+  has_many :med31s, :dependent => :destroy
+  has_many :med32s, :dependent => :destroy
+  has_many :med33s, :dependent => :destroy
+  has_many :med41s, :dependent => :destroy
+  has_many :med42s, :dependent => :destroy
+  has_many :med43s, :dependent => :destroy
+  has_many :med44s, :dependent => :destroy
+  has_many :med45s, :dependent => :destroy
+  has_many :med51s, :dependent => :destroy
+  has_many :med52s, :dependent => :destroy
+  has_many :med53s, :dependent => :destroy
+  has_many :med54s, :dependent => :destroy
+  has_many :med55s, :dependent => :destroy
+  has_many :med56s, :dependent => :destroy
+  has_many :med61s, :dependent => :destroy
+  has_many :med62s, :dependent => :destroy
+  has_many :med71s, :dependent => :destroy
+  has_many :med81s, :dependent => :destroy
+  has_many :med91s, :dependent => :destroy
+  has_many :med92s, :dependent => :destroy
+  has_many :med93s, :dependent => :destroy
+  has_many :med94s, :dependent => :destroy
+  has_many :med101s, :dependent => :destroy
+  has_many :med102s, :dependent => :destroy
+  has_many :med111s, :dependent => :destroy
+  has_many :med112s, :dependent => :destroy
 
   has_many :findings
 
@@ -224,6 +260,42 @@ class Program < ActiveRecord::Base
     Estd4153.create(:name => "4.15.3", :program_id => id, :area_id => 102)
     Estd4154.create(:name => "4.15.4", :program_id => id, :area_id => 103)
     Estd4155.create(:name => "4.15.5", :program_id => id, :area_id => 104)
+    Med11.create(:name => "1.1", :program_id => id, :area_id => 170)
+    Med12.create(:name => "1.2", :program_id => id, :area_id => 171)
+    Med21.create(:name => "2.1", :program_id => id, :area_id => 172)
+    Med22.create(:name => "2.2", :program_id => id, :area_id => 173)
+    Med23.create(:name => "2.3", :program_id => id, :area_id => 174)
+    Med24.create(:name => "2.4", :program_id => id, :area_id => 175)
+    Med25.create(:name => "2.5", :program_id => id, :area_id => 176)
+    Med26.create(:name => "2.6", :program_id => id, :area_id => 177)
+    Med27.create(:name => "2.7", :program_id => id, :area_id => 178)
+    Med28.create(:name => "2.8", :program_id => id, :area_id => 179)
+    Med31.create(:name => "3.1", :program_id => id, :area_id => 180)
+    Med32.create(:name => "3.2", :program_id => id, :area_id => 181)
+    Med33.create(:name => "3.3", :program_id => id, :area_id => 182)
+    Med41.create(:name => "4.1", :program_id => id, :area_id => 183)
+    Med42.create(:name => "4.2", :program_id => id, :area_id => 184)
+    Med43.create(:name => "4.3", :program_id => id, :area_id => 185)
+    Med44.create(:name => "4.4", :program_id => id, :area_id => 186)
+    Med45.create(:name => "4.5", :program_id => id, :area_id => 187)
+    Med51.create(:name => "5.1", :program_id => id, :area_id => 188)
+    Med52.create(:name => "5.2", :program_id => id, :area_id => 189)
+    Med53.create(:name => "5.3", :program_id => id, :area_id => 190)
+    Med54.create(:name => "5.4", :program_id => id, :area_id => 191)
+    Med55.create(:name => "5.5", :program_id => id, :area_id => 192)
+    Med56.create(:name => "5.6", :program_id => id, :area_id => 193)
+    Med61.create(:name => "6.1", :program_id => id, :area_id => 194)
+    Med62.create(:name => "6.2", :program_id => id, :area_id => 195)
+    Med71.create(:name => "7.1", :program_id => id, :area_id => 196)
+    Med81.create(:name => "8.1", :program_id => id, :area_id => 197)
+    Med91.create(:name => "9.1", :program_id => id, :area_id => 198)
+    Med92.create(:name => "9.2", :program_id => id, :area_id => 199)
+    Med93.create(:name => "9.3", :program_id => id, :area_id => 200)
+    Med94.create(:name => "9.4", :program_id => id, :area_id => 201)
+    Med101.create(:name => "10.1", :program_id => id, :area_id => 202)
+    Med102.create(:name => "10.2", :program_id => id, :area_id => 203)
+    Med111.create(:name => "11.1", :program_id => id, :area_id => 204)
+    Med112.create(:name => "11.2", :program_id => id, :area_id => 205)
   end
 
 

@@ -5,6 +5,24 @@
 Rara::Application.routes.draw do
 
 
+  # Resource routes for controller "med52s"
+  get 'med52s/new(.:format)', :as => 'new_med52'
+  get 'med52s/:id/edit(.:format)' => 'med52s#edit', :as => 'edit_med52'
+  get 'med52s/:id(.:format)' => 'med52s#show', :as => 'med52', :constraints => { :id => %r([^/.?]+) }
+  post 'med52s(.:format)' => 'med52s#create', :as => 'create_med52'
+  put 'med52s/:id(.:format)' => 'med52s#update', :as => 'update_med52', :constraints => { :id => %r([^/.?]+) }
+  delete 'med52s/:id(.:format)' => 'med52s#destroy', :as => 'destroy_med52', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med21s"
+  get 'med21s/new(.:format)', :as => 'new_med21'
+  get 'med21s/:id/edit(.:format)' => 'med21s#edit', :as => 'edit_med21'
+  get 'med21s/:id(.:format)' => 'med21s#show', :as => 'med21', :constraints => { :id => %r([^/.?]+) }
+  post 'med21s(.:format)' => 'med21s#create', :as => 'create_med21'
+  put 'med21s/:id(.:format)' => 'med21s#update', :as => 'update_med21', :constraints => { :id => %r([^/.?]+) }
+  delete 'med21s/:id(.:format)' => 'med21s#destroy', :as => 'destroy_med21', :constraints => { :id => %r([^/.?]+) }
+
+
   # Resource routes for controller "estd4623s"
   get 'estd4623s/new(.:format)', :as => 'new_estd4623'
   get 'estd4623s/:id/edit(.:format)' => 'estd4623s#edit', :as => 'edit_estd4623'
@@ -32,7 +50,17 @@ Rara::Application.routes.draw do
   delete 'estd332s/:id(.:format)' => 'estd332s#destroy', :as => 'destroy_estd332', :constraints => { :id => %r([^/.?]+) }
 
 
+  # Resource routes for controller "med44s"
+  get 'med44s/new(.:format)', :as => 'new_med44'
+  get 'med44s/:id/edit(.:format)' => 'med44s#edit', :as => 'edit_med44'
+  get 'med44s/:id(.:format)' => 'med44s#show', :as => 'med44', :constraints => { :id => %r([^/.?]+) }
+  post 'med44s(.:format)' => 'med44s#create', :as => 'create_med44'
+  put 'med44s/:id(.:format)' => 'med44s#update', :as => 'update_med44', :constraints => { :id => %r([^/.?]+) }
+  delete 'med44s/:id(.:format)' => 'med44s#destroy', :as => 'destroy_med44', :constraints => { :id => %r([^/.?]+) }
+
+
   # Resource routes for controller "areas"
+  get 'areas(.:format)' => 'areas#index', :as => 'areas'
   get 'areas/new(.:format)', :as => 'new_area'
   get 'areas/:id/edit(.:format)' => 'areas#edit', :as => 'edit_area'
   get 'areas/:id(.:format)' => 'areas#show', :as => 'area', :constraints => { :id => %r([^/.?]+) }
@@ -94,7 +122,6 @@ Rara::Application.routes.draw do
   delete 'findings/:id(.:format)' => 'findings#destroy', :as => 'destroy_finding', :constraints => { :id => %r([^/.?]+) }
 
   # Owner routes for controller "findings"
-  get 'estd311s/:estd311_id/findings/new(.:format)' => 'findings#new_for_estd311', :as => 'new_finding_for_estd311'
   post 'estd311s/:estd311_id/findings(.:format)' => 'findings#create_for_estd311', :as => 'create_finding_for_estd311'
   post 'estd312s/:estd312_id/findings(.:format)' => 'findings#create_for_estd312', :as => 'create_finding_for_estd312'
   post 'estd321s/:estd321_id/findings(.:format)' => 'findings#create_for_estd321', :as => 'create_finding_for_estd321'
@@ -199,6 +226,42 @@ Rara::Application.routes.draw do
   post 'estd4153s/:estd4153_id/findings(.:format)' => 'findings#create_for_estd4153', :as => 'create_finding_for_estd4153'
   post 'estd4154s/:estd4154_id/findings(.:format)' => 'findings#create_for_estd4154', :as => 'create_finding_for_estd4154'
   post 'estd4155s/:estd4155_id/findings(.:format)' => 'findings#create_for_estd4155', :as => 'create_finding_for_estd4155'
+  post 'med11s/:med11_id/findings(.:format)' => 'findings#create_for_med11', :as => 'create_finding_for_med11'
+  post 'med12s/:med12_id/findings(.:format)' => 'findings#create_for_med12', :as => 'create_finding_for_med12'
+  post 'med21s/:med21_id/findings(.:format)' => 'findings#create_for_med21', :as => 'create_finding_for_med21'
+  post 'med22s/:med22_id/findings(.:format)' => 'findings#create_for_med22', :as => 'create_finding_for_med22'
+  post 'med23s/:med23_id/findings(.:format)' => 'findings#create_for_med23', :as => 'create_finding_for_med23'
+  post 'med24s/:med24_id/findings(.:format)' => 'findings#create_for_med24', :as => 'create_finding_for_med24'
+  post 'med25s/:med25_id/findings(.:format)' => 'findings#create_for_med25', :as => 'create_finding_for_med25'
+  post 'med26s/:med26_id/findings(.:format)' => 'findings#create_for_med26', :as => 'create_finding_for_med26'
+  post 'med27s/:med27_id/findings(.:format)' => 'findings#create_for_med27', :as => 'create_finding_for_med27'
+  post 'med28s/:med28_id/findings(.:format)' => 'findings#create_for_med28', :as => 'create_finding_for_med28'
+  post 'med31s/:med31_id/findings(.:format)' => 'findings#create_for_med31', :as => 'create_finding_for_med31'
+  post 'med32s/:med32_id/findings(.:format)' => 'findings#create_for_med32', :as => 'create_finding_for_med32'
+  post 'med33s/:med33_id/findings(.:format)' => 'findings#create_for_med33', :as => 'create_finding_for_med33'
+  post 'med41s/:med41_id/findings(.:format)' => 'findings#create_for_med41', :as => 'create_finding_for_med41'
+  post 'med42s/:med42_id/findings(.:format)' => 'findings#create_for_med42', :as => 'create_finding_for_med42'
+  post 'med43s/:med43_id/findings(.:format)' => 'findings#create_for_med43', :as => 'create_finding_for_med43'
+  post 'med44s/:med44_id/findings(.:format)' => 'findings#create_for_med44', :as => 'create_finding_for_med44'
+  post 'med45s/:med45_id/findings(.:format)' => 'findings#create_for_med45', :as => 'create_finding_for_med45'
+  post 'med51s/:med51_id/findings(.:format)' => 'findings#create_for_med51', :as => 'create_finding_for_med51'
+  post 'med52s/:med52_id/findings(.:format)' => 'findings#create_for_med52', :as => 'create_finding_for_med52'
+  post 'med53s/:med53_id/findings(.:format)' => 'findings#create_for_med53', :as => 'create_finding_for_med53'
+  post 'med54s/:med54_id/findings(.:format)' => 'findings#create_for_med54', :as => 'create_finding_for_med54'
+  post 'med55s/:med55_id/findings(.:format)' => 'findings#create_for_med55', :as => 'create_finding_for_med55'
+  post 'med56s/:med56_id/findings(.:format)' => 'findings#create_for_med56', :as => 'create_finding_for_med56'
+  post 'med61s/:med61_id/findings(.:format)' => 'findings#create_for_med61', :as => 'create_finding_for_med61'
+  post 'med62s/:med62_id/findings(.:format)' => 'findings#create_for_med62', :as => 'create_finding_for_med62'
+  post 'med71s/:med71_id/findings(.:format)' => 'findings#create_for_med71', :as => 'create_finding_for_med71'
+  post 'med81s/:med81_id/findings(.:format)' => 'findings#create_for_med81', :as => 'create_finding_for_med81'
+  post 'med91s/:med91_id/findings(.:format)' => 'findings#create_for_med91', :as => 'create_finding_for_med91'
+  post 'med92s/:med92_id/findings(.:format)' => 'findings#create_for_med92', :as => 'create_finding_for_med92'
+  post 'med93s/:med93_id/findings(.:format)' => 'findings#create_for_med93', :as => 'create_finding_for_med93'
+  post 'med94s/:med94_id/findings(.:format)' => 'findings#create_for_med94', :as => 'create_finding_for_med94'
+  post 'med101s/:med101_id/findings(.:format)' => 'findings#create_for_med101', :as => 'create_finding_for_med101'
+  post 'med102s/:med102_id/findings(.:format)' => 'findings#create_for_med102', :as => 'create_finding_for_med102'
+  post 'med111s/:med111_id/findings(.:format)' => 'findings#create_for_med111', :as => 'create_finding_for_med111'
+  post 'med112s/:med112_id/findings(.:format)' => 'findings#create_for_med112', :as => 'create_finding_for_med112'
 
 
   # Resource routes for controller "estd452s"
@@ -228,6 +291,15 @@ Rara::Application.routes.draw do
   delete 'estd46311s/:id(.:format)' => 'estd46311s#destroy', :as => 'destroy_estd46311', :constraints => { :id => %r([^/.?]+) }
 
 
+  # Resource routes for controller "med11s"
+  get 'med11s/new(.:format)', :as => 'new_med11'
+  get 'med11s/:id/edit(.:format)' => 'med11s#edit', :as => 'edit_med11'
+  get 'med11s/:id(.:format)' => 'med11s#show', :as => 'med11', :constraints => { :id => %r([^/.?]+) }
+  post 'med11s(.:format)' => 'med11s#create', :as => 'create_med11'
+  put 'med11s/:id(.:format)' => 'med11s#update', :as => 'update_med11', :constraints => { :id => %r([^/.?]+) }
+  delete 'med11s/:id(.:format)' => 'med11s#destroy', :as => 'destroy_med11', :constraints => { :id => %r([^/.?]+) }
+
+
   # Resource routes for controller "estd4133s"
   get 'estd4133s/new(.:format)', :as => 'new_estd4133'
   get 'estd4133s/:id/edit(.:format)' => 'estd4133s#edit', :as => 'edit_estd4133'
@@ -244,6 +316,24 @@ Rara::Application.routes.draw do
   post 'estd4843s(.:format)' => 'estd4843s#create', :as => 'create_estd4843'
   put 'estd4843s/:id(.:format)' => 'estd4843s#update', :as => 'update_estd4843', :constraints => { :id => %r([^/.?]+) }
   delete 'estd4843s/:id(.:format)' => 'estd4843s#destroy', :as => 'destroy_estd4843', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med41s"
+  get 'med41s/new(.:format)', :as => 'new_med41'
+  get 'med41s/:id/edit(.:format)' => 'med41s#edit', :as => 'edit_med41'
+  get 'med41s/:id(.:format)' => 'med41s#show', :as => 'med41', :constraints => { :id => %r([^/.?]+) }
+  post 'med41s(.:format)' => 'med41s#create', :as => 'create_med41'
+  put 'med41s/:id(.:format)' => 'med41s#update', :as => 'update_med41', :constraints => { :id => %r([^/.?]+) }
+  delete 'med41s/:id(.:format)' => 'med41s#destroy', :as => 'destroy_med41', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med93s"
+  get 'med93s/new(.:format)', :as => 'new_med93'
+  get 'med93s/:id/edit(.:format)' => 'med93s#edit', :as => 'edit_med93'
+  get 'med93s/:id(.:format)' => 'med93s#show', :as => 'med93', :constraints => { :id => %r([^/.?]+) }
+  post 'med93s(.:format)' => 'med93s#create', :as => 'create_med93'
+  put 'med93s/:id(.:format)' => 'med93s#update', :as => 'update_med93', :constraints => { :id => %r([^/.?]+) }
+  delete 'med93s/:id(.:format)' => 'med93s#destroy', :as => 'destroy_med93', :constraints => { :id => %r([^/.?]+) }
 
 
   # Resource routes for controller "estd472s"
@@ -280,6 +370,15 @@ Rara::Application.routes.draw do
   post 'estd432s(.:format)' => 'estd432s#create', :as => 'create_estd432'
   put 'estd432s/:id(.:format)' => 'estd432s#update', :as => 'update_estd432', :constraints => { :id => %r([^/.?]+) }
   delete 'estd432s/:id(.:format)' => 'estd432s#destroy', :as => 'destroy_estd432', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med45s"
+  get 'med45s/new(.:format)', :as => 'new_med45'
+  get 'med45s/:id/edit(.:format)' => 'med45s#edit', :as => 'edit_med45'
+  get 'med45s/:id(.:format)' => 'med45s#show', :as => 'med45', :constraints => { :id => %r([^/.?]+) }
+  post 'med45s(.:format)' => 'med45s#create', :as => 'create_med45'
+  put 'med45s/:id(.:format)' => 'med45s#update', :as => 'update_med45', :constraints => { :id => %r([^/.?]+) }
+  delete 'med45s/:id(.:format)' => 'med45s#destroy', :as => 'destroy_med45', :constraints => { :id => %r([^/.?]+) }
 
 
   # Resource routes for controller "estd4112s"
@@ -363,6 +462,33 @@ Rara::Application.routes.draw do
   delete 'estd442s/:id(.:format)' => 'estd442s#destroy', :as => 'destroy_estd442', :constraints => { :id => %r([^/.?]+) }
 
 
+  # Resource routes for controller "med23s"
+  get 'med23s/new(.:format)', :as => 'new_med23'
+  get 'med23s/:id/edit(.:format)' => 'med23s#edit', :as => 'edit_med23'
+  get 'med23s/:id(.:format)' => 'med23s#show', :as => 'med23', :constraints => { :id => %r([^/.?]+) }
+  post 'med23s(.:format)' => 'med23s#create', :as => 'create_med23'
+  put 'med23s/:id(.:format)' => 'med23s#update', :as => 'update_med23', :constraints => { :id => %r([^/.?]+) }
+  delete 'med23s/:id(.:format)' => 'med23s#destroy', :as => 'destroy_med23', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med92s"
+  get 'med92s/new(.:format)', :as => 'new_med92'
+  get 'med92s/:id/edit(.:format)' => 'med92s#edit', :as => 'edit_med92'
+  get 'med92s/:id(.:format)' => 'med92s#show', :as => 'med92', :constraints => { :id => %r([^/.?]+) }
+  post 'med92s(.:format)' => 'med92s#create', :as => 'create_med92'
+  put 'med92s/:id(.:format)' => 'med92s#update', :as => 'update_med92', :constraints => { :id => %r([^/.?]+) }
+  delete 'med92s/:id(.:format)' => 'med92s#destroy', :as => 'destroy_med92', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med53s"
+  get 'med53s/new(.:format)', :as => 'new_med53'
+  get 'med53s/:id/edit(.:format)' => 'med53s#edit', :as => 'edit_med53'
+  get 'med53s/:id(.:format)' => 'med53s#show', :as => 'med53', :constraints => { :id => %r([^/.?]+) }
+  post 'med53s(.:format)' => 'med53s#create', :as => 'create_med53'
+  put 'med53s/:id(.:format)' => 'med53s#update', :as => 'update_med53', :constraints => { :id => %r([^/.?]+) }
+  delete 'med53s/:id(.:format)' => 'med53s#destroy', :as => 'destroy_med53', :constraints => { :id => %r([^/.?]+) }
+
+
   # Resource routes for controller "estd4154s"
   get 'estd4154s/new(.:format)', :as => 'new_estd4154'
   get 'estd4154s/:id/edit(.:format)' => 'estd4154s#edit', :as => 'edit_estd4154'
@@ -379,6 +505,15 @@ Rara::Application.routes.draw do
   post 'estd321s(.:format)' => 'estd321s#create', :as => 'create_estd321'
   put 'estd321s/:id(.:format)' => 'estd321s#update', :as => 'update_estd321', :constraints => { :id => %r([^/.?]+) }
   delete 'estd321s/:id(.:format)' => 'estd321s#destroy', :as => 'destroy_estd321', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med22s"
+  get 'med22s/new(.:format)', :as => 'new_med22'
+  get 'med22s/:id/edit(.:format)' => 'med22s#edit', :as => 'edit_med22'
+  get 'med22s/:id(.:format)' => 'med22s#show', :as => 'med22', :constraints => { :id => %r([^/.?]+) }
+  post 'med22s(.:format)' => 'med22s#create', :as => 'create_med22'
+  put 'med22s/:id(.:format)' => 'med22s#update', :as => 'update_med22', :constraints => { :id => %r([^/.?]+) }
+  delete 'med22s/:id(.:format)' => 'med22s#destroy', :as => 'destroy_med22', :constraints => { :id => %r([^/.?]+) }
 
 
   # Lifecycle routes for controller "users"
@@ -449,6 +584,33 @@ Rara::Application.routes.draw do
   delete 'estd46317s/:id(.:format)' => 'estd46317s#destroy', :as => 'destroy_estd46317', :constraints => { :id => %r([^/.?]+) }
 
 
+  # Resource routes for controller "med42s"
+  get 'med42s/new(.:format)', :as => 'new_med42'
+  get 'med42s/:id/edit(.:format)' => 'med42s#edit', :as => 'edit_med42'
+  get 'med42s/:id(.:format)' => 'med42s#show', :as => 'med42', :constraints => { :id => %r([^/.?]+) }
+  post 'med42s(.:format)' => 'med42s#create', :as => 'create_med42'
+  put 'med42s/:id(.:format)' => 'med42s#update', :as => 'update_med42', :constraints => { :id => %r([^/.?]+) }
+  delete 'med42s/:id(.:format)' => 'med42s#destroy', :as => 'destroy_med42', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med91s"
+  get 'med91s/new(.:format)', :as => 'new_med91'
+  get 'med91s/:id/edit(.:format)' => 'med91s#edit', :as => 'edit_med91'
+  get 'med91s/:id(.:format)' => 'med91s#show', :as => 'med91', :constraints => { :id => %r([^/.?]+) }
+  post 'med91s(.:format)' => 'med91s#create', :as => 'create_med91'
+  put 'med91s/:id(.:format)' => 'med91s#update', :as => 'update_med91', :constraints => { :id => %r([^/.?]+) }
+  delete 'med91s/:id(.:format)' => 'med91s#destroy', :as => 'destroy_med91', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med102s"
+  get 'med102s/new(.:format)', :as => 'new_med102'
+  get 'med102s/:id/edit(.:format)' => 'med102s#edit', :as => 'edit_med102'
+  get 'med102s/:id(.:format)' => 'med102s#show', :as => 'med102', :constraints => { :id => %r([^/.?]+) }
+  post 'med102s(.:format)' => 'med102s#create', :as => 'create_med102'
+  put 'med102s/:id(.:format)' => 'med102s#update', :as => 'update_med102', :constraints => { :id => %r([^/.?]+) }
+  delete 'med102s/:id(.:format)' => 'med102s#destroy', :as => 'destroy_med102', :constraints => { :id => %r([^/.?]+) }
+
+
   # Resource routes for controller "estd41525s"
   get 'estd41525s/new(.:format)', :as => 'new_estd41525'
   get 'estd41525s/:id/edit(.:format)' => 'estd41525s#edit', :as => 'edit_estd41525'
@@ -474,6 +636,15 @@ Rara::Application.routes.draw do
   post 'estd486s(.:format)' => 'estd486s#create', :as => 'create_estd486'
   put 'estd486s/:id(.:format)' => 'estd486s#update', :as => 'update_estd486', :constraints => { :id => %r([^/.?]+) }
   delete 'estd486s/:id(.:format)' => 'estd486s#destroy', :as => 'destroy_estd486', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med26s"
+  get 'med26s/new(.:format)', :as => 'new_med26'
+  get 'med26s/:id/edit(.:format)' => 'med26s#edit', :as => 'edit_med26'
+  get 'med26s/:id(.:format)' => 'med26s#show', :as => 'med26', :constraints => { :id => %r([^/.?]+) }
+  post 'med26s(.:format)' => 'med26s#create', :as => 'create_med26'
+  put 'med26s/:id(.:format)' => 'med26s#update', :as => 'update_med26', :constraints => { :id => %r([^/.?]+) }
+  delete 'med26s/:id(.:format)' => 'med26s#destroy', :as => 'destroy_med26', :constraints => { :id => %r([^/.?]+) }
 
 
   # Resource routes for controller "estd46316s"
@@ -557,6 +728,24 @@ Rara::Application.routes.draw do
   delete 'estd492s/:id(.:format)' => 'estd492s#destroy', :as => 'destroy_estd492', :constraints => { :id => %r([^/.?]+) }
 
 
+  # Resource routes for controller "med71s"
+  get 'med71s/new(.:format)', :as => 'new_med71'
+  get 'med71s/:id/edit(.:format)' => 'med71s#edit', :as => 'edit_med71'
+  get 'med71s/:id(.:format)' => 'med71s#show', :as => 'med71', :constraints => { :id => %r([^/.?]+) }
+  post 'med71s(.:format)' => 'med71s#create', :as => 'create_med71'
+  put 'med71s/:id(.:format)' => 'med71s#update', :as => 'update_med71', :constraints => { :id => %r([^/.?]+) }
+  delete 'med71s/:id(.:format)' => 'med71s#destroy', :as => 'destroy_med71', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med43s"
+  get 'med43s/new(.:format)', :as => 'new_med43'
+  get 'med43s/:id/edit(.:format)' => 'med43s#edit', :as => 'edit_med43'
+  get 'med43s/:id(.:format)' => 'med43s#show', :as => 'med43', :constraints => { :id => %r([^/.?]+) }
+  post 'med43s(.:format)' => 'med43s#create', :as => 'create_med43'
+  put 'med43s/:id(.:format)' => 'med43s#update', :as => 'update_med43', :constraints => { :id => %r([^/.?]+) }
+  delete 'med43s/:id(.:format)' => 'med43s#destroy', :as => 'destroy_med43', :constraints => { :id => %r([^/.?]+) }
+
+
   # Resource routes for controller "estd4627s"
   get 'estd4627s/new(.:format)', :as => 'new_estd4627'
   get 'estd4627s/:id/edit(.:format)' => 'estd4627s#edit', :as => 'edit_estd4627'
@@ -618,6 +807,24 @@ Rara::Application.routes.draw do
   post 'estd4134s(.:format)' => 'estd4134s#create', :as => 'create_estd4134'
   put 'estd4134s/:id(.:format)' => 'estd4134s#update', :as => 'update_estd4134', :constraints => { :id => %r([^/.?]+) }
   delete 'estd4134s/:id(.:format)' => 'estd4134s#destroy', :as => 'destroy_estd4134', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med101s"
+  get 'med101s/new(.:format)', :as => 'new_med101'
+  get 'med101s/:id/edit(.:format)' => 'med101s#edit', :as => 'edit_med101'
+  get 'med101s/:id(.:format)' => 'med101s#show', :as => 'med101', :constraints => { :id => %r([^/.?]+) }
+  post 'med101s(.:format)' => 'med101s#create', :as => 'create_med101'
+  put 'med101s/:id(.:format)' => 'med101s#update', :as => 'update_med101', :constraints => { :id => %r([^/.?]+) }
+  delete 'med101s/:id(.:format)' => 'med101s#destroy', :as => 'destroy_med101', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med24s"
+  get 'med24s/new(.:format)', :as => 'new_med24'
+  get 'med24s/:id/edit(.:format)' => 'med24s#edit', :as => 'edit_med24'
+  get 'med24s/:id(.:format)' => 'med24s#show', :as => 'med24', :constraints => { :id => %r([^/.?]+) }
+  post 'med24s(.:format)' => 'med24s#create', :as => 'create_med24'
+  put 'med24s/:id(.:format)' => 'med24s#update', :as => 'update_med24', :constraints => { :id => %r([^/.?]+) }
+  delete 'med24s/:id(.:format)' => 'med24s#destroy', :as => 'destroy_med24', :constraints => { :id => %r([^/.?]+) }
 
 
   # Resource routes for controller "estd451s"
@@ -692,6 +899,15 @@ Rara::Application.routes.draw do
   delete 'estd466s/:id(.:format)' => 'estd466s#destroy', :as => 'destroy_estd466', :constraints => { :id => %r([^/.?]+) }
 
 
+  # Resource routes for controller "med94s"
+  get 'med94s/new(.:format)', :as => 'new_med94'
+  get 'med94s/:id/edit(.:format)' => 'med94s#edit', :as => 'edit_med94'
+  get 'med94s/:id(.:format)' => 'med94s#show', :as => 'med94', :constraints => { :id => %r([^/.?]+) }
+  post 'med94s(.:format)' => 'med94s#create', :as => 'create_med94'
+  put 'med94s/:id(.:format)' => 'med94s#update', :as => 'update_med94', :constraints => { :id => %r([^/.?]+) }
+  delete 'med94s/:id(.:format)' => 'med94s#destroy', :as => 'destroy_med94', :constraints => { :id => %r([^/.?]+) }
+
+
   # Resource routes for controller "estd46323s"
   get 'estd46323s/new(.:format)', :as => 'new_estd46323'
   get 'estd46323s/:id/edit(.:format)' => 'estd46323s#edit', :as => 'edit_estd46323'
@@ -708,6 +924,15 @@ Rara::Application.routes.draw do
   post 'estd485s(.:format)' => 'estd485s#create', :as => 'create_estd485'
   put 'estd485s/:id(.:format)' => 'estd485s#update', :as => 'update_estd485', :constraints => { :id => %r([^/.?]+) }
   delete 'estd485s/:id(.:format)' => 'estd485s#destroy', :as => 'destroy_estd485', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med112s"
+  get 'med112s/new(.:format)', :as => 'new_med112'
+  get 'med112s/:id/edit(.:format)' => 'med112s#edit', :as => 'edit_med112'
+  get 'med112s/:id(.:format)' => 'med112s#show', :as => 'med112', :constraints => { :id => %r([^/.?]+) }
+  post 'med112s(.:format)' => 'med112s#create', :as => 'create_med112'
+  put 'med112s/:id(.:format)' => 'med112s#update', :as => 'update_med112', :constraints => { :id => %r([^/.?]+) }
+  delete 'med112s/:id(.:format)' => 'med112s#destroy', :as => 'destroy_med112', :constraints => { :id => %r([^/.?]+) }
 
 
   # Resource routes for controller "estd421s"
@@ -735,6 +960,15 @@ Rara::Application.routes.draw do
   post 'estd4153s(.:format)' => 'estd4153s#create', :as => 'create_estd4153'
   put 'estd4153s/:id(.:format)' => 'estd4153s#update', :as => 'update_estd4153', :constraints => { :id => %r([^/.?]+) }
   delete 'estd4153s/:id(.:format)' => 'estd4153s#destroy', :as => 'destroy_estd4153', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med54s"
+  get 'med54s/new(.:format)', :as => 'new_med54'
+  get 'med54s/:id/edit(.:format)' => 'med54s#edit', :as => 'edit_med54'
+  get 'med54s/:id(.:format)' => 'med54s#show', :as => 'med54', :constraints => { :id => %r([^/.?]+) }
+  post 'med54s(.:format)' => 'med54s#create', :as => 'create_med54'
+  put 'med54s/:id(.:format)' => 'med54s#update', :as => 'update_med54', :constraints => { :id => %r([^/.?]+) }
+  delete 'med54s/:id(.:format)' => 'med54s#destroy', :as => 'destroy_med54', :constraints => { :id => %r([^/.?]+) }
 
 
   # Resource routes for controller "estd46312s"
@@ -800,6 +1034,15 @@ Rara::Application.routes.draw do
   delete 'estd312s/:id(.:format)' => 'estd312s#destroy', :as => 'destroy_estd312', :constraints => { :id => %r([^/.?]+) }
 
 
+  # Resource routes for controller "med31s"
+  get 'med31s/new(.:format)', :as => 'new_med31'
+  get 'med31s/:id/edit(.:format)' => 'med31s#edit', :as => 'edit_med31'
+  get 'med31s/:id(.:format)' => 'med31s#show', :as => 'med31', :constraints => { :id => %r([^/.?]+) }
+  post 'med31s(.:format)' => 'med31s#create', :as => 'create_med31'
+  put 'med31s/:id(.:format)' => 'med31s#update', :as => 'update_med31', :constraints => { :id => %r([^/.?]+) }
+  delete 'med31s/:id(.:format)' => 'med31s#destroy', :as => 'destroy_med31', :constraints => { :id => %r([^/.?]+) }
+
+
   # Resource routes for controller "estd4637s"
   get 'estd4637s/new(.:format)', :as => 'new_estd4637'
   get 'estd4637s/:id/edit(.:format)' => 'estd4637s#edit', :as => 'edit_estd4637'
@@ -845,6 +1088,15 @@ Rara::Application.routes.draw do
   delete 'estd491s/:id(.:format)' => 'estd491s#destroy', :as => 'destroy_estd491', :constraints => { :id => %r([^/.?]+) }
 
 
+  # Resource routes for controller "med56s"
+  get 'med56s/new(.:format)', :as => 'new_med56'
+  get 'med56s/:id/edit(.:format)' => 'med56s#edit', :as => 'edit_med56'
+  get 'med56s/:id(.:format)' => 'med56s#show', :as => 'med56', :constraints => { :id => %r([^/.?]+) }
+  post 'med56s(.:format)' => 'med56s#create', :as => 'create_med56'
+  put 'med56s/:id(.:format)' => 'med56s#update', :as => 'update_med56', :constraints => { :id => %r([^/.?]+) }
+  delete 'med56s/:id(.:format)' => 'med56s#destroy', :as => 'destroy_med56', :constraints => { :id => %r([^/.?]+) }
+
+
   # Resource routes for controller "estd41522s"
   get 'estd41522s/new(.:format)', :as => 'new_estd41522'
   get 'estd41522s/:id/edit(.:format)' => 'estd41522s#edit', :as => 'edit_estd41522'
@@ -872,109 +1124,221 @@ Rara::Application.routes.draw do
   delete 'uploads/:id(.:format)' => 'uploads#destroy', :as => 'destroy_upload', :constraints => { :id => %r([^/.?]+) }
 
   # Owner routes for controller "uploads"
+  get 'estd312s/:estd312_id/uploads/new(.:format)' => 'uploads#new_for_estd312', :as => 'new_upload_for_estd312'
   post 'estd312s/:estd312_id/uploads(.:format)' => 'uploads#create_for_estd312', :as => 'create_upload_for_estd312'
+  get 'estd321s/:estd321_id/uploads/new(.:format)' => 'uploads#new_for_estd321', :as => 'new_upload_for_estd321'
   post 'estd321s/:estd321_id/uploads(.:format)' => 'uploads#create_for_estd321', :as => 'create_upload_for_estd321'
+  get 'estd322s/:estd322_id/uploads/new(.:format)' => 'uploads#new_for_estd322', :as => 'new_upload_for_estd322'
   post 'estd322s/:estd322_id/uploads(.:format)' => 'uploads#create_for_estd322', :as => 'create_upload_for_estd322'
+  get 'estd331s/:estd331_id/uploads/new(.:format)' => 'uploads#new_for_estd331', :as => 'new_upload_for_estd331'
   post 'estd331s/:estd331_id/uploads(.:format)' => 'uploads#create_for_estd331', :as => 'create_upload_for_estd331'
+  get 'estd332s/:estd332_id/uploads/new(.:format)' => 'uploads#new_for_estd332', :as => 'new_upload_for_estd332'
   post 'estd332s/:estd332_id/uploads(.:format)' => 'uploads#create_for_estd332', :as => 'create_upload_for_estd332'
+  get 'estd411s/:estd411_id/uploads/new(.:format)' => 'uploads#new_for_estd411', :as => 'new_upload_for_estd411'
   post 'estd411s/:estd411_id/uploads(.:format)' => 'uploads#create_for_estd411', :as => 'create_upload_for_estd411'
+  get 'estd412s/:estd412_id/uploads/new(.:format)' => 'uploads#new_for_estd412', :as => 'new_upload_for_estd412'
   post 'estd412s/:estd412_id/uploads(.:format)' => 'uploads#create_for_estd412', :as => 'create_upload_for_estd412'
+  get 'estd421s/:estd421_id/uploads/new(.:format)' => 'uploads#new_for_estd421', :as => 'new_upload_for_estd421'
   post 'estd421s/:estd421_id/uploads(.:format)' => 'uploads#create_for_estd421', :as => 'create_upload_for_estd421'
+  get 'estd422s/:estd422_id/uploads/new(.:format)' => 'uploads#new_for_estd422', :as => 'new_upload_for_estd422'
   post 'estd422s/:estd422_id/uploads(.:format)' => 'uploads#create_for_estd422', :as => 'create_upload_for_estd422'
+  get 'estd431s/:estd431_id/uploads/new(.:format)' => 'uploads#new_for_estd431', :as => 'new_upload_for_estd431'
   post 'estd431s/:estd431_id/uploads(.:format)' => 'uploads#create_for_estd431', :as => 'create_upload_for_estd431'
+  get 'estd432s/:estd432_id/uploads/new(.:format)' => 'uploads#new_for_estd432', :as => 'new_upload_for_estd432'
   post 'estd432s/:estd432_id/uploads(.:format)' => 'uploads#create_for_estd432', :as => 'create_upload_for_estd432'
+  get 'estd441s/:estd441_id/uploads/new(.:format)' => 'uploads#new_for_estd441', :as => 'new_upload_for_estd441'
   post 'estd441s/:estd441_id/uploads(.:format)' => 'uploads#create_for_estd441', :as => 'create_upload_for_estd441'
+  get 'estd442s/:estd442_id/uploads/new(.:format)' => 'uploads#new_for_estd442', :as => 'new_upload_for_estd442'
   post 'estd442s/:estd442_id/uploads(.:format)' => 'uploads#create_for_estd442', :as => 'create_upload_for_estd442'
+  get 'estd443s/:estd443_id/uploads/new(.:format)' => 'uploads#new_for_estd443', :as => 'new_upload_for_estd443'
   post 'estd443s/:estd443_id/uploads(.:format)' => 'uploads#create_for_estd443', :as => 'create_upload_for_estd443'
+  get 'estd444s/:estd444_id/uploads/new(.:format)' => 'uploads#new_for_estd444', :as => 'new_upload_for_estd444'
   post 'estd444s/:estd444_id/uploads(.:format)' => 'uploads#create_for_estd444', :as => 'create_upload_for_estd444'
+  get 'estd445s/:estd445_id/uploads/new(.:format)' => 'uploads#new_for_estd445', :as => 'new_upload_for_estd445'
   post 'estd445s/:estd445_id/uploads(.:format)' => 'uploads#create_for_estd445', :as => 'create_upload_for_estd445'
+  get 'estd451s/:estd451_id/uploads/new(.:format)' => 'uploads#new_for_estd451', :as => 'new_upload_for_estd451'
   post 'estd451s/:estd451_id/uploads(.:format)' => 'uploads#create_for_estd451', :as => 'create_upload_for_estd451'
+  get 'estd452s/:estd452_id/uploads/new(.:format)' => 'uploads#new_for_estd452', :as => 'new_upload_for_estd452'
   post 'estd452s/:estd452_id/uploads(.:format)' => 'uploads#create_for_estd452', :as => 'create_upload_for_estd452'
+  get 'estd453s/:estd453_id/uploads/new(.:format)' => 'uploads#new_for_estd453', :as => 'new_upload_for_estd453'
   post 'estd453s/:estd453_id/uploads(.:format)' => 'uploads#create_for_estd453', :as => 'create_upload_for_estd453'
+  get 'estd461s/:estd461_id/uploads/new(.:format)' => 'uploads#new_for_estd461', :as => 'new_upload_for_estd461'
   post 'estd461s/:estd461_id/uploads(.:format)' => 'uploads#create_for_estd461', :as => 'create_upload_for_estd461'
+  get 'estd4621s/:estd4621_id/uploads/new(.:format)' => 'uploads#new_for_estd4621', :as => 'new_upload_for_estd4621'
   post 'estd4621s/:estd4621_id/uploads(.:format)' => 'uploads#create_for_estd4621', :as => 'create_upload_for_estd4621'
+  get 'estd4622s/:estd4622_id/uploads/new(.:format)' => 'uploads#new_for_estd4622', :as => 'new_upload_for_estd4622'
   post 'estd4622s/:estd4622_id/uploads(.:format)' => 'uploads#create_for_estd4622', :as => 'create_upload_for_estd4622'
+  get 'estd4623s/:estd4623_id/uploads/new(.:format)' => 'uploads#new_for_estd4623', :as => 'new_upload_for_estd4623'
   post 'estd4623s/:estd4623_id/uploads(.:format)' => 'uploads#create_for_estd4623', :as => 'create_upload_for_estd4623'
+  get 'estd4624s/:estd4624_id/uploads/new(.:format)' => 'uploads#new_for_estd4624', :as => 'new_upload_for_estd4624'
   post 'estd4624s/:estd4624_id/uploads(.:format)' => 'uploads#create_for_estd4624', :as => 'create_upload_for_estd4624'
+  get 'estd4625s/:estd4625_id/uploads/new(.:format)' => 'uploads#new_for_estd4625', :as => 'new_upload_for_estd4625'
   post 'estd4625s/:estd4625_id/uploads(.:format)' => 'uploads#create_for_estd4625', :as => 'create_upload_for_estd4625'
+  get 'estd4626s/:estd4626_id/uploads/new(.:format)' => 'uploads#new_for_estd4626', :as => 'new_upload_for_estd4626'
   post 'estd4626s/:estd4626_id/uploads(.:format)' => 'uploads#create_for_estd4626', :as => 'create_upload_for_estd4626'
+  get 'estd4627s/:estd4627_id/uploads/new(.:format)' => 'uploads#new_for_estd4627', :as => 'new_upload_for_estd4627'
   post 'estd4627s/:estd4627_id/uploads(.:format)' => 'uploads#create_for_estd4627', :as => 'create_upload_for_estd4627'
+  get 'estd4631s/:estd4631_id/uploads/new(.:format)' => 'uploads#new_for_estd4631', :as => 'new_upload_for_estd4631'
   post 'estd4631s/:estd4631_id/uploads(.:format)' => 'uploads#create_for_estd4631', :as => 'create_upload_for_estd4631'
+  get 'estd4632s/:estd4632_id/uploads/new(.:format)' => 'uploads#new_for_estd4632', :as => 'new_upload_for_estd4632'
   post 'estd4632s/:estd4632_id/uploads(.:format)' => 'uploads#create_for_estd4632', :as => 'create_upload_for_estd4632'
+  get 'estd4633s/:estd4633_id/uploads/new(.:format)' => 'uploads#new_for_estd4633', :as => 'new_upload_for_estd4633'
   post 'estd4633s/:estd4633_id/uploads(.:format)' => 'uploads#create_for_estd4633', :as => 'create_upload_for_estd4633'
+  get 'estd4634s/:estd4634_id/uploads/new(.:format)' => 'uploads#new_for_estd4634', :as => 'new_upload_for_estd4634'
   post 'estd4634s/:estd4634_id/uploads(.:format)' => 'uploads#create_for_estd4634', :as => 'create_upload_for_estd4634'
+  get 'estd4635s/:estd4635_id/uploads/new(.:format)' => 'uploads#new_for_estd4635', :as => 'new_upload_for_estd4635'
   post 'estd4635s/:estd4635_id/uploads(.:format)' => 'uploads#create_for_estd4635', :as => 'create_upload_for_estd4635'
+  get 'estd4636s/:estd4636_id/uploads/new(.:format)' => 'uploads#new_for_estd4636', :as => 'new_upload_for_estd4636'
   post 'estd4636s/:estd4636_id/uploads(.:format)' => 'uploads#create_for_estd4636', :as => 'create_upload_for_estd4636'
+  get 'estd4637s/:estd4637_id/uploads/new(.:format)' => 'uploads#new_for_estd4637', :as => 'new_upload_for_estd4637'
   post 'estd4637s/:estd4637_id/uploads(.:format)' => 'uploads#create_for_estd4637', :as => 'create_upload_for_estd4637'
+  get 'estd4638s/:estd4638_id/uploads/new(.:format)' => 'uploads#new_for_estd4638', :as => 'new_upload_for_estd4638'
   post 'estd4638s/:estd4638_id/uploads(.:format)' => 'uploads#create_for_estd4638', :as => 'create_upload_for_estd4638'
+  get 'estd4639s/:estd4639_id/uploads/new(.:format)' => 'uploads#new_for_estd4639', :as => 'new_upload_for_estd4639'
   post 'estd4639s/:estd4639_id/uploads(.:format)' => 'uploads#create_for_estd4639', :as => 'create_upload_for_estd4639'
+  get 'estd46310s/:estd46310_id/uploads/new(.:format)' => 'uploads#new_for_estd46310', :as => 'new_upload_for_estd46310'
   post 'estd46310s/:estd46310_id/uploads(.:format)' => 'uploads#create_for_estd46310', :as => 'create_upload_for_estd46310'
+  get 'estd46311s/:estd46311_id/uploads/new(.:format)' => 'uploads#new_for_estd46311', :as => 'new_upload_for_estd46311'
   post 'estd46311s/:estd46311_id/uploads(.:format)' => 'uploads#create_for_estd46311', :as => 'create_upload_for_estd46311'
+  get 'estd46312s/:estd46312_id/uploads/new(.:format)' => 'uploads#new_for_estd46312', :as => 'new_upload_for_estd46312'
   post 'estd46312s/:estd46312_id/uploads(.:format)' => 'uploads#create_for_estd46312', :as => 'create_upload_for_estd46312'
+  get 'estd46313s/:estd46313_id/uploads/new(.:format)' => 'uploads#new_for_estd46313', :as => 'new_upload_for_estd46313'
   post 'estd46313s/:estd46313_id/uploads(.:format)' => 'uploads#create_for_estd46313', :as => 'create_upload_for_estd46313'
+  get 'estd46314s/:estd46314_id/uploads/new(.:format)' => 'uploads#new_for_estd46314', :as => 'new_upload_for_estd46314'
   post 'estd46314s/:estd46314_id/uploads(.:format)' => 'uploads#create_for_estd46314', :as => 'create_upload_for_estd46314'
+  get 'estd46315s/:estd46315_id/uploads/new(.:format)' => 'uploads#new_for_estd46315', :as => 'new_upload_for_estd46315'
   post 'estd46315s/:estd46315_id/uploads(.:format)' => 'uploads#create_for_estd46315', :as => 'create_upload_for_estd46315'
+  get 'estd46316s/:estd46316_id/uploads/new(.:format)' => 'uploads#new_for_estd46316', :as => 'new_upload_for_estd46316'
   post 'estd46316s/:estd46316_id/uploads(.:format)' => 'uploads#create_for_estd46316', :as => 'create_upload_for_estd46316'
+  get 'estd46317s/:estd46317_id/uploads/new(.:format)' => 'uploads#new_for_estd46317', :as => 'new_upload_for_estd46317'
   post 'estd46317s/:estd46317_id/uploads(.:format)' => 'uploads#create_for_estd46317', :as => 'create_upload_for_estd46317'
+  get 'estd46318s/:estd46318_id/uploads/new(.:format)' => 'uploads#new_for_estd46318', :as => 'new_upload_for_estd46318'
   post 'estd46318s/:estd46318_id/uploads(.:format)' => 'uploads#create_for_estd46318', :as => 'create_upload_for_estd46318'
+  get 'estd46319s/:estd46319_id/uploads/new(.:format)' => 'uploads#new_for_estd46319', :as => 'new_upload_for_estd46319'
   post 'estd46319s/:estd46319_id/uploads(.:format)' => 'uploads#create_for_estd46319', :as => 'create_upload_for_estd46319'
+  get 'estd46320s/:estd46320_id/uploads/new(.:format)' => 'uploads#new_for_estd46320', :as => 'new_upload_for_estd46320'
   post 'estd46320s/:estd46320_id/uploads(.:format)' => 'uploads#create_for_estd46320', :as => 'create_upload_for_estd46320'
+  get 'estd46321s/:estd46321_id/uploads/new(.:format)' => 'uploads#new_for_estd46321', :as => 'new_upload_for_estd46321'
   post 'estd46321s/:estd46321_id/uploads(.:format)' => 'uploads#create_for_estd46321', :as => 'create_upload_for_estd46321'
+  get 'estd46322s/:estd46322_id/uploads/new(.:format)' => 'uploads#new_for_estd46322', :as => 'new_upload_for_estd46322'
   post 'estd46322s/:estd46322_id/uploads(.:format)' => 'uploads#create_for_estd46322', :as => 'create_upload_for_estd46322'
+  get 'estd46323s/:estd46323_id/uploads/new(.:format)' => 'uploads#new_for_estd46323', :as => 'new_upload_for_estd46323'
   post 'estd46323s/:estd46323_id/uploads(.:format)' => 'uploads#create_for_estd46323', :as => 'create_upload_for_estd46323'
+  get 'estd46324s/:estd46324_id/uploads/new(.:format)' => 'uploads#new_for_estd46324', :as => 'new_upload_for_estd46324'
   post 'estd46324s/:estd46324_id/uploads(.:format)' => 'uploads#create_for_estd46324', :as => 'create_upload_for_estd46324'
+  get 'estd46325s/:estd46325_id/uploads/new(.:format)' => 'uploads#new_for_estd46325', :as => 'new_upload_for_estd46325'
   post 'estd46325s/:estd46325_id/uploads(.:format)' => 'uploads#create_for_estd46325', :as => 'create_upload_for_estd46325'
+  get 'estd46326s/:estd46326_id/uploads/new(.:format)' => 'uploads#new_for_estd46326', :as => 'new_upload_for_estd46326'
   post 'estd46326s/:estd46326_id/uploads(.:format)' => 'uploads#create_for_estd46326', :as => 'create_upload_for_estd46326'
+  get 'estd46327s/:estd46327_id/uploads/new(.:format)' => 'uploads#new_for_estd46327', :as => 'new_upload_for_estd46327'
   post 'estd46327s/:estd46327_id/uploads(.:format)' => 'uploads#create_for_estd46327', :as => 'create_upload_for_estd46327'
+  get 'estd46328s/:estd46328_id/uploads/new(.:format)' => 'uploads#new_for_estd46328', :as => 'new_upload_for_estd46328'
   post 'estd46328s/:estd46328_id/uploads(.:format)' => 'uploads#create_for_estd46328', :as => 'create_upload_for_estd46328'
+  get 'estd46329s/:estd46329_id/uploads/new(.:format)' => 'uploads#new_for_estd46329', :as => 'new_upload_for_estd46329'
   post 'estd46329s/:estd46329_id/uploads(.:format)' => 'uploads#create_for_estd46329', :as => 'create_upload_for_estd46329'
+  get 'estd464s/:estd464_id/uploads/new(.:format)' => 'uploads#new_for_estd464', :as => 'new_upload_for_estd464'
   post 'estd464s/:estd464_id/uploads(.:format)' => 'uploads#create_for_estd464', :as => 'create_upload_for_estd464'
+  get 'estd465s/:estd465_id/uploads/new(.:format)' => 'uploads#new_for_estd465', :as => 'new_upload_for_estd465'
   post 'estd465s/:estd465_id/uploads(.:format)' => 'uploads#create_for_estd465', :as => 'create_upload_for_estd465'
+  get 'estd466s/:estd466_id/uploads/new(.:format)' => 'uploads#new_for_estd466', :as => 'new_upload_for_estd466'
   post 'estd466s/:estd466_id/uploads(.:format)' => 'uploads#create_for_estd466', :as => 'create_upload_for_estd466'
+  get 'estd471s/:estd471_id/uploads/new(.:format)' => 'uploads#new_for_estd471', :as => 'new_upload_for_estd471'
   post 'estd471s/:estd471_id/uploads(.:format)' => 'uploads#create_for_estd471', :as => 'create_upload_for_estd471'
+  get 'estd472s/:estd472_id/uploads/new(.:format)' => 'uploads#new_for_estd472', :as => 'new_upload_for_estd472'
   post 'estd472s/:estd472_id/uploads(.:format)' => 'uploads#create_for_estd472', :as => 'create_upload_for_estd472'
+  get 'estd473s/:estd473_id/uploads/new(.:format)' => 'uploads#new_for_estd473', :as => 'new_upload_for_estd473'
   post 'estd473s/:estd473_id/uploads(.:format)' => 'uploads#create_for_estd473', :as => 'create_upload_for_estd473'
+  get 'estd474s/:estd474_id/uploads/new(.:format)' => 'uploads#new_for_estd474', :as => 'new_upload_for_estd474'
   post 'estd474s/:estd474_id/uploads(.:format)' => 'uploads#create_for_estd474', :as => 'create_upload_for_estd474'
+  get 'estd475s/:estd475_id/uploads/new(.:format)' => 'uploads#new_for_estd475', :as => 'new_upload_for_estd475'
   post 'estd475s/:estd475_id/uploads(.:format)' => 'uploads#create_for_estd475', :as => 'create_upload_for_estd475'
+  get 'estd481s/:estd481_id/uploads/new(.:format)' => 'uploads#new_for_estd481', :as => 'new_upload_for_estd481'
   post 'estd481s/:estd481_id/uploads(.:format)' => 'uploads#create_for_estd481', :as => 'create_upload_for_estd481'
+  get 'estd482s/:estd482_id/uploads/new(.:format)' => 'uploads#new_for_estd482', :as => 'new_upload_for_estd482'
   post 'estd482s/:estd482_id/uploads(.:format)' => 'uploads#create_for_estd482', :as => 'create_upload_for_estd482'
+  get 'estd483s/:estd483_id/uploads/new(.:format)' => 'uploads#new_for_estd483', :as => 'new_upload_for_estd483'
   post 'estd483s/:estd483_id/uploads(.:format)' => 'uploads#create_for_estd483', :as => 'create_upload_for_estd483'
+  get 'estd4841s/:estd4841_id/uploads/new(.:format)' => 'uploads#new_for_estd4841', :as => 'new_upload_for_estd4841'
   post 'estd4841s/:estd4841_id/uploads(.:format)' => 'uploads#create_for_estd4841', :as => 'create_upload_for_estd4841'
+  get 'estd4842s/:estd4842_id/uploads/new(.:format)' => 'uploads#new_for_estd4842', :as => 'new_upload_for_estd4842'
   post 'estd4842s/:estd4842_id/uploads(.:format)' => 'uploads#create_for_estd4842', :as => 'create_upload_for_estd4842'
+  get 'estd4843s/:estd4843_id/uploads/new(.:format)' => 'uploads#new_for_estd4843', :as => 'new_upload_for_estd4843'
   post 'estd4843s/:estd4843_id/uploads(.:format)' => 'uploads#create_for_estd4843', :as => 'create_upload_for_estd4843'
+  get 'estd485s/:estd485_id/uploads/new(.:format)' => 'uploads#new_for_estd485', :as => 'new_upload_for_estd485'
   post 'estd485s/:estd485_id/uploads(.:format)' => 'uploads#create_for_estd485', :as => 'create_upload_for_estd485'
+  get 'estd486s/:estd486_id/uploads/new(.:format)' => 'uploads#new_for_estd486', :as => 'new_upload_for_estd486'
   post 'estd486s/:estd486_id/uploads(.:format)' => 'uploads#create_for_estd486', :as => 'create_upload_for_estd486'
+  get 'estd491s/:estd491_id/uploads/new(.:format)' => 'uploads#new_for_estd491', :as => 'new_upload_for_estd491'
   post 'estd491s/:estd491_id/uploads(.:format)' => 'uploads#create_for_estd491', :as => 'create_upload_for_estd491'
+  get 'estd492s/:estd492_id/uploads/new(.:format)' => 'uploads#new_for_estd492', :as => 'new_upload_for_estd492'
   post 'estd492s/:estd492_id/uploads(.:format)' => 'uploads#create_for_estd492', :as => 'create_upload_for_estd492'
+  get 'estd4101s/:estd4101_id/uploads/new(.:format)' => 'uploads#new_for_estd4101', :as => 'new_upload_for_estd4101'
   post 'estd4101s/:estd4101_id/uploads(.:format)' => 'uploads#create_for_estd4101', :as => 'create_upload_for_estd4101'
+  get 'estd4102s/:estd4102_id/uploads/new(.:format)' => 'uploads#new_for_estd4102', :as => 'new_upload_for_estd4102'
   post 'estd4102s/:estd4102_id/uploads(.:format)' => 'uploads#create_for_estd4102', :as => 'create_upload_for_estd4102'
+  get 'estd4103s/:estd4103_id/uploads/new(.:format)' => 'uploads#new_for_estd4103', :as => 'new_upload_for_estd4103'
   post 'estd4103s/:estd4103_id/uploads(.:format)' => 'uploads#create_for_estd4103', :as => 'create_upload_for_estd4103'
+  get 'estd4104s/:estd4104_id/uploads/new(.:format)' => 'uploads#new_for_estd4104', :as => 'new_upload_for_estd4104'
   post 'estd4104s/:estd4104_id/uploads(.:format)' => 'uploads#create_for_estd4104', :as => 'create_upload_for_estd4104'
+  get 'estd4105s/:estd4105_id/uploads/new(.:format)' => 'uploads#new_for_estd4105', :as => 'new_upload_for_estd4105'
   post 'estd4105s/:estd4105_id/uploads(.:format)' => 'uploads#create_for_estd4105', :as => 'create_upload_for_estd4105'
+  get 'estd4106s/:estd4106_id/uploads/new(.:format)' => 'uploads#new_for_estd4106', :as => 'new_upload_for_estd4106'
   post 'estd4106s/:estd4106_id/uploads(.:format)' => 'uploads#create_for_estd4106', :as => 'create_upload_for_estd4106'
+  get 'estd4107s/:estd4107_id/uploads/new(.:format)' => 'uploads#new_for_estd4107', :as => 'new_upload_for_estd4107'
   post 'estd4107s/:estd4107_id/uploads(.:format)' => 'uploads#create_for_estd4107', :as => 'create_upload_for_estd4107'
+  get 'estd4111s/:estd4111_id/uploads/new(.:format)' => 'uploads#new_for_estd4111', :as => 'new_upload_for_estd4111'
   post 'estd4111s/:estd4111_id/uploads(.:format)' => 'uploads#create_for_estd4111', :as => 'create_upload_for_estd4111'
+  get 'estd4112s/:estd4112_id/uploads/new(.:format)' => 'uploads#new_for_estd4112', :as => 'new_upload_for_estd4112'
   post 'estd4112s/:estd4112_id/uploads(.:format)' => 'uploads#create_for_estd4112', :as => 'create_upload_for_estd4112'
+  get 'estd4113s/:estd4113_id/uploads/new(.:format)' => 'uploads#new_for_estd4113', :as => 'new_upload_for_estd4113'
   post 'estd4113s/:estd4113_id/uploads(.:format)' => 'uploads#create_for_estd4113', :as => 'create_upload_for_estd4113'
+  get 'estd4114s/:estd4114_id/uploads/new(.:format)' => 'uploads#new_for_estd4114', :as => 'new_upload_for_estd4114'
   post 'estd4114s/:estd4114_id/uploads(.:format)' => 'uploads#create_for_estd4114', :as => 'create_upload_for_estd4114'
+  get 'estd4121s/:estd4121_id/uploads/new(.:format)' => 'uploads#new_for_estd4121', :as => 'new_upload_for_estd4121'
   post 'estd4121s/:estd4121_id/uploads(.:format)' => 'uploads#create_for_estd4121', :as => 'create_upload_for_estd4121'
+  get 'estd4122s/:estd4122_id/uploads/new(.:format)' => 'uploads#new_for_estd4122', :as => 'new_upload_for_estd4122'
   post 'estd4122s/:estd4122_id/uploads(.:format)' => 'uploads#create_for_estd4122', :as => 'create_upload_for_estd4122'
+  get 'estd4131s/:estd4131_id/uploads/new(.:format)' => 'uploads#new_for_estd4131', :as => 'new_upload_for_estd4131'
   post 'estd4131s/:estd4131_id/uploads(.:format)' => 'uploads#create_for_estd4131', :as => 'create_upload_for_estd4131'
+  get 'estd4132s/:estd4132_id/uploads/new(.:format)' => 'uploads#new_for_estd4132', :as => 'new_upload_for_estd4132'
   post 'estd4132s/:estd4132_id/uploads(.:format)' => 'uploads#create_for_estd4132', :as => 'create_upload_for_estd4132'
+  get 'estd4133s/:estd4133_id/uploads/new(.:format)' => 'uploads#new_for_estd4133', :as => 'new_upload_for_estd4133'
   post 'estd4133s/:estd4133_id/uploads(.:format)' => 'uploads#create_for_estd4133', :as => 'create_upload_for_estd4133'
+  get 'estd4134s/:estd4134_id/uploads/new(.:format)' => 'uploads#new_for_estd4134', :as => 'new_upload_for_estd4134'
   post 'estd4134s/:estd4134_id/uploads(.:format)' => 'uploads#create_for_estd4134', :as => 'create_upload_for_estd4134'
+  get 'estd4141s/:estd4141_id/uploads/new(.:format)' => 'uploads#new_for_estd4141', :as => 'new_upload_for_estd4141'
   post 'estd4141s/:estd4141_id/uploads(.:format)' => 'uploads#create_for_estd4141', :as => 'create_upload_for_estd4141'
+  get 'estd4142s/:estd4142_id/uploads/new(.:format)' => 'uploads#new_for_estd4142', :as => 'new_upload_for_estd4142'
   post 'estd4142s/:estd4142_id/uploads(.:format)' => 'uploads#create_for_estd4142', :as => 'create_upload_for_estd4142'
+  get 'estd4143s/:estd4143_id/uploads/new(.:format)' => 'uploads#new_for_estd4143', :as => 'new_upload_for_estd4143'
   post 'estd4143s/:estd4143_id/uploads(.:format)' => 'uploads#create_for_estd4143', :as => 'create_upload_for_estd4143'
+  get 'estd4151s/:estd4151_id/uploads/new(.:format)' => 'uploads#new_for_estd4151', :as => 'new_upload_for_estd4151'
   post 'estd4151s/:estd4151_id/uploads(.:format)' => 'uploads#create_for_estd4151', :as => 'create_upload_for_estd4151'
+  get 'estd41521s/:estd41521_id/uploads/new(.:format)' => 'uploads#new_for_estd41521', :as => 'new_upload_for_estd41521'
   post 'estd41521s/:estd41521_id/uploads(.:format)' => 'uploads#create_for_estd41521', :as => 'create_upload_for_estd41521'
+  get 'estd41522s/:estd41522_id/uploads/new(.:format)' => 'uploads#new_for_estd41522', :as => 'new_upload_for_estd41522'
   post 'estd41522s/:estd41522_id/uploads(.:format)' => 'uploads#create_for_estd41522', :as => 'create_upload_for_estd41522'
+  get 'estd41523s/:estd41523_id/uploads/new(.:format)' => 'uploads#new_for_estd41523', :as => 'new_upload_for_estd41523'
   post 'estd41523s/:estd41523_id/uploads(.:format)' => 'uploads#create_for_estd41523', :as => 'create_upload_for_estd41523'
+  get 'estd41524s/:estd41524_id/uploads/new(.:format)' => 'uploads#new_for_estd41524', :as => 'new_upload_for_estd41524'
   post 'estd41524s/:estd41524_id/uploads(.:format)' => 'uploads#create_for_estd41524', :as => 'create_upload_for_estd41524'
+  get 'estd41525s/:estd41525_id/uploads/new(.:format)' => 'uploads#new_for_estd41525', :as => 'new_upload_for_estd41525'
   post 'estd41525s/:estd41525_id/uploads(.:format)' => 'uploads#create_for_estd41525', :as => 'create_upload_for_estd41525'
+  get 'estd4153s/:estd4153_id/uploads/new(.:format)' => 'uploads#new_for_estd4153', :as => 'new_upload_for_estd4153'
   post 'estd4153s/:estd4153_id/uploads(.:format)' => 'uploads#create_for_estd4153', :as => 'create_upload_for_estd4153'
+  get 'estd4154s/:estd4154_id/uploads/new(.:format)' => 'uploads#new_for_estd4154', :as => 'new_upload_for_estd4154'
   post 'estd4154s/:estd4154_id/uploads(.:format)' => 'uploads#create_for_estd4154', :as => 'create_upload_for_estd4154'
+  get 'estd4155s/:estd4155_id/uploads/new(.:format)' => 'uploads#new_for_estd4155', :as => 'new_upload_for_estd4155'
   post 'estd4155s/:estd4155_id/uploads(.:format)' => 'uploads#create_for_estd4155', :as => 'create_upload_for_estd4155'
+
+
+  # Resource routes for controller "med28s"
+  get 'med28s/new(.:format)', :as => 'new_med28'
+  get 'med28s/:id/edit(.:format)' => 'med28s#edit', :as => 'edit_med28'
+  get 'med28s/:id(.:format)' => 'med28s#show', :as => 'med28', :constraints => { :id => %r([^/.?]+) }
+  post 'med28s(.:format)' => 'med28s#create', :as => 'create_med28'
+  put 'med28s/:id(.:format)' => 'med28s#update', :as => 'update_med28', :constraints => { :id => %r([^/.?]+) }
+  delete 'med28s/:id(.:format)' => 'med28s#destroy', :as => 'destroy_med28', :constraints => { :id => %r([^/.?]+) }
 
 
   # Resource routes for controller "estd4105s"
@@ -984,6 +1348,15 @@ Rara::Application.routes.draw do
   post 'estd4105s(.:format)' => 'estd4105s#create', :as => 'create_estd4105'
   put 'estd4105s/:id(.:format)' => 'estd4105s#update', :as => 'update_estd4105', :constraints => { :id => %r([^/.?]+) }
   delete 'estd4105s/:id(.:format)' => 'estd4105s#destroy', :as => 'destroy_estd4105', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med81s"
+  get 'med81s/new(.:format)', :as => 'new_med81'
+  get 'med81s/:id/edit(.:format)' => 'med81s#edit', :as => 'edit_med81'
+  get 'med81s/:id(.:format)' => 'med81s#show', :as => 'med81', :constraints => { :id => %r([^/.?]+) }
+  post 'med81s(.:format)' => 'med81s#create', :as => 'create_med81'
+  put 'med81s/:id(.:format)' => 'med81s#update', :as => 'update_med81', :constraints => { :id => %r([^/.?]+) }
+  delete 'med81s/:id(.:format)' => 'med81s#destroy', :as => 'destroy_med81', :constraints => { :id => %r([^/.?]+) }
 
 
   # Resource routes for controller "estd46320s"
@@ -1002,6 +1375,24 @@ Rara::Application.routes.draw do
   post 'estd41521s(.:format)' => 'estd41521s#create', :as => 'create_estd41521'
   put 'estd41521s/:id(.:format)' => 'estd41521s#update', :as => 'update_estd41521', :constraints => { :id => %r([^/.?]+) }
   delete 'estd41521s/:id(.:format)' => 'estd41521s#destroy', :as => 'destroy_estd41521', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med27s"
+  get 'med27s/new(.:format)', :as => 'new_med27'
+  get 'med27s/:id/edit(.:format)' => 'med27s#edit', :as => 'edit_med27'
+  get 'med27s/:id(.:format)' => 'med27s#show', :as => 'med27', :constraints => { :id => %r([^/.?]+) }
+  post 'med27s(.:format)' => 'med27s#create', :as => 'create_med27'
+  put 'med27s/:id(.:format)' => 'med27s#update', :as => 'update_med27', :constraints => { :id => %r([^/.?]+) }
+  delete 'med27s/:id(.:format)' => 'med27s#destroy', :as => 'destroy_med27', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med111s"
+  get 'med111s/new(.:format)', :as => 'new_med111'
+  get 'med111s/:id/edit(.:format)' => 'med111s#edit', :as => 'edit_med111'
+  get 'med111s/:id(.:format)' => 'med111s#show', :as => 'med111', :constraints => { :id => %r([^/.?]+) }
+  post 'med111s(.:format)' => 'med111s#create', :as => 'create_med111'
+  put 'med111s/:id(.:format)' => 'med111s#update', :as => 'update_med111', :constraints => { :id => %r([^/.?]+) }
+  delete 'med111s/:id(.:format)' => 'med111s#destroy', :as => 'destroy_med111', :constraints => { :id => %r([^/.?]+) }
 
 
   # Resource routes for controller "estd473s"
@@ -1058,6 +1449,33 @@ Rara::Application.routes.draw do
   delete 'estd331s/:id(.:format)' => 'estd331s#destroy', :as => 'destroy_estd331', :constraints => { :id => %r([^/.?]+) }
 
 
+  # Resource routes for controller "med61s"
+  get 'med61s/new(.:format)', :as => 'new_med61'
+  get 'med61s/:id/edit(.:format)' => 'med61s#edit', :as => 'edit_med61'
+  get 'med61s/:id(.:format)' => 'med61s#show', :as => 'med61', :constraints => { :id => %r([^/.?]+) }
+  post 'med61s(.:format)' => 'med61s#create', :as => 'create_med61'
+  put 'med61s/:id(.:format)' => 'med61s#update', :as => 'update_med61', :constraints => { :id => %r([^/.?]+) }
+  delete 'med61s/:id(.:format)' => 'med61s#destroy', :as => 'destroy_med61', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med32s"
+  get 'med32s/new(.:format)', :as => 'new_med32'
+  get 'med32s/:id/edit(.:format)' => 'med32s#edit', :as => 'edit_med32'
+  get 'med32s/:id(.:format)' => 'med32s#show', :as => 'med32', :constraints => { :id => %r([^/.?]+) }
+  post 'med32s(.:format)' => 'med32s#create', :as => 'create_med32'
+  put 'med32s/:id(.:format)' => 'med32s#update', :as => 'update_med32', :constraints => { :id => %r([^/.?]+) }
+  delete 'med32s/:id(.:format)' => 'med32s#destroy', :as => 'destroy_med32', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med12s"
+  get 'med12s/new(.:format)', :as => 'new_med12'
+  get 'med12s/:id/edit(.:format)' => 'med12s#edit', :as => 'edit_med12'
+  get 'med12s/:id(.:format)' => 'med12s#show', :as => 'med12', :constraints => { :id => %r([^/.?]+) }
+  post 'med12s(.:format)' => 'med12s#create', :as => 'create_med12'
+  put 'med12s/:id(.:format)' => 'med12s#update', :as => 'update_med12', :constraints => { :id => %r([^/.?]+) }
+  delete 'med12s/:id(.:format)' => 'med12s#destroy', :as => 'destroy_med12', :constraints => { :id => %r([^/.?]+) }
+
+
   # Resource routes for controller "estd4143s"
   get 'estd4143s/new(.:format)', :as => 'new_estd4143'
   get 'estd4143s/:id/edit(.:format)' => 'estd4143s#edit', :as => 'edit_estd4143'
@@ -1067,6 +1485,15 @@ Rara::Application.routes.draw do
   delete 'estd4143s/:id(.:format)' => 'estd4143s#destroy', :as => 'destroy_estd4143', :constraints => { :id => %r([^/.?]+) }
 
 
+  # Resource routes for controller "med62s"
+  get 'med62s/new(.:format)', :as => 'new_med62'
+  get 'med62s/:id/edit(.:format)' => 'med62s#edit', :as => 'edit_med62'
+  get 'med62s/:id(.:format)' => 'med62s#show', :as => 'med62', :constraints => { :id => %r([^/.?]+) }
+  post 'med62s(.:format)' => 'med62s#create', :as => 'create_med62'
+  put 'med62s/:id(.:format)' => 'med62s#update', :as => 'update_med62', :constraints => { :id => %r([^/.?]+) }
+  delete 'med62s/:id(.:format)' => 'med62s#destroy', :as => 'destroy_med62', :constraints => { :id => %r([^/.?]+) }
+
+
   # Resource routes for controller "estd4103s"
   get 'estd4103s/new(.:format)', :as => 'new_estd4103'
   get 'estd4103s/:id/edit(.:format)' => 'estd4103s#edit', :as => 'edit_estd4103'
@@ -1074,6 +1501,15 @@ Rara::Application.routes.draw do
   post 'estd4103s(.:format)' => 'estd4103s#create', :as => 'create_estd4103'
   put 'estd4103s/:id(.:format)' => 'estd4103s#update', :as => 'update_estd4103', :constraints => { :id => %r([^/.?]+) }
   delete 'estd4103s/:id(.:format)' => 'estd4103s#destroy', :as => 'destroy_estd4103', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med33s"
+  get 'med33s/new(.:format)', :as => 'new_med33'
+  get 'med33s/:id/edit(.:format)' => 'med33s#edit', :as => 'edit_med33'
+  get 'med33s/:id(.:format)' => 'med33s#show', :as => 'med33', :constraints => { :id => %r([^/.?]+) }
+  post 'med33s(.:format)' => 'med33s#create', :as => 'create_med33'
+  put 'med33s/:id(.:format)' => 'med33s#update', :as => 'update_med33', :constraints => { :id => %r([^/.?]+) }
+  delete 'med33s/:id(.:format)' => 'med33s#destroy', :as => 'destroy_med33', :constraints => { :id => %r([^/.?]+) }
 
 
   # Resource routes for controller "estd4625s"
@@ -1148,6 +1584,24 @@ Rara::Application.routes.draw do
   delete 'estd46324s/:id(.:format)' => 'estd46324s#destroy', :as => 'destroy_estd46324', :constraints => { :id => %r([^/.?]+) }
 
 
+  # Resource routes for controller "med51s"
+  get 'med51s/new(.:format)', :as => 'new_med51'
+  get 'med51s/:id/edit(.:format)' => 'med51s#edit', :as => 'edit_med51'
+  get 'med51s/:id(.:format)' => 'med51s#show', :as => 'med51', :constraints => { :id => %r([^/.?]+) }
+  post 'med51s(.:format)' => 'med51s#create', :as => 'create_med51'
+  put 'med51s/:id(.:format)' => 'med51s#update', :as => 'update_med51', :constraints => { :id => %r([^/.?]+) }
+  delete 'med51s/:id(.:format)' => 'med51s#destroy', :as => 'destroy_med51', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med55s"
+  get 'med55s/new(.:format)', :as => 'new_med55'
+  get 'med55s/:id/edit(.:format)' => 'med55s#edit', :as => 'edit_med55'
+  get 'med55s/:id(.:format)' => 'med55s#show', :as => 'med55', :constraints => { :id => %r([^/.?]+) }
+  post 'med55s(.:format)' => 'med55s#create', :as => 'create_med55'
+  put 'med55s/:id(.:format)' => 'med55s#update', :as => 'update_med55', :constraints => { :id => %r([^/.?]+) }
+  delete 'med55s/:id(.:format)' => 'med55s#destroy', :as => 'destroy_med55', :constraints => { :id => %r([^/.?]+) }
+
+
   # Resource routes for controller "estd4635s"
   get 'estd4635s/new(.:format)', :as => 'new_estd4635'
   get 'estd4635s/:id/edit(.:format)' => 'estd4635s#edit', :as => 'edit_estd4635'
@@ -1155,6 +1609,15 @@ Rara::Application.routes.draw do
   post 'estd4635s(.:format)' => 'estd4635s#create', :as => 'create_estd4635'
   put 'estd4635s/:id(.:format)' => 'estd4635s#update', :as => 'update_estd4635', :constraints => { :id => %r([^/.?]+) }
   delete 'estd4635s/:id(.:format)' => 'estd4635s#destroy', :as => 'destroy_estd4635', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Resource routes for controller "med25s"
+  get 'med25s/new(.:format)', :as => 'new_med25'
+  get 'med25s/:id/edit(.:format)' => 'med25s#edit', :as => 'edit_med25'
+  get 'med25s/:id(.:format)' => 'med25s#show', :as => 'med25', :constraints => { :id => %r([^/.?]+) }
+  post 'med25s(.:format)' => 'med25s#create', :as => 'create_med25'
+  put 'med25s/:id(.:format)' => 'med25s#update', :as => 'update_med25', :constraints => { :id => %r([^/.?]+) }
+  delete 'med25s/:id(.:format)' => 'med25s#destroy', :as => 'destroy_med25', :constraints => { :id => %r([^/.?]+) }
 
 
   # Resource routes for controller "estd4634s"

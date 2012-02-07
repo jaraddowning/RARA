@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120103161104) do
+ActiveRecord::Schema.define(:version => 20120207192840) do
 
   create_table "areas", :force => true do |t|
     t.string   "standard"
@@ -1176,8 +1176,11 @@ ActiveRecord::Schema.define(:version => 20120103161104) do
     t.string   "name"
     t.boolean  "concur"
     t.text     "sec_obs"
+    t.integer  "previewer_id"
+    t.integer  "sreviewer_id"
+    t.datetime "key_timestamp"
+    t.string   "lifecycle_state", :default => "primary"
     t.boolean  "mark_complete"
-    t.integer  "program_id"
     t.integer  "estd311_id"
     t.integer  "estd312_id"
     t.integer  "estd321_id"
@@ -1277,15 +1280,48 @@ ActiveRecord::Schema.define(:version => 20120103161104) do
     t.integer  "estd41521_id"
     t.integer  "estd41522_id"
     t.integer  "estd41523_id"
-    t.integer  "estd41524_id"
-    t.integer  "estd41525_id"
     t.integer  "estd4153_id"
     t.integer  "estd4154_id"
     t.integer  "estd4155_id"
-    t.integer  "previewer_id"
-    t.integer  "sreviewer_id"
-    t.string   "lifecycle_state", :default => "primary"
-    t.datetime "key_timestamp"
+    t.integer  "estd41524_id"
+    t.integer  "estd41525_id"
+    t.integer  "program_id"
+    t.integer  "med11_id"
+    t.integer  "med12_id"
+    t.integer  "med21_id"
+    t.integer  "med22_id"
+    t.integer  "med23_id"
+    t.integer  "med24_id"
+    t.integer  "med25_id"
+    t.integer  "med26_id"
+    t.integer  "med27_id"
+    t.integer  "med28_id"
+    t.integer  "med31_id"
+    t.integer  "med32_id"
+    t.integer  "med33_id"
+    t.integer  "med41_id"
+    t.integer  "med42_id"
+    t.integer  "med43_id"
+    t.integer  "med44_id"
+    t.integer  "med45_id"
+    t.integer  "med51_id"
+    t.integer  "med52_id"
+    t.integer  "med53_id"
+    t.integer  "med54_id"
+    t.integer  "med55_id"
+    t.integer  "med56_id"
+    t.integer  "med61_id"
+    t.integer  "med62_id"
+    t.integer  "med71_id"
+    t.integer  "med81_id"
+    t.integer  "med91_id"
+    t.integer  "med92_id"
+    t.integer  "med93_id"
+    t.integer  "med94_id"
+    t.integer  "med101_id"
+    t.integer  "med102_id"
+    t.integer  "med111_id"
+    t.integer  "med112_id"
   end
 
   add_index "findings", ["estd311_id"], :name => "index_findings_on_estd311_id"
@@ -1393,9 +1429,441 @@ ActiveRecord::Schema.define(:version => 20120103161104) do
   add_index "findings", ["estd491_id"], :name => "index_findings_on_estd491_id"
   add_index "findings", ["estd492_id"], :name => "index_findings_on_estd492_id"
   add_index "findings", ["lifecycle_state"], :name => "index_findings_on_lifecycle_state"
+  add_index "findings", ["med101_id"], :name => "index_findings_on_med101_id"
+  add_index "findings", ["med102_id"], :name => "index_findings_on_med102_id"
+  add_index "findings", ["med111_id"], :name => "index_findings_on_med111_id"
+  add_index "findings", ["med112_id"], :name => "index_findings_on_med112_id"
+  add_index "findings", ["med11_id"], :name => "index_findings_on_med11_id"
+  add_index "findings", ["med12_id"], :name => "index_findings_on_med12_id"
+  add_index "findings", ["med21_id"], :name => "index_findings_on_med21_id"
+  add_index "findings", ["med22_id"], :name => "index_findings_on_med22_id"
+  add_index "findings", ["med23_id"], :name => "index_findings_on_med23_id"
+  add_index "findings", ["med24_id"], :name => "index_findings_on_med24_id"
+  add_index "findings", ["med25_id"], :name => "index_findings_on_med25_id"
+  add_index "findings", ["med26_id"], :name => "index_findings_on_med26_id"
+  add_index "findings", ["med27_id"], :name => "index_findings_on_med27_id"
+  add_index "findings", ["med28_id"], :name => "index_findings_on_med28_id"
+  add_index "findings", ["med31_id"], :name => "index_findings_on_med31_id"
+  add_index "findings", ["med32_id"], :name => "index_findings_on_med32_id"
+  add_index "findings", ["med33_id"], :name => "index_findings_on_med33_id"
+  add_index "findings", ["med41_id"], :name => "index_findings_on_med41_id"
+  add_index "findings", ["med42_id"], :name => "index_findings_on_med42_id"
+  add_index "findings", ["med43_id"], :name => "index_findings_on_med43_id"
+  add_index "findings", ["med44_id"], :name => "index_findings_on_med44_id"
+  add_index "findings", ["med45_id"], :name => "index_findings_on_med45_id"
+  add_index "findings", ["med51_id"], :name => "index_findings_on_med51_id"
+  add_index "findings", ["med52_id"], :name => "index_findings_on_med52_id"
+  add_index "findings", ["med53_id"], :name => "index_findings_on_med53_id"
+  add_index "findings", ["med54_id"], :name => "index_findings_on_med54_id"
+  add_index "findings", ["med55_id"], :name => "index_findings_on_med55_id"
+  add_index "findings", ["med56_id"], :name => "index_findings_on_med56_id"
+  add_index "findings", ["med61_id"], :name => "index_findings_on_med61_id"
+  add_index "findings", ["med62_id"], :name => "index_findings_on_med62_id"
+  add_index "findings", ["med71_id"], :name => "index_findings_on_med71_id"
+  add_index "findings", ["med81_id"], :name => "index_findings_on_med81_id"
+  add_index "findings", ["med91_id"], :name => "index_findings_on_med91_id"
+  add_index "findings", ["med92_id"], :name => "index_findings_on_med92_id"
+  add_index "findings", ["med93_id"], :name => "index_findings_on_med93_id"
+  add_index "findings", ["med94_id"], :name => "index_findings_on_med94_id"
   add_index "findings", ["previewer_id"], :name => "index_findings_on_previewer_id"
   add_index "findings", ["program_id"], :name => "index_findings_on_program_id"
   add_index "findings", ["sreviewer_id"], :name => "index_findings_on_sreviewer_id"
+
+  create_table "med101s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med101s", ["area_id"], :name => "index_med101s_on_area_id"
+  add_index "med101s", ["program_id"], :name => "index_med101s_on_program_id"
+
+  create_table "med102s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med102s", ["area_id"], :name => "index_med102s_on_area_id"
+  add_index "med102s", ["program_id"], :name => "index_med102s_on_program_id"
+
+  create_table "med111s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med111s", ["area_id"], :name => "index_med111s_on_area_id"
+  add_index "med111s", ["program_id"], :name => "index_med111s_on_program_id"
+
+  create_table "med112s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med112s", ["area_id"], :name => "index_med112s_on_area_id"
+  add_index "med112s", ["program_id"], :name => "index_med112s_on_program_id"
+
+  create_table "med11s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med11s", ["area_id"], :name => "index_med11s_on_area_id"
+  add_index "med11s", ["program_id"], :name => "index_med11s_on_program_id"
+
+  create_table "med12s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med12s", ["area_id"], :name => "index_med12s_on_area_id"
+  add_index "med12s", ["program_id"], :name => "index_med12s_on_program_id"
+
+  create_table "med21s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med21s", ["area_id"], :name => "index_med21s_on_area_id"
+  add_index "med21s", ["program_id"], :name => "index_med21s_on_program_id"
+
+  create_table "med22s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med22s", ["area_id"], :name => "index_med22s_on_area_id"
+  add_index "med22s", ["program_id"], :name => "index_med22s_on_program_id"
+
+  create_table "med23s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med23s", ["area_id"], :name => "index_med23s_on_area_id"
+  add_index "med23s", ["program_id"], :name => "index_med23s_on_program_id"
+
+  create_table "med24s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med24s", ["area_id"], :name => "index_med24s_on_area_id"
+  add_index "med24s", ["program_id"], :name => "index_med24s_on_program_id"
+
+  create_table "med25s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med25s", ["area_id"], :name => "index_med25s_on_area_id"
+  add_index "med25s", ["program_id"], :name => "index_med25s_on_program_id"
+
+  create_table "med26s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med26s", ["area_id"], :name => "index_med26s_on_area_id"
+  add_index "med26s", ["program_id"], :name => "index_med26s_on_program_id"
+
+  create_table "med27s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med27s", ["area_id"], :name => "index_med27s_on_area_id"
+  add_index "med27s", ["program_id"], :name => "index_med27s_on_program_id"
+
+  create_table "med28s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med28s", ["area_id"], :name => "index_med28s_on_area_id"
+  add_index "med28s", ["program_id"], :name => "index_med28s_on_program_id"
+
+  create_table "med31s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med31s", ["area_id"], :name => "index_med31s_on_area_id"
+  add_index "med31s", ["program_id"], :name => "index_med31s_on_program_id"
+
+  create_table "med32s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med32s", ["area_id"], :name => "index_med32s_on_area_id"
+  add_index "med32s", ["program_id"], :name => "index_med32s_on_program_id"
+
+  create_table "med33s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med33s", ["area_id"], :name => "index_med33s_on_area_id"
+  add_index "med33s", ["program_id"], :name => "index_med33s_on_program_id"
+
+  create_table "med41s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med41s", ["area_id"], :name => "index_med41s_on_area_id"
+  add_index "med41s", ["program_id"], :name => "index_med41s_on_program_id"
+
+  create_table "med42s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med42s", ["area_id"], :name => "index_med42s_on_area_id"
+  add_index "med42s", ["program_id"], :name => "index_med42s_on_program_id"
+
+  create_table "med43s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med43s", ["area_id"], :name => "index_med43s_on_area_id"
+  add_index "med43s", ["program_id"], :name => "index_med43s_on_program_id"
+
+  create_table "med44s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med44s", ["area_id"], :name => "index_med44s_on_area_id"
+  add_index "med44s", ["program_id"], :name => "index_med44s_on_program_id"
+
+  create_table "med45s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med45s", ["area_id"], :name => "index_med45s_on_area_id"
+  add_index "med45s", ["program_id"], :name => "index_med45s_on_program_id"
+
+  create_table "med51s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med51s", ["area_id"], :name => "index_med51s_on_area_id"
+  add_index "med51s", ["program_id"], :name => "index_med51s_on_program_id"
+
+  create_table "med52s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med52s", ["area_id"], :name => "index_med52s_on_area_id"
+  add_index "med52s", ["program_id"], :name => "index_med52s_on_program_id"
+
+  create_table "med53s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med53s", ["area_id"], :name => "index_med53s_on_area_id"
+  add_index "med53s", ["program_id"], :name => "index_med53s_on_program_id"
+
+  create_table "med54s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med54s", ["area_id"], :name => "index_med54s_on_area_id"
+  add_index "med54s", ["program_id"], :name => "index_med54s_on_program_id"
+
+  create_table "med55s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med55s", ["area_id"], :name => "index_med55s_on_area_id"
+  add_index "med55s", ["program_id"], :name => "index_med55s_on_program_id"
+
+  create_table "med56s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med56s", ["area_id"], :name => "index_med56s_on_area_id"
+  add_index "med56s", ["program_id"], :name => "index_med56s_on_program_id"
+
+  create_table "med61s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med61s", ["area_id"], :name => "index_med61s_on_area_id"
+  add_index "med61s", ["program_id"], :name => "index_med61s_on_program_id"
+
+  create_table "med62s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med62s", ["area_id"], :name => "index_med62s_on_area_id"
+  add_index "med62s", ["program_id"], :name => "index_med62s_on_program_id"
+
+  create_table "med71s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med71s", ["area_id"], :name => "index_med71s_on_area_id"
+  add_index "med71s", ["program_id"], :name => "index_med71s_on_program_id"
+
+  create_table "med81s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med81s", ["area_id"], :name => "index_med81s_on_area_id"
+  add_index "med81s", ["program_id"], :name => "index_med81s_on_program_id"
+
+  create_table "med91s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med91s", ["area_id"], :name => "index_med91s_on_area_id"
+  add_index "med91s", ["program_id"], :name => "index_med91s_on_program_id"
+
+  create_table "med92s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med92s", ["area_id"], :name => "index_med92s_on_area_id"
+  add_index "med92s", ["program_id"], :name => "index_med92s_on_program_id"
+
+  create_table "med93s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med93s", ["area_id"], :name => "index_med93s_on_area_id"
+  add_index "med93s", ["program_id"], :name => "index_med93s_on_program_id"
+
+  create_table "med94s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "med94s", ["area_id"], :name => "index_med94s_on_area_id"
+  add_index "med94s", ["program_id"], :name => "index_med94s_on_program_id"
 
   create_table "programs", :force => true do |t|
     t.string   "name"
@@ -1405,13 +1873,13 @@ ActiveRecord::Schema.define(:version => 20120103161104) do
   end
 
   create_table "uploads", :force => true do |t|
+    t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "proof_file_name"
     t.string   "proof_content_type"
     t.integer  "proof_file_size"
     t.datetime "proof_updated_at"
-    t.string   "title"
     t.integer  "estd311_id"
     t.integer  "estd312_id"
     t.integer  "estd321_id"
@@ -1516,6 +1984,42 @@ ActiveRecord::Schema.define(:version => 20120103161104) do
     t.integer  "estd4153_id"
     t.integer  "estd4154_id"
     t.integer  "estd4155_id"
+    t.integer  "med11_id"
+    t.integer  "med12_id"
+    t.integer  "med21_id"
+    t.integer  "med22_id"
+    t.integer  "med23_id"
+    t.integer  "med24_id"
+    t.integer  "med25_id"
+    t.integer  "med26_id"
+    t.integer  "med27_id"
+    t.integer  "med28_id"
+    t.integer  "med31_id"
+    t.integer  "med32_id"
+    t.integer  "med33_id"
+    t.integer  "med41_id"
+    t.integer  "med42_id"
+    t.integer  "med43_id"
+    t.integer  "med44_id"
+    t.integer  "med45_id"
+    t.integer  "med51_id"
+    t.integer  "med52_id"
+    t.integer  "med53_id"
+    t.integer  "med54_id"
+    t.integer  "med55_id"
+    t.integer  "med56_id"
+    t.integer  "med61_id"
+    t.integer  "med62_id"
+    t.integer  "med71_id"
+    t.integer  "med81_id"
+    t.integer  "med91_id"
+    t.integer  "med92_id"
+    t.integer  "med93_id"
+    t.integer  "med94_id"
+    t.integer  "med101_id"
+    t.integer  "med102_id"
+    t.integer  "med111_id"
+    t.integer  "med112_id"
   end
 
   add_index "uploads", ["estd311_id"], :name => "index_uploads_on_estd311_id"
@@ -1622,6 +2126,42 @@ ActiveRecord::Schema.define(:version => 20120103161104) do
   add_index "uploads", ["estd486_id"], :name => "index_uploads_on_estd486_id"
   add_index "uploads", ["estd491_id"], :name => "index_uploads_on_estd491_id"
   add_index "uploads", ["estd492_id"], :name => "index_uploads_on_estd492_id"
+  add_index "uploads", ["med101_id"], :name => "index_uploads_on_med101_id"
+  add_index "uploads", ["med102_id"], :name => "index_uploads_on_med102_id"
+  add_index "uploads", ["med111_id"], :name => "index_uploads_on_med111_id"
+  add_index "uploads", ["med112_id"], :name => "index_uploads_on_med112_id"
+  add_index "uploads", ["med11_id"], :name => "index_uploads_on_med11_id"
+  add_index "uploads", ["med12_id"], :name => "index_uploads_on_med12_id"
+  add_index "uploads", ["med21_id"], :name => "index_uploads_on_med21_id"
+  add_index "uploads", ["med22_id"], :name => "index_uploads_on_med22_id"
+  add_index "uploads", ["med23_id"], :name => "index_uploads_on_med23_id"
+  add_index "uploads", ["med24_id"], :name => "index_uploads_on_med24_id"
+  add_index "uploads", ["med25_id"], :name => "index_uploads_on_med25_id"
+  add_index "uploads", ["med26_id"], :name => "index_uploads_on_med26_id"
+  add_index "uploads", ["med27_id"], :name => "index_uploads_on_med27_id"
+  add_index "uploads", ["med28_id"], :name => "index_uploads_on_med28_id"
+  add_index "uploads", ["med31_id"], :name => "index_uploads_on_med31_id"
+  add_index "uploads", ["med32_id"], :name => "index_uploads_on_med32_id"
+  add_index "uploads", ["med33_id"], :name => "index_uploads_on_med33_id"
+  add_index "uploads", ["med41_id"], :name => "index_uploads_on_med41_id"
+  add_index "uploads", ["med42_id"], :name => "index_uploads_on_med42_id"
+  add_index "uploads", ["med43_id"], :name => "index_uploads_on_med43_id"
+  add_index "uploads", ["med44_id"], :name => "index_uploads_on_med44_id"
+  add_index "uploads", ["med45_id"], :name => "index_uploads_on_med45_id"
+  add_index "uploads", ["med51_id"], :name => "index_uploads_on_med51_id"
+  add_index "uploads", ["med52_id"], :name => "index_uploads_on_med52_id"
+  add_index "uploads", ["med53_id"], :name => "index_uploads_on_med53_id"
+  add_index "uploads", ["med54_id"], :name => "index_uploads_on_med54_id"
+  add_index "uploads", ["med55_id"], :name => "index_uploads_on_med55_id"
+  add_index "uploads", ["med56_id"], :name => "index_uploads_on_med56_id"
+  add_index "uploads", ["med61_id"], :name => "index_uploads_on_med61_id"
+  add_index "uploads", ["med62_id"], :name => "index_uploads_on_med62_id"
+  add_index "uploads", ["med71_id"], :name => "index_uploads_on_med71_id"
+  add_index "uploads", ["med81_id"], :name => "index_uploads_on_med81_id"
+  add_index "uploads", ["med91_id"], :name => "index_uploads_on_med91_id"
+  add_index "uploads", ["med92_id"], :name => "index_uploads_on_med92_id"
+  add_index "uploads", ["med93_id"], :name => "index_uploads_on_med93_id"
+  add_index "uploads", ["med94_id"], :name => "index_uploads_on_med94_id"
 
   create_table "users", :force => true do |t|
     t.string   "crypted_password",          :limit => 40

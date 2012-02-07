@@ -286,76 +286,76 @@
 <!--  CDHAM Section  -->
 
     <div class="msg_list">
-    <p class="msg_head">Medical Review by CDHAM</p>
+    <p class="msg_head">Medical Review by CDHAM<!-- add count info here --></p>
       <div class="msg_sub_body">
         <p class="msg_head">Area 1 - Legal Authority</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. Does the country have adequate legal authority to mobilize and deploy medical resources in response to disaster situations?</a></div><hr />
-             <div><a href="#">2. Is legal authority sufficient to address requirements unique to national disaster medical response. Includes provider credentialing, standards of care, patient privacy, etc.</a></div>
+             <div><a href="#"><collection:med11s /></a></div><hr />
+             <div><a href="#"><collection:med12s /></a></div>
           </div>
         <p class="msg_head">Area 2 - Planning</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. Does the country have national emergency/disaster plans that adequately address disaster medical policies, procedures and systems?</a></div><hr />
-             <div><a href="#">2. Do provinces, districts and/or local governments have emergency/disaster plans that adequately address disaster medical policies, procedures and systems?</a></div><hr />
-             <div><a href="#">3. Do major medical facilities have disaster medical plans that adequately address policies, procedures and systems for delivery of disaster medical care?</a></div><hr />
-             <div><a href="#">4. Do government ministries, agencies and/or offices affiliated with disaster medical care have continuity of government (COG) plans? Includes Ministry of Health, Ministry of Defense, etc</a></div><hr />
-             <div><a href="#">5. Do major private sector medical facilities have adequate business continuity plans (BCP)?</a></div><hr />
-             <div><a href="#">6. Are COG and BCP well understood by managers and prepared for implementation?</a></div><hr />
-             <div><a href="#">7. Has the government adequately coordinated support requirements with international and local non-government organizations (NGO)? Ensure that government plans do not anticipate support from NGOs that they are incapable of delivering. All support should be coordinated to ensure NGOs are fully aware of anticipated requirements.</a></div><hr />
-             <div><a href="#">8. Does a structure for discussion and management of governmental and private sector plans exist? May be private associations, a government task force, country-level committees, etc.</a></div>
+             <div><a href="#"><collection:med21s /></a></div><hr />
+             <div><a href="#"><collection:med22s /></a></div><hr />
+             <div><a href="#"><collection:med23s /></a></div><hr />
+             <div><a href="#"><collection:med24s /></a></div><hr />
+             <div><a href="#"><collection:med25s /></a></div><hr />
+             <div><a href="#"><collection:med26s /></a></div><hr />
+             <div><a href="#"><collection:med27s /></a></div><hr />
+             <div><a href="#"><collection:med28s /></a></div>
           </div>
         <p class="msg_head">Area 3 - Human Resources</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. Does the country have a plan to address shortfall of medical personnel during disaster response? May include increased use of retired staff, part-time staff, military medical staff, etc.</a></div><hr />
-             <div><a href="#">2. Does the country have a medical reserve structure to maintain contact with medical staff willing to commit to service during disaster response?</a></div><hr />
-             <div><a href="#">3. Does the country have policies to address provider credentialing during disaster response? May include credentialing of retired providers, foreign providers, etc.</a></div>
+             <div><a href="#"><collection:med31s /></a></div><hr />
+             <div><a href="#"><collection:med32s /></a></div><hr />
+             <div><a href="#"><collection:med33s /></a></div>
           </div>
         <p class="msg_head">Area 4 - Patient Care and Administration</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. Do national, district, province and/or local government plans require medical facilities to have ?surge? plans/capabilities for implementation during disaster response?</a></div><hr />
-             <div><a href="#">2. Do medical facilities have adequate surge plans to address disaster medical response requirements? May include discharge of non-emergency patients, cancellation of non-essential surgeries, expansion of bed space, etc.</a></div><hr />
-             <div><a href="#">3. Do plans exist to establish and resource Alternative Medical Treatment Sites (AMTS) to supplement existing medical infrastructure during disaster response?</a></div><hr />
-             <div><a href="#">4. Are systems in place to enable patient monitoring and tracking during disaster response and are these systems adequately addressed in existing plans. Should be addressed in medical facility response plans and to a lesser extent in emergency management plans at all government levels.</a></div><hr />
-             <div><a href="#">5. Does a system exist for maintenance of patient treatment records and archiving of these records during post-disaster recovery operations?</a></div>
+             <div><a href="#"><collection:med41s /></a></div><hr />
+             <div><a href="#"><collection:med42s /></a></div><hr />
+             <div><a href="#"><collection:med43s /></a></div><hr />
+             <div><a href="#"><collection:med44s /></a></div><hr />
+             <div><a href="#"><collection:med45s /></a></div>
           </div>
         <p class="msg_head">Area 5 - Logistics and Facilities</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. Do adequate facilities exist to provide disaster medical care in all areas of the country? Identify areas of the country where medical facilities are insufficient or non-existent.</a></div><hr />
-             <div><a href="#">2. Are AMTS facilities identified and adequately resourced where medical facilities are insufficient or non-existent to handle disaster related care?</a></div><hr />
-             <div><a href="#">3. Do adequate pharmaceutical and non-pharmaceutical medical stockpiles exist for use in disaster response operations? Ensure stockpiles are actually on-hand and not just a requirements document.</a></div><hr />
-             <div><a href="#">4. If pharmaceutical and non-pharmaceutical medical stockpiles exist, are policies and procedures for their use well-defined and understood by key stakeholders?</a></div><hr />
-             <div><a href="#">5. Does a system exist to identify private sector medical resources for potential use in disaster response operations? May include civilian pharmacies, private clinics, drug manufacturers, etc.</a></div><hr />
-             <div><a href="#">6. Do policies and procedures exist to access private sector medical resources during disaster response operations? May include legal authorities, reimbursement protocols, etc.</a></div>
+             <div><a href="#"><collection:med51s /></a></div><hr />
+             <div><a href="#"><collection:med52s /></a></div><hr />
+             <div><a href="#"><collection:med53s /></a></div><hr />
+             <div><a href="#"><collection:med54s /></a></div><hr />
+             <div><a href="#"><collection:med55s /></a></div><hr />
+             <div><a href="#"><collection:med56s />.</a></div>
           </div>
         <p class="msg_head">Area 6 - Transportation</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. Do existing plans adequately address medical transportation requirements during disaster response operations? Plans should address broad requirements and establish roles and responsibilities for provision of needed transportation resources.</a></div><hr />
-             <div><a href="#">2. Are sufficient resources identified and available to facilitate patient transportation during response to a major disaster and are policies and procedures for their use well defined. Has analysis been completed to identify requirements and have policies and procedures been institutionalized in appropriate implementing plans.</a></div>
+             <div><a href="#"><collection:med61s /></a></div><hr />
+             <div><a href="#"><collection:med62s /></a></div>
           </div>
         <p class="msg_head">Area 7 - Communications</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. Do medical facilities and/or organizations possess adequate communications systems to maintain awareness of the disaster situation and to execute appropriate coordination of medical response? Includes linkage of national, provincial, district and/or local response agencies with the public, private and military medical systems to facilitate transport and care of patients.</a></div>
+             <div><a href="#"><collection:med71s /></a></div>
           </div>
         <p class="msg_head">Area 8 - Security</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. Do existing emergency management plans adequately address security requirements necessary to facilitate effective disaster medical operations? May include security of medical facilities, medical supplies and stockpiles, etc.</a></div>
+             <div><a href="#"><collection:med81s /></a></div>
           </div>
         <p class="msg_head">Area 9 - Civil-Military Cooperation</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. Is the military medical system commonly utilized to supplement the civilian medical sector in providing medical care for the general public?</a></div><hr />
-             <div><a href="#">2. What is the established role of the military medical system during disaster response operations? Should be taken from planning documents, although may occasionally not be institutionalized in writing.</a></div><hr />
-             <div><a href="#">3. Given the defined role of the military medical system in disaster response operations, do existing plans adequately address this role and facilitate its accomplishment? Government and military emergency management plans should address any role and establish adequate policies and procedures to facilitate its accomplishment.</a></div><hr />
-             <div><a href="#">4. Do plans call for reassignment of military medical resources to address shortfalls in civilian healthcare facilities? If so, are policies and procedures in place to facilitate this role? Refers to the assignment of individual personnel or items of equipment to supplement existing civilian facilities/organizations - not the deployment of organic military units.</a></div>
+             <div><a href="#"><collection:med91s /></a></div><hr />
+             <div><a href="#"><collection:med92s /></a></div><hr />
+             <div><a href="#"><collection:med93s /></a></div><hr />
+             <div><a href="#"><collection:med94s /></a></div>
           </div>
         <p class="msg_head">Area 10 - Mutual Aid</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. Do mutual aid agreements address medical requirements? If so, are policies and procedures in place to support provision of medical support by mutual aid countries during disaster response operations? Includes requirements for credentialing, customs and immigration, identification of work locations, life support (housing, feeding), etc.</a></div><hr />
-             <div><a href="#">2. Do mutual aid agreements address medical support from foreign militaries? If so, are policies and procedures in place to support provision of medical support by foreign militaries during disaster response operations? Includes requirements for credentialing, customs and immigration, identification of work locations, wear of uniforms, carrying of weapons, life support (housing, feeding), etc.</a></div>
+             <div><a href="#"><collection:med101s /></a></div><hr />
+             <div><a href="#"><collection:med102s /></a></div>
           </div>
         <p class="msg_head">Area 11 - Training and Exercises</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. Do appropriate training programs exist to address disaster medical training for providers and other medical staff?</a></div><hr />
-             <div><a href="#">2. Do appropriate exercise programs exist to assess disaster medical readiness at the national, provincial, district and/or local levels?</a></div>
+             <div><a href="#"><collection:med111s /></a></div><hr />
+             <div><a href="#"><collection:med112s /></a></div>
           </div>
       </div>
     </div><br /><br /><br />

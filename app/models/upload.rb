@@ -113,6 +113,42 @@ class Upload < ActiveRecord::Base
   belongs_to :estd4153
   belongs_to :estd4154
   belongs_to :estd4155
+  belongs_to :med11
+  belongs_to :med12
+  belongs_to :med21
+  belongs_to :med22
+  belongs_to :med23
+  belongs_to :med24
+  belongs_to :med25
+  belongs_to :med26
+  belongs_to :med27
+  belongs_to :med28
+  belongs_to :med31
+  belongs_to :med32
+  belongs_to :med33
+  belongs_to :med41
+  belongs_to :med42
+  belongs_to :med43
+  belongs_to :med44
+  belongs_to :med45
+  belongs_to :med51
+  belongs_to :med52
+  belongs_to :med53
+  belongs_to :med54
+  belongs_to :med55
+  belongs_to :med56
+  belongs_to :med61
+  belongs_to :med62
+  belongs_to :med71
+  belongs_to :med81
+  belongs_to :med91
+  belongs_to :med92
+  belongs_to :med93
+  belongs_to :med94
+  belongs_to :med101
+  belongs_to :med102
+  belongs_to :med111
+  belongs_to :med112
 
   # --- Permissions --- #
 

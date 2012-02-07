@@ -4,8 +4,7 @@ class FindingsController < ApplicationController
 
   auto_actions :all, :except => :index
 
-  auto_actions_for :estd311, [:new, :create]
-
+  auto_actions_for :estd311, :create
   auto_actions_for :estd312, :create
   auto_actions_for :estd321, :create
   auto_actions_for :estd322, :create
@@ -109,5 +108,41 @@ class FindingsController < ApplicationController
   auto_actions_for :estd4153, :create
   auto_actions_for :estd4154, :create
   auto_actions_for :estd4155, :create
+  auto_actions_for :med11, :create
+  auto_actions_for :med12, :create
+  auto_actions_for :med21, :create
+  auto_actions_for :med22, :create
+  auto_actions_for :med23, :create
+  auto_actions_for :med24, :create
+  auto_actions_for :med25, :create
+  auto_actions_for :med26, :create
+  auto_actions_for :med27, :create
+  auto_actions_for :med28, :create
+  auto_actions_for :med31, :create
+  auto_actions_for :med32, :create
+  auto_actions_for :med33, :create
+  auto_actions_for :med41, :create
+  auto_actions_for :med42, :create
+  auto_actions_for :med43, :create
+  auto_actions_for :med44, :create
+  auto_actions_for :med45, :create
+  auto_actions_for :med51, :create
+  auto_actions_for :med52, :create
+  auto_actions_for :med53, :create
+  auto_actions_for :med54, :create
+  auto_actions_for :med55, :create
+  auto_actions_for :med56, :create
+  auto_actions_for :med61, :create
+  auto_actions_for :med62, :create
+  auto_actions_for :med71, :create
+  auto_actions_for :med81, :create
+  auto_actions_for :med91, :create
+  auto_actions_for :med92, :create
+  auto_actions_for :med93, :create
+  auto_actions_for :med94, :create
+  auto_actions_for :med101, :create
+  auto_actions_for :med102, :create
+  auto_actions_for :med111, :create
+  auto_actions_for :med112, :create
 
 end
