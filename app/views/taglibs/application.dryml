@@ -415,12 +415,6 @@
   </old-show-page>
 </extend>
 
-<extend tag="show-page" for="Estd484">
-  <old-show-page merge>
-    <field-list: fields="program, area, area.overview, area.language" />
-  </old-show-page>
-</extend>
-
 <extend tag="show-page" for="Estd485">
   <old-show-page merge>
     <field-list: fields="program, area, area.overview, area.language" />
