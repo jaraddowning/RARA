@@ -8,6 +8,7 @@ class Program < ActiveRecord::Base
     timestamps
   end
 
+  # EMAP Standard
   has_many :estd311s, :dependent => :destroy
   has_many :estd312s, :dependent => :destroy
   has_many :estd321s, :dependent => :destroy
@@ -113,6 +114,77 @@ class Program < ActiveRecord::Base
   has_many :estd4153s, :dependent => :destroy
   has_many :estd4154s, :dependent => :destroy
   has_many :estd4155s, :dependent => :destroy
+
+
+  # Military Questions
+  has_many :mil111s, :dependent => :destroy
+  has_many :mil112s, :dependent => :destroy
+  has_many :mil121s, :dependent => :destroy
+  has_many :mil131s, :dependent => :destroy
+  has_many :mil141s, :dependent => :destroy
+  has_many :mil211s, :dependent => :destroy
+  has_many :mil212s, :dependent => :destroy
+  has_many :mil221s, :dependent => :destroy
+  has_many :mil222s, :dependent => :destroy
+  has_many :mil231s, :dependent => :destroy
+  has_many :mil311s, :dependent => :destroy
+  has_many :mil321s, :dependent => :destroy
+  has_many :mil331s, :dependent => :destroy
+  has_many :mil341s, :dependent => :destroy
+  has_many :mil351s, :dependent => :destroy
+  has_many :mil361s, :dependent => :destroy
+  has_many :mil371s, :dependent => :destroy
+  has_many :mil381s, :dependent => :destroy
+  has_many :mil391s, :dependent => :destroy
+  has_many :mil411s, :dependent => :destroy
+  has_many :mil412s, :dependent => :destroy
+  has_many :mil413s, :dependent => :destroy
+  has_many :mil421s, :dependent => :destroy
+  has_many :mil431s, :dependent => :destroy
+  has_many :mil432s, :dependent => :destroy
+  has_many :mil441s, :dependent => :destroy
+  has_many :mil442s, :dependent => :destroy
+  has_many :mil451s, :dependent => :destroy
+  has_many :mil452s, :dependent => :destroy
+  has_many :mil453s, :dependent => :destroy
+  has_many :mil461s, :dependent => :destroy
+  has_many :mil462s, :dependent => :destroy
+  has_many :mil463s, :dependent => :destroy
+  has_many :mil464s, :dependent => :destroy
+  has_many :mil465s, :dependent => :destroy
+  has_many :mil511s, :dependent => :destroy
+  has_many :mil512s, :dependent => :destroy
+  has_many :mil513s, :dependent => :destroy
+  has_many :mil521s, :dependent => :destroy
+  has_many :mil522s, :dependent => :destroy
+  has_many :mil531s, :dependent => :destroy
+  has_many :mil532s, :dependent => :destroy
+  has_many :mil533s, :dependent => :destroy
+  has_many :mil534s, :dependent => :destroy
+  has_many :mil535s, :dependent => :destroy
+  has_many :mil536s, :dependent => :destroy
+  has_many :mil537s, :dependent => :destroy
+  has_many :mil538s, :dependent => :destroy
+  has_many :mil611s, :dependent => :destroy
+  has_many :mil621s, :dependent => :destroy
+  has_many :mil711s, :dependent => :destroy
+  has_many :mil712s, :dependent => :destroy
+  has_many :mil713s, :dependent => :destroy
+  has_many :mil714s, :dependent => :destroy
+  has_many :mil721s, :dependent => :destroy
+  has_many :mil722s, :dependent => :destroy
+  has_many :mil723s, :dependent => :destroy
+  has_many :mil724s, :dependent => :destroy
+  has_many :mil725s, :dependent => :destroy
+  has_many :mil731s, :dependent => :destroy
+  has_many :mil741s, :dependent => :destroy
+  has_many :mil751s, :dependent => :destroy
+  has_many :mil3101s, :dependent => :destroy
+  has_many :mil3102s, :dependent => :destroy
+  has_many :mil3103s, :dependent => :destroy
+
+
+  # Medical Questions
   has_many :med11s, :dependent => :destroy
   has_many :med12s, :dependent => :destroy
   has_many :med21s, :dependent => :destroy
@@ -151,7 +223,6 @@ class Program < ActiveRecord::Base
   has_many :med112s, :dependent => :destroy
 
   has_many :findings
-
 
   after_create :populate
 
@@ -260,6 +331,71 @@ class Program < ActiveRecord::Base
     Estd4153.create(:name => "4.15.3", :program_id => id, :area_id => 102)
     Estd4154.create(:name => "4.15.4", :program_id => id, :area_id => 103)
     Estd4155.create(:name => "4.15.5", :program_id => id, :area_id => 104)
+    Mil111.create(:name => "1.1.1", :program_id => id, :area_id => 105)
+    Mil112.create(:name => "1.1.2", :program_id => id, :area_id => 106)
+    Mil121.create(:name => "1.2", :program_id => id, :area_id => 107)
+    Mil131.create(:name => "1.3", :program_id => id, :area_id => 108)
+    Mil141.create(:name => "1.4", :program_id => id, :area_id => 109)
+    Mil211.create(:name => "2.1.1", :program_id => id, :area_id => 110)
+    Mil212.create(:name => "2.1.2", :program_id => id, :area_id => 111)
+    Mil221.create(:name => "2.2.1", :program_id => id, :area_id => 112)
+    Mil222.create(:name => "2.2.2", :program_id => id, :area_id => 113)
+    Mil231.create(:name => "2.3", :program_id => id, :area_id => 114)
+    Mil311.create(:name => "3.1", :program_id => id, :area_id => 115)
+    Mil321.create(:name => "3.2", :program_id => id, :area_id => 116)
+    Mil331.create(:name => "3.3", :program_id => id, :area_id => 117)
+    Mil341.create(:name => "3.4", :program_id => id, :area_id => 118)
+    Mil351.create(:name => "3.5", :program_id => id, :area_id => 119)
+    Mil361.create(:name => "3.6", :program_id => id, :area_id => 120)
+    Mil371.create(:name => "3.7", :program_id => id, :area_id => 121)
+    Mil381.create(:name => "3.8", :program_id => id, :area_id => 122)
+    Mil391.create(:name => "3.9", :program_id => id, :area_id => 123)
+    Mil411.create(:name => "4.1.1", :program_id => id, :area_id => 124)
+    Mil412.create(:name => "4.1.2", :program_id => id, :area_id => 125)
+    Mil413.create(:name => "4.1.3", :program_id => id, :area_id => 126)
+    Mil421.create(:name => "4.2", :program_id => id, :area_id => 127)
+    Mil431.create(:name => "4.3.1", :program_id => id, :area_id => 128)
+    Mil432.create(:name => "4.3.2", :program_id => id, :area_id => 129)
+    Mil441.create(:name => "4.4.1", :program_id => id, :area_id => 130)
+    Mil442.create(:name => "4.4.2", :program_id => id, :area_id => 131)
+    Mil451.create(:name => "4.5.1", :program_id => id, :area_id => 132)
+    Mil452.create(:name => "4.5.2", :program_id => id, :area_id => 133)
+    Mil453.create(:name => "4.5.3", :program_id => id, :area_id => 134)
+    Mil461.create(:name => "4.6.1", :program_id => id, :area_id => 135)
+    Mil462.create(:name => "4.6.2", :program_id => id, :area_id => 136)
+    Mil463.create(:name => "4.6.3", :program_id => id, :area_id => 137)
+    Mil464.create(:name => "4.6.4", :program_id => id, :area_id => 138)
+    Mil465.create(:name => "4.6.5", :program_id => id, :area_id => 139)
+    Mil511.create(:name => "5.1.1", :program_id => id, :area_id => 140)
+    Mil512.create(:name => "5.1.2", :program_id => id, :area_id => 141)
+    Mil513.create(:name => "5.1.3", :program_id => id, :area_id => 142)
+    Mil521.create(:name => "5.2.1", :program_id => id, :area_id => 143)
+    Mil522.create(:name => "5.2.2", :program_id => id, :area_id => 144)
+    Mil531.create(:name => "5.3.1", :program_id => id, :area_id => 145)
+    Mil532.create(:name => "5.3.2", :program_id => id, :area_id => 146)
+    Mil533.create(:name => "5.3.3", :program_id => id, :area_id => 147)
+    Mil534.create(:name => "5.3.4", :program_id => id, :area_id => 148)
+    Mil535.create(:name => "5.3.5", :program_id => id, :area_id => 149)
+    Mil536.create(:name => "5.3.6", :program_id => id, :area_id => 150)
+    Mil537.create(:name => "5.3.7", :program_id => id, :area_id => 151)
+    Mil538.create(:name => "5.3.8", :program_id => id, :area_id => 152)
+    Mil611.create(:name => "6.1", :program_id => id, :area_id => 153)
+    Mil621.create(:name => "6.2", :program_id => id, :area_id => 154)
+    Mil711.create(:name => "7.1.1", :program_id => id, :area_id => 155)
+    Mil712.create(:name => "7.1.2", :program_id => id, :area_id => 156)
+    Mil713.create(:name => "7.1.3", :program_id => id, :area_id => 157)
+    Mil714.create(:name => "7.1.4", :program_id => id, :area_id => 158)
+    Mil721.create(:name => "7.2.1", :program_id => id, :area_id => 159)
+    Mil722.create(:name => "7.2.2", :program_id => id, :area_id => 160)
+    Mil723.create(:name => "7.2.3", :program_id => id, :area_id => 161)
+    Mil724.create(:name => "7.2.4", :program_id => id, :area_id => 162)
+    Mil725.create(:name => "7.2.5", :program_id => id, :area_id => 163)
+    Mil731.create(:name => "7.3", :program_id => id, :area_id => 164)
+    Mil741.create(:name => "7.4", :program_id => id, :area_id => 165)
+    Mil751.create(:name => "7.5", :program_id => id, :area_id => 166)
+    Mil3101.create(:name => "3.10.1", :program_id => id, :area_id => 167)
+    Mil3102.create(:name => "3.10.2", :program_id => id, :area_id => 168)
+    Mil3103.create(:name => "3.10.3", :program_id => id, :area_id => 169)
     Med11.create(:name => "1.1", :program_id => id, :area_id => 170)
     Med12.create(:name => "1.2", :program_id => id, :area_id => 171)
     Med21.create(:name => "2.1", :program_id => id, :area_id => 172)

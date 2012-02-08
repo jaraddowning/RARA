@@ -4,24 +4,24 @@
     
     <div class="msg_list" >
 
-    <p class="msg_head"><i>Emergency Management Standard</i> by EMAP</p>
+    <p class="msg_head"><i>Emergency Management Standard</i> by EMAP<!-- add count info here --></p>
       <div class="msg_body">
 
         <p class="msg_head" id="sub-menu">Chapter 3 - Emergency Management Program</p>
           <div class="msg_sub_body">
             <p class="msg_head">Standard 3.1 Program Administration, Plans and Evaluation</p>
               <div class="msg_sub_body" href="#1" name="1">
-                <div><a href="#"><collection:estd311s /></a></div>
+                <div><a href="#"><collection:estd311s /></a></div><hr />
                 <div><a href="#"><collection:estd312s /></a></div>
               </div>
             <p class="msg_head">Standard 3.2 Program Coordination</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd321s /></a></div>
+                <div><a href="#"><collection:estd321s /></a></div><hr />
                 <div><a href="#"><collection:estd322s /></a></div>
               </div>
             <p class="msg_head">Standard 3.3 Advisory Committee</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd331s /></a></div>
+                <div><a href="#"><collection:estd331s /></a></div><hr />
                 <div><a href="#"><collection:estd332s /></a></div>
               </div>
           </div>
@@ -30,31 +30,31 @@
           <div class="msg_sub_body">
             <p class="msg_head">Standard 4.1 Administration and Finance</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd411s /></a></div>
+                <div><a href="#"><collection:estd411s /></a></div><hr />
                 <div><a href="#"><collection:estd412s /></a></div>
               </div>
             <p class="msg_head">Standard 4.2 Laws and Authorities</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd421s /></a></div>
+                <div><a href="#"><collection:estd421s /></a></div><hr />
                 <div><a href="#"><collection:estd422s /></a></div>
               </div>
             <p class="msg_head">Standard 4.3 Hazard Identification, Risk Assessment and Consequence Analysis</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd431s /></a></div>
+                <div><a href="#"><collection:estd431s /></a></div><hr />
                 <div><a href="#"><collection:estd432s /></a></div>
               </div>
             <p class="msg_head">Standard 4.4 Hazard Mitigation</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd441s /></a></div>
-                <div><a href="#"><collection:estd442s /></a></div>
-                <div><a href="#"><collection:estd443s /></a></div>
-                <div><a href="#"><collection:estd444s /></a></div>
+                <div><a href="#"><collection:estd441s /></a></div><hr />
+                <div><a href="#"><collection:estd442s /></a></div><hr />
+                <div><a href="#"><collection:estd443s /></a></div><hr />
+                <div><a href="#"><collection:estd444s /></a></div><hr />
                 <div><a href="#"><collection:estd445s /></a></div>
               </div>
             <p class="msg_head">Standard 4.5 Prevention</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd451s /></a></div>
-                <div><a href="#"><collection:estd452s /></a></div>
+                <div><a href="#"><collection:estd451s /></a></div><hr />
+                <div><a href="#"><collection:estd452s /></a></div><hr />
                 <div><a href="#"><collection:estd453s /></a></div>
               </div>
             <p class="msg_head">Standard 4.6 Operational Planning</p>
@@ -63,111 +63,111 @@
 
                 <p class="msg_head">Standard 4.6.2</p>
                   <div class="msg_sub_body">
-                    <div><a href="#"><collection:estd4621s /></a></div>
-                    <div><a href="#"><collection:estd4622s /></a></div>
-                    <div><a href="#"><collection:estd4623s /></a></div>
-                    <div><a href="#"><collection:estd4624s /></a></div>
-                    <div><a href="#"><collection:estd4625s /></a></div>
-                    <div><a href="#"><collection:estd4626s /></a></div>
+                    <div><a href="#"><collection:estd4621s /></a></div><hr />
+                    <div><a href="#"><collection:estd4622s /></a></div><hr />
+                    <div><a href="#"><collection:estd4623s /></a></div><hr />
+                    <div><a href="#"><collection:estd4624s /></a></div><hr />
+                    <div><a href="#"><collection:estd4625s /></a></div><hr />
+                    <div><a href="#"><collection:estd4626s /></a></div><hr />
                     <div><a href="#"><collection:estd4627s /></a></div>
                   </div>
                 <p class="msg_head">Standard 4.6.3</p>
                   <div class="msg_sub_body">
-                    <div><a href="#"><collection:estd4631s /></a></div>
-                    <div><a href="#"><collection:estd4632s /></a></div>
-                    <div><a href="#"><collection:estd4633s /></a></div>
-                    <div><a href="#"><collection:estd4634s /></a></div>
-                    <div><a href="#"><collection:estd4635s /></a></div>
-                    <div><a href="#"><collection:estd4636s /></a></div>
-                    <div><a href="#"><collection:estd4637s /></a></div>
-                    <div><a href="#"><collection:estd4638s /></a></div>
-                    <div><a href="#"><collection:estd4639s /></a></div>
-                    <div><a href="#"><collection:estd46310s /></a></div>
-                    <div><a href="#"><collection:estd46311s /></a></div>
-                    <div><a href="#"><collection:estd46312s /></a></div>
-                    <div><a href="#"><collection:estd46313s /></a></div>
-                    <div><a href="#"><collection:estd46314s /></a></div>
-                    <div><a href="#"><collection:estd46315s /></a></div>
-                    <div><a href="#"><collection:estd46316s /></a></div>
-                    <div><a href="#"><collection:estd46317s /></a></div>
-                    <div><a href="#"><collection:estd46318s /></a></div>
-                    <div><a href="#"><collection:estd46319s /></a></div>
-                    <div><a href="#"><collection:estd46320s /></a></div>
-                    <div><a href="#"><collection:estd46321s /></a></div>
-                    <div><a href="#"><collection:estd46322s /></a></div>
-                    <div><a href="#"><collection:estd46323s /></a></div>
-                    <div><a href="#"><collection:estd46324s /></a></div>
-                    <div><a href="#"><collection:estd46325s /></a></div>
-                    <div><a href="#"><collection:estd46326s /></a></div>
-                    <div><a href="#"><collection:estd46327s /></a></div>
-                    <div><a href="#"><collection:estd46328s /></a></div>
+                    <div><a href="#"><collection:estd4631s /></a></div><hr />
+                    <div><a href="#"><collection:estd4632s /></a></div><hr />
+                    <div><a href="#"><collection:estd4633s /></a></div><hr />
+                    <div><a href="#"><collection:estd4634s /></a></div><hr />
+                    <div><a href="#"><collection:estd4635s /></a></div><hr />
+                    <div><a href="#"><collection:estd4636s /></a></div><hr />
+                    <div><a href="#"><collection:estd4637s /></a></div><hr />
+                    <div><a href="#"><collection:estd4638s /></a></div><hr />
+                    <div><a href="#"><collection:estd4639s /></a></div><hr />
+                    <div><a href="#"><collection:estd46310s /></a></div><hr />
+                    <div><a href="#"><collection:estd46311s /></a></div><hr />
+                    <div><a href="#"><collection:estd46312s /></a></div><hr />
+                    <div><a href="#"><collection:estd46313s /></a></div><hr />
+                    <div><a href="#"><collection:estd46314s /></a></div><hr />
+                    <div><a href="#"><collection:estd46315s /></a></div><hr />
+                    <div><a href="#"><collection:estd46316s /></a></div><hr />
+                    <div><a href="#"><collection:estd46317s /></a></div><hr />
+                    <div><a href="#"><collection:estd46318s /></a></div><hr />
+                    <div><a href="#"><collection:estd46319s /></a></div><hr />
+                    <div><a href="#"><collection:estd46320s /></a></div><hr />
+                    <div><a href="#"><collection:estd46321s /></a></div><hr />
+                    <div><a href="#"><collection:estd46322s /></a></div><hr />
+                    <div><a href="#"><collection:estd46323s /></a></div><hr />
+                    <div><a href="#"><collection:estd46324s /></a></div><hr />
+                    <div><a href="#"><collection:estd46325s /></a></div><hr />
+                    <div><a href="#"><collection:estd46326s /></a></div><hr />
+                    <div><a href="#"><collection:estd46327s /></a></div><hr />
+                    <div><a href="#"><collection:estd46328s /></a></div><hr />
                     <div><a href="#"><collection:estd46329s /></a></div>
                   </div>
 
-                  <div><a href="#"><collection:estd464s /></a></div>
-                  <div><a href="#"><collection:estd465s /></a></div>
+                  <div><a href="#"><collection:estd464s /></a></div><hr />
+                  <div><a href="#"><collection:estd465s /></a></div><hr />
                   <div><a href="#"><collection:estd466s /></a></div>
               </div>
             <p class="msg_head">Standard 4.7 Incident Management</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd471s /></a></div>
-                <div><a href="#"><collection:estd472s /></a></div>
-                <div><a href="#"><collection:estd473s /></a></div>
-                <div><a href="#"><collection:estd474s /></a></div>
+                <div><a href="#"><collection:estd471s /></a></div><hr />
+                <div><a href="#"><collection:estd472s /></a></div><hr />
+                <div><a href="#"><collection:estd473s /></a></div><hr />
+                <div><a href="#"><collection:estd474s /></a></div><hr />
                 <div><a href="#"><collection:estd475s /></a></div>
               </div>
             <p class="msg_head">Standard 4.8 Resource Management and Logistics</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd481s /></a></div>
-                <div><a href="#"><collection:estd482s /></a></div>
+                <div><a href="#"><collection:estd481s /></a></div><hr />
+                <div><a href="#"><collection:estd482s /></a></div><hr />
                 <div><a href="#"><collection:estd483s /></a></div>
                 <p class="msg_head">Standard 4.8.4</p>
                   <div class="msg_sub_body">
-                    <div><a href="#"><collection:estd4841s /></a></div>
-                    <div><a href="#"><collection:estd4842s /></a></div>
+                    <div><a href="#"><collection:estd4841s /></a></div><hr />
+                    <div><a href="#"><collection:estd4842s /></a></div><hr />
                     <div><a href="#"><collection:estd4843s /></a></div><br />
                   </div>
-                <div><a href="#"><collection:estd485s /></a></div>
+                <div><a href="#"><collection:estd485s /></a></div><hr />
                 <div><a href="#"><collection:estd486s /></a></div>
               </div>
             <p class="msg_head">Standard 4.9 Mutual Aid</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd491s /></a></div>
+                <div><a href="#"><collection:estd491s /></a></div><hr />
                 <div><a href="#"><collection:estd492s /></a></div>
               </div>
             <p class="msg_head">Standard 4.10 Communications and Warning</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd4101s /></a></div>
-                <div><a href="#"><collection:estd4102s /></a></div>
-                <div><a href="#"><collection:estd4103s /></a></div>
-                <div><a href="#"><collection:estd4104s /></a></div>
-                <div><a href="#"><collection:estd4105s /></a></div>
-                <div><a href="#"><collection:estd4106s /></a></div>
+                <div><a href="#"><collection:estd4101s /></a></div><hr />
+                <div><a href="#"><collection:estd4102s /></a></div><hr />
+                <div><a href="#"><collection:estd4103s /></a></div><hr />
+                <div><a href="#"><collection:estd4104s /></a></div><hr />
+                <div><a href="#"><collection:estd4105s /></a></div><hr />
+                <div><a href="#"><collection:estd4106s /></a></div><hr />
                 <div><a href="#"><collection:estd4107s /></a></div>
               </div>
             <p class="msg_head">Standard 4.11 Operations and Procedures</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd4111s /></a></div>
-                <div><a href="#"><collection:estd4112s /></a></div>
-                <div><a href="#"><collection:estd4113s /></a></div>
+                <div><a href="#"><collection:estd4111s /></a></div><hr />
+                <div><a href="#"><collection:estd4112s /></a></div><hr />
+                <div><a href="#"><collection:estd4113s /></a></div><hr />
                 <div><a href="#"><collection:estd4114s /></a></div>
               </div>
             <p class="msg_head">Standard 4.12 Facilities</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd4121s /></a></div>
+                <div><a href="#"><collection:estd4121s /></a></div><hr />
                 <div><a href="#"><collection:estd4122s /></a></div>
               </div>
             <p class="msg_head">Standard 4.13 Training</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd4131s /></a></div>
-                <div><a href="#"><collection:estd4132s /></a></div>
-                <div><a href="#"><collection:estd4133s /></a></div>
+                <div><a href="#"><collection:estd4131s /></a></div><hr />
+                <div><a href="#"><collection:estd4132s /></a></div><hr />
+                <div><a href="#"><collection:estd4133s /></a></div><hr />
                 <div><a href="#"><collection:estd4134s /></a></div>
               </div>
             <p class="msg_head">Standard 4.14 Exercises, Evaluations and Corrective Actions</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd4141s /></a></div>
-                <div><a href="#"><collection:estd4142s /></a></div>
+                <div><a href="#"><collection:estd4141s /></a></div><hr />
+                <div><a href="#"><collection:estd4142s /></a></div><hr />
                 <div><a href="#"><collection:estd4143s /></a></div>
               </div>
             <p class="msg_head">Standard 4.15 Crisis Communications, Public Education and Information</p>
@@ -175,14 +175,14 @@
                   <div><a href="#"><collection:estd4151s /></a></div>
                   <p class="msg_head">Standard 4.15.2</p>
                     <div class="msg_sub_body">
-                      <div><a href="#"><collection:estd41521s /></a></div>
-                      <div><a href="#"><collection:estd41522s /></a></div>
-                      <div><a href="#"><collection:estd41523s /></a></div>
-                      <div><a href="#"><collection:estd41524s /></a></div>
+                      <div><a href="#"><collection:estd41521s /></a></div><hr />
+                      <div><a href="#"><collection:estd41522s /></a></div><hr />
+                      <div><a href="#"><collection:estd41523s /></a></div><hr />
+                      <div><a href="#"><collection:estd41524s /></a></div><hr />
                       <div><a href="#"><collection:estd41525s /></a></div>
                     </div>
-                <div><a href="#"><collection:estd4153s /></a></div>
-                <div><a href="#"><collection:estd4154s /></a></div>
+                <div><a href="#"><collection:estd4153s /></a></div><hr />
+                <div><a href="#"><collection:estd4154s /></a></div><hr />
                 <div><a href="#"><collection:estd4155s /></a></div>
               </div>
           </div>
@@ -196,89 +196,89 @@
       <div class="msg_sub_body">
         <p class="msg_head">Area 1 - STRUCTURE</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. Do interoperability procedures and systems exist to facilitate disaster response by the various military components, both between the components and with appropriate civilian agencies?</a></div><hr />
-             <div><a href="#">2. Are the roles and responsibilities of military forces clearly identified and codified?</a></div><hr />
-             <div><a href="#">3. Is command and control of military forces during disaster response operations clearly established, codified in appropriate planning documents and understood by appropriate military and civilian authorities?</a></div><hr />
-             <div><a href="#">4. General information on base location. Is there one central location or multiple bases around the country, etc.?</a></div><hr />
-             <div><a href="#">5. Does the military have forces specifically identified for disaster response? If so what is the force structure and what are the activation procedures?</a></div>
+             <div><a href="#"><collection:mil111s /></a></div><hr />
+             <div><a href="#"><collection:mil112s /></a></div><hr />
+             <div><a href="#"><collection:mil121s /></a></div><hr />
+             <div><a href="#"><collection:mil131s /></a></div><hr />
+             <div><a href="#"><collection:mil141s /></a></div>
           </div>
         <p class="msg_head">Area 2 - LEGAL AUTHORITIES</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. What national legislative authority provides for military assistance to civil authorities during domestic incidents?</a></div><hr />
-             <div><a href="#">2. Do state or local laws reflect or incorporate the national legislation regarding military assistance to civil authorities?</a></div><hr />
-             <div><a href="#">3. Have the military components formally identified support to civil authorities as a mission</a></div><hr />
-             <div><a href="#">4. Have the military components identified specific disaster threats and incorporated them into appropriate mission documents?</a></div><hr />
-             <div><a href="#">5. Have the military components adequately incorporated assistance to civil authorities in appropriate component regulations, including requirements, policies, procedures, and systems?</a></div>
+             <div><a href="#"><collection:mil211s /></a></div><hr />
+             <div><a href="#"><collection:mil212s /></a></div><hr />
+             <div><a href="#"><collection:mil221s /></a></div><hr />
+             <div><a href="#"><collection:mil222s /></a></div><hr />
+             <div><a href="#"><collection:mil231s /></a></div>
           </div>
         <p class="msg_head">Area 3 - PLANNING</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. Do civil response plans incorporate the use of military forces, including identification of roles and responsibilities, command and control, communications and other appropriate requirements?</a></div><hr />
-             <div><a href="#">2. Is disaster response planning conducted at all appropriate military units levels (BN, BDE, DIV, CORPS etc)?</a></div><hr />
-             <div><a href="#">3. Does the military have established standards for disaster response planning?</a></div><hr />
-             <div><a href="#">4. Are military disaster response plans appropriately integrated with civil authority plans?</a></div><hr />
-             <div><a href="#">5. Are plans specific in identification and assignment of roles and responsibilities for performance of essential military civil support functions?</a></div><hr />
-             <div><a href="#">6. Do disaster response plans establish a priority of effort/priority of support?</a></div><hr />
-             <div><a href="#">7. Do military components have continuity of operations plans to mitigate disaster impacts on military capabilities?</a></div><hr />
-             <div><a href="#">8. Have essential or emergency functions been identified in the plan?</a></div><hr />
-             <div><a href="#">9. What is the mandatory plan review period?</a></div><hr />
-             <div><a href="#">10. Does a joint planning process exist?</a></div><hr />
-             <div><a href="#">11. Are component plans shared with sister components?</a></div><hr />
-             <div><a href="#">12. Are appropriate plans shared with civil authorities?</a></div>
+             <div><a href="#"><collection:mil311s /></a></div><hr />
+             <div><a href="#"><collection:mil321s /></a></div><hr />
+             <div><a href="#"><collection:mil331s /></a></div><hr />
+             <div><a href="#"><collection:mil341s /></a></div><hr />
+             <div><a href="#"><collection:mil351s /></a></div><hr />
+             <div><a href="#"><collection:mil361s /></a></div><hr />
+             <div><a href="#"><collection:mil371s /></a></div><hr />
+             <div><a href="#"><collection:mil381s /></a></div><hr />
+             <div><a href="#"><collection:mil391s /></a></div><hr />
+             <div><a href="#"><collection:mil3101s /></a></div><hr />
+             <div><a href="#"><collection:mil3102s /></a></div><hr />
+             <div><a href="#"><collection:mil3103s /></a></div>
           </div>
         <p class="msg_head">Area 4 - LOGISTICS</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. What types of equipment are available to provide support to civil authorities?</a></div><hr />
-             <div><a href="#">2. If military components have units specifically allocated to disaster response, do these units have sufficient equipment to perform their assigned roles and responsibilities.</a></div><hr />
-             <div><a href="#">3. Is there a formal periodic equipment inspection program in place?</a></div><hr />
-             <div><a href="#">4. Do units have capabilities to procure supplies and services as required to support disaster response operations?</a></div><hr />
-             <div><a href="#">5. How are civil support functions funded?</a></div><hr />
-             <div><a href="#">6. Is the military reimbursed for providing support to civilian authorities?</a></div><hr />
-             <div><a href="#">7. Can the military replenish supplies and/or repair equipment used in support of civil authorities?</a></div><hr />
-             <div><a href="#">8. Is there a formal process in place to outsource or contract for equipment repair?</a></div><hr />
-             <div><a href="#">9. Do military components have the capability to move at least 50% of their personnel and resources with organic assets to support civil authorities?</a></div><hr />
-             <div><a href="#">10. What are the normal modes of transportation utilized to move military units during disaster response operations (road, rail, air, etc.)?</a></div><hr />
-             <div><a href="#">11. Are transportation routes sufficient to provide military support to civil authorities throughout the entire country?</a></div><hr />
-             <div><a href="#">12. Is there a single national military coordination center?</a></div><hr />
-             <div><a href="#">13. Are there established alternate locations to conduct centralized command and control?</a></div><hr />
-             <div><a href="#">14. Does the military have organic assets for housing personnel assigned in support of civil authorities?</a></div><hr />
-             <div><a href="#">15. Are sufficient maintenance and storage facilities available for equipment and supplies?</a></div><hr />
-             <div><a href="#">16. Does the military have adequate facilities nationwide to support military disaster response operations?</a></div>
+             <div><a href="#"><collection:mil411s /></a></div><hr />
+             <div><a href="#"><collection:mil412s /></a></div><hr />
+             <div><a href="#"><collection:mil413s /></a></div><hr />
+             <div><a href="#"><collection:mil421s /></a></div><hr />
+             <div><a href="#"><collection:mil431s /></a></div><hr />
+             <div><a href="#"><collection:mil432s /></a></div><hr />
+             <div><a href="#"><collection:mil441s /></a></div><hr />
+             <div><a href="#"><collection:mil442s /></a></div><hr />
+             <div><a href="#"><collection:mil451s /></a></div><hr />
+             <div><a href="#"><collection:mil452s /></a></div><hr />
+             <div><a href="#"><collection:mil453s /></a></div><hr />
+             <div><a href="#"><collection:mil461s /></a></div><hr />
+             <div><a href="#"><collection:mil462s /></a></div><hr />
+             <div><a href="#"><collection:mil463s /></a></div><hr />
+             <div><a href="#"><collection:mil464s /></a></div><hr />
+             <div><a href="#"><collection:mil465s /></a></div>
           </div>
         <p class="msg_head">Area 5 - COMMUNICATION</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. Is there a single joint system in place to relay information/orders from national leaders to tactical units for all military service components supporting civil authorities?</a></div><hr />
-             <div><a href="#">2. Does the system have redundant capacity?</a></div><hr />
-             <div><a href="#">3. Is required infrastructure available to support the communication system (electricity, phone lines, internet, etc?)</a></div><hr />
-             <div><a href="#">4. Do all military components operate with common/compatible hardware/software?</a></div><hr />
-             <div><a href="#">5. Are component information technology systems interoperable/compatible with civil authority systems?</a></div><hr />
-             <div><a href="#">6. Is there a written procedure for activation of emergency communications/information systems?</a></div><hr />
-             <div><a href="#">7. Do adequate systems exist for lower level units to forward critical information to higher headquarters?</a></div><hr />
-             <div><a href="#">8. Has a formal, periodic testing program for the system(s) been established?</a></div><hr />
-             <div><a href="#">9. Integration (between components, to civilian authorities, to general public)</a></div><hr />
-             <div><a href="#">10. Does the system allow for sharing of information with civil authorities or the media?</a></div><hr />
-             <div><a href="#">11. Are procedures for passing information between military components, civil authorities and the general public practiced on a regular basis?</a></div><hr />
-             <div><a href="#">12. Are procedures in place for establishing military liaison(s) to civil authority operations centers?</a></div><hr />
-             <div><a href="#">13. Are procedures in place for integrating civil liaisons into military operations centers?</a></div>
+             <div><a href="#"><collection:mil511s /></a></div><hr />
+             <div><a href="#"><collection:mil512s /></a></div><hr />
+             <div><a href="#"><collection:mil513s /></a></div><hr />
+             <div><a href="#"><collection:mil521s /></a></div><hr />
+             <div><a href="#"><collection:mil522s /></a></div><hr />
+             <div><a href="#"><collection:mil531s /></a></div><hr />
+             <div><a href="#"><collection:mil532s /></a></div><hr />
+             <div><a href="#"><collection:mil533s /></a></div><hr />
+             <div><a href="#"><collection:mil534s /></a></div><hr />
+             <div><a href="#"><collection:mil535s /></a></div><hr />
+             <div><a href="#"><collection:mil536s /></a></div><hr />
+             <div><a href="#"><collection:mil537s /></a></div><hr />
+             <div><a href="#"><collection:mil538s /></a></div>
           </div>
         <p class="msg_head">Area 6 - PERSONNEL</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. How many active duty personnel are available to support civil authorities?</a></div><hr />
-             <div><a href="#">2. Is there a reserve component available to support civil authorities? How are they activated? Do they require active duty support, or are they capable of independent operations?</a></div>
+             <div><a href="#"><collection:mil611s /></a></div><hr />
+             <div><a href="#"><collection:mil621s /></a></div>
           </div>
         <p class="msg_head">Area 7 - TRAINING/EXERCISES</p>
           <div class="msg_sub_body">
-             <div><a href="#">1. Has support to civil authorities been integrated into established training for officers, NCOs and enlisted personnel?</a></div><hr />
-             <div><a href="#">2. Do military components conduct integrated training with civilian response organizations?</a></div><hr />
-             <div><a href="#">3. Is training documented?</a></div><hr />
-             <div><a href="#">4. Is humanitarian assistance specific training conducted?</a></div><hr />
-             <div><a href="#">5. What skill specific branches have been established within each military component?</a></div><hr />
-             <div><a href="#">6. Can military personnel obtain certification in military support to civil authorities and if so, how is this certification obtained?</a></div><hr />
-             <div><a href="#">7. Exercises, Types/Levels (combined/joint/civ-mil at PLT/BTRY/BN/BDE or higher)</a></div><hr />
-             <div><a href="#">8. Has a formal requirement been established to conduct periodic unit level training related to support of civil authorities?</a></div><hr />
-             <div><a href="#">9. What types of civil support exercises are regularly conducted? (I.e. Command Post, table top, functional, full scale)</a></div><hr />
-             <div><a href="#">10. Is there a formal program for conducting disaster response exercises with civil authorities?</a></div><hr />
-             <div><a href="#">11. Is there a formal program for review and evaluation of unit level civil support exercises and training programs?</a></div><hr />
-             <div><a href="#">12. Are civil support training and exercise programs based on a threat analysis?</a></div>
+             <div><a href="#"><collection:mil711s /></a></div><hr />
+             <div><a href="#"><collection:mil712s /></a></div><hr />
+             <div><a href="#"><collection:mil713s /></a></div><hr />
+             <div><a href="#"><collection:mil714s /></a></div><hr />
+             <div><a href="#"><collection:mil721s /></a></div><hr />
+             <div><a href="#"><collection:mil722s /></a></div><hr />
+             <div><a href="#"><collection:mil723s /></a></div><hr />
+             <div><a href="#"><collection:mil724s /></a></div><hr />
+             <div><a href="#"><collection:mil725s /></a></div><hr />
+             <div><a href="#"><collection:mil731s /></a></div><hr />
+             <div><a href="#"><collection:mil741s /></a></div><hr />
+             <div><a href="#"><collection:mil751s /></a></div>
           </div>
       </div>
     </div>

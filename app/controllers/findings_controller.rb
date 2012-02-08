@@ -108,6 +108,71 @@ class FindingsController < ApplicationController
   auto_actions_for :estd4153, :create
   auto_actions_for :estd4154, :create
   auto_actions_for :estd4155, :create
+  auto_actions_for :mil111, :create
+  auto_actions_for :mil112, :create
+  auto_actions_for :mil121, :create
+  auto_actions_for :mil131, :create
+  auto_actions_for :mil141, :create
+  auto_actions_for :mil211, :create
+  auto_actions_for :mil212, :create
+  auto_actions_for :mil221, :create
+  auto_actions_for :mil222, :create
+  auto_actions_for :mil231, :create
+  auto_actions_for :mil311, :create
+  auto_actions_for :mil321, :create
+  auto_actions_for :mil331, :create
+  auto_actions_for :mil341, :create
+  auto_actions_for :mil351, :create
+  auto_actions_for :mil361, :create
+  auto_actions_for :mil371, :create
+  auto_actions_for :mil381, :create
+  auto_actions_for :mil391, :create
+  auto_actions_for :mil411, :create
+  auto_actions_for :mil412, :create
+  auto_actions_for :mil413, :create
+  auto_actions_for :mil421, :create
+  auto_actions_for :mil431, :create
+  auto_actions_for :mil432, :create
+  auto_actions_for :mil441, :create
+  auto_actions_for :mil442, :create
+  auto_actions_for :mil451, :create
+  auto_actions_for :mil452, :create
+  auto_actions_for :mil453, :create
+  auto_actions_for :mil461, :create
+  auto_actions_for :mil462, :create
+  auto_actions_for :mil463, :create
+  auto_actions_for :mil464, :create
+  auto_actions_for :mil465, :create
+  auto_actions_for :mil511, :create
+  auto_actions_for :mil512, :create
+  auto_actions_for :mil513, :create
+  auto_actions_for :mil521, :create
+  auto_actions_for :mil522, :create
+  auto_actions_for :mil531, :create
+  auto_actions_for :mil532, :create
+  auto_actions_for :mil533, :create
+  auto_actions_for :mil534, :create
+  auto_actions_for :mil535, :create
+  auto_actions_for :mil536, :create
+  auto_actions_for :mil537, :create
+  auto_actions_for :mil538, :create
+  auto_actions_for :mil611, :create
+  auto_actions_for :mil621, :create
+  auto_actions_for :mil711, :create
+  auto_actions_for :mil712, :create
+  auto_actions_for :mil713, :create
+  auto_actions_for :mil714, :create
+  auto_actions_for :mil721, :create
+  auto_actions_for :mil722, :create
+  auto_actions_for :mil723, :create
+  auto_actions_for :mil724, :create
+  auto_actions_for :mil725, :create
+  auto_actions_for :mil731, :create
+  auto_actions_for :mil741, :create
+  auto_actions_for :mil751, :create
+  auto_actions_for :mil3101, :create
+  auto_actions_for :mil3102, :create
+  auto_actions_for :mil3103, :create
   auto_actions_for :med11, :create
   auto_actions_for :med12, :create
   auto_actions_for :med21, :create

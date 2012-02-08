@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120207192840) do
+ActiveRecord::Schema.define(:version => 20120208183925) do
 
   create_table "areas", :force => true do |t|
     t.string   "standard"
@@ -1322,6 +1322,71 @@ ActiveRecord::Schema.define(:version => 20120207192840) do
     t.integer  "med102_id"
     t.integer  "med111_id"
     t.integer  "med112_id"
+    t.integer  "mil111_id"
+    t.integer  "mil112_id"
+    t.integer  "mil121_id"
+    t.integer  "mil131_id"
+    t.integer  "mil141_id"
+    t.integer  "mil211_id"
+    t.integer  "mil212_id"
+    t.integer  "mil221_id"
+    t.integer  "mil222_id"
+    t.integer  "mil231_id"
+    t.integer  "mil311_id"
+    t.integer  "mil321_id"
+    t.integer  "mil331_id"
+    t.integer  "mil341_id"
+    t.integer  "mil351_id"
+    t.integer  "mil361_id"
+    t.integer  "mil371_id"
+    t.integer  "mil381_id"
+    t.integer  "mil391_id"
+    t.integer  "mil411_id"
+    t.integer  "mil412_id"
+    t.integer  "mil413_id"
+    t.integer  "mil421_id"
+    t.integer  "mil431_id"
+    t.integer  "mil432_id"
+    t.integer  "mil441_id"
+    t.integer  "mil442_id"
+    t.integer  "mil451_id"
+    t.integer  "mil452_id"
+    t.integer  "mil453_id"
+    t.integer  "mil461_id"
+    t.integer  "mil462_id"
+    t.integer  "mil463_id"
+    t.integer  "mil464_id"
+    t.integer  "mil465_id"
+    t.integer  "mil511_id"
+    t.integer  "mil512_id"
+    t.integer  "mil513_id"
+    t.integer  "mil521_id"
+    t.integer  "mil522_id"
+    t.integer  "mil531_id"
+    t.integer  "mil532_id"
+    t.integer  "mil533_id"
+    t.integer  "mil534_id"
+    t.integer  "mil535_id"
+    t.integer  "mil536_id"
+    t.integer  "mil537_id"
+    t.integer  "mil538_id"
+    t.integer  "mil611_id"
+    t.integer  "mil621_id"
+    t.integer  "mil711_id"
+    t.integer  "mil712_id"
+    t.integer  "mil713_id"
+    t.integer  "mil714_id"
+    t.integer  "mil721_id"
+    t.integer  "mil722_id"
+    t.integer  "mil723_id"
+    t.integer  "mil724_id"
+    t.integer  "mil725_id"
+    t.integer  "mil731_id"
+    t.integer  "mil741_id"
+    t.integer  "mil751_id"
+    t.integer  "mil3101_id"
+    t.integer  "mil3102_id"
+    t.integer  "mil3103_id"
   end
 
   add_index "findings", ["estd311_id"], :name => "index_findings_on_estd311_id"
@@ -1465,6 +1530,71 @@ ActiveRecord::Schema.define(:version => 20120207192840) do
   add_index "findings", ["med92_id"], :name => "index_findings_on_med92_id"
   add_index "findings", ["med93_id"], :name => "index_findings_on_med93_id"
   add_index "findings", ["med94_id"], :name => "index_findings_on_med94_id"
+  add_index "findings", ["mil111_id"], :name => "index_findings_on_mil111_id"
+  add_index "findings", ["mil112_id"], :name => "index_findings_on_mil112_id"
+  add_index "findings", ["mil121_id"], :name => "index_findings_on_mil121_id"
+  add_index "findings", ["mil131_id"], :name => "index_findings_on_mil131_id"
+  add_index "findings", ["mil141_id"], :name => "index_findings_on_mil141_id"
+  add_index "findings", ["mil211_id"], :name => "index_findings_on_mil211_id"
+  add_index "findings", ["mil212_id"], :name => "index_findings_on_mil212_id"
+  add_index "findings", ["mil221_id"], :name => "index_findings_on_mil221_id"
+  add_index "findings", ["mil222_id"], :name => "index_findings_on_mil222_id"
+  add_index "findings", ["mil231_id"], :name => "index_findings_on_mil231_id"
+  add_index "findings", ["mil3101_id"], :name => "index_findings_on_mil3101_id"
+  add_index "findings", ["mil3102_id"], :name => "index_findings_on_mil3102_id"
+  add_index "findings", ["mil3103_id"], :name => "index_findings_on_mil3103_id"
+  add_index "findings", ["mil311_id"], :name => "index_findings_on_mil311_id"
+  add_index "findings", ["mil321_id"], :name => "index_findings_on_mil321_id"
+  add_index "findings", ["mil331_id"], :name => "index_findings_on_mil331_id"
+  add_index "findings", ["mil341_id"], :name => "index_findings_on_mil341_id"
+  add_index "findings", ["mil351_id"], :name => "index_findings_on_mil351_id"
+  add_index "findings", ["mil361_id"], :name => "index_findings_on_mil361_id"
+  add_index "findings", ["mil371_id"], :name => "index_findings_on_mil371_id"
+  add_index "findings", ["mil381_id"], :name => "index_findings_on_mil381_id"
+  add_index "findings", ["mil391_id"], :name => "index_findings_on_mil391_id"
+  add_index "findings", ["mil411_id"], :name => "index_findings_on_mil411_id"
+  add_index "findings", ["mil412_id"], :name => "index_findings_on_mil412_id"
+  add_index "findings", ["mil413_id"], :name => "index_findings_on_mil413_id"
+  add_index "findings", ["mil421_id"], :name => "index_findings_on_mil421_id"
+  add_index "findings", ["mil431_id"], :name => "index_findings_on_mil431_id"
+  add_index "findings", ["mil432_id"], :name => "index_findings_on_mil432_id"
+  add_index "findings", ["mil441_id"], :name => "index_findings_on_mil441_id"
+  add_index "findings", ["mil442_id"], :name => "index_findings_on_mil442_id"
+  add_index "findings", ["mil451_id"], :name => "index_findings_on_mil451_id"
+  add_index "findings", ["mil452_id"], :name => "index_findings_on_mil452_id"
+  add_index "findings", ["mil453_id"], :name => "index_findings_on_mil453_id"
+  add_index "findings", ["mil461_id"], :name => "index_findings_on_mil461_id"
+  add_index "findings", ["mil462_id"], :name => "index_findings_on_mil462_id"
+  add_index "findings", ["mil463_id"], :name => "index_findings_on_mil463_id"
+  add_index "findings", ["mil464_id"], :name => "index_findings_on_mil464_id"
+  add_index "findings", ["mil465_id"], :name => "index_findings_on_mil465_id"
+  add_index "findings", ["mil511_id"], :name => "index_findings_on_mil511_id"
+  add_index "findings", ["mil512_id"], :name => "index_findings_on_mil512_id"
+  add_index "findings", ["mil513_id"], :name => "index_findings_on_mil513_id"
+  add_index "findings", ["mil521_id"], :name => "index_findings_on_mil521_id"
+  add_index "findings", ["mil522_id"], :name => "index_findings_on_mil522_id"
+  add_index "findings", ["mil531_id"], :name => "index_findings_on_mil531_id"
+  add_index "findings", ["mil532_id"], :name => "index_findings_on_mil532_id"
+  add_index "findings", ["mil533_id"], :name => "index_findings_on_mil533_id"
+  add_index "findings", ["mil534_id"], :name => "index_findings_on_mil534_id"
+  add_index "findings", ["mil535_id"], :name => "index_findings_on_mil535_id"
+  add_index "findings", ["mil536_id"], :name => "index_findings_on_mil536_id"
+  add_index "findings", ["mil537_id"], :name => "index_findings_on_mil537_id"
+  add_index "findings", ["mil538_id"], :name => "index_findings_on_mil538_id"
+  add_index "findings", ["mil611_id"], :name => "index_findings_on_mil611_id"
+  add_index "findings", ["mil621_id"], :name => "index_findings_on_mil621_id"
+  add_index "findings", ["mil711_id"], :name => "index_findings_on_mil711_id"
+  add_index "findings", ["mil712_id"], :name => "index_findings_on_mil712_id"
+  add_index "findings", ["mil713_id"], :name => "index_findings_on_mil713_id"
+  add_index "findings", ["mil714_id"], :name => "index_findings_on_mil714_id"
+  add_index "findings", ["mil721_id"], :name => "index_findings_on_mil721_id"
+  add_index "findings", ["mil722_id"], :name => "index_findings_on_mil722_id"
+  add_index "findings", ["mil723_id"], :name => "index_findings_on_mil723_id"
+  add_index "findings", ["mil724_id"], :name => "index_findings_on_mil724_id"
+  add_index "findings", ["mil725_id"], :name => "index_findings_on_mil725_id"
+  add_index "findings", ["mil731_id"], :name => "index_findings_on_mil731_id"
+  add_index "findings", ["mil741_id"], :name => "index_findings_on_mil741_id"
+  add_index "findings", ["mil751_id"], :name => "index_findings_on_mil751_id"
   add_index "findings", ["previewer_id"], :name => "index_findings_on_previewer_id"
   add_index "findings", ["program_id"], :name => "index_findings_on_program_id"
   add_index "findings", ["sreviewer_id"], :name => "index_findings_on_sreviewer_id"
@@ -1865,6 +1995,721 @@ ActiveRecord::Schema.define(:version => 20120207192840) do
   add_index "med94s", ["area_id"], :name => "index_med94s_on_area_id"
   add_index "med94s", ["program_id"], :name => "index_med94s_on_program_id"
 
+  create_table "mil111s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil111s", ["area_id"], :name => "index_mil111s_on_area_id"
+  add_index "mil111s", ["program_id"], :name => "index_mil111s_on_program_id"
+
+  create_table "mil112s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil112s", ["area_id"], :name => "index_mil112s_on_area_id"
+  add_index "mil112s", ["program_id"], :name => "index_mil112s_on_program_id"
+
+  create_table "mil121s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil121s", ["area_id"], :name => "index_mil121s_on_area_id"
+  add_index "mil121s", ["program_id"], :name => "index_mil121s_on_program_id"
+
+  create_table "mil131s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil131s", ["area_id"], :name => "index_mil131s_on_area_id"
+  add_index "mil131s", ["program_id"], :name => "index_mil131s_on_program_id"
+
+  create_table "mil141s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil141s", ["area_id"], :name => "index_mil141s_on_area_id"
+  add_index "mil141s", ["program_id"], :name => "index_mil141s_on_program_id"
+
+  create_table "mil211s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil211s", ["area_id"], :name => "index_mil211s_on_area_id"
+  add_index "mil211s", ["program_id"], :name => "index_mil211s_on_program_id"
+
+  create_table "mil212s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil212s", ["area_id"], :name => "index_mil212s_on_area_id"
+  add_index "mil212s", ["program_id"], :name => "index_mil212s_on_program_id"
+
+  create_table "mil221s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil221s", ["area_id"], :name => "index_mil221s_on_area_id"
+  add_index "mil221s", ["program_id"], :name => "index_mil221s_on_program_id"
+
+  create_table "mil222s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil222s", ["area_id"], :name => "index_mil222s_on_area_id"
+  add_index "mil222s", ["program_id"], :name => "index_mil222s_on_program_id"
+
+  create_table "mil231s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil231s", ["area_id"], :name => "index_mil231s_on_area_id"
+  add_index "mil231s", ["program_id"], :name => "index_mil231s_on_program_id"
+
+  create_table "mil3101s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil3101s", ["area_id"], :name => "index_mil3101s_on_area_id"
+  add_index "mil3101s", ["program_id"], :name => "index_mil3101s_on_program_id"
+
+  create_table "mil3102s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil3102s", ["area_id"], :name => "index_mil3102s_on_area_id"
+  add_index "mil3102s", ["program_id"], :name => "index_mil3102s_on_program_id"
+
+  create_table "mil3103s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil3103s", ["area_id"], :name => "index_mil3103s_on_area_id"
+  add_index "mil3103s", ["program_id"], :name => "index_mil3103s_on_program_id"
+
+  create_table "mil311s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil311s", ["area_id"], :name => "index_mil311s_on_area_id"
+  add_index "mil311s", ["program_id"], :name => "index_mil311s_on_program_id"
+
+  create_table "mil321s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil321s", ["area_id"], :name => "index_mil321s_on_area_id"
+  add_index "mil321s", ["program_id"], :name => "index_mil321s_on_program_id"
+
+  create_table "mil331s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil331s", ["area_id"], :name => "index_mil331s_on_area_id"
+  add_index "mil331s", ["program_id"], :name => "index_mil331s_on_program_id"
+
+  create_table "mil341s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil341s", ["area_id"], :name => "index_mil341s_on_area_id"
+  add_index "mil341s", ["program_id"], :name => "index_mil341s_on_program_id"
+
+  create_table "mil351s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil351s", ["area_id"], :name => "index_mil351s_on_area_id"
+  add_index "mil351s", ["program_id"], :name => "index_mil351s_on_program_id"
+
+  create_table "mil361s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil361s", ["area_id"], :name => "index_mil361s_on_area_id"
+  add_index "mil361s", ["program_id"], :name => "index_mil361s_on_program_id"
+
+  create_table "mil371s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil371s", ["area_id"], :name => "index_mil371s_on_area_id"
+  add_index "mil371s", ["program_id"], :name => "index_mil371s_on_program_id"
+
+  create_table "mil381s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil381s", ["area_id"], :name => "index_mil381s_on_area_id"
+  add_index "mil381s", ["program_id"], :name => "index_mil381s_on_program_id"
+
+  create_table "mil391s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil391s", ["area_id"], :name => "index_mil391s_on_area_id"
+  add_index "mil391s", ["program_id"], :name => "index_mil391s_on_program_id"
+
+  create_table "mil411s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil411s", ["area_id"], :name => "index_mil411s_on_area_id"
+  add_index "mil411s", ["program_id"], :name => "index_mil411s_on_program_id"
+
+  create_table "mil412s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil412s", ["area_id"], :name => "index_mil412s_on_area_id"
+  add_index "mil412s", ["program_id"], :name => "index_mil412s_on_program_id"
+
+  create_table "mil413s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil413s", ["area_id"], :name => "index_mil413s_on_area_id"
+  add_index "mil413s", ["program_id"], :name => "index_mil413s_on_program_id"
+
+  create_table "mil421s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil421s", ["area_id"], :name => "index_mil421s_on_area_id"
+  add_index "mil421s", ["program_id"], :name => "index_mil421s_on_program_id"
+
+  create_table "mil431s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil431s", ["area_id"], :name => "index_mil431s_on_area_id"
+  add_index "mil431s", ["program_id"], :name => "index_mil431s_on_program_id"
+
+  create_table "mil432s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil432s", ["area_id"], :name => "index_mil432s_on_area_id"
+  add_index "mil432s", ["program_id"], :name => "index_mil432s_on_program_id"
+
+  create_table "mil441s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil441s", ["area_id"], :name => "index_mil441s_on_area_id"
+  add_index "mil441s", ["program_id"], :name => "index_mil441s_on_program_id"
+
+  create_table "mil442s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil442s", ["area_id"], :name => "index_mil442s_on_area_id"
+  add_index "mil442s", ["program_id"], :name => "index_mil442s_on_program_id"
+
+  create_table "mil451s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil451s", ["area_id"], :name => "index_mil451s_on_area_id"
+  add_index "mil451s", ["program_id"], :name => "index_mil451s_on_program_id"
+
+  create_table "mil452s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil452s", ["area_id"], :name => "index_mil452s_on_area_id"
+  add_index "mil452s", ["program_id"], :name => "index_mil452s_on_program_id"
+
+  create_table "mil453s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil453s", ["area_id"], :name => "index_mil453s_on_area_id"
+  add_index "mil453s", ["program_id"], :name => "index_mil453s_on_program_id"
+
+  create_table "mil461s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil461s", ["area_id"], :name => "index_mil461s_on_area_id"
+  add_index "mil461s", ["program_id"], :name => "index_mil461s_on_program_id"
+
+  create_table "mil462s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil462s", ["area_id"], :name => "index_mil462s_on_area_id"
+  add_index "mil462s", ["program_id"], :name => "index_mil462s_on_program_id"
+
+  create_table "mil463s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil463s", ["area_id"], :name => "index_mil463s_on_area_id"
+  add_index "mil463s", ["program_id"], :name => "index_mil463s_on_program_id"
+
+  create_table "mil464s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil464s", ["area_id"], :name => "index_mil464s_on_area_id"
+  add_index "mil464s", ["program_id"], :name => "index_mil464s_on_program_id"
+
+  create_table "mil465s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil465s", ["area_id"], :name => "index_mil465s_on_area_id"
+  add_index "mil465s", ["program_id"], :name => "index_mil465s_on_program_id"
+
+  create_table "mil511s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil511s", ["area_id"], :name => "index_mil511s_on_area_id"
+  add_index "mil511s", ["program_id"], :name => "index_mil511s_on_program_id"
+
+  create_table "mil512s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil512s", ["area_id"], :name => "index_mil512s_on_area_id"
+  add_index "mil512s", ["program_id"], :name => "index_mil512s_on_program_id"
+
+  create_table "mil513s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil513s", ["area_id"], :name => "index_mil513s_on_area_id"
+  add_index "mil513s", ["program_id"], :name => "index_mil513s_on_program_id"
+
+  create_table "mil521s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil521s", ["area_id"], :name => "index_mil521s_on_area_id"
+  add_index "mil521s", ["program_id"], :name => "index_mil521s_on_program_id"
+
+  create_table "mil522s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil522s", ["area_id"], :name => "index_mil522s_on_area_id"
+  add_index "mil522s", ["program_id"], :name => "index_mil522s_on_program_id"
+
+  create_table "mil531s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil531s", ["area_id"], :name => "index_mil531s_on_area_id"
+  add_index "mil531s", ["program_id"], :name => "index_mil531s_on_program_id"
+
+  create_table "mil532s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil532s", ["area_id"], :name => "index_mil532s_on_area_id"
+  add_index "mil532s", ["program_id"], :name => "index_mil532s_on_program_id"
+
+  create_table "mil533s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil533s", ["area_id"], :name => "index_mil533s_on_area_id"
+  add_index "mil533s", ["program_id"], :name => "index_mil533s_on_program_id"
+
+  create_table "mil534s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil534s", ["area_id"], :name => "index_mil534s_on_area_id"
+  add_index "mil534s", ["program_id"], :name => "index_mil534s_on_program_id"
+
+  create_table "mil535s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil535s", ["area_id"], :name => "index_mil535s_on_area_id"
+  add_index "mil535s", ["program_id"], :name => "index_mil535s_on_program_id"
+
+  create_table "mil536s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil536s", ["area_id"], :name => "index_mil536s_on_area_id"
+  add_index "mil536s", ["program_id"], :name => "index_mil536s_on_program_id"
+
+  create_table "mil537s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil537s", ["area_id"], :name => "index_mil537s_on_area_id"
+  add_index "mil537s", ["program_id"], :name => "index_mil537s_on_program_id"
+
+  create_table "mil538s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil538s", ["area_id"], :name => "index_mil538s_on_area_id"
+  add_index "mil538s", ["program_id"], :name => "index_mil538s_on_program_id"
+
+  create_table "mil611s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil611s", ["area_id"], :name => "index_mil611s_on_area_id"
+  add_index "mil611s", ["program_id"], :name => "index_mil611s_on_program_id"
+
+  create_table "mil621s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil621s", ["area_id"], :name => "index_mil621s_on_area_id"
+  add_index "mil621s", ["program_id"], :name => "index_mil621s_on_program_id"
+
+  create_table "mil711s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil711s", ["area_id"], :name => "index_mil711s_on_area_id"
+  add_index "mil711s", ["program_id"], :name => "index_mil711s_on_program_id"
+
+  create_table "mil712s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil712s", ["area_id"], :name => "index_mil712s_on_area_id"
+  add_index "mil712s", ["program_id"], :name => "index_mil712s_on_program_id"
+
+  create_table "mil713s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil713s", ["area_id"], :name => "index_mil713s_on_area_id"
+  add_index "mil713s", ["program_id"], :name => "index_mil713s_on_program_id"
+
+  create_table "mil714s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil714s", ["area_id"], :name => "index_mil714s_on_area_id"
+  add_index "mil714s", ["program_id"], :name => "index_mil714s_on_program_id"
+
+  create_table "mil721s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil721s", ["area_id"], :name => "index_mil721s_on_area_id"
+  add_index "mil721s", ["program_id"], :name => "index_mil721s_on_program_id"
+
+  create_table "mil722s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil722s", ["area_id"], :name => "index_mil722s_on_area_id"
+  add_index "mil722s", ["program_id"], :name => "index_mil722s_on_program_id"
+
+  create_table "mil723s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil723s", ["area_id"], :name => "index_mil723s_on_area_id"
+  add_index "mil723s", ["program_id"], :name => "index_mil723s_on_program_id"
+
+  create_table "mil724s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil724s", ["area_id"], :name => "index_mil724s_on_area_id"
+  add_index "mil724s", ["program_id"], :name => "index_mil724s_on_program_id"
+
+  create_table "mil725s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil725s", ["area_id"], :name => "index_mil725s_on_area_id"
+  add_index "mil725s", ["program_id"], :name => "index_mil725s_on_program_id"
+
+  create_table "mil731s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil731s", ["area_id"], :name => "index_mil731s_on_area_id"
+  add_index "mil731s", ["program_id"], :name => "index_mil731s_on_program_id"
+
+  create_table "mil741s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil741s", ["area_id"], :name => "index_mil741s_on_area_id"
+  add_index "mil741s", ["program_id"], :name => "index_mil741s_on_program_id"
+
+  create_table "mil751s", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "program_id"
+    t.integer  "area_id"
+  end
+
+  add_index "mil751s", ["area_id"], :name => "index_mil751s_on_area_id"
+  add_index "mil751s", ["program_id"], :name => "index_mil751s_on_program_id"
+
   create_table "programs", :force => true do |t|
     t.string   "name"
     t.text     "description"
@@ -2020,6 +2865,71 @@ ActiveRecord::Schema.define(:version => 20120207192840) do
     t.integer  "med102_id"
     t.integer  "med111_id"
     t.integer  "med112_id"
+    t.integer  "mil111_id"
+    t.integer  "mil112_id"
+    t.integer  "mil121_id"
+    t.integer  "mil131_id"
+    t.integer  "mil141_id"
+    t.integer  "mil211_id"
+    t.integer  "mil212_id"
+    t.integer  "mil221_id"
+    t.integer  "mil222_id"
+    t.integer  "mil231_id"
+    t.integer  "mil311_id"
+    t.integer  "mil321_id"
+    t.integer  "mil331_id"
+    t.integer  "mil341_id"
+    t.integer  "mil351_id"
+    t.integer  "mil361_id"
+    t.integer  "mil371_id"
+    t.integer  "mil381_id"
+    t.integer  "mil391_id"
+    t.integer  "mil411_id"
+    t.integer  "mil412_id"
+    t.integer  "mil413_id"
+    t.integer  "mil421_id"
+    t.integer  "mil431_id"
+    t.integer  "mil432_id"
+    t.integer  "mil441_id"
+    t.integer  "mil442_id"
+    t.integer  "mil451_id"
+    t.integer  "mil452_id"
+    t.integer  "mil453_id"
+    t.integer  "mil461_id"
+    t.integer  "mil462_id"
+    t.integer  "mil463_id"
+    t.integer  "mil464_id"
+    t.integer  "mil465_id"
+    t.integer  "mil511_id"
+    t.integer  "mil512_id"
+    t.integer  "mil513_id"
+    t.integer  "mil521_id"
+    t.integer  "mil522_id"
+    t.integer  "mil531_id"
+    t.integer  "mil532_id"
+    t.integer  "mil533_id"
+    t.integer  "mil534_id"
+    t.integer  "mil535_id"
+    t.integer  "mil536_id"
+    t.integer  "mil537_id"
+    t.integer  "mil538_id"
+    t.integer  "mil611_id"
+    t.integer  "mil621_id"
+    t.integer  "mil711_id"
+    t.integer  "mil712_id"
+    t.integer  "mil713_id"
+    t.integer  "mil714_id"
+    t.integer  "mil721_id"
+    t.integer  "mil722_id"
+    t.integer  "mil723_id"
+    t.integer  "mil724_id"
+    t.integer  "mil725_id"
+    t.integer  "mil731_id"
+    t.integer  "mil741_id"
+    t.integer  "mil751_id"
+    t.integer  "mil3101_id"
+    t.integer  "mil3102_id"
+    t.integer  "mil3103_id"
   end
 
   add_index "uploads", ["estd311_id"], :name => "index_uploads_on_estd311_id"
@@ -2162,6 +3072,71 @@ ActiveRecord::Schema.define(:version => 20120207192840) do
   add_index "uploads", ["med92_id"], :name => "index_uploads_on_med92_id"
   add_index "uploads", ["med93_id"], :name => "index_uploads_on_med93_id"
   add_index "uploads", ["med94_id"], :name => "index_uploads_on_med94_id"
+  add_index "uploads", ["mil111_id"], :name => "index_uploads_on_mil111_id"
+  add_index "uploads", ["mil112_id"], :name => "index_uploads_on_mil112_id"
+  add_index "uploads", ["mil121_id"], :name => "index_uploads_on_mil121_id"
+  add_index "uploads", ["mil131_id"], :name => "index_uploads_on_mil131_id"
+  add_index "uploads", ["mil141_id"], :name => "index_uploads_on_mil141_id"
+  add_index "uploads", ["mil211_id"], :name => "index_uploads_on_mil211_id"
+  add_index "uploads", ["mil212_id"], :name => "index_uploads_on_mil212_id"
+  add_index "uploads", ["mil221_id"], :name => "index_uploads_on_mil221_id"
+  add_index "uploads", ["mil222_id"], :name => "index_uploads_on_mil222_id"
+  add_index "uploads", ["mil231_id"], :name => "index_uploads_on_mil231_id"
+  add_index "uploads", ["mil3101_id"], :name => "index_uploads_on_mil3101_id"
+  add_index "uploads", ["mil3102_id"], :name => "index_uploads_on_mil3102_id"
+  add_index "uploads", ["mil3103_id"], :name => "index_uploads_on_mil3103_id"
+  add_index "uploads", ["mil311_id"], :name => "index_uploads_on_mil311_id"
+  add_index "uploads", ["mil321_id"], :name => "index_uploads_on_mil321_id"
+  add_index "uploads", ["mil331_id"], :name => "index_uploads_on_mil331_id"
+  add_index "uploads", ["mil341_id"], :name => "index_uploads_on_mil341_id"
+  add_index "uploads", ["mil351_id"], :name => "index_uploads_on_mil351_id"
+  add_index "uploads", ["mil361_id"], :name => "index_uploads_on_mil361_id"
+  add_index "uploads", ["mil371_id"], :name => "index_uploads_on_mil371_id"
+  add_index "uploads", ["mil381_id"], :name => "index_uploads_on_mil381_id"
+  add_index "uploads", ["mil391_id"], :name => "index_uploads_on_mil391_id"
+  add_index "uploads", ["mil411_id"], :name => "index_uploads_on_mil411_id"
+  add_index "uploads", ["mil412_id"], :name => "index_uploads_on_mil412_id"
+  add_index "uploads", ["mil413_id"], :name => "index_uploads_on_mil413_id"
+  add_index "uploads", ["mil421_id"], :name => "index_uploads_on_mil421_id"
+  add_index "uploads", ["mil431_id"], :name => "index_uploads_on_mil431_id"
+  add_index "uploads", ["mil432_id"], :name => "index_uploads_on_mil432_id"
+  add_index "uploads", ["mil441_id"], :name => "index_uploads_on_mil441_id"
+  add_index "uploads", ["mil442_id"], :name => "index_uploads_on_mil442_id"
+  add_index "uploads", ["mil451_id"], :name => "index_uploads_on_mil451_id"
+  add_index "uploads", ["mil452_id"], :name => "index_uploads_on_mil452_id"
+  add_index "uploads", ["mil453_id"], :name => "index_uploads_on_mil453_id"
+  add_index "uploads", ["mil461_id"], :name => "index_uploads_on_mil461_id"
+  add_index "uploads", ["mil462_id"], :name => "index_uploads_on_mil462_id"
+  add_index "uploads", ["mil463_id"], :name => "index_uploads_on_mil463_id"
+  add_index "uploads", ["mil464_id"], :name => "index_uploads_on_mil464_id"
+  add_index "uploads", ["mil465_id"], :name => "index_uploads_on_mil465_id"
+  add_index "uploads", ["mil511_id"], :name => "index_uploads_on_mil511_id"
+  add_index "uploads", ["mil512_id"], :name => "index_uploads_on_mil512_id"
+  add_index "uploads", ["mil513_id"], :name => "index_uploads_on_mil513_id"
+  add_index "uploads", ["mil521_id"], :name => "index_uploads_on_mil521_id"
+  add_index "uploads", ["mil522_id"], :name => "index_uploads_on_mil522_id"
+  add_index "uploads", ["mil531_id"], :name => "index_uploads_on_mil531_id"
+  add_index "uploads", ["mil532_id"], :name => "index_uploads_on_mil532_id"
+  add_index "uploads", ["mil533_id"], :name => "index_uploads_on_mil533_id"
+  add_index "uploads", ["mil534_id"], :name => "index_uploads_on_mil534_id"
+  add_index "uploads", ["mil535_id"], :name => "index_uploads_on_mil535_id"
+  add_index "uploads", ["mil536_id"], :name => "index_uploads_on_mil536_id"
+  add_index "uploads", ["mil537_id"], :name => "index_uploads_on_mil537_id"
+  add_index "uploads", ["mil538_id"], :name => "index_uploads_on_mil538_id"
+  add_index "uploads", ["mil611_id"], :name => "index_uploads_on_mil611_id"
+  add_index "uploads", ["mil621_id"], :name => "index_uploads_on_mil621_id"
+  add_index "uploads", ["mil711_id"], :name => "index_uploads_on_mil711_id"
+  add_index "uploads", ["mil712_id"], :name => "index_uploads_on_mil712_id"
+  add_index "uploads", ["mil713_id"], :name => "index_uploads_on_mil713_id"
+  add_index "uploads", ["mil714_id"], :name => "index_uploads_on_mil714_id"
+  add_index "uploads", ["mil721_id"], :name => "index_uploads_on_mil721_id"
+  add_index "uploads", ["mil722_id"], :name => "index_uploads_on_mil722_id"
+  add_index "uploads", ["mil723_id"], :name => "index_uploads_on_mil723_id"
+  add_index "uploads", ["mil724_id"], :name => "index_uploads_on_mil724_id"
+  add_index "uploads", ["mil725_id"], :name => "index_uploads_on_mil725_id"
+  add_index "uploads", ["mil731_id"], :name => "index_uploads_on_mil731_id"
+  add_index "uploads", ["mil741_id"], :name => "index_uploads_on_mil741_id"
+  add_index "uploads", ["mil751_id"], :name => "index_uploads_on_mil751_id"
 
   create_table "users", :force => true do |t|
     t.string   "crypted_password",          :limit => 40

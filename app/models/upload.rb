@@ -113,6 +113,71 @@ class Upload < ActiveRecord::Base
   belongs_to :estd4153
   belongs_to :estd4154
   belongs_to :estd4155
+  belongs_to :mil111
+  belongs_to :mil112
+  belongs_to :mil121
+  belongs_to :mil131
+  belongs_to :mil141
+  belongs_to :mil211
+  belongs_to :mil212
+  belongs_to :mil221
+  belongs_to :mil222
+  belongs_to :mil231
+  belongs_to :mil311
+  belongs_to :mil321
+  belongs_to :mil331
+  belongs_to :mil341
+  belongs_to :mil351
+  belongs_to :mil361
+  belongs_to :mil371
+  belongs_to :mil381
+  belongs_to :mil391
+  belongs_to :mil411
+  belongs_to :mil412
+  belongs_to :mil413
+  belongs_to :mil421
+  belongs_to :mil431
+  belongs_to :mil432
+  belongs_to :mil441
+  belongs_to :mil442
+  belongs_to :mil451
+  belongs_to :mil452
+  belongs_to :mil453
+  belongs_to :mil461
+  belongs_to :mil462
+  belongs_to :mil463
+  belongs_to :mil464
+  belongs_to :mil465
+  belongs_to :mil511
+  belongs_to :mil512
+  belongs_to :mil513
+  belongs_to :mil521
+  belongs_to :mil522
+  belongs_to :mil531
+  belongs_to :mil532
+  belongs_to :mil533
+  belongs_to :mil534
+  belongs_to :mil535
+  belongs_to :mil536
+  belongs_to :mil537
+  belongs_to :mil538
+  belongs_to :mil611
+  belongs_to :mil621
+  belongs_to :mil711
+  belongs_to :mil712
+  belongs_to :mil713
+  belongs_to :mil714
+  belongs_to :mil721
+  belongs_to :mil722
+  belongs_to :mil723
+  belongs_to :mil724
+  belongs_to :mil725
+  belongs_to :mil731
+  belongs_to :mil741
+  belongs_to :mil751
+  belongs_to :mil3101
+  belongs_to :mil3102
+  belongs_to :mil3103
   belongs_to :med11
   belongs_to :med12
   belongs_to :med21
