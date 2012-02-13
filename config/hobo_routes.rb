@@ -2848,8 +2848,10 @@ Rara::Application.routes.draw do
   get 'estd311s/:id/second_read(.:format)' => 'estd311s#second_read', :as => 'estd311_second_read'
   put 'estd311s/:id/return_to_primary(.:format)' => 'estd311s#do_return_to_primary', :as => 'do_estd311_return_to_primary'
   get 'estd311s/:id/return_to_primary(.:format)' => 'estd311s#return_to_primary', :as => 'estd311_return_to_primary'
-  put 'estd311s/:id/completion(.:format)' => 'estd311s#do_completion', :as => 'do_estd311_completion'
-  get 'estd311s/:id/completion(.:format)' => 'estd311s#completion', :as => 'estd311_completion'
+  put 'estd311s/:id/mark_complete(.:format)' => 'estd311s#do_mark_complete', :as => 'do_estd311_mark_complete'
+  get 'estd311s/:id/mark_complete(.:format)' => 'estd311s#mark_complete', :as => 'estd311_mark_complete'
+  put 'estd311s/:id/reopen(.:format)' => 'estd311s#do_reopen', :as => 'do_estd311_reopen'
+  get 'estd311s/:id/reopen(.:format)' => 'estd311s#reopen', :as => 'estd311_reopen'
 
   # Resource routes for controller "estd311s"
   get 'estd311s/new(.:format)', :as => 'new_estd311'

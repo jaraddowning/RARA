@@ -26,7 +26,7 @@
 <def tag="unstarted-form" for="Estd311">
   <form lifecycle="unstarted" merge param="default">
     <error-messages param/>
-    <field-list fields="rational, observation, recomendations, decision" param/>
+    <field-list fields="decision, rational, observation, recomendations, previewer" param/>
     <div param="actions">
       <submit label="#{ht 'estd311.actions.unstarted', :default=>['Unstarted']}" param/><or-cancel param="cancel"/>
     </div>
@@ -38,7 +38,7 @@
   <form lifecycle="enter_finding" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="rational, observation, recomendations, decision" param/>
+    <field-list fields="decision, rational, observation, recomendations, previewer" param/>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.enter_finding', :default=>['Enter Finding']}" param/><or-cancel param="cancel"/>
     </div>
@@ -66,14 +66,25 @@
     </div>
   </form>
 </def>
-<def tag="completion-form" polymorphic/>
-<def tag="completion-form" for="Estd311">
-  <form lifecycle="completion" merge param="default">
+<def tag="mark-complete-form" polymorphic/>
+<def tag="mark-complete-form" for="Estd311">
+  <form lifecycle="mark_complete" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
     <field-list fields="mark_complete" param/>
     <div param="actions">
-      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.completion', :default=>['Completion']}" param/><or-cancel param="cancel"/>
+      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.mark_complete', :default=>['Mark Complete']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+<def tag="reopen-form" polymorphic/>
+<def tag="reopen-form" for="Estd311">
+  <form lifecycle="reopen" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="concur, sec_obs, sreviewer" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.reopen', :default=>['Reopen']}" param/><or-cancel param="cancel"/>
     </div>
   </form>
 </def>
