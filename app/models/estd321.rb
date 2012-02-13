@@ -32,12 +32,12 @@ class Estd321 < ActiveRecord::Base
            :params => [ :rational, :observation, :recomendations, :decision ],
            :available_to => "User",
            :user_becomes => :all
-
-    transition :primary_read,
-               {:primary => :secondary},
+    
+    transition :enter_finding,
+               {:unstarted => :primary},
                :params => [ :rational, :observation, :recomendations, :decision ],
                :available_to => :all
-    
+
     transition :second_read,
                {:primary => :secondary},
                :params => [ :concur, :sec_obs, :sreviewer ],
@@ -45,18 +45,19 @@ class Estd321 < ActiveRecord::Base
 
     transition :return_to_primary,
                {:secondary => :primary},
-               :params => [ :concur, :sec_obs, :sreviewer ],
+               :params => [ :rational, :observation, :recomendations, :decision ],
                :available_to => :all
 
-    transition :mark_complete,
+    transition :completion,
                {:secondary => :complete},
                :params => [ :mark_complete ],
                :available_to => :all
-    
-    transition :unmark_complete,
+
+    transition :completion,
                {:complete => :secondary},
-               :params => [ :mark_complete ],
+               :params => [ :concur, :sec_obs, :sreviewer ],
                :available_to => :all
+
   end
 
   # --- Permissions --- #

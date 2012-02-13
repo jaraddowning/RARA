@@ -22,17 +22,28 @@
   </form>
 </def>
 
-<def tag="primary-read-form" polymorphic/>
-<def tag="primary-read-form" for="Estd311">
-  <form lifecycle="primary_read" merge param="default">
+<def tag="unstarted-form" polymorphic/>
+<def tag="unstarted-form" for="Estd311">
+  <form lifecycle="unstarted" merge param="default">
     <error-messages param/>
     <field-list fields="rational, observation, recomendations, decision" param/>
     <div param="actions">
-      <submit label="#{ht 'estd311.actions.primary_read', :default=>['Primary Read']}" param/><or-cancel param="cancel"/>
+      <submit label="#{ht 'estd311.actions.unstarted', :default=>['Unstarted']}" param/><or-cancel param="cancel"/>
     </div>
   </form>
 </def>
 
+<def tag="enter-finding-form" polymorphic/>
+<def tag="enter-finding-form" for="Estd311">
+  <form lifecycle="enter_finding" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="rational, observation, recomendations, decision" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.enter_finding', :default=>['Enter Finding']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
 <def tag="second-read-form" polymorphic/>
 <def tag="second-read-form" for="Estd311">
   <form lifecycle="second_read" merge param="default">
@@ -41,6 +52,17 @@
     <field-list fields="concur, sec_obs, sreviewer" param/>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.second_read', :default=>['Second Read']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+<def tag="return-to-primary-form" polymorphic/>
+<def tag="return-to-primary-form" for="Estd311">
+  <form lifecycle="return_to_primary" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="rational, observation, recomendations, decision" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.return_to_primary', :default=>['Return To Primary']}" param/><or-cancel param="cancel"/>
     </div>
   </form>
 </def>
@@ -143,17 +165,28 @@
   </form>
 </def>
 
-<def tag="primary-read-form" polymorphic/>
-<def tag="primary-read-form" for="Estd321">
-  <form lifecycle="primary_read" merge param="default">
+<def tag="unstarted-form" polymorphic/>
+<def tag="unstarted-form" for="Estd321">
+  <form lifecycle="unstarted" merge param="default">
     <error-messages param/>
     <field-list fields="rational, observation, recomendations, decision" param/>
     <div param="actions">
-      <submit label="#{ht 'estd321.actions.primary_read', :default=>['Primary Read']}" param/><or-cancel param="cancel"/>
+      <submit label="#{ht 'estd321.actions.unstarted', :default=>['Unstarted']}" param/><or-cancel param="cancel"/>
     </div>
   </form>
 </def>
 
+<def tag="primary-read-form" polymorphic/>
+<def tag="primary-read-form" for="Estd321">
+  <form lifecycle="primary_read" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="rational, observation, recomendations, decision" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd321.lifecycle.transitions.primary_read', :default=>['Primary Read']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
 <def tag="second-read-form" polymorphic/>
 <def tag="second-read-form" for="Estd321">
   <form lifecycle="second_read" merge param="default">
@@ -165,14 +198,36 @@
     </div>
   </form>
 </def>
-<def tag="completion-form" polymorphic/>
-<def tag="completion-form" for="Estd321">
-  <form lifecycle="completion" merge param="default">
+<def tag="return-to-primary-form" polymorphic/>
+<def tag="return-to-primary-form" for="Estd321">
+  <form lifecycle="return_to_primary" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="concur, sec_obs, sreviewer" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd321.lifecycle.transitions.return_to_primary', :default=>['Return To Primary']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+<def tag="mark-complete-form" polymorphic/>
+<def tag="mark-complete-form" for="Estd321">
+  <form lifecycle="mark_complete" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
     <field-list fields="mark_complete" param/>
     <div param="actions">
-      <submit label="#{t 'activerecord.attributes.estd321.lifecycle.transitions.completion', :default=>['Completion']}" param/><or-cancel param="cancel"/>
+      <submit label="#{t 'activerecord.attributes.estd321.lifecycle.transitions.mark_complete', :default=>['Mark Complete']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+<def tag="unmark-complete-form" polymorphic/>
+<def tag="unmark-complete-form" for="Estd321">
+  <form lifecycle="unmark_complete" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="mark_complete" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd321.lifecycle.transitions.unmark_complete', :default=>['Unmark Complete']}" param/><or-cancel param="cancel"/>
     </div>
   </form>
 </def>

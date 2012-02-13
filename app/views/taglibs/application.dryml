@@ -124,9 +124,9 @@
 <!--  Dispay status for each standard area / question  -->
 
 <extend tag="card" for="Estd311">
-  <old-card merge>
+  <card>
     <heading:>
-      <h3><name /></h3>
+      <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
     <body:>
       <div class="decision">
@@ -142,11 +142,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd311">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -164,11 +164,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd312">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -186,11 +186,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd321">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -208,11 +208,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd322">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -230,11 +230,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd331">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -252,11 +252,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd332">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -274,11 +274,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd411">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -296,11 +296,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd412">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -318,11 +318,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd421">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -340,11 +340,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd422">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -362,11 +362,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd431">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -384,11 +384,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd432">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -406,11 +406,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd441">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -428,11 +428,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd442">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -450,11 +450,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd443">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -472,11 +472,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd444">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -494,11 +494,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd445">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -516,11 +516,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd451">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -538,11 +538,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd452">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -560,11 +560,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd453">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -582,11 +582,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd461">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -604,11 +604,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd464">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -626,11 +626,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd465">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -648,11 +648,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd466">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -670,11 +670,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd471">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -692,11 +692,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd472">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -714,11 +714,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd473">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -736,11 +736,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd474">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -758,11 +758,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd475">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -780,11 +780,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd481">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -802,11 +802,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd482">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -824,11 +824,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd483">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -846,11 +846,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd485">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -868,11 +868,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd486">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -890,11 +890,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd491">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -912,11 +912,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd492">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -934,11 +934,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4101">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -956,11 +956,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4102">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -978,11 +978,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4103">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1000,11 +1000,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4104">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1022,11 +1022,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4105">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1044,11 +1044,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4106">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1066,11 +1066,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4107">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1088,11 +1088,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4111">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1110,11 +1110,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4112">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1132,11 +1132,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4113">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1154,11 +1154,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4114">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1176,11 +1176,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4121">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1198,11 +1198,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4122">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1220,11 +1220,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4131">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1242,11 +1242,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4132">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1264,11 +1264,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4133">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1286,11 +1286,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4134">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1308,11 +1308,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4141">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1330,11 +1330,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4142">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1352,11 +1352,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4143">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1374,11 +1374,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4151">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1396,11 +1396,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4153">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1418,11 +1418,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4154">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1440,11 +1440,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4155">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1462,11 +1462,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4621">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1484,11 +1484,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4622">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1506,11 +1506,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4623">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1528,11 +1528,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4624">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1550,11 +1550,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4625">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1572,11 +1572,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4627">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1594,11 +1594,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4631">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1616,11 +1616,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4632">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1638,11 +1638,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4633">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1660,11 +1660,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4634">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1682,11 +1682,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4635">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1704,11 +1704,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4636">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1726,11 +1726,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4637">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1748,11 +1748,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4638">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1770,11 +1770,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4639">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1792,11 +1792,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4841">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1814,11 +1814,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4842">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1836,11 +1836,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd4843">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1858,11 +1858,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd41521">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1880,11 +1880,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd41522">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1902,11 +1902,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd41523">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1924,11 +1924,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd41524">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1946,11 +1946,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd41525">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1968,11 +1968,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46310">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -1990,11 +1990,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46311">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2012,11 +2012,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46312">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2034,11 +2034,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46313">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2056,11 +2056,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46314">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2078,11 +2078,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46315">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2100,11 +2100,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46316">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2122,11 +2122,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46317">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2144,11 +2144,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46318">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2166,11 +2166,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46319">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2188,11 +2188,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46320">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2210,11 +2210,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46321">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2232,11 +2232,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46322">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2254,11 +2254,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46323">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2276,11 +2276,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46324">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2298,11 +2298,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46325">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2320,11 +2320,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46326">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2342,11 +2342,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46327">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2364,11 +2364,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46328">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2386,11 +2386,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Estd46329">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2408,13 +2408,13 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 
 <!-- Military Review BS -->
 <extend tag="card" for="Mil111">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2432,11 +2432,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil112">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2454,11 +2454,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil121">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2476,11 +2476,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil131">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2498,11 +2498,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil141">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2520,11 +2520,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil211">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2542,11 +2542,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil212">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2564,11 +2564,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil221">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2586,11 +2586,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil231">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2608,11 +2608,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil311">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2630,11 +2630,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil321">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2652,11 +2652,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil331">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2674,11 +2674,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil341">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2696,11 +2696,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil351">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2718,11 +2718,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil361">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2740,11 +2740,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil371">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2762,11 +2762,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil381">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2784,11 +2784,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil391">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2806,11 +2806,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil411">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2828,11 +2828,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil412">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2850,11 +2850,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil413">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2872,11 +2872,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil421">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2894,11 +2894,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil431">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2916,11 +2916,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil432">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2938,11 +2938,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil441">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2960,11 +2960,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil442">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -2982,11 +2982,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil451">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3004,11 +3004,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil452">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3026,11 +3026,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil453">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3048,11 +3048,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil461">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3070,11 +3070,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil462">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3092,11 +3092,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil463">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3114,11 +3114,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil464">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3136,11 +3136,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil465">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3158,11 +3158,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil511">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3180,11 +3180,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil512">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3202,11 +3202,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil513">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3224,11 +3224,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil521">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3246,11 +3246,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil522">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3268,11 +3268,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil531">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3290,11 +3290,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil532">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3312,11 +3312,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil533">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3334,11 +3334,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil534">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3356,11 +3356,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil535">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3378,11 +3378,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil536">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3400,11 +3400,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil537">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3422,11 +3422,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil538">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3444,11 +3444,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil611">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3466,11 +3466,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil621">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3488,11 +3488,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil711">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3510,11 +3510,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil712">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3532,11 +3532,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil713">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3554,11 +3554,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil714">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3576,11 +3576,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil721">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3598,11 +3598,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil722">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3620,11 +3620,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil723">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3642,11 +3642,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil724">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3664,11 +3664,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil725">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3686,11 +3686,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil731">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3708,11 +3708,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil741">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3730,11 +3730,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil751">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3752,11 +3752,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil3101">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3774,11 +3774,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil3102">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3796,11 +3796,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Mil3103">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3818,12 +3818,12 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <!-- Medical Review BS -->
 <extend tag="card" for="Med11">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3841,11 +3841,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med12">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3863,11 +3863,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med21">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3885,11 +3885,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med22">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3907,11 +3907,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med23">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3929,11 +3929,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med24">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3951,11 +3951,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med25">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3973,11 +3973,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med26">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -3995,11 +3995,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med27">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4017,11 +4017,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med28">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4039,11 +4039,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med31">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4061,11 +4061,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med32">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4083,11 +4083,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med33">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4105,11 +4105,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med41">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4127,11 +4127,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med42">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4149,11 +4149,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med43">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4171,11 +4171,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med44">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4193,11 +4193,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med45">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4215,11 +4215,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med51">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4237,11 +4237,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med52">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4259,11 +4259,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med53">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4281,11 +4281,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med54">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4303,11 +4303,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med55">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4325,11 +4325,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med56">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4347,11 +4347,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med61">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4369,11 +4369,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med62">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4391,11 +4391,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med71">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4413,11 +4413,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med81">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4435,11 +4435,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med91">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4457,11 +4457,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med92">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4479,11 +4479,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med93">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4501,11 +4501,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med94">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4523,11 +4523,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med101">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4545,11 +4545,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med102">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4567,11 +4567,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med111">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4589,11 +4589,11 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <extend tag="card" for="Med112">
-  <old-card merge>
+  <card>
     <heading:>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
     </heading:>
@@ -4611,7 +4611,7 @@
     <append-body:>
       <transition-buttons />
     </append-body:>
-  </old-card>
+  </card>
 </extend>
 
 <!--   Show the appropriate fields when entering findings (top of page)   -->

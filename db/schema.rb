@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120213001957) do
+ActiveRecord::Schema.define(:version => 20120213145132) do
 
   create_table "areas", :force => true do |t|
     t.string   "name"
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(:version => 20120213001957) do
     t.integer  "area_id"
     t.integer  "previewer_id"
     t.integer  "sreviewer_id"
-    t.string   "lifecycle_state", :default => "primary"
+    t.string   "lifecycle_state", :default => "unstarted"
     t.datetime "key_timestamp"
   end
 
@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(:version => 20120213001957) do
     t.integer  "area_id"
     t.integer  "previewer_id"
     t.integer  "sreviewer_id"
-    t.string   "lifecycle_state", :default => "primary"
+    t.string   "lifecycle_state", :default => "unstarted"
     t.datetime "key_timestamp"
   end
 
@@ -87,7 +87,7 @@ ActiveRecord::Schema.define(:version => 20120213001957) do
     t.integer  "area_id"
     t.integer  "previewer_id"
     t.integer  "sreviewer_id"
-    t.string   "lifecycle_state", :default => "primary"
+    t.string   "lifecycle_state", :default => "unstarted"
     t.datetime "key_timestamp"
   end
 

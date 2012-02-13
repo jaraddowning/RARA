@@ -23,24 +23,41 @@ class Mil112 < ActiveRecord::Base
 
   lifecycle :state_field => :lifecycle_state do
 
-    state :primary, :default => true
+    state :unstarted, :default => true
+    state :primary
     state :secondary
     state :complete
 
-    create :primary_read, 
+    create :unstarted, 
            :params => [ :rational, :observation, :recomendations, :decision ],
            :available_to => "User",
            :user_becomes => :all
+    
+    transition :enter_finding,
+               {:unstarted => :primary},
+               :params => [ :rational, :observation, :recomendations, :decision ],
+               :available_to => :all
 
     transition :second_read,
                {:primary => :secondary},
                :params => [ :concur, :sec_obs, :sreviewer ],
                :available_to => :all
 
+    transition :return_to_primary,
+               {:secondary => :primary},
+               :params => [ :rational, :observation, :recomendations, :decision ],
+               :available_to => :all
+
     transition :completion,
                {:secondary => :complete},
                :params => [ :mark_complete ],
                :available_to => :all
+
+    transition :completion,
+               {:complete => :secondary},
+               :params => [ :concur, :sec_obs, :sreviewer ],
+               :available_to => :all
+
   end
 
   # --- Permissions --- #

@@ -251,24 +251,47 @@
 </def>
 
 
-<def tag="primary-read-page" polymorphic/>
-<def tag="primary-read-page" for="Estd311">
+<def tag="unstarted-page" polymorphic/>
+<def tag="unstarted-page" for="Estd311">
 
-  <page title="#{ht 'estd311.primary_read.title', :default=>['Primary Read']}" merge>
+  <page title="#{ht 'estd311.unstarted.title', :default=>['Unstarted']}" merge>
 
-    <body: class="lifecycle-start-page primary-read-page" param/>
+    <body: class="lifecycle-start-page unstarted-page" param/>
 
     <content: param>
       <header param="content-header">
         <h2 param="heading">
-          <ht key="estd311.primary_read.heading">
-            Primary Read
+          <ht key="estd311.unstarted.heading">
+            Unstarted
           </ht>
         </h2>
       </header>
 
       <section param="content-body">
-        <primary-read-form param="form"/>
+        <unstarted-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="enter-finding-page" polymorphic/>
+<def tag="enter-finding-page" for="Estd311">
+  <page title="#{ht 'estd311.enter_finding.title', :default=>['Enter Finding']}" merge>
+
+    <body: class="lifecycle-transition-page enter-finding-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="estd311.enter_finding.heading">
+            Enter Finding
+          </ht>
+        </h2>
+      </header>
+
+      <section param="content-body">
+        <enter-finding-form param="form"/>
       </section>
     </content:>
 
@@ -292,6 +315,29 @@
 
       <section param="content-body">
         <second-read-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="return-to-primary-page" polymorphic/>
+<def tag="return-to-primary-page" for="Estd311">
+  <page title="#{ht 'estd311.return_to_primary.title', :default=>['Return To Primary']}" merge>
+
+    <body: class="lifecycle-transition-page return-to-primary-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="estd311.return_to_primary.heading">
+            Return To Primary
+          </ht>
+        </h2>
+      </header>
+
+      <section param="content-body">
+        <return-to-primary-form param="form"/>
       </section>
     </content:>
 
@@ -702,14 +748,37 @@
 </def>
 
 
-<def tag="primary-read-page" polymorphic/>
-<def tag="primary-read-page" for="Estd321">
+<def tag="unstarted-page" polymorphic/>
+<def tag="unstarted-page" for="Estd321">
 
-  <page title="#{ht 'estd321.primary_read.title', :default=>['Primary Read']}" merge>
+  <page title="#{ht 'estd321.unstarted.title', :default=>['Unstarted']}" merge>
 
-    <body: class="lifecycle-start-page primary-read-page" param/>
+    <body: class="lifecycle-start-page unstarted-page" param/>
 
     <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="estd321.unstarted.heading">
+            Unstarted
+          </ht>
+        </h2>
+      </header>
+
+      <section param="content-body">
+        <unstarted-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="primary-read-page" polymorphic/>
+<def tag="primary-read-page" for="Estd321">
+  <page title="#{ht 'estd321.primary_read.title', :default=>['Primary Read']}" merge>
+
+    <body: class="lifecycle-transition-page primary-read-page" param/>
+
+    <content:>
       <header param="content-header">
         <h2 param="heading">
           <ht key="estd321.primary_read.heading">
@@ -749,23 +818,69 @@
   </page>
 </def>
 
-<def tag="completion-page" polymorphic/>
-<def tag="completion-page" for="Estd321">
-  <page title="#{ht 'estd321.completion.title', :default=>['Completion']}" merge>
+<def tag="return-to-primary-page" polymorphic/>
+<def tag="return-to-primary-page" for="Estd321">
+  <page title="#{ht 'estd321.return_to_primary.title', :default=>['Return To Primary']}" merge>
 
-    <body: class="lifecycle-transition-page completion-page" param/>
+    <body: class="lifecycle-transition-page return-to-primary-page" param/>
 
     <content:>
       <header param="content-header">
         <h2 param="heading">
-          <ht key="estd321.completion.heading">
-            Completion
+          <ht key="estd321.return_to_primary.heading">
+            Return To Primary
           </ht>
         </h2>
       </header>
 
       <section param="content-body">
-        <completion-form param="form"/>
+        <return-to-primary-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="mark-complete-page" polymorphic/>
+<def tag="mark-complete-page" for="Estd321">
+  <page title="#{ht 'estd321.mark_complete.title', :default=>['Mark Complete']}" merge>
+
+    <body: class="lifecycle-transition-page mark-complete-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="estd321.mark_complete.heading">
+            Mark Complete
+          </ht>
+        </h2>
+      </header>
+
+      <section param="content-body">
+        <mark-complete-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="unmark-complete-page" polymorphic/>
+<def tag="unmark-complete-page" for="Estd321">
+  <page title="#{ht 'estd321.unmark_complete.title', :default=>['Unmark Complete']}" merge>
+
+    <body: class="lifecycle-transition-page unmark-complete-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="estd321.unmark_complete.heading">
+            Unmark Complete
+          </ht>
+        </h2>
+      </header>
+
+      <section param="content-body">
+        <unmark-complete-form param="form"/>
       </section>
     </content:>
 

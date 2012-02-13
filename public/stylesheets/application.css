@@ -22,4 +22,23 @@ padding: 5px 10px;
 background-color:#F4F4F8;
 }
 
+.findings_area {
+position: center
+}
 
+.decision {
+left: 30px
+}
+.secondread {
+position: absolute;
+left: 152px;
+top: 43px;
+}
+.complete {
+position: absolute;
+right: 8px;
+top: 43px;
+}
+.review_summary {
+text-align: left
+}
