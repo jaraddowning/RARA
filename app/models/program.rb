@@ -222,7 +222,6 @@ class Program < ActiveRecord::Base
   has_many :med111s, :dependent => :destroy
   has_many :med112s, :dependent => :destroy
 
-  has_many :findings
 
   after_create :populate
 

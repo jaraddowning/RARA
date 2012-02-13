@@ -2,6 +2,7 @@
   <content-body:>
     <h2>Findings</h2>
     
+    <div class="findings_area">
     <div class="msg_list" >
 
     <p class="msg_head"><i>Emergency Management Standard</i> by EMAP<!-- add count info here --></p>
@@ -359,6 +360,14 @@
           </div>
       </div>
     </div><br /><br /><br />
-
+    </div>
+    
+    <div class="review_summary">
+      <p>Total Number of Area Elements: 205<br/>
+      Total Numbet of First Reads Completed: (Not Available)/205<br />
+      Total Number of Second Reads Completed: (Not Available)/205<br />
+      Total Number of Area Elements marked Completed: (Not Available)/205</p>
+    </div>
+    
   </content-body:>
 </show-page>

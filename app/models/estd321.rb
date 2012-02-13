@@ -3,16 +3,61 @@ class Estd321 < ActiveRecord::Base
   hobo_model # Don't put anything above this
 
   fields do
-    name     :string
+    name           :string
+    rational       :html
+    observation    :html
+    recomendations :html
+    decision       :boolean
+    concur         :boolean
+    sec_obs        :html
+    mark_complete  :boolean
     timestamps
   end
 
   belongs_to :program
   belongs_to :area
-  has_many :findings, :dependent => :destroy
   has_many :uploads, :dependent => :destroy
 
-  children :findings, :uploads
+  belongs_to :previewer, :class_name => "User", :creator => true
+  belongs_to :sreviewer, :class_name => "User"
+
+  lifecycle :state_field => :lifecycle_state do
+
+    state :unstarted, :default => true
+    state :primary
+    state :secondary
+    state :complete
+
+    create :unstarted, 
+           :params => [ :rational, :observation, :recomendations, :decision ],
+           :available_to => "User",
+           :user_becomes => :all
+
+    transition :primary_read,
+               {:primary => :secondary},
+               :params => [ :rational, :observation, :recomendations, :decision ],
+               :available_to => :all
+    
+    transition :second_read,
+               {:primary => :secondary},
+               :params => [ :concur, :sec_obs, :sreviewer ],
+               :available_to => :all
+
+    transition :return_to_primary,
+               {:secondary => :primary},
+               :params => [ :concur, :sec_obs, :sreviewer ],
+               :available_to => :all
+
+    transition :mark_complete,
+               {:secondary => :complete},
+               :params => [ :mark_complete ],
+               :available_to => :all
+    
+    transition :unmark_complete,
+               {:complete => :secondary},
+               :params => [ :mark_complete ],
+               :available_to => :all
+  end
 
   # --- Permissions --- #
 
@@ -21,7 +66,7 @@ class Estd321 < ActiveRecord::Base
   end
 
   def update_permitted?
-    acting_user.administrator?
+    acting_user.signed_up?
   end
 
   def destroy_permitted?

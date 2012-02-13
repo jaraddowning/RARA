@@ -14,9 +14,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -27,9 +25,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -40,9 +36,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -53,9 +47,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -66,9 +58,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -79,9 +69,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -92,9 +80,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -105,9 +91,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -118,9 +102,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -131,9 +113,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -144,9 +124,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -157,9 +135,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -170,9 +146,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -183,9 +157,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -196,9 +168,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -209,9 +179,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -222,9 +190,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -235,9 +201,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -248,9 +212,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -261,9 +223,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -274,9 +234,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -287,9 +245,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -300,9 +256,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -313,9 +267,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -326,9 +278,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -339,9 +289,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -352,9 +300,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -365,9 +311,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -378,9 +322,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -391,9 +333,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -404,9 +344,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -417,9 +355,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -430,9 +366,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -443,9 +377,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -456,9 +388,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -469,9 +399,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -482,9 +410,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -495,9 +421,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -508,9 +432,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -521,9 +443,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -534,9 +454,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -547,9 +465,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -560,9 +476,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -573,9 +487,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -586,9 +498,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -599,9 +509,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -612,9 +520,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -625,9 +531,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -638,9 +542,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -651,9 +553,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -664,9 +564,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -677,9 +575,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -690,9 +586,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -703,9 +597,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -716,9 +608,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -729,9 +619,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -742,9 +630,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -755,9 +641,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -768,9 +652,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -781,9 +663,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -794,9 +674,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -807,9 +685,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -820,9 +696,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -833,9 +707,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -846,9 +718,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -859,9 +729,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -872,9 +740,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -885,9 +751,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -898,9 +762,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -911,9 +773,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -924,9 +784,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -937,9 +795,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -950,9 +806,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -963,9 +817,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -976,9 +828,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -989,9 +839,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1002,9 +850,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1015,9 +861,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1028,9 +872,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1041,9 +883,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1054,9 +894,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1067,9 +905,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1080,9 +916,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1093,9 +927,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1106,9 +938,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1119,9 +949,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1132,9 +960,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1145,9 +971,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1158,9 +982,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1171,9 +993,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1184,9 +1004,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1197,9 +1015,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1210,9 +1026,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1223,9 +1037,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1236,9 +1048,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1249,9 +1059,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1262,9 +1070,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1275,9 +1081,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1288,9 +1092,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1301,9 +1103,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1314,9 +1114,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1327,9 +1125,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1340,28 +1136,13 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
 
 <def tag="card" for="Estd492">
   <card class="estd492" param="default" merge>
-    <header: param>
-      <h4 param="heading"><a><name/></a></h4>
-    </header:>
-    <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
-    </body:>
-  </card>
-</def>
-
-<def tag="card" for="Finding">
-  <card class="finding" param="default" merge>
     <header: param>
       <h4 param="heading"><a><name/></a></h4>
     </header:>
@@ -1377,9 +1158,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1390,9 +1169,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1403,9 +1180,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1416,9 +1191,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1429,9 +1202,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1442,9 +1213,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1455,9 +1224,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1468,9 +1235,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1481,9 +1246,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1494,9 +1257,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1507,9 +1268,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1520,9 +1279,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1533,9 +1290,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1546,9 +1301,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1559,9 +1312,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1572,9 +1323,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1585,9 +1334,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1598,9 +1345,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1611,9 +1356,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1624,9 +1367,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1637,9 +1378,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1650,9 +1389,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1663,9 +1400,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1676,9 +1411,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1689,9 +1422,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1702,9 +1433,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1715,9 +1444,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1728,9 +1455,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1741,9 +1466,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1754,9 +1477,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1767,9 +1488,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1780,9 +1499,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1793,9 +1510,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1806,9 +1521,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1819,9 +1532,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1832,9 +1543,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1845,9 +1554,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1858,9 +1565,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1871,9 +1576,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1884,9 +1587,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1897,9 +1598,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1910,9 +1609,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1923,9 +1620,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1936,9 +1631,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1949,9 +1642,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1962,9 +1653,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1975,9 +1664,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -1988,9 +1675,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2001,9 +1686,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2014,9 +1697,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2027,9 +1708,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2040,9 +1719,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2053,9 +1730,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2066,9 +1741,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2079,9 +1752,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2092,9 +1763,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2105,9 +1774,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2118,9 +1785,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2131,9 +1796,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2144,9 +1807,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2157,9 +1818,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2170,9 +1829,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2183,9 +1840,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2196,9 +1851,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2209,9 +1862,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2222,9 +1873,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2235,9 +1884,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2248,9 +1895,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2261,9 +1906,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2274,9 +1917,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2287,9 +1928,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2300,9 +1939,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2313,9 +1950,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2326,9 +1961,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2339,9 +1972,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2352,9 +1983,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2365,9 +1994,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2378,9 +2005,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2391,9 +2016,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2404,9 +2027,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2417,9 +2038,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2430,9 +2049,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2443,9 +2060,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2456,9 +2071,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2469,9 +2082,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2482,9 +2093,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2495,9 +2104,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2508,9 +2115,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2521,9 +2126,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2534,9 +2137,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2547,9 +2148,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2560,9 +2159,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2573,9 +2170,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2586,9 +2181,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2599,9 +2192,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2612,9 +2203,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2625,9 +2214,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2638,9 +2225,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2651,9 +2236,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2664,9 +2247,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
@@ -2677,9 +2258,7 @@
       <h4 param="heading"><a><name/></a></h4>
     </header:>
     <body: param>
-      <ht key="finding.collection.count" count="&this.findings.size">
-         <count:findings param/>
-      </ht>
+      <a:previewer param="creator-link"/>
     </body:>
   </card>
 </def>
