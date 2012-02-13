@@ -6,10 +6,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med52s"
-  post 'med52s/primary_read(.:format)' => 'med52s#do_primary_read', :as => 'do_med52_primary_read'
-  get 'med52s/primary_read(.:format)' => 'med52s#primary_read', :as => 'med52_primary_read'
+  post 'med52s/unstarted(.:format)' => 'med52s#do_unstarted', :as => 'do_med52_unstarted'
+  get 'med52s/unstarted(.:format)' => 'med52s#unstarted', :as => 'med52_unstarted'
+  put 'med52s/:id/enter_finding(.:format)' => 'med52s#do_enter_finding', :as => 'do_med52_enter_finding'
+  get 'med52s/:id/enter_finding(.:format)' => 'med52s#enter_finding', :as => 'med52_enter_finding'
   put 'med52s/:id/second_read(.:format)' => 'med52s#do_second_read', :as => 'do_med52_second_read'
   get 'med52s/:id/second_read(.:format)' => 'med52s#second_read', :as => 'med52_second_read'
+  put 'med52s/:id/return_to_primary(.:format)' => 'med52s#do_return_to_primary', :as => 'do_med52_return_to_primary'
+  get 'med52s/:id/return_to_primary(.:format)' => 'med52s#return_to_primary', :as => 'med52_return_to_primary'
   put 'med52s/:id/completion(.:format)' => 'med52s#do_completion', :as => 'do_med52_completion'
   get 'med52s/:id/completion(.:format)' => 'med52s#completion', :as => 'med52_completion'
 
@@ -23,10 +27,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med21s"
-  post 'med21s/primary_read(.:format)' => 'med21s#do_primary_read', :as => 'do_med21_primary_read'
-  get 'med21s/primary_read(.:format)' => 'med21s#primary_read', :as => 'med21_primary_read'
+  post 'med21s/unstarted(.:format)' => 'med21s#do_unstarted', :as => 'do_med21_unstarted'
+  get 'med21s/unstarted(.:format)' => 'med21s#unstarted', :as => 'med21_unstarted'
+  put 'med21s/:id/enter_finding(.:format)' => 'med21s#do_enter_finding', :as => 'do_med21_enter_finding'
+  get 'med21s/:id/enter_finding(.:format)' => 'med21s#enter_finding', :as => 'med21_enter_finding'
   put 'med21s/:id/second_read(.:format)' => 'med21s#do_second_read', :as => 'do_med21_second_read'
   get 'med21s/:id/second_read(.:format)' => 'med21s#second_read', :as => 'med21_second_read'
+  put 'med21s/:id/return_to_primary(.:format)' => 'med21s#do_return_to_primary', :as => 'do_med21_return_to_primary'
+  get 'med21s/:id/return_to_primary(.:format)' => 'med21s#return_to_primary', :as => 'med21_return_to_primary'
   put 'med21s/:id/completion(.:format)' => 'med21s#do_completion', :as => 'do_med21_completion'
   get 'med21s/:id/completion(.:format)' => 'med21s#completion', :as => 'med21_completion'
 
@@ -40,10 +48,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4623s"
-  post 'estd4623s/primary_read(.:format)' => 'estd4623s#do_primary_read', :as => 'do_estd4623_primary_read'
-  get 'estd4623s/primary_read(.:format)' => 'estd4623s#primary_read', :as => 'estd4623_primary_read'
+  post 'estd4623s/unstarted(.:format)' => 'estd4623s#do_unstarted', :as => 'do_estd4623_unstarted'
+  get 'estd4623s/unstarted(.:format)' => 'estd4623s#unstarted', :as => 'estd4623_unstarted'
+  put 'estd4623s/:id/enter_finding(.:format)' => 'estd4623s#do_enter_finding', :as => 'do_estd4623_enter_finding'
+  get 'estd4623s/:id/enter_finding(.:format)' => 'estd4623s#enter_finding', :as => 'estd4623_enter_finding'
   put 'estd4623s/:id/second_read(.:format)' => 'estd4623s#do_second_read', :as => 'do_estd4623_second_read'
   get 'estd4623s/:id/second_read(.:format)' => 'estd4623s#second_read', :as => 'estd4623_second_read'
+  put 'estd4623s/:id/return_to_primary(.:format)' => 'estd4623s#do_return_to_primary', :as => 'do_estd4623_return_to_primary'
+  get 'estd4623s/:id/return_to_primary(.:format)' => 'estd4623s#return_to_primary', :as => 'estd4623_return_to_primary'
   put 'estd4623s/:id/completion(.:format)' => 'estd4623s#do_completion', :as => 'do_estd4623_completion'
   get 'estd4623s/:id/completion(.:format)' => 'estd4623s#completion', :as => 'estd4623_completion'
 
@@ -57,10 +69,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4155s"
-  post 'estd4155s/primary_read(.:format)' => 'estd4155s#do_primary_read', :as => 'do_estd4155_primary_read'
-  get 'estd4155s/primary_read(.:format)' => 'estd4155s#primary_read', :as => 'estd4155_primary_read'
+  post 'estd4155s/unstarted(.:format)' => 'estd4155s#do_unstarted', :as => 'do_estd4155_unstarted'
+  get 'estd4155s/unstarted(.:format)' => 'estd4155s#unstarted', :as => 'estd4155_unstarted'
+  put 'estd4155s/:id/enter_finding(.:format)' => 'estd4155s#do_enter_finding', :as => 'do_estd4155_enter_finding'
+  get 'estd4155s/:id/enter_finding(.:format)' => 'estd4155s#enter_finding', :as => 'estd4155_enter_finding'
   put 'estd4155s/:id/second_read(.:format)' => 'estd4155s#do_second_read', :as => 'do_estd4155_second_read'
   get 'estd4155s/:id/second_read(.:format)' => 'estd4155s#second_read', :as => 'estd4155_second_read'
+  put 'estd4155s/:id/return_to_primary(.:format)' => 'estd4155s#do_return_to_primary', :as => 'do_estd4155_return_to_primary'
+  get 'estd4155s/:id/return_to_primary(.:format)' => 'estd4155s#return_to_primary', :as => 'estd4155_return_to_primary'
   put 'estd4155s/:id/completion(.:format)' => 'estd4155s#do_completion', :as => 'do_estd4155_completion'
   get 'estd4155s/:id/completion(.:format)' => 'estd4155s#completion', :as => 'estd4155_completion'
 
@@ -74,10 +90,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil512s"
-  post 'mil512s/primary_read(.:format)' => 'mil512s#do_primary_read', :as => 'do_mil512_primary_read'
-  get 'mil512s/primary_read(.:format)' => 'mil512s#primary_read', :as => 'mil512_primary_read'
+  post 'mil512s/unstarted(.:format)' => 'mil512s#do_unstarted', :as => 'do_mil512_unstarted'
+  get 'mil512s/unstarted(.:format)' => 'mil512s#unstarted', :as => 'mil512_unstarted'
+  put 'mil512s/:id/enter_finding(.:format)' => 'mil512s#do_enter_finding', :as => 'do_mil512_enter_finding'
+  get 'mil512s/:id/enter_finding(.:format)' => 'mil512s#enter_finding', :as => 'mil512_enter_finding'
   put 'mil512s/:id/second_read(.:format)' => 'mil512s#do_second_read', :as => 'do_mil512_second_read'
   get 'mil512s/:id/second_read(.:format)' => 'mil512s#second_read', :as => 'mil512_second_read'
+  put 'mil512s/:id/return_to_primary(.:format)' => 'mil512s#do_return_to_primary', :as => 'do_mil512_return_to_primary'
+  get 'mil512s/:id/return_to_primary(.:format)' => 'mil512s#return_to_primary', :as => 'mil512_return_to_primary'
   put 'mil512s/:id/completion(.:format)' => 'mil512s#do_completion', :as => 'do_mil512_completion'
   get 'mil512s/:id/completion(.:format)' => 'mil512s#completion', :as => 'mil512_completion'
 
@@ -91,10 +111,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil212s"
-  post 'mil212s/primary_read(.:format)' => 'mil212s#do_primary_read', :as => 'do_mil212_primary_read'
-  get 'mil212s/primary_read(.:format)' => 'mil212s#primary_read', :as => 'mil212_primary_read'
+  post 'mil212s/unstarted(.:format)' => 'mil212s#do_unstarted', :as => 'do_mil212_unstarted'
+  get 'mil212s/unstarted(.:format)' => 'mil212s#unstarted', :as => 'mil212_unstarted'
+  put 'mil212s/:id/enter_finding(.:format)' => 'mil212s#do_enter_finding', :as => 'do_mil212_enter_finding'
+  get 'mil212s/:id/enter_finding(.:format)' => 'mil212s#enter_finding', :as => 'mil212_enter_finding'
   put 'mil212s/:id/second_read(.:format)' => 'mil212s#do_second_read', :as => 'do_mil212_second_read'
   get 'mil212s/:id/second_read(.:format)' => 'mil212s#second_read', :as => 'mil212_second_read'
+  put 'mil212s/:id/return_to_primary(.:format)' => 'mil212s#do_return_to_primary', :as => 'do_mil212_return_to_primary'
+  get 'mil212s/:id/return_to_primary(.:format)' => 'mil212s#return_to_primary', :as => 'mil212_return_to_primary'
   put 'mil212s/:id/completion(.:format)' => 'mil212s#do_completion', :as => 'do_mil212_completion'
   get 'mil212s/:id/completion(.:format)' => 'mil212s#completion', :as => 'mil212_completion'
 
@@ -108,10 +132,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd332s"
-  post 'estd332s/primary_read(.:format)' => 'estd332s#do_primary_read', :as => 'do_estd332_primary_read'
-  get 'estd332s/primary_read(.:format)' => 'estd332s#primary_read', :as => 'estd332_primary_read'
+  post 'estd332s/unstarted(.:format)' => 'estd332s#do_unstarted', :as => 'do_estd332_unstarted'
+  get 'estd332s/unstarted(.:format)' => 'estd332s#unstarted', :as => 'estd332_unstarted'
+  put 'estd332s/:id/enter_finding(.:format)' => 'estd332s#do_enter_finding', :as => 'do_estd332_enter_finding'
+  get 'estd332s/:id/enter_finding(.:format)' => 'estd332s#enter_finding', :as => 'estd332_enter_finding'
   put 'estd332s/:id/second_read(.:format)' => 'estd332s#do_second_read', :as => 'do_estd332_second_read'
   get 'estd332s/:id/second_read(.:format)' => 'estd332s#second_read', :as => 'estd332_second_read'
+  put 'estd332s/:id/return_to_primary(.:format)' => 'estd332s#do_return_to_primary', :as => 'do_estd332_return_to_primary'
+  get 'estd332s/:id/return_to_primary(.:format)' => 'estd332s#return_to_primary', :as => 'estd332_return_to_primary'
   put 'estd332s/:id/completion(.:format)' => 'estd332s#do_completion', :as => 'do_estd332_completion'
   get 'estd332s/:id/completion(.:format)' => 'estd332s#completion', :as => 'estd332_completion'
 
@@ -125,10 +153,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med44s"
-  post 'med44s/primary_read(.:format)' => 'med44s#do_primary_read', :as => 'do_med44_primary_read'
-  get 'med44s/primary_read(.:format)' => 'med44s#primary_read', :as => 'med44_primary_read'
+  post 'med44s/unstarted(.:format)' => 'med44s#do_unstarted', :as => 'do_med44_unstarted'
+  get 'med44s/unstarted(.:format)' => 'med44s#unstarted', :as => 'med44_unstarted'
+  put 'med44s/:id/enter_finding(.:format)' => 'med44s#do_enter_finding', :as => 'do_med44_enter_finding'
+  get 'med44s/:id/enter_finding(.:format)' => 'med44s#enter_finding', :as => 'med44_enter_finding'
   put 'med44s/:id/second_read(.:format)' => 'med44s#do_second_read', :as => 'do_med44_second_read'
   get 'med44s/:id/second_read(.:format)' => 'med44s#second_read', :as => 'med44_second_read'
+  put 'med44s/:id/return_to_primary(.:format)' => 'med44s#do_return_to_primary', :as => 'do_med44_return_to_primary'
+  get 'med44s/:id/return_to_primary(.:format)' => 'med44s#return_to_primary', :as => 'med44_return_to_primary'
   put 'med44s/:id/completion(.:format)' => 'med44s#do_completion', :as => 'do_med44_completion'
   get 'med44s/:id/completion(.:format)' => 'med44s#completion', :as => 'med44_completion'
 
@@ -151,10 +183,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil391s"
-  post 'mil391s/primary_read(.:format)' => 'mil391s#do_primary_read', :as => 'do_mil391_primary_read'
-  get 'mil391s/primary_read(.:format)' => 'mil391s#primary_read', :as => 'mil391_primary_read'
+  post 'mil391s/unstarted(.:format)' => 'mil391s#do_unstarted', :as => 'do_mil391_unstarted'
+  get 'mil391s/unstarted(.:format)' => 'mil391s#unstarted', :as => 'mil391_unstarted'
+  put 'mil391s/:id/enter_finding(.:format)' => 'mil391s#do_enter_finding', :as => 'do_mil391_enter_finding'
+  get 'mil391s/:id/enter_finding(.:format)' => 'mil391s#enter_finding', :as => 'mil391_enter_finding'
   put 'mil391s/:id/second_read(.:format)' => 'mil391s#do_second_read', :as => 'do_mil391_second_read'
   get 'mil391s/:id/second_read(.:format)' => 'mil391s#second_read', :as => 'mil391_second_read'
+  put 'mil391s/:id/return_to_primary(.:format)' => 'mil391s#do_return_to_primary', :as => 'do_mil391_return_to_primary'
+  get 'mil391s/:id/return_to_primary(.:format)' => 'mil391s#return_to_primary', :as => 'mil391_return_to_primary'
   put 'mil391s/:id/completion(.:format)' => 'mil391s#do_completion', :as => 'do_mil391_completion'
   get 'mil391s/:id/completion(.:format)' => 'mil391s#completion', :as => 'mil391_completion'
 
@@ -168,10 +204,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4111s"
-  post 'estd4111s/primary_read(.:format)' => 'estd4111s#do_primary_read', :as => 'do_estd4111_primary_read'
-  get 'estd4111s/primary_read(.:format)' => 'estd4111s#primary_read', :as => 'estd4111_primary_read'
+  post 'estd4111s/unstarted(.:format)' => 'estd4111s#do_unstarted', :as => 'do_estd4111_unstarted'
+  get 'estd4111s/unstarted(.:format)' => 'estd4111s#unstarted', :as => 'estd4111_unstarted'
+  put 'estd4111s/:id/enter_finding(.:format)' => 'estd4111s#do_enter_finding', :as => 'do_estd4111_enter_finding'
+  get 'estd4111s/:id/enter_finding(.:format)' => 'estd4111s#enter_finding', :as => 'estd4111_enter_finding'
   put 'estd4111s/:id/second_read(.:format)' => 'estd4111s#do_second_read', :as => 'do_estd4111_second_read'
   get 'estd4111s/:id/second_read(.:format)' => 'estd4111s#second_read', :as => 'estd4111_second_read'
+  put 'estd4111s/:id/return_to_primary(.:format)' => 'estd4111s#do_return_to_primary', :as => 'do_estd4111_return_to_primary'
+  get 'estd4111s/:id/return_to_primary(.:format)' => 'estd4111s#return_to_primary', :as => 'estd4111_return_to_primary'
   put 'estd4111s/:id/completion(.:format)' => 'estd4111s#do_completion', :as => 'do_estd4111_completion'
   get 'estd4111s/:id/completion(.:format)' => 'estd4111s#completion', :as => 'estd4111_completion'
 
@@ -185,10 +225,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46310s"
-  post 'estd46310s/primary_read(.:format)' => 'estd46310s#do_primary_read', :as => 'do_estd46310_primary_read'
-  get 'estd46310s/primary_read(.:format)' => 'estd46310s#primary_read', :as => 'estd46310_primary_read'
+  post 'estd46310s/unstarted(.:format)' => 'estd46310s#do_unstarted', :as => 'do_estd46310_unstarted'
+  get 'estd46310s/unstarted(.:format)' => 'estd46310s#unstarted', :as => 'estd46310_unstarted'
+  put 'estd46310s/:id/enter_finding(.:format)' => 'estd46310s#do_enter_finding', :as => 'do_estd46310_enter_finding'
+  get 'estd46310s/:id/enter_finding(.:format)' => 'estd46310s#enter_finding', :as => 'estd46310_enter_finding'
   put 'estd46310s/:id/second_read(.:format)' => 'estd46310s#do_second_read', :as => 'do_estd46310_second_read'
   get 'estd46310s/:id/second_read(.:format)' => 'estd46310s#second_read', :as => 'estd46310_second_read'
+  put 'estd46310s/:id/return_to_primary(.:format)' => 'estd46310s#do_return_to_primary', :as => 'do_estd46310_return_to_primary'
+  get 'estd46310s/:id/return_to_primary(.:format)' => 'estd46310s#return_to_primary', :as => 'estd46310_return_to_primary'
   put 'estd46310s/:id/completion(.:format)' => 'estd46310s#do_completion', :as => 'do_estd46310_completion'
   get 'estd46310s/:id/completion(.:format)' => 'estd46310s#completion', :as => 'estd46310_completion'
 
@@ -202,10 +246,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4621s"
-  post 'estd4621s/primary_read(.:format)' => 'estd4621s#do_primary_read', :as => 'do_estd4621_primary_read'
-  get 'estd4621s/primary_read(.:format)' => 'estd4621s#primary_read', :as => 'estd4621_primary_read'
+  post 'estd4621s/unstarted(.:format)' => 'estd4621s#do_unstarted', :as => 'do_estd4621_unstarted'
+  get 'estd4621s/unstarted(.:format)' => 'estd4621s#unstarted', :as => 'estd4621_unstarted'
+  put 'estd4621s/:id/enter_finding(.:format)' => 'estd4621s#do_enter_finding', :as => 'do_estd4621_enter_finding'
+  get 'estd4621s/:id/enter_finding(.:format)' => 'estd4621s#enter_finding', :as => 'estd4621_enter_finding'
   put 'estd4621s/:id/second_read(.:format)' => 'estd4621s#do_second_read', :as => 'do_estd4621_second_read'
   get 'estd4621s/:id/second_read(.:format)' => 'estd4621s#second_read', :as => 'estd4621_second_read'
+  put 'estd4621s/:id/return_to_primary(.:format)' => 'estd4621s#do_return_to_primary', :as => 'do_estd4621_return_to_primary'
+  get 'estd4621s/:id/return_to_primary(.:format)' => 'estd4621s#return_to_primary', :as => 'estd4621_return_to_primary'
   put 'estd4621s/:id/completion(.:format)' => 'estd4621s#do_completion', :as => 'do_estd4621_completion'
   get 'estd4621s/:id/completion(.:format)' => 'estd4621s#completion', :as => 'estd4621_completion'
 
@@ -219,10 +267,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd482s"
-  post 'estd482s/primary_read(.:format)' => 'estd482s#do_primary_read', :as => 'do_estd482_primary_read'
-  get 'estd482s/primary_read(.:format)' => 'estd482s#primary_read', :as => 'estd482_primary_read'
+  post 'estd482s/unstarted(.:format)' => 'estd482s#do_unstarted', :as => 'do_estd482_unstarted'
+  get 'estd482s/unstarted(.:format)' => 'estd482s#unstarted', :as => 'estd482_unstarted'
+  put 'estd482s/:id/enter_finding(.:format)' => 'estd482s#do_enter_finding', :as => 'do_estd482_enter_finding'
+  get 'estd482s/:id/enter_finding(.:format)' => 'estd482s#enter_finding', :as => 'estd482_enter_finding'
   put 'estd482s/:id/second_read(.:format)' => 'estd482s#do_second_read', :as => 'do_estd482_second_read'
   get 'estd482s/:id/second_read(.:format)' => 'estd482s#second_read', :as => 'estd482_second_read'
+  put 'estd482s/:id/return_to_primary(.:format)' => 'estd482s#do_return_to_primary', :as => 'do_estd482_return_to_primary'
+  get 'estd482s/:id/return_to_primary(.:format)' => 'estd482s#return_to_primary', :as => 'estd482_return_to_primary'
   put 'estd482s/:id/completion(.:format)' => 'estd482s#do_completion', :as => 'do_estd482_completion'
   get 'estd482s/:id/completion(.:format)' => 'estd482s#completion', :as => 'estd482_completion'
 
@@ -236,10 +288,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd452s"
-  post 'estd452s/primary_read(.:format)' => 'estd452s#do_primary_read', :as => 'do_estd452_primary_read'
-  get 'estd452s/primary_read(.:format)' => 'estd452s#primary_read', :as => 'estd452_primary_read'
+  post 'estd452s/unstarted(.:format)' => 'estd452s#do_unstarted', :as => 'do_estd452_unstarted'
+  get 'estd452s/unstarted(.:format)' => 'estd452s#unstarted', :as => 'estd452_unstarted'
+  put 'estd452s/:id/enter_finding(.:format)' => 'estd452s#do_enter_finding', :as => 'do_estd452_enter_finding'
+  get 'estd452s/:id/enter_finding(.:format)' => 'estd452s#enter_finding', :as => 'estd452_enter_finding'
   put 'estd452s/:id/second_read(.:format)' => 'estd452s#do_second_read', :as => 'do_estd452_second_read'
   get 'estd452s/:id/second_read(.:format)' => 'estd452s#second_read', :as => 'estd452_second_read'
+  put 'estd452s/:id/return_to_primary(.:format)' => 'estd452s#do_return_to_primary', :as => 'do_estd452_return_to_primary'
+  get 'estd452s/:id/return_to_primary(.:format)' => 'estd452s#return_to_primary', :as => 'estd452_return_to_primary'
   put 'estd452s/:id/completion(.:format)' => 'estd452s#do_completion', :as => 'do_estd452_completion'
   get 'estd452s/:id/completion(.:format)' => 'estd452s#completion', :as => 'estd452_completion'
 
@@ -253,10 +309,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd481s"
-  post 'estd481s/primary_read(.:format)' => 'estd481s#do_primary_read', :as => 'do_estd481_primary_read'
-  get 'estd481s/primary_read(.:format)' => 'estd481s#primary_read', :as => 'estd481_primary_read'
+  post 'estd481s/unstarted(.:format)' => 'estd481s#do_unstarted', :as => 'do_estd481_unstarted'
+  get 'estd481s/unstarted(.:format)' => 'estd481s#unstarted', :as => 'estd481_unstarted'
+  put 'estd481s/:id/enter_finding(.:format)' => 'estd481s#do_enter_finding', :as => 'do_estd481_enter_finding'
+  get 'estd481s/:id/enter_finding(.:format)' => 'estd481s#enter_finding', :as => 'estd481_enter_finding'
   put 'estd481s/:id/second_read(.:format)' => 'estd481s#do_second_read', :as => 'do_estd481_second_read'
   get 'estd481s/:id/second_read(.:format)' => 'estd481s#second_read', :as => 'estd481_second_read'
+  put 'estd481s/:id/return_to_primary(.:format)' => 'estd481s#do_return_to_primary', :as => 'do_estd481_return_to_primary'
+  get 'estd481s/:id/return_to_primary(.:format)' => 'estd481s#return_to_primary', :as => 'estd481_return_to_primary'
   put 'estd481s/:id/completion(.:format)' => 'estd481s#do_completion', :as => 'do_estd481_completion'
   get 'estd481s/:id/completion(.:format)' => 'estd481s#completion', :as => 'estd481_completion'
 
@@ -270,10 +330,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil713s"
-  post 'mil713s/primary_read(.:format)' => 'mil713s#do_primary_read', :as => 'do_mil713_primary_read'
-  get 'mil713s/primary_read(.:format)' => 'mil713s#primary_read', :as => 'mil713_primary_read'
+  post 'mil713s/unstarted(.:format)' => 'mil713s#do_unstarted', :as => 'do_mil713_unstarted'
+  get 'mil713s/unstarted(.:format)' => 'mil713s#unstarted', :as => 'mil713_unstarted'
+  put 'mil713s/:id/enter_finding(.:format)' => 'mil713s#do_enter_finding', :as => 'do_mil713_enter_finding'
+  get 'mil713s/:id/enter_finding(.:format)' => 'mil713s#enter_finding', :as => 'mil713_enter_finding'
   put 'mil713s/:id/second_read(.:format)' => 'mil713s#do_second_read', :as => 'do_mil713_second_read'
   get 'mil713s/:id/second_read(.:format)' => 'mil713s#second_read', :as => 'mil713_second_read'
+  put 'mil713s/:id/return_to_primary(.:format)' => 'mil713s#do_return_to_primary', :as => 'do_mil713_return_to_primary'
+  get 'mil713s/:id/return_to_primary(.:format)' => 'mil713s#return_to_primary', :as => 'mil713_return_to_primary'
   put 'mil713s/:id/completion(.:format)' => 'mil713s#do_completion', :as => 'do_mil713_completion'
   get 'mil713s/:id/completion(.:format)' => 'mil713s#completion', :as => 'mil713_completion'
 
@@ -287,10 +351,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46311s"
-  post 'estd46311s/primary_read(.:format)' => 'estd46311s#do_primary_read', :as => 'do_estd46311_primary_read'
-  get 'estd46311s/primary_read(.:format)' => 'estd46311s#primary_read', :as => 'estd46311_primary_read'
+  post 'estd46311s/unstarted(.:format)' => 'estd46311s#do_unstarted', :as => 'do_estd46311_unstarted'
+  get 'estd46311s/unstarted(.:format)' => 'estd46311s#unstarted', :as => 'estd46311_unstarted'
+  put 'estd46311s/:id/enter_finding(.:format)' => 'estd46311s#do_enter_finding', :as => 'do_estd46311_enter_finding'
+  get 'estd46311s/:id/enter_finding(.:format)' => 'estd46311s#enter_finding', :as => 'estd46311_enter_finding'
   put 'estd46311s/:id/second_read(.:format)' => 'estd46311s#do_second_read', :as => 'do_estd46311_second_read'
   get 'estd46311s/:id/second_read(.:format)' => 'estd46311s#second_read', :as => 'estd46311_second_read'
+  put 'estd46311s/:id/return_to_primary(.:format)' => 'estd46311s#do_return_to_primary', :as => 'do_estd46311_return_to_primary'
+  get 'estd46311s/:id/return_to_primary(.:format)' => 'estd46311s#return_to_primary', :as => 'estd46311_return_to_primary'
   put 'estd46311s/:id/completion(.:format)' => 'estd46311s#do_completion', :as => 'do_estd46311_completion'
   get 'estd46311s/:id/completion(.:format)' => 'estd46311s#completion', :as => 'estd46311_completion'
 
@@ -304,10 +372,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med11s"
-  post 'med11s/primary_read(.:format)' => 'med11s#do_primary_read', :as => 'do_med11_primary_read'
-  get 'med11s/primary_read(.:format)' => 'med11s#primary_read', :as => 'med11_primary_read'
+  post 'med11s/unstarted(.:format)' => 'med11s#do_unstarted', :as => 'do_med11_unstarted'
+  get 'med11s/unstarted(.:format)' => 'med11s#unstarted', :as => 'med11_unstarted'
+  put 'med11s/:id/enter_finding(.:format)' => 'med11s#do_enter_finding', :as => 'do_med11_enter_finding'
+  get 'med11s/:id/enter_finding(.:format)' => 'med11s#enter_finding', :as => 'med11_enter_finding'
   put 'med11s/:id/second_read(.:format)' => 'med11s#do_second_read', :as => 'do_med11_second_read'
   get 'med11s/:id/second_read(.:format)' => 'med11s#second_read', :as => 'med11_second_read'
+  put 'med11s/:id/return_to_primary(.:format)' => 'med11s#do_return_to_primary', :as => 'do_med11_return_to_primary'
+  get 'med11s/:id/return_to_primary(.:format)' => 'med11s#return_to_primary', :as => 'med11_return_to_primary'
   put 'med11s/:id/completion(.:format)' => 'med11s#do_completion', :as => 'do_med11_completion'
   get 'med11s/:id/completion(.:format)' => 'med11s#completion', :as => 'med11_completion'
 
@@ -321,10 +393,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil465s"
-  post 'mil465s/primary_read(.:format)' => 'mil465s#do_primary_read', :as => 'do_mil465_primary_read'
-  get 'mil465s/primary_read(.:format)' => 'mil465s#primary_read', :as => 'mil465_primary_read'
+  post 'mil465s/unstarted(.:format)' => 'mil465s#do_unstarted', :as => 'do_mil465_unstarted'
+  get 'mil465s/unstarted(.:format)' => 'mil465s#unstarted', :as => 'mil465_unstarted'
+  put 'mil465s/:id/enter_finding(.:format)' => 'mil465s#do_enter_finding', :as => 'do_mil465_enter_finding'
+  get 'mil465s/:id/enter_finding(.:format)' => 'mil465s#enter_finding', :as => 'mil465_enter_finding'
   put 'mil465s/:id/second_read(.:format)' => 'mil465s#do_second_read', :as => 'do_mil465_second_read'
   get 'mil465s/:id/second_read(.:format)' => 'mil465s#second_read', :as => 'mil465_second_read'
+  put 'mil465s/:id/return_to_primary(.:format)' => 'mil465s#do_return_to_primary', :as => 'do_mil465_return_to_primary'
+  get 'mil465s/:id/return_to_primary(.:format)' => 'mil465s#return_to_primary', :as => 'mil465_return_to_primary'
   put 'mil465s/:id/completion(.:format)' => 'mil465s#do_completion', :as => 'do_mil465_completion'
   get 'mil465s/:id/completion(.:format)' => 'mil465s#completion', :as => 'mil465_completion'
 
@@ -338,10 +414,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4133s"
-  post 'estd4133s/primary_read(.:format)' => 'estd4133s#do_primary_read', :as => 'do_estd4133_primary_read'
-  get 'estd4133s/primary_read(.:format)' => 'estd4133s#primary_read', :as => 'estd4133_primary_read'
+  post 'estd4133s/unstarted(.:format)' => 'estd4133s#do_unstarted', :as => 'do_estd4133_unstarted'
+  get 'estd4133s/unstarted(.:format)' => 'estd4133s#unstarted', :as => 'estd4133_unstarted'
+  put 'estd4133s/:id/enter_finding(.:format)' => 'estd4133s#do_enter_finding', :as => 'do_estd4133_enter_finding'
+  get 'estd4133s/:id/enter_finding(.:format)' => 'estd4133s#enter_finding', :as => 'estd4133_enter_finding'
   put 'estd4133s/:id/second_read(.:format)' => 'estd4133s#do_second_read', :as => 'do_estd4133_second_read'
   get 'estd4133s/:id/second_read(.:format)' => 'estd4133s#second_read', :as => 'estd4133_second_read'
+  put 'estd4133s/:id/return_to_primary(.:format)' => 'estd4133s#do_return_to_primary', :as => 'do_estd4133_return_to_primary'
+  get 'estd4133s/:id/return_to_primary(.:format)' => 'estd4133s#return_to_primary', :as => 'estd4133_return_to_primary'
   put 'estd4133s/:id/completion(.:format)' => 'estd4133s#do_completion', :as => 'do_estd4133_completion'
   get 'estd4133s/:id/completion(.:format)' => 'estd4133s#completion', :as => 'estd4133_completion'
 
@@ -355,10 +435,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4843s"
-  post 'estd4843s/primary_read(.:format)' => 'estd4843s#do_primary_read', :as => 'do_estd4843_primary_read'
-  get 'estd4843s/primary_read(.:format)' => 'estd4843s#primary_read', :as => 'estd4843_primary_read'
+  post 'estd4843s/unstarted(.:format)' => 'estd4843s#do_unstarted', :as => 'do_estd4843_unstarted'
+  get 'estd4843s/unstarted(.:format)' => 'estd4843s#unstarted', :as => 'estd4843_unstarted'
+  put 'estd4843s/:id/enter_finding(.:format)' => 'estd4843s#do_enter_finding', :as => 'do_estd4843_enter_finding'
+  get 'estd4843s/:id/enter_finding(.:format)' => 'estd4843s#enter_finding', :as => 'estd4843_enter_finding'
   put 'estd4843s/:id/second_read(.:format)' => 'estd4843s#do_second_read', :as => 'do_estd4843_second_read'
   get 'estd4843s/:id/second_read(.:format)' => 'estd4843s#second_read', :as => 'estd4843_second_read'
+  put 'estd4843s/:id/return_to_primary(.:format)' => 'estd4843s#do_return_to_primary', :as => 'do_estd4843_return_to_primary'
+  get 'estd4843s/:id/return_to_primary(.:format)' => 'estd4843s#return_to_primary', :as => 'estd4843_return_to_primary'
   put 'estd4843s/:id/completion(.:format)' => 'estd4843s#do_completion', :as => 'do_estd4843_completion'
   get 'estd4843s/:id/completion(.:format)' => 'estd4843s#completion', :as => 'estd4843_completion'
 
@@ -372,10 +456,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil451s"
-  post 'mil451s/primary_read(.:format)' => 'mil451s#do_primary_read', :as => 'do_mil451_primary_read'
-  get 'mil451s/primary_read(.:format)' => 'mil451s#primary_read', :as => 'mil451_primary_read'
+  post 'mil451s/unstarted(.:format)' => 'mil451s#do_unstarted', :as => 'do_mil451_unstarted'
+  get 'mil451s/unstarted(.:format)' => 'mil451s#unstarted', :as => 'mil451_unstarted'
+  put 'mil451s/:id/enter_finding(.:format)' => 'mil451s#do_enter_finding', :as => 'do_mil451_enter_finding'
+  get 'mil451s/:id/enter_finding(.:format)' => 'mil451s#enter_finding', :as => 'mil451_enter_finding'
   put 'mil451s/:id/second_read(.:format)' => 'mil451s#do_second_read', :as => 'do_mil451_second_read'
   get 'mil451s/:id/second_read(.:format)' => 'mil451s#second_read', :as => 'mil451_second_read'
+  put 'mil451s/:id/return_to_primary(.:format)' => 'mil451s#do_return_to_primary', :as => 'do_mil451_return_to_primary'
+  get 'mil451s/:id/return_to_primary(.:format)' => 'mil451s#return_to_primary', :as => 'mil451_return_to_primary'
   put 'mil451s/:id/completion(.:format)' => 'mil451s#do_completion', :as => 'do_mil451_completion'
   get 'mil451s/:id/completion(.:format)' => 'mil451s#completion', :as => 'mil451_completion'
 
@@ -389,10 +477,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med41s"
-  post 'med41s/primary_read(.:format)' => 'med41s#do_primary_read', :as => 'do_med41_primary_read'
-  get 'med41s/primary_read(.:format)' => 'med41s#primary_read', :as => 'med41_primary_read'
+  post 'med41s/unstarted(.:format)' => 'med41s#do_unstarted', :as => 'do_med41_unstarted'
+  get 'med41s/unstarted(.:format)' => 'med41s#unstarted', :as => 'med41_unstarted'
+  put 'med41s/:id/enter_finding(.:format)' => 'med41s#do_enter_finding', :as => 'do_med41_enter_finding'
+  get 'med41s/:id/enter_finding(.:format)' => 'med41s#enter_finding', :as => 'med41_enter_finding'
   put 'med41s/:id/second_read(.:format)' => 'med41s#do_second_read', :as => 'do_med41_second_read'
   get 'med41s/:id/second_read(.:format)' => 'med41s#second_read', :as => 'med41_second_read'
+  put 'med41s/:id/return_to_primary(.:format)' => 'med41s#do_return_to_primary', :as => 'do_med41_return_to_primary'
+  get 'med41s/:id/return_to_primary(.:format)' => 'med41s#return_to_primary', :as => 'med41_return_to_primary'
   put 'med41s/:id/completion(.:format)' => 'med41s#do_completion', :as => 'do_med41_completion'
   get 'med41s/:id/completion(.:format)' => 'med41s#completion', :as => 'med41_completion'
 
@@ -406,10 +498,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med93s"
-  post 'med93s/primary_read(.:format)' => 'med93s#do_primary_read', :as => 'do_med93_primary_read'
-  get 'med93s/primary_read(.:format)' => 'med93s#primary_read', :as => 'med93_primary_read'
+  post 'med93s/unstarted(.:format)' => 'med93s#do_unstarted', :as => 'do_med93_unstarted'
+  get 'med93s/unstarted(.:format)' => 'med93s#unstarted', :as => 'med93_unstarted'
+  put 'med93s/:id/enter_finding(.:format)' => 'med93s#do_enter_finding', :as => 'do_med93_enter_finding'
+  get 'med93s/:id/enter_finding(.:format)' => 'med93s#enter_finding', :as => 'med93_enter_finding'
   put 'med93s/:id/second_read(.:format)' => 'med93s#do_second_read', :as => 'do_med93_second_read'
   get 'med93s/:id/second_read(.:format)' => 'med93s#second_read', :as => 'med93_second_read'
+  put 'med93s/:id/return_to_primary(.:format)' => 'med93s#do_return_to_primary', :as => 'do_med93_return_to_primary'
+  get 'med93s/:id/return_to_primary(.:format)' => 'med93s#return_to_primary', :as => 'med93_return_to_primary'
   put 'med93s/:id/completion(.:format)' => 'med93s#do_completion', :as => 'do_med93_completion'
   get 'med93s/:id/completion(.:format)' => 'med93s#completion', :as => 'med93_completion'
 
@@ -423,10 +519,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd472s"
-  post 'estd472s/primary_read(.:format)' => 'estd472s#do_primary_read', :as => 'do_estd472_primary_read'
-  get 'estd472s/primary_read(.:format)' => 'estd472s#primary_read', :as => 'estd472_primary_read'
+  post 'estd472s/unstarted(.:format)' => 'estd472s#do_unstarted', :as => 'do_estd472_unstarted'
+  get 'estd472s/unstarted(.:format)' => 'estd472s#unstarted', :as => 'estd472_unstarted'
+  put 'estd472s/:id/enter_finding(.:format)' => 'estd472s#do_enter_finding', :as => 'do_estd472_enter_finding'
+  get 'estd472s/:id/enter_finding(.:format)' => 'estd472s#enter_finding', :as => 'estd472_enter_finding'
   put 'estd472s/:id/second_read(.:format)' => 'estd472s#do_second_read', :as => 'do_estd472_second_read'
   get 'estd472s/:id/second_read(.:format)' => 'estd472s#second_read', :as => 'estd472_second_read'
+  put 'estd472s/:id/return_to_primary(.:format)' => 'estd472s#do_return_to_primary', :as => 'do_estd472_return_to_primary'
+  get 'estd472s/:id/return_to_primary(.:format)' => 'estd472s#return_to_primary', :as => 'estd472_return_to_primary'
   put 'estd472s/:id/completion(.:format)' => 'estd472s#do_completion', :as => 'do_estd472_completion'
   get 'estd472s/:id/completion(.:format)' => 'estd472s#completion', :as => 'estd472_completion'
 
@@ -440,10 +540,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4101s"
-  post 'estd4101s/primary_read(.:format)' => 'estd4101s#do_primary_read', :as => 'do_estd4101_primary_read'
-  get 'estd4101s/primary_read(.:format)' => 'estd4101s#primary_read', :as => 'estd4101_primary_read'
+  post 'estd4101s/unstarted(.:format)' => 'estd4101s#do_unstarted', :as => 'do_estd4101_unstarted'
+  get 'estd4101s/unstarted(.:format)' => 'estd4101s#unstarted', :as => 'estd4101_unstarted'
+  put 'estd4101s/:id/enter_finding(.:format)' => 'estd4101s#do_enter_finding', :as => 'do_estd4101_enter_finding'
+  get 'estd4101s/:id/enter_finding(.:format)' => 'estd4101s#enter_finding', :as => 'estd4101_enter_finding'
   put 'estd4101s/:id/second_read(.:format)' => 'estd4101s#do_second_read', :as => 'do_estd4101_second_read'
   get 'estd4101s/:id/second_read(.:format)' => 'estd4101s#second_read', :as => 'estd4101_second_read'
+  put 'estd4101s/:id/return_to_primary(.:format)' => 'estd4101s#do_return_to_primary', :as => 'do_estd4101_return_to_primary'
+  get 'estd4101s/:id/return_to_primary(.:format)' => 'estd4101s#return_to_primary', :as => 'estd4101_return_to_primary'
   put 'estd4101s/:id/completion(.:format)' => 'estd4101s#do_completion', :as => 'do_estd4101_completion'
   get 'estd4101s/:id/completion(.:format)' => 'estd4101s#completion', :as => 'estd4101_completion'
 
@@ -457,10 +561,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46319s"
-  post 'estd46319s/primary_read(.:format)' => 'estd46319s#do_primary_read', :as => 'do_estd46319_primary_read'
-  get 'estd46319s/primary_read(.:format)' => 'estd46319s#primary_read', :as => 'estd46319_primary_read'
+  post 'estd46319s/unstarted(.:format)' => 'estd46319s#do_unstarted', :as => 'do_estd46319_unstarted'
+  get 'estd46319s/unstarted(.:format)' => 'estd46319s#unstarted', :as => 'estd46319_unstarted'
+  put 'estd46319s/:id/enter_finding(.:format)' => 'estd46319s#do_enter_finding', :as => 'do_estd46319_enter_finding'
+  get 'estd46319s/:id/enter_finding(.:format)' => 'estd46319s#enter_finding', :as => 'estd46319_enter_finding'
   put 'estd46319s/:id/second_read(.:format)' => 'estd46319s#do_second_read', :as => 'do_estd46319_second_read'
   get 'estd46319s/:id/second_read(.:format)' => 'estd46319s#second_read', :as => 'estd46319_second_read'
+  put 'estd46319s/:id/return_to_primary(.:format)' => 'estd46319s#do_return_to_primary', :as => 'do_estd46319_return_to_primary'
+  get 'estd46319s/:id/return_to_primary(.:format)' => 'estd46319s#return_to_primary', :as => 'estd46319_return_to_primary'
   put 'estd46319s/:id/completion(.:format)' => 'estd46319s#do_completion', :as => 'do_estd46319_completion'
   get 'estd46319s/:id/completion(.:format)' => 'estd46319s#completion', :as => 'estd46319_completion'
 
@@ -474,10 +582,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd432s"
-  post 'estd432s/primary_read(.:format)' => 'estd432s#do_primary_read', :as => 'do_estd432_primary_read'
-  get 'estd432s/primary_read(.:format)' => 'estd432s#primary_read', :as => 'estd432_primary_read'
+  post 'estd432s/unstarted(.:format)' => 'estd432s#do_unstarted', :as => 'do_estd432_unstarted'
+  get 'estd432s/unstarted(.:format)' => 'estd432s#unstarted', :as => 'estd432_unstarted'
+  put 'estd432s/:id/enter_finding(.:format)' => 'estd432s#do_enter_finding', :as => 'do_estd432_enter_finding'
+  get 'estd432s/:id/enter_finding(.:format)' => 'estd432s#enter_finding', :as => 'estd432_enter_finding'
   put 'estd432s/:id/second_read(.:format)' => 'estd432s#do_second_read', :as => 'do_estd432_second_read'
   get 'estd432s/:id/second_read(.:format)' => 'estd432s#second_read', :as => 'estd432_second_read'
+  put 'estd432s/:id/return_to_primary(.:format)' => 'estd432s#do_return_to_primary', :as => 'do_estd432_return_to_primary'
+  get 'estd432s/:id/return_to_primary(.:format)' => 'estd432s#return_to_primary', :as => 'estd432_return_to_primary'
   put 'estd432s/:id/completion(.:format)' => 'estd432s#do_completion', :as => 'do_estd432_completion'
   get 'estd432s/:id/completion(.:format)' => 'estd432s#completion', :as => 'estd432_completion'
 
@@ -491,10 +603,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med45s"
-  post 'med45s/primary_read(.:format)' => 'med45s#do_primary_read', :as => 'do_med45_primary_read'
-  get 'med45s/primary_read(.:format)' => 'med45s#primary_read', :as => 'med45_primary_read'
+  post 'med45s/unstarted(.:format)' => 'med45s#do_unstarted', :as => 'do_med45_unstarted'
+  get 'med45s/unstarted(.:format)' => 'med45s#unstarted', :as => 'med45_unstarted'
+  put 'med45s/:id/enter_finding(.:format)' => 'med45s#do_enter_finding', :as => 'do_med45_enter_finding'
+  get 'med45s/:id/enter_finding(.:format)' => 'med45s#enter_finding', :as => 'med45_enter_finding'
   put 'med45s/:id/second_read(.:format)' => 'med45s#do_second_read', :as => 'do_med45_second_read'
   get 'med45s/:id/second_read(.:format)' => 'med45s#second_read', :as => 'med45_second_read'
+  put 'med45s/:id/return_to_primary(.:format)' => 'med45s#do_return_to_primary', :as => 'do_med45_return_to_primary'
+  get 'med45s/:id/return_to_primary(.:format)' => 'med45s#return_to_primary', :as => 'med45_return_to_primary'
   put 'med45s/:id/completion(.:format)' => 'med45s#do_completion', :as => 'do_med45_completion'
   get 'med45s/:id/completion(.:format)' => 'med45s#completion', :as => 'med45_completion'
 
@@ -508,10 +624,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4112s"
-  post 'estd4112s/primary_read(.:format)' => 'estd4112s#do_primary_read', :as => 'do_estd4112_primary_read'
-  get 'estd4112s/primary_read(.:format)' => 'estd4112s#primary_read', :as => 'estd4112_primary_read'
+  post 'estd4112s/unstarted(.:format)' => 'estd4112s#do_unstarted', :as => 'do_estd4112_unstarted'
+  get 'estd4112s/unstarted(.:format)' => 'estd4112s#unstarted', :as => 'estd4112_unstarted'
+  put 'estd4112s/:id/enter_finding(.:format)' => 'estd4112s#do_enter_finding', :as => 'do_estd4112_enter_finding'
+  get 'estd4112s/:id/enter_finding(.:format)' => 'estd4112s#enter_finding', :as => 'estd4112_enter_finding'
   put 'estd4112s/:id/second_read(.:format)' => 'estd4112s#do_second_read', :as => 'do_estd4112_second_read'
   get 'estd4112s/:id/second_read(.:format)' => 'estd4112s#second_read', :as => 'estd4112_second_read'
+  put 'estd4112s/:id/return_to_primary(.:format)' => 'estd4112s#do_return_to_primary', :as => 'do_estd4112_return_to_primary'
+  get 'estd4112s/:id/return_to_primary(.:format)' => 'estd4112s#return_to_primary', :as => 'estd4112_return_to_primary'
   put 'estd4112s/:id/completion(.:format)' => 'estd4112s#do_completion', :as => 'do_estd4112_completion'
   get 'estd4112s/:id/completion(.:format)' => 'estd4112s#completion', :as => 'estd4112_completion'
 
@@ -525,10 +645,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil537s"
-  post 'mil537s/primary_read(.:format)' => 'mil537s#do_primary_read', :as => 'do_mil537_primary_read'
-  get 'mil537s/primary_read(.:format)' => 'mil537s#primary_read', :as => 'mil537_primary_read'
+  post 'mil537s/unstarted(.:format)' => 'mil537s#do_unstarted', :as => 'do_mil537_unstarted'
+  get 'mil537s/unstarted(.:format)' => 'mil537s#unstarted', :as => 'mil537_unstarted'
+  put 'mil537s/:id/enter_finding(.:format)' => 'mil537s#do_enter_finding', :as => 'do_mil537_enter_finding'
+  get 'mil537s/:id/enter_finding(.:format)' => 'mil537s#enter_finding', :as => 'mil537_enter_finding'
   put 'mil537s/:id/second_read(.:format)' => 'mil537s#do_second_read', :as => 'do_mil537_second_read'
   get 'mil537s/:id/second_read(.:format)' => 'mil537s#second_read', :as => 'mil537_second_read'
+  put 'mil537s/:id/return_to_primary(.:format)' => 'mil537s#do_return_to_primary', :as => 'do_mil537_return_to_primary'
+  get 'mil537s/:id/return_to_primary(.:format)' => 'mil537s#return_to_primary', :as => 'mil537_return_to_primary'
   put 'mil537s/:id/completion(.:format)' => 'mil537s#do_completion', :as => 'do_mil537_completion'
   get 'mil537s/:id/completion(.:format)' => 'mil537s#completion', :as => 'mil537_completion'
 
@@ -542,10 +666,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4631s"
-  post 'estd4631s/primary_read(.:format)' => 'estd4631s#do_primary_read', :as => 'do_estd4631_primary_read'
-  get 'estd4631s/primary_read(.:format)' => 'estd4631s#primary_read', :as => 'estd4631_primary_read'
+  post 'estd4631s/unstarted(.:format)' => 'estd4631s#do_unstarted', :as => 'do_estd4631_unstarted'
+  get 'estd4631s/unstarted(.:format)' => 'estd4631s#unstarted', :as => 'estd4631_unstarted'
+  put 'estd4631s/:id/enter_finding(.:format)' => 'estd4631s#do_enter_finding', :as => 'do_estd4631_enter_finding'
+  get 'estd4631s/:id/enter_finding(.:format)' => 'estd4631s#enter_finding', :as => 'estd4631_enter_finding'
   put 'estd4631s/:id/second_read(.:format)' => 'estd4631s#do_second_read', :as => 'do_estd4631_second_read'
   get 'estd4631s/:id/second_read(.:format)' => 'estd4631s#second_read', :as => 'estd4631_second_read'
+  put 'estd4631s/:id/return_to_primary(.:format)' => 'estd4631s#do_return_to_primary', :as => 'do_estd4631_return_to_primary'
+  get 'estd4631s/:id/return_to_primary(.:format)' => 'estd4631s#return_to_primary', :as => 'estd4631_return_to_primary'
   put 'estd4631s/:id/completion(.:format)' => 'estd4631s#do_completion', :as => 'do_estd4631_completion'
   get 'estd4631s/:id/completion(.:format)' => 'estd4631s#completion', :as => 'estd4631_completion'
 
@@ -559,10 +687,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46325s"
-  post 'estd46325s/primary_read(.:format)' => 'estd46325s#do_primary_read', :as => 'do_estd46325_primary_read'
-  get 'estd46325s/primary_read(.:format)' => 'estd46325s#primary_read', :as => 'estd46325_primary_read'
+  post 'estd46325s/unstarted(.:format)' => 'estd46325s#do_unstarted', :as => 'do_estd46325_unstarted'
+  get 'estd46325s/unstarted(.:format)' => 'estd46325s#unstarted', :as => 'estd46325_unstarted'
+  put 'estd46325s/:id/enter_finding(.:format)' => 'estd46325s#do_enter_finding', :as => 'do_estd46325_enter_finding'
+  get 'estd46325s/:id/enter_finding(.:format)' => 'estd46325s#enter_finding', :as => 'estd46325_enter_finding'
   put 'estd46325s/:id/second_read(.:format)' => 'estd46325s#do_second_read', :as => 'do_estd46325_second_read'
   get 'estd46325s/:id/second_read(.:format)' => 'estd46325s#second_read', :as => 'estd46325_second_read'
+  put 'estd46325s/:id/return_to_primary(.:format)' => 'estd46325s#do_return_to_primary', :as => 'do_estd46325_return_to_primary'
+  get 'estd46325s/:id/return_to_primary(.:format)' => 'estd46325s#return_to_primary', :as => 'estd46325_return_to_primary'
   put 'estd46325s/:id/completion(.:format)' => 'estd46325s#do_completion', :as => 'do_estd46325_completion'
   get 'estd46325s/:id/completion(.:format)' => 'estd46325s#completion', :as => 'estd46325_completion'
 
@@ -576,10 +708,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4141s"
-  post 'estd4141s/primary_read(.:format)' => 'estd4141s#do_primary_read', :as => 'do_estd4141_primary_read'
-  get 'estd4141s/primary_read(.:format)' => 'estd4141s#primary_read', :as => 'estd4141_primary_read'
+  post 'estd4141s/unstarted(.:format)' => 'estd4141s#do_unstarted', :as => 'do_estd4141_unstarted'
+  get 'estd4141s/unstarted(.:format)' => 'estd4141s#unstarted', :as => 'estd4141_unstarted'
+  put 'estd4141s/:id/enter_finding(.:format)' => 'estd4141s#do_enter_finding', :as => 'do_estd4141_enter_finding'
+  get 'estd4141s/:id/enter_finding(.:format)' => 'estd4141s#enter_finding', :as => 'estd4141_enter_finding'
   put 'estd4141s/:id/second_read(.:format)' => 'estd4141s#do_second_read', :as => 'do_estd4141_second_read'
   get 'estd4141s/:id/second_read(.:format)' => 'estd4141s#second_read', :as => 'estd4141_second_read'
+  put 'estd4141s/:id/return_to_primary(.:format)' => 'estd4141s#do_return_to_primary', :as => 'do_estd4141_return_to_primary'
+  get 'estd4141s/:id/return_to_primary(.:format)' => 'estd4141s#return_to_primary', :as => 'estd4141_return_to_primary'
   put 'estd4141s/:id/completion(.:format)' => 'estd4141s#do_completion', :as => 'do_estd4141_completion'
   get 'estd4141s/:id/completion(.:format)' => 'estd4141s#completion', :as => 'estd4141_completion'
 
@@ -593,10 +729,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46329s"
-  post 'estd46329s/primary_read(.:format)' => 'estd46329s#do_primary_read', :as => 'do_estd46329_primary_read'
-  get 'estd46329s/primary_read(.:format)' => 'estd46329s#primary_read', :as => 'estd46329_primary_read'
+  post 'estd46329s/unstarted(.:format)' => 'estd46329s#do_unstarted', :as => 'do_estd46329_unstarted'
+  get 'estd46329s/unstarted(.:format)' => 'estd46329s#unstarted', :as => 'estd46329_unstarted'
+  put 'estd46329s/:id/enter_finding(.:format)' => 'estd46329s#do_enter_finding', :as => 'do_estd46329_enter_finding'
+  get 'estd46329s/:id/enter_finding(.:format)' => 'estd46329s#enter_finding', :as => 'estd46329_enter_finding'
   put 'estd46329s/:id/second_read(.:format)' => 'estd46329s#do_second_read', :as => 'do_estd46329_second_read'
   get 'estd46329s/:id/second_read(.:format)' => 'estd46329s#second_read', :as => 'estd46329_second_read'
+  put 'estd46329s/:id/return_to_primary(.:format)' => 'estd46329s#do_return_to_primary', :as => 'do_estd46329_return_to_primary'
+  get 'estd46329s/:id/return_to_primary(.:format)' => 'estd46329s#return_to_primary', :as => 'estd46329_return_to_primary'
   put 'estd46329s/:id/completion(.:format)' => 'estd46329s#do_completion', :as => 'do_estd46329_completion'
   get 'estd46329s/:id/completion(.:format)' => 'estd46329s#completion', :as => 'estd46329_completion'
 
@@ -610,10 +750,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil211s"
-  post 'mil211s/primary_read(.:format)' => 'mil211s#do_primary_read', :as => 'do_mil211_primary_read'
-  get 'mil211s/primary_read(.:format)' => 'mil211s#primary_read', :as => 'mil211_primary_read'
+  post 'mil211s/unstarted(.:format)' => 'mil211s#do_unstarted', :as => 'do_mil211_unstarted'
+  get 'mil211s/unstarted(.:format)' => 'mil211s#unstarted', :as => 'mil211_unstarted'
+  put 'mil211s/:id/enter_finding(.:format)' => 'mil211s#do_enter_finding', :as => 'do_mil211_enter_finding'
+  get 'mil211s/:id/enter_finding(.:format)' => 'mil211s#enter_finding', :as => 'mil211_enter_finding'
   put 'mil211s/:id/second_read(.:format)' => 'mil211s#do_second_read', :as => 'do_mil211_second_read'
   get 'mil211s/:id/second_read(.:format)' => 'mil211s#second_read', :as => 'mil211_second_read'
+  put 'mil211s/:id/return_to_primary(.:format)' => 'mil211s#do_return_to_primary', :as => 'do_mil211_return_to_primary'
+  get 'mil211s/:id/return_to_primary(.:format)' => 'mil211s#return_to_primary', :as => 'mil211_return_to_primary'
   put 'mil211s/:id/completion(.:format)' => 'mil211s#do_completion', :as => 'do_mil211_completion'
   get 'mil211s/:id/completion(.:format)' => 'mil211s#completion', :as => 'mil211_completion'
 
@@ -627,10 +771,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4132s"
-  post 'estd4132s/primary_read(.:format)' => 'estd4132s#do_primary_read', :as => 'do_estd4132_primary_read'
-  get 'estd4132s/primary_read(.:format)' => 'estd4132s#primary_read', :as => 'estd4132_primary_read'
+  post 'estd4132s/unstarted(.:format)' => 'estd4132s#do_unstarted', :as => 'do_estd4132_unstarted'
+  get 'estd4132s/unstarted(.:format)' => 'estd4132s#unstarted', :as => 'estd4132_unstarted'
+  put 'estd4132s/:id/enter_finding(.:format)' => 'estd4132s#do_enter_finding', :as => 'do_estd4132_enter_finding'
+  get 'estd4132s/:id/enter_finding(.:format)' => 'estd4132s#enter_finding', :as => 'estd4132_enter_finding'
   put 'estd4132s/:id/second_read(.:format)' => 'estd4132s#do_second_read', :as => 'do_estd4132_second_read'
   get 'estd4132s/:id/second_read(.:format)' => 'estd4132s#second_read', :as => 'estd4132_second_read'
+  put 'estd4132s/:id/return_to_primary(.:format)' => 'estd4132s#do_return_to_primary', :as => 'do_estd4132_return_to_primary'
+  get 'estd4132s/:id/return_to_primary(.:format)' => 'estd4132s#return_to_primary', :as => 'estd4132_return_to_primary'
   put 'estd4132s/:id/completion(.:format)' => 'estd4132s#do_completion', :as => 'do_estd4132_completion'
   get 'estd4132s/:id/completion(.:format)' => 'estd4132s#completion', :as => 'estd4132_completion'
 
@@ -644,10 +792,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil463s"
-  post 'mil463s/primary_read(.:format)' => 'mil463s#do_primary_read', :as => 'do_mil463_primary_read'
-  get 'mil463s/primary_read(.:format)' => 'mil463s#primary_read', :as => 'mil463_primary_read'
+  post 'mil463s/unstarted(.:format)' => 'mil463s#do_unstarted', :as => 'do_mil463_unstarted'
+  get 'mil463s/unstarted(.:format)' => 'mil463s#unstarted', :as => 'mil463_unstarted'
+  put 'mil463s/:id/enter_finding(.:format)' => 'mil463s#do_enter_finding', :as => 'do_mil463_enter_finding'
+  get 'mil463s/:id/enter_finding(.:format)' => 'mil463s#enter_finding', :as => 'mil463_enter_finding'
   put 'mil463s/:id/second_read(.:format)' => 'mil463s#do_second_read', :as => 'do_mil463_second_read'
   get 'mil463s/:id/second_read(.:format)' => 'mil463s#second_read', :as => 'mil463_second_read'
+  put 'mil463s/:id/return_to_primary(.:format)' => 'mil463s#do_return_to_primary', :as => 'do_mil463_return_to_primary'
+  get 'mil463s/:id/return_to_primary(.:format)' => 'mil463s#return_to_primary', :as => 'mil463_return_to_primary'
   put 'mil463s/:id/completion(.:format)' => 'mil463s#do_completion', :as => 'do_mil463_completion'
   get 'mil463s/:id/completion(.:format)' => 'mil463s#completion', :as => 'mil463_completion'
 
@@ -661,10 +813,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd322s"
-  post 'estd322s/primary_read(.:format)' => 'estd322s#do_primary_read', :as => 'do_estd322_primary_read'
-  get 'estd322s/primary_read(.:format)' => 'estd322s#primary_read', :as => 'estd322_primary_read'
+  post 'estd322s/unstarted(.:format)' => 'estd322s#do_unstarted', :as => 'do_estd322_unstarted'
+  get 'estd322s/unstarted(.:format)' => 'estd322s#unstarted', :as => 'estd322_unstarted'
+  put 'estd322s/:id/enter_finding(.:format)' => 'estd322s#do_enter_finding', :as => 'do_estd322_enter_finding'
+  get 'estd322s/:id/enter_finding(.:format)' => 'estd322s#enter_finding', :as => 'estd322_enter_finding'
   put 'estd322s/:id/second_read(.:format)' => 'estd322s#do_second_read', :as => 'do_estd322_second_read'
   get 'estd322s/:id/second_read(.:format)' => 'estd322s#second_read', :as => 'estd322_second_read'
+  put 'estd322s/:id/return_to_primary(.:format)' => 'estd322s#do_return_to_primary', :as => 'do_estd322_return_to_primary'
+  get 'estd322s/:id/return_to_primary(.:format)' => 'estd322s#return_to_primary', :as => 'estd322_return_to_primary'
   put 'estd322s/:id/completion(.:format)' => 'estd322s#do_completion', :as => 'do_estd322_completion'
   get 'estd322s/:id/completion(.:format)' => 'estd322s#completion', :as => 'estd322_completion'
 
@@ -678,10 +834,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46322s"
-  post 'estd46322s/primary_read(.:format)' => 'estd46322s#do_primary_read', :as => 'do_estd46322_primary_read'
-  get 'estd46322s/primary_read(.:format)' => 'estd46322s#primary_read', :as => 'estd46322_primary_read'
+  post 'estd46322s/unstarted(.:format)' => 'estd46322s#do_unstarted', :as => 'do_estd46322_unstarted'
+  get 'estd46322s/unstarted(.:format)' => 'estd46322s#unstarted', :as => 'estd46322_unstarted'
+  put 'estd46322s/:id/enter_finding(.:format)' => 'estd46322s#do_enter_finding', :as => 'do_estd46322_enter_finding'
+  get 'estd46322s/:id/enter_finding(.:format)' => 'estd46322s#enter_finding', :as => 'estd46322_enter_finding'
   put 'estd46322s/:id/second_read(.:format)' => 'estd46322s#do_second_read', :as => 'do_estd46322_second_read'
   get 'estd46322s/:id/second_read(.:format)' => 'estd46322s#second_read', :as => 'estd46322_second_read'
+  put 'estd46322s/:id/return_to_primary(.:format)' => 'estd46322s#do_return_to_primary', :as => 'do_estd46322_return_to_primary'
+  get 'estd46322s/:id/return_to_primary(.:format)' => 'estd46322s#return_to_primary', :as => 'estd46322_return_to_primary'
   put 'estd46322s/:id/completion(.:format)' => 'estd46322s#do_completion', :as => 'do_estd46322_completion'
   get 'estd46322s/:id/completion(.:format)' => 'estd46322s#completion', :as => 'estd46322_completion'
 
@@ -695,10 +855,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd442s"
-  post 'estd442s/primary_read(.:format)' => 'estd442s#do_primary_read', :as => 'do_estd442_primary_read'
-  get 'estd442s/primary_read(.:format)' => 'estd442s#primary_read', :as => 'estd442_primary_read'
+  post 'estd442s/unstarted(.:format)' => 'estd442s#do_unstarted', :as => 'do_estd442_unstarted'
+  get 'estd442s/unstarted(.:format)' => 'estd442s#unstarted', :as => 'estd442_unstarted'
+  put 'estd442s/:id/enter_finding(.:format)' => 'estd442s#do_enter_finding', :as => 'do_estd442_enter_finding'
+  get 'estd442s/:id/enter_finding(.:format)' => 'estd442s#enter_finding', :as => 'estd442_enter_finding'
   put 'estd442s/:id/second_read(.:format)' => 'estd442s#do_second_read', :as => 'do_estd442_second_read'
   get 'estd442s/:id/second_read(.:format)' => 'estd442s#second_read', :as => 'estd442_second_read'
+  put 'estd442s/:id/return_to_primary(.:format)' => 'estd442s#do_return_to_primary', :as => 'do_estd442_return_to_primary'
+  get 'estd442s/:id/return_to_primary(.:format)' => 'estd442s#return_to_primary', :as => 'estd442_return_to_primary'
   put 'estd442s/:id/completion(.:format)' => 'estd442s#do_completion', :as => 'do_estd442_completion'
   get 'estd442s/:id/completion(.:format)' => 'estd442s#completion', :as => 'estd442_completion'
 
@@ -712,10 +876,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med23s"
-  post 'med23s/primary_read(.:format)' => 'med23s#do_primary_read', :as => 'do_med23_primary_read'
-  get 'med23s/primary_read(.:format)' => 'med23s#primary_read', :as => 'med23_primary_read'
+  post 'med23s/unstarted(.:format)' => 'med23s#do_unstarted', :as => 'do_med23_unstarted'
+  get 'med23s/unstarted(.:format)' => 'med23s#unstarted', :as => 'med23_unstarted'
+  put 'med23s/:id/enter_finding(.:format)' => 'med23s#do_enter_finding', :as => 'do_med23_enter_finding'
+  get 'med23s/:id/enter_finding(.:format)' => 'med23s#enter_finding', :as => 'med23_enter_finding'
   put 'med23s/:id/second_read(.:format)' => 'med23s#do_second_read', :as => 'do_med23_second_read'
   get 'med23s/:id/second_read(.:format)' => 'med23s#second_read', :as => 'med23_second_read'
+  put 'med23s/:id/return_to_primary(.:format)' => 'med23s#do_return_to_primary', :as => 'do_med23_return_to_primary'
+  get 'med23s/:id/return_to_primary(.:format)' => 'med23s#return_to_primary', :as => 'med23_return_to_primary'
   put 'med23s/:id/completion(.:format)' => 'med23s#do_completion', :as => 'do_med23_completion'
   get 'med23s/:id/completion(.:format)' => 'med23s#completion', :as => 'med23_completion'
 
@@ -729,10 +897,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med92s"
-  post 'med92s/primary_read(.:format)' => 'med92s#do_primary_read', :as => 'do_med92_primary_read'
-  get 'med92s/primary_read(.:format)' => 'med92s#primary_read', :as => 'med92_primary_read'
+  post 'med92s/unstarted(.:format)' => 'med92s#do_unstarted', :as => 'do_med92_unstarted'
+  get 'med92s/unstarted(.:format)' => 'med92s#unstarted', :as => 'med92_unstarted'
+  put 'med92s/:id/enter_finding(.:format)' => 'med92s#do_enter_finding', :as => 'do_med92_enter_finding'
+  get 'med92s/:id/enter_finding(.:format)' => 'med92s#enter_finding', :as => 'med92_enter_finding'
   put 'med92s/:id/second_read(.:format)' => 'med92s#do_second_read', :as => 'do_med92_second_read'
   get 'med92s/:id/second_read(.:format)' => 'med92s#second_read', :as => 'med92_second_read'
+  put 'med92s/:id/return_to_primary(.:format)' => 'med92s#do_return_to_primary', :as => 'do_med92_return_to_primary'
+  get 'med92s/:id/return_to_primary(.:format)' => 'med92s#return_to_primary', :as => 'med92_return_to_primary'
   put 'med92s/:id/completion(.:format)' => 'med92s#do_completion', :as => 'do_med92_completion'
   get 'med92s/:id/completion(.:format)' => 'med92s#completion', :as => 'med92_completion'
 
@@ -746,10 +918,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil222s"
-  post 'mil222s/primary_read(.:format)' => 'mil222s#do_primary_read', :as => 'do_mil222_primary_read'
-  get 'mil222s/primary_read(.:format)' => 'mil222s#primary_read', :as => 'mil222_primary_read'
+  post 'mil222s/unstarted(.:format)' => 'mil222s#do_unstarted', :as => 'do_mil222_unstarted'
+  get 'mil222s/unstarted(.:format)' => 'mil222s#unstarted', :as => 'mil222_unstarted'
+  put 'mil222s/:id/enter_finding(.:format)' => 'mil222s#do_enter_finding', :as => 'do_mil222_enter_finding'
+  get 'mil222s/:id/enter_finding(.:format)' => 'mil222s#enter_finding', :as => 'mil222_enter_finding'
   put 'mil222s/:id/second_read(.:format)' => 'mil222s#do_second_read', :as => 'do_mil222_second_read'
   get 'mil222s/:id/second_read(.:format)' => 'mil222s#second_read', :as => 'mil222_second_read'
+  put 'mil222s/:id/return_to_primary(.:format)' => 'mil222s#do_return_to_primary', :as => 'do_mil222_return_to_primary'
+  get 'mil222s/:id/return_to_primary(.:format)' => 'mil222s#return_to_primary', :as => 'mil222_return_to_primary'
   put 'mil222s/:id/completion(.:format)' => 'mil222s#do_completion', :as => 'do_mil222_completion'
   get 'mil222s/:id/completion(.:format)' => 'mil222s#completion', :as => 'mil222_completion'
 
@@ -763,10 +939,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil131s"
-  post 'mil131s/primary_read(.:format)' => 'mil131s#do_primary_read', :as => 'do_mil131_primary_read'
-  get 'mil131s/primary_read(.:format)' => 'mil131s#primary_read', :as => 'mil131_primary_read'
+  post 'mil131s/unstarted(.:format)' => 'mil131s#do_unstarted', :as => 'do_mil131_unstarted'
+  get 'mil131s/unstarted(.:format)' => 'mil131s#unstarted', :as => 'mil131_unstarted'
+  put 'mil131s/:id/enter_finding(.:format)' => 'mil131s#do_enter_finding', :as => 'do_mil131_enter_finding'
+  get 'mil131s/:id/enter_finding(.:format)' => 'mil131s#enter_finding', :as => 'mil131_enter_finding'
   put 'mil131s/:id/second_read(.:format)' => 'mil131s#do_second_read', :as => 'do_mil131_second_read'
   get 'mil131s/:id/second_read(.:format)' => 'mil131s#second_read', :as => 'mil131_second_read'
+  put 'mil131s/:id/return_to_primary(.:format)' => 'mil131s#do_return_to_primary', :as => 'do_mil131_return_to_primary'
+  get 'mil131s/:id/return_to_primary(.:format)' => 'mil131s#return_to_primary', :as => 'mil131_return_to_primary'
   put 'mil131s/:id/completion(.:format)' => 'mil131s#do_completion', :as => 'do_mil131_completion'
   get 'mil131s/:id/completion(.:format)' => 'mil131s#completion', :as => 'mil131_completion'
 
@@ -780,10 +960,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med53s"
-  post 'med53s/primary_read(.:format)' => 'med53s#do_primary_read', :as => 'do_med53_primary_read'
-  get 'med53s/primary_read(.:format)' => 'med53s#primary_read', :as => 'med53_primary_read'
+  post 'med53s/unstarted(.:format)' => 'med53s#do_unstarted', :as => 'do_med53_unstarted'
+  get 'med53s/unstarted(.:format)' => 'med53s#unstarted', :as => 'med53_unstarted'
+  put 'med53s/:id/enter_finding(.:format)' => 'med53s#do_enter_finding', :as => 'do_med53_enter_finding'
+  get 'med53s/:id/enter_finding(.:format)' => 'med53s#enter_finding', :as => 'med53_enter_finding'
   put 'med53s/:id/second_read(.:format)' => 'med53s#do_second_read', :as => 'do_med53_second_read'
   get 'med53s/:id/second_read(.:format)' => 'med53s#second_read', :as => 'med53_second_read'
+  put 'med53s/:id/return_to_primary(.:format)' => 'med53s#do_return_to_primary', :as => 'do_med53_return_to_primary'
+  get 'med53s/:id/return_to_primary(.:format)' => 'med53s#return_to_primary', :as => 'med53_return_to_primary'
   put 'med53s/:id/completion(.:format)' => 'med53s#do_completion', :as => 'do_med53_completion'
   get 'med53s/:id/completion(.:format)' => 'med53s#completion', :as => 'med53_completion'
 
@@ -797,10 +981,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4154s"
-  post 'estd4154s/primary_read(.:format)' => 'estd4154s#do_primary_read', :as => 'do_estd4154_primary_read'
-  get 'estd4154s/primary_read(.:format)' => 'estd4154s#primary_read', :as => 'estd4154_primary_read'
+  post 'estd4154s/unstarted(.:format)' => 'estd4154s#do_unstarted', :as => 'do_estd4154_unstarted'
+  get 'estd4154s/unstarted(.:format)' => 'estd4154s#unstarted', :as => 'estd4154_unstarted'
+  put 'estd4154s/:id/enter_finding(.:format)' => 'estd4154s#do_enter_finding', :as => 'do_estd4154_enter_finding'
+  get 'estd4154s/:id/enter_finding(.:format)' => 'estd4154s#enter_finding', :as => 'estd4154_enter_finding'
   put 'estd4154s/:id/second_read(.:format)' => 'estd4154s#do_second_read', :as => 'do_estd4154_second_read'
   get 'estd4154s/:id/second_read(.:format)' => 'estd4154s#second_read', :as => 'estd4154_second_read'
+  put 'estd4154s/:id/return_to_primary(.:format)' => 'estd4154s#do_return_to_primary', :as => 'do_estd4154_return_to_primary'
+  get 'estd4154s/:id/return_to_primary(.:format)' => 'estd4154s#return_to_primary', :as => 'estd4154_return_to_primary'
   put 'estd4154s/:id/completion(.:format)' => 'estd4154s#do_completion', :as => 'do_estd4154_completion'
   get 'estd4154s/:id/completion(.:format)' => 'estd4154s#completion', :as => 'estd4154_completion'
 
@@ -816,16 +1004,14 @@ Rara::Application.routes.draw do
   # Lifecycle routes for controller "estd321s"
   post 'estd321s/unstarted(.:format)' => 'estd321s#do_unstarted', :as => 'do_estd321_unstarted'
   get 'estd321s/unstarted(.:format)' => 'estd321s#unstarted', :as => 'estd321_unstarted'
-  put 'estd321s/:id/primary_read(.:format)' => 'estd321s#do_primary_read', :as => 'do_estd321_primary_read'
-  get 'estd321s/:id/primary_read(.:format)' => 'estd321s#primary_read', :as => 'estd321_primary_read'
+  put 'estd321s/:id/enter_finding(.:format)' => 'estd321s#do_enter_finding', :as => 'do_estd321_enter_finding'
+  get 'estd321s/:id/enter_finding(.:format)' => 'estd321s#enter_finding', :as => 'estd321_enter_finding'
   put 'estd321s/:id/second_read(.:format)' => 'estd321s#do_second_read', :as => 'do_estd321_second_read'
   get 'estd321s/:id/second_read(.:format)' => 'estd321s#second_read', :as => 'estd321_second_read'
   put 'estd321s/:id/return_to_primary(.:format)' => 'estd321s#do_return_to_primary', :as => 'do_estd321_return_to_primary'
   get 'estd321s/:id/return_to_primary(.:format)' => 'estd321s#return_to_primary', :as => 'estd321_return_to_primary'
-  put 'estd321s/:id/mark_complete(.:format)' => 'estd321s#do_mark_complete', :as => 'do_estd321_mark_complete'
-  get 'estd321s/:id/mark_complete(.:format)' => 'estd321s#mark_complete', :as => 'estd321_mark_complete'
-  put 'estd321s/:id/unmark_complete(.:format)' => 'estd321s#do_unmark_complete', :as => 'do_estd321_unmark_complete'
-  get 'estd321s/:id/unmark_complete(.:format)' => 'estd321s#unmark_complete', :as => 'estd321_unmark_complete'
+  put 'estd321s/:id/completion(.:format)' => 'estd321s#do_completion', :as => 'do_estd321_completion'
+  get 'estd321s/:id/completion(.:format)' => 'estd321s#completion', :as => 'estd321_completion'
 
   # Resource routes for controller "estd321s"
   get 'estd321s/new(.:format)', :as => 'new_estd321'
@@ -837,10 +1023,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil538s"
-  post 'mil538s/primary_read(.:format)' => 'mil538s#do_primary_read', :as => 'do_mil538_primary_read'
-  get 'mil538s/primary_read(.:format)' => 'mil538s#primary_read', :as => 'mil538_primary_read'
+  post 'mil538s/unstarted(.:format)' => 'mil538s#do_unstarted', :as => 'do_mil538_unstarted'
+  get 'mil538s/unstarted(.:format)' => 'mil538s#unstarted', :as => 'mil538_unstarted'
+  put 'mil538s/:id/enter_finding(.:format)' => 'mil538s#do_enter_finding', :as => 'do_mil538_enter_finding'
+  get 'mil538s/:id/enter_finding(.:format)' => 'mil538s#enter_finding', :as => 'mil538_enter_finding'
   put 'mil538s/:id/second_read(.:format)' => 'mil538s#do_second_read', :as => 'do_mil538_second_read'
   get 'mil538s/:id/second_read(.:format)' => 'mil538s#second_read', :as => 'mil538_second_read'
+  put 'mil538s/:id/return_to_primary(.:format)' => 'mil538s#do_return_to_primary', :as => 'do_mil538_return_to_primary'
+  get 'mil538s/:id/return_to_primary(.:format)' => 'mil538s#return_to_primary', :as => 'mil538_return_to_primary'
   put 'mil538s/:id/completion(.:format)' => 'mil538s#do_completion', :as => 'do_mil538_completion'
   get 'mil538s/:id/completion(.:format)' => 'mil538s#completion', :as => 'mil538_completion'
 
@@ -854,10 +1044,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med22s"
-  post 'med22s/primary_read(.:format)' => 'med22s#do_primary_read', :as => 'do_med22_primary_read'
-  get 'med22s/primary_read(.:format)' => 'med22s#primary_read', :as => 'med22_primary_read'
+  post 'med22s/unstarted(.:format)' => 'med22s#do_unstarted', :as => 'do_med22_unstarted'
+  get 'med22s/unstarted(.:format)' => 'med22s#unstarted', :as => 'med22_unstarted'
+  put 'med22s/:id/enter_finding(.:format)' => 'med22s#do_enter_finding', :as => 'do_med22_enter_finding'
+  get 'med22s/:id/enter_finding(.:format)' => 'med22s#enter_finding', :as => 'med22_enter_finding'
   put 'med22s/:id/second_read(.:format)' => 'med22s#do_second_read', :as => 'do_med22_second_read'
   get 'med22s/:id/second_read(.:format)' => 'med22s#second_read', :as => 'med22_second_read'
+  put 'med22s/:id/return_to_primary(.:format)' => 'med22s#do_return_to_primary', :as => 'do_med22_return_to_primary'
+  get 'med22s/:id/return_to_primary(.:format)' => 'med22s#return_to_primary', :as => 'med22_return_to_primary'
   put 'med22s/:id/completion(.:format)' => 'med22s#do_completion', :as => 'do_med22_completion'
   get 'med22s/:id/completion(.:format)' => 'med22s#completion', :as => 'med22_completion'
 
@@ -871,10 +1065,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil3101s"
-  post 'mil3101s/primary_read(.:format)' => 'mil3101s#do_primary_read', :as => 'do_mil3101_primary_read'
-  get 'mil3101s/primary_read(.:format)' => 'mil3101s#primary_read', :as => 'mil3101_primary_read'
+  post 'mil3101s/unstarted(.:format)' => 'mil3101s#do_unstarted', :as => 'do_mil3101_unstarted'
+  get 'mil3101s/unstarted(.:format)' => 'mil3101s#unstarted', :as => 'mil3101_unstarted'
+  put 'mil3101s/:id/enter_finding(.:format)' => 'mil3101s#do_enter_finding', :as => 'do_mil3101_enter_finding'
+  get 'mil3101s/:id/enter_finding(.:format)' => 'mil3101s#enter_finding', :as => 'mil3101_enter_finding'
   put 'mil3101s/:id/second_read(.:format)' => 'mil3101s#do_second_read', :as => 'do_mil3101_second_read'
   get 'mil3101s/:id/second_read(.:format)' => 'mil3101s#second_read', :as => 'mil3101_second_read'
+  put 'mil3101s/:id/return_to_primary(.:format)' => 'mil3101s#do_return_to_primary', :as => 'do_mil3101_return_to_primary'
+  get 'mil3101s/:id/return_to_primary(.:format)' => 'mil3101s#return_to_primary', :as => 'mil3101_return_to_primary'
   put 'mil3101s/:id/completion(.:format)' => 'mil3101s#do_completion', :as => 'do_mil3101_completion'
   get 'mil3101s/:id/completion(.:format)' => 'mil3101s#completion', :as => 'mil3101_completion'
 
@@ -910,10 +1108,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil121s"
-  post 'mil121s/primary_read(.:format)' => 'mil121s#do_primary_read', :as => 'do_mil121_primary_read'
-  get 'mil121s/primary_read(.:format)' => 'mil121s#primary_read', :as => 'mil121_primary_read'
+  post 'mil121s/unstarted(.:format)' => 'mil121s#do_unstarted', :as => 'do_mil121_unstarted'
+  get 'mil121s/unstarted(.:format)' => 'mil121s#unstarted', :as => 'mil121_unstarted'
+  put 'mil121s/:id/enter_finding(.:format)' => 'mil121s#do_enter_finding', :as => 'do_mil121_enter_finding'
+  get 'mil121s/:id/enter_finding(.:format)' => 'mil121s#enter_finding', :as => 'mil121_enter_finding'
   put 'mil121s/:id/second_read(.:format)' => 'mil121s#do_second_read', :as => 'do_mil121_second_read'
   get 'mil121s/:id/second_read(.:format)' => 'mil121s#second_read', :as => 'mil121_second_read'
+  put 'mil121s/:id/return_to_primary(.:format)' => 'mil121s#do_return_to_primary', :as => 'do_mil121_return_to_primary'
+  get 'mil121s/:id/return_to_primary(.:format)' => 'mil121s#return_to_primary', :as => 'mil121_return_to_primary'
   put 'mil121s/:id/completion(.:format)' => 'mil121s#do_completion', :as => 'do_mil121_completion'
   get 'mil121s/:id/completion(.:format)' => 'mil121s#completion', :as => 'mil121_completion'
 
@@ -927,10 +1129,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil611s"
-  post 'mil611s/primary_read(.:format)' => 'mil611s#do_primary_read', :as => 'do_mil611_primary_read'
-  get 'mil611s/primary_read(.:format)' => 'mil611s#primary_read', :as => 'mil611_primary_read'
+  post 'mil611s/unstarted(.:format)' => 'mil611s#do_unstarted', :as => 'do_mil611_unstarted'
+  get 'mil611s/unstarted(.:format)' => 'mil611s#unstarted', :as => 'mil611_unstarted'
+  put 'mil611s/:id/enter_finding(.:format)' => 'mil611s#do_enter_finding', :as => 'do_mil611_enter_finding'
+  get 'mil611s/:id/enter_finding(.:format)' => 'mil611s#enter_finding', :as => 'mil611_enter_finding'
   put 'mil611s/:id/second_read(.:format)' => 'mil611s#do_second_read', :as => 'do_mil611_second_read'
   get 'mil611s/:id/second_read(.:format)' => 'mil611s#second_read', :as => 'mil611_second_read'
+  put 'mil611s/:id/return_to_primary(.:format)' => 'mil611s#do_return_to_primary', :as => 'do_mil611_return_to_primary'
+  get 'mil611s/:id/return_to_primary(.:format)' => 'mil611s#return_to_primary', :as => 'mil611_return_to_primary'
   put 'mil611s/:id/completion(.:format)' => 'mil611s#do_completion', :as => 'do_mil611_completion'
   get 'mil611s/:id/completion(.:format)' => 'mil611s#completion', :as => 'mil611_completion'
 
@@ -944,10 +1150,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil724s"
-  post 'mil724s/primary_read(.:format)' => 'mil724s#do_primary_read', :as => 'do_mil724_primary_read'
-  get 'mil724s/primary_read(.:format)' => 'mil724s#primary_read', :as => 'mil724_primary_read'
+  post 'mil724s/unstarted(.:format)' => 'mil724s#do_unstarted', :as => 'do_mil724_unstarted'
+  get 'mil724s/unstarted(.:format)' => 'mil724s#unstarted', :as => 'mil724_unstarted'
+  put 'mil724s/:id/enter_finding(.:format)' => 'mil724s#do_enter_finding', :as => 'do_mil724_enter_finding'
+  get 'mil724s/:id/enter_finding(.:format)' => 'mil724s#enter_finding', :as => 'mil724_enter_finding'
   put 'mil724s/:id/second_read(.:format)' => 'mil724s#do_second_read', :as => 'do_mil724_second_read'
   get 'mil724s/:id/second_read(.:format)' => 'mil724s#second_read', :as => 'mil724_second_read'
+  put 'mil724s/:id/return_to_primary(.:format)' => 'mil724s#do_return_to_primary', :as => 'do_mil724_return_to_primary'
+  get 'mil724s/:id/return_to_primary(.:format)' => 'mil724s#return_to_primary', :as => 'mil724_return_to_primary'
   put 'mil724s/:id/completion(.:format)' => 'mil724s#do_completion', :as => 'do_mil724_completion'
   get 'mil724s/:id/completion(.:format)' => 'mil724s#completion', :as => 'mil724_completion'
 
@@ -961,10 +1171,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46327s"
-  post 'estd46327s/primary_read(.:format)' => 'estd46327s#do_primary_read', :as => 'do_estd46327_primary_read'
-  get 'estd46327s/primary_read(.:format)' => 'estd46327s#primary_read', :as => 'estd46327_primary_read'
+  post 'estd46327s/unstarted(.:format)' => 'estd46327s#do_unstarted', :as => 'do_estd46327_unstarted'
+  get 'estd46327s/unstarted(.:format)' => 'estd46327s#unstarted', :as => 'estd46327_unstarted'
+  put 'estd46327s/:id/enter_finding(.:format)' => 'estd46327s#do_enter_finding', :as => 'do_estd46327_enter_finding'
+  get 'estd46327s/:id/enter_finding(.:format)' => 'estd46327s#enter_finding', :as => 'estd46327_enter_finding'
   put 'estd46327s/:id/second_read(.:format)' => 'estd46327s#do_second_read', :as => 'do_estd46327_second_read'
   get 'estd46327s/:id/second_read(.:format)' => 'estd46327s#second_read', :as => 'estd46327_second_read'
+  put 'estd46327s/:id/return_to_primary(.:format)' => 'estd46327s#do_return_to_primary', :as => 'do_estd46327_return_to_primary'
+  get 'estd46327s/:id/return_to_primary(.:format)' => 'estd46327s#return_to_primary', :as => 'estd46327_return_to_primary'
   put 'estd46327s/:id/completion(.:format)' => 'estd46327s#do_completion', :as => 'do_estd46327_completion'
   get 'estd46327s/:id/completion(.:format)' => 'estd46327s#completion', :as => 'estd46327_completion'
 
@@ -978,10 +1192,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil534s"
-  post 'mil534s/primary_read(.:format)' => 'mil534s#do_primary_read', :as => 'do_mil534_primary_read'
-  get 'mil534s/primary_read(.:format)' => 'mil534s#primary_read', :as => 'mil534_primary_read'
+  post 'mil534s/unstarted(.:format)' => 'mil534s#do_unstarted', :as => 'do_mil534_unstarted'
+  get 'mil534s/unstarted(.:format)' => 'mil534s#unstarted', :as => 'mil534_unstarted'
+  put 'mil534s/:id/enter_finding(.:format)' => 'mil534s#do_enter_finding', :as => 'do_mil534_enter_finding'
+  get 'mil534s/:id/enter_finding(.:format)' => 'mil534s#enter_finding', :as => 'mil534_enter_finding'
   put 'mil534s/:id/second_read(.:format)' => 'mil534s#do_second_read', :as => 'do_mil534_second_read'
   get 'mil534s/:id/second_read(.:format)' => 'mil534s#second_read', :as => 'mil534_second_read'
+  put 'mil534s/:id/return_to_primary(.:format)' => 'mil534s#do_return_to_primary', :as => 'do_mil534_return_to_primary'
+  get 'mil534s/:id/return_to_primary(.:format)' => 'mil534s#return_to_primary', :as => 'mil534_return_to_primary'
   put 'mil534s/:id/completion(.:format)' => 'mil534s#do_completion', :as => 'do_mil534_completion'
   get 'mil534s/:id/completion(.:format)' => 'mil534s#completion', :as => 'mil534_completion'
 
@@ -995,10 +1213,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd464s"
-  post 'estd464s/primary_read(.:format)' => 'estd464s#do_primary_read', :as => 'do_estd464_primary_read'
-  get 'estd464s/primary_read(.:format)' => 'estd464s#primary_read', :as => 'estd464_primary_read'
+  post 'estd464s/unstarted(.:format)' => 'estd464s#do_unstarted', :as => 'do_estd464_unstarted'
+  get 'estd464s/unstarted(.:format)' => 'estd464s#unstarted', :as => 'estd464_unstarted'
+  put 'estd464s/:id/enter_finding(.:format)' => 'estd464s#do_enter_finding', :as => 'do_estd464_enter_finding'
+  get 'estd464s/:id/enter_finding(.:format)' => 'estd464s#enter_finding', :as => 'estd464_enter_finding'
   put 'estd464s/:id/second_read(.:format)' => 'estd464s#do_second_read', :as => 'do_estd464_second_read'
   get 'estd464s/:id/second_read(.:format)' => 'estd464s#second_read', :as => 'estd464_second_read'
+  put 'estd464s/:id/return_to_primary(.:format)' => 'estd464s#do_return_to_primary', :as => 'do_estd464_return_to_primary'
+  get 'estd464s/:id/return_to_primary(.:format)' => 'estd464s#return_to_primary', :as => 'estd464_return_to_primary'
   put 'estd464s/:id/completion(.:format)' => 'estd464s#do_completion', :as => 'do_estd464_completion'
   get 'estd464s/:id/completion(.:format)' => 'estd464s#completion', :as => 'estd464_completion'
 
@@ -1012,10 +1234,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd41524s"
-  post 'estd41524s/primary_read(.:format)' => 'estd41524s#do_primary_read', :as => 'do_estd41524_primary_read'
-  get 'estd41524s/primary_read(.:format)' => 'estd41524s#primary_read', :as => 'estd41524_primary_read'
+  post 'estd41524s/unstarted(.:format)' => 'estd41524s#do_unstarted', :as => 'do_estd41524_unstarted'
+  get 'estd41524s/unstarted(.:format)' => 'estd41524s#unstarted', :as => 'estd41524_unstarted'
+  put 'estd41524s/:id/enter_finding(.:format)' => 'estd41524s#do_enter_finding', :as => 'do_estd41524_enter_finding'
+  get 'estd41524s/:id/enter_finding(.:format)' => 'estd41524s#enter_finding', :as => 'estd41524_enter_finding'
   put 'estd41524s/:id/second_read(.:format)' => 'estd41524s#do_second_read', :as => 'do_estd41524_second_read'
   get 'estd41524s/:id/second_read(.:format)' => 'estd41524s#second_read', :as => 'estd41524_second_read'
+  put 'estd41524s/:id/return_to_primary(.:format)' => 'estd41524s#do_return_to_primary', :as => 'do_estd41524_return_to_primary'
+  get 'estd41524s/:id/return_to_primary(.:format)' => 'estd41524s#return_to_primary', :as => 'estd41524_return_to_primary'
   put 'estd41524s/:id/completion(.:format)' => 'estd41524s#do_completion', :as => 'do_estd41524_completion'
   get 'estd41524s/:id/completion(.:format)' => 'estd41524s#completion', :as => 'estd41524_completion'
 
@@ -1039,10 +1265,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46317s"
-  post 'estd46317s/primary_read(.:format)' => 'estd46317s#do_primary_read', :as => 'do_estd46317_primary_read'
-  get 'estd46317s/primary_read(.:format)' => 'estd46317s#primary_read', :as => 'estd46317_primary_read'
+  post 'estd46317s/unstarted(.:format)' => 'estd46317s#do_unstarted', :as => 'do_estd46317_unstarted'
+  get 'estd46317s/unstarted(.:format)' => 'estd46317s#unstarted', :as => 'estd46317_unstarted'
+  put 'estd46317s/:id/enter_finding(.:format)' => 'estd46317s#do_enter_finding', :as => 'do_estd46317_enter_finding'
+  get 'estd46317s/:id/enter_finding(.:format)' => 'estd46317s#enter_finding', :as => 'estd46317_enter_finding'
   put 'estd46317s/:id/second_read(.:format)' => 'estd46317s#do_second_read', :as => 'do_estd46317_second_read'
   get 'estd46317s/:id/second_read(.:format)' => 'estd46317s#second_read', :as => 'estd46317_second_read'
+  put 'estd46317s/:id/return_to_primary(.:format)' => 'estd46317s#do_return_to_primary', :as => 'do_estd46317_return_to_primary'
+  get 'estd46317s/:id/return_to_primary(.:format)' => 'estd46317s#return_to_primary', :as => 'estd46317_return_to_primary'
   put 'estd46317s/:id/completion(.:format)' => 'estd46317s#do_completion', :as => 'do_estd46317_completion'
   get 'estd46317s/:id/completion(.:format)' => 'estd46317s#completion', :as => 'estd46317_completion'
 
@@ -1056,10 +1286,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil464s"
-  post 'mil464s/primary_read(.:format)' => 'mil464s#do_primary_read', :as => 'do_mil464_primary_read'
-  get 'mil464s/primary_read(.:format)' => 'mil464s#primary_read', :as => 'mil464_primary_read'
+  post 'mil464s/unstarted(.:format)' => 'mil464s#do_unstarted', :as => 'do_mil464_unstarted'
+  get 'mil464s/unstarted(.:format)' => 'mil464s#unstarted', :as => 'mil464_unstarted'
+  put 'mil464s/:id/enter_finding(.:format)' => 'mil464s#do_enter_finding', :as => 'do_mil464_enter_finding'
+  get 'mil464s/:id/enter_finding(.:format)' => 'mil464s#enter_finding', :as => 'mil464_enter_finding'
   put 'mil464s/:id/second_read(.:format)' => 'mil464s#do_second_read', :as => 'do_mil464_second_read'
   get 'mil464s/:id/second_read(.:format)' => 'mil464s#second_read', :as => 'mil464_second_read'
+  put 'mil464s/:id/return_to_primary(.:format)' => 'mil464s#do_return_to_primary', :as => 'do_mil464_return_to_primary'
+  get 'mil464s/:id/return_to_primary(.:format)' => 'mil464s#return_to_primary', :as => 'mil464_return_to_primary'
   put 'mil464s/:id/completion(.:format)' => 'mil464s#do_completion', :as => 'do_mil464_completion'
   get 'mil464s/:id/completion(.:format)' => 'mil464s#completion', :as => 'mil464_completion'
 
@@ -1073,10 +1307,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med42s"
-  post 'med42s/primary_read(.:format)' => 'med42s#do_primary_read', :as => 'do_med42_primary_read'
-  get 'med42s/primary_read(.:format)' => 'med42s#primary_read', :as => 'med42_primary_read'
+  post 'med42s/unstarted(.:format)' => 'med42s#do_unstarted', :as => 'do_med42_unstarted'
+  get 'med42s/unstarted(.:format)' => 'med42s#unstarted', :as => 'med42_unstarted'
+  put 'med42s/:id/enter_finding(.:format)' => 'med42s#do_enter_finding', :as => 'do_med42_enter_finding'
+  get 'med42s/:id/enter_finding(.:format)' => 'med42s#enter_finding', :as => 'med42_enter_finding'
   put 'med42s/:id/second_read(.:format)' => 'med42s#do_second_read', :as => 'do_med42_second_read'
   get 'med42s/:id/second_read(.:format)' => 'med42s#second_read', :as => 'med42_second_read'
+  put 'med42s/:id/return_to_primary(.:format)' => 'med42s#do_return_to_primary', :as => 'do_med42_return_to_primary'
+  get 'med42s/:id/return_to_primary(.:format)' => 'med42s#return_to_primary', :as => 'med42_return_to_primary'
   put 'med42s/:id/completion(.:format)' => 'med42s#do_completion', :as => 'do_med42_completion'
   get 'med42s/:id/completion(.:format)' => 'med42s#completion', :as => 'med42_completion'
 
@@ -1090,10 +1328,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med91s"
-  post 'med91s/primary_read(.:format)' => 'med91s#do_primary_read', :as => 'do_med91_primary_read'
-  get 'med91s/primary_read(.:format)' => 'med91s#primary_read', :as => 'med91_primary_read'
+  post 'med91s/unstarted(.:format)' => 'med91s#do_unstarted', :as => 'do_med91_unstarted'
+  get 'med91s/unstarted(.:format)' => 'med91s#unstarted', :as => 'med91_unstarted'
+  put 'med91s/:id/enter_finding(.:format)' => 'med91s#do_enter_finding', :as => 'do_med91_enter_finding'
+  get 'med91s/:id/enter_finding(.:format)' => 'med91s#enter_finding', :as => 'med91_enter_finding'
   put 'med91s/:id/second_read(.:format)' => 'med91s#do_second_read', :as => 'do_med91_second_read'
   get 'med91s/:id/second_read(.:format)' => 'med91s#second_read', :as => 'med91_second_read'
+  put 'med91s/:id/return_to_primary(.:format)' => 'med91s#do_return_to_primary', :as => 'do_med91_return_to_primary'
+  get 'med91s/:id/return_to_primary(.:format)' => 'med91s#return_to_primary', :as => 'med91_return_to_primary'
   put 'med91s/:id/completion(.:format)' => 'med91s#do_completion', :as => 'do_med91_completion'
   get 'med91s/:id/completion(.:format)' => 'med91s#completion', :as => 'med91_completion'
 
@@ -1107,10 +1349,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med102s"
-  post 'med102s/primary_read(.:format)' => 'med102s#do_primary_read', :as => 'do_med102_primary_read'
-  get 'med102s/primary_read(.:format)' => 'med102s#primary_read', :as => 'med102_primary_read'
+  post 'med102s/unstarted(.:format)' => 'med102s#do_unstarted', :as => 'do_med102_unstarted'
+  get 'med102s/unstarted(.:format)' => 'med102s#unstarted', :as => 'med102_unstarted'
+  put 'med102s/:id/enter_finding(.:format)' => 'med102s#do_enter_finding', :as => 'do_med102_enter_finding'
+  get 'med102s/:id/enter_finding(.:format)' => 'med102s#enter_finding', :as => 'med102_enter_finding'
   put 'med102s/:id/second_read(.:format)' => 'med102s#do_second_read', :as => 'do_med102_second_read'
   get 'med102s/:id/second_read(.:format)' => 'med102s#second_read', :as => 'med102_second_read'
+  put 'med102s/:id/return_to_primary(.:format)' => 'med102s#do_return_to_primary', :as => 'do_med102_return_to_primary'
+  get 'med102s/:id/return_to_primary(.:format)' => 'med102s#return_to_primary', :as => 'med102_return_to_primary'
   put 'med102s/:id/completion(.:format)' => 'med102s#do_completion', :as => 'do_med102_completion'
   get 'med102s/:id/completion(.:format)' => 'med102s#completion', :as => 'med102_completion'
 
@@ -1124,10 +1370,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd41525s"
-  post 'estd41525s/primary_read(.:format)' => 'estd41525s#do_primary_read', :as => 'do_estd41525_primary_read'
-  get 'estd41525s/primary_read(.:format)' => 'estd41525s#primary_read', :as => 'estd41525_primary_read'
+  post 'estd41525s/unstarted(.:format)' => 'estd41525s#do_unstarted', :as => 'do_estd41525_unstarted'
+  get 'estd41525s/unstarted(.:format)' => 'estd41525s#unstarted', :as => 'estd41525_unstarted'
+  put 'estd41525s/:id/enter_finding(.:format)' => 'estd41525s#do_enter_finding', :as => 'do_estd41525_enter_finding'
+  get 'estd41525s/:id/enter_finding(.:format)' => 'estd41525s#enter_finding', :as => 'estd41525_enter_finding'
   put 'estd41525s/:id/second_read(.:format)' => 'estd41525s#do_second_read', :as => 'do_estd41525_second_read'
   get 'estd41525s/:id/second_read(.:format)' => 'estd41525s#second_read', :as => 'estd41525_second_read'
+  put 'estd41525s/:id/return_to_primary(.:format)' => 'estd41525s#do_return_to_primary', :as => 'do_estd41525_return_to_primary'
+  get 'estd41525s/:id/return_to_primary(.:format)' => 'estd41525s#return_to_primary', :as => 'estd41525_return_to_primary'
   put 'estd41525s/:id/completion(.:format)' => 'estd41525s#do_completion', :as => 'do_estd41525_completion'
   get 'estd41525s/:id/completion(.:format)' => 'estd41525s#completion', :as => 'estd41525_completion'
 
@@ -1141,10 +1391,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4624s"
-  post 'estd4624s/primary_read(.:format)' => 'estd4624s#do_primary_read', :as => 'do_estd4624_primary_read'
-  get 'estd4624s/primary_read(.:format)' => 'estd4624s#primary_read', :as => 'estd4624_primary_read'
+  post 'estd4624s/unstarted(.:format)' => 'estd4624s#do_unstarted', :as => 'do_estd4624_unstarted'
+  get 'estd4624s/unstarted(.:format)' => 'estd4624s#unstarted', :as => 'estd4624_unstarted'
+  put 'estd4624s/:id/enter_finding(.:format)' => 'estd4624s#do_enter_finding', :as => 'do_estd4624_enter_finding'
+  get 'estd4624s/:id/enter_finding(.:format)' => 'estd4624s#enter_finding', :as => 'estd4624_enter_finding'
   put 'estd4624s/:id/second_read(.:format)' => 'estd4624s#do_second_read', :as => 'do_estd4624_second_read'
   get 'estd4624s/:id/second_read(.:format)' => 'estd4624s#second_read', :as => 'estd4624_second_read'
+  put 'estd4624s/:id/return_to_primary(.:format)' => 'estd4624s#do_return_to_primary', :as => 'do_estd4624_return_to_primary'
+  get 'estd4624s/:id/return_to_primary(.:format)' => 'estd4624s#return_to_primary', :as => 'estd4624_return_to_primary'
   put 'estd4624s/:id/completion(.:format)' => 'estd4624s#do_completion', :as => 'do_estd4624_completion'
   get 'estd4624s/:id/completion(.:format)' => 'estd4624s#completion', :as => 'estd4624_completion'
 
@@ -1158,10 +1412,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil522s"
-  post 'mil522s/primary_read(.:format)' => 'mil522s#do_primary_read', :as => 'do_mil522_primary_read'
-  get 'mil522s/primary_read(.:format)' => 'mil522s#primary_read', :as => 'mil522_primary_read'
+  post 'mil522s/unstarted(.:format)' => 'mil522s#do_unstarted', :as => 'do_mil522_unstarted'
+  get 'mil522s/unstarted(.:format)' => 'mil522s#unstarted', :as => 'mil522_unstarted'
+  put 'mil522s/:id/enter_finding(.:format)' => 'mil522s#do_enter_finding', :as => 'do_mil522_enter_finding'
+  get 'mil522s/:id/enter_finding(.:format)' => 'mil522s#enter_finding', :as => 'mil522_enter_finding'
   put 'mil522s/:id/second_read(.:format)' => 'mil522s#do_second_read', :as => 'do_mil522_second_read'
   get 'mil522s/:id/second_read(.:format)' => 'mil522s#second_read', :as => 'mil522_second_read'
+  put 'mil522s/:id/return_to_primary(.:format)' => 'mil522s#do_return_to_primary', :as => 'do_mil522_return_to_primary'
+  get 'mil522s/:id/return_to_primary(.:format)' => 'mil522s#return_to_primary', :as => 'mil522_return_to_primary'
   put 'mil522s/:id/completion(.:format)' => 'mil522s#do_completion', :as => 'do_mil522_completion'
   get 'mil522s/:id/completion(.:format)' => 'mil522s#completion', :as => 'mil522_completion'
 
@@ -1175,10 +1433,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd486s"
-  post 'estd486s/primary_read(.:format)' => 'estd486s#do_primary_read', :as => 'do_estd486_primary_read'
-  get 'estd486s/primary_read(.:format)' => 'estd486s#primary_read', :as => 'estd486_primary_read'
+  post 'estd486s/unstarted(.:format)' => 'estd486s#do_unstarted', :as => 'do_estd486_unstarted'
+  get 'estd486s/unstarted(.:format)' => 'estd486s#unstarted', :as => 'estd486_unstarted'
+  put 'estd486s/:id/enter_finding(.:format)' => 'estd486s#do_enter_finding', :as => 'do_estd486_enter_finding'
+  get 'estd486s/:id/enter_finding(.:format)' => 'estd486s#enter_finding', :as => 'estd486_enter_finding'
   put 'estd486s/:id/second_read(.:format)' => 'estd486s#do_second_read', :as => 'do_estd486_second_read'
   get 'estd486s/:id/second_read(.:format)' => 'estd486s#second_read', :as => 'estd486_second_read'
+  put 'estd486s/:id/return_to_primary(.:format)' => 'estd486s#do_return_to_primary', :as => 'do_estd486_return_to_primary'
+  get 'estd486s/:id/return_to_primary(.:format)' => 'estd486s#return_to_primary', :as => 'estd486_return_to_primary'
   put 'estd486s/:id/completion(.:format)' => 'estd486s#do_completion', :as => 'do_estd486_completion'
   get 'estd486s/:id/completion(.:format)' => 'estd486s#completion', :as => 'estd486_completion'
 
@@ -1192,10 +1454,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med26s"
-  post 'med26s/primary_read(.:format)' => 'med26s#do_primary_read', :as => 'do_med26_primary_read'
-  get 'med26s/primary_read(.:format)' => 'med26s#primary_read', :as => 'med26_primary_read'
+  post 'med26s/unstarted(.:format)' => 'med26s#do_unstarted', :as => 'do_med26_unstarted'
+  get 'med26s/unstarted(.:format)' => 'med26s#unstarted', :as => 'med26_unstarted'
+  put 'med26s/:id/enter_finding(.:format)' => 'med26s#do_enter_finding', :as => 'do_med26_enter_finding'
+  get 'med26s/:id/enter_finding(.:format)' => 'med26s#enter_finding', :as => 'med26_enter_finding'
   put 'med26s/:id/second_read(.:format)' => 'med26s#do_second_read', :as => 'do_med26_second_read'
   get 'med26s/:id/second_read(.:format)' => 'med26s#second_read', :as => 'med26_second_read'
+  put 'med26s/:id/return_to_primary(.:format)' => 'med26s#do_return_to_primary', :as => 'do_med26_return_to_primary'
+  get 'med26s/:id/return_to_primary(.:format)' => 'med26s#return_to_primary', :as => 'med26_return_to_primary'
   put 'med26s/:id/completion(.:format)' => 'med26s#do_completion', :as => 'do_med26_completion'
   get 'med26s/:id/completion(.:format)' => 'med26s#completion', :as => 'med26_completion'
 
@@ -1209,10 +1475,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil231s"
-  post 'mil231s/primary_read(.:format)' => 'mil231s#do_primary_read', :as => 'do_mil231_primary_read'
-  get 'mil231s/primary_read(.:format)' => 'mil231s#primary_read', :as => 'mil231_primary_read'
+  post 'mil231s/unstarted(.:format)' => 'mil231s#do_unstarted', :as => 'do_mil231_unstarted'
+  get 'mil231s/unstarted(.:format)' => 'mil231s#unstarted', :as => 'mil231_unstarted'
+  put 'mil231s/:id/enter_finding(.:format)' => 'mil231s#do_enter_finding', :as => 'do_mil231_enter_finding'
+  get 'mil231s/:id/enter_finding(.:format)' => 'mil231s#enter_finding', :as => 'mil231_enter_finding'
   put 'mil231s/:id/second_read(.:format)' => 'mil231s#do_second_read', :as => 'do_mil231_second_read'
   get 'mil231s/:id/second_read(.:format)' => 'mil231s#second_read', :as => 'mil231_second_read'
+  put 'mil231s/:id/return_to_primary(.:format)' => 'mil231s#do_return_to_primary', :as => 'do_mil231_return_to_primary'
+  get 'mil231s/:id/return_to_primary(.:format)' => 'mil231s#return_to_primary', :as => 'mil231_return_to_primary'
   put 'mil231s/:id/completion(.:format)' => 'mil231s#do_completion', :as => 'do_mil231_completion'
   get 'mil231s/:id/completion(.:format)' => 'mil231s#completion', :as => 'mil231_completion'
 
@@ -1226,10 +1496,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil711s"
-  post 'mil711s/primary_read(.:format)' => 'mil711s#do_primary_read', :as => 'do_mil711_primary_read'
-  get 'mil711s/primary_read(.:format)' => 'mil711s#primary_read', :as => 'mil711_primary_read'
+  post 'mil711s/unstarted(.:format)' => 'mil711s#do_unstarted', :as => 'do_mil711_unstarted'
+  get 'mil711s/unstarted(.:format)' => 'mil711s#unstarted', :as => 'mil711_unstarted'
+  put 'mil711s/:id/enter_finding(.:format)' => 'mil711s#do_enter_finding', :as => 'do_mil711_enter_finding'
+  get 'mil711s/:id/enter_finding(.:format)' => 'mil711s#enter_finding', :as => 'mil711_enter_finding'
   put 'mil711s/:id/second_read(.:format)' => 'mil711s#do_second_read', :as => 'do_mil711_second_read'
   get 'mil711s/:id/second_read(.:format)' => 'mil711s#second_read', :as => 'mil711_second_read'
+  put 'mil711s/:id/return_to_primary(.:format)' => 'mil711s#do_return_to_primary', :as => 'do_mil711_return_to_primary'
+  get 'mil711s/:id/return_to_primary(.:format)' => 'mil711s#return_to_primary', :as => 'mil711_return_to_primary'
   put 'mil711s/:id/completion(.:format)' => 'mil711s#do_completion', :as => 'do_mil711_completion'
   get 'mil711s/:id/completion(.:format)' => 'mil711s#completion', :as => 'mil711_completion'
 
@@ -1243,10 +1517,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46316s"
-  post 'estd46316s/primary_read(.:format)' => 'estd46316s#do_primary_read', :as => 'do_estd46316_primary_read'
-  get 'estd46316s/primary_read(.:format)' => 'estd46316s#primary_read', :as => 'estd46316_primary_read'
+  post 'estd46316s/unstarted(.:format)' => 'estd46316s#do_unstarted', :as => 'do_estd46316_unstarted'
+  get 'estd46316s/unstarted(.:format)' => 'estd46316s#unstarted', :as => 'estd46316_unstarted'
+  put 'estd46316s/:id/enter_finding(.:format)' => 'estd46316s#do_enter_finding', :as => 'do_estd46316_enter_finding'
+  get 'estd46316s/:id/enter_finding(.:format)' => 'estd46316s#enter_finding', :as => 'estd46316_enter_finding'
   put 'estd46316s/:id/second_read(.:format)' => 'estd46316s#do_second_read', :as => 'do_estd46316_second_read'
   get 'estd46316s/:id/second_read(.:format)' => 'estd46316s#second_read', :as => 'estd46316_second_read'
+  put 'estd46316s/:id/return_to_primary(.:format)' => 'estd46316s#do_return_to_primary', :as => 'do_estd46316_return_to_primary'
+  get 'estd46316s/:id/return_to_primary(.:format)' => 'estd46316s#return_to_primary', :as => 'estd46316_return_to_primary'
   put 'estd46316s/:id/completion(.:format)' => 'estd46316s#do_completion', :as => 'do_estd46316_completion'
   get 'estd46316s/:id/completion(.:format)' => 'estd46316s#completion', :as => 'estd46316_completion'
 
@@ -1260,10 +1538,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil432s"
-  post 'mil432s/primary_read(.:format)' => 'mil432s#do_primary_read', :as => 'do_mil432_primary_read'
-  get 'mil432s/primary_read(.:format)' => 'mil432s#primary_read', :as => 'mil432_primary_read'
+  post 'mil432s/unstarted(.:format)' => 'mil432s#do_unstarted', :as => 'do_mil432_unstarted'
+  get 'mil432s/unstarted(.:format)' => 'mil432s#unstarted', :as => 'mil432_unstarted'
+  put 'mil432s/:id/enter_finding(.:format)' => 'mil432s#do_enter_finding', :as => 'do_mil432_enter_finding'
+  get 'mil432s/:id/enter_finding(.:format)' => 'mil432s#enter_finding', :as => 'mil432_enter_finding'
   put 'mil432s/:id/second_read(.:format)' => 'mil432s#do_second_read', :as => 'do_mil432_second_read'
   get 'mil432s/:id/second_read(.:format)' => 'mil432s#second_read', :as => 'mil432_second_read'
+  put 'mil432s/:id/return_to_primary(.:format)' => 'mil432s#do_return_to_primary', :as => 'do_mil432_return_to_primary'
+  get 'mil432s/:id/return_to_primary(.:format)' => 'mil432s#return_to_primary', :as => 'mil432_return_to_primary'
   put 'mil432s/:id/completion(.:format)' => 'mil432s#do_completion', :as => 'do_mil432_completion'
   get 'mil432s/:id/completion(.:format)' => 'mil432s#completion', :as => 'mil432_completion'
 
@@ -1277,10 +1559,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil331s"
-  post 'mil331s/primary_read(.:format)' => 'mil331s#do_primary_read', :as => 'do_mil331_primary_read'
-  get 'mil331s/primary_read(.:format)' => 'mil331s#primary_read', :as => 'mil331_primary_read'
+  post 'mil331s/unstarted(.:format)' => 'mil331s#do_unstarted', :as => 'do_mil331_unstarted'
+  get 'mil331s/unstarted(.:format)' => 'mil331s#unstarted', :as => 'mil331_unstarted'
+  put 'mil331s/:id/enter_finding(.:format)' => 'mil331s#do_enter_finding', :as => 'do_mil331_enter_finding'
+  get 'mil331s/:id/enter_finding(.:format)' => 'mil331s#enter_finding', :as => 'mil331_enter_finding'
   put 'mil331s/:id/second_read(.:format)' => 'mil331s#do_second_read', :as => 'do_mil331_second_read'
   get 'mil331s/:id/second_read(.:format)' => 'mil331s#second_read', :as => 'mil331_second_read'
+  put 'mil331s/:id/return_to_primary(.:format)' => 'mil331s#do_return_to_primary', :as => 'do_mil331_return_to_primary'
+  get 'mil331s/:id/return_to_primary(.:format)' => 'mil331s#return_to_primary', :as => 'mil331_return_to_primary'
   put 'mil331s/:id/completion(.:format)' => 'mil331s#do_completion', :as => 'do_mil331_completion'
   get 'mil331s/:id/completion(.:format)' => 'mil331s#completion', :as => 'mil331_completion'
 
@@ -1294,10 +1580,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4626s"
-  post 'estd4626s/primary_read(.:format)' => 'estd4626s#do_primary_read', :as => 'do_estd4626_primary_read'
-  get 'estd4626s/primary_read(.:format)' => 'estd4626s#primary_read', :as => 'estd4626_primary_read'
+  post 'estd4626s/unstarted(.:format)' => 'estd4626s#do_unstarted', :as => 'do_estd4626_unstarted'
+  get 'estd4626s/unstarted(.:format)' => 'estd4626s#unstarted', :as => 'estd4626_unstarted'
+  put 'estd4626s/:id/enter_finding(.:format)' => 'estd4626s#do_enter_finding', :as => 'do_estd4626_enter_finding'
+  get 'estd4626s/:id/enter_finding(.:format)' => 'estd4626s#enter_finding', :as => 'estd4626_enter_finding'
   put 'estd4626s/:id/second_read(.:format)' => 'estd4626s#do_second_read', :as => 'do_estd4626_second_read'
   get 'estd4626s/:id/second_read(.:format)' => 'estd4626s#second_read', :as => 'estd4626_second_read'
+  put 'estd4626s/:id/return_to_primary(.:format)' => 'estd4626s#do_return_to_primary', :as => 'do_estd4626_return_to_primary'
+  get 'estd4626s/:id/return_to_primary(.:format)' => 'estd4626s#return_to_primary', :as => 'estd4626_return_to_primary'
   put 'estd4626s/:id/completion(.:format)' => 'estd4626s#do_completion', :as => 'do_estd4626_completion'
   get 'estd4626s/:id/completion(.:format)' => 'estd4626s#completion', :as => 'estd4626_completion'
 
@@ -1311,10 +1601,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd411s"
-  post 'estd411s/primary_read(.:format)' => 'estd411s#do_primary_read', :as => 'do_estd411_primary_read'
-  get 'estd411s/primary_read(.:format)' => 'estd411s#primary_read', :as => 'estd411_primary_read'
+  post 'estd411s/unstarted(.:format)' => 'estd411s#do_unstarted', :as => 'do_estd411_unstarted'
+  get 'estd411s/unstarted(.:format)' => 'estd411s#unstarted', :as => 'estd411_unstarted'
+  put 'estd411s/:id/enter_finding(.:format)' => 'estd411s#do_enter_finding', :as => 'do_estd411_enter_finding'
+  get 'estd411s/:id/enter_finding(.:format)' => 'estd411s#enter_finding', :as => 'estd411_enter_finding'
   put 'estd411s/:id/second_read(.:format)' => 'estd411s#do_second_read', :as => 'do_estd411_second_read'
   get 'estd411s/:id/second_read(.:format)' => 'estd411s#second_read', :as => 'estd411_second_read'
+  put 'estd411s/:id/return_to_primary(.:format)' => 'estd411s#do_return_to_primary', :as => 'do_estd411_return_to_primary'
+  get 'estd411s/:id/return_to_primary(.:format)' => 'estd411s#return_to_primary', :as => 'estd411_return_to_primary'
   put 'estd411s/:id/completion(.:format)' => 'estd411s#do_completion', :as => 'do_estd411_completion'
   get 'estd411s/:id/completion(.:format)' => 'estd411s#completion', :as => 'estd411_completion'
 
@@ -1328,10 +1622,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd441s"
-  post 'estd441s/primary_read(.:format)' => 'estd441s#do_primary_read', :as => 'do_estd441_primary_read'
-  get 'estd441s/primary_read(.:format)' => 'estd441s#primary_read', :as => 'estd441_primary_read'
+  post 'estd441s/unstarted(.:format)' => 'estd441s#do_unstarted', :as => 'do_estd441_unstarted'
+  get 'estd441s/unstarted(.:format)' => 'estd441s#unstarted', :as => 'estd441_unstarted'
+  put 'estd441s/:id/enter_finding(.:format)' => 'estd441s#do_enter_finding', :as => 'do_estd441_enter_finding'
+  get 'estd441s/:id/enter_finding(.:format)' => 'estd441s#enter_finding', :as => 'estd441_enter_finding'
   put 'estd441s/:id/second_read(.:format)' => 'estd441s#do_second_read', :as => 'do_estd441_second_read'
   get 'estd441s/:id/second_read(.:format)' => 'estd441s#second_read', :as => 'estd441_second_read'
+  put 'estd441s/:id/return_to_primary(.:format)' => 'estd441s#do_return_to_primary', :as => 'do_estd441_return_to_primary'
+  get 'estd441s/:id/return_to_primary(.:format)' => 'estd441s#return_to_primary', :as => 'estd441_return_to_primary'
   put 'estd441s/:id/completion(.:format)' => 'estd441s#do_completion', :as => 'do_estd441_completion'
   get 'estd441s/:id/completion(.:format)' => 'estd441s#completion', :as => 'estd441_completion'
 
@@ -1345,10 +1643,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil413s"
-  post 'mil413s/primary_read(.:format)' => 'mil413s#do_primary_read', :as => 'do_mil413_primary_read'
-  get 'mil413s/primary_read(.:format)' => 'mil413s#primary_read', :as => 'mil413_primary_read'
+  post 'mil413s/unstarted(.:format)' => 'mil413s#do_unstarted', :as => 'do_mil413_unstarted'
+  get 'mil413s/unstarted(.:format)' => 'mil413s#unstarted', :as => 'mil413_unstarted'
+  put 'mil413s/:id/enter_finding(.:format)' => 'mil413s#do_enter_finding', :as => 'do_mil413_enter_finding'
+  get 'mil413s/:id/enter_finding(.:format)' => 'mil413s#enter_finding', :as => 'mil413_enter_finding'
   put 'mil413s/:id/second_read(.:format)' => 'mil413s#do_second_read', :as => 'do_mil413_second_read'
   get 'mil413s/:id/second_read(.:format)' => 'mil413s#second_read', :as => 'mil413_second_read'
+  put 'mil413s/:id/return_to_primary(.:format)' => 'mil413s#do_return_to_primary', :as => 'do_mil413_return_to_primary'
+  get 'mil413s/:id/return_to_primary(.:format)' => 'mil413s#return_to_primary', :as => 'mil413_return_to_primary'
   put 'mil413s/:id/completion(.:format)' => 'mil413s#do_completion', :as => 'do_mil413_completion'
   get 'mil413s/:id/completion(.:format)' => 'mil413s#completion', :as => 'mil413_completion'
 
@@ -1362,10 +1664,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil321s"
-  post 'mil321s/primary_read(.:format)' => 'mil321s#do_primary_read', :as => 'do_mil321_primary_read'
-  get 'mil321s/primary_read(.:format)' => 'mil321s#primary_read', :as => 'mil321_primary_read'
+  post 'mil321s/unstarted(.:format)' => 'mil321s#do_unstarted', :as => 'do_mil321_unstarted'
+  get 'mil321s/unstarted(.:format)' => 'mil321s#unstarted', :as => 'mil321_unstarted'
+  put 'mil321s/:id/enter_finding(.:format)' => 'mil321s#do_enter_finding', :as => 'do_mil321_enter_finding'
+  get 'mil321s/:id/enter_finding(.:format)' => 'mil321s#enter_finding', :as => 'mil321_enter_finding'
   put 'mil321s/:id/second_read(.:format)' => 'mil321s#do_second_read', :as => 'do_mil321_second_read'
   get 'mil321s/:id/second_read(.:format)' => 'mil321s#second_read', :as => 'mil321_second_read'
+  put 'mil321s/:id/return_to_primary(.:format)' => 'mil321s#do_return_to_primary', :as => 'do_mil321_return_to_primary'
+  get 'mil321s/:id/return_to_primary(.:format)' => 'mil321s#return_to_primary', :as => 'mil321_return_to_primary'
   put 'mil321s/:id/completion(.:format)' => 'mil321s#do_completion', :as => 'do_mil321_completion'
   get 'mil321s/:id/completion(.:format)' => 'mil321s#completion', :as => 'mil321_completion'
 
@@ -1379,10 +1685,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd41523s"
-  post 'estd41523s/primary_read(.:format)' => 'estd41523s#do_primary_read', :as => 'do_estd41523_primary_read'
-  get 'estd41523s/primary_read(.:format)' => 'estd41523s#primary_read', :as => 'estd41523_primary_read'
+  post 'estd41523s/unstarted(.:format)' => 'estd41523s#do_unstarted', :as => 'do_estd41523_unstarted'
+  get 'estd41523s/unstarted(.:format)' => 'estd41523s#unstarted', :as => 'estd41523_unstarted'
+  put 'estd41523s/:id/enter_finding(.:format)' => 'estd41523s#do_enter_finding', :as => 'do_estd41523_enter_finding'
+  get 'estd41523s/:id/enter_finding(.:format)' => 'estd41523s#enter_finding', :as => 'estd41523_enter_finding'
   put 'estd41523s/:id/second_read(.:format)' => 'estd41523s#do_second_read', :as => 'do_estd41523_second_read'
   get 'estd41523s/:id/second_read(.:format)' => 'estd41523s#second_read', :as => 'estd41523_second_read'
+  put 'estd41523s/:id/return_to_primary(.:format)' => 'estd41523s#do_return_to_primary', :as => 'do_estd41523_return_to_primary'
+  get 'estd41523s/:id/return_to_primary(.:format)' => 'estd41523s#return_to_primary', :as => 'estd41523_return_to_primary'
   put 'estd41523s/:id/completion(.:format)' => 'estd41523s#do_completion', :as => 'do_estd41523_completion'
   get 'estd41523s/:id/completion(.:format)' => 'estd41523s#completion', :as => 'estd41523_completion'
 
@@ -1396,10 +1706,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil731s"
-  post 'mil731s/primary_read(.:format)' => 'mil731s#do_primary_read', :as => 'do_mil731_primary_read'
-  get 'mil731s/primary_read(.:format)' => 'mil731s#primary_read', :as => 'mil731_primary_read'
+  post 'mil731s/unstarted(.:format)' => 'mil731s#do_unstarted', :as => 'do_mil731_unstarted'
+  get 'mil731s/unstarted(.:format)' => 'mil731s#unstarted', :as => 'mil731_unstarted'
+  put 'mil731s/:id/enter_finding(.:format)' => 'mil731s#do_enter_finding', :as => 'do_mil731_enter_finding'
+  get 'mil731s/:id/enter_finding(.:format)' => 'mil731s#enter_finding', :as => 'mil731_enter_finding'
   put 'mil731s/:id/second_read(.:format)' => 'mil731s#do_second_read', :as => 'do_mil731_second_read'
   get 'mil731s/:id/second_read(.:format)' => 'mil731s#second_read', :as => 'mil731_second_read'
+  put 'mil731s/:id/return_to_primary(.:format)' => 'mil731s#do_return_to_primary', :as => 'do_mil731_return_to_primary'
+  get 'mil731s/:id/return_to_primary(.:format)' => 'mil731s#return_to_primary', :as => 'mil731_return_to_primary'
   put 'mil731s/:id/completion(.:format)' => 'mil731s#do_completion', :as => 'do_mil731_completion'
   get 'mil731s/:id/completion(.:format)' => 'mil731s#completion', :as => 'mil731_completion'
 
@@ -1413,10 +1727,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46313s"
-  post 'estd46313s/primary_read(.:format)' => 'estd46313s#do_primary_read', :as => 'do_estd46313_primary_read'
-  get 'estd46313s/primary_read(.:format)' => 'estd46313s#primary_read', :as => 'estd46313_primary_read'
+  post 'estd46313s/unstarted(.:format)' => 'estd46313s#do_unstarted', :as => 'do_estd46313_unstarted'
+  get 'estd46313s/unstarted(.:format)' => 'estd46313s#unstarted', :as => 'estd46313_unstarted'
+  put 'estd46313s/:id/enter_finding(.:format)' => 'estd46313s#do_enter_finding', :as => 'do_estd46313_enter_finding'
+  get 'estd46313s/:id/enter_finding(.:format)' => 'estd46313s#enter_finding', :as => 'estd46313_enter_finding'
   put 'estd46313s/:id/second_read(.:format)' => 'estd46313s#do_second_read', :as => 'do_estd46313_second_read'
   get 'estd46313s/:id/second_read(.:format)' => 'estd46313s#second_read', :as => 'estd46313_second_read'
+  put 'estd46313s/:id/return_to_primary(.:format)' => 'estd46313s#do_return_to_primary', :as => 'do_estd46313_return_to_primary'
+  get 'estd46313s/:id/return_to_primary(.:format)' => 'estd46313s#return_to_primary', :as => 'estd46313_return_to_primary'
   put 'estd46313s/:id/completion(.:format)' => 'estd46313s#do_completion', :as => 'do_estd46313_completion'
   get 'estd46313s/:id/completion(.:format)' => 'estd46313s#completion', :as => 'estd46313_completion'
 
@@ -1430,10 +1748,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4104s"
-  post 'estd4104s/primary_read(.:format)' => 'estd4104s#do_primary_read', :as => 'do_estd4104_primary_read'
-  get 'estd4104s/primary_read(.:format)' => 'estd4104s#primary_read', :as => 'estd4104_primary_read'
+  post 'estd4104s/unstarted(.:format)' => 'estd4104s#do_unstarted', :as => 'do_estd4104_unstarted'
+  get 'estd4104s/unstarted(.:format)' => 'estd4104s#unstarted', :as => 'estd4104_unstarted'
+  put 'estd4104s/:id/enter_finding(.:format)' => 'estd4104s#do_enter_finding', :as => 'do_estd4104_enter_finding'
+  get 'estd4104s/:id/enter_finding(.:format)' => 'estd4104s#enter_finding', :as => 'estd4104_enter_finding'
   put 'estd4104s/:id/second_read(.:format)' => 'estd4104s#do_second_read', :as => 'do_estd4104_second_read'
   get 'estd4104s/:id/second_read(.:format)' => 'estd4104s#second_read', :as => 'estd4104_second_read'
+  put 'estd4104s/:id/return_to_primary(.:format)' => 'estd4104s#do_return_to_primary', :as => 'do_estd4104_return_to_primary'
+  get 'estd4104s/:id/return_to_primary(.:format)' => 'estd4104s#return_to_primary', :as => 'estd4104_return_to_primary'
   put 'estd4104s/:id/completion(.:format)' => 'estd4104s#do_completion', :as => 'do_estd4104_completion'
   get 'estd4104s/:id/completion(.:format)' => 'estd4104s#completion', :as => 'estd4104_completion'
 
@@ -1447,10 +1769,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil3103s"
-  post 'mil3103s/primary_read(.:format)' => 'mil3103s#do_primary_read', :as => 'do_mil3103_primary_read'
-  get 'mil3103s/primary_read(.:format)' => 'mil3103s#primary_read', :as => 'mil3103_primary_read'
+  post 'mil3103s/unstarted(.:format)' => 'mil3103s#do_unstarted', :as => 'do_mil3103_unstarted'
+  get 'mil3103s/unstarted(.:format)' => 'mil3103s#unstarted', :as => 'mil3103_unstarted'
+  put 'mil3103s/:id/enter_finding(.:format)' => 'mil3103s#do_enter_finding', :as => 'do_mil3103_enter_finding'
+  get 'mil3103s/:id/enter_finding(.:format)' => 'mil3103s#enter_finding', :as => 'mil3103_enter_finding'
   put 'mil3103s/:id/second_read(.:format)' => 'mil3103s#do_second_read', :as => 'do_mil3103_second_read'
   get 'mil3103s/:id/second_read(.:format)' => 'mil3103s#second_read', :as => 'mil3103_second_read'
+  put 'mil3103s/:id/return_to_primary(.:format)' => 'mil3103s#do_return_to_primary', :as => 'do_mil3103_return_to_primary'
+  get 'mil3103s/:id/return_to_primary(.:format)' => 'mil3103s#return_to_primary', :as => 'mil3103_return_to_primary'
   put 'mil3103s/:id/completion(.:format)' => 'mil3103s#do_completion', :as => 'do_mil3103_completion'
   get 'mil3103s/:id/completion(.:format)' => 'mil3103s#completion', :as => 'mil3103_completion'
 
@@ -1464,10 +1790,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd475s"
-  post 'estd475s/primary_read(.:format)' => 'estd475s#do_primary_read', :as => 'do_estd475_primary_read'
-  get 'estd475s/primary_read(.:format)' => 'estd475s#primary_read', :as => 'estd475_primary_read'
+  post 'estd475s/unstarted(.:format)' => 'estd475s#do_unstarted', :as => 'do_estd475_unstarted'
+  get 'estd475s/unstarted(.:format)' => 'estd475s#unstarted', :as => 'estd475_unstarted'
+  put 'estd475s/:id/enter_finding(.:format)' => 'estd475s#do_enter_finding', :as => 'do_estd475_enter_finding'
+  get 'estd475s/:id/enter_finding(.:format)' => 'estd475s#enter_finding', :as => 'estd475_enter_finding'
   put 'estd475s/:id/second_read(.:format)' => 'estd475s#do_second_read', :as => 'do_estd475_second_read'
   get 'estd475s/:id/second_read(.:format)' => 'estd475s#second_read', :as => 'estd475_second_read'
+  put 'estd475s/:id/return_to_primary(.:format)' => 'estd475s#do_return_to_primary', :as => 'do_estd475_return_to_primary'
+  get 'estd475s/:id/return_to_primary(.:format)' => 'estd475s#return_to_primary', :as => 'estd475_return_to_primary'
   put 'estd475s/:id/completion(.:format)' => 'estd475s#do_completion', :as => 'do_estd475_completion'
   get 'estd475s/:id/completion(.:format)' => 'estd475s#completion', :as => 'estd475_completion'
 
@@ -1481,10 +1811,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd492s"
-  post 'estd492s/primary_read(.:format)' => 'estd492s#do_primary_read', :as => 'do_estd492_primary_read'
-  get 'estd492s/primary_read(.:format)' => 'estd492s#primary_read', :as => 'estd492_primary_read'
+  post 'estd492s/unstarted(.:format)' => 'estd492s#do_unstarted', :as => 'do_estd492_unstarted'
+  get 'estd492s/unstarted(.:format)' => 'estd492s#unstarted', :as => 'estd492_unstarted'
+  put 'estd492s/:id/enter_finding(.:format)' => 'estd492s#do_enter_finding', :as => 'do_estd492_enter_finding'
+  get 'estd492s/:id/enter_finding(.:format)' => 'estd492s#enter_finding', :as => 'estd492_enter_finding'
   put 'estd492s/:id/second_read(.:format)' => 'estd492s#do_second_read', :as => 'do_estd492_second_read'
   get 'estd492s/:id/second_read(.:format)' => 'estd492s#second_read', :as => 'estd492_second_read'
+  put 'estd492s/:id/return_to_primary(.:format)' => 'estd492s#do_return_to_primary', :as => 'do_estd492_return_to_primary'
+  get 'estd492s/:id/return_to_primary(.:format)' => 'estd492s#return_to_primary', :as => 'estd492_return_to_primary'
   put 'estd492s/:id/completion(.:format)' => 'estd492s#do_completion', :as => 'do_estd492_completion'
   get 'estd492s/:id/completion(.:format)' => 'estd492s#completion', :as => 'estd492_completion'
 
@@ -1498,10 +1832,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med71s"
-  post 'med71s/primary_read(.:format)' => 'med71s#do_primary_read', :as => 'do_med71_primary_read'
-  get 'med71s/primary_read(.:format)' => 'med71s#primary_read', :as => 'med71_primary_read'
+  post 'med71s/unstarted(.:format)' => 'med71s#do_unstarted', :as => 'do_med71_unstarted'
+  get 'med71s/unstarted(.:format)' => 'med71s#unstarted', :as => 'med71_unstarted'
+  put 'med71s/:id/enter_finding(.:format)' => 'med71s#do_enter_finding', :as => 'do_med71_enter_finding'
+  get 'med71s/:id/enter_finding(.:format)' => 'med71s#enter_finding', :as => 'med71_enter_finding'
   put 'med71s/:id/second_read(.:format)' => 'med71s#do_second_read', :as => 'do_med71_second_read'
   get 'med71s/:id/second_read(.:format)' => 'med71s#second_read', :as => 'med71_second_read'
+  put 'med71s/:id/return_to_primary(.:format)' => 'med71s#do_return_to_primary', :as => 'do_med71_return_to_primary'
+  get 'med71s/:id/return_to_primary(.:format)' => 'med71s#return_to_primary', :as => 'med71_return_to_primary'
   put 'med71s/:id/completion(.:format)' => 'med71s#do_completion', :as => 'do_med71_completion'
   get 'med71s/:id/completion(.:format)' => 'med71s#completion', :as => 'med71_completion'
 
@@ -1515,10 +1853,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med43s"
-  post 'med43s/primary_read(.:format)' => 'med43s#do_primary_read', :as => 'do_med43_primary_read'
-  get 'med43s/primary_read(.:format)' => 'med43s#primary_read', :as => 'med43_primary_read'
+  post 'med43s/unstarted(.:format)' => 'med43s#do_unstarted', :as => 'do_med43_unstarted'
+  get 'med43s/unstarted(.:format)' => 'med43s#unstarted', :as => 'med43_unstarted'
+  put 'med43s/:id/enter_finding(.:format)' => 'med43s#do_enter_finding', :as => 'do_med43_enter_finding'
+  get 'med43s/:id/enter_finding(.:format)' => 'med43s#enter_finding', :as => 'med43_enter_finding'
   put 'med43s/:id/second_read(.:format)' => 'med43s#do_second_read', :as => 'do_med43_second_read'
   get 'med43s/:id/second_read(.:format)' => 'med43s#second_read', :as => 'med43_second_read'
+  put 'med43s/:id/return_to_primary(.:format)' => 'med43s#do_return_to_primary', :as => 'do_med43_return_to_primary'
+  get 'med43s/:id/return_to_primary(.:format)' => 'med43s#return_to_primary', :as => 'med43_return_to_primary'
   put 'med43s/:id/completion(.:format)' => 'med43s#do_completion', :as => 'do_med43_completion'
   get 'med43s/:id/completion(.:format)' => 'med43s#completion', :as => 'med43_completion'
 
@@ -1532,10 +1874,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4627s"
-  post 'estd4627s/primary_read(.:format)' => 'estd4627s#do_primary_read', :as => 'do_estd4627_primary_read'
-  get 'estd4627s/primary_read(.:format)' => 'estd4627s#primary_read', :as => 'estd4627_primary_read'
+  post 'estd4627s/unstarted(.:format)' => 'estd4627s#do_unstarted', :as => 'do_estd4627_unstarted'
+  get 'estd4627s/unstarted(.:format)' => 'estd4627s#unstarted', :as => 'estd4627_unstarted'
+  put 'estd4627s/:id/enter_finding(.:format)' => 'estd4627s#do_enter_finding', :as => 'do_estd4627_enter_finding'
+  get 'estd4627s/:id/enter_finding(.:format)' => 'estd4627s#enter_finding', :as => 'estd4627_enter_finding'
   put 'estd4627s/:id/second_read(.:format)' => 'estd4627s#do_second_read', :as => 'do_estd4627_second_read'
   get 'estd4627s/:id/second_read(.:format)' => 'estd4627s#second_read', :as => 'estd4627_second_read'
+  put 'estd4627s/:id/return_to_primary(.:format)' => 'estd4627s#do_return_to_primary', :as => 'do_estd4627_return_to_primary'
+  get 'estd4627s/:id/return_to_primary(.:format)' => 'estd4627s#return_to_primary', :as => 'estd4627_return_to_primary'
   put 'estd4627s/:id/completion(.:format)' => 'estd4627s#do_completion', :as => 'do_estd4627_completion'
   get 'estd4627s/:id/completion(.:format)' => 'estd4627s#completion', :as => 'estd4627_completion'
 
@@ -1549,10 +1895,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4622s"
-  post 'estd4622s/primary_read(.:format)' => 'estd4622s#do_primary_read', :as => 'do_estd4622_primary_read'
-  get 'estd4622s/primary_read(.:format)' => 'estd4622s#primary_read', :as => 'estd4622_primary_read'
+  post 'estd4622s/unstarted(.:format)' => 'estd4622s#do_unstarted', :as => 'do_estd4622_unstarted'
+  get 'estd4622s/unstarted(.:format)' => 'estd4622s#unstarted', :as => 'estd4622_unstarted'
+  put 'estd4622s/:id/enter_finding(.:format)' => 'estd4622s#do_enter_finding', :as => 'do_estd4622_enter_finding'
+  get 'estd4622s/:id/enter_finding(.:format)' => 'estd4622s#enter_finding', :as => 'estd4622_enter_finding'
   put 'estd4622s/:id/second_read(.:format)' => 'estd4622s#do_second_read', :as => 'do_estd4622_second_read'
   get 'estd4622s/:id/second_read(.:format)' => 'estd4622s#second_read', :as => 'estd4622_second_read'
+  put 'estd4622s/:id/return_to_primary(.:format)' => 'estd4622s#do_return_to_primary', :as => 'do_estd4622_return_to_primary'
+  get 'estd4622s/:id/return_to_primary(.:format)' => 'estd4622s#return_to_primary', :as => 'estd4622_return_to_primary'
   put 'estd4622s/:id/completion(.:format)' => 'estd4622s#do_completion', :as => 'do_estd4622_completion'
   get 'estd4622s/:id/completion(.:format)' => 'estd4622s#completion', :as => 'estd4622_completion'
 
@@ -1566,10 +1916,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46321s"
-  post 'estd46321s/primary_read(.:format)' => 'estd46321s#do_primary_read', :as => 'do_estd46321_primary_read'
-  get 'estd46321s/primary_read(.:format)' => 'estd46321s#primary_read', :as => 'estd46321_primary_read'
+  post 'estd46321s/unstarted(.:format)' => 'estd46321s#do_unstarted', :as => 'do_estd46321_unstarted'
+  get 'estd46321s/unstarted(.:format)' => 'estd46321s#unstarted', :as => 'estd46321_unstarted'
+  put 'estd46321s/:id/enter_finding(.:format)' => 'estd46321s#do_enter_finding', :as => 'do_estd46321_enter_finding'
+  get 'estd46321s/:id/enter_finding(.:format)' => 'estd46321s#enter_finding', :as => 'estd46321_enter_finding'
   put 'estd46321s/:id/second_read(.:format)' => 'estd46321s#do_second_read', :as => 'do_estd46321_second_read'
   get 'estd46321s/:id/second_read(.:format)' => 'estd46321s#second_read', :as => 'estd46321_second_read'
+  put 'estd46321s/:id/return_to_primary(.:format)' => 'estd46321s#do_return_to_primary', :as => 'do_estd46321_return_to_primary'
+  get 'estd46321s/:id/return_to_primary(.:format)' => 'estd46321s#return_to_primary', :as => 'estd46321_return_to_primary'
   put 'estd46321s/:id/completion(.:format)' => 'estd46321s#do_completion', :as => 'do_estd46321_completion'
   get 'estd46321s/:id/completion(.:format)' => 'estd46321s#completion', :as => 'estd46321_completion'
 
@@ -1583,10 +1937,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46314s"
-  post 'estd46314s/primary_read(.:format)' => 'estd46314s#do_primary_read', :as => 'do_estd46314_primary_read'
-  get 'estd46314s/primary_read(.:format)' => 'estd46314s#primary_read', :as => 'estd46314_primary_read'
+  post 'estd46314s/unstarted(.:format)' => 'estd46314s#do_unstarted', :as => 'do_estd46314_unstarted'
+  get 'estd46314s/unstarted(.:format)' => 'estd46314s#unstarted', :as => 'estd46314_unstarted'
+  put 'estd46314s/:id/enter_finding(.:format)' => 'estd46314s#do_enter_finding', :as => 'do_estd46314_enter_finding'
+  get 'estd46314s/:id/enter_finding(.:format)' => 'estd46314s#enter_finding', :as => 'estd46314_enter_finding'
   put 'estd46314s/:id/second_read(.:format)' => 'estd46314s#do_second_read', :as => 'do_estd46314_second_read'
   get 'estd46314s/:id/second_read(.:format)' => 'estd46314s#second_read', :as => 'estd46314_second_read'
+  put 'estd46314s/:id/return_to_primary(.:format)' => 'estd46314s#do_return_to_primary', :as => 'do_estd46314_return_to_primary'
+  get 'estd46314s/:id/return_to_primary(.:format)' => 'estd46314s#return_to_primary', :as => 'estd46314_return_to_primary'
   put 'estd46314s/:id/completion(.:format)' => 'estd46314s#do_completion', :as => 'do_estd46314_completion'
   get 'estd46314s/:id/completion(.:format)' => 'estd46314s#completion', :as => 'estd46314_completion'
 
@@ -1600,10 +1958,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil381s"
-  post 'mil381s/primary_read(.:format)' => 'mil381s#do_primary_read', :as => 'do_mil381_primary_read'
-  get 'mil381s/primary_read(.:format)' => 'mil381s#primary_read', :as => 'mil381_primary_read'
+  post 'mil381s/unstarted(.:format)' => 'mil381s#do_unstarted', :as => 'do_mil381_unstarted'
+  get 'mil381s/unstarted(.:format)' => 'mil381s#unstarted', :as => 'mil381_unstarted'
+  put 'mil381s/:id/enter_finding(.:format)' => 'mil381s#do_enter_finding', :as => 'do_mil381_enter_finding'
+  get 'mil381s/:id/enter_finding(.:format)' => 'mil381s#enter_finding', :as => 'mil381_enter_finding'
   put 'mil381s/:id/second_read(.:format)' => 'mil381s#do_second_read', :as => 'do_mil381_second_read'
   get 'mil381s/:id/second_read(.:format)' => 'mil381s#second_read', :as => 'mil381_second_read'
+  put 'mil381s/:id/return_to_primary(.:format)' => 'mil381s#do_return_to_primary', :as => 'do_mil381_return_to_primary'
+  get 'mil381s/:id/return_to_primary(.:format)' => 'mil381s#return_to_primary', :as => 'mil381_return_to_primary'
   put 'mil381s/:id/completion(.:format)' => 'mil381s#do_completion', :as => 'do_mil381_completion'
   get 'mil381s/:id/completion(.:format)' => 'mil381s#completion', :as => 'mil381_completion'
 
@@ -1617,10 +1979,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4842s"
-  post 'estd4842s/primary_read(.:format)' => 'estd4842s#do_primary_read', :as => 'do_estd4842_primary_read'
-  get 'estd4842s/primary_read(.:format)' => 'estd4842s#primary_read', :as => 'estd4842_primary_read'
+  post 'estd4842s/unstarted(.:format)' => 'estd4842s#do_unstarted', :as => 'do_estd4842_unstarted'
+  get 'estd4842s/unstarted(.:format)' => 'estd4842s#unstarted', :as => 'estd4842_unstarted'
+  put 'estd4842s/:id/enter_finding(.:format)' => 'estd4842s#do_enter_finding', :as => 'do_estd4842_enter_finding'
+  get 'estd4842s/:id/enter_finding(.:format)' => 'estd4842s#enter_finding', :as => 'estd4842_enter_finding'
   put 'estd4842s/:id/second_read(.:format)' => 'estd4842s#do_second_read', :as => 'do_estd4842_second_read'
   get 'estd4842s/:id/second_read(.:format)' => 'estd4842s#second_read', :as => 'estd4842_second_read'
+  put 'estd4842s/:id/return_to_primary(.:format)' => 'estd4842s#do_return_to_primary', :as => 'do_estd4842_return_to_primary'
+  get 'estd4842s/:id/return_to_primary(.:format)' => 'estd4842s#return_to_primary', :as => 'estd4842_return_to_primary'
   put 'estd4842s/:id/completion(.:format)' => 'estd4842s#do_completion', :as => 'do_estd4842_completion'
   get 'estd4842s/:id/completion(.:format)' => 'estd4842s#completion', :as => 'estd4842_completion'
 
@@ -1634,10 +2000,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46315s"
-  post 'estd46315s/primary_read(.:format)' => 'estd46315s#do_primary_read', :as => 'do_estd46315_primary_read'
-  get 'estd46315s/primary_read(.:format)' => 'estd46315s#primary_read', :as => 'estd46315_primary_read'
+  post 'estd46315s/unstarted(.:format)' => 'estd46315s#do_unstarted', :as => 'do_estd46315_unstarted'
+  get 'estd46315s/unstarted(.:format)' => 'estd46315s#unstarted', :as => 'estd46315_unstarted'
+  put 'estd46315s/:id/enter_finding(.:format)' => 'estd46315s#do_enter_finding', :as => 'do_estd46315_enter_finding'
+  get 'estd46315s/:id/enter_finding(.:format)' => 'estd46315s#enter_finding', :as => 'estd46315_enter_finding'
   put 'estd46315s/:id/second_read(.:format)' => 'estd46315s#do_second_read', :as => 'do_estd46315_second_read'
   get 'estd46315s/:id/second_read(.:format)' => 'estd46315s#second_read', :as => 'estd46315_second_read'
+  put 'estd46315s/:id/return_to_primary(.:format)' => 'estd46315s#do_return_to_primary', :as => 'do_estd46315_return_to_primary'
+  get 'estd46315s/:id/return_to_primary(.:format)' => 'estd46315s#return_to_primary', :as => 'estd46315_return_to_primary'
   put 'estd46315s/:id/completion(.:format)' => 'estd46315s#do_completion', :as => 'do_estd46315_completion'
   get 'estd46315s/:id/completion(.:format)' => 'estd46315s#completion', :as => 'estd46315_completion'
 
@@ -1651,10 +2021,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil621s"
-  post 'mil621s/primary_read(.:format)' => 'mil621s#do_primary_read', :as => 'do_mil621_primary_read'
-  get 'mil621s/primary_read(.:format)' => 'mil621s#primary_read', :as => 'mil621_primary_read'
+  post 'mil621s/unstarted(.:format)' => 'mil621s#do_unstarted', :as => 'do_mil621_unstarted'
+  get 'mil621s/unstarted(.:format)' => 'mil621s#unstarted', :as => 'mil621_unstarted'
+  put 'mil621s/:id/enter_finding(.:format)' => 'mil621s#do_enter_finding', :as => 'do_mil621_enter_finding'
+  get 'mil621s/:id/enter_finding(.:format)' => 'mil621s#enter_finding', :as => 'mil621_enter_finding'
   put 'mil621s/:id/second_read(.:format)' => 'mil621s#do_second_read', :as => 'do_mil621_second_read'
   get 'mil621s/:id/second_read(.:format)' => 'mil621s#second_read', :as => 'mil621_second_read'
+  put 'mil621s/:id/return_to_primary(.:format)' => 'mil621s#do_return_to_primary', :as => 'do_mil621_return_to_primary'
+  get 'mil621s/:id/return_to_primary(.:format)' => 'mil621s#return_to_primary', :as => 'mil621_return_to_primary'
   put 'mil621s/:id/completion(.:format)' => 'mil621s#do_completion', :as => 'do_mil621_completion'
   get 'mil621s/:id/completion(.:format)' => 'mil621s#completion', :as => 'mil621_completion'
 
@@ -1668,10 +2042,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4134s"
-  post 'estd4134s/primary_read(.:format)' => 'estd4134s#do_primary_read', :as => 'do_estd4134_primary_read'
-  get 'estd4134s/primary_read(.:format)' => 'estd4134s#primary_read', :as => 'estd4134_primary_read'
+  post 'estd4134s/unstarted(.:format)' => 'estd4134s#do_unstarted', :as => 'do_estd4134_unstarted'
+  get 'estd4134s/unstarted(.:format)' => 'estd4134s#unstarted', :as => 'estd4134_unstarted'
+  put 'estd4134s/:id/enter_finding(.:format)' => 'estd4134s#do_enter_finding', :as => 'do_estd4134_enter_finding'
+  get 'estd4134s/:id/enter_finding(.:format)' => 'estd4134s#enter_finding', :as => 'estd4134_enter_finding'
   put 'estd4134s/:id/second_read(.:format)' => 'estd4134s#do_second_read', :as => 'do_estd4134_second_read'
   get 'estd4134s/:id/second_read(.:format)' => 'estd4134s#second_read', :as => 'estd4134_second_read'
+  put 'estd4134s/:id/return_to_primary(.:format)' => 'estd4134s#do_return_to_primary', :as => 'do_estd4134_return_to_primary'
+  get 'estd4134s/:id/return_to_primary(.:format)' => 'estd4134s#return_to_primary', :as => 'estd4134_return_to_primary'
   put 'estd4134s/:id/completion(.:format)' => 'estd4134s#do_completion', :as => 'do_estd4134_completion'
   get 'estd4134s/:id/completion(.:format)' => 'estd4134s#completion', :as => 'estd4134_completion'
 
@@ -1685,10 +2063,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil511s"
-  post 'mil511s/primary_read(.:format)' => 'mil511s#do_primary_read', :as => 'do_mil511_primary_read'
-  get 'mil511s/primary_read(.:format)' => 'mil511s#primary_read', :as => 'mil511_primary_read'
+  post 'mil511s/unstarted(.:format)' => 'mil511s#do_unstarted', :as => 'do_mil511_unstarted'
+  get 'mil511s/unstarted(.:format)' => 'mil511s#unstarted', :as => 'mil511_unstarted'
+  put 'mil511s/:id/enter_finding(.:format)' => 'mil511s#do_enter_finding', :as => 'do_mil511_enter_finding'
+  get 'mil511s/:id/enter_finding(.:format)' => 'mil511s#enter_finding', :as => 'mil511_enter_finding'
   put 'mil511s/:id/second_read(.:format)' => 'mil511s#do_second_read', :as => 'do_mil511_second_read'
   get 'mil511s/:id/second_read(.:format)' => 'mil511s#second_read', :as => 'mil511_second_read'
+  put 'mil511s/:id/return_to_primary(.:format)' => 'mil511s#do_return_to_primary', :as => 'do_mil511_return_to_primary'
+  get 'mil511s/:id/return_to_primary(.:format)' => 'mil511s#return_to_primary', :as => 'mil511_return_to_primary'
   put 'mil511s/:id/completion(.:format)' => 'mil511s#do_completion', :as => 'do_mil511_completion'
   get 'mil511s/:id/completion(.:format)' => 'mil511s#completion', :as => 'mil511_completion'
 
@@ -1702,10 +2084,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil442s"
-  post 'mil442s/primary_read(.:format)' => 'mil442s#do_primary_read', :as => 'do_mil442_primary_read'
-  get 'mil442s/primary_read(.:format)' => 'mil442s#primary_read', :as => 'mil442_primary_read'
+  post 'mil442s/unstarted(.:format)' => 'mil442s#do_unstarted', :as => 'do_mil442_unstarted'
+  get 'mil442s/unstarted(.:format)' => 'mil442s#unstarted', :as => 'mil442_unstarted'
+  put 'mil442s/:id/enter_finding(.:format)' => 'mil442s#do_enter_finding', :as => 'do_mil442_enter_finding'
+  get 'mil442s/:id/enter_finding(.:format)' => 'mil442s#enter_finding', :as => 'mil442_enter_finding'
   put 'mil442s/:id/second_read(.:format)' => 'mil442s#do_second_read', :as => 'do_mil442_second_read'
   get 'mil442s/:id/second_read(.:format)' => 'mil442s#second_read', :as => 'mil442_second_read'
+  put 'mil442s/:id/return_to_primary(.:format)' => 'mil442s#do_return_to_primary', :as => 'do_mil442_return_to_primary'
+  get 'mil442s/:id/return_to_primary(.:format)' => 'mil442s#return_to_primary', :as => 'mil442_return_to_primary'
   put 'mil442s/:id/completion(.:format)' => 'mil442s#do_completion', :as => 'do_mil442_completion'
   get 'mil442s/:id/completion(.:format)' => 'mil442s#completion', :as => 'mil442_completion'
 
@@ -1719,10 +2105,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med101s"
-  post 'med101s/primary_read(.:format)' => 'med101s#do_primary_read', :as => 'do_med101_primary_read'
-  get 'med101s/primary_read(.:format)' => 'med101s#primary_read', :as => 'med101_primary_read'
+  post 'med101s/unstarted(.:format)' => 'med101s#do_unstarted', :as => 'do_med101_unstarted'
+  get 'med101s/unstarted(.:format)' => 'med101s#unstarted', :as => 'med101_unstarted'
+  put 'med101s/:id/enter_finding(.:format)' => 'med101s#do_enter_finding', :as => 'do_med101_enter_finding'
+  get 'med101s/:id/enter_finding(.:format)' => 'med101s#enter_finding', :as => 'med101_enter_finding'
   put 'med101s/:id/second_read(.:format)' => 'med101s#do_second_read', :as => 'do_med101_second_read'
   get 'med101s/:id/second_read(.:format)' => 'med101s#second_read', :as => 'med101_second_read'
+  put 'med101s/:id/return_to_primary(.:format)' => 'med101s#do_return_to_primary', :as => 'do_med101_return_to_primary'
+  get 'med101s/:id/return_to_primary(.:format)' => 'med101s#return_to_primary', :as => 'med101_return_to_primary'
   put 'med101s/:id/completion(.:format)' => 'med101s#do_completion', :as => 'do_med101_completion'
   get 'med101s/:id/completion(.:format)' => 'med101s#completion', :as => 'med101_completion'
 
@@ -1736,10 +2126,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med24s"
-  post 'med24s/primary_read(.:format)' => 'med24s#do_primary_read', :as => 'do_med24_primary_read'
-  get 'med24s/primary_read(.:format)' => 'med24s#primary_read', :as => 'med24_primary_read'
+  post 'med24s/unstarted(.:format)' => 'med24s#do_unstarted', :as => 'do_med24_unstarted'
+  get 'med24s/unstarted(.:format)' => 'med24s#unstarted', :as => 'med24_unstarted'
+  put 'med24s/:id/enter_finding(.:format)' => 'med24s#do_enter_finding', :as => 'do_med24_enter_finding'
+  get 'med24s/:id/enter_finding(.:format)' => 'med24s#enter_finding', :as => 'med24_enter_finding'
   put 'med24s/:id/second_read(.:format)' => 'med24s#do_second_read', :as => 'do_med24_second_read'
   get 'med24s/:id/second_read(.:format)' => 'med24s#second_read', :as => 'med24_second_read'
+  put 'med24s/:id/return_to_primary(.:format)' => 'med24s#do_return_to_primary', :as => 'do_med24_return_to_primary'
+  get 'med24s/:id/return_to_primary(.:format)' => 'med24s#return_to_primary', :as => 'med24_return_to_primary'
   put 'med24s/:id/completion(.:format)' => 'med24s#do_completion', :as => 'do_med24_completion'
   get 'med24s/:id/completion(.:format)' => 'med24s#completion', :as => 'med24_completion'
 
@@ -1753,10 +2147,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil141s"
-  post 'mil141s/primary_read(.:format)' => 'mil141s#do_primary_read', :as => 'do_mil141_primary_read'
-  get 'mil141s/primary_read(.:format)' => 'mil141s#primary_read', :as => 'mil141_primary_read'
+  post 'mil141s/unstarted(.:format)' => 'mil141s#do_unstarted', :as => 'do_mil141_unstarted'
+  get 'mil141s/unstarted(.:format)' => 'mil141s#unstarted', :as => 'mil141_unstarted'
+  put 'mil141s/:id/enter_finding(.:format)' => 'mil141s#do_enter_finding', :as => 'do_mil141_enter_finding'
+  get 'mil141s/:id/enter_finding(.:format)' => 'mil141s#enter_finding', :as => 'mil141_enter_finding'
   put 'mil141s/:id/second_read(.:format)' => 'mil141s#do_second_read', :as => 'do_mil141_second_read'
   get 'mil141s/:id/second_read(.:format)' => 'mil141s#second_read', :as => 'mil141_second_read'
+  put 'mil141s/:id/return_to_primary(.:format)' => 'mil141s#do_return_to_primary', :as => 'do_mil141_return_to_primary'
+  get 'mil141s/:id/return_to_primary(.:format)' => 'mil141s#return_to_primary', :as => 'mil141_return_to_primary'
   put 'mil141s/:id/completion(.:format)' => 'mil141s#do_completion', :as => 'do_mil141_completion'
   get 'mil141s/:id/completion(.:format)' => 'mil141s#completion', :as => 'mil141_completion'
 
@@ -1770,10 +2168,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd451s"
-  post 'estd451s/primary_read(.:format)' => 'estd451s#do_primary_read', :as => 'do_estd451_primary_read'
-  get 'estd451s/primary_read(.:format)' => 'estd451s#primary_read', :as => 'estd451_primary_read'
+  post 'estd451s/unstarted(.:format)' => 'estd451s#do_unstarted', :as => 'do_estd451_unstarted'
+  get 'estd451s/unstarted(.:format)' => 'estd451s#unstarted', :as => 'estd451_unstarted'
+  put 'estd451s/:id/enter_finding(.:format)' => 'estd451s#do_enter_finding', :as => 'do_estd451_enter_finding'
+  get 'estd451s/:id/enter_finding(.:format)' => 'estd451s#enter_finding', :as => 'estd451_enter_finding'
   put 'estd451s/:id/second_read(.:format)' => 'estd451s#do_second_read', :as => 'do_estd451_second_read'
   get 'estd451s/:id/second_read(.:format)' => 'estd451s#second_read', :as => 'estd451_second_read'
+  put 'estd451s/:id/return_to_primary(.:format)' => 'estd451s#do_return_to_primary', :as => 'do_estd451_return_to_primary'
+  get 'estd451s/:id/return_to_primary(.:format)' => 'estd451s#return_to_primary', :as => 'estd451_return_to_primary'
   put 'estd451s/:id/completion(.:format)' => 'estd451s#do_completion', :as => 'do_estd451_completion'
   get 'estd451s/:id/completion(.:format)' => 'estd451s#completion', :as => 'estd451_completion'
 
@@ -1787,10 +2189,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd443s"
-  post 'estd443s/primary_read(.:format)' => 'estd443s#do_primary_read', :as => 'do_estd443_primary_read'
-  get 'estd443s/primary_read(.:format)' => 'estd443s#primary_read', :as => 'estd443_primary_read'
+  post 'estd443s/unstarted(.:format)' => 'estd443s#do_unstarted', :as => 'do_estd443_unstarted'
+  get 'estd443s/unstarted(.:format)' => 'estd443s#unstarted', :as => 'estd443_unstarted'
+  put 'estd443s/:id/enter_finding(.:format)' => 'estd443s#do_enter_finding', :as => 'do_estd443_enter_finding'
+  get 'estd443s/:id/enter_finding(.:format)' => 'estd443s#enter_finding', :as => 'estd443_enter_finding'
   put 'estd443s/:id/second_read(.:format)' => 'estd443s#do_second_read', :as => 'do_estd443_second_read'
   get 'estd443s/:id/second_read(.:format)' => 'estd443s#second_read', :as => 'estd443_second_read'
+  put 'estd443s/:id/return_to_primary(.:format)' => 'estd443s#do_return_to_primary', :as => 'do_estd443_return_to_primary'
+  get 'estd443s/:id/return_to_primary(.:format)' => 'estd443s#return_to_primary', :as => 'estd443_return_to_primary'
   put 'estd443s/:id/completion(.:format)' => 'estd443s#do_completion', :as => 'do_estd443_completion'
   get 'estd443s/:id/completion(.:format)' => 'estd443s#completion', :as => 'estd443_completion'
 
@@ -1804,10 +2210,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4114s"
-  post 'estd4114s/primary_read(.:format)' => 'estd4114s#do_primary_read', :as => 'do_estd4114_primary_read'
-  get 'estd4114s/primary_read(.:format)' => 'estd4114s#primary_read', :as => 'estd4114_primary_read'
+  post 'estd4114s/unstarted(.:format)' => 'estd4114s#do_unstarted', :as => 'do_estd4114_unstarted'
+  get 'estd4114s/unstarted(.:format)' => 'estd4114s#unstarted', :as => 'estd4114_unstarted'
+  put 'estd4114s/:id/enter_finding(.:format)' => 'estd4114s#do_enter_finding', :as => 'do_estd4114_enter_finding'
+  get 'estd4114s/:id/enter_finding(.:format)' => 'estd4114s#enter_finding', :as => 'estd4114_enter_finding'
   put 'estd4114s/:id/second_read(.:format)' => 'estd4114s#do_second_read', :as => 'do_estd4114_second_read'
   get 'estd4114s/:id/second_read(.:format)' => 'estd4114s#second_read', :as => 'estd4114_second_read'
+  put 'estd4114s/:id/return_to_primary(.:format)' => 'estd4114s#do_return_to_primary', :as => 'do_estd4114_return_to_primary'
+  get 'estd4114s/:id/return_to_primary(.:format)' => 'estd4114s#return_to_primary', :as => 'estd4114_return_to_primary'
   put 'estd4114s/:id/completion(.:format)' => 'estd4114s#do_completion', :as => 'do_estd4114_completion'
   get 'estd4114s/:id/completion(.:format)' => 'estd4114s#completion', :as => 'estd4114_completion'
 
@@ -1821,10 +2231,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil535s"
-  post 'mil535s/primary_read(.:format)' => 'mil535s#do_primary_read', :as => 'do_mil535_primary_read'
-  get 'mil535s/primary_read(.:format)' => 'mil535s#primary_read', :as => 'mil535_primary_read'
+  post 'mil535s/unstarted(.:format)' => 'mil535s#do_unstarted', :as => 'do_mil535_unstarted'
+  get 'mil535s/unstarted(.:format)' => 'mil535s#unstarted', :as => 'mil535_unstarted'
+  put 'mil535s/:id/enter_finding(.:format)' => 'mil535s#do_enter_finding', :as => 'do_mil535_enter_finding'
+  get 'mil535s/:id/enter_finding(.:format)' => 'mil535s#enter_finding', :as => 'mil535_enter_finding'
   put 'mil535s/:id/second_read(.:format)' => 'mil535s#do_second_read', :as => 'do_mil535_second_read'
   get 'mil535s/:id/second_read(.:format)' => 'mil535s#second_read', :as => 'mil535_second_read'
+  put 'mil535s/:id/return_to_primary(.:format)' => 'mil535s#do_return_to_primary', :as => 'do_mil535_return_to_primary'
+  get 'mil535s/:id/return_to_primary(.:format)' => 'mil535s#return_to_primary', :as => 'mil535_return_to_primary'
   put 'mil535s/:id/completion(.:format)' => 'mil535s#do_completion', :as => 'do_mil535_completion'
   get 'mil535s/:id/completion(.:format)' => 'mil535s#completion', :as => 'mil535_completion'
 
@@ -1838,10 +2252,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4151s"
-  post 'estd4151s/primary_read(.:format)' => 'estd4151s#do_primary_read', :as => 'do_estd4151_primary_read'
-  get 'estd4151s/primary_read(.:format)' => 'estd4151s#primary_read', :as => 'estd4151_primary_read'
+  post 'estd4151s/unstarted(.:format)' => 'estd4151s#do_unstarted', :as => 'do_estd4151_unstarted'
+  get 'estd4151s/unstarted(.:format)' => 'estd4151s#unstarted', :as => 'estd4151_unstarted'
+  put 'estd4151s/:id/enter_finding(.:format)' => 'estd4151s#do_enter_finding', :as => 'do_estd4151_enter_finding'
+  get 'estd4151s/:id/enter_finding(.:format)' => 'estd4151s#enter_finding', :as => 'estd4151_enter_finding'
   put 'estd4151s/:id/second_read(.:format)' => 'estd4151s#do_second_read', :as => 'do_estd4151_second_read'
   get 'estd4151s/:id/second_read(.:format)' => 'estd4151s#second_read', :as => 'estd4151_second_read'
+  put 'estd4151s/:id/return_to_primary(.:format)' => 'estd4151s#do_return_to_primary', :as => 'do_estd4151_return_to_primary'
+  get 'estd4151s/:id/return_to_primary(.:format)' => 'estd4151s#return_to_primary', :as => 'estd4151_return_to_primary'
   put 'estd4151s/:id/completion(.:format)' => 'estd4151s#do_completion', :as => 'do_estd4151_completion'
   get 'estd4151s/:id/completion(.:format)' => 'estd4151s#completion', :as => 'estd4151_completion'
 
@@ -1855,10 +2273,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil453s"
-  post 'mil453s/primary_read(.:format)' => 'mil453s#do_primary_read', :as => 'do_mil453_primary_read'
-  get 'mil453s/primary_read(.:format)' => 'mil453s#primary_read', :as => 'mil453_primary_read'
+  post 'mil453s/unstarted(.:format)' => 'mil453s#do_unstarted', :as => 'do_mil453_unstarted'
+  get 'mil453s/unstarted(.:format)' => 'mil453s#unstarted', :as => 'mil453_unstarted'
+  put 'mil453s/:id/enter_finding(.:format)' => 'mil453s#do_enter_finding', :as => 'do_mil453_enter_finding'
+  get 'mil453s/:id/enter_finding(.:format)' => 'mil453s#enter_finding', :as => 'mil453_enter_finding'
   put 'mil453s/:id/second_read(.:format)' => 'mil453s#do_second_read', :as => 'do_mil453_second_read'
   get 'mil453s/:id/second_read(.:format)' => 'mil453s#second_read', :as => 'mil453_second_read'
+  put 'mil453s/:id/return_to_primary(.:format)' => 'mil453s#do_return_to_primary', :as => 'do_mil453_return_to_primary'
+  get 'mil453s/:id/return_to_primary(.:format)' => 'mil453s#return_to_primary', :as => 'mil453_return_to_primary'
   put 'mil453s/:id/completion(.:format)' => 'mil453s#do_completion', :as => 'do_mil453_completion'
   get 'mil453s/:id/completion(.:format)' => 'mil453s#completion', :as => 'mil453_completion'
 
@@ -1872,10 +2294,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4632s"
-  post 'estd4632s/primary_read(.:format)' => 'estd4632s#do_primary_read', :as => 'do_estd4632_primary_read'
-  get 'estd4632s/primary_read(.:format)' => 'estd4632s#primary_read', :as => 'estd4632_primary_read'
+  post 'estd4632s/unstarted(.:format)' => 'estd4632s#do_unstarted', :as => 'do_estd4632_unstarted'
+  get 'estd4632s/unstarted(.:format)' => 'estd4632s#unstarted', :as => 'estd4632_unstarted'
+  put 'estd4632s/:id/enter_finding(.:format)' => 'estd4632s#do_enter_finding', :as => 'do_estd4632_enter_finding'
+  get 'estd4632s/:id/enter_finding(.:format)' => 'estd4632s#enter_finding', :as => 'estd4632_enter_finding'
   put 'estd4632s/:id/second_read(.:format)' => 'estd4632s#do_second_read', :as => 'do_estd4632_second_read'
   get 'estd4632s/:id/second_read(.:format)' => 'estd4632s#second_read', :as => 'estd4632_second_read'
+  put 'estd4632s/:id/return_to_primary(.:format)' => 'estd4632s#do_return_to_primary', :as => 'do_estd4632_return_to_primary'
+  get 'estd4632s/:id/return_to_primary(.:format)' => 'estd4632s#return_to_primary', :as => 'estd4632_return_to_primary'
   put 'estd4632s/:id/completion(.:format)' => 'estd4632s#do_completion', :as => 'do_estd4632_completion'
   get 'estd4632s/:id/completion(.:format)' => 'estd4632s#completion', :as => 'estd4632_completion'
 
@@ -1889,10 +2315,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil521s"
-  post 'mil521s/primary_read(.:format)' => 'mil521s#do_primary_read', :as => 'do_mil521_primary_read'
-  get 'mil521s/primary_read(.:format)' => 'mil521s#primary_read', :as => 'mil521_primary_read'
+  post 'mil521s/unstarted(.:format)' => 'mil521s#do_unstarted', :as => 'do_mil521_unstarted'
+  get 'mil521s/unstarted(.:format)' => 'mil521s#unstarted', :as => 'mil521_unstarted'
+  put 'mil521s/:id/enter_finding(.:format)' => 'mil521s#do_enter_finding', :as => 'do_mil521_enter_finding'
+  get 'mil521s/:id/enter_finding(.:format)' => 'mil521s#enter_finding', :as => 'mil521_enter_finding'
   put 'mil521s/:id/second_read(.:format)' => 'mil521s#do_second_read', :as => 'do_mil521_second_read'
   get 'mil521s/:id/second_read(.:format)' => 'mil521s#second_read', :as => 'mil521_second_read'
+  put 'mil521s/:id/return_to_primary(.:format)' => 'mil521s#do_return_to_primary', :as => 'do_mil521_return_to_primary'
+  get 'mil521s/:id/return_to_primary(.:format)' => 'mil521s#return_to_primary', :as => 'mil521_return_to_primary'
   put 'mil521s/:id/completion(.:format)' => 'mil521s#do_completion', :as => 'do_mil521_completion'
   get 'mil521s/:id/completion(.:format)' => 'mil521s#completion', :as => 'mil521_completion'
 
@@ -1906,10 +2336,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil412s"
-  post 'mil412s/primary_read(.:format)' => 'mil412s#do_primary_read', :as => 'do_mil412_primary_read'
-  get 'mil412s/primary_read(.:format)' => 'mil412s#primary_read', :as => 'mil412_primary_read'
+  post 'mil412s/unstarted(.:format)' => 'mil412s#do_unstarted', :as => 'do_mil412_unstarted'
+  get 'mil412s/unstarted(.:format)' => 'mil412s#unstarted', :as => 'mil412_unstarted'
+  put 'mil412s/:id/enter_finding(.:format)' => 'mil412s#do_enter_finding', :as => 'do_mil412_enter_finding'
+  get 'mil412s/:id/enter_finding(.:format)' => 'mil412s#enter_finding', :as => 'mil412_enter_finding'
   put 'mil412s/:id/second_read(.:format)' => 'mil412s#do_second_read', :as => 'do_mil412_second_read'
   get 'mil412s/:id/second_read(.:format)' => 'mil412s#second_read', :as => 'mil412_second_read'
+  put 'mil412s/:id/return_to_primary(.:format)' => 'mil412s#do_return_to_primary', :as => 'do_mil412_return_to_primary'
+  get 'mil412s/:id/return_to_primary(.:format)' => 'mil412s#return_to_primary', :as => 'mil412_return_to_primary'
   put 'mil412s/:id/completion(.:format)' => 'mil412s#do_completion', :as => 'do_mil412_completion'
   get 'mil412s/:id/completion(.:format)' => 'mil412s#completion', :as => 'mil412_completion'
 
@@ -1923,10 +2357,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4841s"
-  post 'estd4841s/primary_read(.:format)' => 'estd4841s#do_primary_read', :as => 'do_estd4841_primary_read'
-  get 'estd4841s/primary_read(.:format)' => 'estd4841s#primary_read', :as => 'estd4841_primary_read'
+  post 'estd4841s/unstarted(.:format)' => 'estd4841s#do_unstarted', :as => 'do_estd4841_unstarted'
+  get 'estd4841s/unstarted(.:format)' => 'estd4841s#unstarted', :as => 'estd4841_unstarted'
+  put 'estd4841s/:id/enter_finding(.:format)' => 'estd4841s#do_enter_finding', :as => 'do_estd4841_enter_finding'
+  get 'estd4841s/:id/enter_finding(.:format)' => 'estd4841s#enter_finding', :as => 'estd4841_enter_finding'
   put 'estd4841s/:id/second_read(.:format)' => 'estd4841s#do_second_read', :as => 'do_estd4841_second_read'
   get 'estd4841s/:id/second_read(.:format)' => 'estd4841s#second_read', :as => 'estd4841_second_read'
+  put 'estd4841s/:id/return_to_primary(.:format)' => 'estd4841s#do_return_to_primary', :as => 'do_estd4841_return_to_primary'
+  get 'estd4841s/:id/return_to_primary(.:format)' => 'estd4841s#return_to_primary', :as => 'estd4841_return_to_primary'
   put 'estd4841s/:id/completion(.:format)' => 'estd4841s#do_completion', :as => 'do_estd4841_completion'
   get 'estd4841s/:id/completion(.:format)' => 'estd4841s#completion', :as => 'estd4841_completion'
 
@@ -1940,10 +2378,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4113s"
-  post 'estd4113s/primary_read(.:format)' => 'estd4113s#do_primary_read', :as => 'do_estd4113_primary_read'
-  get 'estd4113s/primary_read(.:format)' => 'estd4113s#primary_read', :as => 'estd4113_primary_read'
+  post 'estd4113s/unstarted(.:format)' => 'estd4113s#do_unstarted', :as => 'do_estd4113_unstarted'
+  get 'estd4113s/unstarted(.:format)' => 'estd4113s#unstarted', :as => 'estd4113_unstarted'
+  put 'estd4113s/:id/enter_finding(.:format)' => 'estd4113s#do_enter_finding', :as => 'do_estd4113_enter_finding'
+  get 'estd4113s/:id/enter_finding(.:format)' => 'estd4113s#enter_finding', :as => 'estd4113_enter_finding'
   put 'estd4113s/:id/second_read(.:format)' => 'estd4113s#do_second_read', :as => 'do_estd4113_second_read'
   get 'estd4113s/:id/second_read(.:format)' => 'estd4113s#second_read', :as => 'estd4113_second_read'
+  put 'estd4113s/:id/return_to_primary(.:format)' => 'estd4113s#do_return_to_primary', :as => 'do_estd4113_return_to_primary'
+  get 'estd4113s/:id/return_to_primary(.:format)' => 'estd4113s#return_to_primary', :as => 'estd4113_return_to_primary'
   put 'estd4113s/:id/completion(.:format)' => 'estd4113s#do_completion', :as => 'do_estd4113_completion'
   get 'estd4113s/:id/completion(.:format)' => 'estd4113s#completion', :as => 'estd4113_completion'
 
@@ -1957,10 +2399,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd466s"
-  post 'estd466s/primary_read(.:format)' => 'estd466s#do_primary_read', :as => 'do_estd466_primary_read'
-  get 'estd466s/primary_read(.:format)' => 'estd466s#primary_read', :as => 'estd466_primary_read'
+  post 'estd466s/unstarted(.:format)' => 'estd466s#do_unstarted', :as => 'do_estd466_unstarted'
+  get 'estd466s/unstarted(.:format)' => 'estd466s#unstarted', :as => 'estd466_unstarted'
+  put 'estd466s/:id/enter_finding(.:format)' => 'estd466s#do_enter_finding', :as => 'do_estd466_enter_finding'
+  get 'estd466s/:id/enter_finding(.:format)' => 'estd466s#enter_finding', :as => 'estd466_enter_finding'
   put 'estd466s/:id/second_read(.:format)' => 'estd466s#do_second_read', :as => 'do_estd466_second_read'
   get 'estd466s/:id/second_read(.:format)' => 'estd466s#second_read', :as => 'estd466_second_read'
+  put 'estd466s/:id/return_to_primary(.:format)' => 'estd466s#do_return_to_primary', :as => 'do_estd466_return_to_primary'
+  get 'estd466s/:id/return_to_primary(.:format)' => 'estd466s#return_to_primary', :as => 'estd466_return_to_primary'
   put 'estd466s/:id/completion(.:format)' => 'estd466s#do_completion', :as => 'do_estd466_completion'
   get 'estd466s/:id/completion(.:format)' => 'estd466s#completion', :as => 'estd466_completion'
 
@@ -1974,10 +2420,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med94s"
-  post 'med94s/primary_read(.:format)' => 'med94s#do_primary_read', :as => 'do_med94_primary_read'
-  get 'med94s/primary_read(.:format)' => 'med94s#primary_read', :as => 'med94_primary_read'
+  post 'med94s/unstarted(.:format)' => 'med94s#do_unstarted', :as => 'do_med94_unstarted'
+  get 'med94s/unstarted(.:format)' => 'med94s#unstarted', :as => 'med94_unstarted'
+  put 'med94s/:id/enter_finding(.:format)' => 'med94s#do_enter_finding', :as => 'do_med94_enter_finding'
+  get 'med94s/:id/enter_finding(.:format)' => 'med94s#enter_finding', :as => 'med94_enter_finding'
   put 'med94s/:id/second_read(.:format)' => 'med94s#do_second_read', :as => 'do_med94_second_read'
   get 'med94s/:id/second_read(.:format)' => 'med94s#second_read', :as => 'med94_second_read'
+  put 'med94s/:id/return_to_primary(.:format)' => 'med94s#do_return_to_primary', :as => 'do_med94_return_to_primary'
+  get 'med94s/:id/return_to_primary(.:format)' => 'med94s#return_to_primary', :as => 'med94_return_to_primary'
   put 'med94s/:id/completion(.:format)' => 'med94s#do_completion', :as => 'do_med94_completion'
   get 'med94s/:id/completion(.:format)' => 'med94s#completion', :as => 'med94_completion'
 
@@ -1991,10 +2441,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46323s"
-  post 'estd46323s/primary_read(.:format)' => 'estd46323s#do_primary_read', :as => 'do_estd46323_primary_read'
-  get 'estd46323s/primary_read(.:format)' => 'estd46323s#primary_read', :as => 'estd46323_primary_read'
+  post 'estd46323s/unstarted(.:format)' => 'estd46323s#do_unstarted', :as => 'do_estd46323_unstarted'
+  get 'estd46323s/unstarted(.:format)' => 'estd46323s#unstarted', :as => 'estd46323_unstarted'
+  put 'estd46323s/:id/enter_finding(.:format)' => 'estd46323s#do_enter_finding', :as => 'do_estd46323_enter_finding'
+  get 'estd46323s/:id/enter_finding(.:format)' => 'estd46323s#enter_finding', :as => 'estd46323_enter_finding'
   put 'estd46323s/:id/second_read(.:format)' => 'estd46323s#do_second_read', :as => 'do_estd46323_second_read'
   get 'estd46323s/:id/second_read(.:format)' => 'estd46323s#second_read', :as => 'estd46323_second_read'
+  put 'estd46323s/:id/return_to_primary(.:format)' => 'estd46323s#do_return_to_primary', :as => 'do_estd46323_return_to_primary'
+  get 'estd46323s/:id/return_to_primary(.:format)' => 'estd46323s#return_to_primary', :as => 'estd46323_return_to_primary'
   put 'estd46323s/:id/completion(.:format)' => 'estd46323s#do_completion', :as => 'do_estd46323_completion'
   get 'estd46323s/:id/completion(.:format)' => 'estd46323s#completion', :as => 'estd46323_completion'
 
@@ -2008,10 +2462,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd485s"
-  post 'estd485s/primary_read(.:format)' => 'estd485s#do_primary_read', :as => 'do_estd485_primary_read'
-  get 'estd485s/primary_read(.:format)' => 'estd485s#primary_read', :as => 'estd485_primary_read'
+  post 'estd485s/unstarted(.:format)' => 'estd485s#do_unstarted', :as => 'do_estd485_unstarted'
+  get 'estd485s/unstarted(.:format)' => 'estd485s#unstarted', :as => 'estd485_unstarted'
+  put 'estd485s/:id/enter_finding(.:format)' => 'estd485s#do_enter_finding', :as => 'do_estd485_enter_finding'
+  get 'estd485s/:id/enter_finding(.:format)' => 'estd485s#enter_finding', :as => 'estd485_enter_finding'
   put 'estd485s/:id/second_read(.:format)' => 'estd485s#do_second_read', :as => 'do_estd485_second_read'
   get 'estd485s/:id/second_read(.:format)' => 'estd485s#second_read', :as => 'estd485_second_read'
+  put 'estd485s/:id/return_to_primary(.:format)' => 'estd485s#do_return_to_primary', :as => 'do_estd485_return_to_primary'
+  get 'estd485s/:id/return_to_primary(.:format)' => 'estd485s#return_to_primary', :as => 'estd485_return_to_primary'
   put 'estd485s/:id/completion(.:format)' => 'estd485s#do_completion', :as => 'do_estd485_completion'
   get 'estd485s/:id/completion(.:format)' => 'estd485s#completion', :as => 'estd485_completion'
 
@@ -2025,10 +2483,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil714s"
-  post 'mil714s/primary_read(.:format)' => 'mil714s#do_primary_read', :as => 'do_mil714_primary_read'
-  get 'mil714s/primary_read(.:format)' => 'mil714s#primary_read', :as => 'mil714_primary_read'
+  post 'mil714s/unstarted(.:format)' => 'mil714s#do_unstarted', :as => 'do_mil714_unstarted'
+  get 'mil714s/unstarted(.:format)' => 'mil714s#unstarted', :as => 'mil714_unstarted'
+  put 'mil714s/:id/enter_finding(.:format)' => 'mil714s#do_enter_finding', :as => 'do_mil714_enter_finding'
+  get 'mil714s/:id/enter_finding(.:format)' => 'mil714s#enter_finding', :as => 'mil714_enter_finding'
   put 'mil714s/:id/second_read(.:format)' => 'mil714s#do_second_read', :as => 'do_mil714_second_read'
   get 'mil714s/:id/second_read(.:format)' => 'mil714s#second_read', :as => 'mil714_second_read'
+  put 'mil714s/:id/return_to_primary(.:format)' => 'mil714s#do_return_to_primary', :as => 'do_mil714_return_to_primary'
+  get 'mil714s/:id/return_to_primary(.:format)' => 'mil714s#return_to_primary', :as => 'mil714_return_to_primary'
   put 'mil714s/:id/completion(.:format)' => 'mil714s#do_completion', :as => 'do_mil714_completion'
   get 'mil714s/:id/completion(.:format)' => 'mil714s#completion', :as => 'mil714_completion'
 
@@ -2042,10 +2504,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med112s"
-  post 'med112s/primary_read(.:format)' => 'med112s#do_primary_read', :as => 'do_med112_primary_read'
-  get 'med112s/primary_read(.:format)' => 'med112s#primary_read', :as => 'med112_primary_read'
+  post 'med112s/unstarted(.:format)' => 'med112s#do_unstarted', :as => 'do_med112_unstarted'
+  get 'med112s/unstarted(.:format)' => 'med112s#unstarted', :as => 'med112_unstarted'
+  put 'med112s/:id/enter_finding(.:format)' => 'med112s#do_enter_finding', :as => 'do_med112_enter_finding'
+  get 'med112s/:id/enter_finding(.:format)' => 'med112s#enter_finding', :as => 'med112_enter_finding'
   put 'med112s/:id/second_read(.:format)' => 'med112s#do_second_read', :as => 'do_med112_second_read'
   get 'med112s/:id/second_read(.:format)' => 'med112s#second_read', :as => 'med112_second_read'
+  put 'med112s/:id/return_to_primary(.:format)' => 'med112s#do_return_to_primary', :as => 'do_med112_return_to_primary'
+  get 'med112s/:id/return_to_primary(.:format)' => 'med112s#return_to_primary', :as => 'med112_return_to_primary'
   put 'med112s/:id/completion(.:format)' => 'med112s#do_completion', :as => 'do_med112_completion'
   get 'med112s/:id/completion(.:format)' => 'med112s#completion', :as => 'med112_completion'
 
@@ -2059,10 +2525,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd421s"
-  post 'estd421s/primary_read(.:format)' => 'estd421s#do_primary_read', :as => 'do_estd421_primary_read'
-  get 'estd421s/primary_read(.:format)' => 'estd421s#primary_read', :as => 'estd421_primary_read'
+  post 'estd421s/unstarted(.:format)' => 'estd421s#do_unstarted', :as => 'do_estd421_unstarted'
+  get 'estd421s/unstarted(.:format)' => 'estd421s#unstarted', :as => 'estd421_unstarted'
+  put 'estd421s/:id/enter_finding(.:format)' => 'estd421s#do_enter_finding', :as => 'do_estd421_enter_finding'
+  get 'estd421s/:id/enter_finding(.:format)' => 'estd421s#enter_finding', :as => 'estd421_enter_finding'
   put 'estd421s/:id/second_read(.:format)' => 'estd421s#do_second_read', :as => 'do_estd421_second_read'
   get 'estd421s/:id/second_read(.:format)' => 'estd421s#second_read', :as => 'estd421_second_read'
+  put 'estd421s/:id/return_to_primary(.:format)' => 'estd421s#do_return_to_primary', :as => 'do_estd421_return_to_primary'
+  get 'estd421s/:id/return_to_primary(.:format)' => 'estd421s#return_to_primary', :as => 'estd421_return_to_primary'
   put 'estd421s/:id/completion(.:format)' => 'estd421s#do_completion', :as => 'do_estd421_completion'
   get 'estd421s/:id/completion(.:format)' => 'estd421s#completion', :as => 'estd421_completion'
 
@@ -2076,10 +2546,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd412s"
-  post 'estd412s/primary_read(.:format)' => 'estd412s#do_primary_read', :as => 'do_estd412_primary_read'
-  get 'estd412s/primary_read(.:format)' => 'estd412s#primary_read', :as => 'estd412_primary_read'
+  post 'estd412s/unstarted(.:format)' => 'estd412s#do_unstarted', :as => 'do_estd412_unstarted'
+  get 'estd412s/unstarted(.:format)' => 'estd412s#unstarted', :as => 'estd412_unstarted'
+  put 'estd412s/:id/enter_finding(.:format)' => 'estd412s#do_enter_finding', :as => 'do_estd412_enter_finding'
+  get 'estd412s/:id/enter_finding(.:format)' => 'estd412s#enter_finding', :as => 'estd412_enter_finding'
   put 'estd412s/:id/second_read(.:format)' => 'estd412s#do_second_read', :as => 'do_estd412_second_read'
   get 'estd412s/:id/second_read(.:format)' => 'estd412s#second_read', :as => 'estd412_second_read'
+  put 'estd412s/:id/return_to_primary(.:format)' => 'estd412s#do_return_to_primary', :as => 'do_estd412_return_to_primary'
+  get 'estd412s/:id/return_to_primary(.:format)' => 'estd412s#return_to_primary', :as => 'estd412_return_to_primary'
   put 'estd412s/:id/completion(.:format)' => 'estd412s#do_completion', :as => 'do_estd412_completion'
   get 'estd412s/:id/completion(.:format)' => 'estd412s#completion', :as => 'estd412_completion'
 
@@ -2093,10 +2567,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4153s"
-  post 'estd4153s/primary_read(.:format)' => 'estd4153s#do_primary_read', :as => 'do_estd4153_primary_read'
-  get 'estd4153s/primary_read(.:format)' => 'estd4153s#primary_read', :as => 'estd4153_primary_read'
+  post 'estd4153s/unstarted(.:format)' => 'estd4153s#do_unstarted', :as => 'do_estd4153_unstarted'
+  get 'estd4153s/unstarted(.:format)' => 'estd4153s#unstarted', :as => 'estd4153_unstarted'
+  put 'estd4153s/:id/enter_finding(.:format)' => 'estd4153s#do_enter_finding', :as => 'do_estd4153_enter_finding'
+  get 'estd4153s/:id/enter_finding(.:format)' => 'estd4153s#enter_finding', :as => 'estd4153_enter_finding'
   put 'estd4153s/:id/second_read(.:format)' => 'estd4153s#do_second_read', :as => 'do_estd4153_second_read'
   get 'estd4153s/:id/second_read(.:format)' => 'estd4153s#second_read', :as => 'estd4153_second_read'
+  put 'estd4153s/:id/return_to_primary(.:format)' => 'estd4153s#do_return_to_primary', :as => 'do_estd4153_return_to_primary'
+  get 'estd4153s/:id/return_to_primary(.:format)' => 'estd4153s#return_to_primary', :as => 'estd4153_return_to_primary'
   put 'estd4153s/:id/completion(.:format)' => 'estd4153s#do_completion', :as => 'do_estd4153_completion'
   get 'estd4153s/:id/completion(.:format)' => 'estd4153s#completion', :as => 'estd4153_completion'
 
@@ -2110,10 +2588,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med54s"
-  post 'med54s/primary_read(.:format)' => 'med54s#do_primary_read', :as => 'do_med54_primary_read'
-  get 'med54s/primary_read(.:format)' => 'med54s#primary_read', :as => 'med54_primary_read'
+  post 'med54s/unstarted(.:format)' => 'med54s#do_unstarted', :as => 'do_med54_unstarted'
+  get 'med54s/unstarted(.:format)' => 'med54s#unstarted', :as => 'med54_unstarted'
+  put 'med54s/:id/enter_finding(.:format)' => 'med54s#do_enter_finding', :as => 'do_med54_enter_finding'
+  get 'med54s/:id/enter_finding(.:format)' => 'med54s#enter_finding', :as => 'med54_enter_finding'
   put 'med54s/:id/second_read(.:format)' => 'med54s#do_second_read', :as => 'do_med54_second_read'
   get 'med54s/:id/second_read(.:format)' => 'med54s#second_read', :as => 'med54_second_read'
+  put 'med54s/:id/return_to_primary(.:format)' => 'med54s#do_return_to_primary', :as => 'do_med54_return_to_primary'
+  get 'med54s/:id/return_to_primary(.:format)' => 'med54s#return_to_primary', :as => 'med54_return_to_primary'
   put 'med54s/:id/completion(.:format)' => 'med54s#do_completion', :as => 'do_med54_completion'
   get 'med54s/:id/completion(.:format)' => 'med54s#completion', :as => 'med54_completion'
 
@@ -2127,10 +2609,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46312s"
-  post 'estd46312s/primary_read(.:format)' => 'estd46312s#do_primary_read', :as => 'do_estd46312_primary_read'
-  get 'estd46312s/primary_read(.:format)' => 'estd46312s#primary_read', :as => 'estd46312_primary_read'
+  post 'estd46312s/unstarted(.:format)' => 'estd46312s#do_unstarted', :as => 'do_estd46312_unstarted'
+  get 'estd46312s/unstarted(.:format)' => 'estd46312s#unstarted', :as => 'estd46312_unstarted'
+  put 'estd46312s/:id/enter_finding(.:format)' => 'estd46312s#do_enter_finding', :as => 'do_estd46312_enter_finding'
+  get 'estd46312s/:id/enter_finding(.:format)' => 'estd46312s#enter_finding', :as => 'estd46312_enter_finding'
   put 'estd46312s/:id/second_read(.:format)' => 'estd46312s#do_second_read', :as => 'do_estd46312_second_read'
   get 'estd46312s/:id/second_read(.:format)' => 'estd46312s#second_read', :as => 'estd46312_second_read'
+  put 'estd46312s/:id/return_to_primary(.:format)' => 'estd46312s#do_return_to_primary', :as => 'do_estd46312_return_to_primary'
+  get 'estd46312s/:id/return_to_primary(.:format)' => 'estd46312s#return_to_primary', :as => 'estd46312_return_to_primary'
   put 'estd46312s/:id/completion(.:format)' => 'estd46312s#do_completion', :as => 'do_estd46312_completion'
   get 'estd46312s/:id/completion(.:format)' => 'estd46312s#completion', :as => 'estd46312_completion'
 
@@ -2144,10 +2630,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4106s"
-  post 'estd4106s/primary_read(.:format)' => 'estd4106s#do_primary_read', :as => 'do_estd4106_primary_read'
-  get 'estd4106s/primary_read(.:format)' => 'estd4106s#primary_read', :as => 'estd4106_primary_read'
+  post 'estd4106s/unstarted(.:format)' => 'estd4106s#do_unstarted', :as => 'do_estd4106_unstarted'
+  get 'estd4106s/unstarted(.:format)' => 'estd4106s#unstarted', :as => 'estd4106_unstarted'
+  put 'estd4106s/:id/enter_finding(.:format)' => 'estd4106s#do_enter_finding', :as => 'do_estd4106_enter_finding'
+  get 'estd4106s/:id/enter_finding(.:format)' => 'estd4106s#enter_finding', :as => 'estd4106_enter_finding'
   put 'estd4106s/:id/second_read(.:format)' => 'estd4106s#do_second_read', :as => 'do_estd4106_second_read'
   get 'estd4106s/:id/second_read(.:format)' => 'estd4106s#second_read', :as => 'estd4106_second_read'
+  put 'estd4106s/:id/return_to_primary(.:format)' => 'estd4106s#do_return_to_primary', :as => 'do_estd4106_return_to_primary'
+  get 'estd4106s/:id/return_to_primary(.:format)' => 'estd4106s#return_to_primary', :as => 'estd4106_return_to_primary'
   put 'estd4106s/:id/completion(.:format)' => 'estd4106s#do_completion', :as => 'do_estd4106_completion'
   get 'estd4106s/:id/completion(.:format)' => 'estd4106s#completion', :as => 'estd4106_completion'
 
@@ -2161,10 +2651,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil513s"
-  post 'mil513s/primary_read(.:format)' => 'mil513s#do_primary_read', :as => 'do_mil513_primary_read'
-  get 'mil513s/primary_read(.:format)' => 'mil513s#primary_read', :as => 'mil513_primary_read'
+  post 'mil513s/unstarted(.:format)' => 'mil513s#do_unstarted', :as => 'do_mil513_unstarted'
+  get 'mil513s/unstarted(.:format)' => 'mil513s#unstarted', :as => 'mil513_unstarted'
+  put 'mil513s/:id/enter_finding(.:format)' => 'mil513s#do_enter_finding', :as => 'do_mil513_enter_finding'
+  get 'mil513s/:id/enter_finding(.:format)' => 'mil513s#enter_finding', :as => 'mil513_enter_finding'
   put 'mil513s/:id/second_read(.:format)' => 'mil513s#do_second_read', :as => 'do_mil513_second_read'
   get 'mil513s/:id/second_read(.:format)' => 'mil513s#second_read', :as => 'mil513_second_read'
+  put 'mil513s/:id/return_to_primary(.:format)' => 'mil513s#do_return_to_primary', :as => 'do_mil513_return_to_primary'
+  get 'mil513s/:id/return_to_primary(.:format)' => 'mil513s#return_to_primary', :as => 'mil513_return_to_primary'
   put 'mil513s/:id/completion(.:format)' => 'mil513s#do_completion', :as => 'do_mil513_completion'
   get 'mil513s/:id/completion(.:format)' => 'mil513s#completion', :as => 'mil513_completion'
 
@@ -2178,10 +2672,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil452s"
-  post 'mil452s/primary_read(.:format)' => 'mil452s#do_primary_read', :as => 'do_mil452_primary_read'
-  get 'mil452s/primary_read(.:format)' => 'mil452s#primary_read', :as => 'mil452_primary_read'
+  post 'mil452s/unstarted(.:format)' => 'mil452s#do_unstarted', :as => 'do_mil452_unstarted'
+  get 'mil452s/unstarted(.:format)' => 'mil452s#unstarted', :as => 'mil452_unstarted'
+  put 'mil452s/:id/enter_finding(.:format)' => 'mil452s#do_enter_finding', :as => 'do_mil452_enter_finding'
+  get 'mil452s/:id/enter_finding(.:format)' => 'mil452s#enter_finding', :as => 'mil452_enter_finding'
   put 'mil452s/:id/second_read(.:format)' => 'mil452s#do_second_read', :as => 'do_mil452_second_read'
   get 'mil452s/:id/second_read(.:format)' => 'mil452s#second_read', :as => 'mil452_second_read'
+  put 'mil452s/:id/return_to_primary(.:format)' => 'mil452s#do_return_to_primary', :as => 'do_mil452_return_to_primary'
+  get 'mil452s/:id/return_to_primary(.:format)' => 'mil452s#return_to_primary', :as => 'mil452_return_to_primary'
   put 'mil452s/:id/completion(.:format)' => 'mil452s#do_completion', :as => 'do_mil452_completion'
   get 'mil452s/:id/completion(.:format)' => 'mil452s#completion', :as => 'mil452_completion'
 
@@ -2195,10 +2693,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46318s"
-  post 'estd46318s/primary_read(.:format)' => 'estd46318s#do_primary_read', :as => 'do_estd46318_primary_read'
-  get 'estd46318s/primary_read(.:format)' => 'estd46318s#primary_read', :as => 'estd46318_primary_read'
+  post 'estd46318s/unstarted(.:format)' => 'estd46318s#do_unstarted', :as => 'do_estd46318_unstarted'
+  get 'estd46318s/unstarted(.:format)' => 'estd46318s#unstarted', :as => 'estd46318_unstarted'
+  put 'estd46318s/:id/enter_finding(.:format)' => 'estd46318s#do_enter_finding', :as => 'do_estd46318_enter_finding'
+  get 'estd46318s/:id/enter_finding(.:format)' => 'estd46318s#enter_finding', :as => 'estd46318_enter_finding'
   put 'estd46318s/:id/second_read(.:format)' => 'estd46318s#do_second_read', :as => 'do_estd46318_second_read'
   get 'estd46318s/:id/second_read(.:format)' => 'estd46318s#second_read', :as => 'estd46318_second_read'
+  put 'estd46318s/:id/return_to_primary(.:format)' => 'estd46318s#do_return_to_primary', :as => 'do_estd46318_return_to_primary'
+  get 'estd46318s/:id/return_to_primary(.:format)' => 'estd46318s#return_to_primary', :as => 'estd46318_return_to_primary'
   put 'estd46318s/:id/completion(.:format)' => 'estd46318s#do_completion', :as => 'do_estd46318_completion'
   get 'estd46318s/:id/completion(.:format)' => 'estd46318s#completion', :as => 'estd46318_completion'
 
@@ -2212,10 +2714,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil741s"
-  post 'mil741s/primary_read(.:format)' => 'mil741s#do_primary_read', :as => 'do_mil741_primary_read'
-  get 'mil741s/primary_read(.:format)' => 'mil741s#primary_read', :as => 'mil741_primary_read'
+  post 'mil741s/unstarted(.:format)' => 'mil741s#do_unstarted', :as => 'do_mil741_unstarted'
+  get 'mil741s/unstarted(.:format)' => 'mil741s#unstarted', :as => 'mil741_unstarted'
+  put 'mil741s/:id/enter_finding(.:format)' => 'mil741s#do_enter_finding', :as => 'do_mil741_enter_finding'
+  get 'mil741s/:id/enter_finding(.:format)' => 'mil741s#enter_finding', :as => 'mil741_enter_finding'
   put 'mil741s/:id/second_read(.:format)' => 'mil741s#do_second_read', :as => 'do_mil741_second_read'
   get 'mil741s/:id/second_read(.:format)' => 'mil741s#second_read', :as => 'mil741_second_read'
+  put 'mil741s/:id/return_to_primary(.:format)' => 'mil741s#do_return_to_primary', :as => 'do_mil741_return_to_primary'
+  get 'mil741s/:id/return_to_primary(.:format)' => 'mil741s#return_to_primary', :as => 'mil741_return_to_primary'
   put 'mil741s/:id/completion(.:format)' => 'mil741s#do_completion', :as => 'do_mil741_completion'
   get 'mil741s/:id/completion(.:format)' => 'mil741s#completion', :as => 'mil741_completion'
 
@@ -2229,10 +2735,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil3102s"
-  post 'mil3102s/primary_read(.:format)' => 'mil3102s#do_primary_read', :as => 'do_mil3102_primary_read'
-  get 'mil3102s/primary_read(.:format)' => 'mil3102s#primary_read', :as => 'mil3102_primary_read'
+  post 'mil3102s/unstarted(.:format)' => 'mil3102s#do_unstarted', :as => 'do_mil3102_unstarted'
+  get 'mil3102s/unstarted(.:format)' => 'mil3102s#unstarted', :as => 'mil3102_unstarted'
+  put 'mil3102s/:id/enter_finding(.:format)' => 'mil3102s#do_enter_finding', :as => 'do_mil3102_enter_finding'
+  get 'mil3102s/:id/enter_finding(.:format)' => 'mil3102s#enter_finding', :as => 'mil3102_enter_finding'
   put 'mil3102s/:id/second_read(.:format)' => 'mil3102s#do_second_read', :as => 'do_mil3102_second_read'
   get 'mil3102s/:id/second_read(.:format)' => 'mil3102s#second_read', :as => 'mil3102_second_read'
+  put 'mil3102s/:id/return_to_primary(.:format)' => 'mil3102s#do_return_to_primary', :as => 'do_mil3102_return_to_primary'
+  get 'mil3102s/:id/return_to_primary(.:format)' => 'mil3102s#return_to_primary', :as => 'mil3102_return_to_primary'
   put 'mil3102s/:id/completion(.:format)' => 'mil3102s#do_completion', :as => 'do_mil3102_completion'
   get 'mil3102s/:id/completion(.:format)' => 'mil3102s#completion', :as => 'mil3102_completion'
 
@@ -2246,10 +2756,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil722s"
-  post 'mil722s/primary_read(.:format)' => 'mil722s#do_primary_read', :as => 'do_mil722_primary_read'
-  get 'mil722s/primary_read(.:format)' => 'mil722s#primary_read', :as => 'mil722_primary_read'
+  post 'mil722s/unstarted(.:format)' => 'mil722s#do_unstarted', :as => 'do_mil722_unstarted'
+  get 'mil722s/unstarted(.:format)' => 'mil722s#unstarted', :as => 'mil722_unstarted'
+  put 'mil722s/:id/enter_finding(.:format)' => 'mil722s#do_enter_finding', :as => 'do_mil722_enter_finding'
+  get 'mil722s/:id/enter_finding(.:format)' => 'mil722s#enter_finding', :as => 'mil722_enter_finding'
   put 'mil722s/:id/second_read(.:format)' => 'mil722s#do_second_read', :as => 'do_mil722_second_read'
   get 'mil722s/:id/second_read(.:format)' => 'mil722s#second_read', :as => 'mil722_second_read'
+  put 'mil722s/:id/return_to_primary(.:format)' => 'mil722s#do_return_to_primary', :as => 'do_mil722_return_to_primary'
+  get 'mil722s/:id/return_to_primary(.:format)' => 'mil722s#return_to_primary', :as => 'mil722_return_to_primary'
   put 'mil722s/:id/completion(.:format)' => 'mil722s#do_completion', :as => 'do_mil722_completion'
   get 'mil722s/:id/completion(.:format)' => 'mil722s#completion', :as => 'mil722_completion'
 
@@ -2263,10 +2777,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil111s"
-  post 'mil111s/primary_read(.:format)' => 'mil111s#do_primary_read', :as => 'do_mil111_primary_read'
-  get 'mil111s/primary_read(.:format)' => 'mil111s#primary_read', :as => 'mil111_primary_read'
+  post 'mil111s/unstarted(.:format)' => 'mil111s#do_unstarted', :as => 'do_mil111_unstarted'
+  get 'mil111s/unstarted(.:format)' => 'mil111s#unstarted', :as => 'mil111_unstarted'
+  put 'mil111s/:id/enter_finding(.:format)' => 'mil111s#do_enter_finding', :as => 'do_mil111_enter_finding'
+  get 'mil111s/:id/enter_finding(.:format)' => 'mil111s#enter_finding', :as => 'mil111_enter_finding'
   put 'mil111s/:id/second_read(.:format)' => 'mil111s#do_second_read', :as => 'do_mil111_second_read'
   get 'mil111s/:id/second_read(.:format)' => 'mil111s#second_read', :as => 'mil111_second_read'
+  put 'mil111s/:id/return_to_primary(.:format)' => 'mil111s#do_return_to_primary', :as => 'do_mil111_return_to_primary'
+  get 'mil111s/:id/return_to_primary(.:format)' => 'mil111s#return_to_primary', :as => 'mil111_return_to_primary'
   put 'mil111s/:id/completion(.:format)' => 'mil111s#do_completion', :as => 'do_mil111_completion'
   get 'mil111s/:id/completion(.:format)' => 'mil111s#completion', :as => 'mil111_completion'
 
@@ -2280,10 +2798,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil721s"
-  post 'mil721s/primary_read(.:format)' => 'mil721s#do_primary_read', :as => 'do_mil721_primary_read'
-  get 'mil721s/primary_read(.:format)' => 'mil721s#primary_read', :as => 'mil721_primary_read'
+  post 'mil721s/unstarted(.:format)' => 'mil721s#do_unstarted', :as => 'do_mil721_unstarted'
+  get 'mil721s/unstarted(.:format)' => 'mil721s#unstarted', :as => 'mil721_unstarted'
+  put 'mil721s/:id/enter_finding(.:format)' => 'mil721s#do_enter_finding', :as => 'do_mil721_enter_finding'
+  get 'mil721s/:id/enter_finding(.:format)' => 'mil721s#enter_finding', :as => 'mil721_enter_finding'
   put 'mil721s/:id/second_read(.:format)' => 'mil721s#do_second_read', :as => 'do_mil721_second_read'
   get 'mil721s/:id/second_read(.:format)' => 'mil721s#second_read', :as => 'mil721_second_read'
+  put 'mil721s/:id/return_to_primary(.:format)' => 'mil721s#do_return_to_primary', :as => 'do_mil721_return_to_primary'
+  get 'mil721s/:id/return_to_primary(.:format)' => 'mil721s#return_to_primary', :as => 'mil721_return_to_primary'
   put 'mil721s/:id/completion(.:format)' => 'mil721s#do_completion', :as => 'do_mil721_completion'
   get 'mil721s/:id/completion(.:format)' => 'mil721s#completion', :as => 'mil721_completion'
 
@@ -2297,10 +2819,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil461s"
-  post 'mil461s/primary_read(.:format)' => 'mil461s#do_primary_read', :as => 'do_mil461_primary_read'
-  get 'mil461s/primary_read(.:format)' => 'mil461s#primary_read', :as => 'mil461_primary_read'
+  post 'mil461s/unstarted(.:format)' => 'mil461s#do_unstarted', :as => 'do_mil461_unstarted'
+  get 'mil461s/unstarted(.:format)' => 'mil461s#unstarted', :as => 'mil461_unstarted'
+  put 'mil461s/:id/enter_finding(.:format)' => 'mil461s#do_enter_finding', :as => 'do_mil461_enter_finding'
+  get 'mil461s/:id/enter_finding(.:format)' => 'mil461s#enter_finding', :as => 'mil461_enter_finding'
   put 'mil461s/:id/second_read(.:format)' => 'mil461s#do_second_read', :as => 'do_mil461_second_read'
   get 'mil461s/:id/second_read(.:format)' => 'mil461s#second_read', :as => 'mil461_second_read'
+  put 'mil461s/:id/return_to_primary(.:format)' => 'mil461s#do_return_to_primary', :as => 'do_mil461_return_to_primary'
+  get 'mil461s/:id/return_to_primary(.:format)' => 'mil461s#return_to_primary', :as => 'mil461_return_to_primary'
   put 'mil461s/:id/completion(.:format)' => 'mil461s#do_completion', :as => 'do_mil461_completion'
   get 'mil461s/:id/completion(.:format)' => 'mil461s#completion', :as => 'mil461_completion'
 
@@ -2335,10 +2861,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4633s"
-  post 'estd4633s/primary_read(.:format)' => 'estd4633s#do_primary_read', :as => 'do_estd4633_primary_read'
-  get 'estd4633s/primary_read(.:format)' => 'estd4633s#primary_read', :as => 'estd4633_primary_read'
+  post 'estd4633s/unstarted(.:format)' => 'estd4633s#do_unstarted', :as => 'do_estd4633_unstarted'
+  get 'estd4633s/unstarted(.:format)' => 'estd4633s#unstarted', :as => 'estd4633_unstarted'
+  put 'estd4633s/:id/enter_finding(.:format)' => 'estd4633s#do_enter_finding', :as => 'do_estd4633_enter_finding'
+  get 'estd4633s/:id/enter_finding(.:format)' => 'estd4633s#enter_finding', :as => 'estd4633_enter_finding'
   put 'estd4633s/:id/second_read(.:format)' => 'estd4633s#do_second_read', :as => 'do_estd4633_second_read'
   get 'estd4633s/:id/second_read(.:format)' => 'estd4633s#second_read', :as => 'estd4633_second_read'
+  put 'estd4633s/:id/return_to_primary(.:format)' => 'estd4633s#do_return_to_primary', :as => 'do_estd4633_return_to_primary'
+  get 'estd4633s/:id/return_to_primary(.:format)' => 'estd4633s#return_to_primary', :as => 'estd4633_return_to_primary'
   put 'estd4633s/:id/completion(.:format)' => 'estd4633s#do_completion', :as => 'do_estd4633_completion'
   get 'estd4633s/:id/completion(.:format)' => 'estd4633s#completion', :as => 'estd4633_completion'
 
@@ -2352,10 +2882,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil411s"
-  post 'mil411s/primary_read(.:format)' => 'mil411s#do_primary_read', :as => 'do_mil411_primary_read'
-  get 'mil411s/primary_read(.:format)' => 'mil411s#primary_read', :as => 'mil411_primary_read'
+  post 'mil411s/unstarted(.:format)' => 'mil411s#do_unstarted', :as => 'do_mil411_unstarted'
+  get 'mil411s/unstarted(.:format)' => 'mil411s#unstarted', :as => 'mil411_unstarted'
+  put 'mil411s/:id/enter_finding(.:format)' => 'mil411s#do_enter_finding', :as => 'do_mil411_enter_finding'
+  get 'mil411s/:id/enter_finding(.:format)' => 'mil411s#enter_finding', :as => 'mil411_enter_finding'
   put 'mil411s/:id/second_read(.:format)' => 'mil411s#do_second_read', :as => 'do_mil411_second_read'
   get 'mil411s/:id/second_read(.:format)' => 'mil411s#second_read', :as => 'mil411_second_read'
+  put 'mil411s/:id/return_to_primary(.:format)' => 'mil411s#do_return_to_primary', :as => 'do_mil411_return_to_primary'
+  get 'mil411s/:id/return_to_primary(.:format)' => 'mil411s#return_to_primary', :as => 'mil411_return_to_primary'
   put 'mil411s/:id/completion(.:format)' => 'mil411s#do_completion', :as => 'do_mil411_completion'
   get 'mil411s/:id/completion(.:format)' => 'mil411s#completion', :as => 'mil411_completion'
 
@@ -2369,10 +2903,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4639s"
-  post 'estd4639s/primary_read(.:format)' => 'estd4639s#do_primary_read', :as => 'do_estd4639_primary_read'
-  get 'estd4639s/primary_read(.:format)' => 'estd4639s#primary_read', :as => 'estd4639_primary_read'
+  post 'estd4639s/unstarted(.:format)' => 'estd4639s#do_unstarted', :as => 'do_estd4639_unstarted'
+  get 'estd4639s/unstarted(.:format)' => 'estd4639s#unstarted', :as => 'estd4639_unstarted'
+  put 'estd4639s/:id/enter_finding(.:format)' => 'estd4639s#do_enter_finding', :as => 'do_estd4639_enter_finding'
+  get 'estd4639s/:id/enter_finding(.:format)' => 'estd4639s#enter_finding', :as => 'estd4639_enter_finding'
   put 'estd4639s/:id/second_read(.:format)' => 'estd4639s#do_second_read', :as => 'do_estd4639_second_read'
   get 'estd4639s/:id/second_read(.:format)' => 'estd4639s#second_read', :as => 'estd4639_second_read'
+  put 'estd4639s/:id/return_to_primary(.:format)' => 'estd4639s#do_return_to_primary', :as => 'do_estd4639_return_to_primary'
+  get 'estd4639s/:id/return_to_primary(.:format)' => 'estd4639s#return_to_primary', :as => 'estd4639_return_to_primary'
   put 'estd4639s/:id/completion(.:format)' => 'estd4639s#do_completion', :as => 'do_estd4639_completion'
   get 'estd4639s/:id/completion(.:format)' => 'estd4639s#completion', :as => 'estd4639_completion'
 
@@ -2388,16 +2926,14 @@ Rara::Application.routes.draw do
   # Lifecycle routes for controller "estd312s"
   post 'estd312s/unstarted(.:format)' => 'estd312s#do_unstarted', :as => 'do_estd312_unstarted'
   get 'estd312s/unstarted(.:format)' => 'estd312s#unstarted', :as => 'estd312_unstarted'
-  put 'estd312s/:id/primary_read(.:format)' => 'estd312s#do_primary_read', :as => 'do_estd312_primary_read'
-  get 'estd312s/:id/primary_read(.:format)' => 'estd312s#primary_read', :as => 'estd312_primary_read'
+  put 'estd312s/:id/enter_finding(.:format)' => 'estd312s#do_enter_finding', :as => 'do_estd312_enter_finding'
+  get 'estd312s/:id/enter_finding(.:format)' => 'estd312s#enter_finding', :as => 'estd312_enter_finding'
   put 'estd312s/:id/second_read(.:format)' => 'estd312s#do_second_read', :as => 'do_estd312_second_read'
   get 'estd312s/:id/second_read(.:format)' => 'estd312s#second_read', :as => 'estd312_second_read'
   put 'estd312s/:id/return_to_primary(.:format)' => 'estd312s#do_return_to_primary', :as => 'do_estd312_return_to_primary'
   get 'estd312s/:id/return_to_primary(.:format)' => 'estd312s#return_to_primary', :as => 'estd312_return_to_primary'
-  put 'estd312s/:id/mark_complete(.:format)' => 'estd312s#do_mark_complete', :as => 'do_estd312_mark_complete'
-  get 'estd312s/:id/mark_complete(.:format)' => 'estd312s#mark_complete', :as => 'estd312_mark_complete'
-  put 'estd312s/:id/unmark_complete(.:format)' => 'estd312s#do_unmark_complete', :as => 'do_estd312_unmark_complete'
-  get 'estd312s/:id/unmark_complete(.:format)' => 'estd312s#unmark_complete', :as => 'estd312_unmark_complete'
+  put 'estd312s/:id/completion(.:format)' => 'estd312s#do_completion', :as => 'do_estd312_completion'
+  get 'estd312s/:id/completion(.:format)' => 'estd312s#completion', :as => 'estd312_completion'
 
   # Resource routes for controller "estd312s"
   get 'estd312s/new(.:format)', :as => 'new_estd312'
@@ -2409,10 +2945,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil361s"
-  post 'mil361s/primary_read(.:format)' => 'mil361s#do_primary_read', :as => 'do_mil361_primary_read'
-  get 'mil361s/primary_read(.:format)' => 'mil361s#primary_read', :as => 'mil361_primary_read'
+  post 'mil361s/unstarted(.:format)' => 'mil361s#do_unstarted', :as => 'do_mil361_unstarted'
+  get 'mil361s/unstarted(.:format)' => 'mil361s#unstarted', :as => 'mil361_unstarted'
+  put 'mil361s/:id/enter_finding(.:format)' => 'mil361s#do_enter_finding', :as => 'do_mil361_enter_finding'
+  get 'mil361s/:id/enter_finding(.:format)' => 'mil361s#enter_finding', :as => 'mil361_enter_finding'
   put 'mil361s/:id/second_read(.:format)' => 'mil361s#do_second_read', :as => 'do_mil361_second_read'
   get 'mil361s/:id/second_read(.:format)' => 'mil361s#second_read', :as => 'mil361_second_read'
+  put 'mil361s/:id/return_to_primary(.:format)' => 'mil361s#do_return_to_primary', :as => 'do_mil361_return_to_primary'
+  get 'mil361s/:id/return_to_primary(.:format)' => 'mil361s#return_to_primary', :as => 'mil361_return_to_primary'
   put 'mil361s/:id/completion(.:format)' => 'mil361s#do_completion', :as => 'do_mil361_completion'
   get 'mil361s/:id/completion(.:format)' => 'mil361s#completion', :as => 'mil361_completion'
 
@@ -2426,10 +2966,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med31s"
-  post 'med31s/primary_read(.:format)' => 'med31s#do_primary_read', :as => 'do_med31_primary_read'
-  get 'med31s/primary_read(.:format)' => 'med31s#primary_read', :as => 'med31_primary_read'
+  post 'med31s/unstarted(.:format)' => 'med31s#do_unstarted', :as => 'do_med31_unstarted'
+  get 'med31s/unstarted(.:format)' => 'med31s#unstarted', :as => 'med31_unstarted'
+  put 'med31s/:id/enter_finding(.:format)' => 'med31s#do_enter_finding', :as => 'do_med31_enter_finding'
+  get 'med31s/:id/enter_finding(.:format)' => 'med31s#enter_finding', :as => 'med31_enter_finding'
   put 'med31s/:id/second_read(.:format)' => 'med31s#do_second_read', :as => 'do_med31_second_read'
   get 'med31s/:id/second_read(.:format)' => 'med31s#second_read', :as => 'med31_second_read'
+  put 'med31s/:id/return_to_primary(.:format)' => 'med31s#do_return_to_primary', :as => 'do_med31_return_to_primary'
+  get 'med31s/:id/return_to_primary(.:format)' => 'med31s#return_to_primary', :as => 'med31_return_to_primary'
   put 'med31s/:id/completion(.:format)' => 'med31s#do_completion', :as => 'do_med31_completion'
   get 'med31s/:id/completion(.:format)' => 'med31s#completion', :as => 'med31_completion'
 
@@ -2443,10 +2987,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil431s"
-  post 'mil431s/primary_read(.:format)' => 'mil431s#do_primary_read', :as => 'do_mil431_primary_read'
-  get 'mil431s/primary_read(.:format)' => 'mil431s#primary_read', :as => 'mil431_primary_read'
+  post 'mil431s/unstarted(.:format)' => 'mil431s#do_unstarted', :as => 'do_mil431_unstarted'
+  get 'mil431s/unstarted(.:format)' => 'mil431s#unstarted', :as => 'mil431_unstarted'
+  put 'mil431s/:id/enter_finding(.:format)' => 'mil431s#do_enter_finding', :as => 'do_mil431_enter_finding'
+  get 'mil431s/:id/enter_finding(.:format)' => 'mil431s#enter_finding', :as => 'mil431_enter_finding'
   put 'mil431s/:id/second_read(.:format)' => 'mil431s#do_second_read', :as => 'do_mil431_second_read'
   get 'mil431s/:id/second_read(.:format)' => 'mil431s#second_read', :as => 'mil431_second_read'
+  put 'mil431s/:id/return_to_primary(.:format)' => 'mil431s#do_return_to_primary', :as => 'do_mil431_return_to_primary'
+  get 'mil431s/:id/return_to_primary(.:format)' => 'mil431s#return_to_primary', :as => 'mil431_return_to_primary'
   put 'mil431s/:id/completion(.:format)' => 'mil431s#do_completion', :as => 'do_mil431_completion'
   get 'mil431s/:id/completion(.:format)' => 'mil431s#completion', :as => 'mil431_completion'
 
@@ -2460,10 +3008,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4637s"
-  post 'estd4637s/primary_read(.:format)' => 'estd4637s#do_primary_read', :as => 'do_estd4637_primary_read'
-  get 'estd4637s/primary_read(.:format)' => 'estd4637s#primary_read', :as => 'estd4637_primary_read'
+  post 'estd4637s/unstarted(.:format)' => 'estd4637s#do_unstarted', :as => 'do_estd4637_unstarted'
+  get 'estd4637s/unstarted(.:format)' => 'estd4637s#unstarted', :as => 'estd4637_unstarted'
+  put 'estd4637s/:id/enter_finding(.:format)' => 'estd4637s#do_enter_finding', :as => 'do_estd4637_enter_finding'
+  get 'estd4637s/:id/enter_finding(.:format)' => 'estd4637s#enter_finding', :as => 'estd4637_enter_finding'
   put 'estd4637s/:id/second_read(.:format)' => 'estd4637s#do_second_read', :as => 'do_estd4637_second_read'
   get 'estd4637s/:id/second_read(.:format)' => 'estd4637s#second_read', :as => 'estd4637_second_read'
+  put 'estd4637s/:id/return_to_primary(.:format)' => 'estd4637s#do_return_to_primary', :as => 'do_estd4637_return_to_primary'
+  get 'estd4637s/:id/return_to_primary(.:format)' => 'estd4637s#return_to_primary', :as => 'estd4637_return_to_primary'
   put 'estd4637s/:id/completion(.:format)' => 'estd4637s#do_completion', :as => 'do_estd4637_completion'
   get 'estd4637s/:id/completion(.:format)' => 'estd4637s#completion', :as => 'estd4637_completion'
 
@@ -2477,10 +3029,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil536s"
-  post 'mil536s/primary_read(.:format)' => 'mil536s#do_primary_read', :as => 'do_mil536_primary_read'
-  get 'mil536s/primary_read(.:format)' => 'mil536s#primary_read', :as => 'mil536_primary_read'
+  post 'mil536s/unstarted(.:format)' => 'mil536s#do_unstarted', :as => 'do_mil536_unstarted'
+  get 'mil536s/unstarted(.:format)' => 'mil536s#unstarted', :as => 'mil536_unstarted'
+  put 'mil536s/:id/enter_finding(.:format)' => 'mil536s#do_enter_finding', :as => 'do_mil536_enter_finding'
+  get 'mil536s/:id/enter_finding(.:format)' => 'mil536s#enter_finding', :as => 'mil536_enter_finding'
   put 'mil536s/:id/second_read(.:format)' => 'mil536s#do_second_read', :as => 'do_mil536_second_read'
   get 'mil536s/:id/second_read(.:format)' => 'mil536s#second_read', :as => 'mil536_second_read'
+  put 'mil536s/:id/return_to_primary(.:format)' => 'mil536s#do_return_to_primary', :as => 'do_mil536_return_to_primary'
+  get 'mil536s/:id/return_to_primary(.:format)' => 'mil536s#return_to_primary', :as => 'mil536_return_to_primary'
   put 'mil536s/:id/completion(.:format)' => 'mil536s#do_completion', :as => 'do_mil536_completion'
   get 'mil536s/:id/completion(.:format)' => 'mil536s#completion', :as => 'mil536_completion'
 
@@ -2494,10 +3050,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd474s"
-  post 'estd474s/primary_read(.:format)' => 'estd474s#do_primary_read', :as => 'do_estd474_primary_read'
-  get 'estd474s/primary_read(.:format)' => 'estd474s#primary_read', :as => 'estd474_primary_read'
+  post 'estd474s/unstarted(.:format)' => 'estd474s#do_unstarted', :as => 'do_estd474_unstarted'
+  get 'estd474s/unstarted(.:format)' => 'estd474s#unstarted', :as => 'estd474_unstarted'
+  put 'estd474s/:id/enter_finding(.:format)' => 'estd474s#do_enter_finding', :as => 'do_estd474_enter_finding'
+  get 'estd474s/:id/enter_finding(.:format)' => 'estd474s#enter_finding', :as => 'estd474_enter_finding'
   put 'estd474s/:id/second_read(.:format)' => 'estd474s#do_second_read', :as => 'do_estd474_second_read'
   get 'estd474s/:id/second_read(.:format)' => 'estd474s#second_read', :as => 'estd474_second_read'
+  put 'estd474s/:id/return_to_primary(.:format)' => 'estd474s#do_return_to_primary', :as => 'do_estd474_return_to_primary'
+  get 'estd474s/:id/return_to_primary(.:format)' => 'estd474s#return_to_primary', :as => 'estd474_return_to_primary'
   put 'estd474s/:id/completion(.:format)' => 'estd474s#do_completion', :as => 'do_estd474_completion'
   get 'estd474s/:id/completion(.:format)' => 'estd474s#completion', :as => 'estd474_completion'
 
@@ -2511,10 +3071,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil725s"
-  post 'mil725s/primary_read(.:format)' => 'mil725s#do_primary_read', :as => 'do_mil725_primary_read'
-  get 'mil725s/primary_read(.:format)' => 'mil725s#primary_read', :as => 'mil725_primary_read'
+  post 'mil725s/unstarted(.:format)' => 'mil725s#do_unstarted', :as => 'do_mil725_unstarted'
+  get 'mil725s/unstarted(.:format)' => 'mil725s#unstarted', :as => 'mil725_unstarted'
+  put 'mil725s/:id/enter_finding(.:format)' => 'mil725s#do_enter_finding', :as => 'do_mil725_enter_finding'
+  get 'mil725s/:id/enter_finding(.:format)' => 'mil725s#enter_finding', :as => 'mil725_enter_finding'
   put 'mil725s/:id/second_read(.:format)' => 'mil725s#do_second_read', :as => 'do_mil725_second_read'
   get 'mil725s/:id/second_read(.:format)' => 'mil725s#second_read', :as => 'mil725_second_read'
+  put 'mil725s/:id/return_to_primary(.:format)' => 'mil725s#do_return_to_primary', :as => 'do_mil725_return_to_primary'
+  get 'mil725s/:id/return_to_primary(.:format)' => 'mil725s#return_to_primary', :as => 'mil725_return_to_primary'
   put 'mil725s/:id/completion(.:format)' => 'mil725s#do_completion', :as => 'do_mil725_completion'
   get 'mil725s/:id/completion(.:format)' => 'mil725s#completion', :as => 'mil725_completion'
 
@@ -2528,10 +3092,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd453s"
-  post 'estd453s/primary_read(.:format)' => 'estd453s#do_primary_read', :as => 'do_estd453_primary_read'
-  get 'estd453s/primary_read(.:format)' => 'estd453s#primary_read', :as => 'estd453_primary_read'
+  post 'estd453s/unstarted(.:format)' => 'estd453s#do_unstarted', :as => 'do_estd453_unstarted'
+  get 'estd453s/unstarted(.:format)' => 'estd453s#unstarted', :as => 'estd453_unstarted'
+  put 'estd453s/:id/enter_finding(.:format)' => 'estd453s#do_enter_finding', :as => 'do_estd453_enter_finding'
+  get 'estd453s/:id/enter_finding(.:format)' => 'estd453s#enter_finding', :as => 'estd453_enter_finding'
   put 'estd453s/:id/second_read(.:format)' => 'estd453s#do_second_read', :as => 'do_estd453_second_read'
   get 'estd453s/:id/second_read(.:format)' => 'estd453s#second_read', :as => 'estd453_second_read'
+  put 'estd453s/:id/return_to_primary(.:format)' => 'estd453s#do_return_to_primary', :as => 'do_estd453_return_to_primary'
+  get 'estd453s/:id/return_to_primary(.:format)' => 'estd453s#return_to_primary', :as => 'estd453_return_to_primary'
   put 'estd453s/:id/completion(.:format)' => 'estd453s#do_completion', :as => 'do_estd453_completion'
   get 'estd453s/:id/completion(.:format)' => 'estd453s#completion', :as => 'estd453_completion'
 
@@ -2545,10 +3113,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil311s"
-  post 'mil311s/primary_read(.:format)' => 'mil311s#do_primary_read', :as => 'do_mil311_primary_read'
-  get 'mil311s/primary_read(.:format)' => 'mil311s#primary_read', :as => 'mil311_primary_read'
+  post 'mil311s/unstarted(.:format)' => 'mil311s#do_unstarted', :as => 'do_mil311_unstarted'
+  get 'mil311s/unstarted(.:format)' => 'mil311s#unstarted', :as => 'mil311_unstarted'
+  put 'mil311s/:id/enter_finding(.:format)' => 'mil311s#do_enter_finding', :as => 'do_mil311_enter_finding'
+  get 'mil311s/:id/enter_finding(.:format)' => 'mil311s#enter_finding', :as => 'mil311_enter_finding'
   put 'mil311s/:id/second_read(.:format)' => 'mil311s#do_second_read', :as => 'do_mil311_second_read'
   get 'mil311s/:id/second_read(.:format)' => 'mil311s#second_read', :as => 'mil311_second_read'
+  put 'mil311s/:id/return_to_primary(.:format)' => 'mil311s#do_return_to_primary', :as => 'do_mil311_return_to_primary'
+  get 'mil311s/:id/return_to_primary(.:format)' => 'mil311s#return_to_primary', :as => 'mil311_return_to_primary'
   put 'mil311s/:id/completion(.:format)' => 'mil311s#do_completion', :as => 'do_mil311_completion'
   get 'mil311s/:id/completion(.:format)' => 'mil311s#completion', :as => 'mil311_completion'
 
@@ -2562,10 +3134,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd445s"
-  post 'estd445s/primary_read(.:format)' => 'estd445s#do_primary_read', :as => 'do_estd445_primary_read'
-  get 'estd445s/primary_read(.:format)' => 'estd445s#primary_read', :as => 'estd445_primary_read'
+  post 'estd445s/unstarted(.:format)' => 'estd445s#do_unstarted', :as => 'do_estd445_unstarted'
+  get 'estd445s/unstarted(.:format)' => 'estd445s#unstarted', :as => 'estd445_unstarted'
+  put 'estd445s/:id/enter_finding(.:format)' => 'estd445s#do_enter_finding', :as => 'do_estd445_enter_finding'
+  get 'estd445s/:id/enter_finding(.:format)' => 'estd445s#enter_finding', :as => 'estd445_enter_finding'
   put 'estd445s/:id/second_read(.:format)' => 'estd445s#do_second_read', :as => 'do_estd445_second_read'
   get 'estd445s/:id/second_read(.:format)' => 'estd445s#second_read', :as => 'estd445_second_read'
+  put 'estd445s/:id/return_to_primary(.:format)' => 'estd445s#do_return_to_primary', :as => 'do_estd445_return_to_primary'
+  get 'estd445s/:id/return_to_primary(.:format)' => 'estd445s#return_to_primary', :as => 'estd445_return_to_primary'
   put 'estd445s/:id/completion(.:format)' => 'estd445s#do_completion', :as => 'do_estd445_completion'
   get 'estd445s/:id/completion(.:format)' => 'estd445s#completion', :as => 'estd445_completion'
 
@@ -2579,10 +3155,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil371s"
-  post 'mil371s/primary_read(.:format)' => 'mil371s#do_primary_read', :as => 'do_mil371_primary_read'
-  get 'mil371s/primary_read(.:format)' => 'mil371s#primary_read', :as => 'mil371_primary_read'
+  post 'mil371s/unstarted(.:format)' => 'mil371s#do_unstarted', :as => 'do_mil371_unstarted'
+  get 'mil371s/unstarted(.:format)' => 'mil371s#unstarted', :as => 'mil371_unstarted'
+  put 'mil371s/:id/enter_finding(.:format)' => 'mil371s#do_enter_finding', :as => 'do_mil371_enter_finding'
+  get 'mil371s/:id/enter_finding(.:format)' => 'mil371s#enter_finding', :as => 'mil371_enter_finding'
   put 'mil371s/:id/second_read(.:format)' => 'mil371s#do_second_read', :as => 'do_mil371_second_read'
   get 'mil371s/:id/second_read(.:format)' => 'mil371s#second_read', :as => 'mil371_second_read'
+  put 'mil371s/:id/return_to_primary(.:format)' => 'mil371s#do_return_to_primary', :as => 'do_mil371_return_to_primary'
+  get 'mil371s/:id/return_to_primary(.:format)' => 'mil371s#return_to_primary', :as => 'mil371_return_to_primary'
   put 'mil371s/:id/completion(.:format)' => 'mil371s#do_completion', :as => 'do_mil371_completion'
   get 'mil371s/:id/completion(.:format)' => 'mil371s#completion', :as => 'mil371_completion'
 
@@ -2596,10 +3176,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil462s"
-  post 'mil462s/primary_read(.:format)' => 'mil462s#do_primary_read', :as => 'do_mil462_primary_read'
-  get 'mil462s/primary_read(.:format)' => 'mil462s#primary_read', :as => 'mil462_primary_read'
+  post 'mil462s/unstarted(.:format)' => 'mil462s#do_unstarted', :as => 'do_mil462_unstarted'
+  get 'mil462s/unstarted(.:format)' => 'mil462s#unstarted', :as => 'mil462_unstarted'
+  put 'mil462s/:id/enter_finding(.:format)' => 'mil462s#do_enter_finding', :as => 'do_mil462_enter_finding'
+  get 'mil462s/:id/enter_finding(.:format)' => 'mil462s#enter_finding', :as => 'mil462_enter_finding'
   put 'mil462s/:id/second_read(.:format)' => 'mil462s#do_second_read', :as => 'do_mil462_second_read'
   get 'mil462s/:id/second_read(.:format)' => 'mil462s#second_read', :as => 'mil462_second_read'
+  put 'mil462s/:id/return_to_primary(.:format)' => 'mil462s#do_return_to_primary', :as => 'do_mil462_return_to_primary'
+  get 'mil462s/:id/return_to_primary(.:format)' => 'mil462s#return_to_primary', :as => 'mil462_return_to_primary'
   put 'mil462s/:id/completion(.:format)' => 'mil462s#do_completion', :as => 'do_mil462_completion'
   get 'mil462s/:id/completion(.:format)' => 'mil462s#completion', :as => 'mil462_completion'
 
@@ -2613,10 +3197,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil221s"
-  post 'mil221s/primary_read(.:format)' => 'mil221s#do_primary_read', :as => 'do_mil221_primary_read'
-  get 'mil221s/primary_read(.:format)' => 'mil221s#primary_read', :as => 'mil221_primary_read'
+  post 'mil221s/unstarted(.:format)' => 'mil221s#do_unstarted', :as => 'do_mil221_unstarted'
+  get 'mil221s/unstarted(.:format)' => 'mil221s#unstarted', :as => 'mil221_unstarted'
+  put 'mil221s/:id/enter_finding(.:format)' => 'mil221s#do_enter_finding', :as => 'do_mil221_enter_finding'
+  get 'mil221s/:id/enter_finding(.:format)' => 'mil221s#enter_finding', :as => 'mil221_enter_finding'
   put 'mil221s/:id/second_read(.:format)' => 'mil221s#do_second_read', :as => 'do_mil221_second_read'
   get 'mil221s/:id/second_read(.:format)' => 'mil221s#second_read', :as => 'mil221_second_read'
+  put 'mil221s/:id/return_to_primary(.:format)' => 'mil221s#do_return_to_primary', :as => 'do_mil221_return_to_primary'
+  get 'mil221s/:id/return_to_primary(.:format)' => 'mil221s#return_to_primary', :as => 'mil221_return_to_primary'
   put 'mil221s/:id/completion(.:format)' => 'mil221s#do_completion', :as => 'do_mil221_completion'
   get 'mil221s/:id/completion(.:format)' => 'mil221s#completion', :as => 'mil221_completion'
 
@@ -2630,10 +3218,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil421s"
-  post 'mil421s/primary_read(.:format)' => 'mil421s#do_primary_read', :as => 'do_mil421_primary_read'
-  get 'mil421s/primary_read(.:format)' => 'mil421s#primary_read', :as => 'mil421_primary_read'
+  post 'mil421s/unstarted(.:format)' => 'mil421s#do_unstarted', :as => 'do_mil421_unstarted'
+  get 'mil421s/unstarted(.:format)' => 'mil421s#unstarted', :as => 'mil421_unstarted'
+  put 'mil421s/:id/enter_finding(.:format)' => 'mil421s#do_enter_finding', :as => 'do_mil421_enter_finding'
+  get 'mil421s/:id/enter_finding(.:format)' => 'mil421s#enter_finding', :as => 'mil421_enter_finding'
   put 'mil421s/:id/second_read(.:format)' => 'mil421s#do_second_read', :as => 'do_mil421_second_read'
   get 'mil421s/:id/second_read(.:format)' => 'mil421s#second_read', :as => 'mil421_second_read'
+  put 'mil421s/:id/return_to_primary(.:format)' => 'mil421s#do_return_to_primary', :as => 'do_mil421_return_to_primary'
+  get 'mil421s/:id/return_to_primary(.:format)' => 'mil421s#return_to_primary', :as => 'mil421_return_to_primary'
   put 'mil421s/:id/completion(.:format)' => 'mil421s#do_completion', :as => 'do_mil421_completion'
   get 'mil421s/:id/completion(.:format)' => 'mil421s#completion', :as => 'mil421_completion'
 
@@ -2647,10 +3239,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd491s"
-  post 'estd491s/primary_read(.:format)' => 'estd491s#do_primary_read', :as => 'do_estd491_primary_read'
-  get 'estd491s/primary_read(.:format)' => 'estd491s#primary_read', :as => 'estd491_primary_read'
+  post 'estd491s/unstarted(.:format)' => 'estd491s#do_unstarted', :as => 'do_estd491_unstarted'
+  get 'estd491s/unstarted(.:format)' => 'estd491s#unstarted', :as => 'estd491_unstarted'
+  put 'estd491s/:id/enter_finding(.:format)' => 'estd491s#do_enter_finding', :as => 'do_estd491_enter_finding'
+  get 'estd491s/:id/enter_finding(.:format)' => 'estd491s#enter_finding', :as => 'estd491_enter_finding'
   put 'estd491s/:id/second_read(.:format)' => 'estd491s#do_second_read', :as => 'do_estd491_second_read'
   get 'estd491s/:id/second_read(.:format)' => 'estd491s#second_read', :as => 'estd491_second_read'
+  put 'estd491s/:id/return_to_primary(.:format)' => 'estd491s#do_return_to_primary', :as => 'do_estd491_return_to_primary'
+  get 'estd491s/:id/return_to_primary(.:format)' => 'estd491s#return_to_primary', :as => 'estd491_return_to_primary'
   put 'estd491s/:id/completion(.:format)' => 'estd491s#do_completion', :as => 'do_estd491_completion'
   get 'estd491s/:id/completion(.:format)' => 'estd491s#completion', :as => 'estd491_completion'
 
@@ -2664,10 +3260,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med56s"
-  post 'med56s/primary_read(.:format)' => 'med56s#do_primary_read', :as => 'do_med56_primary_read'
-  get 'med56s/primary_read(.:format)' => 'med56s#primary_read', :as => 'med56_primary_read'
+  post 'med56s/unstarted(.:format)' => 'med56s#do_unstarted', :as => 'do_med56_unstarted'
+  get 'med56s/unstarted(.:format)' => 'med56s#unstarted', :as => 'med56_unstarted'
+  put 'med56s/:id/enter_finding(.:format)' => 'med56s#do_enter_finding', :as => 'do_med56_enter_finding'
+  get 'med56s/:id/enter_finding(.:format)' => 'med56s#enter_finding', :as => 'med56_enter_finding'
   put 'med56s/:id/second_read(.:format)' => 'med56s#do_second_read', :as => 'do_med56_second_read'
   get 'med56s/:id/second_read(.:format)' => 'med56s#second_read', :as => 'med56_second_read'
+  put 'med56s/:id/return_to_primary(.:format)' => 'med56s#do_return_to_primary', :as => 'do_med56_return_to_primary'
+  get 'med56s/:id/return_to_primary(.:format)' => 'med56s#return_to_primary', :as => 'med56_return_to_primary'
   put 'med56s/:id/completion(.:format)' => 'med56s#do_completion', :as => 'do_med56_completion'
   get 'med56s/:id/completion(.:format)' => 'med56s#completion', :as => 'med56_completion'
 
@@ -2681,10 +3281,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd41522s"
-  post 'estd41522s/primary_read(.:format)' => 'estd41522s#do_primary_read', :as => 'do_estd41522_primary_read'
-  get 'estd41522s/primary_read(.:format)' => 'estd41522s#primary_read', :as => 'estd41522_primary_read'
+  post 'estd41522s/unstarted(.:format)' => 'estd41522s#do_unstarted', :as => 'do_estd41522_unstarted'
+  get 'estd41522s/unstarted(.:format)' => 'estd41522s#unstarted', :as => 'estd41522_unstarted'
+  put 'estd41522s/:id/enter_finding(.:format)' => 'estd41522s#do_enter_finding', :as => 'do_estd41522_enter_finding'
+  get 'estd41522s/:id/enter_finding(.:format)' => 'estd41522s#enter_finding', :as => 'estd41522_enter_finding'
   put 'estd41522s/:id/second_read(.:format)' => 'estd41522s#do_second_read', :as => 'do_estd41522_second_read'
   get 'estd41522s/:id/second_read(.:format)' => 'estd41522s#second_read', :as => 'estd41522_second_read'
+  put 'estd41522s/:id/return_to_primary(.:format)' => 'estd41522s#do_return_to_primary', :as => 'do_estd41522_return_to_primary'
+  get 'estd41522s/:id/return_to_primary(.:format)' => 'estd41522s#return_to_primary', :as => 'estd41522_return_to_primary'
   put 'estd41522s/:id/completion(.:format)' => 'estd41522s#do_completion', :as => 'do_estd41522_completion'
   get 'estd41522s/:id/completion(.:format)' => 'estd41522s#completion', :as => 'estd41522_completion'
 
@@ -2698,10 +3302,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd461s"
-  post 'estd461s/primary_read(.:format)' => 'estd461s#do_primary_read', :as => 'do_estd461_primary_read'
-  get 'estd461s/primary_read(.:format)' => 'estd461s#primary_read', :as => 'estd461_primary_read'
+  post 'estd461s/unstarted(.:format)' => 'estd461s#do_unstarted', :as => 'do_estd461_unstarted'
+  get 'estd461s/unstarted(.:format)' => 'estd461s#unstarted', :as => 'estd461_unstarted'
+  put 'estd461s/:id/enter_finding(.:format)' => 'estd461s#do_enter_finding', :as => 'do_estd461_enter_finding'
+  get 'estd461s/:id/enter_finding(.:format)' => 'estd461s#enter_finding', :as => 'estd461_enter_finding'
   put 'estd461s/:id/second_read(.:format)' => 'estd461s#do_second_read', :as => 'do_estd461_second_read'
   get 'estd461s/:id/second_read(.:format)' => 'estd461s#second_read', :as => 'estd461_second_read'
+  put 'estd461s/:id/return_to_primary(.:format)' => 'estd461s#do_return_to_primary', :as => 'do_estd461_return_to_primary'
+  get 'estd461s/:id/return_to_primary(.:format)' => 'estd461s#return_to_primary', :as => 'estd461_return_to_primary'
   put 'estd461s/:id/completion(.:format)' => 'estd461s#do_completion', :as => 'do_estd461_completion'
   get 'estd461s/:id/completion(.:format)' => 'estd461s#completion', :as => 'estd461_completion'
 
@@ -2724,10 +3332,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil532s"
-  post 'mil532s/primary_read(.:format)' => 'mil532s#do_primary_read', :as => 'do_mil532_primary_read'
-  get 'mil532s/primary_read(.:format)' => 'mil532s#primary_read', :as => 'mil532_primary_read'
+  post 'mil532s/unstarted(.:format)' => 'mil532s#do_unstarted', :as => 'do_mil532_unstarted'
+  get 'mil532s/unstarted(.:format)' => 'mil532s#unstarted', :as => 'mil532_unstarted'
+  put 'mil532s/:id/enter_finding(.:format)' => 'mil532s#do_enter_finding', :as => 'do_mil532_enter_finding'
+  get 'mil532s/:id/enter_finding(.:format)' => 'mil532s#enter_finding', :as => 'mil532_enter_finding'
   put 'mil532s/:id/second_read(.:format)' => 'mil532s#do_second_read', :as => 'do_mil532_second_read'
   get 'mil532s/:id/second_read(.:format)' => 'mil532s#second_read', :as => 'mil532_second_read'
+  put 'mil532s/:id/return_to_primary(.:format)' => 'mil532s#do_return_to_primary', :as => 'do_mil532_return_to_primary'
+  get 'mil532s/:id/return_to_primary(.:format)' => 'mil532s#return_to_primary', :as => 'mil532_return_to_primary'
   put 'mil532s/:id/completion(.:format)' => 'mil532s#do_completion', :as => 'do_mil532_completion'
   get 'mil532s/:id/completion(.:format)' => 'mil532s#completion', :as => 'mil532_completion'
 
@@ -2741,10 +3353,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med28s"
-  post 'med28s/primary_read(.:format)' => 'med28s#do_primary_read', :as => 'do_med28_primary_read'
-  get 'med28s/primary_read(.:format)' => 'med28s#primary_read', :as => 'med28_primary_read'
+  post 'med28s/unstarted(.:format)' => 'med28s#do_unstarted', :as => 'do_med28_unstarted'
+  get 'med28s/unstarted(.:format)' => 'med28s#unstarted', :as => 'med28_unstarted'
+  put 'med28s/:id/enter_finding(.:format)' => 'med28s#do_enter_finding', :as => 'do_med28_enter_finding'
+  get 'med28s/:id/enter_finding(.:format)' => 'med28s#enter_finding', :as => 'med28_enter_finding'
   put 'med28s/:id/second_read(.:format)' => 'med28s#do_second_read', :as => 'do_med28_second_read'
   get 'med28s/:id/second_read(.:format)' => 'med28s#second_read', :as => 'med28_second_read'
+  put 'med28s/:id/return_to_primary(.:format)' => 'med28s#do_return_to_primary', :as => 'do_med28_return_to_primary'
+  get 'med28s/:id/return_to_primary(.:format)' => 'med28s#return_to_primary', :as => 'med28_return_to_primary'
   put 'med28s/:id/completion(.:format)' => 'med28s#do_completion', :as => 'do_med28_completion'
   get 'med28s/:id/completion(.:format)' => 'med28s#completion', :as => 'med28_completion'
 
@@ -2758,10 +3374,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil112s"
-  post 'mil112s/primary_read(.:format)' => 'mil112s#do_primary_read', :as => 'do_mil112_primary_read'
-  get 'mil112s/primary_read(.:format)' => 'mil112s#primary_read', :as => 'mil112_primary_read'
+  post 'mil112s/unstarted(.:format)' => 'mil112s#do_unstarted', :as => 'do_mil112_unstarted'
+  get 'mil112s/unstarted(.:format)' => 'mil112s#unstarted', :as => 'mil112_unstarted'
+  put 'mil112s/:id/enter_finding(.:format)' => 'mil112s#do_enter_finding', :as => 'do_mil112_enter_finding'
+  get 'mil112s/:id/enter_finding(.:format)' => 'mil112s#enter_finding', :as => 'mil112_enter_finding'
   put 'mil112s/:id/second_read(.:format)' => 'mil112s#do_second_read', :as => 'do_mil112_second_read'
   get 'mil112s/:id/second_read(.:format)' => 'mil112s#second_read', :as => 'mil112_second_read'
+  put 'mil112s/:id/return_to_primary(.:format)' => 'mil112s#do_return_to_primary', :as => 'do_mil112_return_to_primary'
+  get 'mil112s/:id/return_to_primary(.:format)' => 'mil112s#return_to_primary', :as => 'mil112_return_to_primary'
   put 'mil112s/:id/completion(.:format)' => 'mil112s#do_completion', :as => 'do_mil112_completion'
   get 'mil112s/:id/completion(.:format)' => 'mil112s#completion', :as => 'mil112_completion'
 
@@ -2775,10 +3395,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4105s"
-  post 'estd4105s/primary_read(.:format)' => 'estd4105s#do_primary_read', :as => 'do_estd4105_primary_read'
-  get 'estd4105s/primary_read(.:format)' => 'estd4105s#primary_read', :as => 'estd4105_primary_read'
+  post 'estd4105s/unstarted(.:format)' => 'estd4105s#do_unstarted', :as => 'do_estd4105_unstarted'
+  get 'estd4105s/unstarted(.:format)' => 'estd4105s#unstarted', :as => 'estd4105_unstarted'
+  put 'estd4105s/:id/enter_finding(.:format)' => 'estd4105s#do_enter_finding', :as => 'do_estd4105_enter_finding'
+  get 'estd4105s/:id/enter_finding(.:format)' => 'estd4105s#enter_finding', :as => 'estd4105_enter_finding'
   put 'estd4105s/:id/second_read(.:format)' => 'estd4105s#do_second_read', :as => 'do_estd4105_second_read'
   get 'estd4105s/:id/second_read(.:format)' => 'estd4105s#second_read', :as => 'estd4105_second_read'
+  put 'estd4105s/:id/return_to_primary(.:format)' => 'estd4105s#do_return_to_primary', :as => 'do_estd4105_return_to_primary'
+  get 'estd4105s/:id/return_to_primary(.:format)' => 'estd4105s#return_to_primary', :as => 'estd4105_return_to_primary'
   put 'estd4105s/:id/completion(.:format)' => 'estd4105s#do_completion', :as => 'do_estd4105_completion'
   get 'estd4105s/:id/completion(.:format)' => 'estd4105s#completion', :as => 'estd4105_completion'
 
@@ -2792,10 +3416,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med81s"
-  post 'med81s/primary_read(.:format)' => 'med81s#do_primary_read', :as => 'do_med81_primary_read'
-  get 'med81s/primary_read(.:format)' => 'med81s#primary_read', :as => 'med81_primary_read'
+  post 'med81s/unstarted(.:format)' => 'med81s#do_unstarted', :as => 'do_med81_unstarted'
+  get 'med81s/unstarted(.:format)' => 'med81s#unstarted', :as => 'med81_unstarted'
+  put 'med81s/:id/enter_finding(.:format)' => 'med81s#do_enter_finding', :as => 'do_med81_enter_finding'
+  get 'med81s/:id/enter_finding(.:format)' => 'med81s#enter_finding', :as => 'med81_enter_finding'
   put 'med81s/:id/second_read(.:format)' => 'med81s#do_second_read', :as => 'do_med81_second_read'
   get 'med81s/:id/second_read(.:format)' => 'med81s#second_read', :as => 'med81_second_read'
+  put 'med81s/:id/return_to_primary(.:format)' => 'med81s#do_return_to_primary', :as => 'do_med81_return_to_primary'
+  get 'med81s/:id/return_to_primary(.:format)' => 'med81s#return_to_primary', :as => 'med81_return_to_primary'
   put 'med81s/:id/completion(.:format)' => 'med81s#do_completion', :as => 'do_med81_completion'
   get 'med81s/:id/completion(.:format)' => 'med81s#completion', :as => 'med81_completion'
 
@@ -2809,10 +3437,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil533s"
-  post 'mil533s/primary_read(.:format)' => 'mil533s#do_primary_read', :as => 'do_mil533_primary_read'
-  get 'mil533s/primary_read(.:format)' => 'mil533s#primary_read', :as => 'mil533_primary_read'
+  post 'mil533s/unstarted(.:format)' => 'mil533s#do_unstarted', :as => 'do_mil533_unstarted'
+  get 'mil533s/unstarted(.:format)' => 'mil533s#unstarted', :as => 'mil533_unstarted'
+  put 'mil533s/:id/enter_finding(.:format)' => 'mil533s#do_enter_finding', :as => 'do_mil533_enter_finding'
+  get 'mil533s/:id/enter_finding(.:format)' => 'mil533s#enter_finding', :as => 'mil533_enter_finding'
   put 'mil533s/:id/second_read(.:format)' => 'mil533s#do_second_read', :as => 'do_mil533_second_read'
   get 'mil533s/:id/second_read(.:format)' => 'mil533s#second_read', :as => 'mil533_second_read'
+  put 'mil533s/:id/return_to_primary(.:format)' => 'mil533s#do_return_to_primary', :as => 'do_mil533_return_to_primary'
+  get 'mil533s/:id/return_to_primary(.:format)' => 'mil533s#return_to_primary', :as => 'mil533_return_to_primary'
   put 'mil533s/:id/completion(.:format)' => 'mil533s#do_completion', :as => 'do_mil533_completion'
   get 'mil533s/:id/completion(.:format)' => 'mil533s#completion', :as => 'mil533_completion'
 
@@ -2826,10 +3458,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46320s"
-  post 'estd46320s/primary_read(.:format)' => 'estd46320s#do_primary_read', :as => 'do_estd46320_primary_read'
-  get 'estd46320s/primary_read(.:format)' => 'estd46320s#primary_read', :as => 'estd46320_primary_read'
+  post 'estd46320s/unstarted(.:format)' => 'estd46320s#do_unstarted', :as => 'do_estd46320_unstarted'
+  get 'estd46320s/unstarted(.:format)' => 'estd46320s#unstarted', :as => 'estd46320_unstarted'
+  put 'estd46320s/:id/enter_finding(.:format)' => 'estd46320s#do_enter_finding', :as => 'do_estd46320_enter_finding'
+  get 'estd46320s/:id/enter_finding(.:format)' => 'estd46320s#enter_finding', :as => 'estd46320_enter_finding'
   put 'estd46320s/:id/second_read(.:format)' => 'estd46320s#do_second_read', :as => 'do_estd46320_second_read'
   get 'estd46320s/:id/second_read(.:format)' => 'estd46320s#second_read', :as => 'estd46320_second_read'
+  put 'estd46320s/:id/return_to_primary(.:format)' => 'estd46320s#do_return_to_primary', :as => 'do_estd46320_return_to_primary'
+  get 'estd46320s/:id/return_to_primary(.:format)' => 'estd46320s#return_to_primary', :as => 'estd46320_return_to_primary'
   put 'estd46320s/:id/completion(.:format)' => 'estd46320s#do_completion', :as => 'do_estd46320_completion'
   get 'estd46320s/:id/completion(.:format)' => 'estd46320s#completion', :as => 'estd46320_completion'
 
@@ -2843,10 +3479,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd41521s"
-  post 'estd41521s/primary_read(.:format)' => 'estd41521s#do_primary_read', :as => 'do_estd41521_primary_read'
-  get 'estd41521s/primary_read(.:format)' => 'estd41521s#primary_read', :as => 'estd41521_primary_read'
+  post 'estd41521s/unstarted(.:format)' => 'estd41521s#do_unstarted', :as => 'do_estd41521_unstarted'
+  get 'estd41521s/unstarted(.:format)' => 'estd41521s#unstarted', :as => 'estd41521_unstarted'
+  put 'estd41521s/:id/enter_finding(.:format)' => 'estd41521s#do_enter_finding', :as => 'do_estd41521_enter_finding'
+  get 'estd41521s/:id/enter_finding(.:format)' => 'estd41521s#enter_finding', :as => 'estd41521_enter_finding'
   put 'estd41521s/:id/second_read(.:format)' => 'estd41521s#do_second_read', :as => 'do_estd41521_second_read'
   get 'estd41521s/:id/second_read(.:format)' => 'estd41521s#second_read', :as => 'estd41521_second_read'
+  put 'estd41521s/:id/return_to_primary(.:format)' => 'estd41521s#do_return_to_primary', :as => 'do_estd41521_return_to_primary'
+  get 'estd41521s/:id/return_to_primary(.:format)' => 'estd41521s#return_to_primary', :as => 'estd41521_return_to_primary'
   put 'estd41521s/:id/completion(.:format)' => 'estd41521s#do_completion', :as => 'do_estd41521_completion'
   get 'estd41521s/:id/completion(.:format)' => 'estd41521s#completion', :as => 'estd41521_completion'
 
@@ -2860,10 +3500,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil351s"
-  post 'mil351s/primary_read(.:format)' => 'mil351s#do_primary_read', :as => 'do_mil351_primary_read'
-  get 'mil351s/primary_read(.:format)' => 'mil351s#primary_read', :as => 'mil351_primary_read'
+  post 'mil351s/unstarted(.:format)' => 'mil351s#do_unstarted', :as => 'do_mil351_unstarted'
+  get 'mil351s/unstarted(.:format)' => 'mil351s#unstarted', :as => 'mil351_unstarted'
+  put 'mil351s/:id/enter_finding(.:format)' => 'mil351s#do_enter_finding', :as => 'do_mil351_enter_finding'
+  get 'mil351s/:id/enter_finding(.:format)' => 'mil351s#enter_finding', :as => 'mil351_enter_finding'
   put 'mil351s/:id/second_read(.:format)' => 'mil351s#do_second_read', :as => 'do_mil351_second_read'
   get 'mil351s/:id/second_read(.:format)' => 'mil351s#second_read', :as => 'mil351_second_read'
+  put 'mil351s/:id/return_to_primary(.:format)' => 'mil351s#do_return_to_primary', :as => 'do_mil351_return_to_primary'
+  get 'mil351s/:id/return_to_primary(.:format)' => 'mil351s#return_to_primary', :as => 'mil351_return_to_primary'
   put 'mil351s/:id/completion(.:format)' => 'mil351s#do_completion', :as => 'do_mil351_completion'
   get 'mil351s/:id/completion(.:format)' => 'mil351s#completion', :as => 'mil351_completion'
 
@@ -2877,10 +3521,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med27s"
-  post 'med27s/primary_read(.:format)' => 'med27s#do_primary_read', :as => 'do_med27_primary_read'
-  get 'med27s/primary_read(.:format)' => 'med27s#primary_read', :as => 'med27_primary_read'
+  post 'med27s/unstarted(.:format)' => 'med27s#do_unstarted', :as => 'do_med27_unstarted'
+  get 'med27s/unstarted(.:format)' => 'med27s#unstarted', :as => 'med27_unstarted'
+  put 'med27s/:id/enter_finding(.:format)' => 'med27s#do_enter_finding', :as => 'do_med27_enter_finding'
+  get 'med27s/:id/enter_finding(.:format)' => 'med27s#enter_finding', :as => 'med27_enter_finding'
   put 'med27s/:id/second_read(.:format)' => 'med27s#do_second_read', :as => 'do_med27_second_read'
   get 'med27s/:id/second_read(.:format)' => 'med27s#second_read', :as => 'med27_second_read'
+  put 'med27s/:id/return_to_primary(.:format)' => 'med27s#do_return_to_primary', :as => 'do_med27_return_to_primary'
+  get 'med27s/:id/return_to_primary(.:format)' => 'med27s#return_to_primary', :as => 'med27_return_to_primary'
   put 'med27s/:id/completion(.:format)' => 'med27s#do_completion', :as => 'do_med27_completion'
   get 'med27s/:id/completion(.:format)' => 'med27s#completion', :as => 'med27_completion'
 
@@ -2894,10 +3542,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med111s"
-  post 'med111s/primary_read(.:format)' => 'med111s#do_primary_read', :as => 'do_med111_primary_read'
-  get 'med111s/primary_read(.:format)' => 'med111s#primary_read', :as => 'med111_primary_read'
+  post 'med111s/unstarted(.:format)' => 'med111s#do_unstarted', :as => 'do_med111_unstarted'
+  get 'med111s/unstarted(.:format)' => 'med111s#unstarted', :as => 'med111_unstarted'
+  put 'med111s/:id/enter_finding(.:format)' => 'med111s#do_enter_finding', :as => 'do_med111_enter_finding'
+  get 'med111s/:id/enter_finding(.:format)' => 'med111s#enter_finding', :as => 'med111_enter_finding'
   put 'med111s/:id/second_read(.:format)' => 'med111s#do_second_read', :as => 'do_med111_second_read'
   get 'med111s/:id/second_read(.:format)' => 'med111s#second_read', :as => 'med111_second_read'
+  put 'med111s/:id/return_to_primary(.:format)' => 'med111s#do_return_to_primary', :as => 'do_med111_return_to_primary'
+  get 'med111s/:id/return_to_primary(.:format)' => 'med111s#return_to_primary', :as => 'med111_return_to_primary'
   put 'med111s/:id/completion(.:format)' => 'med111s#do_completion', :as => 'do_med111_completion'
   get 'med111s/:id/completion(.:format)' => 'med111s#completion', :as => 'med111_completion'
 
@@ -2911,10 +3563,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd473s"
-  post 'estd473s/primary_read(.:format)' => 'estd473s#do_primary_read', :as => 'do_estd473_primary_read'
-  get 'estd473s/primary_read(.:format)' => 'estd473s#primary_read', :as => 'estd473_primary_read'
+  post 'estd473s/unstarted(.:format)' => 'estd473s#do_unstarted', :as => 'do_estd473_unstarted'
+  get 'estd473s/unstarted(.:format)' => 'estd473s#unstarted', :as => 'estd473_unstarted'
+  put 'estd473s/:id/enter_finding(.:format)' => 'estd473s#do_enter_finding', :as => 'do_estd473_enter_finding'
+  get 'estd473s/:id/enter_finding(.:format)' => 'estd473s#enter_finding', :as => 'estd473_enter_finding'
   put 'estd473s/:id/second_read(.:format)' => 'estd473s#do_second_read', :as => 'do_estd473_second_read'
   get 'estd473s/:id/second_read(.:format)' => 'estd473s#second_read', :as => 'estd473_second_read'
+  put 'estd473s/:id/return_to_primary(.:format)' => 'estd473s#do_return_to_primary', :as => 'do_estd473_return_to_primary'
+  get 'estd473s/:id/return_to_primary(.:format)' => 'estd473s#return_to_primary', :as => 'estd473_return_to_primary'
   put 'estd473s/:id/completion(.:format)' => 'estd473s#do_completion', :as => 'do_estd473_completion'
   get 'estd473s/:id/completion(.:format)' => 'estd473s#completion', :as => 'estd473_completion'
 
@@ -2928,10 +3584,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd483s"
-  post 'estd483s/primary_read(.:format)' => 'estd483s#do_primary_read', :as => 'do_estd483_primary_read'
-  get 'estd483s/primary_read(.:format)' => 'estd483s#primary_read', :as => 'estd483_primary_read'
+  post 'estd483s/unstarted(.:format)' => 'estd483s#do_unstarted', :as => 'do_estd483_unstarted'
+  get 'estd483s/unstarted(.:format)' => 'estd483s#unstarted', :as => 'estd483_unstarted'
+  put 'estd483s/:id/enter_finding(.:format)' => 'estd483s#do_enter_finding', :as => 'do_estd483_enter_finding'
+  get 'estd483s/:id/enter_finding(.:format)' => 'estd483s#enter_finding', :as => 'estd483_enter_finding'
   put 'estd483s/:id/second_read(.:format)' => 'estd483s#do_second_read', :as => 'do_estd483_second_read'
   get 'estd483s/:id/second_read(.:format)' => 'estd483s#second_read', :as => 'estd483_second_read'
+  put 'estd483s/:id/return_to_primary(.:format)' => 'estd483s#do_return_to_primary', :as => 'do_estd483_return_to_primary'
+  get 'estd483s/:id/return_to_primary(.:format)' => 'estd483s#return_to_primary', :as => 'estd483_return_to_primary'
   put 'estd483s/:id/completion(.:format)' => 'estd483s#do_completion', :as => 'do_estd483_completion'
   get 'estd483s/:id/completion(.:format)' => 'estd483s#completion', :as => 'estd483_completion'
 
@@ -2945,10 +3605,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4636s"
-  post 'estd4636s/primary_read(.:format)' => 'estd4636s#do_primary_read', :as => 'do_estd4636_primary_read'
-  get 'estd4636s/primary_read(.:format)' => 'estd4636s#primary_read', :as => 'estd4636_primary_read'
+  post 'estd4636s/unstarted(.:format)' => 'estd4636s#do_unstarted', :as => 'do_estd4636_unstarted'
+  get 'estd4636s/unstarted(.:format)' => 'estd4636s#unstarted', :as => 'estd4636_unstarted'
+  put 'estd4636s/:id/enter_finding(.:format)' => 'estd4636s#do_enter_finding', :as => 'do_estd4636_enter_finding'
+  get 'estd4636s/:id/enter_finding(.:format)' => 'estd4636s#enter_finding', :as => 'estd4636_enter_finding'
   put 'estd4636s/:id/second_read(.:format)' => 'estd4636s#do_second_read', :as => 'do_estd4636_second_read'
   get 'estd4636s/:id/second_read(.:format)' => 'estd4636s#second_read', :as => 'estd4636_second_read'
+  put 'estd4636s/:id/return_to_primary(.:format)' => 'estd4636s#do_return_to_primary', :as => 'do_estd4636_return_to_primary'
+  get 'estd4636s/:id/return_to_primary(.:format)' => 'estd4636s#return_to_primary', :as => 'estd4636_return_to_primary'
   put 'estd4636s/:id/completion(.:format)' => 'estd4636s#do_completion', :as => 'do_estd4636_completion'
   get 'estd4636s/:id/completion(.:format)' => 'estd4636s#completion', :as => 'estd4636_completion'
 
@@ -2962,10 +3626,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46328s"
-  post 'estd46328s/primary_read(.:format)' => 'estd46328s#do_primary_read', :as => 'do_estd46328_primary_read'
-  get 'estd46328s/primary_read(.:format)' => 'estd46328s#primary_read', :as => 'estd46328_primary_read'
+  post 'estd46328s/unstarted(.:format)' => 'estd46328s#do_unstarted', :as => 'do_estd46328_unstarted'
+  get 'estd46328s/unstarted(.:format)' => 'estd46328s#unstarted', :as => 'estd46328_unstarted'
+  put 'estd46328s/:id/enter_finding(.:format)' => 'estd46328s#do_enter_finding', :as => 'do_estd46328_enter_finding'
+  get 'estd46328s/:id/enter_finding(.:format)' => 'estd46328s#enter_finding', :as => 'estd46328_enter_finding'
   put 'estd46328s/:id/second_read(.:format)' => 'estd46328s#do_second_read', :as => 'do_estd46328_second_read'
   get 'estd46328s/:id/second_read(.:format)' => 'estd46328s#second_read', :as => 'estd46328_second_read'
+  put 'estd46328s/:id/return_to_primary(.:format)' => 'estd46328s#do_return_to_primary', :as => 'do_estd46328_return_to_primary'
+  get 'estd46328s/:id/return_to_primary(.:format)' => 'estd46328s#return_to_primary', :as => 'estd46328_return_to_primary'
   put 'estd46328s/:id/completion(.:format)' => 'estd46328s#do_completion', :as => 'do_estd46328_completion'
   get 'estd46328s/:id/completion(.:format)' => 'estd46328s#completion', :as => 'estd46328_completion'
 
@@ -2979,10 +3647,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil341s"
-  post 'mil341s/primary_read(.:format)' => 'mil341s#do_primary_read', :as => 'do_mil341_primary_read'
-  get 'mil341s/primary_read(.:format)' => 'mil341s#primary_read', :as => 'mil341_primary_read'
+  post 'mil341s/unstarted(.:format)' => 'mil341s#do_unstarted', :as => 'do_mil341_unstarted'
+  get 'mil341s/unstarted(.:format)' => 'mil341s#unstarted', :as => 'mil341_unstarted'
+  put 'mil341s/:id/enter_finding(.:format)' => 'mil341s#do_enter_finding', :as => 'do_mil341_enter_finding'
+  get 'mil341s/:id/enter_finding(.:format)' => 'mil341s#enter_finding', :as => 'mil341_enter_finding'
   put 'mil341s/:id/second_read(.:format)' => 'mil341s#do_second_read', :as => 'do_mil341_second_read'
   get 'mil341s/:id/second_read(.:format)' => 'mil341s#second_read', :as => 'mil341_second_read'
+  put 'mil341s/:id/return_to_primary(.:format)' => 'mil341s#do_return_to_primary', :as => 'do_mil341_return_to_primary'
+  get 'mil341s/:id/return_to_primary(.:format)' => 'mil341s#return_to_primary', :as => 'mil341_return_to_primary'
   put 'mil341s/:id/completion(.:format)' => 'mil341s#do_completion', :as => 'do_mil341_completion'
   get 'mil341s/:id/completion(.:format)' => 'mil341s#completion', :as => 'mil341_completion'
 
@@ -2996,10 +3668,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4121s"
-  post 'estd4121s/primary_read(.:format)' => 'estd4121s#do_primary_read', :as => 'do_estd4121_primary_read'
-  get 'estd4121s/primary_read(.:format)' => 'estd4121s#primary_read', :as => 'estd4121_primary_read'
+  post 'estd4121s/unstarted(.:format)' => 'estd4121s#do_unstarted', :as => 'do_estd4121_unstarted'
+  get 'estd4121s/unstarted(.:format)' => 'estd4121s#unstarted', :as => 'estd4121_unstarted'
+  put 'estd4121s/:id/enter_finding(.:format)' => 'estd4121s#do_enter_finding', :as => 'do_estd4121_enter_finding'
+  get 'estd4121s/:id/enter_finding(.:format)' => 'estd4121s#enter_finding', :as => 'estd4121_enter_finding'
   put 'estd4121s/:id/second_read(.:format)' => 'estd4121s#do_second_read', :as => 'do_estd4121_second_read'
   get 'estd4121s/:id/second_read(.:format)' => 'estd4121s#second_read', :as => 'estd4121_second_read'
+  put 'estd4121s/:id/return_to_primary(.:format)' => 'estd4121s#do_return_to_primary', :as => 'do_estd4121_return_to_primary'
+  get 'estd4121s/:id/return_to_primary(.:format)' => 'estd4121s#return_to_primary', :as => 'estd4121_return_to_primary'
   put 'estd4121s/:id/completion(.:format)' => 'estd4121s#do_completion', :as => 'do_estd4121_completion'
   get 'estd4121s/:id/completion(.:format)' => 'estd4121s#completion', :as => 'estd4121_completion'
 
@@ -3013,10 +3689,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd331s"
-  post 'estd331s/primary_read(.:format)' => 'estd331s#do_primary_read', :as => 'do_estd331_primary_read'
-  get 'estd331s/primary_read(.:format)' => 'estd331s#primary_read', :as => 'estd331_primary_read'
+  post 'estd331s/unstarted(.:format)' => 'estd331s#do_unstarted', :as => 'do_estd331_unstarted'
+  get 'estd331s/unstarted(.:format)' => 'estd331s#unstarted', :as => 'estd331_unstarted'
+  put 'estd331s/:id/enter_finding(.:format)' => 'estd331s#do_enter_finding', :as => 'do_estd331_enter_finding'
+  get 'estd331s/:id/enter_finding(.:format)' => 'estd331s#enter_finding', :as => 'estd331_enter_finding'
   put 'estd331s/:id/second_read(.:format)' => 'estd331s#do_second_read', :as => 'do_estd331_second_read'
   get 'estd331s/:id/second_read(.:format)' => 'estd331s#second_read', :as => 'estd331_second_read'
+  put 'estd331s/:id/return_to_primary(.:format)' => 'estd331s#do_return_to_primary', :as => 'do_estd331_return_to_primary'
+  get 'estd331s/:id/return_to_primary(.:format)' => 'estd331s#return_to_primary', :as => 'estd331_return_to_primary'
   put 'estd331s/:id/completion(.:format)' => 'estd331s#do_completion', :as => 'do_estd331_completion'
   get 'estd331s/:id/completion(.:format)' => 'estd331s#completion', :as => 'estd331_completion'
 
@@ -3030,10 +3710,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med61s"
-  post 'med61s/primary_read(.:format)' => 'med61s#do_primary_read', :as => 'do_med61_primary_read'
-  get 'med61s/primary_read(.:format)' => 'med61s#primary_read', :as => 'med61_primary_read'
+  post 'med61s/unstarted(.:format)' => 'med61s#do_unstarted', :as => 'do_med61_unstarted'
+  get 'med61s/unstarted(.:format)' => 'med61s#unstarted', :as => 'med61_unstarted'
+  put 'med61s/:id/enter_finding(.:format)' => 'med61s#do_enter_finding', :as => 'do_med61_enter_finding'
+  get 'med61s/:id/enter_finding(.:format)' => 'med61s#enter_finding', :as => 'med61_enter_finding'
   put 'med61s/:id/second_read(.:format)' => 'med61s#do_second_read', :as => 'do_med61_second_read'
   get 'med61s/:id/second_read(.:format)' => 'med61s#second_read', :as => 'med61_second_read'
+  put 'med61s/:id/return_to_primary(.:format)' => 'med61s#do_return_to_primary', :as => 'do_med61_return_to_primary'
+  get 'med61s/:id/return_to_primary(.:format)' => 'med61s#return_to_primary', :as => 'med61_return_to_primary'
   put 'med61s/:id/completion(.:format)' => 'med61s#do_completion', :as => 'do_med61_completion'
   get 'med61s/:id/completion(.:format)' => 'med61s#completion', :as => 'med61_completion'
 
@@ -3047,10 +3731,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med32s"
-  post 'med32s/primary_read(.:format)' => 'med32s#do_primary_read', :as => 'do_med32_primary_read'
-  get 'med32s/primary_read(.:format)' => 'med32s#primary_read', :as => 'med32_primary_read'
+  post 'med32s/unstarted(.:format)' => 'med32s#do_unstarted', :as => 'do_med32_unstarted'
+  get 'med32s/unstarted(.:format)' => 'med32s#unstarted', :as => 'med32_unstarted'
+  put 'med32s/:id/enter_finding(.:format)' => 'med32s#do_enter_finding', :as => 'do_med32_enter_finding'
+  get 'med32s/:id/enter_finding(.:format)' => 'med32s#enter_finding', :as => 'med32_enter_finding'
   put 'med32s/:id/second_read(.:format)' => 'med32s#do_second_read', :as => 'do_med32_second_read'
   get 'med32s/:id/second_read(.:format)' => 'med32s#second_read', :as => 'med32_second_read'
+  put 'med32s/:id/return_to_primary(.:format)' => 'med32s#do_return_to_primary', :as => 'do_med32_return_to_primary'
+  get 'med32s/:id/return_to_primary(.:format)' => 'med32s#return_to_primary', :as => 'med32_return_to_primary'
   put 'med32s/:id/completion(.:format)' => 'med32s#do_completion', :as => 'do_med32_completion'
   get 'med32s/:id/completion(.:format)' => 'med32s#completion', :as => 'med32_completion'
 
@@ -3064,10 +3752,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med12s"
-  post 'med12s/primary_read(.:format)' => 'med12s#do_primary_read', :as => 'do_med12_primary_read'
-  get 'med12s/primary_read(.:format)' => 'med12s#primary_read', :as => 'med12_primary_read'
+  post 'med12s/unstarted(.:format)' => 'med12s#do_unstarted', :as => 'do_med12_unstarted'
+  get 'med12s/unstarted(.:format)' => 'med12s#unstarted', :as => 'med12_unstarted'
+  put 'med12s/:id/enter_finding(.:format)' => 'med12s#do_enter_finding', :as => 'do_med12_enter_finding'
+  get 'med12s/:id/enter_finding(.:format)' => 'med12s#enter_finding', :as => 'med12_enter_finding'
   put 'med12s/:id/second_read(.:format)' => 'med12s#do_second_read', :as => 'do_med12_second_read'
   get 'med12s/:id/second_read(.:format)' => 'med12s#second_read', :as => 'med12_second_read'
+  put 'med12s/:id/return_to_primary(.:format)' => 'med12s#do_return_to_primary', :as => 'do_med12_return_to_primary'
+  get 'med12s/:id/return_to_primary(.:format)' => 'med12s#return_to_primary', :as => 'med12_return_to_primary'
   put 'med12s/:id/completion(.:format)' => 'med12s#do_completion', :as => 'do_med12_completion'
   get 'med12s/:id/completion(.:format)' => 'med12s#completion', :as => 'med12_completion'
 
@@ -3081,10 +3773,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4143s"
-  post 'estd4143s/primary_read(.:format)' => 'estd4143s#do_primary_read', :as => 'do_estd4143_primary_read'
-  get 'estd4143s/primary_read(.:format)' => 'estd4143s#primary_read', :as => 'estd4143_primary_read'
+  post 'estd4143s/unstarted(.:format)' => 'estd4143s#do_unstarted', :as => 'do_estd4143_unstarted'
+  get 'estd4143s/unstarted(.:format)' => 'estd4143s#unstarted', :as => 'estd4143_unstarted'
+  put 'estd4143s/:id/enter_finding(.:format)' => 'estd4143s#do_enter_finding', :as => 'do_estd4143_enter_finding'
+  get 'estd4143s/:id/enter_finding(.:format)' => 'estd4143s#enter_finding', :as => 'estd4143_enter_finding'
   put 'estd4143s/:id/second_read(.:format)' => 'estd4143s#do_second_read', :as => 'do_estd4143_second_read'
   get 'estd4143s/:id/second_read(.:format)' => 'estd4143s#second_read', :as => 'estd4143_second_read'
+  put 'estd4143s/:id/return_to_primary(.:format)' => 'estd4143s#do_return_to_primary', :as => 'do_estd4143_return_to_primary'
+  get 'estd4143s/:id/return_to_primary(.:format)' => 'estd4143s#return_to_primary', :as => 'estd4143_return_to_primary'
   put 'estd4143s/:id/completion(.:format)' => 'estd4143s#do_completion', :as => 'do_estd4143_completion'
   get 'estd4143s/:id/completion(.:format)' => 'estd4143s#completion', :as => 'estd4143_completion'
 
@@ -3098,10 +3794,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med62s"
-  post 'med62s/primary_read(.:format)' => 'med62s#do_primary_read', :as => 'do_med62_primary_read'
-  get 'med62s/primary_read(.:format)' => 'med62s#primary_read', :as => 'med62_primary_read'
+  post 'med62s/unstarted(.:format)' => 'med62s#do_unstarted', :as => 'do_med62_unstarted'
+  get 'med62s/unstarted(.:format)' => 'med62s#unstarted', :as => 'med62_unstarted'
+  put 'med62s/:id/enter_finding(.:format)' => 'med62s#do_enter_finding', :as => 'do_med62_enter_finding'
+  get 'med62s/:id/enter_finding(.:format)' => 'med62s#enter_finding', :as => 'med62_enter_finding'
   put 'med62s/:id/second_read(.:format)' => 'med62s#do_second_read', :as => 'do_med62_second_read'
   get 'med62s/:id/second_read(.:format)' => 'med62s#second_read', :as => 'med62_second_read'
+  put 'med62s/:id/return_to_primary(.:format)' => 'med62s#do_return_to_primary', :as => 'do_med62_return_to_primary'
+  get 'med62s/:id/return_to_primary(.:format)' => 'med62s#return_to_primary', :as => 'med62_return_to_primary'
   put 'med62s/:id/completion(.:format)' => 'med62s#do_completion', :as => 'do_med62_completion'
   get 'med62s/:id/completion(.:format)' => 'med62s#completion', :as => 'med62_completion'
 
@@ -3115,10 +3815,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4103s"
-  post 'estd4103s/primary_read(.:format)' => 'estd4103s#do_primary_read', :as => 'do_estd4103_primary_read'
-  get 'estd4103s/primary_read(.:format)' => 'estd4103s#primary_read', :as => 'estd4103_primary_read'
+  post 'estd4103s/unstarted(.:format)' => 'estd4103s#do_unstarted', :as => 'do_estd4103_unstarted'
+  get 'estd4103s/unstarted(.:format)' => 'estd4103s#unstarted', :as => 'estd4103_unstarted'
+  put 'estd4103s/:id/enter_finding(.:format)' => 'estd4103s#do_enter_finding', :as => 'do_estd4103_enter_finding'
+  get 'estd4103s/:id/enter_finding(.:format)' => 'estd4103s#enter_finding', :as => 'estd4103_enter_finding'
   put 'estd4103s/:id/second_read(.:format)' => 'estd4103s#do_second_read', :as => 'do_estd4103_second_read'
   get 'estd4103s/:id/second_read(.:format)' => 'estd4103s#second_read', :as => 'estd4103_second_read'
+  put 'estd4103s/:id/return_to_primary(.:format)' => 'estd4103s#do_return_to_primary', :as => 'do_estd4103_return_to_primary'
+  get 'estd4103s/:id/return_to_primary(.:format)' => 'estd4103s#return_to_primary', :as => 'estd4103_return_to_primary'
   put 'estd4103s/:id/completion(.:format)' => 'estd4103s#do_completion', :as => 'do_estd4103_completion'
   get 'estd4103s/:id/completion(.:format)' => 'estd4103s#completion', :as => 'estd4103_completion'
 
@@ -3132,10 +3836,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil723s"
-  post 'mil723s/primary_read(.:format)' => 'mil723s#do_primary_read', :as => 'do_mil723_primary_read'
-  get 'mil723s/primary_read(.:format)' => 'mil723s#primary_read', :as => 'mil723_primary_read'
+  post 'mil723s/unstarted(.:format)' => 'mil723s#do_unstarted', :as => 'do_mil723_unstarted'
+  get 'mil723s/unstarted(.:format)' => 'mil723s#unstarted', :as => 'mil723_unstarted'
+  put 'mil723s/:id/enter_finding(.:format)' => 'mil723s#do_enter_finding', :as => 'do_mil723_enter_finding'
+  get 'mil723s/:id/enter_finding(.:format)' => 'mil723s#enter_finding', :as => 'mil723_enter_finding'
   put 'mil723s/:id/second_read(.:format)' => 'mil723s#do_second_read', :as => 'do_mil723_second_read'
   get 'mil723s/:id/second_read(.:format)' => 'mil723s#second_read', :as => 'mil723_second_read'
+  put 'mil723s/:id/return_to_primary(.:format)' => 'mil723s#do_return_to_primary', :as => 'do_mil723_return_to_primary'
+  get 'mil723s/:id/return_to_primary(.:format)' => 'mil723s#return_to_primary', :as => 'mil723_return_to_primary'
   put 'mil723s/:id/completion(.:format)' => 'mil723s#do_completion', :as => 'do_mil723_completion'
   get 'mil723s/:id/completion(.:format)' => 'mil723s#completion', :as => 'mil723_completion'
 
@@ -3149,10 +3857,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med33s"
-  post 'med33s/primary_read(.:format)' => 'med33s#do_primary_read', :as => 'do_med33_primary_read'
-  get 'med33s/primary_read(.:format)' => 'med33s#primary_read', :as => 'med33_primary_read'
+  post 'med33s/unstarted(.:format)' => 'med33s#do_unstarted', :as => 'do_med33_unstarted'
+  get 'med33s/unstarted(.:format)' => 'med33s#unstarted', :as => 'med33_unstarted'
+  put 'med33s/:id/enter_finding(.:format)' => 'med33s#do_enter_finding', :as => 'do_med33_enter_finding'
+  get 'med33s/:id/enter_finding(.:format)' => 'med33s#enter_finding', :as => 'med33_enter_finding'
   put 'med33s/:id/second_read(.:format)' => 'med33s#do_second_read', :as => 'do_med33_second_read'
   get 'med33s/:id/second_read(.:format)' => 'med33s#second_read', :as => 'med33_second_read'
+  put 'med33s/:id/return_to_primary(.:format)' => 'med33s#do_return_to_primary', :as => 'do_med33_return_to_primary'
+  get 'med33s/:id/return_to_primary(.:format)' => 'med33s#return_to_primary', :as => 'med33_return_to_primary'
   put 'med33s/:id/completion(.:format)' => 'med33s#do_completion', :as => 'do_med33_completion'
   get 'med33s/:id/completion(.:format)' => 'med33s#completion', :as => 'med33_completion'
 
@@ -3166,10 +3878,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4625s"
-  post 'estd4625s/primary_read(.:format)' => 'estd4625s#do_primary_read', :as => 'do_estd4625_primary_read'
-  get 'estd4625s/primary_read(.:format)' => 'estd4625s#primary_read', :as => 'estd4625_primary_read'
+  post 'estd4625s/unstarted(.:format)' => 'estd4625s#do_unstarted', :as => 'do_estd4625_unstarted'
+  get 'estd4625s/unstarted(.:format)' => 'estd4625s#unstarted', :as => 'estd4625_unstarted'
+  put 'estd4625s/:id/enter_finding(.:format)' => 'estd4625s#do_enter_finding', :as => 'do_estd4625_enter_finding'
+  get 'estd4625s/:id/enter_finding(.:format)' => 'estd4625s#enter_finding', :as => 'estd4625_enter_finding'
   put 'estd4625s/:id/second_read(.:format)' => 'estd4625s#do_second_read', :as => 'do_estd4625_second_read'
   get 'estd4625s/:id/second_read(.:format)' => 'estd4625s#second_read', :as => 'estd4625_second_read'
+  put 'estd4625s/:id/return_to_primary(.:format)' => 'estd4625s#do_return_to_primary', :as => 'do_estd4625_return_to_primary'
+  get 'estd4625s/:id/return_to_primary(.:format)' => 'estd4625s#return_to_primary', :as => 'estd4625_return_to_primary'
   put 'estd4625s/:id/completion(.:format)' => 'estd4625s#do_completion', :as => 'do_estd4625_completion'
   get 'estd4625s/:id/completion(.:format)' => 'estd4625s#completion', :as => 'estd4625_completion'
 
@@ -3183,10 +3899,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd465s"
-  post 'estd465s/primary_read(.:format)' => 'estd465s#do_primary_read', :as => 'do_estd465_primary_read'
-  get 'estd465s/primary_read(.:format)' => 'estd465s#primary_read', :as => 'estd465_primary_read'
+  post 'estd465s/unstarted(.:format)' => 'estd465s#do_unstarted', :as => 'do_estd465_unstarted'
+  get 'estd465s/unstarted(.:format)' => 'estd465s#unstarted', :as => 'estd465_unstarted'
+  put 'estd465s/:id/enter_finding(.:format)' => 'estd465s#do_enter_finding', :as => 'do_estd465_enter_finding'
+  get 'estd465s/:id/enter_finding(.:format)' => 'estd465s#enter_finding', :as => 'estd465_enter_finding'
   put 'estd465s/:id/second_read(.:format)' => 'estd465s#do_second_read', :as => 'do_estd465_second_read'
   get 'estd465s/:id/second_read(.:format)' => 'estd465s#second_read', :as => 'estd465_second_read'
+  put 'estd465s/:id/return_to_primary(.:format)' => 'estd465s#do_return_to_primary', :as => 'do_estd465_return_to_primary'
+  get 'estd465s/:id/return_to_primary(.:format)' => 'estd465s#return_to_primary', :as => 'estd465_return_to_primary'
   put 'estd465s/:id/completion(.:format)' => 'estd465s#do_completion', :as => 'do_estd465_completion'
   get 'estd465s/:id/completion(.:format)' => 'estd465s#completion', :as => 'estd465_completion'
 
@@ -3200,10 +3920,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil751s"
-  post 'mil751s/primary_read(.:format)' => 'mil751s#do_primary_read', :as => 'do_mil751_primary_read'
-  get 'mil751s/primary_read(.:format)' => 'mil751s#primary_read', :as => 'mil751_primary_read'
+  post 'mil751s/unstarted(.:format)' => 'mil751s#do_unstarted', :as => 'do_mil751_unstarted'
+  get 'mil751s/unstarted(.:format)' => 'mil751s#unstarted', :as => 'mil751_unstarted'
+  put 'mil751s/:id/enter_finding(.:format)' => 'mil751s#do_enter_finding', :as => 'do_mil751_enter_finding'
+  get 'mil751s/:id/enter_finding(.:format)' => 'mil751s#enter_finding', :as => 'mil751_enter_finding'
   put 'mil751s/:id/second_read(.:format)' => 'mil751s#do_second_read', :as => 'do_mil751_second_read'
   get 'mil751s/:id/second_read(.:format)' => 'mil751s#second_read', :as => 'mil751_second_read'
+  put 'mil751s/:id/return_to_primary(.:format)' => 'mil751s#do_return_to_primary', :as => 'do_mil751_return_to_primary'
+  get 'mil751s/:id/return_to_primary(.:format)' => 'mil751s#return_to_primary', :as => 'mil751_return_to_primary'
   put 'mil751s/:id/completion(.:format)' => 'mil751s#do_completion', :as => 'do_mil751_completion'
   get 'mil751s/:id/completion(.:format)' => 'mil751s#completion', :as => 'mil751_completion'
 
@@ -3217,10 +3941,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil441s"
-  post 'mil441s/primary_read(.:format)' => 'mil441s#do_primary_read', :as => 'do_mil441_primary_read'
-  get 'mil441s/primary_read(.:format)' => 'mil441s#primary_read', :as => 'mil441_primary_read'
+  post 'mil441s/unstarted(.:format)' => 'mil441s#do_unstarted', :as => 'do_mil441_unstarted'
+  get 'mil441s/unstarted(.:format)' => 'mil441s#unstarted', :as => 'mil441_unstarted'
+  put 'mil441s/:id/enter_finding(.:format)' => 'mil441s#do_enter_finding', :as => 'do_mil441_enter_finding'
+  get 'mil441s/:id/enter_finding(.:format)' => 'mil441s#enter_finding', :as => 'mil441_enter_finding'
   put 'mil441s/:id/second_read(.:format)' => 'mil441s#do_second_read', :as => 'do_mil441_second_read'
   get 'mil441s/:id/second_read(.:format)' => 'mil441s#second_read', :as => 'mil441_second_read'
+  put 'mil441s/:id/return_to_primary(.:format)' => 'mil441s#do_return_to_primary', :as => 'do_mil441_return_to_primary'
+  get 'mil441s/:id/return_to_primary(.:format)' => 'mil441s#return_to_primary', :as => 'mil441_return_to_primary'
   put 'mil441s/:id/completion(.:format)' => 'mil441s#do_completion', :as => 'do_mil441_completion'
   get 'mil441s/:id/completion(.:format)' => 'mil441s#completion', :as => 'mil441_completion'
 
@@ -3234,10 +3962,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4102s"
-  post 'estd4102s/primary_read(.:format)' => 'estd4102s#do_primary_read', :as => 'do_estd4102_primary_read'
-  get 'estd4102s/primary_read(.:format)' => 'estd4102s#primary_read', :as => 'estd4102_primary_read'
+  post 'estd4102s/unstarted(.:format)' => 'estd4102s#do_unstarted', :as => 'do_estd4102_unstarted'
+  get 'estd4102s/unstarted(.:format)' => 'estd4102s#unstarted', :as => 'estd4102_unstarted'
+  put 'estd4102s/:id/enter_finding(.:format)' => 'estd4102s#do_enter_finding', :as => 'do_estd4102_enter_finding'
+  get 'estd4102s/:id/enter_finding(.:format)' => 'estd4102s#enter_finding', :as => 'estd4102_enter_finding'
   put 'estd4102s/:id/second_read(.:format)' => 'estd4102s#do_second_read', :as => 'do_estd4102_second_read'
   get 'estd4102s/:id/second_read(.:format)' => 'estd4102s#second_read', :as => 'estd4102_second_read'
+  put 'estd4102s/:id/return_to_primary(.:format)' => 'estd4102s#do_return_to_primary', :as => 'do_estd4102_return_to_primary'
+  get 'estd4102s/:id/return_to_primary(.:format)' => 'estd4102s#return_to_primary', :as => 'estd4102_return_to_primary'
   put 'estd4102s/:id/completion(.:format)' => 'estd4102s#do_completion', :as => 'do_estd4102_completion'
   get 'estd4102s/:id/completion(.:format)' => 'estd4102s#completion', :as => 'estd4102_completion'
 
@@ -3251,10 +3983,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd444s"
-  post 'estd444s/primary_read(.:format)' => 'estd444s#do_primary_read', :as => 'do_estd444_primary_read'
-  get 'estd444s/primary_read(.:format)' => 'estd444s#primary_read', :as => 'estd444_primary_read'
+  post 'estd444s/unstarted(.:format)' => 'estd444s#do_unstarted', :as => 'do_estd444_unstarted'
+  get 'estd444s/unstarted(.:format)' => 'estd444s#unstarted', :as => 'estd444_unstarted'
+  put 'estd444s/:id/enter_finding(.:format)' => 'estd444s#do_enter_finding', :as => 'do_estd444_enter_finding'
+  get 'estd444s/:id/enter_finding(.:format)' => 'estd444s#enter_finding', :as => 'estd444_enter_finding'
   put 'estd444s/:id/second_read(.:format)' => 'estd444s#do_second_read', :as => 'do_estd444_second_read'
   get 'estd444s/:id/second_read(.:format)' => 'estd444s#second_read', :as => 'estd444_second_read'
+  put 'estd444s/:id/return_to_primary(.:format)' => 'estd444s#do_return_to_primary', :as => 'do_estd444_return_to_primary'
+  get 'estd444s/:id/return_to_primary(.:format)' => 'estd444s#return_to_primary', :as => 'estd444_return_to_primary'
   put 'estd444s/:id/completion(.:format)' => 'estd444s#do_completion', :as => 'do_estd444_completion'
   get 'estd444s/:id/completion(.:format)' => 'estd444s#completion', :as => 'estd444_completion'
 
@@ -3268,10 +4004,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd422s"
-  post 'estd422s/primary_read(.:format)' => 'estd422s#do_primary_read', :as => 'do_estd422_primary_read'
-  get 'estd422s/primary_read(.:format)' => 'estd422s#primary_read', :as => 'estd422_primary_read'
+  post 'estd422s/unstarted(.:format)' => 'estd422s#do_unstarted', :as => 'do_estd422_unstarted'
+  get 'estd422s/unstarted(.:format)' => 'estd422s#unstarted', :as => 'estd422_unstarted'
+  put 'estd422s/:id/enter_finding(.:format)' => 'estd422s#do_enter_finding', :as => 'do_estd422_enter_finding'
+  get 'estd422s/:id/enter_finding(.:format)' => 'estd422s#enter_finding', :as => 'estd422_enter_finding'
   put 'estd422s/:id/second_read(.:format)' => 'estd422s#do_second_read', :as => 'do_estd422_second_read'
   get 'estd422s/:id/second_read(.:format)' => 'estd422s#second_read', :as => 'estd422_second_read'
+  put 'estd422s/:id/return_to_primary(.:format)' => 'estd422s#do_return_to_primary', :as => 'do_estd422_return_to_primary'
+  get 'estd422s/:id/return_to_primary(.:format)' => 'estd422s#return_to_primary', :as => 'estd422_return_to_primary'
   put 'estd422s/:id/completion(.:format)' => 'estd422s#do_completion', :as => 'do_estd422_completion'
   get 'estd422s/:id/completion(.:format)' => 'estd422s#completion', :as => 'estd422_completion'
 
@@ -3285,10 +4025,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4638s"
-  post 'estd4638s/primary_read(.:format)' => 'estd4638s#do_primary_read', :as => 'do_estd4638_primary_read'
-  get 'estd4638s/primary_read(.:format)' => 'estd4638s#primary_read', :as => 'estd4638_primary_read'
+  post 'estd4638s/unstarted(.:format)' => 'estd4638s#do_unstarted', :as => 'do_estd4638_unstarted'
+  get 'estd4638s/unstarted(.:format)' => 'estd4638s#unstarted', :as => 'estd4638_unstarted'
+  put 'estd4638s/:id/enter_finding(.:format)' => 'estd4638s#do_enter_finding', :as => 'do_estd4638_enter_finding'
+  get 'estd4638s/:id/enter_finding(.:format)' => 'estd4638s#enter_finding', :as => 'estd4638_enter_finding'
   put 'estd4638s/:id/second_read(.:format)' => 'estd4638s#do_second_read', :as => 'do_estd4638_second_read'
   get 'estd4638s/:id/second_read(.:format)' => 'estd4638s#second_read', :as => 'estd4638_second_read'
+  put 'estd4638s/:id/return_to_primary(.:format)' => 'estd4638s#do_return_to_primary', :as => 'do_estd4638_return_to_primary'
+  get 'estd4638s/:id/return_to_primary(.:format)' => 'estd4638s#return_to_primary', :as => 'estd4638_return_to_primary'
   put 'estd4638s/:id/completion(.:format)' => 'estd4638s#do_completion', :as => 'do_estd4638_completion'
   get 'estd4638s/:id/completion(.:format)' => 'estd4638s#completion', :as => 'estd4638_completion'
 
@@ -3302,10 +4046,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil712s"
-  post 'mil712s/primary_read(.:format)' => 'mil712s#do_primary_read', :as => 'do_mil712_primary_read'
-  get 'mil712s/primary_read(.:format)' => 'mil712s#primary_read', :as => 'mil712_primary_read'
+  post 'mil712s/unstarted(.:format)' => 'mil712s#do_unstarted', :as => 'do_mil712_unstarted'
+  get 'mil712s/unstarted(.:format)' => 'mil712s#unstarted', :as => 'mil712_unstarted'
+  put 'mil712s/:id/enter_finding(.:format)' => 'mil712s#do_enter_finding', :as => 'do_mil712_enter_finding'
+  get 'mil712s/:id/enter_finding(.:format)' => 'mil712s#enter_finding', :as => 'mil712_enter_finding'
   put 'mil712s/:id/second_read(.:format)' => 'mil712s#do_second_read', :as => 'do_mil712_second_read'
   get 'mil712s/:id/second_read(.:format)' => 'mil712s#second_read', :as => 'mil712_second_read'
+  put 'mil712s/:id/return_to_primary(.:format)' => 'mil712s#do_return_to_primary', :as => 'do_mil712_return_to_primary'
+  get 'mil712s/:id/return_to_primary(.:format)' => 'mil712s#return_to_primary', :as => 'mil712_return_to_primary'
   put 'mil712s/:id/completion(.:format)' => 'mil712s#do_completion', :as => 'do_mil712_completion'
   get 'mil712s/:id/completion(.:format)' => 'mil712s#completion', :as => 'mil712_completion'
 
@@ -3319,10 +4067,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46326s"
-  post 'estd46326s/primary_read(.:format)' => 'estd46326s#do_primary_read', :as => 'do_estd46326_primary_read'
-  get 'estd46326s/primary_read(.:format)' => 'estd46326s#primary_read', :as => 'estd46326_primary_read'
+  post 'estd46326s/unstarted(.:format)' => 'estd46326s#do_unstarted', :as => 'do_estd46326_unstarted'
+  get 'estd46326s/unstarted(.:format)' => 'estd46326s#unstarted', :as => 'estd46326_unstarted'
+  put 'estd46326s/:id/enter_finding(.:format)' => 'estd46326s#do_enter_finding', :as => 'do_estd46326_enter_finding'
+  get 'estd46326s/:id/enter_finding(.:format)' => 'estd46326s#enter_finding', :as => 'estd46326_enter_finding'
   put 'estd46326s/:id/second_read(.:format)' => 'estd46326s#do_second_read', :as => 'do_estd46326_second_read'
   get 'estd46326s/:id/second_read(.:format)' => 'estd46326s#second_read', :as => 'estd46326_second_read'
+  put 'estd46326s/:id/return_to_primary(.:format)' => 'estd46326s#do_return_to_primary', :as => 'do_estd46326_return_to_primary'
+  get 'estd46326s/:id/return_to_primary(.:format)' => 'estd46326s#return_to_primary', :as => 'estd46326_return_to_primary'
   put 'estd46326s/:id/completion(.:format)' => 'estd46326s#do_completion', :as => 'do_estd46326_completion'
   get 'estd46326s/:id/completion(.:format)' => 'estd46326s#completion', :as => 'estd46326_completion'
 
@@ -3336,10 +4088,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd46324s"
-  post 'estd46324s/primary_read(.:format)' => 'estd46324s#do_primary_read', :as => 'do_estd46324_primary_read'
-  get 'estd46324s/primary_read(.:format)' => 'estd46324s#primary_read', :as => 'estd46324_primary_read'
+  post 'estd46324s/unstarted(.:format)' => 'estd46324s#do_unstarted', :as => 'do_estd46324_unstarted'
+  get 'estd46324s/unstarted(.:format)' => 'estd46324s#unstarted', :as => 'estd46324_unstarted'
+  put 'estd46324s/:id/enter_finding(.:format)' => 'estd46324s#do_enter_finding', :as => 'do_estd46324_enter_finding'
+  get 'estd46324s/:id/enter_finding(.:format)' => 'estd46324s#enter_finding', :as => 'estd46324_enter_finding'
   put 'estd46324s/:id/second_read(.:format)' => 'estd46324s#do_second_read', :as => 'do_estd46324_second_read'
   get 'estd46324s/:id/second_read(.:format)' => 'estd46324s#second_read', :as => 'estd46324_second_read'
+  put 'estd46324s/:id/return_to_primary(.:format)' => 'estd46324s#do_return_to_primary', :as => 'do_estd46324_return_to_primary'
+  get 'estd46324s/:id/return_to_primary(.:format)' => 'estd46324s#return_to_primary', :as => 'estd46324_return_to_primary'
   put 'estd46324s/:id/completion(.:format)' => 'estd46324s#do_completion', :as => 'do_estd46324_completion'
   get 'estd46324s/:id/completion(.:format)' => 'estd46324s#completion', :as => 'estd46324_completion'
 
@@ -3353,10 +4109,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med51s"
-  post 'med51s/primary_read(.:format)' => 'med51s#do_primary_read', :as => 'do_med51_primary_read'
-  get 'med51s/primary_read(.:format)' => 'med51s#primary_read', :as => 'med51_primary_read'
+  post 'med51s/unstarted(.:format)' => 'med51s#do_unstarted', :as => 'do_med51_unstarted'
+  get 'med51s/unstarted(.:format)' => 'med51s#unstarted', :as => 'med51_unstarted'
+  put 'med51s/:id/enter_finding(.:format)' => 'med51s#do_enter_finding', :as => 'do_med51_enter_finding'
+  get 'med51s/:id/enter_finding(.:format)' => 'med51s#enter_finding', :as => 'med51_enter_finding'
   put 'med51s/:id/second_read(.:format)' => 'med51s#do_second_read', :as => 'do_med51_second_read'
   get 'med51s/:id/second_read(.:format)' => 'med51s#second_read', :as => 'med51_second_read'
+  put 'med51s/:id/return_to_primary(.:format)' => 'med51s#do_return_to_primary', :as => 'do_med51_return_to_primary'
+  get 'med51s/:id/return_to_primary(.:format)' => 'med51s#return_to_primary', :as => 'med51_return_to_primary'
   put 'med51s/:id/completion(.:format)' => 'med51s#do_completion', :as => 'do_med51_completion'
   get 'med51s/:id/completion(.:format)' => 'med51s#completion', :as => 'med51_completion'
 
@@ -3370,10 +4130,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med55s"
-  post 'med55s/primary_read(.:format)' => 'med55s#do_primary_read', :as => 'do_med55_primary_read'
-  get 'med55s/primary_read(.:format)' => 'med55s#primary_read', :as => 'med55_primary_read'
+  post 'med55s/unstarted(.:format)' => 'med55s#do_unstarted', :as => 'do_med55_unstarted'
+  get 'med55s/unstarted(.:format)' => 'med55s#unstarted', :as => 'med55_unstarted'
+  put 'med55s/:id/enter_finding(.:format)' => 'med55s#do_enter_finding', :as => 'do_med55_enter_finding'
+  get 'med55s/:id/enter_finding(.:format)' => 'med55s#enter_finding', :as => 'med55_enter_finding'
   put 'med55s/:id/second_read(.:format)' => 'med55s#do_second_read', :as => 'do_med55_second_read'
   get 'med55s/:id/second_read(.:format)' => 'med55s#second_read', :as => 'med55_second_read'
+  put 'med55s/:id/return_to_primary(.:format)' => 'med55s#do_return_to_primary', :as => 'do_med55_return_to_primary'
+  get 'med55s/:id/return_to_primary(.:format)' => 'med55s#return_to_primary', :as => 'med55_return_to_primary'
   put 'med55s/:id/completion(.:format)' => 'med55s#do_completion', :as => 'do_med55_completion'
   get 'med55s/:id/completion(.:format)' => 'med55s#completion', :as => 'med55_completion'
 
@@ -3387,10 +4151,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "mil531s"
-  post 'mil531s/primary_read(.:format)' => 'mil531s#do_primary_read', :as => 'do_mil531_primary_read'
-  get 'mil531s/primary_read(.:format)' => 'mil531s#primary_read', :as => 'mil531_primary_read'
+  post 'mil531s/unstarted(.:format)' => 'mil531s#do_unstarted', :as => 'do_mil531_unstarted'
+  get 'mil531s/unstarted(.:format)' => 'mil531s#unstarted', :as => 'mil531_unstarted'
+  put 'mil531s/:id/enter_finding(.:format)' => 'mil531s#do_enter_finding', :as => 'do_mil531_enter_finding'
+  get 'mil531s/:id/enter_finding(.:format)' => 'mil531s#enter_finding', :as => 'mil531_enter_finding'
   put 'mil531s/:id/second_read(.:format)' => 'mil531s#do_second_read', :as => 'do_mil531_second_read'
   get 'mil531s/:id/second_read(.:format)' => 'mil531s#second_read', :as => 'mil531_second_read'
+  put 'mil531s/:id/return_to_primary(.:format)' => 'mil531s#do_return_to_primary', :as => 'do_mil531_return_to_primary'
+  get 'mil531s/:id/return_to_primary(.:format)' => 'mil531s#return_to_primary', :as => 'mil531_return_to_primary'
   put 'mil531s/:id/completion(.:format)' => 'mil531s#do_completion', :as => 'do_mil531_completion'
   get 'mil531s/:id/completion(.:format)' => 'mil531s#completion', :as => 'mil531_completion'
 
@@ -3404,10 +4172,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4635s"
-  post 'estd4635s/primary_read(.:format)' => 'estd4635s#do_primary_read', :as => 'do_estd4635_primary_read'
-  get 'estd4635s/primary_read(.:format)' => 'estd4635s#primary_read', :as => 'estd4635_primary_read'
+  post 'estd4635s/unstarted(.:format)' => 'estd4635s#do_unstarted', :as => 'do_estd4635_unstarted'
+  get 'estd4635s/unstarted(.:format)' => 'estd4635s#unstarted', :as => 'estd4635_unstarted'
+  put 'estd4635s/:id/enter_finding(.:format)' => 'estd4635s#do_enter_finding', :as => 'do_estd4635_enter_finding'
+  get 'estd4635s/:id/enter_finding(.:format)' => 'estd4635s#enter_finding', :as => 'estd4635_enter_finding'
   put 'estd4635s/:id/second_read(.:format)' => 'estd4635s#do_second_read', :as => 'do_estd4635_second_read'
   get 'estd4635s/:id/second_read(.:format)' => 'estd4635s#second_read', :as => 'estd4635_second_read'
+  put 'estd4635s/:id/return_to_primary(.:format)' => 'estd4635s#do_return_to_primary', :as => 'do_estd4635_return_to_primary'
+  get 'estd4635s/:id/return_to_primary(.:format)' => 'estd4635s#return_to_primary', :as => 'estd4635_return_to_primary'
   put 'estd4635s/:id/completion(.:format)' => 'estd4635s#do_completion', :as => 'do_estd4635_completion'
   get 'estd4635s/:id/completion(.:format)' => 'estd4635s#completion', :as => 'estd4635_completion'
 
@@ -3421,10 +4193,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "med25s"
-  post 'med25s/primary_read(.:format)' => 'med25s#do_primary_read', :as => 'do_med25_primary_read'
-  get 'med25s/primary_read(.:format)' => 'med25s#primary_read', :as => 'med25_primary_read'
+  post 'med25s/unstarted(.:format)' => 'med25s#do_unstarted', :as => 'do_med25_unstarted'
+  get 'med25s/unstarted(.:format)' => 'med25s#unstarted', :as => 'med25_unstarted'
+  put 'med25s/:id/enter_finding(.:format)' => 'med25s#do_enter_finding', :as => 'do_med25_enter_finding'
+  get 'med25s/:id/enter_finding(.:format)' => 'med25s#enter_finding', :as => 'med25_enter_finding'
   put 'med25s/:id/second_read(.:format)' => 'med25s#do_second_read', :as => 'do_med25_second_read'
   get 'med25s/:id/second_read(.:format)' => 'med25s#second_read', :as => 'med25_second_read'
+  put 'med25s/:id/return_to_primary(.:format)' => 'med25s#do_return_to_primary', :as => 'do_med25_return_to_primary'
+  get 'med25s/:id/return_to_primary(.:format)' => 'med25s#return_to_primary', :as => 'med25_return_to_primary'
   put 'med25s/:id/completion(.:format)' => 'med25s#do_completion', :as => 'do_med25_completion'
   get 'med25s/:id/completion(.:format)' => 'med25s#completion', :as => 'med25_completion'
 
@@ -3438,10 +4214,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4634s"
-  post 'estd4634s/primary_read(.:format)' => 'estd4634s#do_primary_read', :as => 'do_estd4634_primary_read'
-  get 'estd4634s/primary_read(.:format)' => 'estd4634s#primary_read', :as => 'estd4634_primary_read'
+  post 'estd4634s/unstarted(.:format)' => 'estd4634s#do_unstarted', :as => 'do_estd4634_unstarted'
+  get 'estd4634s/unstarted(.:format)' => 'estd4634s#unstarted', :as => 'estd4634_unstarted'
+  put 'estd4634s/:id/enter_finding(.:format)' => 'estd4634s#do_enter_finding', :as => 'do_estd4634_enter_finding'
+  get 'estd4634s/:id/enter_finding(.:format)' => 'estd4634s#enter_finding', :as => 'estd4634_enter_finding'
   put 'estd4634s/:id/second_read(.:format)' => 'estd4634s#do_second_read', :as => 'do_estd4634_second_read'
   get 'estd4634s/:id/second_read(.:format)' => 'estd4634s#second_read', :as => 'estd4634_second_read'
+  put 'estd4634s/:id/return_to_primary(.:format)' => 'estd4634s#do_return_to_primary', :as => 'do_estd4634_return_to_primary'
+  get 'estd4634s/:id/return_to_primary(.:format)' => 'estd4634s#return_to_primary', :as => 'estd4634_return_to_primary'
   put 'estd4634s/:id/completion(.:format)' => 'estd4634s#do_completion', :as => 'do_estd4634_completion'
   get 'estd4634s/:id/completion(.:format)' => 'estd4634s#completion', :as => 'estd4634_completion'
 
@@ -3455,10 +4235,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd431s"
-  post 'estd431s/primary_read(.:format)' => 'estd431s#do_primary_read', :as => 'do_estd431_primary_read'
-  get 'estd431s/primary_read(.:format)' => 'estd431s#primary_read', :as => 'estd431_primary_read'
+  post 'estd431s/unstarted(.:format)' => 'estd431s#do_unstarted', :as => 'do_estd431_unstarted'
+  get 'estd431s/unstarted(.:format)' => 'estd431s#unstarted', :as => 'estd431_unstarted'
+  put 'estd431s/:id/enter_finding(.:format)' => 'estd431s#do_enter_finding', :as => 'do_estd431_enter_finding'
+  get 'estd431s/:id/enter_finding(.:format)' => 'estd431s#enter_finding', :as => 'estd431_enter_finding'
   put 'estd431s/:id/second_read(.:format)' => 'estd431s#do_second_read', :as => 'do_estd431_second_read'
   get 'estd431s/:id/second_read(.:format)' => 'estd431s#second_read', :as => 'estd431_second_read'
+  put 'estd431s/:id/return_to_primary(.:format)' => 'estd431s#do_return_to_primary', :as => 'do_estd431_return_to_primary'
+  get 'estd431s/:id/return_to_primary(.:format)' => 'estd431s#return_to_primary', :as => 'estd431_return_to_primary'
   put 'estd431s/:id/completion(.:format)' => 'estd431s#do_completion', :as => 'do_estd431_completion'
   get 'estd431s/:id/completion(.:format)' => 'estd431s#completion', :as => 'estd431_completion'
 
@@ -3472,10 +4256,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4107s"
-  post 'estd4107s/primary_read(.:format)' => 'estd4107s#do_primary_read', :as => 'do_estd4107_primary_read'
-  get 'estd4107s/primary_read(.:format)' => 'estd4107s#primary_read', :as => 'estd4107_primary_read'
+  post 'estd4107s/unstarted(.:format)' => 'estd4107s#do_unstarted', :as => 'do_estd4107_unstarted'
+  get 'estd4107s/unstarted(.:format)' => 'estd4107s#unstarted', :as => 'estd4107_unstarted'
+  put 'estd4107s/:id/enter_finding(.:format)' => 'estd4107s#do_enter_finding', :as => 'do_estd4107_enter_finding'
+  get 'estd4107s/:id/enter_finding(.:format)' => 'estd4107s#enter_finding', :as => 'estd4107_enter_finding'
   put 'estd4107s/:id/second_read(.:format)' => 'estd4107s#do_second_read', :as => 'do_estd4107_second_read'
   get 'estd4107s/:id/second_read(.:format)' => 'estd4107s#second_read', :as => 'estd4107_second_read'
+  put 'estd4107s/:id/return_to_primary(.:format)' => 'estd4107s#do_return_to_primary', :as => 'do_estd4107_return_to_primary'
+  get 'estd4107s/:id/return_to_primary(.:format)' => 'estd4107s#return_to_primary', :as => 'estd4107_return_to_primary'
   put 'estd4107s/:id/completion(.:format)' => 'estd4107s#do_completion', :as => 'do_estd4107_completion'
   get 'estd4107s/:id/completion(.:format)' => 'estd4107s#completion', :as => 'estd4107_completion'
 
@@ -3489,10 +4277,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4131s"
-  post 'estd4131s/primary_read(.:format)' => 'estd4131s#do_primary_read', :as => 'do_estd4131_primary_read'
-  get 'estd4131s/primary_read(.:format)' => 'estd4131s#primary_read', :as => 'estd4131_primary_read'
+  post 'estd4131s/unstarted(.:format)' => 'estd4131s#do_unstarted', :as => 'do_estd4131_unstarted'
+  get 'estd4131s/unstarted(.:format)' => 'estd4131s#unstarted', :as => 'estd4131_unstarted'
+  put 'estd4131s/:id/enter_finding(.:format)' => 'estd4131s#do_enter_finding', :as => 'do_estd4131_enter_finding'
+  get 'estd4131s/:id/enter_finding(.:format)' => 'estd4131s#enter_finding', :as => 'estd4131_enter_finding'
   put 'estd4131s/:id/second_read(.:format)' => 'estd4131s#do_second_read', :as => 'do_estd4131_second_read'
   get 'estd4131s/:id/second_read(.:format)' => 'estd4131s#second_read', :as => 'estd4131_second_read'
+  put 'estd4131s/:id/return_to_primary(.:format)' => 'estd4131s#do_return_to_primary', :as => 'do_estd4131_return_to_primary'
+  get 'estd4131s/:id/return_to_primary(.:format)' => 'estd4131s#return_to_primary', :as => 'estd4131_return_to_primary'
   put 'estd4131s/:id/completion(.:format)' => 'estd4131s#do_completion', :as => 'do_estd4131_completion'
   get 'estd4131s/:id/completion(.:format)' => 'estd4131s#completion', :as => 'estd4131_completion'
 
@@ -3506,10 +4298,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4122s"
-  post 'estd4122s/primary_read(.:format)' => 'estd4122s#do_primary_read', :as => 'do_estd4122_primary_read'
-  get 'estd4122s/primary_read(.:format)' => 'estd4122s#primary_read', :as => 'estd4122_primary_read'
+  post 'estd4122s/unstarted(.:format)' => 'estd4122s#do_unstarted', :as => 'do_estd4122_unstarted'
+  get 'estd4122s/unstarted(.:format)' => 'estd4122s#unstarted', :as => 'estd4122_unstarted'
+  put 'estd4122s/:id/enter_finding(.:format)' => 'estd4122s#do_enter_finding', :as => 'do_estd4122_enter_finding'
+  get 'estd4122s/:id/enter_finding(.:format)' => 'estd4122s#enter_finding', :as => 'estd4122_enter_finding'
   put 'estd4122s/:id/second_read(.:format)' => 'estd4122s#do_second_read', :as => 'do_estd4122_second_read'
   get 'estd4122s/:id/second_read(.:format)' => 'estd4122s#second_read', :as => 'estd4122_second_read'
+  put 'estd4122s/:id/return_to_primary(.:format)' => 'estd4122s#do_return_to_primary', :as => 'do_estd4122_return_to_primary'
+  get 'estd4122s/:id/return_to_primary(.:format)' => 'estd4122s#return_to_primary', :as => 'estd4122_return_to_primary'
   put 'estd4122s/:id/completion(.:format)' => 'estd4122s#do_completion', :as => 'do_estd4122_completion'
   get 'estd4122s/:id/completion(.:format)' => 'estd4122s#completion', :as => 'estd4122_completion'
 
@@ -3523,10 +4319,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd471s"
-  post 'estd471s/primary_read(.:format)' => 'estd471s#do_primary_read', :as => 'do_estd471_primary_read'
-  get 'estd471s/primary_read(.:format)' => 'estd471s#primary_read', :as => 'estd471_primary_read'
+  post 'estd471s/unstarted(.:format)' => 'estd471s#do_unstarted', :as => 'do_estd471_unstarted'
+  get 'estd471s/unstarted(.:format)' => 'estd471s#unstarted', :as => 'estd471_unstarted'
+  put 'estd471s/:id/enter_finding(.:format)' => 'estd471s#do_enter_finding', :as => 'do_estd471_enter_finding'
+  get 'estd471s/:id/enter_finding(.:format)' => 'estd471s#enter_finding', :as => 'estd471_enter_finding'
   put 'estd471s/:id/second_read(.:format)' => 'estd471s#do_second_read', :as => 'do_estd471_second_read'
   get 'estd471s/:id/second_read(.:format)' => 'estd471s#second_read', :as => 'estd471_second_read'
+  put 'estd471s/:id/return_to_primary(.:format)' => 'estd471s#do_return_to_primary', :as => 'do_estd471_return_to_primary'
+  get 'estd471s/:id/return_to_primary(.:format)' => 'estd471s#return_to_primary', :as => 'estd471_return_to_primary'
   put 'estd471s/:id/completion(.:format)' => 'estd471s#do_completion', :as => 'do_estd471_completion'
   get 'estd471s/:id/completion(.:format)' => 'estd471s#completion', :as => 'estd471_completion'
 
@@ -3540,10 +4340,14 @@ Rara::Application.routes.draw do
 
 
   # Lifecycle routes for controller "estd4142s"
-  post 'estd4142s/primary_read(.:format)' => 'estd4142s#do_primary_read', :as => 'do_estd4142_primary_read'
-  get 'estd4142s/primary_read(.:format)' => 'estd4142s#primary_read', :as => 'estd4142_primary_read'
+  post 'estd4142s/unstarted(.:format)' => 'estd4142s#do_unstarted', :as => 'do_estd4142_unstarted'
+  get 'estd4142s/unstarted(.:format)' => 'estd4142s#unstarted', :as => 'estd4142_unstarted'
+  put 'estd4142s/:id/enter_finding(.:format)' => 'estd4142s#do_enter_finding', :as => 'do_estd4142_enter_finding'
+  get 'estd4142s/:id/enter_finding(.:format)' => 'estd4142s#enter_finding', :as => 'estd4142_enter_finding'
   put 'estd4142s/:id/second_read(.:format)' => 'estd4142s#do_second_read', :as => 'do_estd4142_second_read'
   get 'estd4142s/:id/second_read(.:format)' => 'estd4142s#second_read', :as => 'estd4142_second_read'
+  put 'estd4142s/:id/return_to_primary(.:format)' => 'estd4142s#do_return_to_primary', :as => 'do_estd4142_return_to_primary'
+  get 'estd4142s/:id/return_to_primary(.:format)' => 'estd4142s#return_to_primary', :as => 'estd4142_return_to_primary'
   put 'estd4142s/:id/completion(.:format)' => 'estd4142s#do_completion', :as => 'do_estd4142_completion'
   get 'estd4142s/:id/completion(.:format)' => 'estd4142s#completion', :as => 'estd4142_completion'
 

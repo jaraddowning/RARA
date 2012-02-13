@@ -123,12 +123,12 @@
 
 <!--  Dispay status for each standard area / question  -->
 
-<extend tag="card" for="Estd311">
+<def tag="card" for="Estd311">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -138,19 +138,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd311">
+<def tag="card" for="Estd312">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -160,19 +159,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd312">
+<def tag="card" for="Estd321">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -182,19 +180,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd321">
+<def tag="card" for="Estd322">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -204,19 +201,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd322">
+<def tag="card" for="Estd331">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -226,19 +222,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd331">
+<def tag="card" for="Estd332">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -248,19 +243,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd332">
+<def tag="card" for="Estd411">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -270,19 +264,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd411">
+<def tag="card" for="Estd412">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -292,19 +285,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd412">
+<def tag="card" for="Estd421">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -314,19 +306,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd421">
+<def tag="card" for="Estd422">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -336,19 +327,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd422">
+<def tag="card" for="Estd431">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -358,19 +348,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd431">
+<def tag="card" for="Estd432">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -380,19 +369,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd432">
+<def tag="card" for="Estd441">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -402,19 +390,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd441">
+<def tag="card" for="Estd442">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -424,19 +411,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd442">
+<def tag="card" for="Estd443">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -446,19 +432,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd443">
+<def tag="card" for="Estd444">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -468,19 +453,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd444">
+<def tag="card" for="Estd445">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -490,19 +474,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd445">
+<def tag="card" for="Estd451">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -512,19 +495,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd451">
+<def tag="card" for="Estd452">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -534,19 +516,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd452">
+<def tag="card" for="Estd453">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -556,19 +537,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd453">
+<def tag="card" for="Estd461">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -578,19 +558,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd461">
+<def tag="card" for="Estd464">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -600,19 +579,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd464">
+<def tag="card" for="Estd465">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -622,19 +600,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd465">
+<def tag="card" for="Estd466">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -644,19 +621,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd466">
+<def tag="card" for="Estd471">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -666,19 +642,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd471">
+<def tag="card" for="Estd472">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -688,19 +663,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd472">
+<def tag="card" for="Estd473">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -710,19 +684,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd473">
+<def tag="card" for="Estd474">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -732,19 +705,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd474">
+<def tag="card" for="Estd475">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -754,19 +726,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd475">
+<def tag="card" for="Estd481">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -776,19 +747,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd481">
+<def tag="card" for="Estd482">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -798,19 +768,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd482">
+<def tag="card" for="Estd483">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -820,19 +789,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd483">
+<def tag="card" for="Estd485">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -842,19 +810,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd485">
+<def tag="card" for="Estd486">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -864,19 +831,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd486">
+<def tag="card" for="Estd491">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -886,19 +852,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd491">
+<def tag="card" for="Estd492">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -908,19 +873,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd492">
+<def tag="card" for="Estd4101">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -930,19 +894,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4101">
+<def tag="card" for="Estd4102">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -952,19 +915,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4102">
+<def tag="card" for="Estd4103">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -974,19 +936,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4103">
+<def tag="card" for="Estd4104">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -996,19 +957,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4104">
+<def tag="card" for="Estd4105">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1018,19 +978,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4105">
+<def tag="card" for="Estd4106">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1040,19 +999,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4106">
+<def tag="card" for="Estd4107">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1062,19 +1020,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4107">
+<def tag="card" for="Estd4111">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1084,19 +1041,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4111">
+<def tag="card" for="Estd4112">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1106,19 +1062,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4112">
+<def tag="card" for="Estd4113">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1128,19 +1083,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4113">
+<def tag="card" for="Estd4114">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1150,19 +1104,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4114">
+<def tag="card" for="Estd4121">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1172,19 +1125,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4121">
+<def tag="card" for="Estd4122">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1194,19 +1146,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4122">
+<def tag="card" for="Estd4131">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1216,19 +1167,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4131">
+<def tag="card" for="Estd4132">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1238,19 +1188,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4132">
+<def tag="card" for="Estd4133">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1260,19 +1209,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4133">
+<def tag="card" for="Estd4134">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1282,19 +1230,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4134">
+<def tag="card" for="Estd4141">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1304,19 +1251,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4141">
+<def tag="card" for="Estd4142">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1326,19 +1272,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4142">
+<def tag="card" for="Estd4143">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1348,19 +1293,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4143">
+<def tag="card" for="Estd4151">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1370,19 +1314,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4151">
+<def tag="card" for="Estd4153">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1392,19 +1335,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4153">
+<def tag="card" for="Estd4154">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1414,19 +1356,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4154">
+<def tag="card" for="Estd4155">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1436,19 +1377,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4155">
+<def tag="card" for="Estd4621">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1458,19 +1398,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4621">
+<def tag="card" for="Estd4622">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1480,19 +1419,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4622">
+<def tag="card" for="Estd4623">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1502,19 +1440,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4623">
+<def tag="card" for="Estd4624">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1524,19 +1461,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4624">
+<def tag="card" for="Estd4625">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1546,19 +1482,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4625">
+<def tag="card" for="Estd4627">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1568,19 +1503,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4627">
+<def tag="card" for="Estd4631">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1590,19 +1524,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4631">
+<def tag="card" for="Estd4632">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1612,19 +1545,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4632">
+<def tag="card" for="Estd4633">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1634,19 +1566,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4633">
+<def tag="card" for="Estd4634">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1656,19 +1587,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4634">
+<def tag="card" for="Estd4635">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1678,19 +1608,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4635">
+<def tag="card" for="Estd4636">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1700,19 +1629,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4636">
+<def tag="card" for="Estd4637">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1722,19 +1650,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4637">
+<def tag="card" for="Estd4638">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1744,19 +1671,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4638">
+<def tag="card" for="Estd4639">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1766,19 +1692,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4639">
+<def tag="card" for="Estd4841">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1788,19 +1713,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4841">
+<def tag="card" for="Estd4842">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1810,19 +1734,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4842">
+<def tag="card" for="Estd4843">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1832,19 +1755,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd4843">
+<def tag="card" for="Estd41521">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1854,19 +1776,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd41521">
+<def tag="card" for="Estd41522">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1876,19 +1797,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd41522">
+<def tag="card" for="Estd41523">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1898,19 +1818,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd41523">
+<def tag="card" for="Estd41524">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1920,19 +1839,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd41524">
+<def tag="card" for="Estd41525">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1942,19 +1860,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd41525">
+<def tag="card" for="Estd46310">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1964,19 +1881,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46310">
+<def tag="card" for="Estd46311">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -1986,19 +1902,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46311">
+<def tag="card" for="Estd46312">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2008,19 +1923,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46312">
+<def tag="card" for="Estd46313">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2030,19 +1944,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46313">
+<def tag="card" for="Estd46314">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2052,19 +1965,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46314">
+<def tag="card" for="Estd46315">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2074,19 +1986,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46315">
+<def tag="card" for="Estd46316">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2096,19 +2007,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46316">
+<def tag="card" for="Estd46317">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2118,19 +2028,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46317">
+<def tag="card" for="Estd46318">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2140,19 +2049,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46318">
+<def tag="card" for="Estd46319">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2162,19 +2070,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46319">
+<def tag="card" for="Estd46320">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2184,19 +2091,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46320">
+<def tag="card" for="Estd46321">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2206,19 +2112,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46321">
+<def tag="card" for="Estd46322">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2228,19 +2133,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46322">
+<def tag="card" for="Estd46323">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2250,19 +2154,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46323">
+<def tag="card" for="Estd46324">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2272,19 +2175,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46324">
+<def tag="card" for="Estd46325">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2294,19 +2196,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46325">
+<def tag="card" for="Estd46326">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2316,19 +2217,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46326">
+<def tag="card" for="Estd46327">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2338,19 +2238,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46327">
+<def tag="card" for="Estd46328">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2360,19 +2259,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Estd46328">
+<def tag="card" for="Estd46329">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2382,43 +2280,20 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
-
-<extend tag="card" for="Estd46329">
-  <card>
-    <heading:>
-      <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
-      <div class="decision">
-        Finding:<view:decision />
-      </div>
-      <div class="secondread">
-        Second Read:<view:concur />
-      </div>
-      <div class="complete">
-        Completed:<view:mark_complete />
-      </div>
-    </body:>
-    <append-body:>
-      <transition-buttons />
-    </append-body:>
-  </card>
-</extend>
+</def>
 
 
 <!-- Military Review BS -->
-<extend tag="card" for="Mil111">
+<def tag="card" for="Mil111">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2428,19 +2303,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil112">
+<def tag="card" for="Mil112">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2450,19 +2324,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil121">
+<def tag="card" for="Mil121">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2472,19 +2345,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil131">
+<def tag="card" for="Mil131">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2494,19 +2366,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil141">
+<def tag="card" for="Mil141">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2516,19 +2387,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil211">
+<def tag="card" for="Mil211">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2538,19 +2408,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil212">
+<def tag="card" for="Mil212">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2560,19 +2429,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil221">
+<def tag="card" for="Mil221">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2582,19 +2450,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil231">
+<def tag="card" for="Mil231">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2604,19 +2471,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil311">
+<def tag="card" for="Mil311">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2626,19 +2492,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil321">
+<def tag="card" for="Mil321">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2648,19 +2513,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil331">
+<def tag="card" for="Mil331">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2670,19 +2534,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil341">
+<def tag="card" for="Mil341">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2692,19 +2555,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil351">
+<def tag="card" for="Mil351">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2714,19 +2576,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil361">
+<def tag="card" for="Mil361">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2736,19 +2597,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil371">
+<def tag="card" for="Mil371">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2758,19 +2618,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil381">
+<def tag="card" for="Mil381">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2780,19 +2639,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil391">
+<def tag="card" for="Mil391">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2802,19 +2660,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil411">
+<def tag="card" for="Mil411">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2824,19 +2681,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil412">
+<def tag="card" for="Mil412">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2846,19 +2702,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil413">
+<def tag="card" for="Mil413">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2868,19 +2723,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil421">
+<def tag="card" for="Mil421">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2890,19 +2744,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil431">
+<def tag="card" for="Mil431">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2912,19 +2765,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil432">
+<def tag="card" for="Mil432">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2934,19 +2786,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil441">
+<def tag="card" for="Mil441">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2956,19 +2807,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil442">
+<def tag="card" for="Mil442">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -2978,19 +2828,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil451">
+<def tag="card" for="Mil451">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3000,19 +2849,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil452">
+<def tag="card" for="Mil452">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3022,19 +2870,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil453">
+<def tag="card" for="Mil453">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3044,19 +2891,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil461">
+<def tag="card" for="Mil461">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3066,19 +2912,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil462">
+<def tag="card" for="Mil462">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3088,19 +2933,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil463">
+<def tag="card" for="Mil463">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3110,19 +2954,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil464">
+<def tag="card" for="Mil464">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3132,19 +2975,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil465">
+<def tag="card" for="Mil465">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3154,19 +2996,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil511">
+<def tag="card" for="Mil511">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3176,19 +3017,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil512">
+<def tag="card" for="Mil512">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3198,19 +3038,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil513">
+<def tag="card" for="Mil513">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3220,19 +3059,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil521">
+<def tag="card" for="Mil521">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3242,19 +3080,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil522">
+<def tag="card" for="Mil522">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3264,19 +3101,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil531">
+<def tag="card" for="Mil531">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3286,19 +3122,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil532">
+<def tag="card" for="Mil532">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3308,19 +3143,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil533">
+<def tag="card" for="Mil533">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3330,19 +3164,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil534">
+<def tag="card" for="Mil534">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3352,19 +3185,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil535">
+<def tag="card" for="Mil535">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3374,19 +3206,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil536">
+<def tag="card" for="Mil536">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3396,19 +3227,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil537">
+<def tag="card" for="Mil537">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3418,19 +3248,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil538">
+<def tag="card" for="Mil538">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3440,19 +3269,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil611">
+<def tag="card" for="Mil611">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3462,19 +3290,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil621">
+<def tag="card" for="Mil621">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3484,19 +3311,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil711">
+<def tag="card" for="Mil711">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3506,19 +3332,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil712">
+<def tag="card" for="Mil712">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3528,19 +3353,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil713">
+<def tag="card" for="Mil713">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3550,19 +3374,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil714">
+<def tag="card" for="Mil714">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3572,19 +3395,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil721">
+<def tag="card" for="Mil721">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3594,19 +3416,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil722">
+<def tag="card" for="Mil722">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3616,19 +3437,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil723">
+<def tag="card" for="Mil723">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3638,19 +3458,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil724">
+<def tag="card" for="Mil724">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3660,19 +3479,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil725">
+<def tag="card" for="Mil725">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3682,19 +3500,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil731">
+<def tag="card" for="Mil731">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3704,19 +3521,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil741">
+<def tag="card" for="Mil741">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3726,19 +3542,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil751">
+<def tag="card" for="Mil751">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3748,19 +3563,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil3101">
+<def tag="card" for="Mil3101">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3770,19 +3584,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil3102">
+<def tag="card" for="Mil3102">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3792,19 +3605,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Mil3103">
+<def tag="card" for="Mil3103">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3814,20 +3626,19 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
 <!-- Medical Review BS -->
-<extend tag="card" for="Med11">
+<def tag="card" for="Med11">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3837,19 +3648,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med12">
+<def tag="card" for="Med12">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3859,19 +3669,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med21">
+<def tag="card" for="Med21">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3881,19 +3690,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med22">
+<def tag="card" for="Med22">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3903,19 +3711,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med23">
+<def tag="card" for="Med23">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3925,19 +3732,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med24">
+<def tag="card" for="Med24">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3947,19 +3753,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med25">
+<def tag="card" for="Med25">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3969,19 +3774,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med26">
+<def tag="card" for="Med26">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -3991,19 +3795,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med27">
+<def tag="card" for="Med27">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4013,19 +3816,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med28">
+<def tag="card" for="Med28">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4035,19 +3837,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med31">
+<def tag="card" for="Med31">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4057,19 +3858,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med32">
+<def tag="card" for="Med32">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4079,19 +3879,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med33">
+<def tag="card" for="Med33">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4101,19 +3900,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med41">
+<def tag="card" for="Med41">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4123,19 +3921,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med42">
+<def tag="card" for="Med42">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4145,19 +3942,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med43">
+<def tag="card" for="Med43">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4167,19 +3963,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med44">
+<def tag="card" for="Med44">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4189,19 +3984,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med45">
+<def tag="card" for="Med45">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4211,19 +4005,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med51">
+<def tag="card" for="Med51">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4233,19 +4026,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med52">
+<def tag="card" for="Med52">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4255,19 +4047,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med53">
+<def tag="card" for="Med53">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4277,19 +4068,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med54">
+<def tag="card" for="Med54">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4299,19 +4089,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med55">
+<def tag="card" for="Med55">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4321,19 +4110,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med56">
+<def tag="card" for="Med56">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4343,19 +4131,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med61">
+<def tag="card" for="Med61">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4365,19 +4152,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med62">
+<def tag="card" for="Med62">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4387,19 +4173,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med71">
+<def tag="card" for="Med71">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4409,19 +4194,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med81">
+<def tag="card" for="Med81">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4431,19 +4215,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med91">
+<def tag="card" for="Med91">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4453,19 +4236,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med92">
+<def tag="card" for="Med92">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4475,19 +4257,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med93">
+<def tag="card" for="Med93">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4497,19 +4278,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med94">
+<def tag="card" for="Med94">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4519,19 +4299,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med101">
+<def tag="card" for="Med101">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4541,19 +4320,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med102">
+<def tag="card" for="Med102">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4563,19 +4341,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med111">
+<def tag="card" for="Med111">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4585,19 +4362,18 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
-<extend tag="card" for="Med112">
+<def tag="card" for="Med112">
   <card>
-    <heading:>
+    <heading>
       <h3><a action="edit" if="&can_edit?" param="edit-link"><name /></a></h3>
-    </heading:>
-    <body:>
+    </heading>
+    <body>
       <div class="decision">
         Finding:<view:decision />
       </div>
@@ -4607,12 +4383,11 @@
       <div class="complete">
         Completed:<view:mark_complete />
       </div>
-    </body:>
-    <append-body:>
       <transition-buttons />
-    </append-body:>
+    </body>
+    
   </card>
-</extend>
+</def>
 
 <!--   Show the appropriate fields when entering findings (top of page)   -->
 
