@@ -38,8 +38,18 @@ class Estd311 < ActiveRecord::Base
                :params => [ :decision, :rational, :observation, :recomendations, :previewer ],
                :available_to => :all
 
+    transition :revisit_finding,
+               {:primary => :primary},
+               :params => [ :decision, :rational, :observation, :recomendations, :previewer ],
+               :available_to => :all
+
     transition :second_read,
                {:primary => :secondary},
+               :params => [ :concur, :sec_obs, :sreviewer ],
+               :available_to => :all
+
+    transition :return_to_secondary,
+               {:secondary => :secondary},
                :params => [ :concur, :sec_obs, :sreviewer ],
                :available_to => :all
 
@@ -53,9 +63,14 @@ class Estd311 < ActiveRecord::Base
                :params => [ :mark_complete ],
                :available_to => :all
 
-    transition :reopen,
+    transition :reopen_secondary,
                {:complete => :secondary},
                :params => [ :concur, :sec_obs, :sreviewer ],
+               :available_to => :all
+
+    transition :reopen_primary,
+               {:complete => :primary},
+               :params => [ :rational, :observation, :recomendations, :decision ],
                :available_to => :all
 
   end

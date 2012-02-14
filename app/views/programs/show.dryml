@@ -197,34 +197,43 @@
       <div class="msg_sub_body">
         <p class="msg_head">Area 1 - STRUCTURE</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:mil111s /></a></div><hr />
-             <div><a href="#"><collection:mil112s /></a></div><hr />
-             <div><a href="#"><collection:mil121s /></a></div><hr />
-             <div><a href="#"><collection:mil131s /></a></div><hr />
-             <div><a href="#"><collection:mil141s /></a></div>
+            <p class="msg_head">Area 1.1</p>
+              <div class="msg_sub_body">
+                <div><a href="#"><collection:mil111s /></a></div><hr />
+                <div><a href="#"><collection:mil112s /></a></div><hr />
+              </div> 
+            <div><a href="#"><collection:mil121s /></a></div><hr />
+            <div><a href="#"><collection:mil131s /></a></div><hr />
+            <div><a href="#"><collection:mil141s /></a></div>
           </div>
         <p class="msg_head">Area 2 - LEGAL AUTHORITIES</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:mil211s /></a></div><hr />
-             <div><a href="#"><collection:mil212s /></a></div><hr />
-             <div><a href="#"><collection:mil221s /></a></div><hr />
-             <div><a href="#"><collection:mil222s /></a></div><hr />
-             <div><a href="#"><collection:mil231s /></a></div>
+            <div><a href="#"><collection:mil211s /></a></div><hr />
+            <div><a href="#"><collection:mil212s /></a></div><hr />
+            <p class="msg_head">Area 2.2</p>
+              <div class="msg_sub_body">
+                <div><a href="#"><collection:mil221s /></a></div><hr />
+                <div><a href="#"><collection:mil222s /></a></div><hr />
+              </div>
+            <div><a href="#"><collection:mil231s /></a></div>
           </div>
         <p class="msg_head">Area 3 - PLANNING</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:mil311s /></a></div><hr />
-             <div><a href="#"><collection:mil321s /></a></div><hr />
-             <div><a href="#"><collection:mil331s /></a></div><hr />
-             <div><a href="#"><collection:mil341s /></a></div><hr />
-             <div><a href="#"><collection:mil351s /></a></div><hr />
-             <div><a href="#"><collection:mil361s /></a></div><hr />
-             <div><a href="#"><collection:mil371s /></a></div><hr />
-             <div><a href="#"><collection:mil381s /></a></div><hr />
-             <div><a href="#"><collection:mil391s /></a></div><hr />
-             <div><a href="#"><collection:mil3101s /></a></div><hr />
-             <div><a href="#"><collection:mil3102s /></a></div><hr />
-             <div><a href="#"><collection:mil3103s /></a></div>
+            <div><a href="#"><collection:mil311s /></a></div><hr />
+            <div><a href="#"><collection:mil321s /></a></div><hr />
+            <div><a href="#"><collection:mil331s /></a></div><hr />
+            <div><a href="#"><collection:mil341s /></a></div><hr />
+            <div><a href="#"><collection:mil351s /></a></div><hr />
+            <div><a href="#"><collection:mil361s /></a></div><hr />
+            <div><a href="#"><collection:mil371s /></a></div><hr />
+            <div><a href="#"><collection:mil381s /></a></div><hr />
+            <div><a href="#"><collection:mil391s /></a></div><hr />
+            <p class="msg_head">Area 3.10</p>
+              <div class="msg_sub_body">
+                <div><a href="#"><collection:mil3101s /></a></div><hr />
+                <div><a href="#"><collection:mil3102s /></a></div><hr />
+                <div><a href="#"><collection:mil3103s /></a></div>
+              </div>
           </div>
         <p class="msg_head">Area 4 - LOGISTICS</p>
           <div class="msg_sub_body">

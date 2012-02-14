@@ -29,17 +29,27 @@ class Mil464 < ActiveRecord::Base
     state :complete
 
     create :unstarted, 
-           :params => [ :rational, :observation, :recomendations, :decision ],
+           :params => [ :decision, :rational, :observation, :recomendations, :previewer ],
            :available_to => "User",
            :user_becomes => :all
     
     transition :enter_finding,
                {:unstarted => :primary},
-               :params => [ :rational, :observation, :recomendations, :decision ],
+               :params => [ :decision, :rational, :observation, :recomendations, :previewer ],
+               :available_to => :all
+
+    transition :revisit_finding,
+               {:primary => :primary},
+               :params => [ :decision, :rational, :observation, :recomendations, :previewer ],
                :available_to => :all
 
     transition :second_read,
                {:primary => :secondary},
+               :params => [ :concur, :sec_obs, :sreviewer ],
+               :available_to => :all
+
+    transition :return_to_secondary,
+               {:secondary => :secondary},
                :params => [ :concur, :sec_obs, :sreviewer ],
                :available_to => :all
 
@@ -48,14 +58,19 @@ class Mil464 < ActiveRecord::Base
                :params => [ :rational, :observation, :recomendations, :decision ],
                :available_to => :all
 
-    transition :completion,
+    transition :mark_complete,
                {:secondary => :complete},
                :params => [ :mark_complete ],
                :available_to => :all
 
-    transition :completion,
+    transition :reopen_secondary,
                {:complete => :secondary},
                :params => [ :concur, :sec_obs, :sreviewer ],
+               :available_to => :all
+
+    transition :reopen_primary,
+               {:complete => :primary},
+               :params => [ :rational, :observation, :recomendations, :decision ],
                :available_to => :all
 
   end
