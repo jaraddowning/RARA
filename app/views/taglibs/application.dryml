@@ -6223,5 +6223,776 @@
 
 <!-- forms for all the things  -->
 
+<!-- Global taglib - these tags are shared across all subsites -->
 
+<include src="rapid" plugin="hobo"/>
+
+<include src="taglibs/auto/rapid/cards"/>
+<include src="taglibs/auto/rapid/pages"/>
+<include src="taglibs/auto/rapid/forms"/>
+<include gem="hobo-jquery" />
+<include src="paperclip" plugin="paperclip_with_hobo"/>
+
+<set-theme name="clean"/>
+
+<extend tag="page">
+  <old-page merge without-live-search>
+    <custom-scripts:>
+      <hjq-assets/>
+      <javascript name="jquery.form.js"/>
+      <javascript name="ckeditor/ckeditor"/>
+      <javascript name="load_ckeditor"/>
+    </custom-scripts:>
+    <footer:>
+      <a href="http://emaponline.org"><img src="/images/emap_logo.jpg"/></a>
+      <a href="http://cdham.org/"><img src="/images/danland_logo.png"/></a>
+      <a href="http://www.africom.mil/"><img src="/images/africom_crest.png"/></a>
+      <a href="&emap_users_url" if="&current_user.administrator?">
+        <t key="hobo.admin.subsite_name">Emap Admin</t>
+      </a>
+      <div>
+        Copyright &#64; 2012 - EMAP  
+      </div>
+    </footer:>
+  </old-page>
+</extend>
+
+<def tag="card" for="Program">
+  <card class="program" param="default" merge>
+    <header param>
+      <h4 param="header"><a><name/></a></h4>
+    </header>
+    <body param>
+
+    </body>
+    <delete-button class="actions" />
+  </card>
+</def>
+
+
+<def tag="index-page" for="Program">
+  <page merge title="#{ht 'program.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page program" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="header">
+          Nation to Review
+          <!--<ht key="program.index.header">
+            <model-name-human model="&model"/>
+          </ht>-->
+        </h2>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="program.actions.new">New Program</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+        
+        <collection />
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="card" for="Area">
+  <card class="area" merge>
+    <header>
+      <h4><a><view:standard /></a></h4><view:name/>
+    </header>
+  </card>
+</def>
+
+<!--  Dispay status for each standard area / question  -->
+
+<def tag="card" for="Estd311">
+  <card>
+    <header>
+      <h3><a><name /></a></h3>
+    </header>
+    <body>
+      <div class="decision">
+        Finding:<view:decision />
+      </div>
+      <div class="secondread">
+        Second Read:<view:concur />
+      </div>
+      <div class="complete">
+        Completed:<view:mark_complete />
+      </div>
+      <transition-buttons />
+    </body>
+    
+  </card>
+</def>
+
+<def tag="card" for="Estd312">
+  <card>
+    <header>
+      <h3><a><name /></a></h3>
+    </header>
+    <body>
+      <div class="decision">
+        Finding:<view:decision />
+      </div>
+      <div class="secondread">
+        Second Read:<view:concur />
+      </div>
+      <div class="complete">
+        Completed:<view:mark_complete />
+      </div>
+      <transition-buttons />
+    </body>
+    
+  </card>
+</def>
+
+
+
+<!--   Show the appropriate fields when entering findings (top of page)   -->
+
+<extend tag="show-page" for="Estd311">
+  <old-show-page without-creator-link merge>
+    <heading:>
+      <h5><a:program param="parent-link">&laquo; Back to <name/></a:program></h5><br />
+      <h3>EMAP Standard 3.1.1</h3>
+      <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
+      <br />
+      <field-list fields="program, area, area.overview, area.language" /><br />
+    </heading:>
+    <record-flags: fields="" />
+    <content-body:>
+      <field-list fields="previewer, decision, rational, observation, recomendations, sec_obs, concur, sreviewer" param/>
+    </content-body:>
+  </old-show-page>
+</extend>
+
+<extend tag="show-page" for="Estd312">
+  <old-show-page without-creator-link merge>
+    <heading:>
+      <h5><a:program param="parent-link">&laquo; Back to <name/></a:program></h5><br />
+      <h3>EMAP Standard 3.1.2</h3>
+      <p>A Program shall have a documented method and schedule for Program evaluation, maintenance, revision and corrective actions and shall incorporate coordinated stakeholder involvement and input.</p>
+      <br />
+      <field-list fields="program, area, area.overview, area.language" /><br />
+    </heading:>
+    <record-flags: fields="" />
+    <content-body:>
+      <field-list fields="previewer, decision, rational, observation, recomendations, sec_obs, concur, sreviewer" param/>
+    </content-body:>
+  </old-show-page>
+</extend>
+
+<!--  More information on Edit pages  EMAP311-->
+
+<def tag="unstarted-page" polymorphic/>
+<def tag="unstarted-page" for="Estd311">
+
+  <page title="#{ht 'estd311.unstarted.title', :default=>['Unstarted']}" merge>
+
+    <body: class="lifecycle-start-page unstarted-page" param/>
+
+    <content: param>
+      <header param="content-header">
+        <div class="std_info">
+        <h3>EMAP Standard 3.1.1</h3>
+          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
+          <field-list fields="area.overview, area.language" /><br />
+        </div>
+        <h2 param="heading">
+          <ht key="estd311.unstarted.heading">
+            Unstarted
+          </ht>
+        </h2>
+      </header>
+
+      <section param="content-body">
+        <unstarted-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="enter-finding-page" polymorphic/>
+<def tag="enter-finding-page" for="Estd311">
+  <page title="#{ht 'estd311.enter_finding.title', :default=>['Enter Finding']}" merge>
+
+    <body: class="lifecycle-transition-page enter-finding-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <div class="std_info">
+        <h3>EMAP Standard 3.1.1</h3>
+          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
+          <field-list fields="area.overview, area.language" /><br />
+        </div>
+        <h2 param="heading">Enter Finding</h2>
+      </header>
+
+      <section param="content-body">
+        <enter-finding-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="revisit-finding-page" polymorphic/>
+<def tag="revisit-finding-page" for="Estd311">
+  <page title="#{ht 'estd311.revisit_finding.title', :default=>['Revisit Finding']}" merge>
+
+    <body: class="lifecycle-transition-page revisit-finding-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <div class="std_info">
+          <h3>EMAP Standard 3.1.1</h3>
+          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
+          <field-list fields="area.overview, area.language" /><br />
+        </div>
+        <h2 param="heading">First Read</h2>
+      </header>
+
+      <section param="content-body">
+        <revisit-finding-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="second-read-page" polymorphic/>
+<def tag="second-read-page" for="Estd311">
+  <page title="#{ht 'estd311.second_read.title', :default=>['Second Read']}" merge>
+
+    <body: class="lifecycle-transition-page second-read-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <div class="std_info">
+        <h3>EMAP Standard 3.1.1</h3>
+          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
+          <field-list fields="area.overview, area.language, rational, observation, recomendations, decision" /><br />
+        </div>
+        <h2 param="heading">Second Read</h2>
+      </header>
+
+      <section param="content-body">
+        <second-read-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="return-to-primary-page" polymorphic/>
+<def tag="return-to-primary-page" for="Estd311">
+  <page title="#{ht 'estd311.return_to_primary.title', :default=>['Return To Primary']}" merge>
+
+    <body: class="lifecycle-transition-page return-to-primary-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <h3>EMAP Standard 3.1.1</h3>
+          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
+          <field-list fields="area.overview, area.language" /><br />
+        <h2 param="heading">First Read</h2>
+      </header>
+
+      <section param="content-body">
+        <return-to-primary-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="return-to-secondary-page" polymorphic/>
+<def tag="return-to-secondary-page" for="Estd311">
+  <page title="#{ht 'estd311.return_to_secondary.title', :default=>['Return To Secondary']}" merge>
+
+    <body: class="lifecycle-transition-page return-to-secondary-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <div class="std_info">
+          <h3>EMAP Standard 3.1.1</h3>
+          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
+          <field-list fields="area.overview, area.language, rational, observation, recomendations, decision" /><br />
+        </div>
+        <h2 param="heading">Second Read</h2>
+      </header>
+
+      <section param="content-body">
+        <return-to-secondary-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="mark-complete-page" polymorphic/>
+<def tag="mark-complete-page" for="Estd311">
+  <page title="#{ht 'estd311.mark_complete.title', :default=>['Mark Complete']}" merge>
+
+    <body: class="lifecycle-transition-page mark-complete-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <h3>EMAP Standard 3.1.1</h3>
+          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
+          <field-list fields="area.overview, area.language, rational, observation, recomendations, sec_obs" /><br />
+        <h2 param="heading">Mark Complete</h2>
+      </header>
+
+      <section param="content-body">
+        <mark-complete-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="reopen-primary-page" polymorphic/>
+<def tag="reopen-primary-page" for="Estd311">
+  <page title="#{ht 'estd311.reopen.title', :default=>['Reopen']}" merge>
+
+    <body: class="lifecycle-transition-page reopen-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <h3>EMAP Standard 3.1.1</h3>
+          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
+          <field-list fields="area.overview, area.language" /><br />
+        <h2 param="heading">First Read</h2>
+      </header>
+
+      <section param="content-body">
+        <reopen-primary-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="reopen-secondary-page" polymorphic/>
+<def tag="reopen-secondary-page" for="Estd311">
+  <page title="#{ht 'estd311.reopen.title', :default=>['Reopen']}" merge>
+
+    <body: class="lifecycle-transition-page reopen-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <h3>EMAP Standard 3.1.1</h3>
+          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
+          <field-list fields="area.overview, area.language, rational, observation, recomendations, sec_obs" /><br />
+        <h2 param="heading">Second Read</h2>
+      </header>
+
+      <section param="content-body">
+        <reopen-secondary-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<!-- Form Stuff  -->
+
+<def tag="unstarted-form" polymorphic/>
+<def tag="unstarted-form" for="Estd311">
+  <form lifecycle="unstarted" merge param="default">
+    <error-messages param/>
+    <field-list fields="decision, rational, observation, recomendations, previewer" param/>
+    <div param="actions">
+      <submit label="#{ht 'estd311.actions.unstarted', :default=>['Unstarted']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+
+<def tag="enter-finding-form" polymorphic/>
+<def tag="enter-finding-form" for="Estd311">
+  <form lifecycle="enter_finding" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="decision, rational, observation, recomendations, previewer" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.enter_finding', :default=>['Submit']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+<def tag="revisit-finding-form" polymorphic/>
+<def tag="revisit-finding-form" for="Estd311">
+  <form lifecycle="revisit_finding" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="decision, rational, observation, recomendations, previewer" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.revisit_finding', :default=>['Submit']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+<def tag="second-read-form" polymorphic/>
+<def tag="second-read-form" for="Estd311">
+  <form lifecycle="second_read" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="concur, sec_obs, sreviewer" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.second_read', :default=>['Submit']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+<def tag="return-to-secondary-form" polymorphic/>
+<def tag="return-to-secondary-form" for="Estd311">
+  <form lifecycle="return_to_secondary" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="concur, sec_obs, sreviewer" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.return_to_secondary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+<def tag="return-to-primary-form" polymorphic/>
+<def tag="return-to-primary-form" for="Estd311">
+  <form lifecycle="return_to_primary" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="rational, observation, recomendations, decision" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.return_to_primary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+<def tag="mark-complete-form" polymorphic/>
+<def tag="mark-complete-form" for="Estd311">
+  <form lifecycle="mark_complete" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="mark_complete" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.mark_complete', :default=>['Mark Complete']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+<def tag="reopen-primary-form" polymorphic/>
+<def tag="reopen-primary-form" for="Estd311">
+  <form lifecycle="reopen_primary" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="rational, observation, recomendations, decision" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.reopen_primary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+<def tag="reopen-secondary-form" polymorphic/>
+<def tag="reopen-secondary-form" for="Estd311">
+  <form lifecycle="reopen_secondary" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="concur, sec_obs, sreviewer" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.reopen_secondary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+
+<!--  More information on Edit pages  EMAP312-->
+
+<def tag="unstarted-page" polymorphic/>
+<def tag="unstarted-page" for="Estd312">
+
+  <page title="#{ht 'estd312.unstarted.title', :default=>['Unstarted']}" merge>
+
+    <body: class="lifecycle-start-page unstarted-page" param/>
+
+    <content: param>
+      <header param="content-header">
+        <div class="std_info">
+        <h3>EMAP Standard 3.1.2</h3>
+          <p>A Program shall have a documented method and schedule for Program evaluation, maintenance, revision and corrective actions and shall incorporate coordinated stakeholder involvement and input.</p>
+          <field-list fields="area.overview, area.language" /><br />
+        </div>
+        <h2 param="heading">
+          <ht key="estd312.unstarted.heading">
+            Unstarted
+          </ht>
+        </h2>
+      </header>
+
+      <section param="content-body">
+        <unstarted-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="enter-finding-page" polymorphic/>
+<def tag="enter-finding-page" for="Estd312">
+  <page title="#{ht 'estd312.enter_finding.title', :default=>['Enter Finding']}" merge>
+
+    <body: class="lifecycle-transition-page enter-finding-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <div class="std_info">
+        <h3>EMAP Standard 3.1.2</h3>
+          <p>A Program shall have a documented method and schedule for Program evaluation, maintenance, revision and corrective actions and shall incorporate coordinated stakeholder involvement and input.</p>
+          <field-list fields="area.overview, area.language" /><br />
+        </div>
+        <h2 param="heading">Enter Finding</h2>
+      </header>
+
+      <section param="content-body">
+        <enter-finding-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="second-read-page" polymorphic/>
+<def tag="second-read-page" for="Estd312">
+  <page title="#{ht 'estd312.second_read.title', :default=>['Second Read']}" merge>
+
+    <body: class="lifecycle-transition-page second-read-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <div class="std_info">
+        <h3>EMAP Standard 3.1.2</h3>
+          <p>A Program shall have a documented method and schedule for Program evaluation, maintenance, revision and corrective actions and shall incorporate coordinated stakeholder involvement and input.</p>
+          <field-list fields="area.overview, area.language, rational, observation, recomendations, decision" /><br />
+        </div>
+        <h2 param="heading">Second Read</h2>
+      </header>
+
+      <section param="content-body">
+        <second-read-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="return-to-primary-page" polymorphic/>
+<def tag="return-to-primary-page" for="Estd312">
+  <page title="#{ht 'estd312.return_to_primary.title', :default=>['Return To Primary']}" merge>
+
+    <body: class="lifecycle-transition-page return-to-primary-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <h3>EMAP Standard 3.1.2</h3>
+          <p>A Program shall have a documented method and schedule for Program evaluation, maintenance, revision and corrective actions and shall incorporate coordinated stakeholder involvement and input.</p>
+          <field-list fields="area.overview, area.language" /><br />
+        <h2 param="heading">First Read</h2>
+      </header>
+
+      <section param="content-body">
+        <return-to-primary-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="return-to-secondary-page" polymorphic/>
+<def tag="return-to-secondary-page" for="Estd312">
+  <page title="#{ht 'estd312.return_to_secondary.title', :default=>['Return To Secondary']}" merge>
+
+    <body: class="lifecycle-transition-page return-to-secondary-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <div class="std_info">
+          <h3>EMAP Standard 3.1.2</h3>
+          <p>A Program shall have a documented method and schedule for Program evaluation, maintenance, revision and corrective actions and shall incorporate coordinated stakeholder involvement and input.</p>
+          <field-list fields="area.overview, area.language, rational, observation, recomendations, decision" /><br />
+        </div>
+        <h2 param="heading">Second Read</h2>
+      </header>
+
+      <section param="content-body">
+        <return-to-secondary-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="mark-complete-page" polymorphic/>
+<def tag="mark-complete-page" for="Estd312">
+  <page title="#{ht 'estd312.mark_complete.title', :default=>['Mark Complete']}" merge>
+
+    <body: class="lifecycle-transition-page mark-complete-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <h3>EMAP Standard 3.1.2</h3>
+          <p>A Program shall have a documented method and schedule for Program evaluation, maintenance, revision and corrective actions and shall incorporate coordinated stakeholder involvement and input.</p>
+          <field-list fields="area.overview, area.language, rational, observation, recomendations, sec_obs" /><br />
+        <h2 param="heading">Mark Complete</h2>
+      </header>
+
+      <section param="content-body">
+        <mark-complete-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<def tag="reopen-secondary-page" polymorphic/>
+<def tag="reopen-secondary-page" for="Estd312">
+  <page title="#{ht 'estd312.reopen.title', :default=>['Reopen']}" merge>
+
+    <body: class="lifecycle-transition-page reopen-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <h3>EMAP Standard 3.1.2</h3>
+          <p>A Program shall have a documented method and schedule for Program evaluation, maintenance, revision and corrective actions and shall incorporate coordinated stakeholder involvement and input.</p>
+          <field-list fields="area.overview, area.language, rational, observation, recomendations, sec_obs" /><br />
+        <h2 param="heading">Second Read</h2>
+      </header>
+
+      <section param="content-body">
+        <reopen-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+<!-- Form stuff for EMAP 312  -->
+
+<def tag="unstarted-form" polymorphic/>
+<def tag="unstarted-form" for="Estd312">
+  <form lifecycle="unstarted" merge param="default">
+    <error-messages param/>
+    <field-list fields="decision, rational, observation, recomendations, previewer" param/>
+    <div param="actions">
+      <submit label="#{ht 'estd312.actions.unstarted', :default=>['Unstarted']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+
+<def tag="enter-finding-form" polymorphic/>
+<def tag="enter-finding-form" for="Estd312">
+  <form lifecycle="enter_finding" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="decision, rational, observation, recomendations, previewer" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd312.lifecycle.transitions.enter_finding', :default=>['Submit']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+<def tag="revisit-finding-form" polymorphic/>
+<def tag="revisit-finding-form" for="Estd312">
+  <form lifecycle="revisit_finding" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="decision, rational, observation, recomendations, previewer" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd312.lifecycle.transitions.revisit_finding', :default=>['Submit']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+<def tag="second-read-form" polymorphic/>
+<def tag="second-read-form" for="Estd312">
+  <form lifecycle="second_read" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="concur, sec_obs, sreviewer" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd312.lifecycle.transitions.second_read', :default=>['Submit']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+<def tag="return-to-secondary-form" polymorphic/>
+<def tag="return-to-secondary-form" for="Estd312">
+  <form lifecycle="return_to_secondary" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="concur, sec_obs, sreviewer" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd312.lifecycle.transitions.return_to_secondary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+<def tag="return-to-primary-form" polymorphic/>
+<def tag="return-to-primary-form" for="Estd312">
+  <form lifecycle="return_to_primary" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="rational, observation, recomendations, decision" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd312.lifecycle.transitions.return_to_primary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+<def tag="mark-complete-form" polymorphic/>
+<def tag="mark-complete-form" for="Estd312">
+  <form lifecycle="mark_complete" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="mark_complete" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd312.lifecycle.transitions.mark_complete', :default=>['Mark Complete']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+<def tag="reopen-primary-form" polymorphic/>
+<def tag="reopen-primary-form" for="Estd312">
+  <form lifecycle="reopen_primary" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="rational, observation, recomendations, decision" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd312.lifecycle.transitions.reopen_primary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
+<def tag="reopen-secondary-form" polymorphic/>
+<def tag="reopen-secondary-form" for="Estd312">
+  <form lifecycle="reopen_secondary" merge param="default">
+    <error-messages param/>
+    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
+    <field-list fields="concur, sec_obs, sreviewer" param/>
+    <div param="actions">
+      <submit label="#{t 'activerecord.attributes.estd312.lifecycle.transitions.reopen_secondary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
+    </div>
+    <after-submit uri="/programs/#{this.program_id}"/>
+  </form>
+</def>
 
