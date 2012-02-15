@@ -7,6 +7,8 @@ class Area < ActiveRecord::Base
     standard      :string
     language      :html
     overview      :html
+    dp3_lang      :html
+    dp3           :string
     timestamps
   end
 

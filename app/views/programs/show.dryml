@@ -1,29 +1,28 @@
 <show-page>
   <content-body:>
     <h2>Findings</h2>
-    
     <div class="findings_area">
     <div class="msg_list" >
 
-    <p class="msg_head"><i>Emergency Management Standard</i> by EMAP<!-- add count info here --></p>
+    <p class="msg_head"><i>Emergency Management Standard</i> by EMAP</p>
       <div class="msg_body">
 
         <p class="msg_head" id="sub-menu">Chapter 3 - Emergency Management Program</p>
           <div class="msg_sub_body">
             <p class="msg_head">Standard 3.1 Program Administration, Plans and Evaluation</p>
               <div class="msg_sub_body" href="#1" name="1">
-                <div><a href="#"><collection:estd311s /></a></div><hr />
-                <div><a href="#"><collection:estd312s /></a></div>
+                <div><a href="#"><collection:emap_311_findings  /></a></div><hr />
+                <div><a href="#"><collection:emap_312_findings /></a></div>
               </div>
             <p class="msg_head">Standard 3.2 Program Coordination</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd321s /></a></div><hr />
-                <div><a href="#"><collection:estd322s /></a></div>
+                <div><a href="#"><collection:emap_321_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_322_findings /></a></div>
               </div>
             <p class="msg_head">Standard 3.3 Advisory Committee</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd331s /></a></div><hr />
-                <div><a href="#"><collection:estd332s /></a></div>
+                <div><a href="#"><collection:emap_331_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_332_findings /></a></div>
               </div>
           </div>
 
@@ -31,166 +30,167 @@
           <div class="msg_sub_body">
             <p class="msg_head">Standard 4.1 Administration and Finance</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd411s /></a></div><hr />
-                <div><a href="#"><collection:estd412s /></a></div>
+                <div><a href="#"><collection:emap_411_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_412_findings /></a></div>
               </div>
             <p class="msg_head">Standard 4.2 Laws and Authorities</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd421s /></a></div><hr />
-                <div><a href="#"><collection:estd422s /></a></div>
+                <div><a href="#"><collection:emap_421_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_422_findings /></a></div>
               </div>
             <p class="msg_head">Standard 4.3 Hazard Identification, Risk Assessment and Consequence Analysis</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd431s /></a></div><hr />
-                <div><a href="#"><collection:estd432s /></a></div>
+                <div><a href="#"><collection:emap_431_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_432_findings /></a></div>
               </div>
             <p class="msg_head">Standard 4.4 Hazard Mitigation</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd441s /></a></div><hr />
-                <div><a href="#"><collection:estd442s /></a></div><hr />
-                <div><a href="#"><collection:estd443s /></a></div><hr />
-                <div><a href="#"><collection:estd444s /></a></div><hr />
-                <div><a href="#"><collection:estd445s /></a></div>
+                <div><a href="#"><collection:emap_441_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_442_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_443_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_444_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_445_findings /></a></div>
               </div>
             <p class="msg_head">Standard 4.5 Prevention</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd451s /></a></div><hr />
-                <div><a href="#"><collection:estd452s /></a></div><hr />
-                <div><a href="#"><collection:estd453s /></a></div>
+                <div><a href="#"><collection:emap_451_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_452_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_453_findings /></a></div>
               </div>
             <p class="msg_head">Standard 4.6 Operational Planning</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd461s /></a></div>
+                <div><a href="#"><collection:emap_461_findings /></a></div>
 
                 <p class="msg_head">Standard 4.6.2</p>
                   <div class="msg_sub_body">
-                    <div><a href="#"><collection:estd4621s /></a></div><hr />
-                    <div><a href="#"><collection:estd4622s /></a></div><hr />
-                    <div><a href="#"><collection:estd4623s /></a></div><hr />
-                    <div><a href="#"><collection:estd4624s /></a></div><hr />
-                    <div><a href="#"><collection:estd4625s /></a></div><hr />
-                    <div><a href="#"><collection:estd4626s /></a></div><hr />
-                    <div><a href="#"><collection:estd4627s /></a></div>
+                    <div><a href="#"><collection:emap_4621_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_4622_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_4623_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_4624_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_4625_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_4626_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_4627_findings /></a></div>
                   </div>
                 <p class="msg_head">Standard 4.6.3</p>
                   <div class="msg_sub_body">
-                    <div><a href="#"><collection:estd4631s /></a></div><hr />
-                    <div><a href="#"><collection:estd4632s /></a></div><hr />
-                    <div><a href="#"><collection:estd4633s /></a></div><hr />
-                    <div><a href="#"><collection:estd4634s /></a></div><hr />
-                    <div><a href="#"><collection:estd4635s /></a></div><hr />
-                    <div><a href="#"><collection:estd4636s /></a></div><hr />
-                    <div><a href="#"><collection:estd4637s /></a></div><hr />
-                    <div><a href="#"><collection:estd4638s /></a></div><hr />
-                    <div><a href="#"><collection:estd4639s /></a></div><hr />
-                    <div><a href="#"><collection:estd46310s /></a></div><hr />
-                    <div><a href="#"><collection:estd46311s /></a></div><hr />
-                    <div><a href="#"><collection:estd46312s /></a></div><hr />
-                    <div><a href="#"><collection:estd46313s /></a></div><hr />
-                    <div><a href="#"><collection:estd46314s /></a></div><hr />
-                    <div><a href="#"><collection:estd46315s /></a></div><hr />
-                    <div><a href="#"><collection:estd46316s /></a></div><hr />
-                    <div><a href="#"><collection:estd46317s /></a></div><hr />
-                    <div><a href="#"><collection:estd46318s /></a></div><hr />
-                    <div><a href="#"><collection:estd46319s /></a></div><hr />
-                    <div><a href="#"><collection:estd46320s /></a></div><hr />
-                    <div><a href="#"><collection:estd46321s /></a></div><hr />
-                    <div><a href="#"><collection:estd46322s /></a></div><hr />
-                    <div><a href="#"><collection:estd46323s /></a></div><hr />
-                    <div><a href="#"><collection:estd46324s /></a></div><hr />
-                    <div><a href="#"><collection:estd46325s /></a></div><hr />
-                    <div><a href="#"><collection:estd46326s /></a></div><hr />
-                    <div><a href="#"><collection:estd46327s /></a></div><hr />
-                    <div><a href="#"><collection:estd46328s /></a></div><hr />
-                    <div><a href="#"><collection:estd46329s /></a></div>
+                    <div><a href="#"><collection:emap_4631_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_4632_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_4633_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_4634_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_4635_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_4636_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_4637_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_4638_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_4639_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46310_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46311_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46312_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46313_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46314_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46315_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46316_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46317_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46318_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46319_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46320_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46321_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46322_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46323_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46324_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46325_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46326_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46327_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46328_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_46329_findings /></a></div>
                   </div>
 
-                  <div><a href="#"><collection:estd464s /></a></div><hr />
-                  <div><a href="#"><collection:estd465s /></a></div><hr />
-                  <div><a href="#"><collection:estd466s /></a></div>
+                  <div><a href="#"><collection:emap_464_findings /></a></div><hr />
+                  <div><a href="#"><collection:emap_465_findings /></a></div><hr />
+                  <div><a href="#"><collection:emap_466_findings /></a></div>
               </div>
             <p class="msg_head">Standard 4.7 Incident Management</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd471s /></a></div><hr />
-                <div><a href="#"><collection:estd472s /></a></div><hr />
-                <div><a href="#"><collection:estd473s /></a></div><hr />
-                <div><a href="#"><collection:estd474s /></a></div><hr />
-                <div><a href="#"><collection:estd475s /></a></div>
+                <div><a href="#"><collection:emap_471_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_472_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_473_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_474_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_475_findings /></a></div>
               </div>
             <p class="msg_head">Standard 4.8 Resource Management and Logistics</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd481s /></a></div><hr />
-                <div><a href="#"><collection:estd482s /></a></div><hr />
-                <div><a href="#"><collection:estd483s /></a></div>
+                <div><a href="#"><collection:emap_481_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_482_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_483_findings /></a></div>
                 <p class="msg_head">Standard 4.8.4</p>
                   <div class="msg_sub_body">
-                    <div><a href="#"><collection:estd4841s /></a></div><hr />
-                    <div><a href="#"><collection:estd4842s /></a></div><hr />
-                    <div><a href="#"><collection:estd4843s /></a></div><br />
+                    <div><a href="#"><collection:emap_4841_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_4842_findings /></a></div><hr />
+                    <div><a href="#"><collection:emap_4843_findings /></a></div><br />
                   </div>
-                <div><a href="#"><collection:estd485s /></a></div><hr />
-                <div><a href="#"><collection:estd486s /></a></div>
+                <div><a href="#"><collection:emap_485_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_486_findings /></a></div>
               </div>
             <p class="msg_head">Standard 4.9 Mutual Aid</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd491s /></a></div><hr />
-                <div><a href="#"><collection:estd492s /></a></div>
+                <div><a href="#"><collection:emap_491_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_492_findings /></a></div>
               </div>
             <p class="msg_head">Standard 4.10 Communications and Warning</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd4101s /></a></div><hr />
-                <div><a href="#"><collection:estd4102s /></a></div><hr />
-                <div><a href="#"><collection:estd4103s /></a></div><hr />
-                <div><a href="#"><collection:estd4104s /></a></div><hr />
-                <div><a href="#"><collection:estd4105s /></a></div><hr />
-                <div><a href="#"><collection:estd4106s /></a></div><hr />
-                <div><a href="#"><collection:estd4107s /></a></div>
+                <div><a href="#"><collection:emap_4101_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4102_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4103_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4104_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4105_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4106_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4107_findings /></a></div>
               </div>
             <p class="msg_head">Standard 4.11 Operations and Procedures</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd4111s /></a></div><hr />
-                <div><a href="#"><collection:estd4112s /></a></div><hr />
-                <div><a href="#"><collection:estd4113s /></a></div><hr />
-                <div><a href="#"><collection:estd4114s /></a></div>
+                <div><a href="#"><collection:emap_4111_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4112_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4113_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4114_findings /></a></div>
               </div>
             <p class="msg_head">Standard 4.12 Facilities</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd4121s /></a></div><hr />
-                <div><a href="#"><collection:estd4122s /></a></div>
+                <div><a href="#"><collection:emap_4121_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4122_findings /></a></div>
               </div>
             <p class="msg_head">Standard 4.13 Training</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd4131s /></a></div><hr />
-                <div><a href="#"><collection:estd4132s /></a></div><hr />
-                <div><a href="#"><collection:estd4133s /></a></div><hr />
-                <div><a href="#"><collection:estd4134s /></a></div>
+                <div><a href="#"><collection:emap_4131_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4132_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4133_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4134_findings /></a></div>
               </div>
             <p class="msg_head">Standard 4.14 Exercises, Evaluations and Corrective Actions</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:estd4141s /></a></div><hr />
-                <div><a href="#"><collection:estd4142s /></a></div><hr />
-                <div><a href="#"><collection:estd4143s /></a></div>
+                <div><a href="#"><collection:emap_4141_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4142_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4143_findings /></a></div>
               </div>
             <p class="msg_head">Standard 4.15 Crisis Communications, Public Education and Information</p>
               <div class="msg_sub_body">
-                  <div><a href="#"><collection:estd4151s /></a></div>
+                  <div><a href="#"><collection:emap_4151_findings /></a></div>
                   <p class="msg_head">Standard 4.15.2</p>
                     <div class="msg_sub_body">
-                      <div><a href="#"><collection:estd41521s /></a></div><hr />
-                      <div><a href="#"><collection:estd41522s /></a></div><hr />
-                      <div><a href="#"><collection:estd41523s /></a></div><hr />
-                      <div><a href="#"><collection:estd41524s /></a></div><hr />
-                      <div><a href="#"><collection:estd41525s /></a></div>
+                      <div><a href="#"><collection:emap_41521_findings /></a></div><hr />
+                      <div><a href="#"><collection:emap_41522_findings /></a></div><hr />
+                      <div><a href="#"><collection:emap_41523_findings /></a></div><hr />
+                      <div><a href="#"><collection:emap_41524_findings /></a></div><hr />
+                      <div><a href="#"><collection:emap_41525_findings /></a></div>
                     </div>
-                <div><a href="#"><collection:estd4153s /></a></div><hr />
-                <div><a href="#"><collection:estd4154s /></a></div><hr />
-                <div><a href="#"><collection:estd4155s /></a></div>
+                <div><a href="#"><collection:emap_4153_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4154_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4155_findings /></a></div>
               </div>
           </div>
       </div>
     </div>
 
 <!--  USAFRICOM Section  -->
+
 
     <div class="msg_list">
     <p class="msg_head">Military Review by U.S.AFRICOM</p>
@@ -199,183 +199,183 @@
           <div class="msg_sub_body">
             <p class="msg_head">Area 1.1</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:mil111s /></a></div><hr />
-                <div><a href="#"><collection:mil112s /></a></div><hr />
+                <div><a href="#"><collection:mil_111_findings /></a></div><hr />
+                <div><a href="#"><collection:mil_112_findings /></a></div><hr />
               </div> 
-            <div><a href="#"><collection:mil121s /></a></div><hr />
-            <div><a href="#"><collection:mil131s /></a></div><hr />
-            <div><a href="#"><collection:mil141s /></a></div>
+            <div><a href="#"><collection:mil_121_findings /></a></div><hr />
+            <div><a href="#"><collection:mil_131_findings /></a></div><hr />
+            <div><a href="#"><collection:mil_141_findings /></a></div>
           </div>
         <p class="msg_head">Area 2 - LEGAL AUTHORITIES</p>
           <div class="msg_sub_body">
-            <div><a href="#"><collection:mil211s /></a></div><hr />
-            <div><a href="#"><collection:mil212s /></a></div><hr />
+            <div><a href="#"><collection:mil_211_findings /></a></div><hr />
+            <div><a href="#"><collection:mil_212_findings /></a></div><hr />
             <p class="msg_head">Area 2.2</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:mil221s /></a></div><hr />
-                <div><a href="#"><collection:mil222s /></a></div><hr />
+                <div><a href="#"><collection:mil_221_findings /></a></div><hr />
+                <div><a href="#"><collection:mil_222_findings /></a></div><hr />
               </div>
-            <div><a href="#"><collection:mil231s /></a></div>
+            <div><a href="#"><collection:mil_231_findings /></a></div>
           </div>
         <p class="msg_head">Area 3 - PLANNING</p>
           <div class="msg_sub_body">
-            <div><a href="#"><collection:mil311s /></a></div><hr />
-            <div><a href="#"><collection:mil321s /></a></div><hr />
-            <div><a href="#"><collection:mil331s /></a></div><hr />
-            <div><a href="#"><collection:mil341s /></a></div><hr />
-            <div><a href="#"><collection:mil351s /></a></div><hr />
-            <div><a href="#"><collection:mil361s /></a></div><hr />
-            <div><a href="#"><collection:mil371s /></a></div><hr />
-            <div><a href="#"><collection:mil381s /></a></div><hr />
-            <div><a href="#"><collection:mil391s /></a></div><hr />
+            <div><a href="#"><collection:mil_311_findings /></a></div><hr />
+            <div><a href="#"><collection:mil_321_findings /></a></div><hr />
+            <div><a href="#"><collection:mil_331_findings /></a></div><hr />
+            <div><a href="#"><collection:mil_341_findings /></a></div><hr />
+            <div><a href="#"><collection:mil_351_findings /></a></div><hr />
+            <div><a href="#"><collection:mil_361_findings /></a></div><hr />
+            <div><a href="#"><collection:mil_371_findings /></a></div><hr />
+            <div><a href="#"><collection:mil_381_findings /></a></div><hr />
+            <div><a href="#"><collection:mil_391_findings /></a></div><hr />
             <p class="msg_head">Area 3.10</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:mil3101s /></a></div><hr />
-                <div><a href="#"><collection:mil3102s /></a></div><hr />
-                <div><a href="#"><collection:mil3103s /></a></div>
+                <div><a href="#"><collection:mil_3101_findings /></a></div><hr />
+                <div><a href="#"><collection:mil_3102_findings /></a></div><hr />
+                <div><a href="#"><collection:mil_3103_findings /></a></div>
               </div>
           </div>
         <p class="msg_head">Area 4 - LOGISTICS</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:mil411s /></a></div><hr />
-             <div><a href="#"><collection:mil412s /></a></div><hr />
-             <div><a href="#"><collection:mil413s /></a></div><hr />
-             <div><a href="#"><collection:mil421s /></a></div><hr />
-             <div><a href="#"><collection:mil431s /></a></div><hr />
-             <div><a href="#"><collection:mil432s /></a></div><hr />
-             <div><a href="#"><collection:mil441s /></a></div><hr />
-             <div><a href="#"><collection:mil442s /></a></div><hr />
-             <div><a href="#"><collection:mil451s /></a></div><hr />
-             <div><a href="#"><collection:mil452s /></a></div><hr />
-             <div><a href="#"><collection:mil453s /></a></div><hr />
-             <div><a href="#"><collection:mil461s /></a></div><hr />
-             <div><a href="#"><collection:mil462s /></a></div><hr />
-             <div><a href="#"><collection:mil463s /></a></div><hr />
-             <div><a href="#"><collection:mil464s /></a></div><hr />
-             <div><a href="#"><collection:mil465s /></a></div>
+             <div><a href="#"><collection:mil_411_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_412_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_413_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_421_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_431_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_432_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_441_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_442_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_451_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_452_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_453_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_461_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_462_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_463_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_464_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_465_findings /></a></div>
           </div>
         <p class="msg_head">Area 5 - COMMUNICATION</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:mil511s /></a></div><hr />
-             <div><a href="#"><collection:mil512s /></a></div><hr />
-             <div><a href="#"><collection:mil513s /></a></div><hr />
-             <div><a href="#"><collection:mil521s /></a></div><hr />
-             <div><a href="#"><collection:mil522s /></a></div><hr />
-             <div><a href="#"><collection:mil531s /></a></div><hr />
-             <div><a href="#"><collection:mil532s /></a></div><hr />
-             <div><a href="#"><collection:mil533s /></a></div><hr />
-             <div><a href="#"><collection:mil534s /></a></div><hr />
-             <div><a href="#"><collection:mil535s /></a></div><hr />
-             <div><a href="#"><collection:mil536s /></a></div><hr />
-             <div><a href="#"><collection:mil537s /></a></div><hr />
-             <div><a href="#"><collection:mil538s /></a></div>
+             <div><a href="#"><collection:mil_511_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_512_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_513_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_521_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_522_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_531_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_532_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_533_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_534_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_535_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_536_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_537_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_538_findings /></a></div>
           </div>
         <p class="msg_head">Area 6 - PERSONNEL</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:mil611s /></a></div><hr />
-             <div><a href="#"><collection:mil621s /></a></div>
+             <div><a href="#"><collection:mil_611_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_621_findings /></a></div>
           </div>
         <p class="msg_head">Area 7 - TRAINING/EXERCISES</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:mil711s /></a></div><hr />
-             <div><a href="#"><collection:mil712s /></a></div><hr />
-             <div><a href="#"><collection:mil713s /></a></div><hr />
-             <div><a href="#"><collection:mil714s /></a></div><hr />
-             <div><a href="#"><collection:mil721s /></a></div><hr />
-             <div><a href="#"><collection:mil722s /></a></div><hr />
-             <div><a href="#"><collection:mil723s /></a></div><hr />
-             <div><a href="#"><collection:mil724s /></a></div><hr />
-             <div><a href="#"><collection:mil725s /></a></div><hr />
-             <div><a href="#"><collection:mil731s /></a></div><hr />
-             <div><a href="#"><collection:mil741s /></a></div><hr />
-             <div><a href="#"><collection:mil751s /></a></div>
+             <div><a href="#"><collection:mil_711_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_712_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_713_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_714_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_721_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_722_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_723_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_724_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_725_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_731_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_741_findings /></a></div><hr />
+             <div><a href="#"><collection:mil_751_findings /></a></div>
           </div>
       </div>
     </div>
 
 <!--  CDHAM Section  -->
 
+
     <div class="msg_list">
-    <p class="msg_head">Medical Review by CDHAM<!-- add count info here --></p>
+    <p class="msg_head">Medical Review by CDHAM</p>
       <div class="msg_sub_body">
         <p class="msg_head">Area 1 - Legal Authority</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:med11s /></a></div><hr />
-             <div><a href="#"><collection:med12s /></a></div>
+             <div><a href="#"><collection:med_11_findings /></a></div><hr />
+             <div><a href="#"><collection:med_12_findings /></a></div>
           </div>
         <p class="msg_head">Area 2 - Planning</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:med21s /></a></div><hr />
-             <div><a href="#"><collection:med22s /></a></div><hr />
-             <div><a href="#"><collection:med23s /></a></div><hr />
-             <div><a href="#"><collection:med24s /></a></div><hr />
-             <div><a href="#"><collection:med25s /></a></div><hr />
-             <div><a href="#"><collection:med26s /></a></div><hr />
-             <div><a href="#"><collection:med27s /></a></div><hr />
-             <div><a href="#"><collection:med28s /></a></div>
+             <div><a href="#"><collection:med_21_findings /></a></div><hr />
+             <div><a href="#"><collection:med_22_findings /></a></div><hr />
+             <div><a href="#"><collection:med_23_findings /></a></div><hr />
+             <div><a href="#"><collection:med_24_findings /></a></div><hr />
+             <div><a href="#"><collection:med_25_findings /></a></div><hr />
+             <div><a href="#"><collection:med_26_findings /></a></div><hr />
+             <div><a href="#"><collection:med_27_findings /></a></div><hr />
+             <div><a href="#"><collection:med_28_findings /></a></div>
           </div>
         <p class="msg_head">Area 3 - Human Resources</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:med31s /></a></div><hr />
-             <div><a href="#"><collection:med32s /></a></div><hr />
-             <div><a href="#"><collection:med33s /></a></div>
+             <div><a href="#"><collection:med_31_findings /></a></div><hr />
+             <div><a href="#"><collection:med_32_findings /></a></div><hr />
+             <div><a href="#"><collection:med_33_findings /></a></div>
           </div>
         <p class="msg_head">Area 4 - Patient Care and Administration</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:med41s /></a></div><hr />
-             <div><a href="#"><collection:med42s /></a></div><hr />
-             <div><a href="#"><collection:med43s /></a></div><hr />
-             <div><a href="#"><collection:med44s /></a></div><hr />
-             <div><a href="#"><collection:med45s /></a></div>
+             <div><a href="#"><collection:med_41_findings /></a></div><hr />
+             <div><a href="#"><collection:med_42_findings /></a></div><hr />
+             <div><a href="#"><collection:med_43_findings /></a></div><hr />
+             <div><a href="#"><collection:med_44_findings /></a></div><hr />
+             <div><a href="#"><collection:med_45_findings /></a></div>
           </div>
         <p class="msg_head">Area 5 - Logistics and Facilities</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:med51s /></a></div><hr />
-             <div><a href="#"><collection:med52s /></a></div><hr />
-             <div><a href="#"><collection:med53s /></a></div><hr />
-             <div><a href="#"><collection:med54s /></a></div><hr />
-             <div><a href="#"><collection:med55s /></a></div><hr />
-             <div><a href="#"><collection:med56s />.</a></div>
+             <div><a href="#"><collection:med_51_findings /></a></div><hr />
+             <div><a href="#"><collection:med_52_findings /></a></div><hr />
+             <div><a href="#"><collection:med_53_findings /></a></div><hr />
+             <div><a href="#"><collection:med_54_findings /></a></div><hr />
+             <div><a href="#"><collection:med_55_findings /></a></div><hr />
+             <div><a href="#"><collection:med_56_findings />.</a></div>
           </div>
         <p class="msg_head">Area 6 - Transportation</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:med61s /></a></div><hr />
-             <div><a href="#"><collection:med62s /></a></div>
+             <div><a href="#"><collection:med_61_findings /></a></div><hr />
+             <div><a href="#"><collection:med_62_findings /></a></div>
           </div>
         <p class="msg_head">Area 7 - Communications</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:med71s /></a></div>
+             <div><a href="#"><collection:med_71_findings /></a></div>
           </div>
         <p class="msg_head">Area 8 - Security</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:med81s /></a></div>
+             <div><a href="#"><collection:med_81_findings /></a></div>
           </div>
         <p class="msg_head">Area 9 - Civil-Military Cooperation</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:med91s /></a></div><hr />
-             <div><a href="#"><collection:med92s /></a></div><hr />
-             <div><a href="#"><collection:med93s /></a></div><hr />
-             <div><a href="#"><collection:med94s /></a></div>
+             <div><a href="#"><collection:med_91_findings /></a></div><hr />
+             <div><a href="#"><collection:med_92_findings /></a></div><hr />
+             <div><a href="#"><collection:med_93_findings /></a></div><hr />
+             <div><a href="#"><collection:med_94_findings /></a></div>
           </div>
         <p class="msg_head">Area 10 - Mutual Aid</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:med101s /></a></div><hr />
-             <div><a href="#"><collection:med102s /></a></div>
+             <div><a href="#"><collection:med_101_findings /></a></div><hr />
+             <div><a href="#"><collection:med_102_findings /></a></div>
           </div>
         <p class="msg_head">Area 11 - Training and Exercises</p>
           <div class="msg_sub_body">
-             <div><a href="#"><collection:med111s /></a></div><hr />
-             <div><a href="#"><collection:med112s /></a></div>
+             <div><a href="#"><collection:med_111_findings /></a></div><hr />
+             <div><a href="#"><collection:med_112_findings /></a></div>
           </div>
       </div>
     </div><br /><br /><br />
     </div>
-    
+
     <div class="review_summary">
-      <p>Total Number of Area Elements: 205<br/>
-      Total Numbet of First Reads Completed: (Not Available)/205<br />
-      Total Number of Second Reads Completed: (Not Available)/205<br />
-      Total Number of Area Elements marked Completed: (Not Available)/205</p>
+      <p>Total Numbet of First Reads Completed:  <% @pcount.count %> out of 205<br />
+      Total Number of Second Reads Completed: <% @sec_count %> out of 205<br />
+      Total Number of Area Elements marked Completed: <% @com_count %> out of 205</p>
     </div>
     
   </content-body:>

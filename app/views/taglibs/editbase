@@ -10,8 +10,8 @@
     <content: param>
       <header param="content-header">
         <div class="std_info">
-        <h3>EMAP Standard 3.1.1</h3>
-          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
+          <field-list fields="area.standard, area.name," /><br /><hr />
+          <field-list fields="area.dp3, area.dp3_lang" /><br /><hr />
           <field-list fields="area.overview, area.language" /><br />
         </div>
         <h2 param="heading">
@@ -38,8 +38,8 @@
     <content:>
       <header param="content-header">
         <div class="std_info">
-        <h3>EMAP Standard 3.1.1</h3>
-          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
+          <field-list fields="area.standard, area.name," /><br /><hr />
+          <field-list fields="area.dp3, area.dp3_lang" /><br /><hr />
           <field-list fields="area.overview, area.language" /><br />
         </div>
         <h2 param="heading">Enter Finding</h2>
@@ -62,9 +62,10 @@
     <content:>
       <header param="content-header">
         <div class="std_info">
-        <h3>EMAP Standard 3.1.1</h3>
-          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
-          <field-list fields="area.overview, area.language, rational, observation, recomendations, decision" /><br />
+          <field-list fields="area.standard, area.name," />
+          <field-list fields="area.dp3, area.dp3_lang" /><br /><hr />
+          <field-list fields="area.overview, area.language" /><br /><hr />
+          <field-list fields="rational, observation, recomendations, decision" /><br /> 
         </div>
         <h2 param="heading">Second Read</h2>
       </header>
@@ -85,9 +86,12 @@
 
     <content:>
       <header param="content-header">
-        <h3>EMAP Standard 3.1.1</h3>
-          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
-          <field-list fields="area.overview, area.language" /><br />
+        <div class="std_info">
+          <field-list fields="area.standard, area.name," />
+          <field-list fields="area.dp3, area.dp3_lang" /><br /><hr />
+          <field-list fields="area.overview, area.language" /><br /><hr />
+          <field-list fields="rational, observation, recomendations, decision" /><br /> 
+        </div>
         <h2 param="heading">First Read</h2>
       </header>
 
@@ -108,9 +112,10 @@
     <content:>
       <header param="content-header">
         <div class="std_info">
-          <h3>EMAP Standard 3.1.1</h3>
-          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
-          <field-list fields="area.overview, area.language, rational, observation, recomendations, decision" /><br />
+          <field-list fields="area.standard, area.name," />
+          <field-list fields="area.dp3, area.dp3_lang" />
+          <field-list fields="area.overview, area.language" /><br />
+          <field-list fields="rational, observation, recomendations, decision" /><br />
         </div>
         <h2 param="heading">Second Read</h2>
       </header>
@@ -131,10 +136,10 @@
 
     <content:>
       <header param="content-header">
-        <h3>EMAP Standard 3.1.1</h3>
-          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
-          <field-list fields="area.overview, area.language, rational, observation, recomendations, sec_obs" /><br />
-        <h2 param="heading">Mark Complete</h2>
+        <field-list fields="area.standard, area.name," /><br /><hr />
+        <field-list fields="area.dp3, area.dp3_lang" /><br /><hr />
+        <field-list fields="area.overview, area.language" /><br />
+        <field-list fields="rational, observation, recomendations, decision, sec_obs, concur" /><br />
       </header>
 
       <section param="content-body">
@@ -153,9 +158,12 @@
 
     <content:>
       <header param="content-header">
-        <h3>EMAP Standard 3.1.1</h3>
-          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
-          <field-list fields="area.overview, area.language" /><br />
+        <div class="std_info">
+          <field-list fields="area.standard, area.name," />
+          <field-list fields="area.dp3, area.dp3_lang" /><br /><hr />
+          <field-list fields="area.overview, area.language" /><br /><hr />
+          <field-list fields="rational, observation, recomendations, decision, sec_obs, concur" /><br /> 
+        </div>
         <h2 param="heading">First Read</h2>
       </header>
 
@@ -175,9 +183,12 @@
 
     <content:>
       <header param="content-header">
-        <h3>EMAP Standard 3.1.1</h3>
-          <p>A Program shall include a multi-year strategic plan developed in coordination with Emergency Management Program stakeholders that defines the mission, goals, objectives and milestones and includes an executive policy or vision statement.</p>
-          <field-list fields="area.overview, area.language, rational, observation, recomendations, sec_obs" /><br />
+        <div class="std_info">
+          <field-list fields="area.standard, area.name," />
+          <field-list fields="area.dp3, area.dp3_lang" /><br /><hr />
+          <field-list fields="area.overview, area.language" /><br /><hr />
+          <field-list fields="rational, observation, recomendations, decision" /><br /> 
+        </div>
         <h2 param="heading">Second Read</h2>
       </header>
 
@@ -189,113 +200,4 @@
   </page>
 </def>
 
-<!-- Form Stuff  -->
 
-<def tag="unstarted-form" polymorphic/>
-<def tag="unstarted-form" for="Estd311">
-  <form lifecycle="unstarted" merge param="default">
-    <error-messages param/>
-    <field-list fields="decision, rational, observation, recomendations, previewer" param/>
-    <div param="actions">
-      <submit label="#{ht 'estd311.actions.unstarted', :default=>['Unstarted']}" param/><or-cancel param="cancel"/>
-    </div>
-    <after-submit uri="/programs/#{this.program_id}"/>
-  </form>
-</def>
-
-<def tag="enter-finding-form" polymorphic/>
-<def tag="enter-finding-form" for="Estd311">
-  <form lifecycle="enter_finding" merge param="default">
-    <error-messages param/>
-    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="decision, rational, observation, recomendations, previewer" param/>
-    <div param="actions">
-      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.enter_finding', :default=>['Submit']}" param/><or-cancel param="cancel"/>
-    </div>
-    <after-submit uri="/programs/#{this.program_id}"/>
-  </form>
-</def>
-<def tag="revisit-finding-form" polymorphic/>
-<def tag="revisit-finding-form" for="Estd311">
-  <form lifecycle="revisit_finding" merge param="default">
-    <error-messages param/>
-    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="decision, rational, observation, recomendations, previewer" param/>
-    <div param="actions">
-      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.revisit_finding', :default=>['Submit']}" param/><or-cancel param="cancel"/>
-    </div>
-    <after-submit uri="/programs/#{this.program_id}"/>
-  </form>
-</def>
-<def tag="second-read-form" polymorphic/>
-<def tag="second-read-form" for="Estd311">
-  <form lifecycle="second_read" merge param="default">
-    <error-messages param/>
-    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="concur, sec_obs, sreviewer" param/>
-    <div param="actions">
-      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.second_read', :default=>['Submit']}" param/><or-cancel param="cancel"/>
-    </div>
-    <after-submit uri="/programs/#{this.program_id}"/>
-  </form>
-</def>
-<def tag="return-to-secondary-form" polymorphic/>
-<def tag="return-to-secondary-form" for="Estd311">
-  <form lifecycle="return_to_secondary" merge param="default">
-    <error-messages param/>
-    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="concur, sec_obs, sreviewer" param/>
-    <div param="actions">
-      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.return_to_secondary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
-    </div>
-    <after-submit uri="/programs/#{this.program_id}"/>
-  </form>
-</def>
-<def tag="return-to-primary-form" polymorphic/>
-<def tag="return-to-primary-form" for="Estd311">
-  <form lifecycle="return_to_primary" merge param="default">
-    <error-messages param/>
-    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="rational, observation, recomendations, decision" param/>
-    <div param="actions">
-      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.return_to_primary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
-    </div>
-    <after-submit uri="/programs/#{this.program_id}"/>
-  </form>
-</def>
-<def tag="mark-complete-form" polymorphic/>
-<def tag="mark-complete-form" for="Estd311">
-  <form lifecycle="mark_complete" merge param="default">
-    <error-messages param/>
-    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="mark_complete" param/>
-    <div param="actions">
-      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.mark_complete', :default=>['Mark Complete']}" param/><or-cancel param="cancel"/>
-    </div>
-    <after-submit uri="/programs/#{this.program_id}"/>
-  </form>
-</def>
-<def tag="reopen-primary-form" polymorphic/>
-<def tag="reopen-primary-form" for="Estd311">
-  <form lifecycle="reopen_primary" merge param="default">
-    <error-messages param/>
-    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="rational, observation, recomendations, decision" param/>
-    <div param="actions">
-      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.reopen_primary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
-    </div>
-    <after-submit uri="/programs/#{this.program_id}"/>
-  </form>
-</def>
-<def tag="reopen-secondary-form" polymorphic/>
-<def tag="reopen-secondary-form" for="Estd311">
-  <form lifecycle="reopen_secondary" merge param="default">
-    <error-messages param/>
-    <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="concur, sec_obs, sreviewer" param/>
-    <div param="actions">
-      <submit label="#{t 'activerecord.attributes.estd311.lifecycle.transitions.reopen_secondary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
-    </div>
-    <after-submit uri="/programs/#{this.program_id}"/>
-  </form>
-</def>

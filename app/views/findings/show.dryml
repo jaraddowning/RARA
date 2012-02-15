@@ -1,7 +1,0 @@
-<show-page>
-  <old-show-page merge>
-    <content-body:>
-      <field-list fields="rational, observation, recomendations, lifecycle_state, sreviewer, sec_obs" />
-    </content-body:>
-  </old-show-page>
-</show-page>
