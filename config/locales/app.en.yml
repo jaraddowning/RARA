@@ -282,8 +282,8 @@ en:
         one: EMAP 4.11.3
         other: EMAP 4.11.3
       estd4114:
-        one: EMAP 4.11.4
-        other: EMAP 4.11.4
+        one: EMAP
+        other: EMAP
       finding:
         one: Finding
         other: Findings
