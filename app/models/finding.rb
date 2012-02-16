@@ -28,33 +28,33 @@ class Finding < ActiveRecord::Base
     state :complete
 
     create :unstarted, 
-           :params => [ :decision, :rational, :observation, :recomendations, :previewer ],
+           :params => [ :rational, :observation, :recomendations, :previewer ],
            :available_to => "User",
            :user_becomes => :all
     
     transition :enter_finding,
                {:unstarted => :primary},
-               :params => [ :decision, :rational, :observation, :recomendations, :previewer ],
+               :params => [ :rational, :observation, :recomendations, :previewer ],
                :available_to => :all
 
     transition :revisit_finding,
                {:primary => :primary},
-               :params => [ :decision, :rational, :observation, :recomendations, :previewer ],
+               :params => [ :rational, :observation, :recomendations, :previewer ],
                :available_to => :all
 
     transition :second_read,
                {:primary => :secondary},
-               :params => [ :concur, :sec_obs, :sreviewer ],
+               :params => [ :sec_obs, :sreviewer ],
                :available_to => :all
 
     transition :return_to_secondary,
                {:secondary => :secondary},
-               :params => [ :concur, :sec_obs, :sreviewer ],
+               :params => [ :sec_obs, :sreviewer ],
                :available_to => :all
 
     transition :return_to_primary,
                {:secondary => :primary},
-               :params => [ :rational, :observation, :recomendations, :decision ],
+               :params => [ :rational, :observation, :recomendations ],
                :available_to => :all
 
     transition :mark_complete,
@@ -64,12 +64,12 @@ class Finding < ActiveRecord::Base
 
     transition :reopen_secondary,
                {:complete => :secondary},
-               :params => [ :concur, :sec_obs, :sreviewer ],
+               :params => [ :sec_obs, :sreviewer ],
                :available_to => :all
 
     transition :reopen_primary,
                {:complete => :primary},
-               :params => [ :rational, :observation, :recomendations, :decision ],
+               :params => [ :rational, :observation, :recomendations ],
                :available_to => :all
 
   end

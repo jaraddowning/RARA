@@ -37,13 +37,14 @@ en:
         other: Reviews
     attributes:
       area:
-        standard: Standard
+        standard: Item Number
         name: Area
-        dp3: Group
-        dp3_lang: DP3 Language
+        dp3: DP3 Sector
+        dp3_lang: Language
         overview: Overview
         language: Language
       finding:
+        observation: Interviews
         recomendations: Recommendations
         concur: Second Read
         sec_obs: Second Read Finding

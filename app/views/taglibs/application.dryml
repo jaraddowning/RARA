@@ -19,20 +19,22 @@
       <javascript name="load_ckeditor"/>
     </custom-scripts:>
     <footer:>
-      <a href="http://emaponline.org"><img src="/images/emap_logo.jpg"/></a>
-      <a href="http://cdham.org/"><img src="/images/danland_logo.png"/></a>
-      <a href="http://www.africom.mil/"><img src="/images/africom_crest.png"/></a>
-      <a href="&emap_users_url" if="&current_user.administrator?">
-        <t key="hobo.admin.subsite_name">Emap Admin</t>
-      </a>
+      <img src="/images/emap_logo.jpg"/>
+      <img src="/images/danland_logo.png"/>
+      <img src="/images/africom_crest.png"/><br />
+      <div class="admin">
+      <!--</div>
       <div>
         <a href="/emap/privacy.html">Privacy and Security</a>
       </div>
       <div>
         <a href="http://rara.emaponline.org/bugreport.html">Bug Reporting</a>
       </div>
-      <div>
-        Copyright &#64; 2012 - EMAP  
+      <div>-->
+        Copyright &#64; 2012 - EMAP
+        <a href="&emap_users_url" if="&current_user.administrator?">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <t key="hobo.admin.subsite_name">Emap Admin</t>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </a>
       </div>
     </footer:>
   </old-page>
@@ -383,7 +385,6 @@
 
 <!-- Form stuff  -->
 
-<def tag="unstarted-form" polymorphic/>
 <def tag="unstarted-form" for="Finding">
   <form lifecycle="unstarted" merge param="default">
     <error-messages param/>
@@ -395,7 +396,6 @@
   </form>
 </def>
 
-<def tag="enter-finding-form" polymorphic/>
 <def tag="enter-finding-form" for="Finding">
   <form lifecycle="enter_finding" merge param="default">
     <error-messages param/>
@@ -407,7 +407,7 @@
     <after-submit uri="/programs/#{this.program_id}"/>
   </form>
 </def>
-<def tag="revisit-finding-form" polymorphic/>
+
 <def tag="revisit-finding-form" for="Finding">
   <form lifecycle="revisit_finding" merge param="default">
     <error-messages param/>
@@ -419,7 +419,7 @@
     <after-submit uri="/programs/#{this.program_id}"/>
   </form>
 </def>
-<def tag="second-read-form" polymorphic/>
+
 <def tag="second-read-form" for="Finding">
   <form lifecycle="second_read" merge param="default">
     <error-messages param/>
@@ -431,7 +431,7 @@
     <after-submit uri="/programs/#{this.program_id}"/>
   </form>
 </def>
-<def tag="return-to-secondary-form" polymorphic/>
+
 <def tag="return-to-secondary-form" for="Finding">
   <form lifecycle="return_to_secondary" merge param="default">
     <error-messages param/>
@@ -455,7 +455,7 @@
     <after-submit uri="/programs/#{this.program_id}"/>
   </form>
 </def>
-<def tag="mark-complete-form" polymorphic/>
+
 <def tag="mark-complete-form" for="Finding">
   <form lifecycle="mark_complete" merge param="default">
     <error-messages param/>
@@ -467,7 +467,7 @@
     <after-submit uri="/programs/#{this.program_id}"/>
   </form>
 </def>
-<def tag="reopen-primary-form" polymorphic/>
+
 <def tag="reopen-primary-form" for="Finding">
   <form lifecycle="reopen_primary" merge param="default">
     <error-messages param/>
@@ -479,7 +479,7 @@
     <after-submit uri="/programs/#{this.program_id}"/>
   </form>
 </def>
-<def tag="reopen-secondary-form" polymorphic/>
+
 <def tag="reopen-secondary-form" for="Finding">
   <form lifecycle="reopen_secondary" merge param="default">
     <error-messages param/>
