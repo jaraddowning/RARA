@@ -2,7 +2,9 @@ HoboCKEditor = {
   newEditor : function(elm, buttons) {
     if (elm.name != '') {
       oInstance = CKEDITOR.replace( elm.name ,
-      { toolbar : HoboCKEditor.standardToolbarConfig || buttons }
+      { toolbar : HoboCKEditor.standardToolbarConfig || buttons,
+        extraPlugins : 'autogrow',
+        uiColor: '#B6C9DA' }
       );
       oInstance.setData( elm.value );
       oInstance.resetDirty();
@@ -14,15 +16,10 @@ makeEditor : function(elm) {
       HoboCKEditor.newEditor(elm);
     }
   },
-standardToolbarConfig: [ ['Save','Preview','-'],
-                        ['Cut','Copy','Paste','PasteText','PasteFromWord','-','SpellChecker', 'Scayt'],
-                        ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
-                        ['HorizontalRule','SpecialChar'],
-                        '/',
-                        ['Bold','Italic','Underline','Strike','-','Subscript','Superscript'],
-                        ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote','CreateDiv'],
-                        ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
-                        ['BidiLtr', 'BidiRtl']]
+standardToolbarConfig: [ ['RemoveFormat'],
+                    ['Bold','Italic','Underline','SpecialChar'],
+                    ['NumberedList', 'BulletedList','-','Outdent','Indent','Blockquote'],
+                    ['JustifyLeft','JustifyCenter','JustifyRight','JustifyFull'] ]
   }
 
 Hobo.makeHtmlEditor = HoboCKEditor.makeEditor

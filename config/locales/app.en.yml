@@ -56,7 +56,7 @@ en:
     attribute_help:
       finding:
         rational: Enter information about the interviews regarding this element.
-        observation: Enter any other information or details obtained observations, citing documentation.
+        observation: Enter any other information or details obtained during observations, citing documentation.
         recomendations: Enter any recommendations for the improvement of this area.
         decision: Does the Nation satisfy the intent of the area? (check for yes)
         previewer: Please select your name from the list.
