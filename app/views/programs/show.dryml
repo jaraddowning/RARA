@@ -423,22 +423,26 @@
 
     <div class="review_summary">
       <h2>Review Summary</h2>
-      <span class="sums">Number of areas not yet addressed:
+      Number of areas not yet addressed:
+      <span class="sums">
           <ht key="finding.collection.count" count="&this.unstarted_findings.count">
             <human-collection-name collection="findings" />
           </ht> out of 205.
       </span><br />
-      <span class="sums">Number of First Reads Completed:
+      Number of First Reads Completed:
+      <span class="sums">
           <ht key="finding.collection.count" count="&this.primary_findings.count">
             <human-collection-name collection="findings" />
           </ht> out of 205.
       </span><br />
-      <span class="sums">Number of Second Reads Completed:
+      Number of Second Reads Completed:
+      <span class="sums">
           <ht key="finding.collection.count" count="&this.secondary_findings.count">
             <human-collection-name collection="findings" />
           </ht> out of 205.
       </span><br />
-      <span class="sums">Number of Area Elements marked Completed:
+      Number of Area Elements marked Completed:
+      <span class="sums">
           <ht key="finding.collection.count" count="&this.complete_findings.count">
             <human-collection-name collection="findings" />
           </ht> out of 205.

@@ -40,5 +40,11 @@ right: 8px;
 top: 43px;
 }
 .review_summary {
-text-align: left
+text-align: left;
+left: 10px;
+}
+.counter {
+text-align: right;
+}
+.sums {
 }
