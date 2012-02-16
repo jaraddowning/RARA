@@ -19,7 +19,7 @@
       <javascript name="load_ckeditor"/>
     </custom-scripts:>
     <footer:>
-      <img src="/images/emap_logo.jpg"/>
+      <img src="/images/EMAPlogo.png"/>
       <img src="/images/danland_logo.png"/>
       <img src="/images/africom_crest.png"/><br />
       <div class="admin">
