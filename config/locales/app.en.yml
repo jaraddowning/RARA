@@ -39,12 +39,14 @@ en:
       area:
         standard: Item Number
         name: Area
-        dp3: DP3 Sector
-        dp3_lang: Language
+        dp3_sector: DP3 Sector
+        dp3_overview: Overview
+        dp3_lang: Element
         overview: Overview
         language: Language
       finding:
-        observation: Interviews
+        rational: Interviews
+        observation: Observations
         recomendations: Recommendations
         concur: Second Read
         sec_obs: Second Read Finding
@@ -53,9 +55,9 @@ en:
         lifecycle_state: Read Completed
     attribute_help:
       finding:
-        rational: Enter the information that led to your decision, citing documentation.
-        observation: Enter any other information or details obtained via interviews and/or observations.
-        recomendations: Enter any recommendations  for the improvement of this area.
+        rational: Enter information about the interviews regarding this element.
+        observation: Enter any other information or details obtained observations, citing documentation.
+        recomendations: Enter any recommendations for the improvement of this area.
         decision: Does the Nation satisfy the intent of the area? (check for yes)
         previewer: Please select your name from the list.
         sreviewer: Please select your name from the list.

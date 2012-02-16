@@ -53,36 +53,13 @@
 </def>
 
 
-<def tag="index-page" for="Program">
-  <page merge title="#{ht 'program.index.title', :default=>[model.model_name.human(:count=>100)] }">
-    <body: class="index-page program" param/>
-
-    <content: param>
-      <header param="content-header">
-        <h2 param="header">
-          Nation to Review
-          <!--<ht key="program.index.header">
-            <model-name-human model="&model"/>
-          </ht>-->
-        </h2>
-      </header>
-
-      <section param="content-body">
-        <a action="new" to="&model" param="new-link">
-          <ht key="program.actions.new">New Program</ht>
-        </a>
-
-        <page-nav param="top-page-nav"/>
-        
-        <collection />
-
-        <page-nav param="bottom-page-nav"/>
-
-
-      </section>
-    </content:>
-  </page>
-</def>
+<extend tag="index-page" for="Program">
+  <old-index-page merge>
+    <content-header: >
+      <h2 param="header">Nation to Review</h2>
+    </content-header:>
+  </old-index-page>
+</extend>
 
 <def tag="card" for="Area">
   <card class="area" merge>
@@ -100,15 +77,6 @@
       <h3><a><name /></a></h3>
     </header>
     <body>
-      <div class="decision">
-        Finding:<view:decision />
-      </div>
-      <div class="secondread">
-        Second Read:<view:concur />
-      </div>
-      <div class="complete">
-        Completed:<view:mark_complete />
-      </div>
       <transition-buttons />
     </body>
     
@@ -124,23 +92,19 @@
       <h5><a:program param="parent-link">&laquo; Back to <name/></a:program></h5><br />
       <br />
       <div>
-        <field-list fields="name, area.dp3" />
+        <field-list fields="name, area.dp3_sector" />
       </div>
       <div>
-        <field-list fields="area.dp3_lang" />
-      </div>
-      <div>
-        <field-list fields="program, area, area.overview, area.language" /><br />
+        <field-list fields="area.dp3_overview, area.dp3_lang" />
       </div>
     </heading:>
     <record-flags: fields="" />
     <content-body:>
-      <field-list fields="previewer, decision, rational, observation, recomendations, sec_obs, concur, sreviewer" param/>
+      <field-list fields="previewer, rational, observation, recomendations, sec_obs,sreviewer" param/>
     </content-body:>
   </old-show-page>
 </extend>
 
-<def tag="unstarted-page" polymorphic/>
 <def tag="unstarted-page" for="Finding">
 
   <page title="#{ht 'finding.unstarted.title', :default=>['Unstarted']}" merge>
@@ -153,10 +117,7 @@
           <field-list fields="area.standard, area.name," /><hr /><br />
         </div>
         <div>
-          <field-list fields="area.dp3, area.dp3_lang" /><hr /><br />
-        </div>
-        <div>
-          <field-list fields="area.overview, area.language" /><br />
+          <field-list fields="area.dp3_sector, area.dp3_overview, area.dp3_lang" /><hr /><br />
         </div>
         <h2 param="heading">
           <ht key="finding.unstarted.heading">
@@ -173,7 +134,6 @@
   </page>
 </def>
 
-<def tag="enter-finding-page" polymorphic/>
 <def tag="enter-finding-page" for="Finding">
   <page title="#{ht 'finding.enter_finding.title', :default=>['Enter Finding']}" merge>
 
@@ -185,10 +145,7 @@
           <field-list fields="area.standard, area.name," /><hr /><br />
         </div>
         <div>
-          <field-list fields="area.dp3, area.dp3_lang" /><hr /><br />
-        </div>
-        <div>
-          <field-list fields="area.overview, area.language" /><br />
+          <field-list fields="area.dp3_sector, area.dp3_overview, area.dp3_lang" /><hr /><br />
         </div>
         <h2 param="heading">Enter Finding</h2>
       </header>
@@ -201,7 +158,6 @@
   </page>
 </def>
 
-<def tag="second-read-page" polymorphic/>
 <def tag="second-read-page" for="Finding">
   <page title="#{ht 'finding.second_read.title', :default=>['Second Read']}" merge>
 
@@ -213,13 +169,10 @@
           <field-list fields="area.standard, area.name," /><hr /><br />
         </div>
         <div>
-          <field-list fields="area.dp3, area.dp3_lang" /><hr /><br />
+          <field-list fields="area.dp3_sector, area.dp3_overview, area.dp3_lang" /><hr /><br />
         </div>
         <div>
-          <field-list fields="area.overview, area.language" /><hr /><br />
-        </div>
-        <div>
-          <field-list fields="rational, observation, recomendations, decision" /><br /> 
+          <field-list fields="rational, observation, recomendations" /><br /> 
         </div>
         <h2 param="heading">Second Read</h2>
       </header>
@@ -232,7 +185,6 @@
   </page>
 </def>
 
-<def tag="return-to-primary-page" polymorphic/>
 <def tag="return-to-primary-page" for="Finding">
   <page title="#{ht 'finding.return_to_primary.title', :default=>['Return To Primary']}" merge>
 
@@ -244,13 +196,10 @@
           <field-list fields="area.standard, area.name," /><hr /><br />
         </div>
         <div>
-          <field-list fields="area.dp3, area.dp3_lang" /><hr /><br />
+          <field-list fields="area.dp3_sector, area.dp3_overview, area.dp3_lang" /><hr /><br />
         </div>
         <div>
-          <field-list fields="area.overview, area.language" /><hr /><br />
-        </div>
-        <div>
-          <field-list fields="rational, observation, recomendations, decision" /><br /> 
+          <field-list fields="rational, observation, recomendations" /><br /> 
         </div>
         <h2 param="heading">First Read</h2>
       </header>
@@ -263,7 +212,6 @@
   </page>
 </def>
 
-<def tag="return-to-secondary-page" polymorphic/>
 <def tag="return-to-secondary-page" for="Finding">
   <page title="#{ht 'finding.return_to_secondary.title', :default=>['Return To Secondary']}" merge>
 
@@ -275,13 +223,10 @@
           <field-list fields="area.standard, area.name," /><hr /><br />
         </div>
         <div>
-          <field-list fields="area.dp3, area.dp3_lang" /><hr /><br />
+          <field-list fields="area.dp3_sector, area.dp3_overview, area.dp3_lang" /><hr /><br />
         </div>
         <div>
-          <field-list fields="area.overview, area.language" /><hr /><br />
-        </div>
-        <div>
-          <field-list fields="rational, observation, recomendations, decision" /><hr /><br />
+          <field-list fields="rational, observation, recomendations" /><hr /><br />
         </div>
         <h2 param="heading">Second Read</h2>
       </header>
@@ -294,7 +239,6 @@
   </page>
 </def>
 
-<def tag="mark-complete-page" polymorphic/>
 <def tag="mark-complete-page" for="Finding">
   <page title="#{ht 'finding.mark_complete.title', :default=>['Mark Complete']}" merge>
 
@@ -306,16 +250,13 @@
           <field-list fields="area.standard, area.name," /><hr /><br />
         </div>
         <div>
-          <field-list fields="area.dp3, area.dp3_lang" /><br />
-        </div>
-        <div>
-          <field-list fields="area.overview, area.language" /><hr /><br />
+          <field-list fields="area.dp3_sector, area.dp3_overview, area.dp3_lang" /><br />
         </div>
         <div>
           <h4>First Read</h4><br />
-          <field-list fields="rational, observation, recomendations, decision, previewer" /><br />
+          <field-list fields="rational, observation, recomendations, previewer" /><br />
           <h4>Second Read</h4><br/>
-          <field-list fields="sec_obs, concur, sreviewer" /><br />
+          <field-list fields="sec_obs, sreviewer" /><br />
         </div>
       </header>
 
@@ -327,7 +268,6 @@
   </page>
 </def>
 
-<def tag="reopen-primary-page" polymorphic/>
 <def tag="reopen-primary-page" for="Finding">
   <page title="#{ht 'finding.reopen.title', :default=>['Reopen']}" merge>
 
@@ -339,13 +279,13 @@
           <field-list fields="area.standard, area.name," /><hr /><br />
         </div>
         <div>
-          <field-list fields="area.dp3, area.dp3_lang" /><hr /><br />
+          <field-list fields="area.dp3_sector, area.dp3_overview, area.dp3_lang" /><hr /><br />
         </div>
         <div>
           <field-list fields="area.overview, area.language" /><hr /><br />
         </div>
         <div>
-          <field-list fields="rational, observation, recomendations, decision, sec_obs, concur" /><br /> 
+          <field-list fields="rational, observation, recomendations, sec_obs" /><br /> 
         </div>
         <h2 param="heading">First Read</h2>
       </header>
@@ -358,7 +298,6 @@
   </page>
 </def>
 
-<def tag="reopen-secondary-page" polymorphic/>
 <def tag="reopen-secondary-page" for="Finding">
   <page title="#{ht 'finding.reopen.title', :default=>['Reopen']}" merge>
 
@@ -368,9 +307,12 @@
       <header param="content-header">
         <div class="std_info">
           <field-list fields="area.standard, area.name," /><hr /><br />
-          <field-list fields="area.dp3, area.dp3_lang" /><hr /><br />
-          <field-list fields="area.overview, area.language" /><hr /><br />
-          <field-list fields="rational, observation, recomendations, decision" /><br /> 
+        </div>
+        <div>
+          <field-list fields="area.dp3_sector, area.dp3_overview, area.dp3_lang" /><hr /><br />
+        </div>
+        <div>
+          <field-list fields="rational, observation, recomendations" /><br /> 
         </div>
         <h2 param="heading">Second Read</h2>
       </header>
@@ -388,7 +330,7 @@
 <def tag="unstarted-form" for="Finding">
   <form lifecycle="unstarted" merge param="default">
     <error-messages param/>
-    <field-list fields="decision, rational, observation, recomendations, previewer" param/>
+    <field-list fields="rational, observation, recomendations, previewer" param/>
     <div param="actions">
       <submit label="#{ht 'finding.actions.unstarted', :default=>['Unstarted']}" param/><or-cancel param="cancel"/>
     </div>
@@ -400,7 +342,7 @@
   <form lifecycle="enter_finding" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="decision, rational, observation, recomendations, previewer" param/>
+    <field-list fields="rational, observation, recomendations, previewer" param/>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.enter_finding', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
@@ -412,7 +354,7 @@
   <form lifecycle="revisit_finding" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="decision, rational, observation, recomendations, previewer" param/>
+    <field-list fields="rational, observation, recomendations, previewer" param/>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.revisit_finding', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
@@ -424,7 +366,7 @@
   <form lifecycle="second_read" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="concur, sec_obs, sreviewer" param/>
+    <field-list fields="sec_obs, sreviewer" param/>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.second_read', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
@@ -436,7 +378,7 @@
   <form lifecycle="return_to_secondary" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="concur, sec_obs, sreviewer" param/>
+    <field-list fields="sec_obs, sreviewer" param/>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.return_to_secondary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
@@ -448,7 +390,7 @@
   <form lifecycle="return_to_primary" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="rational, observation, recomendations, decision" param/>
+    <field-list fields="rational, observation, recomendations" param/>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.return_to_primary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
@@ -472,7 +414,7 @@
   <form lifecycle="reopen_primary" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="rational, observation, recomendations, decision" param/>
+    <field-list fields="rational, observation, recomendations" param/>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.reopen_primary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
@@ -484,7 +426,7 @@
   <form lifecycle="reopen_secondary" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="concur, sec_obs, sreviewer" param/>
+    <field-list fields="sec_obs, sreviewer" param/>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.reopen_secondary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>

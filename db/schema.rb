@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120216140908) do
+ActiveRecord::Schema.define(:version => 20120216163447) do
 
   create_table "areas", :force => true do |t|
     t.string   "name"
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(:version => 20120216140908) do
     t.integer  "sreviewer_id"
     t.string   "lifecycle_state", :default => "unstarted"
     t.datetime "key_timestamp"
+    t.integer  "group_id"
   end
 
   add_index "findings", ["area_id"], :name => "index_findings_on_area_id"

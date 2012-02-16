@@ -10,6 +10,7 @@ class Finding < ActiveRecord::Base
     decision       :boolean
     concur         :boolean
     sec_obs        :html
+    group_id       :integer
     mark_complete  :boolean
     timestamps
   end
