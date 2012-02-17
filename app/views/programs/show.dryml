@@ -26,7 +26,7 @@
         </span>
       </span>
     </p>
-      <div class="msg_body">
+      <div class="msg_sub_body">
 
         <p class="msg_head">Chapter 3 - Emergency Management Program</p>
           <div class="msg_sub_body">
@@ -47,7 +47,7 @@
               </div>
           </div>
 
-        <p class="msg_head" id="sub-menu">Chapter 4 - Emergency Management Program Elements</p>
+        <p class="msg_head">Chapter 4 - Emergency Management Program Elements</p>
           <div class="msg_sub_body">
             <p class="msg_head">Standard 4.1 Administration and Finance</p>
               <div class="msg_sub_body">
