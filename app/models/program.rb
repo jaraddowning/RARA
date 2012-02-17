@@ -13,6 +13,12 @@ class Program < ActiveRecord::Base
   has_many :emap_findings, :class_name => 'Finding', :conditions => {:group_id => '1', :lifecycle_state => 'complete'}
   has_many :mil_findings, :class_name => 'Finding', :conditions => {:group_id => '2', :lifecycle_state => 'complete'}
   has_many :med_findings, :class_name => 'Finding', :conditions => {:group_id => '3', :lifecycle_state => 'complete'}
+  has_many :emap_p_findings, :class_name => 'Finding', :conditions => {:group_id => '1', :lifecycle_state => 'primary'}
+  has_many :mil_p_findings, :class_name => 'Finding', :conditions => {:group_id => '2', :lifecycle_state => 'primary'}
+  has_many :med_p_findings, :class_name => 'Finding', :conditions => {:group_id => '3', :lifecycle_state => 'primary'}
+  has_many :emap_s_findings, :class_name => 'Finding', :conditions => {:group_id => '1', :lifecycle_state => 'secondary'}
+  has_many :mil_s_findings, :class_name => 'Finding', :conditions => {:group_id => '2', :lifecycle_state => 'secondary'}
+  has_many :med_s_findings, :class_name => 'Finding', :conditions => {:group_id => '3', :lifecycle_state => 'secondary'}
   has_many :primary_findings, :class_name => 'Finding', :conditions => {:lifecycle_state => 'primary'}
   has_many :secondary_findings, :class_name => 'Finding', :conditions => {:lifecycle_state => 'secondary'}
   has_many :complete_findings, :class_name => 'Finding', :conditions => {:lifecycle_state => 'complete'}

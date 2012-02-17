@@ -138,9 +138,12 @@ en:
     # default hobo collection translation
     collection:
       count: &collection_count
-        zero: "No %{model}"
-        one: "There is one %{model} "
-        other: "There are %{count} %{model}"
+        #zero: "No %{model}"
+        zero: " 0 "
+        #one: "There is one %{model} "
+        one: " 1 "
+        #other: "There are %{count} %{model}"
+        other: " %{count} "
       # you can use the following to completely override the collection heading
       # be aware that you will loose the automatic Your <collection> / Jom's <collection>
       # default output for User models

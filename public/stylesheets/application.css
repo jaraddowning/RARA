@@ -43,8 +43,51 @@ top: 43px;
 text-align: left;
 left: 10px;
 }
-.counter {
-text-align: right;
-}
+
 .sums {
+}
+
+.revbase {
+font-size:14px;
+font-weight:bold;
+margin-bottom:10px;
+}
+.counter_group {
+left: 90px;
+position: relative;
+}
+.counter1 {
+text-align: right;
+position: relative;
+left: 39px
+}
+.counter2 {
+text-align: right;
+position: relative;
+left: 25px
+}
+.counter3 {
+text-align: right;
+position: relative;
+left: 84px
+}
+.sums1 {
+text-align: right;
+position: relative;
+left: 68px
+}
+.sums2 {
+text-align: right;
+position: relative;
+left: 87px
+}
+.sums3 {
+text-align: right;
+position: relative;
+left: 73px
+}
+.sums4 {
+text-align: right;
+position: relative;
+left: 25px
 }

@@ -158,6 +158,30 @@
   </page>
 </def>
 
+<def tag="revisit-finding-page" for="Finding">
+  <page title="#{ht 'finding.revisit_finding.title', :default=>['Revisit Finding']}" merge>
+
+    <body: class="lifecycle-transition-page revisit-finding-page" param/>
+
+    <content:>
+      <header param="content-header">
+        <div class="std_info">
+          <field-list fields="area.standard, area.name," /><hr /><br />
+        </div>
+        <div>
+          <field-list fields="area.dp3_sector, area.dp3_overview, area.dp3_lang" /><hr /><br />
+        </div>
+        <h2 param="heading">Enter Finding</h2>
+      </header>
+
+      <section param="content-body">
+        <revisit-finding-form param="form"/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
 <def tag="second-read-page" for="Finding">
   <page title="#{ht 'finding.second_read.title', :default=>['Second Read']}" merge>
 

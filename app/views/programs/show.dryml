@@ -4,17 +4,31 @@
     <div class="findings_area">
     <div class="msg_list" >
 
-    <p class="msg_head"><i>Emergency Management Standard</i> by EMAP<br />
-      <span class="counter">
+    <p class="msg_head"><span class="revbase"><i>Emergency Management Standard</i> by EMAP</span><br />
+      <span class="counter_group">
+        First Reads Entered:
+        <span class="counter1">
+          <ht key="finding.collection.count" count="&this.emap_p_findings.count">
+            <human-collection-name collection="findings" />
+          </ht> out of 104
+        </span><br />
+        Second Reads Entered:
+        <span class="counter2">
+          <ht key="finding.collection.count" count="&this.emap_s_findings.count">
+            <human-collection-name collection="findings" />
+          </ht> out of 104
+        </span><br />
         Completed:
-        <ht key="finding.collection.count" count="&this.emap_findings.count">
-          <human-collection-name collection="findings" />
-        </ht> out of 104
+        <span class="counter3">
+          <ht key="finding.collection.count" count="&this.emap_findings.count">
+            <human-collection-name collection="findings" />
+          </ht> out of 104
+        </span>
       </span>
     </p>
       <div class="msg_body">
 
-        <p class="msg_head" id="sub-menu">Chapter 3 - Emergency Management Program</p>
+        <p class="msg_head">Chapter 3 - Emergency Management Program</p>
           <div class="msg_sub_body">
             <p class="msg_head">Standard 3.1 Program Administration, Plans and Evaluation</p>
               <div class="msg_sub_body" href="#1" name="1">
@@ -200,11 +214,26 @@
 
 
     <div class="msg_list">
-    <p class="msg_head">Military Review by U.S.AFRICOM<br />
-      <span class="counter">Completed:
+    <p class="msg_head"><span class="revbase">Military Review by U.S.AFRICOM</span><br />
+      <span class="counter_group">
+        First Reads Entered:
+        <span class="counter1">
+          <ht key="finding.collection.count" count="&this.mil_p_findings.count">
+            <human-collection-name collection="findings" />
+          </ht> out of 104
+        </span><br />
+        Second Reads Entered:
+        <span class="counter2">
+          <ht key="finding.collection.count" count="&this.mil_s_findings.count">
+            <human-collection-name collection="findings" />
+          </ht> out of 104
+        </span><br />
+        Completed:
+        <span class="counter3">
           <ht key="finding.collection.count" count="&this.mil_findings.count">
             <human-collection-name collection="findings" />
-          </ht> out of 65
+          </ht> out of 104
+        </span>
       </span>
     </p>
       <div class="msg_sub_body">
@@ -340,11 +369,26 @@
 
 
     <div class="msg_list">
-    <p class="msg_head">Medical Review by CDHAM<br />
-      <span class="counter">Completed:
-        <ht key="finding.collection.count" count="&this.med_findings.count">
-          <human-collection-name collection="findings" />
-        </ht> out of 36
+    <p class="msg_head"><span class="revbase">Medical Review by CDHAM</span><br />
+      <span class="counter_group">
+        First Reads Entered:
+        <span class="counter1">
+          <ht key="finding.collection.count" count="&this.med_p_findings.count">
+            <human-collection-name collection="findings" />
+          </ht> out of 104
+        </span><br />
+        Second Reads Entered:
+        <span class="counter2">
+          <ht key="finding.collection.count" count="&this.med_s_findings.count">
+            <human-collection-name collection="findings" />
+          </ht> out of 104
+        </span><br />
+        Completed:
+        <span class="counter3">
+          <ht key="finding.collection.count" count="&this.med_findings.count">
+            <human-collection-name collection="findings" />
+          </ht> out of 104
+        </span>
       </span>
     </p>
       <div class="msg_sub_body">
@@ -424,28 +468,28 @@
     <div class="review_summary">
       <h2>Review Summary</h2>
       Number of areas not yet addressed:
-      <span class="sums">
+      <span class="sums1">
           <ht key="finding.collection.count" count="&this.unstarted_findings.count">
             <human-collection-name collection="findings" />
-          </ht> out of 205.
+          </ht> out of 205
       </span><br />
       Number of First Reads Completed:
-      <span class="sums">
+      <span class="sums2">
           <ht key="finding.collection.count" count="&this.primary_findings.count">
             <human-collection-name collection="findings" />
-          </ht> out of 205.
+          </ht> out of 205
       </span><br />
       Number of Second Reads Completed:
-      <span class="sums">
+      <span class="sums3">
           <ht key="finding.collection.count" count="&this.secondary_findings.count">
             <human-collection-name collection="findings" />
-          </ht> out of 205.
+          </ht> out of 205
       </span><br />
       Number of Area Elements marked Completed:
-      <span class="sums">
+      <span class="sums4">
           <ht key="finding.collection.count" count="&this.complete_findings.count">
             <human-collection-name collection="findings" />
-          </ht> out of 205.
+          </ht> out of 205
       </span>
     </div>
     
