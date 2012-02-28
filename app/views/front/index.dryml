@@ -9,7 +9,7 @@
         <h3>Remote African Review Application</h3><br />
         <ul>
           <h2>Application Information</h2>
-          <li><a href="/emap/raraguide.pdf" target="_blank">RARA User's Guide</a></li>
+          <!--<li><a href="/emap/raraguide.pdf" target="_blank">RARA User's Guide</a></li>-->
           <li><a href="/emap/coc.html" target="_blank">Reviewer's Code of Conduct</a></li>
           <li>Please submit any bug reports or modification requests to Jarad Downing at <a href="mailto:jdowning@csg.org">jdowning@csg.org</a></li>
         </ul>
