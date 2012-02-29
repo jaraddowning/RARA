@@ -97,7 +97,7 @@
           </header>
 
           <section param="content-body">
-            <field-list fields="standard, language, overview, dp3_lang, dp3_overview, dp3_sector" param/>
+            <field-list fields="standard, language, overview, dp3_lang" param/>
           </section>
     </content:>
 
