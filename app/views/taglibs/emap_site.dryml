@@ -24,5 +24,6 @@
 <extend tag="card" for="User">
   <old-card merge>
     <append-header:><%= h this.state.titleize %></append-header:>
+    <delete-button class="actions" />
   </old-card>
 </extend>
