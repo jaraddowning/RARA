@@ -63,6 +63,14 @@
   </card>
 </def>
 
+<def tag="card" for="User">
+  <card class="user" param="default" merge>
+    <header param>
+      <h4 param="heading"><a><name/></a></h4><%= h this.state.titleize %>
+    </header>
+    <delete-button class="actions" />
+  </card>
+</def>
 
 <extend tag="index-page" for="Program">
   <old-index-page merge>
