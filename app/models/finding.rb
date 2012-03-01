@@ -4,7 +4,6 @@ class Finding < ActiveRecord::Base
 
   fields do
     name           :string
-    rational       :html
     strengths      :html
     gaps           :html
     recomendations :html
@@ -32,18 +31,18 @@ class Finding < ActiveRecord::Base
     state :complete
 
     create :unstarted, 
-           :params => [ :rational, :interviews, :strengths, :gaps, :recomendations, :previewer ],
+           :params => [ :interviews, :strengths, :gaps, :recomendations, :previewer ],
            :available_to => "User",
            :user_becomes => :all
     
     transition :enter_finding,
                {:unstarted => :primary},
-               :params => [ :rational, :interviews, :strengths, :gaps, :recomendations, :previewer ],
+               :params => [ :interviews, :strengths, :gaps, :recomendations, :previewer ],
                :available_to => :all
 
     transition :revisit_finding,
                {:primary => :primary},
-               :params => [ :rational, :interviews, :strengths, :gaps, :recomendations, :previewer ],
+               :params => [ :interviews, :strengths, :gaps, :recomendations, :previewer ],
                :available_to => :all
 
     transition :second_read,
@@ -58,7 +57,7 @@ class Finding < ActiveRecord::Base
 
     transition :return_to_primary,
                {:secondary => :primary},
-               :params => [ :rational, :interviews, :strengths, :gaps, :recomendations ],
+               :params => [ :interviews, :strengths, :gaps, :recomendations ],
                :available_to => :all
 
     transition :mark_complete,
@@ -73,7 +72,7 @@ class Finding < ActiveRecord::Base
 
     transition :reopen_primary,
                {:complete => :primary},
-               :params => [ :rational, :recomendations ],
+               :params => [ :recomendations ],
                :available_to => :all
 
   end

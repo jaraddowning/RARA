@@ -98,12 +98,6 @@
 
 <!--   Show the appropriate fields when entering findings (top of page)   -->
 
-<extend tag="form" for="Interview">
-  <old-form merge>
-    <field-list: fields="name, affiliation, position, contact, note, interviewer" />
-  </old-form>
-</extend>
-
 <extend tag="show-page" for="Finding">
   <old-show-page without-creator-link merge>
     <heading:>
@@ -118,7 +112,7 @@
     </heading:>
     <record-flags: fields="" />
     <content-body:>
-      <field-list fields="previewer, rational, strengths, gaps, recomendations, sec_obs, sreviewer" param/>
+      <field-list fields="previewer, interviews, strengths, gaps, recomendations, sec_obs, sreviewer" param/>
     </content-body:>
   </old-show-page>
 </extend>
@@ -214,7 +208,7 @@
           <field-list fields="area.dp3_sector, area.dp3_overview, area.dp3_lang" /><hr /><br />
         </div>
         <div>
-          <field-list fields="rational, strengths, gaps, recomendations" /><br /> 
+          <field-list fields="interviews, strengths, gaps, recomendations" /><br /> 
         </div>
         <h2 param="heading">Second Read</h2>
       </header>
@@ -241,7 +235,7 @@
           <field-list fields="area.dp3_sector, area.dp3_overview, area.dp3_lang" /><hr /><br />
         </div>
         <div>
-          <field-list fields="rational, strengths, gaps, recomendations" /><br /> 
+          <field-list fields="interviews, strengths, gaps, recomendations" /><br /> 
         </div>
         <h2 param="heading">First Read</h2>
       </header>
@@ -268,7 +262,7 @@
           <field-list fields="area.dp3_sector, area.dp3_overview, area.dp3_lang" /><hr /><br />
         </div>
         <div>
-          <field-list fields="rational, strengths, gaps, recomendations" /><hr /><br />
+          <field-list fields="interviews, strengths, gaps, recomendations" /><hr /><br />
         </div>
         <h2 param="heading">Second Read</h2>
       </header>
@@ -296,7 +290,7 @@
         </div>
         <div>
           <h4>First Read</h4><br />
-          <field-list fields="rational, strengths, gaps, recomendations, previewer" /><br />
+          <field-list fields="interviews, strengths, gaps, recomendations, previewer" /><br />
           <h4>Second Read</h4><br/>
           <field-list fields="sec_obs, sreviewer" /><br />
         </div>
@@ -324,10 +318,7 @@
           <field-list fields="area.dp3_sector, area.dp3_overview, area.dp3_lang" /><hr /><br />
         </div>
         <div>
-          <field-list fields="area.overview, area.language" /><hr /><br />
-        </div>
-        <div>
-          <field-list fields="rational, strengths, gaps, recomendations, sec_obs" /><br /> 
+          <field-list fields="strengths, gaps, recomendations, sec_obs" /><br /> 
         </div>
         <h2 param="heading">First Read</h2>
       </header>
@@ -354,7 +345,7 @@
           <field-list fields="area.dp3_sector, area.dp3_overview, area.dp3_lang" /><hr /><br />
         </div>
         <div>
-          <field-list fields="rational, strengths, gaps, recomendations" /><br /> 
+          <field-list fields="interviews, strengths, gaps, recomendations" /><br /> 
         </div>
         <h2 param="heading">Second Read</h2>
       </header>
@@ -369,11 +360,22 @@
 
 <!-- Form stuff  -->
 
+<def tag="form" for="Interview">
+  <form merge param="default">
+    <error-messages param/>
+    <field-list fields="name, affiliation, position, contact, note, interviewer" param/>
+    <div param="actions">
+      <submit label="#{ht 'interview.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
+    </div>
+  </form>
+</def>
+
 <def tag="unstarted-form" for="Finding">
   <form lifecycle="unstarted" merge >
     <error-messages param/>
-    <field-list fields="rational, strengths, gaps, recomendations, previewer"/>
-    <hjq-input-many:interviews remove-hook="my_remove_hook" >
+    <field-list fields="strengths, gaps, recomendations, previewer"/>
+    <h4>Interviews</h4>
+    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="name, affiliation, position, contact, note, interviewer">
       <add-item:>Add Activity Level</add-item:>
       <remove-item:>Remove Activity Level</remove-item:>
     </hjq-input-many><br />
@@ -388,11 +390,12 @@
   <form lifecycle="enter_finding" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <hjq-input-many:interviews remove-hook="my_remove_hook" >
+    <h4>Interviews</h4>
+    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="name, affiliation, position, contact, note, interviewer">
       <add-item:>Add Interview</add-item:>
       <remove-item:>Remove Interview</remove-item:>
     </hjq-input-many><br />
-    <field-list fields="rational, strengths, gaps, recomendations, previewer" param/>
+    <field-list fields="strengths, gaps, recomendations, previewer" param/>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.enter_finding', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
@@ -404,11 +407,12 @@
   <form lifecycle="revisit_finding" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <hjq-input-many:interviews remove-hook="my_remove_hook" >
+    <h4>Interviews</h4>
+    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="name, affiliation, position, contact, note, interviewer">
       <add-item:>Add Interview</add-item:>
       <remove-item:>Remove Interview</remove-item:>
     </hjq-input-many><br />
-    <field-list fields="rational, strengths, gaps, recomendations, previewer" param/>
+    <field-list fields="strengths, gaps, recomendations, previewer" param/>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.revisit_finding', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
@@ -444,11 +448,12 @@
   <form lifecycle="return_to_primary" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <hjq-input-many:interviews remove-hook="my_remove_hook" >
+    <h4>Interviews</h4>
+    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="name, affiliation, position, contact, note, interviewer">
       <add-item:>Add Interview</add-item:>
       <remove-item:>Remove Interview</remove-item:>
     </hjq-input-many><br />
-    <field-list fields="rational, strengths, gaps, recomendations" param/>
+    <field-list fields="strengths, gaps, recomendations" param/>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.return_to_primary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
@@ -472,11 +477,12 @@
   <form lifecycle="reopen_primary" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <hjq-input-many:interviews remove-hook="my_remove_hook" >
+    <h4>Interviews</h4>
+    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="name, affiliation, position, contact, note, interviewer">
       <add-item:>Add Interview</add-item:>
       <remove-item:>Remove Interview</remove-item:>
     </hjq-input-many><br />
-    <field-list fields="rational, strengths, gaps, recomendations" param/>
+    <field-list fields="strengths, gaps, recomendations" param/>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.reopen_primary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>

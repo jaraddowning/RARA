@@ -6,8 +6,8 @@ class Interview < ActiveRecord::Base
     name        :string
     affiliation :string
     position    :string
-    contact     :html
-    note        :html
+    contact     :text
+    note        :text
     timestamps
   end
 
