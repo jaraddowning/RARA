@@ -5,6 +5,7 @@
 <def tag="main-nav">
   <navigation class="main-nav" merge-attrs param="default">
     <nav-item href="#{base_url}/">Home</nav-item>
+    <nav-item with="&Interview"><ht key="interview.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
     <nav-item with="&Program"><ht key="program.nav_item" count="100"><model-name-human count="100"/></ht></nav-item>
   </navigation>
 </def>
@@ -97,7 +98,7 @@
           </header>
 
           <section param="content-body">
-            <field-list fields="standard, language, overview, dp3_lang" param/>
+            <field-list fields="standard, language, overview, dp3_lang, dp3_overview, dp3_sector" param/>
           </section>
     </content:>
 
@@ -219,7 +220,7 @@
           </header>
 
           <section param="content-body">
-            <field-list fields="rational, observation, recomendations, sec_obs, lifecycle_state, area, program, sreviewer" param/>
+            <field-list fields="rational, strengths, gaps, recomendations, sec_obs, lifecycle_state, area, program, sreviewer" param/>
           </section>
     </content:>
 
@@ -458,6 +459,128 @@
 
   </page>
 </def>
+
+
+
+<!-- ====== Interview Pages ====== -->
+
+<def tag="index-page" for="Interview">
+  <page merge title="#{ht 'interview.index.title', :default=>[model.model_name.human(:count=>100)] }">
+    <body: class="index-page interview" param/>
+
+    <content: param>
+      <header param="content-header">
+        <h2 param="heading">
+          <ht key="interview.index.heading">
+            <model-name-human model="&model"/>
+          </ht>
+        </h2>
+
+        <p param="count" if>
+          <ht key="interview.collection.count" count="&collection_count">
+            <count summary/>
+          </ht>
+        </p>
+      </header>
+
+      <section param="content-body">
+        <a action="new" to="&model" param="new-link">
+          <ht key="interview.actions.new">New Interview</ht>
+        </a>
+
+        <page-nav param="top-page-nav"/>
+
+        <collection param/>
+
+        <page-nav param="bottom-page-nav"/>
+
+
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="new-page" for="Interview">
+  <page merge title="#{ht 'interview.new.title', :default=>[' New Interview'] }">
+    <body: class="new-page interview" param/>
+
+    <content: param>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="interview.new.heading">
+            New Interview
+          </ht>
+        </h2>
+      </section>
+
+      <section param="content-body">
+        <form param>
+          <submit: label="#{ht 'interview.actions.create', :default=>['Create Interview']}"/>
+        </form>
+      </section>
+    </content:>
+  </page>
+</def>
+
+
+<def tag="show-page" for="Interview">
+  <page merge title="#{ht 'interview.show.title', :default=>['Interview'], :name => name(:no_wrapper => true) }">
+
+    <body: class="show-page interview" param/>
+
+    <content: param>
+          <header param="content-header">
+            <h2 param="heading">
+              <ht key="interview.show.heading" name="#{name(:no_wrapper => true)}">
+                Interview <name/>
+              </ht>
+            </h2>
+
+            <record-flags fields="" param/>
+
+            <a:interviewer param="creator-link"/>
+
+            <a action="edit" if="&can_edit?" param="edit-link">
+              <ht key="interview.actions.edit" name="#{name(:no_wrapper => true)}">
+                Edit Interview
+              </ht>
+            </a>
+          </header>
+
+          <section param="content-body">
+            <field-list fields="affiliation, position, contact, note, finding" param/>
+          </section>
+    </content:>
+
+  </page>
+</def>
+
+
+<def tag="edit-page" for="Interview">
+  <page merge title="#{ht 'interview.edit.title', :default=>['Edit Interview'], :name => name(:no_wrapper => true) }">
+
+    <body: class="edit-page interview" param/>
+
+    <content:>
+      <section param="content-header">
+        <h2 param="heading">
+          <ht key="interview.edit.heading" name="#{name(:no_wrapper => true)}">
+            Edit Interview
+          </ht>
+        </h2>
+        <delete-button label="#{ht 'interview.actions.delete', :default=>['Remove This Interview']}" param/>
+      </section>
+
+      <section param="content-body">
+        <form param/>
+      </section>
+    </content:>
+
+  </page>
+</def>
+
+
 
 
 

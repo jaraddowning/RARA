@@ -11,24 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120216163447) do
+ActiveRecord::Schema.define(:version => 20120301185035) do
 
   create_table "areas", :force => true do |t|
     t.string   "name"
     t.string   "standard"
     t.text     "language"
     t.text     "overview"
-    t.text     "dp3_lang"
-    t.string   "dp3_sector"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.text     "dp3_lang"
     t.text     "dp3_overview"
+    t.string   "dp3_sector"
   end
 
   create_table "findings", :force => true do |t|
     t.string   "name"
     t.text     "rational"
-    t.text     "observation"
     t.text     "recomendations"
     t.boolean  "decision"
     t.boolean  "concur"
@@ -42,6 +41,8 @@ ActiveRecord::Schema.define(:version => 20120216163447) do
     t.integer  "sreviewer_id"
     t.string   "lifecycle_state", :default => "unstarted"
     t.datetime "key_timestamp"
+    t.text     "strengths"
+    t.text     "gaps"
     t.integer  "group_id"
   end
 
@@ -50,6 +51,21 @@ ActiveRecord::Schema.define(:version => 20120216163447) do
   add_index "findings", ["previewer_id"], :name => "index_findings_on_previewer_id"
   add_index "findings", ["program_id"], :name => "index_findings_on_program_id"
   add_index "findings", ["sreviewer_id"], :name => "index_findings_on_sreviewer_id"
+
+  create_table "interviews", :force => true do |t|
+    t.string   "name"
+    t.string   "affiliation"
+    t.string   "position"
+    t.text     "contact"
+    t.text     "note"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "finding_id"
+    t.integer  "interviewer_id"
+  end
+
+  add_index "interviews", ["finding_id"], :name => "index_interviews_on_finding_id"
+  add_index "interviews", ["interviewer_id"], :name => "index_interviews_on_interviewer_id"
 
   create_table "programs", :force => true do |t|
     t.string   "name"

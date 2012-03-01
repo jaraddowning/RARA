@@ -19,6 +19,17 @@
   </card>
 </def>
 
+<def tag="card" for="Interview">
+  <card class="interview" param="default" merge>
+    <header: param>
+      <h4 param="heading"><a><name/></a></h4>
+    </header:>
+    <body: param>
+      <a:interviewer param="creator-link"/>
+    </body:>
+  </card>
+</def>
+
 <def tag="card" for="Program">
   <card class="program" param="default" merge>
     <header: param>

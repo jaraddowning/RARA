@@ -5,7 +5,8 @@ class Finding < ActiveRecord::Base
   fields do
     name           :string
     rational       :html
-    observation    :html
+    strengths      :html
+    gaps           :html
     recomendations :html
     decision       :boolean
     concur         :boolean
@@ -18,6 +19,8 @@ class Finding < ActiveRecord::Base
   belongs_to :program
   belongs_to :area
 
+  has_many :interviews, :dependent => :destroy, :accessible => true
+
   belongs_to :previewer, :class_name => "User", :creator => true
   belongs_to :sreviewer, :class_name => "User"
 
@@ -29,18 +32,18 @@ class Finding < ActiveRecord::Base
     state :complete
 
     create :unstarted, 
-           :params => [ :rational, :observation, :recomendations, :previewer ],
+           :params => [ :rational, :interviews, :strengths, :gaps, :recomendations, :previewer ],
            :available_to => "User",
            :user_becomes => :all
     
     transition :enter_finding,
                {:unstarted => :primary},
-               :params => [ :rational, :observation, :recomendations, :previewer ],
+               :params => [ :rational, :interviews, :strengths, :gaps, :recomendations, :previewer ],
                :available_to => :all
 
     transition :revisit_finding,
                {:primary => :primary},
-               :params => [ :rational, :observation, :recomendations, :previewer ],
+               :params => [ :rational, :interviews, :strengths, :gaps, :recomendations, :previewer ],
                :available_to => :all
 
     transition :second_read,
@@ -55,7 +58,7 @@ class Finding < ActiveRecord::Base
 
     transition :return_to_primary,
                {:secondary => :primary},
-               :params => [ :rational, :observation, :recomendations ],
+               :params => [ :rational, :interviews, :strengths, :gaps, :recomendations ],
                :available_to => :all
 
     transition :mark_complete,
@@ -70,7 +73,7 @@ class Finding < ActiveRecord::Base
 
     transition :reopen_primary,
                {:complete => :primary},
-               :params => [ :rational, :observation, :recomendations ],
+               :params => [ :rational, :recomendations ],
                :available_to => :all
 
   end

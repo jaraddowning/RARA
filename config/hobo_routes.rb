@@ -5,6 +5,16 @@
 Rara::Application.routes.draw do
 
 
+  # Resource routes for controller "interviews"
+  get 'interviews(.:format)' => 'interviews#index', :as => 'interviews'
+  get 'interviews/new(.:format)', :as => 'new_interview'
+  get 'interviews/:id/edit(.:format)' => 'interviews#edit', :as => 'edit_interview'
+  get 'interviews/:id(.:format)' => 'interviews#show', :as => 'interview', :constraints => { :id => %r([^/.?]+) }
+  post 'interviews(.:format)' => 'interviews#create', :as => 'create_interview'
+  put 'interviews/:id(.:format)' => 'interviews#update', :as => 'update_interview', :constraints => { :id => %r([^/.?]+) }
+  delete 'interviews/:id(.:format)' => 'interviews#destroy', :as => 'destroy_interview', :constraints => { :id => %r([^/.?]+) }
+
+
   # Lifecycle routes for controller "users"
   put 'users/:id/accept_invitation(.:format)' => 'users#do_accept_invitation', :as => 'do_user_accept_invitation'
   get 'users/:id/accept_invitation(.:format)' => 'users#accept_invitation', :as => 'user_accept_invitation'
