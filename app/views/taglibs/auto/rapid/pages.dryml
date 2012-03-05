@@ -220,7 +220,7 @@
           </header>
 
           <section param="content-body">
-            <field-list fields="strengths, gaps, recomendations, sec_obs, lifecycle_state, area, program, sreviewer" param/>
+            <field-list fields="rational, strengths, gaps, recomendations, sec_obs, lifecycle_state, area, program, sreviewer" param/>
           </section>
     </content:>
 
