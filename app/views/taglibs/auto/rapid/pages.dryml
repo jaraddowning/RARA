@@ -549,7 +549,7 @@
           </header>
 
           <section param="content-body">
-            <field-list fields="affiliation, position, contact, note, finding" param/>
+            <field-list fields="information, affiliation, position, contact, note, finding" param/>
           </section>
     </content:>
 
@@ -607,7 +607,7 @@
 
       <section param="content-body">
         <a action="new" to="&model" param="new-link">
-          <ht key="program.actions.new">New Review</ht>
+          <ht key="program.actions.new">New Program</ht>
         </a>
 
         <page-nav param="top-page-nav"/>
@@ -624,21 +624,21 @@
 
 
 <def tag="new-page" for="Program">
-  <page merge title="#{ht 'program.new.title', :default=>[' New Review'] }">
+  <page merge title="#{ht 'program.new.title', :default=>[' New Program'] }">
     <body: class="new-page program" param/>
 
     <content: param>
       <section param="content-header">
         <h2 param="heading">
           <ht key="program.new.heading">
-            New Review
+            New Program
           </ht>
         </h2>
       </section>
 
       <section param="content-body">
         <form param>
-          <submit: label="#{ht 'program.actions.create', :default=>['Create Review']}"/>
+          <submit: label="#{ht 'program.actions.create', :default=>['Create Program']}"/>
         </form>
       </section>
     </content:>
@@ -647,7 +647,7 @@
 
 
 <def tag="show-page" for="Program">
-  <page merge title="#{ht 'program.show.title', :default=>['Review'], :name => name(:no_wrapper => true) }">
+  <page merge title="#{ht 'program.show.title', :default=>['Program'], :name => name(:no_wrapper => true) }">
 
     <body: class="show-page program" param/>
 
@@ -655,7 +655,7 @@
           <header param="content-header">
             <h2 param="heading">
               <ht key="program.show.heading" name="#{name(:no_wrapper => true)}">
-                Review <name/>
+                Program <name/>
               </ht>
             </h2>
 
@@ -663,7 +663,7 @@
 
             <a action="edit" if="&can_edit?" param="edit-link">
               <ht key="program.actions.edit" name="#{name(:no_wrapper => true)}">
-                Edit Review
+                Edit Program
               </ht>
             </a>
           </header>
@@ -678,7 +678,7 @@
 
 
 <def tag="edit-page" for="Program">
-  <page merge title="#{ht 'program.edit.title', :default=>['Edit Review'], :name => name(:no_wrapper => true) }">
+  <page merge title="#{ht 'program.edit.title', :default=>['Edit Program'], :name => name(:no_wrapper => true) }">
 
     <body: class="edit-page program" param/>
 
@@ -686,10 +686,10 @@
       <section param="content-header">
         <h2 param="heading">
           <ht key="program.edit.heading" name="#{name(:no_wrapper => true)}">
-            Edit Review
+            Edit Program
           </ht>
         </h2>
-        <delete-button label="#{ht 'program.actions.delete', :default=>['Remove This Review']}" param/>
+        <delete-button label="#{ht 'program.actions.delete', :default=>['Remove This Program']}" param/>
       </section>
 
       <section param="content-body">

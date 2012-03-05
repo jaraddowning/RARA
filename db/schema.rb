@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120301185035) do
+ActiveRecord::Schema.define(:version => 20120305152328) do
 
   create_table "areas", :force => true do |t|
     t.string   "name"
@@ -62,6 +62,7 @@ ActiveRecord::Schema.define(:version => 20120301185035) do
     t.datetime "updated_at"
     t.integer  "finding_id"
     t.integer  "interviewer_id"
+    t.text     "information"
   end
 
   add_index "interviews", ["finding_id"], :name => "index_interviews_on_finding_id"

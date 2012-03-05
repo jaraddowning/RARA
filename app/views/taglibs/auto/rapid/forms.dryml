@@ -125,7 +125,7 @@
 <def tag="form" for="Interview">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="name, affiliation, position, contact, note, finding, interviewer" param/>
+    <field-list fields="information, name, affiliation, position, contact, note, finding, interviewer" param/>
     <div param="actions">
       <submit label="#{ht 'interview.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>

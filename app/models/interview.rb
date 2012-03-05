@@ -3,6 +3,7 @@ class Interview < ActiveRecord::Base
   hobo_model # Don't put anything above this
 
   fields do
+    information :text
     name        :string
     affiliation :string
     position    :string
