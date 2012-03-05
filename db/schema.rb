@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120305152328) do
+ActiveRecord::Schema.define(:version => 20120305153825) do
 
   create_table "areas", :force => true do |t|
     t.string   "name"
@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(:version => 20120305152328) do
 
   create_table "findings", :force => true do |t|
     t.string   "name"
-    t.text     "rational"
     t.text     "recomendations"
     t.boolean  "decision"
     t.boolean  "concur"
@@ -62,7 +61,6 @@ ActiveRecord::Schema.define(:version => 20120305152328) do
     t.datetime "updated_at"
     t.integer  "finding_id"
     t.integer  "interviewer_id"
-    t.text     "information"
   end
 
   add_index "interviews", ["finding_id"], :name => "index_interviews_on_finding_id"

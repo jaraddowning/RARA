@@ -371,7 +371,7 @@
 <def tag="form" for="Interview">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="information, interviewer" param/>
+    <field-list fields="name, affiliation, position, contact, note, interviewer" param/>
     <div param="actions">
       <submit label="#{ht 'interview.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>
@@ -383,7 +383,7 @@
     <error-messages param/>
     <field-list fields="strengths, gaps, recomendations, previewer"/>
     <h4>Interviews</h4>
-    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="information, interviewer">
+    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="name, affiliation, position, contact, note, interviewer">
       <add-item:>Add Activity Level</add-item:>
       <remove-item:>Remove Activity Level</remove-item:>
     </hjq-input-many><br />
@@ -399,7 +399,7 @@
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
     <h4>Interviews</h4>
-    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="information, interviewer">
+    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="name, affiliation, position, contact, note, interviewer">
       <add-item:>Add Interview</add-item:>
       <remove-item:>Remove Interview</remove-item:>
     </hjq-input-many><br />
@@ -416,7 +416,7 @@
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
     <h4>Interviews</h4>
-    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="information, interviewer">
+    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="name, affiliation, position, contact, note, interviewer">
       <add-item:>Add Interview</add-item:>
       <remove-item:>Remove Interview</remove-item:>
     </hjq-input-many><br />
@@ -457,7 +457,7 @@
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
     <h4>Interviews</h4>
-    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="information, interviewer">
+    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="name, affiliation, position, contact, note, interviewer">
       <add-item:>Add Interview</add-item:>
       <remove-item:>Remove Interview</remove-item:>
     </hjq-input-many><br />
@@ -486,7 +486,7 @@
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
     <h4>Interviews</h4>
-    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="information, interviewer">
+    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="name, affiliation, position, contact, note, interviewer">
       <add-item:>Add Interview</add-item:>
       <remove-item:>Remove Interview</remove-item:>
     </hjq-input-many><br />
