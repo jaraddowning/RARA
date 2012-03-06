@@ -382,7 +382,7 @@
 <def tag="form" for="Interview">
   <form merge param="default">
     <error-messages param/>
-    <field-list fields="name, affiliation, position, contact, note, interviewer" param/>
+    <field-list fields="name, affiliation, position, contact, note, interviewer"/>
     <div param="actions">
       <submit label="#{ht 'interview.actions.save', :default=>['Save']}" param/><or-cancel param="cancel"/>
     </div>
@@ -394,7 +394,10 @@
     <error-messages param/>
     <field-list fields="strengths, gaps, recomendations, previewer"/>
     <h4>Interviews</h4>
-    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="name, affiliation, position, contact, note, interviewer">
+    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="name, affiliation, position, contact, note, interviewer" empty-message="Please Select an Interviewer">
+      <interviewer-view:>
+        <select-one include-none="&false" />
+      </interviewer-view:>
       <add-item:>Add Activity Level</add-item:>
       <remove-item:>Remove Activity Level</remove-item:>
     </hjq-input-many><br />
@@ -410,11 +413,22 @@
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
     <h4>Interviews</h4>
-    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="name, affiliation, position, contact, note, interviewer">
+    <hjq-input-many:interviews remove-hook="my_remove_hook" >
+      <item:>
+        <field-list fields="name, affiliation, position, contact, note, interviewer">
+          <interviewer-view:>
+            <select-one blank-message="Please select the interviewer" />
+          </interviewer-view:>
+        </field-list>
+      </item:>
       <add-item:>Add Interview</add-item:>
       <remove-item:>Remove Interview</remove-item:>
     </hjq-input-many><br />
-    <field-list fields="strengths, gaps, recomendations, previewer" param/>
+    <field-list fields="strengths, gaps, recomendations, previewer">
+      <previewer-view:>
+        <select-one blank-message="Please select the reviewer" />
+      </previewer-view:>
+    </field-list>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.enter_finding', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
@@ -427,11 +441,22 @@
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
     <h4>Interviews</h4>
-    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="name, affiliation, position, contact, note, interviewer">
+    <hjq-input-many:interviews remove-hook="my_remove_hook" >
+      <item:>
+        <field-list fields="name, affiliation, position, contact, note, interviewer">
+          <interviewer-view:>
+            <select-one blank-message="Please select the interviewer" />
+          </interviewer-view:>
+        </field-list>
+      </item:>
       <add-item:>Add Interview</add-item:>
       <remove-item:>Remove Interview</remove-item:>
     </hjq-input-many><br />
-    <field-list fields="strengths, gaps, recomendations, previewer" param/>
+    <field-list fields="strengths, gaps, recomendations, previewer">
+      <previewer-view:>
+        <select-one blank-message="Please select the reviewer" />
+      </previewer-view:>
+    </field-list>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.revisit_finding', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
@@ -443,7 +468,11 @@
   <form lifecycle="second_read" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="sec_obs, sreviewer" param/>
+    <field-list fields="sec_obs, sreviewer">
+      <sreviewer-view:>
+        <select-one blank-message="Please select the second reviewer" />
+      </sreviewer-view:>
+    </field-list>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.second_read', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
@@ -455,24 +484,39 @@
   <form lifecycle="return_to_secondary" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="sec_obs, sreviewer" param/>
+    <field-list fields="sec_obs, sreviewer">
+      <sreviewer-view:>
+        <select-one blank-message="Please select the second reviewer" />
+      </sreviewer-view:>
+    </field-list>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.return_to_secondary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
     <after-submit uri="/programs/#{this.program_id}"/>
   </form>
 </def>
-<def tag="return-to-primary-form" polymorphic/>
+
 <def tag="return-to-primary-form" for="Finding">
   <form lifecycle="return_to_primary" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
     <h4>Interviews</h4>
-    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="name, affiliation, position, contact, note, interviewer">
+    <hjq-input-many:interviews remove-hook="my_remove_hook" >
+      <item:>
+        <field-list fields="name, affiliation, position, contact, note, interviewer">
+          <interviewer-view:>
+            <select-one blank-message="Please select the interviewer" />
+          </interviewer-view:>
+        </field-list>
+      </item:>
       <add-item:>Add Interview</add-item:>
       <remove-item:>Remove Interview</remove-item:>
     </hjq-input-many><br />
-    <field-list fields="strengths, gaps, recomendations" param/>
+    <field-list fields="strengths, gaps, recomendations, previewer">
+      <previewer-view:>
+        <select-one blank-message="Please select the reviewer" />
+      </previewer-view:>
+    </field-list>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.return_to_primary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
@@ -497,11 +541,22 @@
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
     <h4>Interviews</h4>
-    <hjq-input-many:interviews remove-hook="my_remove_hook" fields="name, affiliation, position, contact, note, interviewer">
+    <hjq-input-many:interviews remove-hook="my_remove_hook" >
+      <item:>
+        <field-list fields="name, affiliation, position, contact, note, interviewer">
+          <interviewer-view:>
+            <select-one blank-message="Please select the interviewer" />
+          </interviewer-view:>
+        </field-list>
+      </item:>
       <add-item:>Add Interview</add-item:>
       <remove-item:>Remove Interview</remove-item:>
     </hjq-input-many><br />
-    <field-list fields="strengths, gaps, recomendations" param/>
+    <field-list fields="strengths, gaps, recomendations, previewer">
+      <previewer-view:>
+        <select-one blank-message="Please select the reviewer" />
+      </previewer-view:>
+    </field-list>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.reopen_primary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
@@ -513,7 +568,11 @@
   <form lifecycle="reopen_secondary" merge param="default">
     <error-messages param/>
     <input type="hidden" name="key" value="&this.lifecycle.provided_key" if="&this.lifecycle.provided_key"/>
-    <field-list fields="sec_obs, sreviewer" param/>
+    <field-list fields="sec_obs, sreviewer">
+      <sreviewer-view:>
+        <select-one blank-message="Please select the second reviewer" />
+      </sreviewer-view:>
+    </field-list>
     <div param="actions">
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.reopen_secondary', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
