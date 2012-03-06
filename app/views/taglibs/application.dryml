@@ -57,7 +57,7 @@
       <h4><a><view:affiliation/></a></h4>
     </heading:>
     <body:>
-      <%= this.interviewer %>
+      Review Area: <a:finding /> <span class="findarea">Interviewer: <%= this.interviewer %></span>
     </body:>
   </old-card>
 </extend>
@@ -116,6 +116,11 @@
 
 
 <!--   Show the appropriate fields when entering findings (top of page)   -->
+
+<extend tag="index-page" for="Interview">
+  <old-index-page without-new-link without-count merge>
+  </old-index-page>
+</extend>
 
 <extend tag="show-page" for="Finding">
   <old-show-page without-creator-link merge>
@@ -182,10 +187,11 @@
       </header>
 
       <section param="content-body">
-        <enter-finding-form param="form"/>
+        <div part="finds" id="finds-#{typed_id}">
+          <enter-finding-form update="self" merge><update-button id="finds-#{typed_id}" label="Save" update="update-fields"/> </enter-finding-form>
+        </div>
       </section>
     </content:>
-
   </page>
 </def>
 
@@ -430,6 +436,7 @@
       </previewer-view:>
     </field-list>
     <div param="actions">
+      
       <submit label="#{t 'activerecord.attributes.finding.lifecycle.transitions.enter_finding', :default=>['Submit']}" param/><or-cancel param="cancel"/>
     </div>
     <after-submit uri="/programs/#{this.program_id}"/>
