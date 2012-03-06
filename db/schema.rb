@@ -11,18 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120305153825) do
+ActiveRecord::Schema.define(:version => 20120306142807) do
 
   create_table "areas", :force => true do |t|
     t.string   "name"
     t.string   "standard"
     t.text     "language"
     t.text     "overview"
+    t.text     "dp3_lang"
+    t.string   "dp3_sector"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.text     "dp3_lang"
     t.text     "dp3_overview"
-    t.string   "dp3_sector"
   end
 
   create_table "findings", :force => true do |t|
@@ -40,9 +40,9 @@ ActiveRecord::Schema.define(:version => 20120305153825) do
     t.integer  "sreviewer_id"
     t.string   "lifecycle_state", :default => "unstarted"
     t.datetime "key_timestamp"
+    t.integer  "group_id"
     t.text     "strengths"
     t.text     "gaps"
-    t.integer  "group_id"
   end
 
   add_index "findings", ["area_id"], :name => "index_findings_on_area_id"

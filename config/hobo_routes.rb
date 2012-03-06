@@ -5,14 +5,42 @@
 Rara::Application.routes.draw do
 
 
-  # Resource routes for controller "interviews"
-  get 'interviews(.:format)' => 'interviews#index', :as => 'interviews'
-  get 'interviews/new(.:format)', :as => 'new_interview'
-  get 'interviews/:id/edit(.:format)' => 'interviews#edit', :as => 'edit_interview'
-  get 'interviews/:id(.:format)' => 'interviews#show', :as => 'interview', :constraints => { :id => %r([^/.?]+) }
-  post 'interviews(.:format)' => 'interviews#create', :as => 'create_interview'
-  put 'interviews/:id(.:format)' => 'interviews#update', :as => 'update_interview', :constraints => { :id => %r([^/.?]+) }
-  delete 'interviews/:id(.:format)' => 'interviews#destroy', :as => 'destroy_interview', :constraints => { :id => %r([^/.?]+) }
+  # Resource routes for controller "areas"
+  get 'areas/new(.:format)', :as => 'new_area'
+  get 'areas/:id/edit(.:format)' => 'areas#edit', :as => 'edit_area'
+  get 'areas/:id(.:format)' => 'areas#show', :as => 'area', :constraints => { :id => %r([^/.?]+) }
+  post 'areas(.:format)' => 'areas#create', :as => 'create_area'
+  put 'areas/:id(.:format)' => 'areas#update', :as => 'update_area', :constraints => { :id => %r([^/.?]+) }
+  delete 'areas/:id(.:format)' => 'areas#destroy', :as => 'destroy_area', :constraints => { :id => %r([^/.?]+) }
+
+
+  # Lifecycle routes for controller "findings"
+  post 'findings/unstarted(.:format)' => 'findings#do_unstarted', :as => 'do_finding_unstarted'
+  get 'findings/unstarted(.:format)' => 'findings#unstarted', :as => 'finding_unstarted'
+  put 'findings/:id/enter_finding(.:format)' => 'findings#do_enter_finding', :as => 'do_finding_enter_finding'
+  get 'findings/:id/enter_finding(.:format)' => 'findings#enter_finding', :as => 'finding_enter_finding'
+  put 'findings/:id/revisit_finding(.:format)' => 'findings#do_revisit_finding', :as => 'do_finding_revisit_finding'
+  get 'findings/:id/revisit_finding(.:format)' => 'findings#revisit_finding', :as => 'finding_revisit_finding'
+  put 'findings/:id/second_read(.:format)' => 'findings#do_second_read', :as => 'do_finding_second_read'
+  get 'findings/:id/second_read(.:format)' => 'findings#second_read', :as => 'finding_second_read'
+  put 'findings/:id/return_to_secondary(.:format)' => 'findings#do_return_to_secondary', :as => 'do_finding_return_to_secondary'
+  get 'findings/:id/return_to_secondary(.:format)' => 'findings#return_to_secondary', :as => 'finding_return_to_secondary'
+  put 'findings/:id/return_to_primary(.:format)' => 'findings#do_return_to_primary', :as => 'do_finding_return_to_primary'
+  get 'findings/:id/return_to_primary(.:format)' => 'findings#return_to_primary', :as => 'finding_return_to_primary'
+  put 'findings/:id/mark_complete(.:format)' => 'findings#do_mark_complete', :as => 'do_finding_mark_complete'
+  get 'findings/:id/mark_complete(.:format)' => 'findings#mark_complete', :as => 'finding_mark_complete'
+  put 'findings/:id/reopen_secondary(.:format)' => 'findings#do_reopen_secondary', :as => 'do_finding_reopen_secondary'
+  get 'findings/:id/reopen_secondary(.:format)' => 'findings#reopen_secondary', :as => 'finding_reopen_secondary'
+  put 'findings/:id/reopen_primary(.:format)' => 'findings#do_reopen_primary', :as => 'do_finding_reopen_primary'
+  get 'findings/:id/reopen_primary(.:format)' => 'findings#reopen_primary', :as => 'finding_reopen_primary'
+
+  # Resource routes for controller "findings"
+  get 'findings/new(.:format)', :as => 'new_finding'
+  get 'findings/:id/edit(.:format)' => 'findings#edit', :as => 'edit_finding'
+  get 'findings/:id(.:format)' => 'findings#show', :as => 'finding', :constraints => { :id => %r([^/.?]+) }
+  post 'findings(.:format)' => 'findings#create', :as => 'create_finding'
+  put 'findings/:id(.:format)' => 'findings#update', :as => 'update_finding', :constraints => { :id => %r([^/.?]+) }
+  delete 'findings/:id(.:format)' => 'findings#destroy', :as => 'destroy_finding', :constraints => { :id => %r([^/.?]+) }
 
 
   # Lifecycle routes for controller "users"
@@ -47,42 +75,14 @@ Rara::Application.routes.draw do
   delete 'programs/:id(.:format)' => 'programs#destroy', :as => 'destroy_program', :constraints => { :id => %r([^/.?]+) }
 
 
-  # Lifecycle routes for controller "findings"
-  post 'findings/unstarted(.:format)' => 'findings#do_unstarted', :as => 'do_finding_unstarted'
-  get 'findings/unstarted(.:format)' => 'findings#unstarted', :as => 'finding_unstarted'
-  put 'findings/:id/enter_finding(.:format)' => 'findings#do_enter_finding', :as => 'do_finding_enter_finding'
-  get 'findings/:id/enter_finding(.:format)' => 'findings#enter_finding', :as => 'finding_enter_finding'
-  put 'findings/:id/revisit_finding(.:format)' => 'findings#do_revisit_finding', :as => 'do_finding_revisit_finding'
-  get 'findings/:id/revisit_finding(.:format)' => 'findings#revisit_finding', :as => 'finding_revisit_finding'
-  put 'findings/:id/second_read(.:format)' => 'findings#do_second_read', :as => 'do_finding_second_read'
-  get 'findings/:id/second_read(.:format)' => 'findings#second_read', :as => 'finding_second_read'
-  put 'findings/:id/return_to_secondary(.:format)' => 'findings#do_return_to_secondary', :as => 'do_finding_return_to_secondary'
-  get 'findings/:id/return_to_secondary(.:format)' => 'findings#return_to_secondary', :as => 'finding_return_to_secondary'
-  put 'findings/:id/return_to_primary(.:format)' => 'findings#do_return_to_primary', :as => 'do_finding_return_to_primary'
-  get 'findings/:id/return_to_primary(.:format)' => 'findings#return_to_primary', :as => 'finding_return_to_primary'
-  put 'findings/:id/mark_complete(.:format)' => 'findings#do_mark_complete', :as => 'do_finding_mark_complete'
-  get 'findings/:id/mark_complete(.:format)' => 'findings#mark_complete', :as => 'finding_mark_complete'
-  put 'findings/:id/reopen_secondary(.:format)' => 'findings#do_reopen_secondary', :as => 'do_finding_reopen_secondary'
-  get 'findings/:id/reopen_secondary(.:format)' => 'findings#reopen_secondary', :as => 'finding_reopen_secondary'
-  put 'findings/:id/reopen_primary(.:format)' => 'findings#do_reopen_primary', :as => 'do_finding_reopen_primary'
-  get 'findings/:id/reopen_primary(.:format)' => 'findings#reopen_primary', :as => 'finding_reopen_primary'
-
-  # Resource routes for controller "findings"
-  get 'findings/new(.:format)', :as => 'new_finding'
-  get 'findings/:id/edit(.:format)' => 'findings#edit', :as => 'edit_finding'
-  get 'findings/:id(.:format)' => 'findings#show', :as => 'finding', :constraints => { :id => %r([^/.?]+) }
-  post 'findings(.:format)' => 'findings#create', :as => 'create_finding'
-  put 'findings/:id(.:format)' => 'findings#update', :as => 'update_finding', :constraints => { :id => %r([^/.?]+) }
-  delete 'findings/:id(.:format)' => 'findings#destroy', :as => 'destroy_finding', :constraints => { :id => %r([^/.?]+) }
-
-
-  # Resource routes for controller "areas"
-  get 'areas/new(.:format)', :as => 'new_area'
-  get 'areas/:id/edit(.:format)' => 'areas#edit', :as => 'edit_area'
-  get 'areas/:id(.:format)' => 'areas#show', :as => 'area', :constraints => { :id => %r([^/.?]+) }
-  post 'areas(.:format)' => 'areas#create', :as => 'create_area'
-  put 'areas/:id(.:format)' => 'areas#update', :as => 'update_area', :constraints => { :id => %r([^/.?]+) }
-  delete 'areas/:id(.:format)' => 'areas#destroy', :as => 'destroy_area', :constraints => { :id => %r([^/.?]+) }
+  # Resource routes for controller "interviews"
+  get 'interviews(.:format)' => 'interviews#index', :as => 'interviews'
+  get 'interviews/new(.:format)', :as => 'new_interview'
+  get 'interviews/:id/edit(.:format)' => 'interviews#edit', :as => 'edit_interview'
+  get 'interviews/:id(.:format)' => 'interviews#show', :as => 'interview', :constraints => { :id => %r([^/.?]+) }
+  post 'interviews(.:format)' => 'interviews#create', :as => 'create_interview'
+  put 'interviews/:id(.:format)' => 'interviews#update', :as => 'update_interview', :constraints => { :id => %r([^/.?]+) }
+  delete 'interviews/:id(.:format)' => 'interviews#destroy', :as => 'destroy_interview', :constraints => { :id => %r([^/.?]+) }
 
   namespace :emap do
 
