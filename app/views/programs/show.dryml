@@ -80,54 +80,12 @@
               </div>
             <p class="msg_head">Standard 4.6 Operational Planning</p>
               <div class="msg_sub_body">
-                <div><a href="#"><collection:emap_461_findings /></a></div>
-
-                <p class="msg_head">Standard 4.6.2</p>
-                  <div class="msg_sub_body">
-                    <div><a href="#"><collection:emap_4621_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_4622_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_4623_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_4624_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_4625_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_4626_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_4627_findings /></a></div>
-                  </div>
-                <p class="msg_head">Standard 4.6.3</p>
-                  <div class="msg_sub_body">
-                    <div><a href="#"><collection:emap_4631_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_4632_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_4633_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_4634_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_4635_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_4636_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_4637_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_4638_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_4639_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46310_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46311_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46312_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46313_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46314_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46315_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46316_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46317_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46318_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46319_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46320_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46321_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46322_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46323_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46324_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46325_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46326_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46327_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46328_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_46329_findings /></a></div>
-                  </div>
-
-                  <div><a href="#"><collection:emap_464_findings /></a></div><hr />
-                  <div><a href="#"><collection:emap_465_findings /></a></div><hr />
-                  <div><a href="#"><collection:emap_466_findings /></a></div>
+                <div><a href="#"><collection:emap_461_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4621_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4631_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_464_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_465_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_466_findings /></a></div>
               </div>
             <p class="msg_head">Standard 4.7 Incident Management</p>
               <div class="msg_sub_body">
@@ -141,13 +99,8 @@
               <div class="msg_sub_body">
                 <div><a href="#"><collection:emap_481_findings /></a></div><hr />
                 <div><a href="#"><collection:emap_482_findings /></a></div><hr />
-                <div><a href="#"><collection:emap_483_findings /></a></div>
-                <p class="msg_head">Standard 4.8.4</p>
-                  <div class="msg_sub_body">
-                    <div><a href="#"><collection:emap_4841_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_4842_findings /></a></div><hr />
-                    <div><a href="#"><collection:emap_4843_findings /></a></div><br />
-                  </div>
+                <div><a href="#"><collection:emap_483_findings /></a></div><hr />
+                <div><a href="#"><collection:emap_4841_findings /></a></div><hr />
                 <div><a href="#"><collection:emap_485_findings /></a></div><hr />
                 <div><a href="#"><collection:emap_486_findings /></a></div>
               </div>
@@ -193,15 +146,8 @@
               </div>
             <p class="msg_head">Standard 4.15 Crisis Communications, Public Education and Information</p>
               <div class="msg_sub_body">
-                  <div><a href="#"><collection:emap_4151_findings /></a></div>
-                  <p class="msg_head">Standard 4.15.2</p>
-                    <div class="msg_sub_body">
-                      <div><a href="#"><collection:emap_41521_findings /></a></div><hr />
-                      <div><a href="#"><collection:emap_41522_findings /></a></div><hr />
-                      <div><a href="#"><collection:emap_41523_findings /></a></div><hr />
-                      <div><a href="#"><collection:emap_41524_findings /></a></div><hr />
-                      <div><a href="#"><collection:emap_41525_findings /></a></div>
-                    </div>
+                <div><a href="#"><collection:emap_4151_findings /></a></div>
+                <div><a href="#"><collection:emap_41521_findings /></a></div><hr />
                 <div><a href="#"><collection:emap_4153_findings /></a></div><hr />
                 <div><a href="#"><collection:emap_4154_findings /></a></div><hr />
                 <div><a href="#"><collection:emap_4155_findings /></a></div>

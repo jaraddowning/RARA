@@ -187,9 +187,10 @@
       </header>
 
       <section param="content-body">
-        <div part="finds" id="finds-#{typed_id}">
+        <enter-finding-form merge/>
+        <!--<div part="finds" id="finds-#{typed_id}">
           <enter-finding-form update="self" merge><update-button id="finds-#{typed_id}" label="Save" update="update-fields"/> </enter-finding-form>
-        </div>
+        </div>-->
       </section>
     </content:>
   </page>
